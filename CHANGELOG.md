@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+- [JsonSchema] [GH#798](https://github.com/janephp/janephp/pull/798) Do not implements `CacheableSupportsMethodInterface` when generating SF7 normalizers
+
 ## [7.6.1] - 2024-03-12
 ### Changed
 - [Jane] [GH#792](https://github.com/janephp/janephp/pull/792) Improve Normalizer generation by including null values or not
