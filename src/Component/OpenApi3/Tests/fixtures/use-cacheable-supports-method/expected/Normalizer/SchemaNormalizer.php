@@ -21,15 +21,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Schema';
+            return $type === \Jane\Component\OpenApi3\Tests\Expected\Model\Schema::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Schema';
+            return is_object($data) && get_class($data) === 'Jane\Component\OpenApi3\Tests\Expected\Model\Schema';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -49,7 +49,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['stringProperty']);
             }
             if (\array_key_exists('dateProperty', $data)) {
-                $object->setDateProperty(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['dateProperty']));
+                $object->setDateProperty(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['dateProperty']));
                 unset($data['dateProperty']);
             }
             if (\array_key_exists('integerProperty', $data)) {
@@ -77,11 +77,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['mapProperty']);
             }
             if (\array_key_exists('objectProperty', $data)) {
-                $object->setObjectProperty($this->denormalizer->denormalize($data['objectProperty'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\SchemaObjectProperty', 'json', $context));
+                $object->setObjectProperty($this->denormalizer->denormalize($data['objectProperty'], \Jane\Component\OpenApi3\Tests\Expected\Model\SchemaObjectProperty::class, 'json', $context));
                 unset($data['objectProperty']);
             }
             if (\array_key_exists('objectRefProperty', $data)) {
-                $object->setObjectRefProperty($this->denormalizer->denormalize($data['objectRefProperty'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Schema', 'json', $context));
+                $object->setObjectRefProperty($this->denormalizer->denormalize($data['objectRefProperty'], \Jane\Component\OpenApi3\Tests\Expected\Model\Schema::class, 'json', $context));
                 unset($data['objectRefProperty']);
             }
             foreach ($data as $key_1 => $value_2) {
@@ -91,14 +91,14 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('stringProperty') && null !== $object->getStringProperty()) {
                 $data['stringProperty'] = $object->getStringProperty();
             }
             if ($object->isInitialized('dateProperty') && null !== $object->getDateProperty()) {
-                $data['dateProperty'] = $object->getDateProperty()->format('Y-m-d\\TH:i:sP');
+                $data['dateProperty'] = $object->getDateProperty()->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('integerProperty') && null !== $object->getIntegerProperty()) {
                 $data['integerProperty'] = $object->getIntegerProperty();
@@ -133,9 +133,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Schema' => true];
+            return [\Jane\Component\OpenApi3\Tests\Expected\Model\Schema::class => true];
         }
     }
 } else {
@@ -145,13 +145,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Schema';
+            return $type === \Jane\Component\OpenApi3\Tests\Expected\Model\Schema::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Schema';
+            return is_object($data) && get_class($data) === 'Jane\Component\OpenApi3\Tests\Expected\Model\Schema';
         }
         /**
          * @return mixed
@@ -176,7 +176,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['stringProperty']);
             }
             if (\array_key_exists('dateProperty', $data)) {
-                $object->setDateProperty(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['dateProperty']));
+                $object->setDateProperty(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['dateProperty']));
                 unset($data['dateProperty']);
             }
             if (\array_key_exists('integerProperty', $data)) {
@@ -204,11 +204,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['mapProperty']);
             }
             if (\array_key_exists('objectProperty', $data)) {
-                $object->setObjectProperty($this->denormalizer->denormalize($data['objectProperty'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\SchemaObjectProperty', 'json', $context));
+                $object->setObjectProperty($this->denormalizer->denormalize($data['objectProperty'], \Jane\Component\OpenApi3\Tests\Expected\Model\SchemaObjectProperty::class, 'json', $context));
                 unset($data['objectProperty']);
             }
             if (\array_key_exists('objectRefProperty', $data)) {
-                $object->setObjectRefProperty($this->denormalizer->denormalize($data['objectRefProperty'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Schema', 'json', $context));
+                $object->setObjectRefProperty($this->denormalizer->denormalize($data['objectRefProperty'], \Jane\Component\OpenApi3\Tests\Expected\Model\Schema::class, 'json', $context));
                 unset($data['objectRefProperty']);
             }
             foreach ($data as $key_1 => $value_2) {
@@ -228,7 +228,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['stringProperty'] = $object->getStringProperty();
             }
             if ($object->isInitialized('dateProperty') && null !== $object->getDateProperty()) {
-                $data['dateProperty'] = $object->getDateProperty()->format('Y-m-d\\TH:i:sP');
+                $data['dateProperty'] = $object->getDateProperty()->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('integerProperty') && null !== $object->getIntegerProperty()) {
                 $data['integerProperty'] = $object->getIntegerProperty();
@@ -263,11 +263,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Schema' => true];
+            return [\Jane\Component\OpenApi3\Tests\Expected\Model\Schema::class => true];
         }
-        public function hasCacheableSupportsMethod() : bool
+        public function hasCacheableSupportsMethod(): bool
         {
             return true;
         }

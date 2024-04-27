@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'PicturePark\\API\\Model\\PermissionSetUpdateRequestOfMetadataRight';
+            return $type === \PicturePark\API\Model\PermissionSetUpdateRequestOfMetadataRight::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'PicturePark\\API\\Model\\PermissionSetUpdateRequestOfMetadataRight';
+            return is_object($data) && get_class($data) === 'PicturePark\API\Model\PermissionSetUpdateRequestOfMetadataRight';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -46,7 +46,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('userRolesRights', $data) && $data['userRolesRights'] !== null) {
                 $values = [];
                 foreach ($data['userRolesRights'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'PicturePark\\API\\Model\\UserRoleRightsOfMetadataRight', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \PicturePark\API\Model\UserRoleRightsOfMetadataRight::class, 'json', $context);
                 }
                 $object->setUserRolesRights($values);
             }
@@ -56,7 +56,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('userRolesPermissionSetRights', $data) && $data['userRolesPermissionSetRights'] !== null) {
                 $values_1 = [];
                 foreach ($data['userRolesPermissionSetRights'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'PicturePark\\API\\Model\\UserRoleRightsOfPermissionSetRight', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \PicturePark\API\Model\UserRoleRightsOfPermissionSetRight::class, 'json', $context);
                 }
                 $object->setUserRolesPermissionSetRights($values_1);
             }
@@ -65,7 +65,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             $data['names'] = $object->getNames();
@@ -85,9 +85,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['PicturePark\\API\\Model\\PermissionSetUpdateRequestOfMetadataRight' => false];
+            return [\PicturePark\API\Model\PermissionSetUpdateRequestOfMetadataRight::class => false];
         }
     }
 } else {
@@ -97,13 +97,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'PicturePark\\API\\Model\\PermissionSetUpdateRequestOfMetadataRight';
+            return $type === \PicturePark\API\Model\PermissionSetUpdateRequestOfMetadataRight::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'PicturePark\\API\\Model\\PermissionSetUpdateRequestOfMetadataRight';
+            return is_object($data) && get_class($data) === 'PicturePark\API\Model\PermissionSetUpdateRequestOfMetadataRight';
         }
         /**
          * @return mixed
@@ -126,7 +126,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('userRolesRights', $data) && $data['userRolesRights'] !== null) {
                 $values = [];
                 foreach ($data['userRolesRights'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'PicturePark\\API\\Model\\UserRoleRightsOfMetadataRight', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \PicturePark\API\Model\UserRoleRightsOfMetadataRight::class, 'json', $context);
                 }
                 $object->setUserRolesRights($values);
             }
@@ -136,7 +136,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('userRolesPermissionSetRights', $data) && $data['userRolesPermissionSetRights'] !== null) {
                 $values_1 = [];
                 foreach ($data['userRolesPermissionSetRights'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'PicturePark\\API\\Model\\UserRoleRightsOfPermissionSetRight', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \PicturePark\API\Model\UserRoleRightsOfPermissionSetRight::class, 'json', $context);
                 }
                 $object->setUserRolesPermissionSetRights($values_1);
             }
@@ -168,9 +168,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['PicturePark\\API\\Model\\PermissionSetUpdateRequestOfMetadataRight' => false];
+            return [\PicturePark\API\Model\PermissionSetUpdateRequestOfMetadataRight::class => false];
         }
     }
 }

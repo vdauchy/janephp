@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Docker\\Api\\Model\\Plugin';
+            return $type === \Docker\Api\Model\Plugin::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Docker\\Api\\Model\\Plugin';
+            return is_object($data) && get_class($data) === 'Docker\Api\Model\Plugin';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -53,17 +53,17 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setEnabled($data['Enabled']);
             }
             if (\array_key_exists('Settings', $data)) {
-                $object->setSettings($this->denormalizer->denormalize($data['Settings'], 'Docker\\Api\\Model\\PluginSettings', 'json', $context));
+                $object->setSettings($this->denormalizer->denormalize($data['Settings'], \Docker\Api\Model\PluginSettings::class, 'json', $context));
             }
             if (\array_key_exists('PluginReference', $data)) {
                 $object->setPluginReference($data['PluginReference']);
             }
             if (\array_key_exists('Config', $data)) {
-                $object->setConfig($this->denormalizer->denormalize($data['Config'], 'Docker\\Api\\Model\\PluginConfig', 'json', $context));
+                $object->setConfig($this->denormalizer->denormalize($data['Config'], \Docker\Api\Model\PluginConfig::class, 'json', $context));
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('id') && null !== $object->getId()) {
@@ -81,9 +81,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Docker\\Api\\Model\\Plugin' => false];
+            return [\Docker\Api\Model\Plugin::class => false];
         }
     }
 } else {
@@ -93,13 +93,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Docker\\Api\\Model\\Plugin';
+            return $type === \Docker\Api\Model\Plugin::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Docker\\Api\\Model\\Plugin';
+            return is_object($data) && get_class($data) === 'Docker\Api\Model\Plugin';
         }
         /**
          * @return mixed
@@ -129,13 +129,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setEnabled($data['Enabled']);
             }
             if (\array_key_exists('Settings', $data)) {
-                $object->setSettings($this->denormalizer->denormalize($data['Settings'], 'Docker\\Api\\Model\\PluginSettings', 'json', $context));
+                $object->setSettings($this->denormalizer->denormalize($data['Settings'], \Docker\Api\Model\PluginSettings::class, 'json', $context));
             }
             if (\array_key_exists('PluginReference', $data)) {
                 $object->setPluginReference($data['PluginReference']);
             }
             if (\array_key_exists('Config', $data)) {
-                $object->setConfig($this->denormalizer->denormalize($data['Config'], 'Docker\\Api\\Model\\PluginConfig', 'json', $context));
+                $object->setConfig($this->denormalizer->denormalize($data['Config'], \Docker\Api\Model\PluginConfig::class, 'json', $context));
             }
             return $object;
         }
@@ -160,9 +160,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Docker\\Api\\Model\\Plugin' => false];
+            return [\Docker\Api\Model\Plugin::class => false];
         }
     }
 }

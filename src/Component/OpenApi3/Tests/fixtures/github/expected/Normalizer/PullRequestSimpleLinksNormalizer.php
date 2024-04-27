@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\PullRequestSimpleLinks';
+            return $type === \Github\Model\PullRequestSimpleLinks::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\PullRequestSimpleLinks';
+            return is_object($data) && get_class($data) === 'Github\Model\PullRequestSimpleLinks';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -44,35 +44,35 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('comments', $data)) {
-                $object->setComments($this->denormalizer->denormalize($data['comments'], 'Github\\Model\\Link', 'json', $context));
+                $object->setComments($this->denormalizer->denormalize($data['comments'], \Github\Model\Link::class, 'json', $context));
                 unset($data['comments']);
             }
             if (\array_key_exists('commits', $data)) {
-                $object->setCommits($this->denormalizer->denormalize($data['commits'], 'Github\\Model\\Link', 'json', $context));
+                $object->setCommits($this->denormalizer->denormalize($data['commits'], \Github\Model\Link::class, 'json', $context));
                 unset($data['commits']);
             }
             if (\array_key_exists('statuses', $data)) {
-                $object->setStatuses($this->denormalizer->denormalize($data['statuses'], 'Github\\Model\\Link', 'json', $context));
+                $object->setStatuses($this->denormalizer->denormalize($data['statuses'], \Github\Model\Link::class, 'json', $context));
                 unset($data['statuses']);
             }
             if (\array_key_exists('html', $data)) {
-                $object->setHtml($this->denormalizer->denormalize($data['html'], 'Github\\Model\\Link', 'json', $context));
+                $object->setHtml($this->denormalizer->denormalize($data['html'], \Github\Model\Link::class, 'json', $context));
                 unset($data['html']);
             }
             if (\array_key_exists('issue', $data)) {
-                $object->setIssue($this->denormalizer->denormalize($data['issue'], 'Github\\Model\\Link', 'json', $context));
+                $object->setIssue($this->denormalizer->denormalize($data['issue'], \Github\Model\Link::class, 'json', $context));
                 unset($data['issue']);
             }
             if (\array_key_exists('review_comments', $data)) {
-                $object->setReviewComments($this->denormalizer->denormalize($data['review_comments'], 'Github\\Model\\Link', 'json', $context));
+                $object->setReviewComments($this->denormalizer->denormalize($data['review_comments'], \Github\Model\Link::class, 'json', $context));
                 unset($data['review_comments']);
             }
             if (\array_key_exists('review_comment', $data)) {
-                $object->setReviewComment($this->denormalizer->denormalize($data['review_comment'], 'Github\\Model\\Link', 'json', $context));
+                $object->setReviewComment($this->denormalizer->denormalize($data['review_comment'], \Github\Model\Link::class, 'json', $context));
                 unset($data['review_comment']);
             }
             if (\array_key_exists('self', $data)) {
-                $object->setSelf($this->denormalizer->denormalize($data['self'], 'Github\\Model\\Link', 'json', $context));
+                $object->setSelf($this->denormalizer->denormalize($data['self'], \Github\Model\Link::class, 'json', $context));
                 unset($data['self']);
             }
             foreach ($data as $key => $value) {
@@ -82,7 +82,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             $data['comments'] = $this->normalizer->normalize($object->getComments(), 'json', $context);
@@ -103,9 +103,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\PullRequestSimpleLinks' => false];
+            return [\Github\Model\PullRequestSimpleLinks::class => false];
         }
     }
 } else {
@@ -115,13 +115,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\PullRequestSimpleLinks';
+            return $type === \Github\Model\PullRequestSimpleLinks::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\PullRequestSimpleLinks';
+            return is_object($data) && get_class($data) === 'Github\Model\PullRequestSimpleLinks';
         }
         /**
          * @return mixed
@@ -142,35 +142,35 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('comments', $data)) {
-                $object->setComments($this->denormalizer->denormalize($data['comments'], 'Github\\Model\\Link', 'json', $context));
+                $object->setComments($this->denormalizer->denormalize($data['comments'], \Github\Model\Link::class, 'json', $context));
                 unset($data['comments']);
             }
             if (\array_key_exists('commits', $data)) {
-                $object->setCommits($this->denormalizer->denormalize($data['commits'], 'Github\\Model\\Link', 'json', $context));
+                $object->setCommits($this->denormalizer->denormalize($data['commits'], \Github\Model\Link::class, 'json', $context));
                 unset($data['commits']);
             }
             if (\array_key_exists('statuses', $data)) {
-                $object->setStatuses($this->denormalizer->denormalize($data['statuses'], 'Github\\Model\\Link', 'json', $context));
+                $object->setStatuses($this->denormalizer->denormalize($data['statuses'], \Github\Model\Link::class, 'json', $context));
                 unset($data['statuses']);
             }
             if (\array_key_exists('html', $data)) {
-                $object->setHtml($this->denormalizer->denormalize($data['html'], 'Github\\Model\\Link', 'json', $context));
+                $object->setHtml($this->denormalizer->denormalize($data['html'], \Github\Model\Link::class, 'json', $context));
                 unset($data['html']);
             }
             if (\array_key_exists('issue', $data)) {
-                $object->setIssue($this->denormalizer->denormalize($data['issue'], 'Github\\Model\\Link', 'json', $context));
+                $object->setIssue($this->denormalizer->denormalize($data['issue'], \Github\Model\Link::class, 'json', $context));
                 unset($data['issue']);
             }
             if (\array_key_exists('review_comments', $data)) {
-                $object->setReviewComments($this->denormalizer->denormalize($data['review_comments'], 'Github\\Model\\Link', 'json', $context));
+                $object->setReviewComments($this->denormalizer->denormalize($data['review_comments'], \Github\Model\Link::class, 'json', $context));
                 unset($data['review_comments']);
             }
             if (\array_key_exists('review_comment', $data)) {
-                $object->setReviewComment($this->denormalizer->denormalize($data['review_comment'], 'Github\\Model\\Link', 'json', $context));
+                $object->setReviewComment($this->denormalizer->denormalize($data['review_comment'], \Github\Model\Link::class, 'json', $context));
                 unset($data['review_comment']);
             }
             if (\array_key_exists('self', $data)) {
-                $object->setSelf($this->denormalizer->denormalize($data['self'], 'Github\\Model\\Link', 'json', $context));
+                $object->setSelf($this->denormalizer->denormalize($data['self'], \Github\Model\Link::class, 'json', $context));
                 unset($data['self']);
             }
             foreach ($data as $key => $value) {
@@ -204,9 +204,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\PullRequestSimpleLinks' => false];
+            return [\Github\Model\PullRequestSimpleLinks::class => false];
         }
     }
 }

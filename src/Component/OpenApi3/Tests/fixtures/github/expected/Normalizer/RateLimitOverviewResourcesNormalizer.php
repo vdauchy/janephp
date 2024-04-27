@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\RateLimitOverviewResources';
+            return $type === \Github\Model\RateLimitOverviewResources::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\RateLimitOverviewResources';
+            return is_object($data) && get_class($data) === 'Github\Model\RateLimitOverviewResources';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -44,23 +44,23 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('core', $data)) {
-                $object->setCore($this->denormalizer->denormalize($data['core'], 'Github\\Model\\RateLimit', 'json', $context));
+                $object->setCore($this->denormalizer->denormalize($data['core'], \Github\Model\RateLimit::class, 'json', $context));
                 unset($data['core']);
             }
             if (\array_key_exists('graphql', $data)) {
-                $object->setGraphql($this->denormalizer->denormalize($data['graphql'], 'Github\\Model\\RateLimit', 'json', $context));
+                $object->setGraphql($this->denormalizer->denormalize($data['graphql'], \Github\Model\RateLimit::class, 'json', $context));
                 unset($data['graphql']);
             }
             if (\array_key_exists('search', $data)) {
-                $object->setSearch($this->denormalizer->denormalize($data['search'], 'Github\\Model\\RateLimit', 'json', $context));
+                $object->setSearch($this->denormalizer->denormalize($data['search'], \Github\Model\RateLimit::class, 'json', $context));
                 unset($data['search']);
             }
             if (\array_key_exists('source_import', $data)) {
-                $object->setSourceImport($this->denormalizer->denormalize($data['source_import'], 'Github\\Model\\RateLimit', 'json', $context));
+                $object->setSourceImport($this->denormalizer->denormalize($data['source_import'], \Github\Model\RateLimit::class, 'json', $context));
                 unset($data['source_import']);
             }
             if (\array_key_exists('integration_manifest', $data)) {
-                $object->setIntegrationManifest($this->denormalizer->denormalize($data['integration_manifest'], 'Github\\Model\\RateLimit', 'json', $context));
+                $object->setIntegrationManifest($this->denormalizer->denormalize($data['integration_manifest'], \Github\Model\RateLimit::class, 'json', $context));
                 unset($data['integration_manifest']);
             }
             foreach ($data as $key => $value) {
@@ -70,7 +70,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             $data['core'] = $this->normalizer->normalize($object->getCore(), 'json', $context);
@@ -94,9 +94,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\RateLimitOverviewResources' => false];
+            return [\Github\Model\RateLimitOverviewResources::class => false];
         }
     }
 } else {
@@ -106,13 +106,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\RateLimitOverviewResources';
+            return $type === \Github\Model\RateLimitOverviewResources::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\RateLimitOverviewResources';
+            return is_object($data) && get_class($data) === 'Github\Model\RateLimitOverviewResources';
         }
         /**
          * @return mixed
@@ -133,23 +133,23 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('core', $data)) {
-                $object->setCore($this->denormalizer->denormalize($data['core'], 'Github\\Model\\RateLimit', 'json', $context));
+                $object->setCore($this->denormalizer->denormalize($data['core'], \Github\Model\RateLimit::class, 'json', $context));
                 unset($data['core']);
             }
             if (\array_key_exists('graphql', $data)) {
-                $object->setGraphql($this->denormalizer->denormalize($data['graphql'], 'Github\\Model\\RateLimit', 'json', $context));
+                $object->setGraphql($this->denormalizer->denormalize($data['graphql'], \Github\Model\RateLimit::class, 'json', $context));
                 unset($data['graphql']);
             }
             if (\array_key_exists('search', $data)) {
-                $object->setSearch($this->denormalizer->denormalize($data['search'], 'Github\\Model\\RateLimit', 'json', $context));
+                $object->setSearch($this->denormalizer->denormalize($data['search'], \Github\Model\RateLimit::class, 'json', $context));
                 unset($data['search']);
             }
             if (\array_key_exists('source_import', $data)) {
-                $object->setSourceImport($this->denormalizer->denormalize($data['source_import'], 'Github\\Model\\RateLimit', 'json', $context));
+                $object->setSourceImport($this->denormalizer->denormalize($data['source_import'], \Github\Model\RateLimit::class, 'json', $context));
                 unset($data['source_import']);
             }
             if (\array_key_exists('integration_manifest', $data)) {
-                $object->setIntegrationManifest($this->denormalizer->denormalize($data['integration_manifest'], 'Github\\Model\\RateLimit', 'json', $context));
+                $object->setIntegrationManifest($this->denormalizer->denormalize($data['integration_manifest'], \Github\Model\RateLimit::class, 'json', $context));
                 unset($data['integration_manifest']);
             }
             foreach ($data as $key => $value) {
@@ -186,9 +186,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\RateLimitOverviewResources' => false];
+            return [\Github\Model\RateLimitOverviewResources::class => false];
         }
     }
 }

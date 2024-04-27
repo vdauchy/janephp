@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'PicturePark\\API\\Model\\VideoMetadata';
+            return $type === \PicturePark\API\Model\VideoMetadata::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'PicturePark\\API\\Model\\VideoMetadata';
+            return is_object($data) && get_class($data) === 'PicturePark\API\Model\VideoMetadata';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -149,7 +149,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('videoStreams', $data) && $data['videoStreams'] !== null) {
                 $values = [];
                 foreach ($data['videoStreams'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'PicturePark\\API\\Model\\VideoStream', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \PicturePark\API\Model\VideoStream::class, 'json', $context);
                 }
                 $object->setVideoStreams($values);
                 unset($data['videoStreams']);
@@ -160,7 +160,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('audioStreams', $data) && $data['audioStreams'] !== null) {
                 $values_1 = [];
                 foreach ($data['audioStreams'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'PicturePark\\API\\Model\\AudioStream', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \PicturePark\API\Model\AudioStream::class, 'json', $context);
                 }
                 $object->setAudioStreams($values_1);
                 unset($data['audioStreams']);
@@ -175,7 +175,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('names') && null !== $object->getNames()) {
@@ -247,9 +247,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['PicturePark\\API\\Model\\VideoMetadata' => false];
+            return [\PicturePark\API\Model\VideoMetadata::class => false];
         }
     }
 } else {
@@ -259,13 +259,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'PicturePark\\API\\Model\\VideoMetadata';
+            return $type === \PicturePark\API\Model\VideoMetadata::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'PicturePark\\API\\Model\\VideoMetadata';
+            return is_object($data) && get_class($data) === 'PicturePark\API\Model\VideoMetadata';
         }
         /**
          * @return mixed
@@ -391,7 +391,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('videoStreams', $data) && $data['videoStreams'] !== null) {
                 $values = [];
                 foreach ($data['videoStreams'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'PicturePark\\API\\Model\\VideoStream', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \PicturePark\API\Model\VideoStream::class, 'json', $context);
                 }
                 $object->setVideoStreams($values);
                 unset($data['videoStreams']);
@@ -402,7 +402,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('audioStreams', $data) && $data['audioStreams'] !== null) {
                 $values_1 = [];
                 foreach ($data['audioStreams'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'PicturePark\\API\\Model\\AudioStream', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \PicturePark\API\Model\AudioStream::class, 'json', $context);
                 }
                 $object->setAudioStreams($values_1);
                 unset($data['audioStreams']);
@@ -492,9 +492,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['PicturePark\\API\\Model\\VideoMetadata' => false];
+            return [\PicturePark\API\Model\VideoMetadata::class => false];
         }
     }
 }

@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\UserMarketplacePurchase';
+            return $type === \Github\Model\UserMarketplacePurchase::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\UserMarketplacePurchase';
+            return is_object($data) && get_class($data) === 'Github\Model\UserMarketplacePurchase';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -48,7 +48,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['billing_cycle']);
             }
             if (\array_key_exists('next_billing_date', $data) && $data['next_billing_date'] !== null) {
-                $object->setNextBillingDate(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['next_billing_date']));
+                $object->setNextBillingDate(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['next_billing_date']));
                 unset($data['next_billing_date']);
             }
             elseif (\array_key_exists('next_billing_date', $data) && $data['next_billing_date'] === null) {
@@ -66,25 +66,25 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['on_free_trial']);
             }
             if (\array_key_exists('free_trial_ends_on', $data) && $data['free_trial_ends_on'] !== null) {
-                $object->setFreeTrialEndsOn(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['free_trial_ends_on']));
+                $object->setFreeTrialEndsOn(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['free_trial_ends_on']));
                 unset($data['free_trial_ends_on']);
             }
             elseif (\array_key_exists('free_trial_ends_on', $data) && $data['free_trial_ends_on'] === null) {
                 $object->setFreeTrialEndsOn(null);
             }
             if (\array_key_exists('updated_at', $data) && $data['updated_at'] !== null) {
-                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['updated_at']));
+                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['updated_at']));
                 unset($data['updated_at']);
             }
             elseif (\array_key_exists('updated_at', $data) && $data['updated_at'] === null) {
                 $object->setUpdatedAt(null);
             }
             if (\array_key_exists('account', $data)) {
-                $object->setAccount($this->denormalizer->denormalize($data['account'], 'Github\\Model\\MarketplaceAccount', 'json', $context));
+                $object->setAccount($this->denormalizer->denormalize($data['account'], \Github\Model\MarketplaceAccount::class, 'json', $context));
                 unset($data['account']);
             }
             if (\array_key_exists('plan', $data)) {
-                $object->setPlan($this->denormalizer->denormalize($data['plan'], 'Github\\Model\\MarketplaceListingPlan', 'json', $context));
+                $object->setPlan($this->denormalizer->denormalize($data['plan'], \Github\Model\MarketplaceListingPlan::class, 'json', $context));
                 unset($data['plan']);
             }
             foreach ($data as $key => $value) {
@@ -94,15 +94,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             $data['billing_cycle'] = $object->getBillingCycle();
-            $data['next_billing_date'] = $object->getNextBillingDate()->format('Y-m-d\\TH:i:sP');
+            $data['next_billing_date'] = $object->getNextBillingDate()->format('Y-m-d\TH:i:sP');
             $data['unit_count'] = $object->getUnitCount();
             $data['on_free_trial'] = $object->getOnFreeTrial();
-            $data['free_trial_ends_on'] = $object->getFreeTrialEndsOn()->format('Y-m-d\\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\\TH:i:sP');
+            $data['free_trial_ends_on'] = $object->getFreeTrialEndsOn()->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
             $data['account'] = $this->normalizer->normalize($object->getAccount(), 'json', $context);
             $data['plan'] = $this->normalizer->normalize($object->getPlan(), 'json', $context);
             foreach ($object as $key => $value) {
@@ -115,9 +115,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\UserMarketplacePurchase' => false];
+            return [\Github\Model\UserMarketplacePurchase::class => false];
         }
     }
 } else {
@@ -127,13 +127,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\UserMarketplacePurchase';
+            return $type === \Github\Model\UserMarketplacePurchase::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\UserMarketplacePurchase';
+            return is_object($data) && get_class($data) === 'Github\Model\UserMarketplacePurchase';
         }
         /**
          * @return mixed
@@ -158,7 +158,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['billing_cycle']);
             }
             if (\array_key_exists('next_billing_date', $data) && $data['next_billing_date'] !== null) {
-                $object->setNextBillingDate(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['next_billing_date']));
+                $object->setNextBillingDate(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['next_billing_date']));
                 unset($data['next_billing_date']);
             }
             elseif (\array_key_exists('next_billing_date', $data) && $data['next_billing_date'] === null) {
@@ -176,25 +176,25 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['on_free_trial']);
             }
             if (\array_key_exists('free_trial_ends_on', $data) && $data['free_trial_ends_on'] !== null) {
-                $object->setFreeTrialEndsOn(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['free_trial_ends_on']));
+                $object->setFreeTrialEndsOn(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['free_trial_ends_on']));
                 unset($data['free_trial_ends_on']);
             }
             elseif (\array_key_exists('free_trial_ends_on', $data) && $data['free_trial_ends_on'] === null) {
                 $object->setFreeTrialEndsOn(null);
             }
             if (\array_key_exists('updated_at', $data) && $data['updated_at'] !== null) {
-                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['updated_at']));
+                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['updated_at']));
                 unset($data['updated_at']);
             }
             elseif (\array_key_exists('updated_at', $data) && $data['updated_at'] === null) {
                 $object->setUpdatedAt(null);
             }
             if (\array_key_exists('account', $data)) {
-                $object->setAccount($this->denormalizer->denormalize($data['account'], 'Github\\Model\\MarketplaceAccount', 'json', $context));
+                $object->setAccount($this->denormalizer->denormalize($data['account'], \Github\Model\MarketplaceAccount::class, 'json', $context));
                 unset($data['account']);
             }
             if (\array_key_exists('plan', $data)) {
-                $object->setPlan($this->denormalizer->denormalize($data['plan'], 'Github\\Model\\MarketplaceListingPlan', 'json', $context));
+                $object->setPlan($this->denormalizer->denormalize($data['plan'], \Github\Model\MarketplaceListingPlan::class, 'json', $context));
                 unset($data['plan']);
             }
             foreach ($data as $key => $value) {
@@ -211,11 +211,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         {
             $data = [];
             $data['billing_cycle'] = $object->getBillingCycle();
-            $data['next_billing_date'] = $object->getNextBillingDate()->format('Y-m-d\\TH:i:sP');
+            $data['next_billing_date'] = $object->getNextBillingDate()->format('Y-m-d\TH:i:sP');
             $data['unit_count'] = $object->getUnitCount();
             $data['on_free_trial'] = $object->getOnFreeTrial();
-            $data['free_trial_ends_on'] = $object->getFreeTrialEndsOn()->format('Y-m-d\\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\\TH:i:sP');
+            $data['free_trial_ends_on'] = $object->getFreeTrialEndsOn()->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
             $data['account'] = $this->normalizer->normalize($object->getAccount(), 'json', $context);
             $data['plan'] = $this->normalizer->normalize($object->getPlan(), 'json', $context);
             foreach ($object as $key => $value) {
@@ -228,9 +228,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\UserMarketplacePurchase' => false];
+            return [\Github\Model\UserMarketplacePurchase::class => false];
         }
     }
 }

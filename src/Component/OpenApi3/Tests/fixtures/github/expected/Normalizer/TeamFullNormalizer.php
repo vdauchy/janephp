@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\TeamFull';
+            return $type === \Github\Model\TeamFull::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\TeamFull';
+            return is_object($data) && get_class($data) === 'Github\Model\TeamFull';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -91,7 +91,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['repositories_url']);
             }
             if (\array_key_exists('parent', $data) && $data['parent'] !== null) {
-                $object->setParent($this->denormalizer->denormalize($data['parent'], 'Github\\Model\\TeamFullParent', 'json', $context));
+                $object->setParent($this->denormalizer->denormalize($data['parent'], \Github\Model\TeamFullParent::class, 'json', $context));
                 unset($data['parent']);
             }
             elseif (\array_key_exists('parent', $data) && $data['parent'] === null) {
@@ -106,15 +106,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['repos_count']);
             }
             if (\array_key_exists('created_at', $data)) {
-                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['created_at']));
+                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['created_at']));
                 unset($data['created_at']);
             }
             if (\array_key_exists('updated_at', $data)) {
-                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['updated_at']));
+                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['updated_at']));
                 unset($data['updated_at']);
             }
             if (\array_key_exists('organization', $data)) {
-                $object->setOrganization($this->denormalizer->denormalize($data['organization'], 'Github\\Model\\Organization', 'json', $context));
+                $object->setOrganization($this->denormalizer->denormalize($data['organization'], \Github\Model\Organization::class, 'json', $context));
                 unset($data['organization']);
             }
             if (\array_key_exists('ldap_dn', $data)) {
@@ -128,7 +128,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             $data['id'] = $object->getId();
@@ -149,8 +149,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             $data['members_count'] = $object->getMembersCount();
             $data['repos_count'] = $object->getReposCount();
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
             $data['organization'] = $this->normalizer->normalize($object->getOrganization(), 'json', $context);
             if ($object->isInitialized('ldapDn') && null !== $object->getLdapDn()) {
                 $data['ldap_dn'] = $object->getLdapDn();
@@ -165,9 +165,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\TeamFull' => false];
+            return [\Github\Model\TeamFull::class => false];
         }
     }
 } else {
@@ -177,13 +177,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\TeamFull';
+            return $type === \Github\Model\TeamFull::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\TeamFull';
+            return is_object($data) && get_class($data) === 'Github\Model\TeamFull';
         }
         /**
          * @return mixed
@@ -251,7 +251,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['repositories_url']);
             }
             if (\array_key_exists('parent', $data) && $data['parent'] !== null) {
-                $object->setParent($this->denormalizer->denormalize($data['parent'], 'Github\\Model\\TeamFullParent', 'json', $context));
+                $object->setParent($this->denormalizer->denormalize($data['parent'], \Github\Model\TeamFullParent::class, 'json', $context));
                 unset($data['parent']);
             }
             elseif (\array_key_exists('parent', $data) && $data['parent'] === null) {
@@ -266,15 +266,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['repos_count']);
             }
             if (\array_key_exists('created_at', $data)) {
-                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['created_at']));
+                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['created_at']));
                 unset($data['created_at']);
             }
             if (\array_key_exists('updated_at', $data)) {
-                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['updated_at']));
+                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['updated_at']));
                 unset($data['updated_at']);
             }
             if (\array_key_exists('organization', $data)) {
-                $object->setOrganization($this->denormalizer->denormalize($data['organization'], 'Github\\Model\\Organization', 'json', $context));
+                $object->setOrganization($this->denormalizer->denormalize($data['organization'], \Github\Model\Organization::class, 'json', $context));
                 unset($data['organization']);
             }
             if (\array_key_exists('ldap_dn', $data)) {
@@ -312,8 +312,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             $data['members_count'] = $object->getMembersCount();
             $data['repos_count'] = $object->getReposCount();
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
             $data['organization'] = $this->normalizer->normalize($object->getOrganization(), 'json', $context);
             if ($object->isInitialized('ldapDn') && null !== $object->getLdapDn()) {
                 $data['ldap_dn'] = $object->getLdapDn();
@@ -328,9 +328,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\TeamFull' => false];
+            return [\Github\Model\TeamFull::class => false];
         }
     }
 }

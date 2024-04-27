@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\Deployment';
+            return $type === \Github\Model\Deployment::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\Deployment';
+            return is_object($data) && get_class($data) === 'Github\Model\Deployment';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -68,7 +68,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['task']);
             }
             if (\array_key_exists('payload', $data)) {
-                $object->setPayload($this->denormalizer->denormalize($data['payload'], 'Github\\Model\\DeploymentPayload', 'json', $context));
+                $object->setPayload($this->denormalizer->denormalize($data['payload'], \Github\Model\DeploymentPayload::class, 'json', $context));
                 unset($data['payload']);
             }
             if (\array_key_exists('original_environment', $data)) {
@@ -87,18 +87,18 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setDescription(null);
             }
             if (\array_key_exists('creator', $data) && $data['creator'] !== null) {
-                $object->setCreator($this->denormalizer->denormalize($data['creator'], 'Github\\Model\\DeploymentCreator', 'json', $context));
+                $object->setCreator($this->denormalizer->denormalize($data['creator'], \Github\Model\DeploymentCreator::class, 'json', $context));
                 unset($data['creator']);
             }
             elseif (\array_key_exists('creator', $data) && $data['creator'] === null) {
                 $object->setCreator(null);
             }
             if (\array_key_exists('created_at', $data)) {
-                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['created_at']));
+                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['created_at']));
                 unset($data['created_at']);
             }
             if (\array_key_exists('updated_at', $data)) {
-                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['updated_at']));
+                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['updated_at']));
                 unset($data['updated_at']);
             }
             if (\array_key_exists('statuses_url', $data)) {
@@ -118,7 +118,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['production_environment']);
             }
             if (\array_key_exists('performed_via_github_app', $data) && $data['performed_via_github_app'] !== null) {
-                $object->setPerformedViaGithubApp($this->denormalizer->denormalize($data['performed_via_github_app'], 'Github\\Model\\DeploymentPerformedViaGithubApp', 'json', $context));
+                $object->setPerformedViaGithubApp($this->denormalizer->denormalize($data['performed_via_github_app'], \Github\Model\DeploymentPerformedViaGithubApp::class, 'json', $context));
                 unset($data['performed_via_github_app']);
             }
             elseif (\array_key_exists('performed_via_github_app', $data) && $data['performed_via_github_app'] === null) {
@@ -131,7 +131,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             $data['url'] = $object->getUrl();
@@ -147,8 +147,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['environment'] = $object->getEnvironment();
             $data['description'] = $object->getDescription();
             $data['creator'] = $this->normalizer->normalize($object->getCreator(), 'json', $context);
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
             $data['statuses_url'] = $object->getStatusesUrl();
             $data['repository_url'] = $object->getRepositoryUrl();
             if ($object->isInitialized('transientEnvironment') && null !== $object->getTransientEnvironment()) {
@@ -170,9 +170,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\Deployment' => false];
+            return [\Github\Model\Deployment::class => false];
         }
     }
 } else {
@@ -182,13 +182,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\Deployment';
+            return $type === \Github\Model\Deployment::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\Deployment';
+            return is_object($data) && get_class($data) === 'Github\Model\Deployment';
         }
         /**
          * @return mixed
@@ -233,7 +233,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['task']);
             }
             if (\array_key_exists('payload', $data)) {
-                $object->setPayload($this->denormalizer->denormalize($data['payload'], 'Github\\Model\\DeploymentPayload', 'json', $context));
+                $object->setPayload($this->denormalizer->denormalize($data['payload'], \Github\Model\DeploymentPayload::class, 'json', $context));
                 unset($data['payload']);
             }
             if (\array_key_exists('original_environment', $data)) {
@@ -252,18 +252,18 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setDescription(null);
             }
             if (\array_key_exists('creator', $data) && $data['creator'] !== null) {
-                $object->setCreator($this->denormalizer->denormalize($data['creator'], 'Github\\Model\\DeploymentCreator', 'json', $context));
+                $object->setCreator($this->denormalizer->denormalize($data['creator'], \Github\Model\DeploymentCreator::class, 'json', $context));
                 unset($data['creator']);
             }
             elseif (\array_key_exists('creator', $data) && $data['creator'] === null) {
                 $object->setCreator(null);
             }
             if (\array_key_exists('created_at', $data)) {
-                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['created_at']));
+                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['created_at']));
                 unset($data['created_at']);
             }
             if (\array_key_exists('updated_at', $data)) {
-                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['updated_at']));
+                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['updated_at']));
                 unset($data['updated_at']);
             }
             if (\array_key_exists('statuses_url', $data)) {
@@ -283,7 +283,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['production_environment']);
             }
             if (\array_key_exists('performed_via_github_app', $data) && $data['performed_via_github_app'] !== null) {
-                $object->setPerformedViaGithubApp($this->denormalizer->denormalize($data['performed_via_github_app'], 'Github\\Model\\DeploymentPerformedViaGithubApp', 'json', $context));
+                $object->setPerformedViaGithubApp($this->denormalizer->denormalize($data['performed_via_github_app'], \Github\Model\DeploymentPerformedViaGithubApp::class, 'json', $context));
                 unset($data['performed_via_github_app']);
             }
             elseif (\array_key_exists('performed_via_github_app', $data) && $data['performed_via_github_app'] === null) {
@@ -315,8 +315,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['environment'] = $object->getEnvironment();
             $data['description'] = $object->getDescription();
             $data['creator'] = $this->normalizer->normalize($object->getCreator(), 'json', $context);
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
             $data['statuses_url'] = $object->getStatusesUrl();
             $data['repository_url'] = $object->getRepositoryUrl();
             if ($object->isInitialized('transientEnvironment') && null !== $object->getTransientEnvironment()) {
@@ -338,9 +338,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\Deployment' => false];
+            return [\Github\Model\Deployment::class => false];
         }
     }
 }

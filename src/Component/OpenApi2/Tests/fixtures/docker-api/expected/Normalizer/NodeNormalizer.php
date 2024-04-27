@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Docker\\Api\\Model\\Node';
+            return $type === \Docker\Api\Model\Node::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Docker\\Api\\Model\\Node';
+            return is_object($data) && get_class($data) === 'Docker\Api\Model\Node';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -47,7 +47,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setID($data['ID']);
             }
             if (\array_key_exists('Version', $data)) {
-                $object->setVersion($this->denormalizer->denormalize($data['Version'], 'Docker\\Api\\Model\\ObjectVersion', 'json', $context));
+                $object->setVersion($this->denormalizer->denormalize($data['Version'], \Docker\Api\Model\ObjectVersion::class, 'json', $context));
             }
             if (\array_key_exists('CreatedAt', $data)) {
                 $object->setCreatedAt($data['CreatedAt']);
@@ -56,23 +56,23 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setUpdatedAt($data['UpdatedAt']);
             }
             if (\array_key_exists('Spec', $data)) {
-                $object->setSpec($this->denormalizer->denormalize($data['Spec'], 'Docker\\Api\\Model\\NodeSpec', 'json', $context));
+                $object->setSpec($this->denormalizer->denormalize($data['Spec'], \Docker\Api\Model\NodeSpec::class, 'json', $context));
             }
             if (\array_key_exists('Description', $data)) {
-                $object->setDescription($this->denormalizer->denormalize($data['Description'], 'Docker\\Api\\Model\\NodeDescription', 'json', $context));
+                $object->setDescription($this->denormalizer->denormalize($data['Description'], \Docker\Api\Model\NodeDescription::class, 'json', $context));
             }
             if (\array_key_exists('Status', $data)) {
-                $object->setStatus($this->denormalizer->denormalize($data['Status'], 'Docker\\Api\\Model\\NodeStatus', 'json', $context));
+                $object->setStatus($this->denormalizer->denormalize($data['Status'], \Docker\Api\Model\NodeStatus::class, 'json', $context));
             }
             if (\array_key_exists('ManagerStatus', $data) && $data['ManagerStatus'] !== null) {
-                $object->setManagerStatus($this->denormalizer->denormalize($data['ManagerStatus'], 'Docker\\Api\\Model\\ManagerStatus', 'json', $context));
+                $object->setManagerStatus($this->denormalizer->denormalize($data['ManagerStatus'], \Docker\Api\Model\ManagerStatus::class, 'json', $context));
             }
             elseif (\array_key_exists('ManagerStatus', $data) && $data['ManagerStatus'] === null) {
                 $object->setManagerStatus(null);
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('iD') && null !== $object->getID()) {
@@ -104,9 +104,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Docker\\Api\\Model\\Node' => false];
+            return [\Docker\Api\Model\Node::class => false];
         }
     }
 } else {
@@ -116,13 +116,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Docker\\Api\\Model\\Node';
+            return $type === \Docker\Api\Model\Node::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Docker\\Api\\Model\\Node';
+            return is_object($data) && get_class($data) === 'Docker\Api\Model\Node';
         }
         /**
          * @return mixed
@@ -146,7 +146,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setID($data['ID']);
             }
             if (\array_key_exists('Version', $data)) {
-                $object->setVersion($this->denormalizer->denormalize($data['Version'], 'Docker\\Api\\Model\\ObjectVersion', 'json', $context));
+                $object->setVersion($this->denormalizer->denormalize($data['Version'], \Docker\Api\Model\ObjectVersion::class, 'json', $context));
             }
             if (\array_key_exists('CreatedAt', $data)) {
                 $object->setCreatedAt($data['CreatedAt']);
@@ -155,16 +155,16 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setUpdatedAt($data['UpdatedAt']);
             }
             if (\array_key_exists('Spec', $data)) {
-                $object->setSpec($this->denormalizer->denormalize($data['Spec'], 'Docker\\Api\\Model\\NodeSpec', 'json', $context));
+                $object->setSpec($this->denormalizer->denormalize($data['Spec'], \Docker\Api\Model\NodeSpec::class, 'json', $context));
             }
             if (\array_key_exists('Description', $data)) {
-                $object->setDescription($this->denormalizer->denormalize($data['Description'], 'Docker\\Api\\Model\\NodeDescription', 'json', $context));
+                $object->setDescription($this->denormalizer->denormalize($data['Description'], \Docker\Api\Model\NodeDescription::class, 'json', $context));
             }
             if (\array_key_exists('Status', $data)) {
-                $object->setStatus($this->denormalizer->denormalize($data['Status'], 'Docker\\Api\\Model\\NodeStatus', 'json', $context));
+                $object->setStatus($this->denormalizer->denormalize($data['Status'], \Docker\Api\Model\NodeStatus::class, 'json', $context));
             }
             if (\array_key_exists('ManagerStatus', $data) && $data['ManagerStatus'] !== null) {
-                $object->setManagerStatus($this->denormalizer->denormalize($data['ManagerStatus'], 'Docker\\Api\\Model\\ManagerStatus', 'json', $context));
+                $object->setManagerStatus($this->denormalizer->denormalize($data['ManagerStatus'], \Docker\Api\Model\ManagerStatus::class, 'json', $context));
             }
             elseif (\array_key_exists('ManagerStatus', $data) && $data['ManagerStatus'] === null) {
                 $object->setManagerStatus(null);
@@ -206,9 +206,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Docker\\Api\\Model\\Node' => false];
+            return [\Docker\Api\Model\Node::class => false];
         }
     }
 }

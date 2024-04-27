@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\InstallationToken';
+            return $type === \Github\Model\InstallationToken::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\InstallationToken';
+            return is_object($data) && get_class($data) === 'Github\Model\InstallationToken';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -52,7 +52,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['expires_at']);
             }
             if (\array_key_exists('permissions', $data)) {
-                $object->setPermissions($this->denormalizer->denormalize($data['permissions'], 'Github\\Model\\InstallationTokenPermissions', 'json', $context));
+                $object->setPermissions($this->denormalizer->denormalize($data['permissions'], \Github\Model\InstallationTokenPermissions::class, 'json', $context));
                 unset($data['permissions']);
             }
             if (\array_key_exists('repository_selection', $data)) {
@@ -62,7 +62,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('repositories', $data)) {
                 $values = [];
                 foreach ($data['repositories'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\Repository', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\Repository::class, 'json', $context);
                 }
                 $object->setRepositories($values);
                 unset($data['repositories']);
@@ -78,7 +78,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('token') && null !== $object->getToken()) {
@@ -113,9 +113,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\InstallationToken' => false];
+            return [\Github\Model\InstallationToken::class => false];
         }
     }
 } else {
@@ -125,13 +125,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\InstallationToken';
+            return $type === \Github\Model\InstallationToken::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\InstallationToken';
+            return is_object($data) && get_class($data) === 'Github\Model\InstallationToken';
         }
         /**
          * @return mixed
@@ -160,7 +160,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['expires_at']);
             }
             if (\array_key_exists('permissions', $data)) {
-                $object->setPermissions($this->denormalizer->denormalize($data['permissions'], 'Github\\Model\\InstallationTokenPermissions', 'json', $context));
+                $object->setPermissions($this->denormalizer->denormalize($data['permissions'], \Github\Model\InstallationTokenPermissions::class, 'json', $context));
                 unset($data['permissions']);
             }
             if (\array_key_exists('repository_selection', $data)) {
@@ -170,7 +170,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('repositories', $data)) {
                 $values = [];
                 foreach ($data['repositories'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\Repository', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\Repository::class, 'json', $context);
                 }
                 $object->setRepositories($values);
                 unset($data['repositories']);
@@ -224,9 +224,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\InstallationToken' => false];
+            return [\Github\Model\InstallationToken::class => false];
         }
     }
 }

@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Docker\\Api\\Model\\NetworkSettings';
+            return $type === \Docker\Api\Model\NetworkSettings::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Docker\\Api\\Model\\NetworkSettings';
+            return is_object($data) && get_class($data) === 'Docker\Api\Model\NetworkSettings';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -63,7 +63,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 foreach ($data['Ports'] as $key => $value) {
                     $values_1 = [];
                     foreach ($value as $value_1) {
-                        $values_1[] = $this->denormalizer->denormalize($value_1, 'Docker\\Api\\Model\\PortBinding', 'json', $context);
+                        $values_1[] = $this->denormalizer->denormalize($value_1, \Docker\Api\Model\PortBinding::class, 'json', $context);
                     }
                     $values[$key] = $values_1;
                 }
@@ -75,7 +75,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('SecondaryIPAddresses', $data) && $data['SecondaryIPAddresses'] !== null) {
                 $values_2 = [];
                 foreach ($data['SecondaryIPAddresses'] as $value_2) {
-                    $values_2[] = $this->denormalizer->denormalize($value_2, 'Docker\\Api\\Model\\Address', 'json', $context);
+                    $values_2[] = $this->denormalizer->denormalize($value_2, \Docker\Api\Model\Address::class, 'json', $context);
                 }
                 $object->setSecondaryIPAddresses($values_2);
             }
@@ -85,7 +85,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('SecondaryIPv6Addresses', $data) && $data['SecondaryIPv6Addresses'] !== null) {
                 $values_3 = [];
                 foreach ($data['SecondaryIPv6Addresses'] as $value_3) {
-                    $values_3[] = $this->denormalizer->denormalize($value_3, 'Docker\\Api\\Model\\Address', 'json', $context);
+                    $values_3[] = $this->denormalizer->denormalize($value_3, \Docker\Api\Model\Address::class, 'json', $context);
                 }
                 $object->setSecondaryIPv6Addresses($values_3);
             }
@@ -119,13 +119,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('Networks', $data)) {
                 $values_4 = new \ArrayObject([], \ArrayObject::ARRAY_AS_PROPS);
                 foreach ($data['Networks'] as $key_1 => $value_4) {
-                    $values_4[$key_1] = $this->denormalizer->denormalize($value_4, 'Docker\\Api\\Model\\EndpointSettings', 'json', $context);
+                    $values_4[$key_1] = $this->denormalizer->denormalize($value_4, \Docker\Api\Model\EndpointSettings::class, 'json', $context);
                 }
                 $object->setNetworks($values_4);
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('bridge') && null !== $object->getBridge()) {
@@ -207,9 +207,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Docker\\Api\\Model\\NetworkSettings' => false];
+            return [\Docker\Api\Model\NetworkSettings::class => false];
         }
     }
 } else {
@@ -219,13 +219,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Docker\\Api\\Model\\NetworkSettings';
+            return $type === \Docker\Api\Model\NetworkSettings::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Docker\\Api\\Model\\NetworkSettings';
+            return is_object($data) && get_class($data) === 'Docker\Api\Model\NetworkSettings';
         }
         /**
          * @return mixed
@@ -265,7 +265,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 foreach ($data['Ports'] as $key => $value) {
                     $values_1 = [];
                     foreach ($value as $value_1) {
-                        $values_1[] = $this->denormalizer->denormalize($value_1, 'Docker\\Api\\Model\\PortBinding', 'json', $context);
+                        $values_1[] = $this->denormalizer->denormalize($value_1, \Docker\Api\Model\PortBinding::class, 'json', $context);
                     }
                     $values[$key] = $values_1;
                 }
@@ -277,7 +277,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('SecondaryIPAddresses', $data) && $data['SecondaryIPAddresses'] !== null) {
                 $values_2 = [];
                 foreach ($data['SecondaryIPAddresses'] as $value_2) {
-                    $values_2[] = $this->denormalizer->denormalize($value_2, 'Docker\\Api\\Model\\Address', 'json', $context);
+                    $values_2[] = $this->denormalizer->denormalize($value_2, \Docker\Api\Model\Address::class, 'json', $context);
                 }
                 $object->setSecondaryIPAddresses($values_2);
             }
@@ -287,7 +287,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('SecondaryIPv6Addresses', $data) && $data['SecondaryIPv6Addresses'] !== null) {
                 $values_3 = [];
                 foreach ($data['SecondaryIPv6Addresses'] as $value_3) {
-                    $values_3[] = $this->denormalizer->denormalize($value_3, 'Docker\\Api\\Model\\Address', 'json', $context);
+                    $values_3[] = $this->denormalizer->denormalize($value_3, \Docker\Api\Model\Address::class, 'json', $context);
                 }
                 $object->setSecondaryIPv6Addresses($values_3);
             }
@@ -321,7 +321,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('Networks', $data)) {
                 $values_4 = new \ArrayObject([], \ArrayObject::ARRAY_AS_PROPS);
                 foreach ($data['Networks'] as $key_1 => $value_4) {
-                    $values_4[$key_1] = $this->denormalizer->denormalize($value_4, 'Docker\\Api\\Model\\EndpointSettings', 'json', $context);
+                    $values_4[$key_1] = $this->denormalizer->denormalize($value_4, \Docker\Api\Model\EndpointSettings::class, 'json', $context);
                 }
                 $object->setNetworks($values_4);
             }
@@ -412,9 +412,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Docker\\Api\\Model\\NetworkSettings' => false];
+            return [\Docker\Api\Model\NetworkSettings::class => false];
         }
     }
 }

@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\DetailedTweetFields';
+            return $type === \Jane\Component\OpenApi3\Tests\Expected\Model\DetailedTweetFields::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\DetailedTweetFields';
+            return is_object($data) && get_class($data) === 'Jane\Component\OpenApi3\Tests\Expected\Model\DetailedTweetFields';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -41,13 +41,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('stats', $data)) {
-                $object->setStats($this->denormalizer->denormalize($data['stats'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\DetailedTweetFieldsStats', 'json', $context));
+                $object->setStats($this->denormalizer->denormalize($data['stats'], \Jane\Component\OpenApi3\Tests\Expected\Model\DetailedTweetFieldsStats::class, 'json', $context));
                 unset($data['stats']);
             }
             if (\array_key_exists('context_annotation', $data)) {
                 $values = [];
                 foreach ($data['context_annotation'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\ContextAnnotation', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Jane\Component\OpenApi3\Tests\Expected\Model\ContextAnnotation::class, 'json', $context);
                 }
                 $object->setContextAnnotation($values);
                 unset($data['context_annotation']);
@@ -71,7 +71,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             $data['stats'] = $this->normalizer->normalize($object->getStats(), 'json', $context);
@@ -96,9 +96,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\DetailedTweetFields' => false];
+            return [\Jane\Component\OpenApi3\Tests\Expected\Model\DetailedTweetFields::class => false];
         }
     }
 } else {
@@ -108,13 +108,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\DetailedTweetFields';
+            return $type === \Jane\Component\OpenApi3\Tests\Expected\Model\DetailedTweetFields::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\DetailedTweetFields';
+            return is_object($data) && get_class($data) === 'Jane\Component\OpenApi3\Tests\Expected\Model\DetailedTweetFields';
         }
         /**
          * @return mixed
@@ -132,13 +132,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('stats', $data)) {
-                $object->setStats($this->denormalizer->denormalize($data['stats'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\DetailedTweetFieldsStats', 'json', $context));
+                $object->setStats($this->denormalizer->denormalize($data['stats'], \Jane\Component\OpenApi3\Tests\Expected\Model\DetailedTweetFieldsStats::class, 'json', $context));
                 unset($data['stats']);
             }
             if (\array_key_exists('context_annotation', $data)) {
                 $values = [];
                 foreach ($data['context_annotation'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\ContextAnnotation', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Jane\Component\OpenApi3\Tests\Expected\Model\ContextAnnotation::class, 'json', $context);
                 }
                 $object->setContextAnnotation($values);
                 unset($data['context_annotation']);
@@ -190,9 +190,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\DetailedTweetFields' => false];
+            return [\Jane\Component\OpenApi3\Tests\Expected\Model\DetailedTweetFields::class => false];
         }
     }
 }

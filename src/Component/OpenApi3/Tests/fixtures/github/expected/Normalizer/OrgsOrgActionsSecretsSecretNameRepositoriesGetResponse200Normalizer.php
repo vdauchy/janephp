@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\OrgsOrgActionsSecretsSecretNameRepositoriesGetResponse200';
+            return $type === \Github\Model\OrgsOrgActionsSecretsSecretNameRepositoriesGetResponse200::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\OrgsOrgActionsSecretsSecretNameRepositoriesGetResponse200';
+            return is_object($data) && get_class($data) === 'Github\Model\OrgsOrgActionsSecretsSecretNameRepositoriesGetResponse200';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -50,7 +50,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('repositories', $data)) {
                 $values = [];
                 foreach ($data['repositories'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\MinimalRepository', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\MinimalRepository::class, 'json', $context);
                 }
                 $object->setRepositories($values);
                 unset($data['repositories']);
@@ -62,7 +62,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('totalCount') && null !== $object->getTotalCount()) {
@@ -85,9 +85,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\OrgsOrgActionsSecretsSecretNameRepositoriesGetResponse200' => false];
+            return [\Github\Model\OrgsOrgActionsSecretsSecretNameRepositoriesGetResponse200::class => false];
         }
     }
 } else {
@@ -97,13 +97,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\OrgsOrgActionsSecretsSecretNameRepositoriesGetResponse200';
+            return $type === \Github\Model\OrgsOrgActionsSecretsSecretNameRepositoriesGetResponse200::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\OrgsOrgActionsSecretsSecretNameRepositoriesGetResponse200';
+            return is_object($data) && get_class($data) === 'Github\Model\OrgsOrgActionsSecretsSecretNameRepositoriesGetResponse200';
         }
         /**
          * @return mixed
@@ -130,7 +130,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('repositories', $data)) {
                 $values = [];
                 foreach ($data['repositories'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\MinimalRepository', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\MinimalRepository::class, 'json', $context);
                 }
                 $object->setRepositories($values);
                 unset($data['repositories']);
@@ -168,9 +168,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\OrgsOrgActionsSecretsSecretNameRepositoriesGetResponse200' => false];
+            return [\Github\Model\OrgsOrgActionsSecretsSecretNameRepositoriesGetResponse200::class => false];
         }
     }
 }

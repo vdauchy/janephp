@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\IssueComment';
+            return $type === \Github\Model\IssueComment::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\IssueComment';
+            return is_object($data) && get_class($data) === 'Github\Model\IssueComment';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -72,18 +72,18 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['html_url']);
             }
             if (\array_key_exists('user', $data) && $data['user'] !== null) {
-                $object->setUser($this->denormalizer->denormalize($data['user'], 'Github\\Model\\IssueCommentUser', 'json', $context));
+                $object->setUser($this->denormalizer->denormalize($data['user'], \Github\Model\IssueCommentUser::class, 'json', $context));
                 unset($data['user']);
             }
             elseif (\array_key_exists('user', $data) && $data['user'] === null) {
                 $object->setUser(null);
             }
             if (\array_key_exists('created_at', $data)) {
-                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['created_at']));
+                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['created_at']));
                 unset($data['created_at']);
             }
             if (\array_key_exists('updated_at', $data)) {
-                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['updated_at']));
+                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['updated_at']));
                 unset($data['updated_at']);
             }
             if (\array_key_exists('issue_url', $data)) {
@@ -95,14 +95,14 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['author_association']);
             }
             if (\array_key_exists('performed_via_github_app', $data) && $data['performed_via_github_app'] !== null) {
-                $object->setPerformedViaGithubApp($this->denormalizer->denormalize($data['performed_via_github_app'], 'Github\\Model\\IssueCommentPerformedViaGithubApp', 'json', $context));
+                $object->setPerformedViaGithubApp($this->denormalizer->denormalize($data['performed_via_github_app'], \Github\Model\IssueCommentPerformedViaGithubApp::class, 'json', $context));
                 unset($data['performed_via_github_app']);
             }
             elseif (\array_key_exists('performed_via_github_app', $data) && $data['performed_via_github_app'] === null) {
                 $object->setPerformedViaGithubApp(null);
             }
             if (\array_key_exists('reactions', $data)) {
-                $object->setReactions($this->denormalizer->denormalize($data['reactions'], 'Github\\Model\\ReactionRollup', 'json', $context));
+                $object->setReactions($this->denormalizer->denormalize($data['reactions'], \Github\Model\ReactionRollup::class, 'json', $context));
                 unset($data['reactions']);
             }
             foreach ($data as $key => $value) {
@@ -112,7 +112,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             $data['id'] = $object->getId();
@@ -129,8 +129,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             $data['html_url'] = $object->getHtmlUrl();
             $data['user'] = $this->normalizer->normalize($object->getUser(), 'json', $context);
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
             $data['issue_url'] = $object->getIssueUrl();
             $data['author_association'] = $object->getAuthorAssociation();
             if ($object->isInitialized('performedViaGithubApp') && null !== $object->getPerformedViaGithubApp()) {
@@ -149,9 +149,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\IssueComment' => false];
+            return [\Github\Model\IssueComment::class => false];
         }
     }
 } else {
@@ -161,13 +161,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\IssueComment';
+            return $type === \Github\Model\IssueComment::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\IssueComment';
+            return is_object($data) && get_class($data) === 'Github\Model\IssueComment';
         }
         /**
          * @return mixed
@@ -216,18 +216,18 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['html_url']);
             }
             if (\array_key_exists('user', $data) && $data['user'] !== null) {
-                $object->setUser($this->denormalizer->denormalize($data['user'], 'Github\\Model\\IssueCommentUser', 'json', $context));
+                $object->setUser($this->denormalizer->denormalize($data['user'], \Github\Model\IssueCommentUser::class, 'json', $context));
                 unset($data['user']);
             }
             elseif (\array_key_exists('user', $data) && $data['user'] === null) {
                 $object->setUser(null);
             }
             if (\array_key_exists('created_at', $data)) {
-                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['created_at']));
+                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['created_at']));
                 unset($data['created_at']);
             }
             if (\array_key_exists('updated_at', $data)) {
-                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['updated_at']));
+                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['updated_at']));
                 unset($data['updated_at']);
             }
             if (\array_key_exists('issue_url', $data)) {
@@ -239,14 +239,14 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['author_association']);
             }
             if (\array_key_exists('performed_via_github_app', $data) && $data['performed_via_github_app'] !== null) {
-                $object->setPerformedViaGithubApp($this->denormalizer->denormalize($data['performed_via_github_app'], 'Github\\Model\\IssueCommentPerformedViaGithubApp', 'json', $context));
+                $object->setPerformedViaGithubApp($this->denormalizer->denormalize($data['performed_via_github_app'], \Github\Model\IssueCommentPerformedViaGithubApp::class, 'json', $context));
                 unset($data['performed_via_github_app']);
             }
             elseif (\array_key_exists('performed_via_github_app', $data) && $data['performed_via_github_app'] === null) {
                 $object->setPerformedViaGithubApp(null);
             }
             if (\array_key_exists('reactions', $data)) {
-                $object->setReactions($this->denormalizer->denormalize($data['reactions'], 'Github\\Model\\ReactionRollup', 'json', $context));
+                $object->setReactions($this->denormalizer->denormalize($data['reactions'], \Github\Model\ReactionRollup::class, 'json', $context));
                 unset($data['reactions']);
             }
             foreach ($data as $key => $value) {
@@ -276,8 +276,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             $data['html_url'] = $object->getHtmlUrl();
             $data['user'] = $this->normalizer->normalize($object->getUser(), 'json', $context);
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
             $data['issue_url'] = $object->getIssueUrl();
             $data['author_association'] = $object->getAuthorAssociation();
             if ($object->isInitialized('performedViaGithubApp') && null !== $object->getPerformedViaGithubApp()) {
@@ -296,9 +296,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\IssueComment' => false];
+            return [\Github\Model\IssueComment::class => false];
         }
     }
 }

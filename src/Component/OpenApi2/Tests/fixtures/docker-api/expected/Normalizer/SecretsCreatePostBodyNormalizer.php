@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Docker\\Api\\Model\\SecretsCreatePostBody';
+            return $type === \Docker\Api\Model\SecretsCreatePostBody::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Docker\\Api\\Model\\SecretsCreatePostBody';
+            return is_object($data) && get_class($data) === 'Docker\Api\Model\SecretsCreatePostBody';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -57,14 +57,14 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setData($data['Data']);
             }
             if (\array_key_exists('Driver', $data)) {
-                $object->setDriver($this->denormalizer->denormalize($data['Driver'], 'Docker\\Api\\Model\\Driver', 'json', $context));
+                $object->setDriver($this->denormalizer->denormalize($data['Driver'], \Docker\Api\Model\Driver::class, 'json', $context));
             }
             if (\array_key_exists('Templating', $data)) {
-                $object->setTemplating($this->denormalizer->denormalize($data['Templating'], 'Docker\\Api\\Model\\Driver', 'json', $context));
+                $object->setTemplating($this->denormalizer->denormalize($data['Templating'], \Docker\Api\Model\Driver::class, 'json', $context));
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('name') && null !== $object->getName()) {
@@ -91,9 +91,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Docker\\Api\\Model\\SecretsCreatePostBody' => false];
+            return [\Docker\Api\Model\SecretsCreatePostBody::class => false];
         }
     }
 } else {
@@ -103,13 +103,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Docker\\Api\\Model\\SecretsCreatePostBody';
+            return $type === \Docker\Api\Model\SecretsCreatePostBody::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Docker\\Api\\Model\\SecretsCreatePostBody';
+            return is_object($data) && get_class($data) === 'Docker\Api\Model\SecretsCreatePostBody';
         }
         /**
          * @return mixed
@@ -143,10 +143,10 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setData($data['Data']);
             }
             if (\array_key_exists('Driver', $data)) {
-                $object->setDriver($this->denormalizer->denormalize($data['Driver'], 'Docker\\Api\\Model\\Driver', 'json', $context));
+                $object->setDriver($this->denormalizer->denormalize($data['Driver'], \Docker\Api\Model\Driver::class, 'json', $context));
             }
             if (\array_key_exists('Templating', $data)) {
-                $object->setTemplating($this->denormalizer->denormalize($data['Templating'], 'Docker\\Api\\Model\\Driver', 'json', $context));
+                $object->setTemplating($this->denormalizer->denormalize($data['Templating'], \Docker\Api\Model\Driver::class, 'json', $context));
             }
             return $object;
         }
@@ -180,9 +180,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Docker\\Api\\Model\\SecretsCreatePostBody' => false];
+            return [\Docker\Api\Model\SecretsCreatePostBody::class => false];
         }
     }
 }

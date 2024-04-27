@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Docker\\Api\\Model\\ServiceSpecMode';
+            return $type === \Docker\Api\Model\ServiceSpecMode::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Docker\\Api\\Model\\ServiceSpecMode';
+            return is_object($data) && get_class($data) === 'Docker\Api\Model\ServiceSpecMode';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -44,20 +44,20 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('Replicated', $data)) {
-                $object->setReplicated($this->denormalizer->denormalize($data['Replicated'], 'Docker\\Api\\Model\\ServiceSpecModeReplicated', 'json', $context));
+                $object->setReplicated($this->denormalizer->denormalize($data['Replicated'], \Docker\Api\Model\ServiceSpecModeReplicated::class, 'json', $context));
             }
             if (\array_key_exists('Global', $data)) {
                 $object->setGlobal($data['Global']);
             }
             if (\array_key_exists('ReplicatedJob', $data)) {
-                $object->setReplicatedJob($this->denormalizer->denormalize($data['ReplicatedJob'], 'Docker\\Api\\Model\\ServiceSpecModeReplicatedJob', 'json', $context));
+                $object->setReplicatedJob($this->denormalizer->denormalize($data['ReplicatedJob'], \Docker\Api\Model\ServiceSpecModeReplicatedJob::class, 'json', $context));
             }
             if (\array_key_exists('GlobalJob', $data)) {
                 $object->setGlobalJob($data['GlobalJob']);
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('replicated') && null !== $object->getReplicated()) {
@@ -77,9 +77,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Docker\\Api\\Model\\ServiceSpecMode' => false];
+            return [\Docker\Api\Model\ServiceSpecMode::class => false];
         }
     }
 } else {
@@ -89,13 +89,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Docker\\Api\\Model\\ServiceSpecMode';
+            return $type === \Docker\Api\Model\ServiceSpecMode::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Docker\\Api\\Model\\ServiceSpecMode';
+            return is_object($data) && get_class($data) === 'Docker\Api\Model\ServiceSpecMode';
         }
         /**
          * @return mixed
@@ -116,13 +116,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('Replicated', $data)) {
-                $object->setReplicated($this->denormalizer->denormalize($data['Replicated'], 'Docker\\Api\\Model\\ServiceSpecModeReplicated', 'json', $context));
+                $object->setReplicated($this->denormalizer->denormalize($data['Replicated'], \Docker\Api\Model\ServiceSpecModeReplicated::class, 'json', $context));
             }
             if (\array_key_exists('Global', $data)) {
                 $object->setGlobal($data['Global']);
             }
             if (\array_key_exists('ReplicatedJob', $data)) {
-                $object->setReplicatedJob($this->denormalizer->denormalize($data['ReplicatedJob'], 'Docker\\Api\\Model\\ServiceSpecModeReplicatedJob', 'json', $context));
+                $object->setReplicatedJob($this->denormalizer->denormalize($data['ReplicatedJob'], \Docker\Api\Model\ServiceSpecModeReplicatedJob::class, 'json', $context));
             }
             if (\array_key_exists('GlobalJob', $data)) {
                 $object->setGlobalJob($data['GlobalJob']);
@@ -152,9 +152,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Docker\\Api\\Model\\ServiceSpecMode' => false];
+            return [\Docker\Api\Model\ServiceSpecMode::class => false];
         }
     }
 }

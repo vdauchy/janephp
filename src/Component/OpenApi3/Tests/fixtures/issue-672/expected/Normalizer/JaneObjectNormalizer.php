@@ -18,22 +18,22 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        protected $normalizers = array('Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Endpoint2GetResponse' => 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Normalizer\\Endpoint2GetResponseNormalizer', 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\SubLevel1' => 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Normalizer\\SubLevel1Normalizer', 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\SubLevel2' => 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Normalizer\\SubLevel2Normalizer', 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\SubLevel3' => 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Normalizer\\SubLevel3Normalizer', 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Endpoint3GetResponse200' => 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Normalizer\\Endpoint3GetResponse200Normalizer', '\\Jane\\Component\\JsonSchemaRuntime\\Reference' => '\\Jane\\Component\\OpenApi3\\Tests\\Expected\\Runtime\\Normalizer\\ReferenceNormalizer'), $normalizersCache = [];
-        public function supportsDenormalization($data, $type, $format = null, array $context = []) : bool
+        protected $normalizers = [\Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint2GetResponse::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\Endpoint2GetResponseNormalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\SubLevel1::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\SubLevel1Normalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\SubLevel2::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\SubLevel2Normalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\SubLevel3::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\SubLevel3Normalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint3GetResponse200::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\Endpoint3GetResponse200Normalizer::class, \Jane\Component\JsonSchemaRuntime\Reference::class => \Jane\Component\OpenApi3\Tests\Expected\Runtime\Normalizer\ReferenceNormalizer::class], $normalizersCache = [];
+        public function supportsDenormalization($data, $type, $format = null, array $context = []): bool
         {
             return array_key_exists($type, $this->normalizers);
         }
-        public function supportsNormalization($data, $format = null, array $context = []) : bool
+        public function supportsNormalization($data, $format = null, array $context = []): bool
         {
             return is_object($data) && array_key_exists(get_class($data), $this->normalizers);
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $normalizerClass = $this->normalizers[get_class($object)];
             $normalizer = $this->getNormalizer($normalizerClass);
             return $normalizer->normalize($object, $format, $context);
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             $denormalizerClass = $this->normalizers[$type];
             $denormalizer = $this->getNormalizer($denormalizerClass);
@@ -51,9 +51,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $this->normalizersCache[$normalizerClass] = $normalizer;
             return $normalizer;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Endpoint2GetResponse' => false, 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\SubLevel1' => false, 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\SubLevel2' => false, 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\SubLevel3' => false, 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Endpoint3GetResponse200' => false, '\\Jane\\Component\\JsonSchemaRuntime\\Reference' => false];
+            return [\Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint2GetResponse::class => false, \Jane\Component\OpenApi3\Tests\Expected\Model\SubLevel1::class => false, \Jane\Component\OpenApi3\Tests\Expected\Model\SubLevel2::class => false, \Jane\Component\OpenApi3\Tests\Expected\Model\SubLevel3::class => false, \Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint3GetResponse200::class => false, \Jane\Component\JsonSchemaRuntime\Reference::class => false];
         }
     }
 } else {
@@ -63,12 +63,12 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        protected $normalizers = array('Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Endpoint2GetResponse' => 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Normalizer\\Endpoint2GetResponseNormalizer', 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\SubLevel1' => 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Normalizer\\SubLevel1Normalizer', 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\SubLevel2' => 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Normalizer\\SubLevel2Normalizer', 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\SubLevel3' => 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Normalizer\\SubLevel3Normalizer', 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Endpoint3GetResponse200' => 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Normalizer\\Endpoint3GetResponse200Normalizer', '\\Jane\\Component\\JsonSchemaRuntime\\Reference' => '\\Jane\\Component\\OpenApi3\\Tests\\Expected\\Runtime\\Normalizer\\ReferenceNormalizer'), $normalizersCache = [];
-        public function supportsDenormalization($data, $type, $format = null, array $context = []) : bool
+        protected $normalizers = [\Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint2GetResponse::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\Endpoint2GetResponseNormalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\SubLevel1::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\SubLevel1Normalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\SubLevel2::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\SubLevel2Normalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\SubLevel3::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\SubLevel3Normalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint3GetResponse200::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\Endpoint3GetResponse200Normalizer::class, \Jane\Component\JsonSchemaRuntime\Reference::class => \Jane\Component\OpenApi3\Tests\Expected\Runtime\Normalizer\ReferenceNormalizer::class], $normalizersCache = [];
+        public function supportsDenormalization($data, $type, $format = null, array $context = []): bool
         {
             return array_key_exists($type, $this->normalizers);
         }
-        public function supportsNormalization($data, $format = null, array $context = []) : bool
+        public function supportsNormalization($data, $format = null, array $context = []): bool
         {
             return is_object($data) && array_key_exists(get_class($data), $this->normalizers);
         }
@@ -102,9 +102,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $this->normalizersCache[$normalizerClass] = $normalizer;
             return $normalizer;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Endpoint2GetResponse' => false, 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\SubLevel1' => false, 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\SubLevel2' => false, 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\SubLevel3' => false, 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Endpoint3GetResponse200' => false, '\\Jane\\Component\\JsonSchemaRuntime\\Reference' => false];
+            return [\Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint2GetResponse::class => false, \Jane\Component\OpenApi3\Tests\Expected\Model\SubLevel1::class => false, \Jane\Component\OpenApi3\Tests\Expected\Model\SubLevel2::class => false, \Jane\Component\OpenApi3\Tests\Expected\Model\SubLevel3::class => false, \Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint3GetResponse200::class => false, \Jane\Component\JsonSchemaRuntime\Reference::class => false];
         }
     }
 }

@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\Repository';
+            return $type === \Github\Model\Repository::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\Repository';
+            return is_object($data) && get_class($data) === 'Github\Model\Repository';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -60,7 +60,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['full_name']);
             }
             if (\array_key_exists('license', $data) && $data['license'] !== null) {
-                $object->setLicense($this->denormalizer->denormalize($data['license'], 'Github\\Model\\RepositoryLicense', 'json', $context));
+                $object->setLicense($this->denormalizer->denormalize($data['license'], \Github\Model\RepositoryLicense::class, 'json', $context));
                 unset($data['license']);
             }
             elseif (\array_key_exists('license', $data) && $data['license'] === null) {
@@ -71,11 +71,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['forks']);
             }
             if (\array_key_exists('permissions', $data)) {
-                $object->setPermissions($this->denormalizer->denormalize($data['permissions'], 'Github\\Model\\RepositoryPermissions', 'json', $context));
+                $object->setPermissions($this->denormalizer->denormalize($data['permissions'], \Github\Model\RepositoryPermissions::class, 'json', $context));
                 unset($data['permissions']);
             }
             if (\array_key_exists('owner', $data) && $data['owner'] !== null) {
-                $object->setOwner($this->denormalizer->denormalize($data['owner'], 'Github\\Model\\RepositoryOwner', 'json', $context));
+                $object->setOwner($this->denormalizer->denormalize($data['owner'], \Github\Model\RepositoryOwner::class, 'json', $context));
                 unset($data['owner']);
             }
             elseif (\array_key_exists('owner', $data) && $data['owner'] === null) {
@@ -354,21 +354,21 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['visibility']);
             }
             if (\array_key_exists('pushed_at', $data) && $data['pushed_at'] !== null) {
-                $object->setPushedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['pushed_at']));
+                $object->setPushedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['pushed_at']));
                 unset($data['pushed_at']);
             }
             elseif (\array_key_exists('pushed_at', $data) && $data['pushed_at'] === null) {
                 $object->setPushedAt(null);
             }
             if (\array_key_exists('created_at', $data) && $data['created_at'] !== null) {
-                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['created_at']));
+                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['created_at']));
                 unset($data['created_at']);
             }
             elseif (\array_key_exists('created_at', $data) && $data['created_at'] === null) {
                 $object->setCreatedAt(null);
             }
             if (\array_key_exists('updated_at', $data) && $data['updated_at'] !== null) {
-                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['updated_at']));
+                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['updated_at']));
                 unset($data['updated_at']);
             }
             elseif (\array_key_exists('updated_at', $data) && $data['updated_at'] === null) {
@@ -379,7 +379,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['allow_rebase_merge']);
             }
             if (\array_key_exists('template_repository', $data) && $data['template_repository'] !== null) {
-                $object->setTemplateRepository($this->denormalizer->denormalize($data['template_repository'], 'Github\\Model\\RepositoryTemplateRepository', 'json', $context));
+                $object->setTemplateRepository($this->denormalizer->denormalize($data['template_repository'], \Github\Model\RepositoryTemplateRepository::class, 'json', $context));
                 unset($data['template_repository']);
             }
             elseif (\array_key_exists('template_repository', $data) && $data['template_repository'] === null) {
@@ -432,7 +432,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             $data['id'] = $object->getId();
@@ -519,9 +519,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if ($object->isInitialized('visibility') && null !== $object->getVisibility()) {
                 $data['visibility'] = $object->getVisibility();
             }
-            $data['pushed_at'] = $object->getPushedAt()->format('Y-m-d\\TH:i:sP');
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\\TH:i:sP');
+            $data['pushed_at'] = $object->getPushedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
             if ($object->isInitialized('allowRebaseMerge') && null !== $object->getAllowRebaseMerge()) {
                 $data['allow_rebase_merge'] = $object->getAllowRebaseMerge();
             }
@@ -564,9 +564,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\Repository' => false];
+            return [\Github\Model\Repository::class => false];
         }
     }
 } else {
@@ -576,13 +576,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\Repository';
+            return $type === \Github\Model\Repository::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\Repository';
+            return is_object($data) && get_class($data) === 'Github\Model\Repository';
         }
         /**
          * @return mixed
@@ -619,7 +619,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['full_name']);
             }
             if (\array_key_exists('license', $data) && $data['license'] !== null) {
-                $object->setLicense($this->denormalizer->denormalize($data['license'], 'Github\\Model\\RepositoryLicense', 'json', $context));
+                $object->setLicense($this->denormalizer->denormalize($data['license'], \Github\Model\RepositoryLicense::class, 'json', $context));
                 unset($data['license']);
             }
             elseif (\array_key_exists('license', $data) && $data['license'] === null) {
@@ -630,11 +630,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['forks']);
             }
             if (\array_key_exists('permissions', $data)) {
-                $object->setPermissions($this->denormalizer->denormalize($data['permissions'], 'Github\\Model\\RepositoryPermissions', 'json', $context));
+                $object->setPermissions($this->denormalizer->denormalize($data['permissions'], \Github\Model\RepositoryPermissions::class, 'json', $context));
                 unset($data['permissions']);
             }
             if (\array_key_exists('owner', $data) && $data['owner'] !== null) {
-                $object->setOwner($this->denormalizer->denormalize($data['owner'], 'Github\\Model\\RepositoryOwner', 'json', $context));
+                $object->setOwner($this->denormalizer->denormalize($data['owner'], \Github\Model\RepositoryOwner::class, 'json', $context));
                 unset($data['owner']);
             }
             elseif (\array_key_exists('owner', $data) && $data['owner'] === null) {
@@ -913,21 +913,21 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['visibility']);
             }
             if (\array_key_exists('pushed_at', $data) && $data['pushed_at'] !== null) {
-                $object->setPushedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['pushed_at']));
+                $object->setPushedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['pushed_at']));
                 unset($data['pushed_at']);
             }
             elseif (\array_key_exists('pushed_at', $data) && $data['pushed_at'] === null) {
                 $object->setPushedAt(null);
             }
             if (\array_key_exists('created_at', $data) && $data['created_at'] !== null) {
-                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['created_at']));
+                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['created_at']));
                 unset($data['created_at']);
             }
             elseif (\array_key_exists('created_at', $data) && $data['created_at'] === null) {
                 $object->setCreatedAt(null);
             }
             if (\array_key_exists('updated_at', $data) && $data['updated_at'] !== null) {
-                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['updated_at']));
+                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['updated_at']));
                 unset($data['updated_at']);
             }
             elseif (\array_key_exists('updated_at', $data) && $data['updated_at'] === null) {
@@ -938,7 +938,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['allow_rebase_merge']);
             }
             if (\array_key_exists('template_repository', $data) && $data['template_repository'] !== null) {
-                $object->setTemplateRepository($this->denormalizer->denormalize($data['template_repository'], 'Github\\Model\\RepositoryTemplateRepository', 'json', $context));
+                $object->setTemplateRepository($this->denormalizer->denormalize($data['template_repository'], \Github\Model\RepositoryTemplateRepository::class, 'json', $context));
                 unset($data['template_repository']);
             }
             elseif (\array_key_exists('template_repository', $data) && $data['template_repository'] === null) {
@@ -1081,9 +1081,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if ($object->isInitialized('visibility') && null !== $object->getVisibility()) {
                 $data['visibility'] = $object->getVisibility();
             }
-            $data['pushed_at'] = $object->getPushedAt()->format('Y-m-d\\TH:i:sP');
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\\TH:i:sP');
+            $data['pushed_at'] = $object->getPushedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
             if ($object->isInitialized('allowRebaseMerge') && null !== $object->getAllowRebaseMerge()) {
                 $data['allow_rebase_merge'] = $object->getAllowRebaseMerge();
             }
@@ -1126,9 +1126,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\Repository' => false];
+            return [\Github\Model\Repository::class => false];
         }
     }
 }

@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'PicturePark\\API\\Model\\ShareBasicUpdateRequest';
+            return $type === \PicturePark\API\Model\ShareBasicUpdateRequest::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'PicturePark\\API\\Model\\ShareBasicUpdateRequest';
+            return is_object($data) && get_class($data) === 'PicturePark\API\Model\ShareBasicUpdateRequest';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -45,7 +45,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['name']);
             }
             if (\array_key_exists('expirationDate', $data) && $data['expirationDate'] !== null) {
-                $object->setExpirationDate(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['expirationDate']));
+                $object->setExpirationDate(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['expirationDate']));
                 unset($data['expirationDate']);
             }
             elseif (\array_key_exists('expirationDate', $data) && $data['expirationDate'] === null) {
@@ -61,7 +61,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('contents', $data)) {
                 $values = [];
                 foreach ($data['contents'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'PicturePark\\API\\Model\\ShareContent', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \PicturePark\API\Model\ShareContent::class, 'json', $context);
                 }
                 $object->setContents($values);
                 unset($data['contents']);
@@ -92,12 +92,12 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             $data['name'] = $object->getName();
             if ($object->isInitialized('expirationDate') && null !== $object->getExpirationDate()) {
-                $data['expirationDate'] = $object->getExpirationDate()->format('Y-m-d\\TH:i:sP');
+                $data['expirationDate'] = $object->getExpirationDate()->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('description') && null !== $object->getDescription()) {
                 $data['description'] = $object->getDescription();
@@ -123,9 +123,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['PicturePark\\API\\Model\\ShareBasicUpdateRequest' => false];
+            return [\PicturePark\API\Model\ShareBasicUpdateRequest::class => false];
         }
     }
 } else {
@@ -135,13 +135,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'PicturePark\\API\\Model\\ShareBasicUpdateRequest';
+            return $type === \PicturePark\API\Model\ShareBasicUpdateRequest::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'PicturePark\\API\\Model\\ShareBasicUpdateRequest';
+            return is_object($data) && get_class($data) === 'PicturePark\API\Model\ShareBasicUpdateRequest';
         }
         /**
          * @return mixed
@@ -163,7 +163,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['name']);
             }
             if (\array_key_exists('expirationDate', $data) && $data['expirationDate'] !== null) {
-                $object->setExpirationDate(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['expirationDate']));
+                $object->setExpirationDate(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['expirationDate']));
                 unset($data['expirationDate']);
             }
             elseif (\array_key_exists('expirationDate', $data) && $data['expirationDate'] === null) {
@@ -179,7 +179,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('contents', $data)) {
                 $values = [];
                 foreach ($data['contents'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'PicturePark\\API\\Model\\ShareContent', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \PicturePark\API\Model\ShareContent::class, 'json', $context);
                 }
                 $object->setContents($values);
                 unset($data['contents']);
@@ -218,7 +218,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data = [];
             $data['name'] = $object->getName();
             if ($object->isInitialized('expirationDate') && null !== $object->getExpirationDate()) {
-                $data['expirationDate'] = $object->getExpirationDate()->format('Y-m-d\\TH:i:sP');
+                $data['expirationDate'] = $object->getExpirationDate()->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('description') && null !== $object->getDescription()) {
                 $data['description'] = $object->getDescription();
@@ -244,9 +244,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['PicturePark\\API\\Model\\ShareBasicUpdateRequest' => false];
+            return [\PicturePark\API\Model\ShareBasicUpdateRequest::class => false];
         }
     }
 }

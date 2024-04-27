@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'CreditSafe\\API\\Model\\MonitoringPortfoliosPortfolioIdSharingPermissionsPatchBody';
+            return $type === \CreditSafe\API\Model\MonitoringPortfoliosPortfolioIdSharingPermissionsPatchBody::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'CreditSafe\\API\\Model\\MonitoringPortfoliosPortfolioIdSharingPermissionsPatchBody';
+            return is_object($data) && get_class($data) === 'CreditSafe\API\Model\MonitoringPortfoliosPortfolioIdSharingPermissionsPatchBody';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -47,7 +47,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('companies', $data)) {
                 $values = [];
                 foreach ($data['companies'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'CreditSafe\\API\\Model\\MonitoringPortfoliosPortfolioIdSharingPermissionsPatchBodyCompaniesItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \CreditSafe\API\Model\MonitoringPortfoliosPortfolioIdSharingPermissionsPatchBodyCompaniesItem::class, 'json', $context);
                 }
                 $object->setCompanies($values);
                 unset($data['companies']);
@@ -59,7 +59,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('revokeAll') && null !== $object->getRevokeAll()) {
@@ -79,9 +79,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['CreditSafe\\API\\Model\\MonitoringPortfoliosPortfolioIdSharingPermissionsPatchBody' => false];
+            return [\CreditSafe\API\Model\MonitoringPortfoliosPortfolioIdSharingPermissionsPatchBody::class => false];
         }
     }
 } else {
@@ -91,13 +91,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'CreditSafe\\API\\Model\\MonitoringPortfoliosPortfolioIdSharingPermissionsPatchBody';
+            return $type === \CreditSafe\API\Model\MonitoringPortfoliosPortfolioIdSharingPermissionsPatchBody::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'CreditSafe\\API\\Model\\MonitoringPortfoliosPortfolioIdSharingPermissionsPatchBody';
+            return is_object($data) && get_class($data) === 'CreditSafe\API\Model\MonitoringPortfoliosPortfolioIdSharingPermissionsPatchBody';
         }
         /**
          * @return mixed
@@ -121,7 +121,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('companies', $data)) {
                 $values = [];
                 foreach ($data['companies'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'CreditSafe\\API\\Model\\MonitoringPortfoliosPortfolioIdSharingPermissionsPatchBodyCompaniesItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \CreditSafe\API\Model\MonitoringPortfoliosPortfolioIdSharingPermissionsPatchBodyCompaniesItem::class, 'json', $context);
                 }
                 $object->setCompanies($values);
                 unset($data['companies']);
@@ -156,9 +156,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['CreditSafe\\API\\Model\\MonitoringPortfoliosPortfolioIdSharingPermissionsPatchBody' => false];
+            return [\CreditSafe\API\Model\MonitoringPortfoliosPortfolioIdSharingPermissionsPatchBody::class => false];
         }
     }
 }

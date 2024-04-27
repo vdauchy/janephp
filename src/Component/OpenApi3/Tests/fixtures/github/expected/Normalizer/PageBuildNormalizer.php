@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\PageBuild';
+            return $type === \Github\Model\PageBuild::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\PageBuild';
+            return is_object($data) && get_class($data) === 'Github\Model\PageBuild';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -52,11 +52,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['status']);
             }
             if (\array_key_exists('error', $data)) {
-                $object->setError($this->denormalizer->denormalize($data['error'], 'Github\\Model\\PageBuildError', 'json', $context));
+                $object->setError($this->denormalizer->denormalize($data['error'], \Github\Model\PageBuildError::class, 'json', $context));
                 unset($data['error']);
             }
             if (\array_key_exists('pusher', $data) && $data['pusher'] !== null) {
-                $object->setPusher($this->denormalizer->denormalize($data['pusher'], 'Github\\Model\\PageBuildPusher', 'json', $context));
+                $object->setPusher($this->denormalizer->denormalize($data['pusher'], \Github\Model\PageBuildPusher::class, 'json', $context));
                 unset($data['pusher']);
             }
             elseif (\array_key_exists('pusher', $data) && $data['pusher'] === null) {
@@ -71,11 +71,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['duration']);
             }
             if (\array_key_exists('created_at', $data)) {
-                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['created_at']));
+                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['created_at']));
                 unset($data['created_at']);
             }
             if (\array_key_exists('updated_at', $data)) {
-                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['updated_at']));
+                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['updated_at']));
                 unset($data['updated_at']);
             }
             foreach ($data as $key => $value) {
@@ -85,7 +85,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             $data['url'] = $object->getUrl();
@@ -94,8 +94,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['pusher'] = $this->normalizer->normalize($object->getPusher(), 'json', $context);
             $data['commit'] = $object->getCommit();
             $data['duration'] = $object->getDuration();
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
             foreach ($object as $key => $value) {
                 if (preg_match('/.*/', (string) $key)) {
                     $data[$key] = $value;
@@ -106,9 +106,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\PageBuild' => false];
+            return [\Github\Model\PageBuild::class => false];
         }
     }
 } else {
@@ -118,13 +118,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\PageBuild';
+            return $type === \Github\Model\PageBuild::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\PageBuild';
+            return is_object($data) && get_class($data) === 'Github\Model\PageBuild';
         }
         /**
          * @return mixed
@@ -153,11 +153,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['status']);
             }
             if (\array_key_exists('error', $data)) {
-                $object->setError($this->denormalizer->denormalize($data['error'], 'Github\\Model\\PageBuildError', 'json', $context));
+                $object->setError($this->denormalizer->denormalize($data['error'], \Github\Model\PageBuildError::class, 'json', $context));
                 unset($data['error']);
             }
             if (\array_key_exists('pusher', $data) && $data['pusher'] !== null) {
-                $object->setPusher($this->denormalizer->denormalize($data['pusher'], 'Github\\Model\\PageBuildPusher', 'json', $context));
+                $object->setPusher($this->denormalizer->denormalize($data['pusher'], \Github\Model\PageBuildPusher::class, 'json', $context));
                 unset($data['pusher']);
             }
             elseif (\array_key_exists('pusher', $data) && $data['pusher'] === null) {
@@ -172,11 +172,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['duration']);
             }
             if (\array_key_exists('created_at', $data)) {
-                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['created_at']));
+                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['created_at']));
                 unset($data['created_at']);
             }
             if (\array_key_exists('updated_at', $data)) {
-                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['updated_at']));
+                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['updated_at']));
                 unset($data['updated_at']);
             }
             foreach ($data as $key => $value) {
@@ -198,8 +198,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['pusher'] = $this->normalizer->normalize($object->getPusher(), 'json', $context);
             $data['commit'] = $object->getCommit();
             $data['duration'] = $object->getDuration();
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
             foreach ($object as $key => $value) {
                 if (preg_match('/.*/', (string) $key)) {
                     $data[$key] = $value;
@@ -210,9 +210,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\PageBuild' => false];
+            return [\Github\Model\PageBuild::class => false];
         }
     }
 }

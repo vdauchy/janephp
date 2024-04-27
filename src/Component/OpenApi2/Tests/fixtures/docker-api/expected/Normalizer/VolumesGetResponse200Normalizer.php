@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Docker\\Api\\Model\\VolumesGetResponse200';
+            return $type === \Docker\Api\Model\VolumesGetResponse200::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Docker\\Api\\Model\\VolumesGetResponse200';
+            return is_object($data) && get_class($data) === 'Docker\Api\Model\VolumesGetResponse200';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -46,7 +46,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('Volumes', $data)) {
                 $values = [];
                 foreach ($data['Volumes'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Docker\\Api\\Model\\Volume', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Docker\Api\Model\Volume::class, 'json', $context);
                 }
                 $object->setVolumes($values);
             }
@@ -59,7 +59,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             $values = [];
@@ -77,9 +77,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Docker\\Api\\Model\\VolumesGetResponse200' => false];
+            return [\Docker\Api\Model\VolumesGetResponse200::class => false];
         }
     }
 } else {
@@ -89,13 +89,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Docker\\Api\\Model\\VolumesGetResponse200';
+            return $type === \Docker\Api\Model\VolumesGetResponse200::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Docker\\Api\\Model\\VolumesGetResponse200';
+            return is_object($data) && get_class($data) === 'Docker\Api\Model\VolumesGetResponse200';
         }
         /**
          * @return mixed
@@ -118,7 +118,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('Volumes', $data)) {
                 $values = [];
                 foreach ($data['Volumes'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Docker\\Api\\Model\\Volume', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Docker\Api\Model\Volume::class, 'json', $context);
                 }
                 $object->setVolumes($values);
             }
@@ -152,9 +152,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Docker\\Api\\Model\\VolumesGetResponse200' => false];
+            return [\Docker\Api\Model\VolumesGetResponse200::class => false];
         }
     }
 }

@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\PullRequestReviewLinks';
+            return $type === \Github\Model\PullRequestReviewLinks::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\PullRequestReviewLinks';
+            return is_object($data) && get_class($data) === 'Github\Model\PullRequestReviewLinks';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -44,11 +44,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('html', $data)) {
-                $object->setHtml($this->denormalizer->denormalize($data['html'], 'Github\\Model\\PullRequestReviewLinksHtml', 'json', $context));
+                $object->setHtml($this->denormalizer->denormalize($data['html'], \Github\Model\PullRequestReviewLinksHtml::class, 'json', $context));
                 unset($data['html']);
             }
             if (\array_key_exists('pull_request', $data)) {
-                $object->setPullRequest($this->denormalizer->denormalize($data['pull_request'], 'Github\\Model\\PullRequestReviewLinksPullRequest', 'json', $context));
+                $object->setPullRequest($this->denormalizer->denormalize($data['pull_request'], \Github\Model\PullRequestReviewLinksPullRequest::class, 'json', $context));
                 unset($data['pull_request']);
             }
             foreach ($data as $key => $value) {
@@ -58,7 +58,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             $data['html'] = $this->normalizer->normalize($object->getHtml(), 'json', $context);
@@ -73,9 +73,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\PullRequestReviewLinks' => false];
+            return [\Github\Model\PullRequestReviewLinks::class => false];
         }
     }
 } else {
@@ -85,13 +85,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\PullRequestReviewLinks';
+            return $type === \Github\Model\PullRequestReviewLinks::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\PullRequestReviewLinks';
+            return is_object($data) && get_class($data) === 'Github\Model\PullRequestReviewLinks';
         }
         /**
          * @return mixed
@@ -112,11 +112,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('html', $data)) {
-                $object->setHtml($this->denormalizer->denormalize($data['html'], 'Github\\Model\\PullRequestReviewLinksHtml', 'json', $context));
+                $object->setHtml($this->denormalizer->denormalize($data['html'], \Github\Model\PullRequestReviewLinksHtml::class, 'json', $context));
                 unset($data['html']);
             }
             if (\array_key_exists('pull_request', $data)) {
-                $object->setPullRequest($this->denormalizer->denormalize($data['pull_request'], 'Github\\Model\\PullRequestReviewLinksPullRequest', 'json', $context));
+                $object->setPullRequest($this->denormalizer->denormalize($data['pull_request'], \Github\Model\PullRequestReviewLinksPullRequest::class, 'json', $context));
                 unset($data['pull_request']);
             }
             foreach ($data as $key => $value) {
@@ -144,9 +144,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\PullRequestReviewLinks' => false];
+            return [\Github\Model\PullRequestReviewLinks::class => false];
         }
     }
 }

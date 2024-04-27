@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'PicturePark\\API\\Model\\BusinessRuleFiredEvent';
+            return $type === \PicturePark\API\Model\BusinessRuleFiredEvent::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'PicturePark\\API\\Model\\BusinessRuleFiredEvent';
+            return is_object($data) && get_class($data) === 'PicturePark\API\Model\BusinessRuleFiredEvent';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -41,7 +41,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('timestamp', $data)) {
-                $object->setTimestamp(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['timestamp']));
+                $object->setTimestamp(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['timestamp']));
                 unset($data['timestamp']);
             }
             if (\array_key_exists('kind', $data)) {
@@ -51,7 +51,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('details', $data) && $data['details'] !== null) {
                 $values = [];
                 foreach ($data['details'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'PicturePark\\API\\Model\\BusinessRuleFiredEventDetail', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \PicturePark\API\Model\BusinessRuleFiredEventDetail::class, 'json', $context);
                 }
                 $object->setDetails($values);
                 unset($data['details']);
@@ -66,10 +66,10 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
-            $data['timestamp'] = $object->getTimestamp()->format('Y-m-d\\TH:i:sP');
+            $data['timestamp'] = $object->getTimestamp()->format('Y-m-d\TH:i:sP');
             $data['kind'] = $object->getKind();
             if ($object->isInitialized('details') && null !== $object->getDetails()) {
                 $values = [];
@@ -85,9 +85,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['PicturePark\\API\\Model\\BusinessRuleFiredEvent' => false];
+            return [\PicturePark\API\Model\BusinessRuleFiredEvent::class => false];
         }
     }
 } else {
@@ -97,13 +97,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'PicturePark\\API\\Model\\BusinessRuleFiredEvent';
+            return $type === \PicturePark\API\Model\BusinessRuleFiredEvent::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'PicturePark\\API\\Model\\BusinessRuleFiredEvent';
+            return is_object($data) && get_class($data) === 'PicturePark\API\Model\BusinessRuleFiredEvent';
         }
         /**
          * @return mixed
@@ -121,7 +121,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('timestamp', $data)) {
-                $object->setTimestamp(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['timestamp']));
+                $object->setTimestamp(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['timestamp']));
                 unset($data['timestamp']);
             }
             if (\array_key_exists('kind', $data)) {
@@ -131,7 +131,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('details', $data) && $data['details'] !== null) {
                 $values = [];
                 foreach ($data['details'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'PicturePark\\API\\Model\\BusinessRuleFiredEventDetail', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \PicturePark\API\Model\BusinessRuleFiredEventDetail::class, 'json', $context);
                 }
                 $object->setDetails($values);
                 unset($data['details']);
@@ -152,7 +152,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         public function normalize($object, $format = null, array $context = [])
         {
             $data = [];
-            $data['timestamp'] = $object->getTimestamp()->format('Y-m-d\\TH:i:sP');
+            $data['timestamp'] = $object->getTimestamp()->format('Y-m-d\TH:i:sP');
             $data['kind'] = $object->getKind();
             if ($object->isInitialized('details') && null !== $object->getDetails()) {
                 $values = [];
@@ -168,9 +168,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['PicturePark\\API\\Model\\BusinessRuleFiredEvent' => false];
+            return [\PicturePark\API\Model\BusinessRuleFiredEvent::class => false];
         }
     }
 }

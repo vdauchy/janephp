@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Docker\\Api\\Model\\SwarmInfo';
+            return $type === \Docker\Api\Model\SwarmInfo::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Docker\\Api\\Model\\SwarmInfo';
+            return is_object($data) && get_class($data) === 'Docker\Api\Model\SwarmInfo';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -61,7 +61,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('RemoteManagers', $data) && $data['RemoteManagers'] !== null) {
                 $values = [];
                 foreach ($data['RemoteManagers'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Docker\\Api\\Model\\PeerNode', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Docker\Api\Model\PeerNode::class, 'json', $context);
                 }
                 $object->setRemoteManagers($values);
             }
@@ -81,14 +81,14 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setManagers(null);
             }
             if (\array_key_exists('Cluster', $data) && $data['Cluster'] !== null) {
-                $object->setCluster($this->denormalizer->denormalize($data['Cluster'], 'Docker\\Api\\Model\\ClusterInfo', 'json', $context));
+                $object->setCluster($this->denormalizer->denormalize($data['Cluster'], \Docker\Api\Model\ClusterInfo::class, 'json', $context));
             }
             elseif (\array_key_exists('Cluster', $data) && $data['Cluster'] === null) {
                 $object->setCluster(null);
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('nodeID') && null !== $object->getNodeID()) {
@@ -127,9 +127,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Docker\\Api\\Model\\SwarmInfo' => false];
+            return [\Docker\Api\Model\SwarmInfo::class => false];
         }
     }
 } else {
@@ -139,13 +139,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Docker\\Api\\Model\\SwarmInfo';
+            return $type === \Docker\Api\Model\SwarmInfo::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Docker\\Api\\Model\\SwarmInfo';
+            return is_object($data) && get_class($data) === 'Docker\Api\Model\SwarmInfo';
         }
         /**
          * @return mixed
@@ -183,7 +183,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('RemoteManagers', $data) && $data['RemoteManagers'] !== null) {
                 $values = [];
                 foreach ($data['RemoteManagers'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Docker\\Api\\Model\\PeerNode', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Docker\Api\Model\PeerNode::class, 'json', $context);
                 }
                 $object->setRemoteManagers($values);
             }
@@ -203,7 +203,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setManagers(null);
             }
             if (\array_key_exists('Cluster', $data) && $data['Cluster'] !== null) {
-                $object->setCluster($this->denormalizer->denormalize($data['Cluster'], 'Docker\\Api\\Model\\ClusterInfo', 'json', $context));
+                $object->setCluster($this->denormalizer->denormalize($data['Cluster'], \Docker\Api\Model\ClusterInfo::class, 'json', $context));
             }
             elseif (\array_key_exists('Cluster', $data) && $data['Cluster'] === null) {
                 $object->setCluster(null);
@@ -252,9 +252,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Docker\\Api\\Model\\SwarmInfo' => false];
+            return [\Docker\Api\Model\SwarmInfo::class => false];
         }
     }
 }

@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\Hook';
+            return $type === \Github\Model\Hook::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\Hook';
+            return is_object($data) && get_class($data) === 'Github\Model\Hook';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -68,15 +68,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['events']);
             }
             if (\array_key_exists('config', $data)) {
-                $object->setConfig($this->denormalizer->denormalize($data['config'], 'Github\\Model\\HookConfig', 'json', $context));
+                $object->setConfig($this->denormalizer->denormalize($data['config'], \Github\Model\HookConfig::class, 'json', $context));
                 unset($data['config']);
             }
             if (\array_key_exists('updated_at', $data)) {
-                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['updated_at']));
+                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['updated_at']));
                 unset($data['updated_at']);
             }
             if (\array_key_exists('created_at', $data)) {
-                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['created_at']));
+                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['created_at']));
                 unset($data['created_at']);
             }
             if (\array_key_exists('url', $data)) {
@@ -92,7 +92,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['ping_url']);
             }
             if (\array_key_exists('last_response', $data)) {
-                $object->setLastResponse($this->denormalizer->denormalize($data['last_response'], 'Github\\Model\\HookResponse', 'json', $context));
+                $object->setLastResponse($this->denormalizer->denormalize($data['last_response'], \Github\Model\HookResponse::class, 'json', $context));
                 unset($data['last_response']);
             }
             foreach ($data as $key => $value_1) {
@@ -102,7 +102,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             $data['type'] = $object->getType();
@@ -115,8 +115,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             $data['events'] = $values;
             $data['config'] = $this->normalizer->normalize($object->getConfig(), 'json', $context);
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\\TH:i:sP');
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
             $data['url'] = $object->getUrl();
             $data['test_url'] = $object->getTestUrl();
             $data['ping_url'] = $object->getPingUrl();
@@ -131,9 +131,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\Hook' => false];
+            return [\Github\Model\Hook::class => false];
         }
     }
 } else {
@@ -143,13 +143,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\Hook';
+            return $type === \Github\Model\Hook::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\Hook';
+            return is_object($data) && get_class($data) === 'Github\Model\Hook';
         }
         /**
          * @return mixed
@@ -194,15 +194,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['events']);
             }
             if (\array_key_exists('config', $data)) {
-                $object->setConfig($this->denormalizer->denormalize($data['config'], 'Github\\Model\\HookConfig', 'json', $context));
+                $object->setConfig($this->denormalizer->denormalize($data['config'], \Github\Model\HookConfig::class, 'json', $context));
                 unset($data['config']);
             }
             if (\array_key_exists('updated_at', $data)) {
-                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['updated_at']));
+                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['updated_at']));
                 unset($data['updated_at']);
             }
             if (\array_key_exists('created_at', $data)) {
-                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['created_at']));
+                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['created_at']));
                 unset($data['created_at']);
             }
             if (\array_key_exists('url', $data)) {
@@ -218,7 +218,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['ping_url']);
             }
             if (\array_key_exists('last_response', $data)) {
-                $object->setLastResponse($this->denormalizer->denormalize($data['last_response'], 'Github\\Model\\HookResponse', 'json', $context));
+                $object->setLastResponse($this->denormalizer->denormalize($data['last_response'], \Github\Model\HookResponse::class, 'json', $context));
                 unset($data['last_response']);
             }
             foreach ($data as $key => $value_1) {
@@ -244,8 +244,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             $data['events'] = $values;
             $data['config'] = $this->normalizer->normalize($object->getConfig(), 'json', $context);
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\\TH:i:sP');
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
             $data['url'] = $object->getUrl();
             $data['test_url'] = $object->getTestUrl();
             $data['ping_url'] = $object->getPingUrl();
@@ -260,9 +260,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\Hook' => false];
+            return [\Github\Model\Hook::class => false];
         }
     }
 }

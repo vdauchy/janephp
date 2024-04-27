@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\CheckSuitePreference';
+            return $type === \Github\Model\CheckSuitePreference::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\CheckSuitePreference';
+            return is_object($data) && get_class($data) === 'Github\Model\CheckSuitePreference';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -44,11 +44,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('preferences', $data)) {
-                $object->setPreferences($this->denormalizer->denormalize($data['preferences'], 'Github\\Model\\CheckSuitePreferencePreferences', 'json', $context));
+                $object->setPreferences($this->denormalizer->denormalize($data['preferences'], \Github\Model\CheckSuitePreferencePreferences::class, 'json', $context));
                 unset($data['preferences']);
             }
             if (\array_key_exists('repository', $data)) {
-                $object->setRepository($this->denormalizer->denormalize($data['repository'], 'Github\\Model\\Repository', 'json', $context));
+                $object->setRepository($this->denormalizer->denormalize($data['repository'], \Github\Model\Repository::class, 'json', $context));
                 unset($data['repository']);
             }
             foreach ($data as $key => $value) {
@@ -58,7 +58,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('preferences') && null !== $object->getPreferences()) {
@@ -77,9 +77,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\CheckSuitePreference' => false];
+            return [\Github\Model\CheckSuitePreference::class => false];
         }
     }
 } else {
@@ -89,13 +89,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\CheckSuitePreference';
+            return $type === \Github\Model\CheckSuitePreference::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\CheckSuitePreference';
+            return is_object($data) && get_class($data) === 'Github\Model\CheckSuitePreference';
         }
         /**
          * @return mixed
@@ -116,11 +116,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('preferences', $data)) {
-                $object->setPreferences($this->denormalizer->denormalize($data['preferences'], 'Github\\Model\\CheckSuitePreferencePreferences', 'json', $context));
+                $object->setPreferences($this->denormalizer->denormalize($data['preferences'], \Github\Model\CheckSuitePreferencePreferences::class, 'json', $context));
                 unset($data['preferences']);
             }
             if (\array_key_exists('repository', $data)) {
-                $object->setRepository($this->denormalizer->denormalize($data['repository'], 'Github\\Model\\Repository', 'json', $context));
+                $object->setRepository($this->denormalizer->denormalize($data['repository'], \Github\Model\Repository::class, 'json', $context));
                 unset($data['repository']);
             }
             foreach ($data as $key => $value) {
@@ -152,9 +152,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\CheckSuitePreference' => false];
+            return [\Github\Model\CheckSuitePreference::class => false];
         }
     }
 }

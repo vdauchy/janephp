@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\IssueMilestone';
+            return $type === \Github\Model\IssueMilestone::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\IssueMilestone';
+            return is_object($data) && get_class($data) === 'Github\Model\IssueMilestone';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -83,7 +83,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setDescription(null);
             }
             if (\array_key_exists('creator', $data) && $data['creator'] !== null) {
-                $object->setCreator($this->denormalizer->denormalize($data['creator'], 'Github\\Model\\MilestoneCreator', 'json', $context));
+                $object->setCreator($this->denormalizer->denormalize($data['creator'], \Github\Model\MilestoneCreator::class, 'json', $context));
                 unset($data['creator']);
             }
             elseif (\array_key_exists('creator', $data) && $data['creator'] === null) {
@@ -98,22 +98,22 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['closed_issues']);
             }
             if (\array_key_exists('created_at', $data)) {
-                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['created_at']));
+                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['created_at']));
                 unset($data['created_at']);
             }
             if (\array_key_exists('updated_at', $data)) {
-                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['updated_at']));
+                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['updated_at']));
                 unset($data['updated_at']);
             }
             if (\array_key_exists('closed_at', $data) && $data['closed_at'] !== null) {
-                $object->setClosedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['closed_at']));
+                $object->setClosedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['closed_at']));
                 unset($data['closed_at']);
             }
             elseif (\array_key_exists('closed_at', $data) && $data['closed_at'] === null) {
                 $object->setClosedAt(null);
             }
             if (\array_key_exists('due_on', $data) && $data['due_on'] !== null) {
-                $object->setDueOn(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['due_on']));
+                $object->setDueOn(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['due_on']));
                 unset($data['due_on']);
             }
             elseif (\array_key_exists('due_on', $data) && $data['due_on'] === null) {
@@ -126,7 +126,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             $data['url'] = $object->getUrl();
@@ -141,10 +141,10 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['creator'] = $this->normalizer->normalize($object->getCreator(), 'json', $context);
             $data['open_issues'] = $object->getOpenIssues();
             $data['closed_issues'] = $object->getClosedIssues();
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\\TH:i:sP');
-            $data['closed_at'] = $object->getClosedAt()->format('Y-m-d\\TH:i:sP');
-            $data['due_on'] = $object->getDueOn()->format('Y-m-d\\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+            $data['closed_at'] = $object->getClosedAt()->format('Y-m-d\TH:i:sP');
+            $data['due_on'] = $object->getDueOn()->format('Y-m-d\TH:i:sP');
             foreach ($object as $key => $value) {
                 if (preg_match('/.*/', (string) $key)) {
                     $data[$key] = $value;
@@ -155,9 +155,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\IssueMilestone' => false];
+            return [\Github\Model\IssueMilestone::class => false];
         }
     }
 } else {
@@ -167,13 +167,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\IssueMilestone';
+            return $type === \Github\Model\IssueMilestone::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\IssueMilestone';
+            return is_object($data) && get_class($data) === 'Github\Model\IssueMilestone';
         }
         /**
          * @return mixed
@@ -233,7 +233,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setDescription(null);
             }
             if (\array_key_exists('creator', $data) && $data['creator'] !== null) {
-                $object->setCreator($this->denormalizer->denormalize($data['creator'], 'Github\\Model\\MilestoneCreator', 'json', $context));
+                $object->setCreator($this->denormalizer->denormalize($data['creator'], \Github\Model\MilestoneCreator::class, 'json', $context));
                 unset($data['creator']);
             }
             elseif (\array_key_exists('creator', $data) && $data['creator'] === null) {
@@ -248,22 +248,22 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['closed_issues']);
             }
             if (\array_key_exists('created_at', $data)) {
-                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['created_at']));
+                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['created_at']));
                 unset($data['created_at']);
             }
             if (\array_key_exists('updated_at', $data)) {
-                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['updated_at']));
+                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['updated_at']));
                 unset($data['updated_at']);
             }
             if (\array_key_exists('closed_at', $data) && $data['closed_at'] !== null) {
-                $object->setClosedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['closed_at']));
+                $object->setClosedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['closed_at']));
                 unset($data['closed_at']);
             }
             elseif (\array_key_exists('closed_at', $data) && $data['closed_at'] === null) {
                 $object->setClosedAt(null);
             }
             if (\array_key_exists('due_on', $data) && $data['due_on'] !== null) {
-                $object->setDueOn(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['due_on']));
+                $object->setDueOn(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['due_on']));
                 unset($data['due_on']);
             }
             elseif (\array_key_exists('due_on', $data) && $data['due_on'] === null) {
@@ -294,10 +294,10 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['creator'] = $this->normalizer->normalize($object->getCreator(), 'json', $context);
             $data['open_issues'] = $object->getOpenIssues();
             $data['closed_issues'] = $object->getClosedIssues();
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\\TH:i:sP');
-            $data['closed_at'] = $object->getClosedAt()->format('Y-m-d\\TH:i:sP');
-            $data['due_on'] = $object->getDueOn()->format('Y-m-d\\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+            $data['closed_at'] = $object->getClosedAt()->format('Y-m-d\TH:i:sP');
+            $data['due_on'] = $object->getDueOn()->format('Y-m-d\TH:i:sP');
             foreach ($object as $key => $value) {
                 if (preg_match('/.*/', (string) $key)) {
                     $data[$key] = $value;
@@ -308,9 +308,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\IssueMilestone' => false];
+            return [\Github\Model\IssueMilestone::class => false];
         }
     }
 }

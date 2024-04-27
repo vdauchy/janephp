@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\Release';
+            return $type === \Github\Model\Release::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\Release';
+            return is_object($data) && get_class($data) === 'Github\Model\Release';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -112,18 +112,18 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['prerelease']);
             }
             if (\array_key_exists('created_at', $data)) {
-                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['created_at']));
+                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['created_at']));
                 unset($data['created_at']);
             }
             if (\array_key_exists('published_at', $data) && $data['published_at'] !== null) {
-                $object->setPublishedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['published_at']));
+                $object->setPublishedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['published_at']));
                 unset($data['published_at']);
             }
             elseif (\array_key_exists('published_at', $data) && $data['published_at'] === null) {
                 $object->setPublishedAt(null);
             }
             if (\array_key_exists('author', $data) && $data['author'] !== null) {
-                $object->setAuthor($this->denormalizer->denormalize($data['author'], 'Github\\Model\\SimpleUser', 'json', $context));
+                $object->setAuthor($this->denormalizer->denormalize($data['author'], \Github\Model\SimpleUser::class, 'json', $context));
                 unset($data['author']);
             }
             elseif (\array_key_exists('author', $data) && $data['author'] === null) {
@@ -132,7 +132,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('assets', $data)) {
                 $values = [];
                 foreach ($data['assets'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\ReleaseAsset', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\ReleaseAsset::class, 'json', $context);
                 }
                 $object->setAssets($values);
                 unset($data['assets']);
@@ -152,7 +152,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             $data['url'] = $object->getUrl();
@@ -171,8 +171,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             $data['draft'] = $object->getDraft();
             $data['prerelease'] = $object->getPrerelease();
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\\TH:i:sP');
-            $data['published_at'] = $object->getPublishedAt()->format('Y-m-d\\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
+            $data['published_at'] = $object->getPublishedAt()->format('Y-m-d\TH:i:sP');
             $data['author'] = $this->normalizer->normalize($object->getAuthor(), 'json', $context);
             $values = [];
             foreach ($object->getAssets() as $value) {
@@ -195,9 +195,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\Release' => false];
+            return [\Github\Model\Release::class => false];
         }
     }
 } else {
@@ -207,13 +207,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\Release';
+            return $type === \Github\Model\Release::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\Release';
+            return is_object($data) && get_class($data) === 'Github\Model\Release';
         }
         /**
          * @return mixed
@@ -302,18 +302,18 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['prerelease']);
             }
             if (\array_key_exists('created_at', $data)) {
-                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['created_at']));
+                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['created_at']));
                 unset($data['created_at']);
             }
             if (\array_key_exists('published_at', $data) && $data['published_at'] !== null) {
-                $object->setPublishedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['published_at']));
+                $object->setPublishedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['published_at']));
                 unset($data['published_at']);
             }
             elseif (\array_key_exists('published_at', $data) && $data['published_at'] === null) {
                 $object->setPublishedAt(null);
             }
             if (\array_key_exists('author', $data) && $data['author'] !== null) {
-                $object->setAuthor($this->denormalizer->denormalize($data['author'], 'Github\\Model\\SimpleUser', 'json', $context));
+                $object->setAuthor($this->denormalizer->denormalize($data['author'], \Github\Model\SimpleUser::class, 'json', $context));
                 unset($data['author']);
             }
             elseif (\array_key_exists('author', $data) && $data['author'] === null) {
@@ -322,7 +322,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('assets', $data)) {
                 $values = [];
                 foreach ($data['assets'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\ReleaseAsset', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\ReleaseAsset::class, 'json', $context);
                 }
                 $object->setAssets($values);
                 unset($data['assets']);
@@ -364,8 +364,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             $data['draft'] = $object->getDraft();
             $data['prerelease'] = $object->getPrerelease();
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\\TH:i:sP');
-            $data['published_at'] = $object->getPublishedAt()->format('Y-m-d\\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
+            $data['published_at'] = $object->getPublishedAt()->format('Y-m-d\TH:i:sP');
             $data['author'] = $this->normalizer->normalize($object->getAuthor(), 'json', $context);
             $values = [];
             foreach ($object->getAssets() as $value) {
@@ -388,9 +388,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\Release' => false];
+            return [\Github\Model\Release::class => false];
         }
     }
 }

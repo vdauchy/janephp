@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'PicturePark\\API\\Model\\ChannelUpdateRequest';
+            return $type === \PicturePark\API\Model\ChannelUpdateRequest::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'PicturePark\\API\\Model\\ChannelUpdateRequest';
+            return is_object($data) && get_class($data) === 'PicturePark\API\Model\ChannelUpdateRequest';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -43,7 +43,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('sort', $data) && $data['sort'] !== null) {
                 $values = [];
                 foreach ($data['sort'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'PicturePark\\API\\Model\\SortInfo', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \PicturePark\API\Model\SortInfo::class, 'json', $context);
                 }
                 $object->setSort($values);
             }
@@ -56,7 +56,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('sortFields', $data)) {
                 $values_1 = [];
                 foreach ($data['sortFields'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'PicturePark\\API\\Model\\SortField', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \PicturePark\API\Model\SortField::class, 'json', $context);
                 }
                 $object->setSortFields($values_1);
             }
@@ -86,7 +86,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('aggregations', $data) && $data['aggregations'] !== null) {
                 $values_4 = [];
                 foreach ($data['aggregations'] as $value_4) {
-                    $values_4[] = $this->denormalizer->denormalize($value_4, 'PicturePark\\API\\Model\\AggregatorBase', 'json', $context);
+                    $values_4[] = $this->denormalizer->denormalize($value_4, \PicturePark\API\Model\AggregatorBase::class, 'json', $context);
                 }
                 $object->setAggregations($values_4);
             }
@@ -120,7 +120,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('sort') && null !== $object->getSort()) {
@@ -174,9 +174,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['viewForAll'] = $object->getViewForAll();
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['PicturePark\\API\\Model\\ChannelUpdateRequest' => false];
+            return [\PicturePark\API\Model\ChannelUpdateRequest::class => false];
         }
     }
 } else {
@@ -186,13 +186,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'PicturePark\\API\\Model\\ChannelUpdateRequest';
+            return $type === \PicturePark\API\Model\ChannelUpdateRequest::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'PicturePark\\API\\Model\\ChannelUpdateRequest';
+            return is_object($data) && get_class($data) === 'PicturePark\API\Model\ChannelUpdateRequest';
         }
         /**
          * @return mixed
@@ -212,7 +212,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('sort', $data) && $data['sort'] !== null) {
                 $values = [];
                 foreach ($data['sort'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'PicturePark\\API\\Model\\SortInfo', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \PicturePark\API\Model\SortInfo::class, 'json', $context);
                 }
                 $object->setSort($values);
             }
@@ -225,7 +225,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('sortFields', $data)) {
                 $values_1 = [];
                 foreach ($data['sortFields'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'PicturePark\\API\\Model\\SortField', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \PicturePark\API\Model\SortField::class, 'json', $context);
                 }
                 $object->setSortFields($values_1);
             }
@@ -255,7 +255,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('aggregations', $data) && $data['aggregations'] !== null) {
                 $values_4 = [];
                 foreach ($data['aggregations'] as $value_4) {
-                    $values_4[] = $this->denormalizer->denormalize($value_4, 'PicturePark\\API\\Model\\AggregatorBase', 'json', $context);
+                    $values_4[] = $this->denormalizer->denormalize($value_4, \PicturePark\API\Model\AggregatorBase::class, 'json', $context);
                 }
                 $object->setAggregations($values_4);
             }
@@ -346,9 +346,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['viewForAll'] = $object->getViewForAll();
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['PicturePark\\API\\Model\\ChannelUpdateRequest' => false];
+            return [\PicturePark\API\Model\ChannelUpdateRequest::class => false];
         }
     }
 }

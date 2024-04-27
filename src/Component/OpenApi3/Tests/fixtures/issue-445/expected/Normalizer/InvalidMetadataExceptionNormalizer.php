@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'PicturePark\\API\\Model\\InvalidMetadataException';
+            return $type === \PicturePark\API\Model\InvalidMetadataException::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'PicturePark\\API\\Model\\InvalidMetadataException';
+            return is_object($data) && get_class($data) === 'PicturePark\API\Model\InvalidMetadataException';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -97,7 +97,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('metadataErrors', $data) && $data['metadataErrors'] !== null) {
                 $values = [];
                 foreach ($data['metadataErrors'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'PicturePark\\API\\Model\\MetadataError', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \PicturePark\API\Model\MetadataError::class, 'json', $context);
                 }
                 $object->setMetadataErrors($values);
                 unset($data['metadataErrors']);
@@ -108,7 +108,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('validationErrors', $data) && $data['validationErrors'] !== null) {
                 $values_1 = [];
                 foreach ($data['validationErrors'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'PicturePark\\API\\Model\\PictureparkBusinessException', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \PicturePark\API\Model\PictureparkBusinessException::class, 'json', $context);
                 }
                 $object->setValidationErrors($values_1);
                 unset($data['validationErrors']);
@@ -123,7 +123,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('traceLevel') && null !== $object->getTraceLevel()) {
@@ -172,9 +172,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['PicturePark\\API\\Model\\InvalidMetadataException' => false];
+            return [\PicturePark\API\Model\InvalidMetadataException::class => false];
         }
     }
 } else {
@@ -184,13 +184,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'PicturePark\\API\\Model\\InvalidMetadataException';
+            return $type === \PicturePark\API\Model\InvalidMetadataException::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'PicturePark\\API\\Model\\InvalidMetadataException';
+            return is_object($data) && get_class($data) === 'PicturePark\API\Model\InvalidMetadataException';
         }
         /**
          * @return mixed
@@ -264,7 +264,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('metadataErrors', $data) && $data['metadataErrors'] !== null) {
                 $values = [];
                 foreach ($data['metadataErrors'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'PicturePark\\API\\Model\\MetadataError', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \PicturePark\API\Model\MetadataError::class, 'json', $context);
                 }
                 $object->setMetadataErrors($values);
                 unset($data['metadataErrors']);
@@ -275,7 +275,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('validationErrors', $data) && $data['validationErrors'] !== null) {
                 $values_1 = [];
                 foreach ($data['validationErrors'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'PicturePark\\API\\Model\\PictureparkBusinessException', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \PicturePark\API\Model\PictureparkBusinessException::class, 'json', $context);
                 }
                 $object->setValidationErrors($values_1);
                 unset($data['validationErrors']);
@@ -342,9 +342,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['PicturePark\\API\\Model\\InvalidMetadataException' => false];
+            return [\PicturePark\API\Model\InvalidMetadataException::class => false];
         }
     }
 }

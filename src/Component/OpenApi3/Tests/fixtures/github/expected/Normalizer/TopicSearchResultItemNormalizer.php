@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\TopicSearchResultItem';
+            return $type === \Github\Model\TopicSearchResultItem::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\TopicSearchResultItem';
+            return is_object($data) && get_class($data) === 'Github\Model\TopicSearchResultItem';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -83,11 +83,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setReleased(null);
             }
             if (\array_key_exists('created_at', $data)) {
-                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['created_at']));
+                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['created_at']));
                 unset($data['created_at']);
             }
             if (\array_key_exists('updated_at', $data)) {
-                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['updated_at']));
+                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['updated_at']));
                 unset($data['updated_at']);
             }
             if (\array_key_exists('featured', $data)) {
@@ -119,7 +119,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('text_matches', $data)) {
                 $values = [];
                 foreach ($data['text_matches'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\SearchResultTextMatchesItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\SearchResultTextMatchesItem::class, 'json', $context);
                 }
                 $object->setTextMatches($values);
                 unset($data['text_matches']);
@@ -127,7 +127,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('related', $data) && $data['related'] !== null) {
                 $values_1 = [];
                 foreach ($data['related'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'Github\\Model\\TopicSearchResultItemRelatedItem', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \Github\Model\TopicSearchResultItemRelatedItem::class, 'json', $context);
                 }
                 $object->setRelated($values_1);
                 unset($data['related']);
@@ -138,7 +138,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('aliases', $data) && $data['aliases'] !== null) {
                 $values_2 = [];
                 foreach ($data['aliases'] as $value_2) {
-                    $values_2[] = $this->denormalizer->denormalize($value_2, 'Github\\Model\\TopicSearchResultItemAliasesItem', 'json', $context);
+                    $values_2[] = $this->denormalizer->denormalize($value_2, \Github\Model\TopicSearchResultItemAliasesItem::class, 'json', $context);
                 }
                 $object->setAliases($values_2);
                 unset($data['aliases']);
@@ -153,7 +153,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             $data['name'] = $object->getName();
@@ -162,8 +162,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['description'] = $object->getDescription();
             $data['created_by'] = $object->getCreatedBy();
             $data['released'] = $object->getReleased();
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
             $data['featured'] = $object->getFeatured();
             $data['curated'] = $object->getCurated();
             $data['score'] = $object->getScore();
@@ -204,9 +204,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\TopicSearchResultItem' => false];
+            return [\Github\Model\TopicSearchResultItem::class => false];
         }
     }
 } else {
@@ -216,13 +216,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\TopicSearchResultItem';
+            return $type === \Github\Model\TopicSearchResultItem::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\TopicSearchResultItem';
+            return is_object($data) && get_class($data) === 'Github\Model\TopicSearchResultItem';
         }
         /**
          * @return mixed
@@ -282,11 +282,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setReleased(null);
             }
             if (\array_key_exists('created_at', $data)) {
-                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['created_at']));
+                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['created_at']));
                 unset($data['created_at']);
             }
             if (\array_key_exists('updated_at', $data)) {
-                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['updated_at']));
+                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['updated_at']));
                 unset($data['updated_at']);
             }
             if (\array_key_exists('featured', $data)) {
@@ -318,7 +318,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('text_matches', $data)) {
                 $values = [];
                 foreach ($data['text_matches'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\SearchResultTextMatchesItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\SearchResultTextMatchesItem::class, 'json', $context);
                 }
                 $object->setTextMatches($values);
                 unset($data['text_matches']);
@@ -326,7 +326,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('related', $data) && $data['related'] !== null) {
                 $values_1 = [];
                 foreach ($data['related'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'Github\\Model\\TopicSearchResultItemRelatedItem', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \Github\Model\TopicSearchResultItemRelatedItem::class, 'json', $context);
                 }
                 $object->setRelated($values_1);
                 unset($data['related']);
@@ -337,7 +337,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('aliases', $data) && $data['aliases'] !== null) {
                 $values_2 = [];
                 foreach ($data['aliases'] as $value_2) {
-                    $values_2[] = $this->denormalizer->denormalize($value_2, 'Github\\Model\\TopicSearchResultItemAliasesItem', 'json', $context);
+                    $values_2[] = $this->denormalizer->denormalize($value_2, \Github\Model\TopicSearchResultItemAliasesItem::class, 'json', $context);
                 }
                 $object->setAliases($values_2);
                 unset($data['aliases']);
@@ -364,8 +364,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['description'] = $object->getDescription();
             $data['created_by'] = $object->getCreatedBy();
             $data['released'] = $object->getReleased();
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
             $data['featured'] = $object->getFeatured();
             $data['curated'] = $object->getCurated();
             $data['score'] = $object->getScore();
@@ -406,9 +406,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\TopicSearchResultItem' => false];
+            return [\Github\Model\TopicSearchResultItem::class => false];
         }
     }
 }

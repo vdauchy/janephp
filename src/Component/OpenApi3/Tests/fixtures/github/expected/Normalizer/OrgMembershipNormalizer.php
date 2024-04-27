@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\OrgMembership';
+            return $type === \Github\Model\OrgMembership::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\OrgMembership';
+            return is_object($data) && get_class($data) === 'Github\Model\OrgMembership';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -60,18 +60,18 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['organization_url']);
             }
             if (\array_key_exists('organization', $data)) {
-                $object->setOrganization($this->denormalizer->denormalize($data['organization'], 'Github\\Model\\OrganizationSimple', 'json', $context));
+                $object->setOrganization($this->denormalizer->denormalize($data['organization'], \Github\Model\OrganizationSimple::class, 'json', $context));
                 unset($data['organization']);
             }
             if (\array_key_exists('user', $data) && $data['user'] !== null) {
-                $object->setUser($this->denormalizer->denormalize($data['user'], 'Github\\Model\\OrgMembershipUser', 'json', $context));
+                $object->setUser($this->denormalizer->denormalize($data['user'], \Github\Model\OrgMembershipUser::class, 'json', $context));
                 unset($data['user']);
             }
             elseif (\array_key_exists('user', $data) && $data['user'] === null) {
                 $object->setUser(null);
             }
             if (\array_key_exists('permissions', $data)) {
-                $object->setPermissions($this->denormalizer->denormalize($data['permissions'], 'Github\\Model\\OrgMembershipPermissions', 'json', $context));
+                $object->setPermissions($this->denormalizer->denormalize($data['permissions'], \Github\Model\OrgMembershipPermissions::class, 'json', $context));
                 unset($data['permissions']);
             }
             foreach ($data as $key => $value) {
@@ -81,7 +81,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             $data['url'] = $object->getUrl();
@@ -103,9 +103,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\OrgMembership' => false];
+            return [\Github\Model\OrgMembership::class => false];
         }
     }
 } else {
@@ -115,13 +115,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\OrgMembership';
+            return $type === \Github\Model\OrgMembership::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\OrgMembership';
+            return is_object($data) && get_class($data) === 'Github\Model\OrgMembership';
         }
         /**
          * @return mixed
@@ -158,18 +158,18 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['organization_url']);
             }
             if (\array_key_exists('organization', $data)) {
-                $object->setOrganization($this->denormalizer->denormalize($data['organization'], 'Github\\Model\\OrganizationSimple', 'json', $context));
+                $object->setOrganization($this->denormalizer->denormalize($data['organization'], \Github\Model\OrganizationSimple::class, 'json', $context));
                 unset($data['organization']);
             }
             if (\array_key_exists('user', $data) && $data['user'] !== null) {
-                $object->setUser($this->denormalizer->denormalize($data['user'], 'Github\\Model\\OrgMembershipUser', 'json', $context));
+                $object->setUser($this->denormalizer->denormalize($data['user'], \Github\Model\OrgMembershipUser::class, 'json', $context));
                 unset($data['user']);
             }
             elseif (\array_key_exists('user', $data) && $data['user'] === null) {
                 $object->setUser(null);
             }
             if (\array_key_exists('permissions', $data)) {
-                $object->setPermissions($this->denormalizer->denormalize($data['permissions'], 'Github\\Model\\OrgMembershipPermissions', 'json', $context));
+                $object->setPermissions($this->denormalizer->denormalize($data['permissions'], \Github\Model\OrgMembershipPermissions::class, 'json', $context));
                 unset($data['permissions']);
             }
             foreach ($data as $key => $value) {
@@ -204,9 +204,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\OrgMembership' => false];
+            return [\Github\Model\OrgMembership::class => false];
         }
     }
 }

@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\BaseGist';
+            return $type === \Github\Model\BaseGist::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\BaseGist';
+            return is_object($data) && get_class($data) === 'Github\Model\BaseGist';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -78,7 +78,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('files', $data)) {
                 $values = new \ArrayObject([], \ArrayObject::ARRAY_AS_PROPS);
                 foreach ($data['files'] as $key => $value) {
-                    $values[$key] = $this->denormalizer->denormalize($value, 'Github\\Model\\BaseGistFilesItem', 'json', $context);
+                    $values[$key] = $this->denormalizer->denormalize($value, \Github\Model\BaseGistFilesItem::class, 'json', $context);
                 }
                 $object->setFiles($values);
                 unset($data['files']);
@@ -88,11 +88,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['public']);
             }
             if (\array_key_exists('created_at', $data)) {
-                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['created_at']));
+                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['created_at']));
                 unset($data['created_at']);
             }
             if (\array_key_exists('updated_at', $data)) {
-                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['updated_at']));
+                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['updated_at']));
                 unset($data['updated_at']);
             }
             if (\array_key_exists('description', $data) && $data['description'] !== null) {
@@ -107,7 +107,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['comments']);
             }
             if (\array_key_exists('user', $data) && $data['user'] !== null) {
-                $object->setUser($this->denormalizer->denormalize($data['user'], 'Github\\Model\\BaseGistUser', 'json', $context));
+                $object->setUser($this->denormalizer->denormalize($data['user'], \Github\Model\BaseGistUser::class, 'json', $context));
                 unset($data['user']);
             }
             elseif (\array_key_exists('user', $data) && $data['user'] === null) {
@@ -118,7 +118,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['comments_url']);
             }
             if (\array_key_exists('owner', $data) && $data['owner'] !== null) {
-                $object->setOwner($this->denormalizer->denormalize($data['owner'], 'Github\\Model\\BaseGistOwner', 'json', $context));
+                $object->setOwner($this->denormalizer->denormalize($data['owner'], \Github\Model\BaseGistOwner::class, 'json', $context));
                 unset($data['owner']);
             }
             elseif (\array_key_exists('owner', $data) && $data['owner'] === null) {
@@ -151,7 +151,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             $data['url'] = $object->getUrl();
@@ -168,8 +168,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             $data['files'] = $values;
             $data['public'] = $object->getPublic();
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
             $data['description'] = $object->getDescription();
             $data['comments'] = $object->getComments();
             $data['user'] = $this->normalizer->normalize($object->getUser(), 'json', $context);
@@ -204,9 +204,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\BaseGist' => false];
+            return [\Github\Model\BaseGist::class => false];
         }
     }
 } else {
@@ -216,13 +216,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\BaseGist';
+            return $type === \Github\Model\BaseGist::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\BaseGist';
+            return is_object($data) && get_class($data) === 'Github\Model\BaseGist';
         }
         /**
          * @return mixed
@@ -277,7 +277,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('files', $data)) {
                 $values = new \ArrayObject([], \ArrayObject::ARRAY_AS_PROPS);
                 foreach ($data['files'] as $key => $value) {
-                    $values[$key] = $this->denormalizer->denormalize($value, 'Github\\Model\\BaseGistFilesItem', 'json', $context);
+                    $values[$key] = $this->denormalizer->denormalize($value, \Github\Model\BaseGistFilesItem::class, 'json', $context);
                 }
                 $object->setFiles($values);
                 unset($data['files']);
@@ -287,11 +287,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['public']);
             }
             if (\array_key_exists('created_at', $data)) {
-                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['created_at']));
+                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['created_at']));
                 unset($data['created_at']);
             }
             if (\array_key_exists('updated_at', $data)) {
-                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['updated_at']));
+                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['updated_at']));
                 unset($data['updated_at']);
             }
             if (\array_key_exists('description', $data) && $data['description'] !== null) {
@@ -306,7 +306,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['comments']);
             }
             if (\array_key_exists('user', $data) && $data['user'] !== null) {
-                $object->setUser($this->denormalizer->denormalize($data['user'], 'Github\\Model\\BaseGistUser', 'json', $context));
+                $object->setUser($this->denormalizer->denormalize($data['user'], \Github\Model\BaseGistUser::class, 'json', $context));
                 unset($data['user']);
             }
             elseif (\array_key_exists('user', $data) && $data['user'] === null) {
@@ -317,7 +317,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['comments_url']);
             }
             if (\array_key_exists('owner', $data) && $data['owner'] !== null) {
-                $object->setOwner($this->denormalizer->denormalize($data['owner'], 'Github\\Model\\BaseGistOwner', 'json', $context));
+                $object->setOwner($this->denormalizer->denormalize($data['owner'], \Github\Model\BaseGistOwner::class, 'json', $context));
                 unset($data['owner']);
             }
             elseif (\array_key_exists('owner', $data) && $data['owner'] === null) {
@@ -370,8 +370,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             $data['files'] = $values;
             $data['public'] = $object->getPublic();
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
             $data['description'] = $object->getDescription();
             $data['comments'] = $object->getComments();
             $data['user'] = $this->normalizer->normalize($object->getUser(), 'json', $context);
@@ -406,9 +406,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\BaseGist' => false];
+            return [\Github\Model\BaseGist::class => false];
         }
     }
 }

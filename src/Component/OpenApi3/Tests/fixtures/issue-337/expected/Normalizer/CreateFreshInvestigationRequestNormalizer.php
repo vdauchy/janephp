@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'CreditSafe\\API\\Model\\CreateFreshInvestigationRequest';
+            return $type === \CreditSafe\API\Model\CreateFreshInvestigationRequest::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'CreditSafe\\API\\Model\\CreateFreshInvestigationRequest';
+            return is_object($data) && get_class($data) === 'CreditSafe\API\Model\CreateFreshInvestigationRequest';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -45,7 +45,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['consent']);
             }
             if (\array_key_exists('contactInfo', $data)) {
-                $object->setContactInfo($this->denormalizer->denormalize($data['contactInfo'], 'CreditSafe\\API\\Model\\CreateFreshInvestigationRequestContactInfo', 'json', $context));
+                $object->setContactInfo($this->denormalizer->denormalize($data['contactInfo'], \CreditSafe\API\Model\CreateFreshInvestigationRequestContactInfo::class, 'json', $context));
                 unset($data['contactInfo']);
             }
             if (\array_key_exists('chargeReference', $data)) {
@@ -53,7 +53,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['chargeReference']);
             }
             if (\array_key_exists('searchCriteria', $data)) {
-                $object->setSearchCriteria($this->denormalizer->denormalize($data['searchCriteria'], 'CreditSafe\\API\\Model\\CreateFreshInvestigationRequestSearchCriteria', 'json', $context));
+                $object->setSearchCriteria($this->denormalizer->denormalize($data['searchCriteria'], \CreditSafe\API\Model\CreateFreshInvestigationRequestSearchCriteria::class, 'json', $context));
                 unset($data['searchCriteria']);
             }
             foreach ($data as $key => $value) {
@@ -63,7 +63,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('consent') && null !== $object->getConsent()) {
@@ -85,9 +85,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['CreditSafe\\API\\Model\\CreateFreshInvestigationRequest' => false];
+            return [\CreditSafe\API\Model\CreateFreshInvestigationRequest::class => false];
         }
     }
 } else {
@@ -97,13 +97,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'CreditSafe\\API\\Model\\CreateFreshInvestigationRequest';
+            return $type === \CreditSafe\API\Model\CreateFreshInvestigationRequest::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'CreditSafe\\API\\Model\\CreateFreshInvestigationRequest';
+            return is_object($data) && get_class($data) === 'CreditSafe\API\Model\CreateFreshInvestigationRequest';
         }
         /**
          * @return mixed
@@ -125,7 +125,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['consent']);
             }
             if (\array_key_exists('contactInfo', $data)) {
-                $object->setContactInfo($this->denormalizer->denormalize($data['contactInfo'], 'CreditSafe\\API\\Model\\CreateFreshInvestigationRequestContactInfo', 'json', $context));
+                $object->setContactInfo($this->denormalizer->denormalize($data['contactInfo'], \CreditSafe\API\Model\CreateFreshInvestigationRequestContactInfo::class, 'json', $context));
                 unset($data['contactInfo']);
             }
             if (\array_key_exists('chargeReference', $data)) {
@@ -133,7 +133,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['chargeReference']);
             }
             if (\array_key_exists('searchCriteria', $data)) {
-                $object->setSearchCriteria($this->denormalizer->denormalize($data['searchCriteria'], 'CreditSafe\\API\\Model\\CreateFreshInvestigationRequestSearchCriteria', 'json', $context));
+                $object->setSearchCriteria($this->denormalizer->denormalize($data['searchCriteria'], \CreditSafe\API\Model\CreateFreshInvestigationRequestSearchCriteria::class, 'json', $context));
                 unset($data['searchCriteria']);
             }
             foreach ($data as $key => $value) {
@@ -168,9 +168,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['CreditSafe\\API\\Model\\CreateFreshInvestigationRequest' => false];
+            return [\CreditSafe\API\Model\CreateFreshInvestigationRequest::class => false];
         }
     }
 }

@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\Authorization';
+            return $type === \Github\Model\Authorization::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\Authorization';
+            return is_object($data) && get_class($data) === 'Github\Model\Authorization';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -81,7 +81,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setHashedToken(null);
             }
             if (\array_key_exists('app', $data)) {
-                $object->setApp($this->denormalizer->denormalize($data['app'], 'Github\\Model\\AuthorizationApp', 'json', $context));
+                $object->setApp($this->denormalizer->denormalize($data['app'], \Github\Model\AuthorizationApp::class, 'json', $context));
                 unset($data['app']);
             }
             if (\array_key_exists('note', $data) && $data['note'] !== null) {
@@ -99,11 +99,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setNoteUrl(null);
             }
             if (\array_key_exists('updated_at', $data)) {
-                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['updated_at']));
+                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['updated_at']));
                 unset($data['updated_at']);
             }
             if (\array_key_exists('created_at', $data)) {
-                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['created_at']));
+                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['created_at']));
                 unset($data['created_at']);
             }
             if (\array_key_exists('fingerprint', $data) && $data['fingerprint'] !== null) {
@@ -114,14 +114,14 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setFingerprint(null);
             }
             if (\array_key_exists('user', $data) && $data['user'] !== null) {
-                $object->setUser($this->denormalizer->denormalize($data['user'], 'Github\\Model\\AuthorizationUser', 'json', $context));
+                $object->setUser($this->denormalizer->denormalize($data['user'], \Github\Model\AuthorizationUser::class, 'json', $context));
                 unset($data['user']);
             }
             elseif (\array_key_exists('user', $data) && $data['user'] === null) {
                 $object->setUser(null);
             }
             if (\array_key_exists('installation', $data) && $data['installation'] !== null) {
-                $object->setInstallation($this->denormalizer->denormalize($data['installation'], 'Github\\Model\\AuthorizationInstallation', 'json', $context));
+                $object->setInstallation($this->denormalizer->denormalize($data['installation'], \Github\Model\AuthorizationInstallation::class, 'json', $context));
                 unset($data['installation']);
             }
             elseif (\array_key_exists('installation', $data) && $data['installation'] === null) {
@@ -134,7 +134,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             $data['id'] = $object->getId();
@@ -150,8 +150,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['app'] = $this->normalizer->normalize($object->getApp(), 'json', $context);
             $data['note'] = $object->getNote();
             $data['note_url'] = $object->getNoteUrl();
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\\TH:i:sP');
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
             $data['fingerprint'] = $object->getFingerprint();
             if ($object->isInitialized('user') && null !== $object->getUser()) {
                 $data['user'] = $this->normalizer->normalize($object->getUser(), 'json', $context);
@@ -169,9 +169,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\Authorization' => false];
+            return [\Github\Model\Authorization::class => false];
         }
     }
 } else {
@@ -181,13 +181,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\Authorization';
+            return $type === \Github\Model\Authorization::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\Authorization';
+            return is_object($data) && get_class($data) === 'Github\Model\Authorization';
         }
         /**
          * @return mixed
@@ -245,7 +245,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setHashedToken(null);
             }
             if (\array_key_exists('app', $data)) {
-                $object->setApp($this->denormalizer->denormalize($data['app'], 'Github\\Model\\AuthorizationApp', 'json', $context));
+                $object->setApp($this->denormalizer->denormalize($data['app'], \Github\Model\AuthorizationApp::class, 'json', $context));
                 unset($data['app']);
             }
             if (\array_key_exists('note', $data) && $data['note'] !== null) {
@@ -263,11 +263,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setNoteUrl(null);
             }
             if (\array_key_exists('updated_at', $data)) {
-                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['updated_at']));
+                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['updated_at']));
                 unset($data['updated_at']);
             }
             if (\array_key_exists('created_at', $data)) {
-                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['created_at']));
+                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['created_at']));
                 unset($data['created_at']);
             }
             if (\array_key_exists('fingerprint', $data) && $data['fingerprint'] !== null) {
@@ -278,14 +278,14 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setFingerprint(null);
             }
             if (\array_key_exists('user', $data) && $data['user'] !== null) {
-                $object->setUser($this->denormalizer->denormalize($data['user'], 'Github\\Model\\AuthorizationUser', 'json', $context));
+                $object->setUser($this->denormalizer->denormalize($data['user'], \Github\Model\AuthorizationUser::class, 'json', $context));
                 unset($data['user']);
             }
             elseif (\array_key_exists('user', $data) && $data['user'] === null) {
                 $object->setUser(null);
             }
             if (\array_key_exists('installation', $data) && $data['installation'] !== null) {
-                $object->setInstallation($this->denormalizer->denormalize($data['installation'], 'Github\\Model\\AuthorizationInstallation', 'json', $context));
+                $object->setInstallation($this->denormalizer->denormalize($data['installation'], \Github\Model\AuthorizationInstallation::class, 'json', $context));
                 unset($data['installation']);
             }
             elseif (\array_key_exists('installation', $data) && $data['installation'] === null) {
@@ -317,8 +317,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['app'] = $this->normalizer->normalize($object->getApp(), 'json', $context);
             $data['note'] = $object->getNote();
             $data['note_url'] = $object->getNoteUrl();
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\\TH:i:sP');
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
             $data['fingerprint'] = $object->getFingerprint();
             if ($object->isInitialized('user') && null !== $object->getUser()) {
                 $data['user'] = $this->normalizer->normalize($object->getUser(), 'json', $context);
@@ -336,9 +336,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\Authorization' => false];
+            return [\Github\Model\Authorization::class => false];
         }
     }
 }

@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\SubLevel1';
+            return $type === \Jane\Component\OpenApi3\Tests\Expected\Model\SubLevel1::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\SubLevel1';
+            return is_object($data) && get_class($data) === 'Jane\Component\OpenApi3\Tests\Expected\Model\SubLevel1';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -41,7 +41,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('subLevel-2', $data)) {
-                $object->setSubLevel2($this->denormalizer->denormalize($data['subLevel-2'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\SubLevel2', 'json', $context));
+                $object->setSubLevel2($this->denormalizer->denormalize($data['subLevel-2'], \Jane\Component\OpenApi3\Tests\Expected\Model\SubLevel2::class, 'json', $context));
                 unset($data['subLevel-2']);
             }
             foreach ($data as $key => $value) {
@@ -51,7 +51,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('subLevel2') && null !== $object->getSubLevel2()) {
@@ -64,9 +64,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\SubLevel1' => false];
+            return [\Jane\Component\OpenApi3\Tests\Expected\Model\SubLevel1::class => false];
         }
     }
 } else {
@@ -76,13 +76,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\SubLevel1';
+            return $type === \Jane\Component\OpenApi3\Tests\Expected\Model\SubLevel1::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\SubLevel1';
+            return is_object($data) && get_class($data) === 'Jane\Component\OpenApi3\Tests\Expected\Model\SubLevel1';
         }
         /**
          * @return mixed
@@ -100,7 +100,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('subLevel-2', $data)) {
-                $object->setSubLevel2($this->denormalizer->denormalize($data['subLevel-2'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\SubLevel2', 'json', $context));
+                $object->setSubLevel2($this->denormalizer->denormalize($data['subLevel-2'], \Jane\Component\OpenApi3\Tests\Expected\Model\SubLevel2::class, 'json', $context));
                 unset($data['subLevel-2']);
             }
             foreach ($data as $key => $value) {
@@ -126,9 +126,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\SubLevel1' => false];
+            return [\Jane\Component\OpenApi3\Tests\Expected\Model\SubLevel1::class => false];
         }
     }
 }

@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\GistCommit';
+            return $type === \Github\Model\GistCommit::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\GistCommit';
+            return is_object($data) && get_class($data) === 'Github\Model\GistCommit';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -52,18 +52,18 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['version']);
             }
             if (\array_key_exists('user', $data) && $data['user'] !== null) {
-                $object->setUser($this->denormalizer->denormalize($data['user'], 'Github\\Model\\GistCommitUser', 'json', $context));
+                $object->setUser($this->denormalizer->denormalize($data['user'], \Github\Model\GistCommitUser::class, 'json', $context));
                 unset($data['user']);
             }
             elseif (\array_key_exists('user', $data) && $data['user'] === null) {
                 $object->setUser(null);
             }
             if (\array_key_exists('change_status', $data)) {
-                $object->setChangeStatus($this->denormalizer->denormalize($data['change_status'], 'Github\\Model\\GistCommitChangeStatus', 'json', $context));
+                $object->setChangeStatus($this->denormalizer->denormalize($data['change_status'], \Github\Model\GistCommitChangeStatus::class, 'json', $context));
                 unset($data['change_status']);
             }
             if (\array_key_exists('committed_at', $data)) {
-                $object->setCommittedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['committed_at']));
+                $object->setCommittedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['committed_at']));
                 unset($data['committed_at']);
             }
             foreach ($data as $key => $value) {
@@ -73,14 +73,14 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             $data['url'] = $object->getUrl();
             $data['version'] = $object->getVersion();
             $data['user'] = $this->normalizer->normalize($object->getUser(), 'json', $context);
             $data['change_status'] = $this->normalizer->normalize($object->getChangeStatus(), 'json', $context);
-            $data['committed_at'] = $object->getCommittedAt()->format('Y-m-d\\TH:i:sP');
+            $data['committed_at'] = $object->getCommittedAt()->format('Y-m-d\TH:i:sP');
             foreach ($object as $key => $value) {
                 if (preg_match('/.*/', (string) $key)) {
                     $data[$key] = $value;
@@ -91,9 +91,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\GistCommit' => false];
+            return [\Github\Model\GistCommit::class => false];
         }
     }
 } else {
@@ -103,13 +103,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\GistCommit';
+            return $type === \Github\Model\GistCommit::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\GistCommit';
+            return is_object($data) && get_class($data) === 'Github\Model\GistCommit';
         }
         /**
          * @return mixed
@@ -138,18 +138,18 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['version']);
             }
             if (\array_key_exists('user', $data) && $data['user'] !== null) {
-                $object->setUser($this->denormalizer->denormalize($data['user'], 'Github\\Model\\GistCommitUser', 'json', $context));
+                $object->setUser($this->denormalizer->denormalize($data['user'], \Github\Model\GistCommitUser::class, 'json', $context));
                 unset($data['user']);
             }
             elseif (\array_key_exists('user', $data) && $data['user'] === null) {
                 $object->setUser(null);
             }
             if (\array_key_exists('change_status', $data)) {
-                $object->setChangeStatus($this->denormalizer->denormalize($data['change_status'], 'Github\\Model\\GistCommitChangeStatus', 'json', $context));
+                $object->setChangeStatus($this->denormalizer->denormalize($data['change_status'], \Github\Model\GistCommitChangeStatus::class, 'json', $context));
                 unset($data['change_status']);
             }
             if (\array_key_exists('committed_at', $data)) {
-                $object->setCommittedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['committed_at']));
+                $object->setCommittedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['committed_at']));
                 unset($data['committed_at']);
             }
             foreach ($data as $key => $value) {
@@ -169,7 +169,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['version'] = $object->getVersion();
             $data['user'] = $this->normalizer->normalize($object->getUser(), 'json', $context);
             $data['change_status'] = $this->normalizer->normalize($object->getChangeStatus(), 'json', $context);
-            $data['committed_at'] = $object->getCommittedAt()->format('Y-m-d\\TH:i:sP');
+            $data['committed_at'] = $object->getCommittedAt()->format('Y-m-d\TH:i:sP');
             foreach ($object as $key => $value) {
                 if (preg_match('/.*/', (string) $key)) {
                     $data[$key] = $value;
@@ -180,9 +180,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\GistCommit' => false];
+            return [\Github\Model\GistCommit::class => false];
         }
     }
 }

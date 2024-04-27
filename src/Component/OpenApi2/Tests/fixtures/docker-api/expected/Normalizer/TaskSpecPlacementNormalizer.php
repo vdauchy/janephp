@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Docker\\Api\\Model\\TaskSpecPlacement';
+            return $type === \Docker\Api\Model\TaskSpecPlacement::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Docker\\Api\\Model\\TaskSpecPlacement';
+            return is_object($data) && get_class($data) === 'Docker\Api\Model\TaskSpecPlacement';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -53,7 +53,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('Preferences', $data)) {
                 $values_1 = [];
                 foreach ($data['Preferences'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'Docker\\Api\\Model\\TaskSpecPlacementPreferencesItem', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \Docker\Api\Model\TaskSpecPlacementPreferencesItem::class, 'json', $context);
                 }
                 $object->setPreferences($values_1);
             }
@@ -63,13 +63,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('Platforms', $data)) {
                 $values_2 = [];
                 foreach ($data['Platforms'] as $value_2) {
-                    $values_2[] = $this->denormalizer->denormalize($value_2, 'Docker\\Api\\Model\\Platform', 'json', $context);
+                    $values_2[] = $this->denormalizer->denormalize($value_2, \Docker\Api\Model\Platform::class, 'json', $context);
                 }
                 $object->setPlatforms($values_2);
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('constraints') && null !== $object->getConstraints()) {
@@ -101,9 +101,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Docker\\Api\\Model\\TaskSpecPlacement' => false];
+            return [\Docker\Api\Model\TaskSpecPlacement::class => false];
         }
     }
 } else {
@@ -113,13 +113,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Docker\\Api\\Model\\TaskSpecPlacement';
+            return $type === \Docker\Api\Model\TaskSpecPlacement::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Docker\\Api\\Model\\TaskSpecPlacement';
+            return is_object($data) && get_class($data) === 'Docker\Api\Model\TaskSpecPlacement';
         }
         /**
          * @return mixed
@@ -149,7 +149,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('Preferences', $data)) {
                 $values_1 = [];
                 foreach ($data['Preferences'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'Docker\\Api\\Model\\TaskSpecPlacementPreferencesItem', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \Docker\Api\Model\TaskSpecPlacementPreferencesItem::class, 'json', $context);
                 }
                 $object->setPreferences($values_1);
             }
@@ -159,7 +159,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('Platforms', $data)) {
                 $values_2 = [];
                 foreach ($data['Platforms'] as $value_2) {
-                    $values_2[] = $this->denormalizer->denormalize($value_2, 'Docker\\Api\\Model\\Platform', 'json', $context);
+                    $values_2[] = $this->denormalizer->denormalize($value_2, \Docker\Api\Model\Platform::class, 'json', $context);
                 }
                 $object->setPlatforms($values_2);
             }
@@ -200,9 +200,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Docker\\Api\\Model\\TaskSpecPlacement' => false];
+            return [\Docker\Api\Model\TaskSpecPlacement::class => false];
         }
     }
 }

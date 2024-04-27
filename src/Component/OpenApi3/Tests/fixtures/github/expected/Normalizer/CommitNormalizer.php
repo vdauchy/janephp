@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\Commit';
+            return $type === \Github\Model\Commit::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\Commit';
+            return is_object($data) && get_class($data) === 'Github\Model\Commit';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -70,18 +70,18 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['comments_url']);
             }
             if (\array_key_exists('commit', $data)) {
-                $object->setCommit($this->denormalizer->denormalize($data['commit'], 'Github\\Model\\CommitCommit', 'json', $context));
+                $object->setCommit($this->denormalizer->denormalize($data['commit'], \Github\Model\CommitCommit::class, 'json', $context));
                 unset($data['commit']);
             }
             if (\array_key_exists('author', $data) && $data['author'] !== null) {
-                $object->setAuthor($this->denormalizer->denormalize($data['author'], 'Github\\Model\\CommitAuthor', 'json', $context));
+                $object->setAuthor($this->denormalizer->denormalize($data['author'], \Github\Model\CommitAuthor::class, 'json', $context));
                 unset($data['author']);
             }
             elseif (\array_key_exists('author', $data) && $data['author'] === null) {
                 $object->setAuthor(null);
             }
             if (\array_key_exists('committer', $data) && $data['committer'] !== null) {
-                $object->setCommitter($this->denormalizer->denormalize($data['committer'], 'Github\\Model\\CommitCommitter', 'json', $context));
+                $object->setCommitter($this->denormalizer->denormalize($data['committer'], \Github\Model\CommitCommitter::class, 'json', $context));
                 unset($data['committer']);
             }
             elseif (\array_key_exists('committer', $data) && $data['committer'] === null) {
@@ -90,19 +90,19 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('parents', $data)) {
                 $values = [];
                 foreach ($data['parents'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\CommitParentsItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\CommitParentsItem::class, 'json', $context);
                 }
                 $object->setParents($values);
                 unset($data['parents']);
             }
             if (\array_key_exists('stats', $data)) {
-                $object->setStats($this->denormalizer->denormalize($data['stats'], 'Github\\Model\\CommitStats', 'json', $context));
+                $object->setStats($this->denormalizer->denormalize($data['stats'], \Github\Model\CommitStats::class, 'json', $context));
                 unset($data['stats']);
             }
             if (\array_key_exists('files', $data)) {
                 $values_1 = [];
                 foreach ($data['files'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'Github\\Model\\CommitFilesItem', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \Github\Model\CommitFilesItem::class, 'json', $context);
                 }
                 $object->setFiles($values_1);
                 unset($data['files']);
@@ -114,7 +114,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             $data['url'] = $object->getUrl();
@@ -150,9 +150,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\Commit' => false];
+            return [\Github\Model\Commit::class => false];
         }
     }
 } else {
@@ -162,13 +162,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\Commit';
+            return $type === \Github\Model\Commit::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\Commit';
+            return is_object($data) && get_class($data) === 'Github\Model\Commit';
         }
         /**
          * @return mixed
@@ -215,18 +215,18 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['comments_url']);
             }
             if (\array_key_exists('commit', $data)) {
-                $object->setCommit($this->denormalizer->denormalize($data['commit'], 'Github\\Model\\CommitCommit', 'json', $context));
+                $object->setCommit($this->denormalizer->denormalize($data['commit'], \Github\Model\CommitCommit::class, 'json', $context));
                 unset($data['commit']);
             }
             if (\array_key_exists('author', $data) && $data['author'] !== null) {
-                $object->setAuthor($this->denormalizer->denormalize($data['author'], 'Github\\Model\\CommitAuthor', 'json', $context));
+                $object->setAuthor($this->denormalizer->denormalize($data['author'], \Github\Model\CommitAuthor::class, 'json', $context));
                 unset($data['author']);
             }
             elseif (\array_key_exists('author', $data) && $data['author'] === null) {
                 $object->setAuthor(null);
             }
             if (\array_key_exists('committer', $data) && $data['committer'] !== null) {
-                $object->setCommitter($this->denormalizer->denormalize($data['committer'], 'Github\\Model\\CommitCommitter', 'json', $context));
+                $object->setCommitter($this->denormalizer->denormalize($data['committer'], \Github\Model\CommitCommitter::class, 'json', $context));
                 unset($data['committer']);
             }
             elseif (\array_key_exists('committer', $data) && $data['committer'] === null) {
@@ -235,19 +235,19 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('parents', $data)) {
                 $values = [];
                 foreach ($data['parents'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\CommitParentsItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\CommitParentsItem::class, 'json', $context);
                 }
                 $object->setParents($values);
                 unset($data['parents']);
             }
             if (\array_key_exists('stats', $data)) {
-                $object->setStats($this->denormalizer->denormalize($data['stats'], 'Github\\Model\\CommitStats', 'json', $context));
+                $object->setStats($this->denormalizer->denormalize($data['stats'], \Github\Model\CommitStats::class, 'json', $context));
                 unset($data['stats']);
             }
             if (\array_key_exists('files', $data)) {
                 $values_1 = [];
                 foreach ($data['files'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'Github\\Model\\CommitFilesItem', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \Github\Model\CommitFilesItem::class, 'json', $context);
                 }
                 $object->setFiles($values_1);
                 unset($data['files']);
@@ -298,9 +298,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\Commit' => false];
+            return [\Github\Model\Commit::class => false];
         }
     }
 }

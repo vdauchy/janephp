@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\CommitComparison';
+            return $type === \Github\Model\CommitComparison::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\CommitComparison';
+            return is_object($data) && get_class($data) === 'Github\Model\CommitComparison';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -64,11 +64,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['patch_url']);
             }
             if (\array_key_exists('base_commit', $data)) {
-                $object->setBaseCommit($this->denormalizer->denormalize($data['base_commit'], 'Github\\Model\\Commit', 'json', $context));
+                $object->setBaseCommit($this->denormalizer->denormalize($data['base_commit'], \Github\Model\Commit::class, 'json', $context));
                 unset($data['base_commit']);
             }
             if (\array_key_exists('merge_base_commit', $data)) {
-                $object->setMergeBaseCommit($this->denormalizer->denormalize($data['merge_base_commit'], 'Github\\Model\\Commit', 'json', $context));
+                $object->setMergeBaseCommit($this->denormalizer->denormalize($data['merge_base_commit'], \Github\Model\Commit::class, 'json', $context));
                 unset($data['merge_base_commit']);
             }
             if (\array_key_exists('status', $data)) {
@@ -90,7 +90,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('commits', $data)) {
                 $values = [];
                 foreach ($data['commits'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\Commit', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\Commit::class, 'json', $context);
                 }
                 $object->setCommits($values);
                 unset($data['commits']);
@@ -98,7 +98,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('files', $data)) {
                 $values_1 = [];
                 foreach ($data['files'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'Github\\Model\\DiffEntry', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \Github\Model\DiffEntry::class, 'json', $context);
                 }
                 $object->setFiles($values_1);
                 unset($data['files']);
@@ -110,7 +110,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             $data['url'] = $object->getUrl();
@@ -144,9 +144,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\CommitComparison' => false];
+            return [\Github\Model\CommitComparison::class => false];
         }
     }
 } else {
@@ -156,13 +156,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\CommitComparison';
+            return $type === \Github\Model\CommitComparison::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\CommitComparison';
+            return is_object($data) && get_class($data) === 'Github\Model\CommitComparison';
         }
         /**
          * @return mixed
@@ -203,11 +203,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['patch_url']);
             }
             if (\array_key_exists('base_commit', $data)) {
-                $object->setBaseCommit($this->denormalizer->denormalize($data['base_commit'], 'Github\\Model\\Commit', 'json', $context));
+                $object->setBaseCommit($this->denormalizer->denormalize($data['base_commit'], \Github\Model\Commit::class, 'json', $context));
                 unset($data['base_commit']);
             }
             if (\array_key_exists('merge_base_commit', $data)) {
-                $object->setMergeBaseCommit($this->denormalizer->denormalize($data['merge_base_commit'], 'Github\\Model\\Commit', 'json', $context));
+                $object->setMergeBaseCommit($this->denormalizer->denormalize($data['merge_base_commit'], \Github\Model\Commit::class, 'json', $context));
                 unset($data['merge_base_commit']);
             }
             if (\array_key_exists('status', $data)) {
@@ -229,7 +229,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('commits', $data)) {
                 $values = [];
                 foreach ($data['commits'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\Commit', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\Commit::class, 'json', $context);
                 }
                 $object->setCommits($values);
                 unset($data['commits']);
@@ -237,7 +237,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('files', $data)) {
                 $values_1 = [];
                 foreach ($data['files'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'Github\\Model\\DiffEntry', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \Github\Model\DiffEntry::class, 'json', $context);
                 }
                 $object->setFiles($values_1);
                 unset($data['files']);
@@ -286,9 +286,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\CommitComparison' => false];
+            return [\Github\Model\CommitComparison::class => false];
         }
     }
 }

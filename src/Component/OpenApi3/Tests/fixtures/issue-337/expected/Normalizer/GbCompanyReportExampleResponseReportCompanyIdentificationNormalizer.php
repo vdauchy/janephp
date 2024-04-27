@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportCompanyIdentification';
+            return $type === \CreditSafe\API\Model\GbCompanyReportExampleResponseReportCompanyIdentification::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportCompanyIdentification';
+            return is_object($data) && get_class($data) === 'CreditSafe\API\Model\GbCompanyReportExampleResponseReportCompanyIdentification';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -41,13 +41,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('basicInformation', $data)) {
-                $object->setBasicInformation($this->denormalizer->denormalize($data['basicInformation'], 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation', 'json', $context));
+                $object->setBasicInformation($this->denormalizer->denormalize($data['basicInformation'], \CreditSafe\API\Model\GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation::class, 'json', $context));
                 unset($data['basicInformation']);
             }
             if (\array_key_exists('activityClassifications', $data)) {
                 $values = [];
                 foreach ($data['activityClassifications'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportCompanyIdentificationActivityClassificationsItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \CreditSafe\API\Model\GbCompanyReportExampleResponseReportCompanyIdentificationActivityClassificationsItem::class, 'json', $context);
                 }
                 $object->setActivityClassifications($values);
                 unset($data['activityClassifications']);
@@ -55,7 +55,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('previousNames', $data)) {
                 $values_1 = [];
                 foreach ($data['previousNames'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportCompanyIdentificationPreviousNamesItem', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \CreditSafe\API\Model\GbCompanyReportExampleResponseReportCompanyIdentificationPreviousNamesItem::class, 'json', $context);
                 }
                 $object->setPreviousNames($values_1);
                 unset($data['previousNames']);
@@ -67,7 +67,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('basicInformation') && null !== $object->getBasicInformation()) {
@@ -94,9 +94,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportCompanyIdentification' => false];
+            return [\CreditSafe\API\Model\GbCompanyReportExampleResponseReportCompanyIdentification::class => false];
         }
     }
 } else {
@@ -106,13 +106,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportCompanyIdentification';
+            return $type === \CreditSafe\API\Model\GbCompanyReportExampleResponseReportCompanyIdentification::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportCompanyIdentification';
+            return is_object($data) && get_class($data) === 'CreditSafe\API\Model\GbCompanyReportExampleResponseReportCompanyIdentification';
         }
         /**
          * @return mixed
@@ -130,13 +130,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('basicInformation', $data)) {
-                $object->setBasicInformation($this->denormalizer->denormalize($data['basicInformation'], 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation', 'json', $context));
+                $object->setBasicInformation($this->denormalizer->denormalize($data['basicInformation'], \CreditSafe\API\Model\GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation::class, 'json', $context));
                 unset($data['basicInformation']);
             }
             if (\array_key_exists('activityClassifications', $data)) {
                 $values = [];
                 foreach ($data['activityClassifications'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportCompanyIdentificationActivityClassificationsItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \CreditSafe\API\Model\GbCompanyReportExampleResponseReportCompanyIdentificationActivityClassificationsItem::class, 'json', $context);
                 }
                 $object->setActivityClassifications($values);
                 unset($data['activityClassifications']);
@@ -144,7 +144,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('previousNames', $data)) {
                 $values_1 = [];
                 foreach ($data['previousNames'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportCompanyIdentificationPreviousNamesItem', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \CreditSafe\API\Model\GbCompanyReportExampleResponseReportCompanyIdentificationPreviousNamesItem::class, 'json', $context);
                 }
                 $object->setPreviousNames($values_1);
                 unset($data['previousNames']);
@@ -186,9 +186,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportCompanyIdentification' => false];
+            return [\CreditSafe\API\Model\GbCompanyReportExampleResponseReportCompanyIdentification::class => false];
         }
     }
 }

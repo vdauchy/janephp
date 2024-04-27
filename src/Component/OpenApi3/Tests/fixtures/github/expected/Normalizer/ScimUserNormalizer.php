@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\ScimUser';
+            return $type === \Github\Model\ScimUser::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\ScimUser';
+            return is_object($data) && get_class($data) === 'Github\Model\ScimUser';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -70,13 +70,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setUserName(null);
             }
             if (\array_key_exists('name', $data)) {
-                $object->setName($this->denormalizer->denormalize($data['name'], 'Github\\Model\\ScimUserName', 'json', $context));
+                $object->setName($this->denormalizer->denormalize($data['name'], \Github\Model\ScimUserName::class, 'json', $context));
                 unset($data['name']);
             }
             if (\array_key_exists('emails', $data)) {
                 $values_1 = [];
                 foreach ($data['emails'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'Github\\Model\\ScimUserEmailsItem', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \Github\Model\ScimUserEmailsItem::class, 'json', $context);
                 }
                 $object->setEmails($values_1);
                 unset($data['emails']);
@@ -86,7 +86,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['active']);
             }
             if (\array_key_exists('meta', $data)) {
-                $object->setMeta($this->denormalizer->denormalize($data['meta'], 'Github\\Model\\ScimUserMeta', 'json', $context));
+                $object->setMeta($this->denormalizer->denormalize($data['meta'], \Github\Model\ScimUserMeta::class, 'json', $context));
                 unset($data['meta']);
             }
             if (\array_key_exists('organization_id', $data)) {
@@ -96,7 +96,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('operations', $data)) {
                 $values_2 = [];
                 foreach ($data['operations'] as $value_2) {
-                    $values_2[] = $this->denormalizer->denormalize($value_2, 'Github\\Model\\ScimUserOperationsItem', 'json', $context);
+                    $values_2[] = $this->denormalizer->denormalize($value_2, \Github\Model\ScimUserOperationsItem::class, 'json', $context);
                 }
                 $object->setOperations($values_2);
                 unset($data['operations']);
@@ -104,7 +104,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('groups', $data)) {
                 $values_3 = [];
                 foreach ($data['groups'] as $value_3) {
-                    $values_3[] = $this->denormalizer->denormalize($value_3, 'Github\\Model\\ScimUserGroupsItem', 'json', $context);
+                    $values_3[] = $this->denormalizer->denormalize($value_3, \Github\Model\ScimUserGroupsItem::class, 'json', $context);
                 }
                 $object->setGroups($values_3);
                 unset($data['groups']);
@@ -116,7 +116,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             $values = [];
@@ -162,9 +162,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\ScimUser' => false];
+            return [\Github\Model\ScimUser::class => false];
         }
     }
 } else {
@@ -174,13 +174,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\ScimUser';
+            return $type === \Github\Model\ScimUser::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\ScimUser';
+            return is_object($data) && get_class($data) === 'Github\Model\ScimUser';
         }
         /**
          * @return mixed
@@ -227,13 +227,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setUserName(null);
             }
             if (\array_key_exists('name', $data)) {
-                $object->setName($this->denormalizer->denormalize($data['name'], 'Github\\Model\\ScimUserName', 'json', $context));
+                $object->setName($this->denormalizer->denormalize($data['name'], \Github\Model\ScimUserName::class, 'json', $context));
                 unset($data['name']);
             }
             if (\array_key_exists('emails', $data)) {
                 $values_1 = [];
                 foreach ($data['emails'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'Github\\Model\\ScimUserEmailsItem', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \Github\Model\ScimUserEmailsItem::class, 'json', $context);
                 }
                 $object->setEmails($values_1);
                 unset($data['emails']);
@@ -243,7 +243,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['active']);
             }
             if (\array_key_exists('meta', $data)) {
-                $object->setMeta($this->denormalizer->denormalize($data['meta'], 'Github\\Model\\ScimUserMeta', 'json', $context));
+                $object->setMeta($this->denormalizer->denormalize($data['meta'], \Github\Model\ScimUserMeta::class, 'json', $context));
                 unset($data['meta']);
             }
             if (\array_key_exists('organization_id', $data)) {
@@ -253,7 +253,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('operations', $data)) {
                 $values_2 = [];
                 foreach ($data['operations'] as $value_2) {
-                    $values_2[] = $this->denormalizer->denormalize($value_2, 'Github\\Model\\ScimUserOperationsItem', 'json', $context);
+                    $values_2[] = $this->denormalizer->denormalize($value_2, \Github\Model\ScimUserOperationsItem::class, 'json', $context);
                 }
                 $object->setOperations($values_2);
                 unset($data['operations']);
@@ -261,7 +261,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('groups', $data)) {
                 $values_3 = [];
                 foreach ($data['groups'] as $value_3) {
-                    $values_3[] = $this->denormalizer->denormalize($value_3, 'Github\\Model\\ScimUserGroupsItem', 'json', $context);
+                    $values_3[] = $this->denormalizer->denormalize($value_3, \Github\Model\ScimUserGroupsItem::class, 'json', $context);
                 }
                 $object->setGroups($values_3);
                 unset($data['groups']);
@@ -322,9 +322,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\ScimUser' => false];
+            return [\Github\Model\ScimUser::class => false];
         }
     }
 }

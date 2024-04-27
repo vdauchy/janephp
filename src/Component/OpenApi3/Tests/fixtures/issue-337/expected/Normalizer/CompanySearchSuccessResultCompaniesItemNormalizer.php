@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'CreditSafe\\API\\Model\\CompanySearchSuccessResultCompaniesItem';
+            return $type === \CreditSafe\API\Model\CompanySearchSuccessResultCompaniesItem::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'CreditSafe\\API\\Model\\CompanySearchSuccessResultCompaniesItem';
+            return is_object($data) && get_class($data) === 'CreditSafe\API\Model\CompanySearchSuccessResultCompaniesItem';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -53,7 +53,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['regNo']);
             }
             if (\array_key_exists('vatNo', $data)) {
-                $object->setVatNo($this->denormalizer->denormalize($data['vatNo'], 'CreditSafe\\API\\Model\\CompanySearchSuccessResultCompaniesItemVatNo', 'json', $context));
+                $object->setVatNo($this->denormalizer->denormalize($data['vatNo'], \CreditSafe\API\Model\CompanySearchSuccessResultCompaniesItemVatNo::class, 'json', $context));
                 unset($data['vatNo']);
             }
             if (\array_key_exists('safeNo', $data)) {
@@ -85,19 +85,19 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['activityCode']);
             }
             if (\array_key_exists('tradingNames', $data)) {
-                $object->setTradingNames($this->denormalizer->denormalize($data['tradingNames'], 'CreditSafe\\API\\Model\\CompanySearchSuccessResultCompaniesItemTradingNames', 'json', $context));
+                $object->setTradingNames($this->denormalizer->denormalize($data['tradingNames'], \CreditSafe\API\Model\CompanySearchSuccessResultCompaniesItemTradingNames::class, 'json', $context));
                 unset($data['tradingNames']);
             }
             if (\array_key_exists('address', $data)) {
-                $object->setAddress($this->denormalizer->denormalize($data['address'], 'CreditSafe\\API\\Model\\CompanySearchSuccessResultCompaniesItemAddress', 'json', $context));
+                $object->setAddress($this->denormalizer->denormalize($data['address'], \CreditSafe\API\Model\CompanySearchSuccessResultCompaniesItemAddress::class, 'json', $context));
                 unset($data['address']);
             }
             if (\array_key_exists('dateOfLatestChange', $data)) {
-                $object->setDateOfLatestChange($this->denormalizer->denormalize($data['dateOfLatestChange'], 'CreditSafe\\API\\Model\\CompanySearchSuccessResultCompaniesItemDateOfLatestChange', 'json', $context));
+                $object->setDateOfLatestChange($this->denormalizer->denormalize($data['dateOfLatestChange'], \CreditSafe\API\Model\CompanySearchSuccessResultCompaniesItemDateOfLatestChange::class, 'json', $context));
                 unset($data['dateOfLatestChange']);
             }
             if (\array_key_exists('dateOfLatestCAccounts', $data)) {
-                $object->setDateOfLatestCAccounts($this->denormalizer->denormalize($data['dateOfLatestCAccounts'], 'CreditSafe\\API\\Model\\CompanySearchSuccessResultCompaniesItemDateOfLatestCAccounts', 'json', $context));
+                $object->setDateOfLatestCAccounts($this->denormalizer->denormalize($data['dateOfLatestCAccounts'], \CreditSafe\API\Model\CompanySearchSuccessResultCompaniesItemDateOfLatestCAccounts::class, 'json', $context));
                 unset($data['dateOfLatestCAccounts']);
             }
             foreach ($data as $key => $value) {
@@ -107,7 +107,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('id') && null !== $object->getId()) {
@@ -162,9 +162,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['CreditSafe\\API\\Model\\CompanySearchSuccessResultCompaniesItem' => false];
+            return [\CreditSafe\API\Model\CompanySearchSuccessResultCompaniesItem::class => false];
         }
     }
 } else {
@@ -174,13 +174,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'CreditSafe\\API\\Model\\CompanySearchSuccessResultCompaniesItem';
+            return $type === \CreditSafe\API\Model\CompanySearchSuccessResultCompaniesItem::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'CreditSafe\\API\\Model\\CompanySearchSuccessResultCompaniesItem';
+            return is_object($data) && get_class($data) === 'CreditSafe\API\Model\CompanySearchSuccessResultCompaniesItem';
         }
         /**
          * @return mixed
@@ -210,7 +210,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['regNo']);
             }
             if (\array_key_exists('vatNo', $data)) {
-                $object->setVatNo($this->denormalizer->denormalize($data['vatNo'], 'CreditSafe\\API\\Model\\CompanySearchSuccessResultCompaniesItemVatNo', 'json', $context));
+                $object->setVatNo($this->denormalizer->denormalize($data['vatNo'], \CreditSafe\API\Model\CompanySearchSuccessResultCompaniesItemVatNo::class, 'json', $context));
                 unset($data['vatNo']);
             }
             if (\array_key_exists('safeNo', $data)) {
@@ -242,19 +242,19 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['activityCode']);
             }
             if (\array_key_exists('tradingNames', $data)) {
-                $object->setTradingNames($this->denormalizer->denormalize($data['tradingNames'], 'CreditSafe\\API\\Model\\CompanySearchSuccessResultCompaniesItemTradingNames', 'json', $context));
+                $object->setTradingNames($this->denormalizer->denormalize($data['tradingNames'], \CreditSafe\API\Model\CompanySearchSuccessResultCompaniesItemTradingNames::class, 'json', $context));
                 unset($data['tradingNames']);
             }
             if (\array_key_exists('address', $data)) {
-                $object->setAddress($this->denormalizer->denormalize($data['address'], 'CreditSafe\\API\\Model\\CompanySearchSuccessResultCompaniesItemAddress', 'json', $context));
+                $object->setAddress($this->denormalizer->denormalize($data['address'], \CreditSafe\API\Model\CompanySearchSuccessResultCompaniesItemAddress::class, 'json', $context));
                 unset($data['address']);
             }
             if (\array_key_exists('dateOfLatestChange', $data)) {
-                $object->setDateOfLatestChange($this->denormalizer->denormalize($data['dateOfLatestChange'], 'CreditSafe\\API\\Model\\CompanySearchSuccessResultCompaniesItemDateOfLatestChange', 'json', $context));
+                $object->setDateOfLatestChange($this->denormalizer->denormalize($data['dateOfLatestChange'], \CreditSafe\API\Model\CompanySearchSuccessResultCompaniesItemDateOfLatestChange::class, 'json', $context));
                 unset($data['dateOfLatestChange']);
             }
             if (\array_key_exists('dateOfLatestCAccounts', $data)) {
-                $object->setDateOfLatestCAccounts($this->denormalizer->denormalize($data['dateOfLatestCAccounts'], 'CreditSafe\\API\\Model\\CompanySearchSuccessResultCompaniesItemDateOfLatestCAccounts', 'json', $context));
+                $object->setDateOfLatestCAccounts($this->denormalizer->denormalize($data['dateOfLatestCAccounts'], \CreditSafe\API\Model\CompanySearchSuccessResultCompaniesItemDateOfLatestCAccounts::class, 'json', $context));
                 unset($data['dateOfLatestCAccounts']);
             }
             foreach ($data as $key => $value) {
@@ -322,9 +322,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['CreditSafe\\API\\Model\\CompanySearchSuccessResultCompaniesItem' => false];
+            return [\CreditSafe\API\Model\CompanySearchSuccessResultCompaniesItem::class => false];
         }
     }
 }

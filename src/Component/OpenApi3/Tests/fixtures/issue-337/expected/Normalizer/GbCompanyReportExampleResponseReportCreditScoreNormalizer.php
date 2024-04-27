@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportCreditScore';
+            return $type === \CreditSafe\API\Model\GbCompanyReportExampleResponseReportCreditScore::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportCreditScore';
+            return is_object($data) && get_class($data) === 'CreditSafe\API\Model\GbCompanyReportExampleResponseReportCreditScore';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -41,15 +41,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('currentCreditRating', $data)) {
-                $object->setCurrentCreditRating($this->denormalizer->denormalize($data['currentCreditRating'], 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportCreditScoreCurrentCreditRating', 'json', $context));
+                $object->setCurrentCreditRating($this->denormalizer->denormalize($data['currentCreditRating'], \CreditSafe\API\Model\GbCompanyReportExampleResponseReportCreditScoreCurrentCreditRating::class, 'json', $context));
                 unset($data['currentCreditRating']);
             }
             if (\array_key_exists('currentContractLimit', $data)) {
-                $object->setCurrentContractLimit($this->denormalizer->denormalize($data['currentContractLimit'], 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportCreditScoreCurrentContractLimit', 'json', $context));
+                $object->setCurrentContractLimit($this->denormalizer->denormalize($data['currentContractLimit'], \CreditSafe\API\Model\GbCompanyReportExampleResponseReportCreditScoreCurrentContractLimit::class, 'json', $context));
                 unset($data['currentContractLimit']);
             }
             if (\array_key_exists('previousCreditRating', $data)) {
-                $object->setPreviousCreditRating($this->denormalizer->denormalize($data['previousCreditRating'], 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportCreditScorePreviousCreditRating', 'json', $context));
+                $object->setPreviousCreditRating($this->denormalizer->denormalize($data['previousCreditRating'], \CreditSafe\API\Model\GbCompanyReportExampleResponseReportCreditScorePreviousCreditRating::class, 'json', $context));
                 unset($data['previousCreditRating']);
             }
             if (\array_key_exists('latestRatingChangeDate', $data)) {
@@ -63,7 +63,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('currentCreditRating') && null !== $object->getCurrentCreditRating()) {
@@ -85,9 +85,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportCreditScore' => false];
+            return [\CreditSafe\API\Model\GbCompanyReportExampleResponseReportCreditScore::class => false];
         }
     }
 } else {
@@ -97,13 +97,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportCreditScore';
+            return $type === \CreditSafe\API\Model\GbCompanyReportExampleResponseReportCreditScore::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportCreditScore';
+            return is_object($data) && get_class($data) === 'CreditSafe\API\Model\GbCompanyReportExampleResponseReportCreditScore';
         }
         /**
          * @return mixed
@@ -121,15 +121,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('currentCreditRating', $data)) {
-                $object->setCurrentCreditRating($this->denormalizer->denormalize($data['currentCreditRating'], 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportCreditScoreCurrentCreditRating', 'json', $context));
+                $object->setCurrentCreditRating($this->denormalizer->denormalize($data['currentCreditRating'], \CreditSafe\API\Model\GbCompanyReportExampleResponseReportCreditScoreCurrentCreditRating::class, 'json', $context));
                 unset($data['currentCreditRating']);
             }
             if (\array_key_exists('currentContractLimit', $data)) {
-                $object->setCurrentContractLimit($this->denormalizer->denormalize($data['currentContractLimit'], 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportCreditScoreCurrentContractLimit', 'json', $context));
+                $object->setCurrentContractLimit($this->denormalizer->denormalize($data['currentContractLimit'], \CreditSafe\API\Model\GbCompanyReportExampleResponseReportCreditScoreCurrentContractLimit::class, 'json', $context));
                 unset($data['currentContractLimit']);
             }
             if (\array_key_exists('previousCreditRating', $data)) {
-                $object->setPreviousCreditRating($this->denormalizer->denormalize($data['previousCreditRating'], 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportCreditScorePreviousCreditRating', 'json', $context));
+                $object->setPreviousCreditRating($this->denormalizer->denormalize($data['previousCreditRating'], \CreditSafe\API\Model\GbCompanyReportExampleResponseReportCreditScorePreviousCreditRating::class, 'json', $context));
                 unset($data['previousCreditRating']);
             }
             if (\array_key_exists('latestRatingChangeDate', $data)) {
@@ -168,9 +168,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportCreditScore' => false];
+            return [\CreditSafe\API\Model\GbCompanyReportExampleResponseReportCreditScore::class => false];
         }
     }
 }

@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Docker\\Api\\Model\\SystemInfo';
+            return $type === \Docker\Api\Model\SystemInfo::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Docker\\Api\\Model\\SystemInfo';
+            return is_object($data) && get_class($data) === 'Docker\Api\Model\SystemInfo';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -79,7 +79,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setDockerRootDir($data['DockerRootDir']);
             }
             if (\array_key_exists('Plugins', $data)) {
-                $object->setPlugins($this->denormalizer->denormalize($data['Plugins'], 'Docker\\Api\\Model\\PluginsInfo', 'json', $context));
+                $object->setPlugins($this->denormalizer->denormalize($data['Plugins'], \Docker\Api\Model\PluginsInfo::class, 'json', $context));
             }
             if (\array_key_exists('MemoryLimit', $data)) {
                 $object->setMemoryLimit($data['MemoryLimit']);
@@ -166,7 +166,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setIndexServerAddress($data['IndexServerAddress']);
             }
             if (\array_key_exists('RegistryConfig', $data) && $data['RegistryConfig'] !== null) {
-                $object->setRegistryConfig($this->denormalizer->denormalize($data['RegistryConfig'], 'Docker\\Api\\Model\\RegistryServiceConfig', 'json', $context));
+                $object->setRegistryConfig($this->denormalizer->denormalize($data['RegistryConfig'], \Docker\Api\Model\RegistryServiceConfig::class, 'json', $context));
             }
             elseif (\array_key_exists('RegistryConfig', $data) && $data['RegistryConfig'] === null) {
                 $object->setRegistryConfig(null);
@@ -174,7 +174,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('GenericResources', $data)) {
                 $values_2 = [];
                 foreach ($data['GenericResources'] as $value_2) {
-                    $values_2[] = $this->denormalizer->denormalize($value_2, 'Docker\\Api\\Model\\GenericResourcesItem', 'json', $context);
+                    $values_2[] = $this->denormalizer->denormalize($value_2, \Docker\Api\Model\GenericResourcesItem::class, 'json', $context);
                 }
                 $object->setGenericResources($values_2);
             }
@@ -212,7 +212,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('Runtimes', $data)) {
                 $values_4 = new \ArrayObject([], \ArrayObject::ARRAY_AS_PROPS);
                 foreach ($data['Runtimes'] as $key => $value_4) {
-                    $values_4[$key] = $this->denormalizer->denormalize($value_4, 'Docker\\Api\\Model\\Runtime', 'json', $context);
+                    $values_4[$key] = $this->denormalizer->denormalize($value_4, \Docker\Api\Model\Runtime::class, 'json', $context);
                 }
                 $object->setRuntimes($values_4);
             }
@@ -220,7 +220,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setDefaultRuntime($data['DefaultRuntime']);
             }
             if (\array_key_exists('Swarm', $data)) {
-                $object->setSwarm($this->denormalizer->denormalize($data['Swarm'], 'Docker\\Api\\Model\\SwarmInfo', 'json', $context));
+                $object->setSwarm($this->denormalizer->denormalize($data['Swarm'], \Docker\Api\Model\SwarmInfo::class, 'json', $context));
             }
             if (\array_key_exists('LiveRestoreEnabled', $data)) {
                 $object->setLiveRestoreEnabled($data['LiveRestoreEnabled']);
@@ -232,13 +232,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setInitBinary($data['InitBinary']);
             }
             if (\array_key_exists('ContainerdCommit', $data)) {
-                $object->setContainerdCommit($this->denormalizer->denormalize($data['ContainerdCommit'], 'Docker\\Api\\Model\\Commit', 'json', $context));
+                $object->setContainerdCommit($this->denormalizer->denormalize($data['ContainerdCommit'], \Docker\Api\Model\Commit::class, 'json', $context));
             }
             if (\array_key_exists('RuncCommit', $data)) {
-                $object->setRuncCommit($this->denormalizer->denormalize($data['RuncCommit'], 'Docker\\Api\\Model\\Commit', 'json', $context));
+                $object->setRuncCommit($this->denormalizer->denormalize($data['RuncCommit'], \Docker\Api\Model\Commit::class, 'json', $context));
             }
             if (\array_key_exists('InitCommit', $data)) {
-                $object->setInitCommit($this->denormalizer->denormalize($data['InitCommit'], 'Docker\\Api\\Model\\Commit', 'json', $context));
+                $object->setInitCommit($this->denormalizer->denormalize($data['InitCommit'], \Docker\Api\Model\Commit::class, 'json', $context));
             }
             if (\array_key_exists('SecurityOptions', $data)) {
                 $values_5 = [];
@@ -253,7 +253,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('DefaultAddressPools', $data)) {
                 $values_6 = [];
                 foreach ($data['DefaultAddressPools'] as $value_6) {
-                    $values_6[] = $this->denormalizer->denormalize($value_6, 'Docker\\Api\\Model\\SystemInfoDefaultAddressPoolsItem', 'json', $context);
+                    $values_6[] = $this->denormalizer->denormalize($value_6, \Docker\Api\Model\SystemInfoDefaultAddressPoolsItem::class, 'json', $context);
                 }
                 $object->setDefaultAddressPools($values_6);
             }
@@ -266,7 +266,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('iD') && null !== $object->getID()) {
@@ -492,9 +492,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Docker\\Api\\Model\\SystemInfo' => false];
+            return [\Docker\Api\Model\SystemInfo::class => false];
         }
     }
 } else {
@@ -504,13 +504,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Docker\\Api\\Model\\SystemInfo';
+            return $type === \Docker\Api\Model\SystemInfo::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Docker\\Api\\Model\\SystemInfo';
+            return is_object($data) && get_class($data) === 'Docker\Api\Model\SystemInfo';
         }
         /**
          * @return mixed
@@ -566,7 +566,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setDockerRootDir($data['DockerRootDir']);
             }
             if (\array_key_exists('Plugins', $data)) {
-                $object->setPlugins($this->denormalizer->denormalize($data['Plugins'], 'Docker\\Api\\Model\\PluginsInfo', 'json', $context));
+                $object->setPlugins($this->denormalizer->denormalize($data['Plugins'], \Docker\Api\Model\PluginsInfo::class, 'json', $context));
             }
             if (\array_key_exists('MemoryLimit', $data)) {
                 $object->setMemoryLimit($data['MemoryLimit']);
@@ -653,7 +653,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setIndexServerAddress($data['IndexServerAddress']);
             }
             if (\array_key_exists('RegistryConfig', $data) && $data['RegistryConfig'] !== null) {
-                $object->setRegistryConfig($this->denormalizer->denormalize($data['RegistryConfig'], 'Docker\\Api\\Model\\RegistryServiceConfig', 'json', $context));
+                $object->setRegistryConfig($this->denormalizer->denormalize($data['RegistryConfig'], \Docker\Api\Model\RegistryServiceConfig::class, 'json', $context));
             }
             elseif (\array_key_exists('RegistryConfig', $data) && $data['RegistryConfig'] === null) {
                 $object->setRegistryConfig(null);
@@ -661,7 +661,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('GenericResources', $data)) {
                 $values_2 = [];
                 foreach ($data['GenericResources'] as $value_2) {
-                    $values_2[] = $this->denormalizer->denormalize($value_2, 'Docker\\Api\\Model\\GenericResourcesItem', 'json', $context);
+                    $values_2[] = $this->denormalizer->denormalize($value_2, \Docker\Api\Model\GenericResourcesItem::class, 'json', $context);
                 }
                 $object->setGenericResources($values_2);
             }
@@ -699,7 +699,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('Runtimes', $data)) {
                 $values_4 = new \ArrayObject([], \ArrayObject::ARRAY_AS_PROPS);
                 foreach ($data['Runtimes'] as $key => $value_4) {
-                    $values_4[$key] = $this->denormalizer->denormalize($value_4, 'Docker\\Api\\Model\\Runtime', 'json', $context);
+                    $values_4[$key] = $this->denormalizer->denormalize($value_4, \Docker\Api\Model\Runtime::class, 'json', $context);
                 }
                 $object->setRuntimes($values_4);
             }
@@ -707,7 +707,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setDefaultRuntime($data['DefaultRuntime']);
             }
             if (\array_key_exists('Swarm', $data)) {
-                $object->setSwarm($this->denormalizer->denormalize($data['Swarm'], 'Docker\\Api\\Model\\SwarmInfo', 'json', $context));
+                $object->setSwarm($this->denormalizer->denormalize($data['Swarm'], \Docker\Api\Model\SwarmInfo::class, 'json', $context));
             }
             if (\array_key_exists('LiveRestoreEnabled', $data)) {
                 $object->setLiveRestoreEnabled($data['LiveRestoreEnabled']);
@@ -719,13 +719,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setInitBinary($data['InitBinary']);
             }
             if (\array_key_exists('ContainerdCommit', $data)) {
-                $object->setContainerdCommit($this->denormalizer->denormalize($data['ContainerdCommit'], 'Docker\\Api\\Model\\Commit', 'json', $context));
+                $object->setContainerdCommit($this->denormalizer->denormalize($data['ContainerdCommit'], \Docker\Api\Model\Commit::class, 'json', $context));
             }
             if (\array_key_exists('RuncCommit', $data)) {
-                $object->setRuncCommit($this->denormalizer->denormalize($data['RuncCommit'], 'Docker\\Api\\Model\\Commit', 'json', $context));
+                $object->setRuncCommit($this->denormalizer->denormalize($data['RuncCommit'], \Docker\Api\Model\Commit::class, 'json', $context));
             }
             if (\array_key_exists('InitCommit', $data)) {
-                $object->setInitCommit($this->denormalizer->denormalize($data['InitCommit'], 'Docker\\Api\\Model\\Commit', 'json', $context));
+                $object->setInitCommit($this->denormalizer->denormalize($data['InitCommit'], \Docker\Api\Model\Commit::class, 'json', $context));
             }
             if (\array_key_exists('SecurityOptions', $data)) {
                 $values_5 = [];
@@ -740,7 +740,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('DefaultAddressPools', $data)) {
                 $values_6 = [];
                 foreach ($data['DefaultAddressPools'] as $value_6) {
-                    $values_6[] = $this->denormalizer->denormalize($value_6, 'Docker\\Api\\Model\\SystemInfoDefaultAddressPoolsItem', 'json', $context);
+                    $values_6[] = $this->denormalizer->denormalize($value_6, \Docker\Api\Model\SystemInfoDefaultAddressPoolsItem::class, 'json', $context);
                 }
                 $object->setDefaultAddressPools($values_6);
             }
@@ -982,9 +982,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Docker\\Api\\Model\\SystemInfo' => false];
+            return [\Docker\Api\Model\SystemInfo::class => false];
         }
     }
 }

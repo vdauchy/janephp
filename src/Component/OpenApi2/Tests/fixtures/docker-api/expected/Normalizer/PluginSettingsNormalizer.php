@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Docker\\Api\\Model\\PluginSettings';
+            return $type === \Docker\Api\Model\PluginSettings::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Docker\\Api\\Model\\PluginSettings';
+            return is_object($data) && get_class($data) === 'Docker\Api\Model\PluginSettings';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -46,7 +46,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('Mounts', $data)) {
                 $values = [];
                 foreach ($data['Mounts'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Docker\\Api\\Model\\PluginMount', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Docker\Api\Model\PluginMount::class, 'json', $context);
                 }
                 $object->setMounts($values);
             }
@@ -67,13 +67,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('Devices', $data)) {
                 $values_3 = [];
                 foreach ($data['Devices'] as $value_3) {
-                    $values_3[] = $this->denormalizer->denormalize($value_3, 'Docker\\Api\\Model\\PluginDevice', 'json', $context);
+                    $values_3[] = $this->denormalizer->denormalize($value_3, \Docker\Api\Model\PluginDevice::class, 'json', $context);
                 }
                 $object->setDevices($values_3);
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             $values = [];
@@ -101,9 +101,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Docker\\Api\\Model\\PluginSettings' => false];
+            return [\Docker\Api\Model\PluginSettings::class => false];
         }
     }
 } else {
@@ -113,13 +113,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Docker\\Api\\Model\\PluginSettings';
+            return $type === \Docker\Api\Model\PluginSettings::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Docker\\Api\\Model\\PluginSettings';
+            return is_object($data) && get_class($data) === 'Docker\Api\Model\PluginSettings';
         }
         /**
          * @return mixed
@@ -142,7 +142,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('Mounts', $data)) {
                 $values = [];
                 foreach ($data['Mounts'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Docker\\Api\\Model\\PluginMount', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Docker\Api\Model\PluginMount::class, 'json', $context);
                 }
                 $object->setMounts($values);
             }
@@ -163,7 +163,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('Devices', $data)) {
                 $values_3 = [];
                 foreach ($data['Devices'] as $value_3) {
-                    $values_3[] = $this->denormalizer->denormalize($value_3, 'Docker\\Api\\Model\\PluginDevice', 'json', $context);
+                    $values_3[] = $this->denormalizer->denormalize($value_3, \Docker\Api\Model\PluginDevice::class, 'json', $context);
                 }
                 $object->setDevices($values_3);
             }
@@ -200,9 +200,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Docker\\Api\\Model\\PluginSettings' => false];
+            return [\Docker\Api\Model\PluginSettings::class => false];
         }
     }
 }

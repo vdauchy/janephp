@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\GitRef';
+            return $type === \Github\Model\GitRef::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\GitRef';
+            return is_object($data) && get_class($data) === 'Github\Model\GitRef';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -56,7 +56,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['url']);
             }
             if (\array_key_exists('object', $data)) {
-                $object->setObject($this->denormalizer->denormalize($data['object'], 'Github\\Model\\GitRefObject', 'json', $context));
+                $object->setObject($this->denormalizer->denormalize($data['object'], \Github\Model\GitRefObject::class, 'json', $context));
                 unset($data['object']);
             }
             foreach ($data as $key => $value) {
@@ -66,7 +66,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('ref') && null !== $object->getRef()) {
@@ -91,9 +91,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\GitRef' => false];
+            return [\Github\Model\GitRef::class => false];
         }
     }
 } else {
@@ -103,13 +103,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\GitRef';
+            return $type === \Github\Model\GitRef::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\GitRef';
+            return is_object($data) && get_class($data) === 'Github\Model\GitRef';
         }
         /**
          * @return mixed
@@ -142,7 +142,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['url']);
             }
             if (\array_key_exists('object', $data)) {
-                $object->setObject($this->denormalizer->denormalize($data['object'], 'Github\\Model\\GitRefObject', 'json', $context));
+                $object->setObject($this->denormalizer->denormalize($data['object'], \Github\Model\GitRefObject::class, 'json', $context));
                 unset($data['object']);
             }
             foreach ($data as $key => $value) {
@@ -180,9 +180,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\GitRef' => false];
+            return [\Github\Model\GitRef::class => false];
         }
     }
 }

@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Endpoint2GetResponse';
+            return $type === \Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint2GetResponse::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Endpoint2GetResponse';
+            return is_object($data) && get_class($data) === 'Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint2GetResponse';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -41,11 +41,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('field-2', $data)) {
-                $object->setField2($this->denormalizer->denormalize($data['field-2'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\SubLevel1', 'json', $context));
+                $object->setField2($this->denormalizer->denormalize($data['field-2'], \Jane\Component\OpenApi3\Tests\Expected\Model\SubLevel1::class, 'json', $context));
                 unset($data['field-2']);
             }
             if (\array_key_exists('field-2-bis', $data)) {
-                $object->setField2Bis($this->denormalizer->denormalize($data['field-2-bis'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\SubLevel2', 'json', $context));
+                $object->setField2Bis($this->denormalizer->denormalize($data['field-2-bis'], \Jane\Component\OpenApi3\Tests\Expected\Model\SubLevel2::class, 'json', $context));
                 unset($data['field-2-bis']);
             }
             foreach ($data as $key => $value) {
@@ -55,7 +55,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('field2') && null !== $object->getField2()) {
@@ -71,9 +71,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Endpoint2GetResponse' => false];
+            return [\Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint2GetResponse::class => false];
         }
     }
 } else {
@@ -83,13 +83,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Endpoint2GetResponse';
+            return $type === \Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint2GetResponse::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Endpoint2GetResponse';
+            return is_object($data) && get_class($data) === 'Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint2GetResponse';
         }
         /**
          * @return mixed
@@ -107,11 +107,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('field-2', $data)) {
-                $object->setField2($this->denormalizer->denormalize($data['field-2'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\SubLevel1', 'json', $context));
+                $object->setField2($this->denormalizer->denormalize($data['field-2'], \Jane\Component\OpenApi3\Tests\Expected\Model\SubLevel1::class, 'json', $context));
                 unset($data['field-2']);
             }
             if (\array_key_exists('field-2-bis', $data)) {
-                $object->setField2Bis($this->denormalizer->denormalize($data['field-2-bis'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\SubLevel2', 'json', $context));
+                $object->setField2Bis($this->denormalizer->denormalize($data['field-2-bis'], \Jane\Component\OpenApi3\Tests\Expected\Model\SubLevel2::class, 'json', $context));
                 unset($data['field-2-bis']);
             }
             foreach ($data as $key => $value) {
@@ -140,9 +140,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Endpoint2GetResponse' => false];
+            return [\Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint2GetResponse::class => false];
         }
     }
 }

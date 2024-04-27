@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\TestGetBody';
+            return $type === \Jane\Component\OpenApi3\Tests\Expected\Model\TestGetBody::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\TestGetBody';
+            return is_object($data) && get_class($data) === 'Jane\Component\OpenApi3\Tests\Expected\Model\TestGetBody';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -45,11 +45,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['foo']);
             }
             if (\array_key_exists('Bar', $data)) {
-                $object->setBar($this->denormalizer->denormalize($data['Bar'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Bar', 'json', $context));
+                $object->setBar($this->denormalizer->denormalize($data['Bar'], \Jane\Component\OpenApi3\Tests\Expected\Model\Bar::class, 'json', $context));
                 unset($data['Bar']);
             }
             if (\array_key_exists('Baz', $data)) {
-                $object->setBaz($this->denormalizer->denormalize($data['Baz'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\TestGetBodyBaz', 'json', $context));
+                $object->setBaz($this->denormalizer->denormalize($data['Baz'], \Jane\Component\OpenApi3\Tests\Expected\Model\TestGetBodyBaz::class, 'json', $context));
                 unset($data['Baz']);
             }
             foreach ($data as $key => $value) {
@@ -59,7 +59,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('foo') && null !== $object->getFoo()) {
@@ -78,9 +78,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\TestGetBody' => false];
+            return [\Jane\Component\OpenApi3\Tests\Expected\Model\TestGetBody::class => false];
         }
     }
 } else {
@@ -90,13 +90,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\TestGetBody';
+            return $type === \Jane\Component\OpenApi3\Tests\Expected\Model\TestGetBody::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\TestGetBody';
+            return is_object($data) && get_class($data) === 'Jane\Component\OpenApi3\Tests\Expected\Model\TestGetBody';
         }
         /**
          * @return mixed
@@ -118,11 +118,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['foo']);
             }
             if (\array_key_exists('Bar', $data)) {
-                $object->setBar($this->denormalizer->denormalize($data['Bar'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Bar', 'json', $context));
+                $object->setBar($this->denormalizer->denormalize($data['Bar'], \Jane\Component\OpenApi3\Tests\Expected\Model\Bar::class, 'json', $context));
                 unset($data['Bar']);
             }
             if (\array_key_exists('Baz', $data)) {
-                $object->setBaz($this->denormalizer->denormalize($data['Baz'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\TestGetBodyBaz', 'json', $context));
+                $object->setBaz($this->denormalizer->denormalize($data['Baz'], \Jane\Component\OpenApi3\Tests\Expected\Model\TestGetBodyBaz::class, 'json', $context));
                 unset($data['Baz']);
             }
             foreach ($data as $key => $value) {
@@ -154,9 +154,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\TestGetBody' => false];
+            return [\Jane\Component\OpenApi3\Tests\Expected\Model\TestGetBody::class => false];
         }
     }
 }

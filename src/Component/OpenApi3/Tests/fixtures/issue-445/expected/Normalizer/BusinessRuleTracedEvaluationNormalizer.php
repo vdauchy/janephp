@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'PicturePark\\API\\Model\\BusinessRuleTracedEvaluation';
+            return $type === \PicturePark\API\Model\BusinessRuleTracedEvaluation::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'PicturePark\\API\\Model\\BusinessRuleTracedEvaluation';
+            return is_object($data) && get_class($data) === 'PicturePark\API\Model\BusinessRuleTracedEvaluation';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -46,7 +46,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('conditions', $data) && $data['conditions'] !== null) {
                 $values = [];
                 foreach ($data['conditions'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'PicturePark\\API\\Model\\BusinessRuleTracedEvaluationCondition', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \PicturePark\API\Model\BusinessRuleTracedEvaluationCondition::class, 'json', $context);
                 }
                 $object->setConditions($values);
             }
@@ -56,7 +56,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('transformationGroups', $data) && $data['transformationGroups'] !== null) {
                 $values_1 = [];
                 foreach ($data['transformationGroups'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'PicturePark\\API\\Model\\BusinessRuleTracedTransformationGroup', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \PicturePark\API\Model\BusinessRuleTracedTransformationGroup::class, 'json', $context);
                 }
                 $object->setTransformationGroups($values_1);
             }
@@ -66,7 +66,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('actions', $data) && $data['actions'] !== null) {
                 $values_2 = [];
                 foreach ($data['actions'] as $value_2) {
-                    $values_2[] = $this->denormalizer->denormalize($value_2, 'PicturePark\\API\\Model\\BusinessRuleTracedAction', 'json', $context);
+                    $values_2[] = $this->denormalizer->denormalize($value_2, \PicturePark\API\Model\BusinessRuleTracedAction::class, 'json', $context);
                 }
                 $object->setActions($values_2);
             }
@@ -85,7 +85,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             $data['conditionSatisfied'] = $object->getConditionSatisfied();
@@ -119,9 +119,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['PicturePark\\API\\Model\\BusinessRuleTracedEvaluation' => false];
+            return [\PicturePark\API\Model\BusinessRuleTracedEvaluation::class => false];
         }
     }
 } else {
@@ -131,13 +131,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'PicturePark\\API\\Model\\BusinessRuleTracedEvaluation';
+            return $type === \PicturePark\API\Model\BusinessRuleTracedEvaluation::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'PicturePark\\API\\Model\\BusinessRuleTracedEvaluation';
+            return is_object($data) && get_class($data) === 'PicturePark\API\Model\BusinessRuleTracedEvaluation';
         }
         /**
          * @return mixed
@@ -160,7 +160,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('conditions', $data) && $data['conditions'] !== null) {
                 $values = [];
                 foreach ($data['conditions'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'PicturePark\\API\\Model\\BusinessRuleTracedEvaluationCondition', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \PicturePark\API\Model\BusinessRuleTracedEvaluationCondition::class, 'json', $context);
                 }
                 $object->setConditions($values);
             }
@@ -170,7 +170,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('transformationGroups', $data) && $data['transformationGroups'] !== null) {
                 $values_1 = [];
                 foreach ($data['transformationGroups'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'PicturePark\\API\\Model\\BusinessRuleTracedTransformationGroup', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \PicturePark\API\Model\BusinessRuleTracedTransformationGroup::class, 'json', $context);
                 }
                 $object->setTransformationGroups($values_1);
             }
@@ -180,7 +180,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('actions', $data) && $data['actions'] !== null) {
                 $values_2 = [];
                 foreach ($data['actions'] as $value_2) {
-                    $values_2[] = $this->denormalizer->denormalize($value_2, 'PicturePark\\API\\Model\\BusinessRuleTracedAction', 'json', $context);
+                    $values_2[] = $this->denormalizer->denormalize($value_2, \PicturePark\API\Model\BusinessRuleTracedAction::class, 'json', $context);
                 }
                 $object->setActions($values_2);
             }
@@ -236,9 +236,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['PicturePark\\API\\Model\\BusinessRuleTracedEvaluation' => false];
+            return [\PicturePark\API\Model\BusinessRuleTracedEvaluation::class => false];
         }
     }
 }

@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\CommitCommit';
+            return $type === \Github\Model\CommitCommit::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\CommitCommit';
+            return is_object($data) && get_class($data) === 'Github\Model\CommitCommit';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -48,14 +48,14 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['url']);
             }
             if (\array_key_exists('author', $data) && $data['author'] !== null) {
-                $object->setAuthor($this->denormalizer->denormalize($data['author'], 'Github\\Model\\CommitCommitAuthor', 'json', $context));
+                $object->setAuthor($this->denormalizer->denormalize($data['author'], \Github\Model\CommitCommitAuthor::class, 'json', $context));
                 unset($data['author']);
             }
             elseif (\array_key_exists('author', $data) && $data['author'] === null) {
                 $object->setAuthor(null);
             }
             if (\array_key_exists('committer', $data) && $data['committer'] !== null) {
-                $object->setCommitter($this->denormalizer->denormalize($data['committer'], 'Github\\Model\\CommitCommitCommitter', 'json', $context));
+                $object->setCommitter($this->denormalizer->denormalize($data['committer'], \Github\Model\CommitCommitCommitter::class, 'json', $context));
                 unset($data['committer']);
             }
             elseif (\array_key_exists('committer', $data) && $data['committer'] === null) {
@@ -70,11 +70,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['comment_count']);
             }
             if (\array_key_exists('tree', $data)) {
-                $object->setTree($this->denormalizer->denormalize($data['tree'], 'Github\\Model\\CommitCommitTree', 'json', $context));
+                $object->setTree($this->denormalizer->denormalize($data['tree'], \Github\Model\CommitCommitTree::class, 'json', $context));
                 unset($data['tree']);
             }
             if (\array_key_exists('verification', $data)) {
-                $object->setVerification($this->denormalizer->denormalize($data['verification'], 'Github\\Model\\Verification', 'json', $context));
+                $object->setVerification($this->denormalizer->denormalize($data['verification'], \Github\Model\Verification::class, 'json', $context));
                 unset($data['verification']);
             }
             foreach ($data as $key => $value) {
@@ -84,7 +84,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             $data['url'] = $object->getUrl();
@@ -106,9 +106,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\CommitCommit' => false];
+            return [\Github\Model\CommitCommit::class => false];
         }
     }
 } else {
@@ -118,13 +118,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\CommitCommit';
+            return $type === \Github\Model\CommitCommit::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\CommitCommit';
+            return is_object($data) && get_class($data) === 'Github\Model\CommitCommit';
         }
         /**
          * @return mixed
@@ -149,14 +149,14 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['url']);
             }
             if (\array_key_exists('author', $data) && $data['author'] !== null) {
-                $object->setAuthor($this->denormalizer->denormalize($data['author'], 'Github\\Model\\CommitCommitAuthor', 'json', $context));
+                $object->setAuthor($this->denormalizer->denormalize($data['author'], \Github\Model\CommitCommitAuthor::class, 'json', $context));
                 unset($data['author']);
             }
             elseif (\array_key_exists('author', $data) && $data['author'] === null) {
                 $object->setAuthor(null);
             }
             if (\array_key_exists('committer', $data) && $data['committer'] !== null) {
-                $object->setCommitter($this->denormalizer->denormalize($data['committer'], 'Github\\Model\\CommitCommitCommitter', 'json', $context));
+                $object->setCommitter($this->denormalizer->denormalize($data['committer'], \Github\Model\CommitCommitCommitter::class, 'json', $context));
                 unset($data['committer']);
             }
             elseif (\array_key_exists('committer', $data) && $data['committer'] === null) {
@@ -171,11 +171,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['comment_count']);
             }
             if (\array_key_exists('tree', $data)) {
-                $object->setTree($this->denormalizer->denormalize($data['tree'], 'Github\\Model\\CommitCommitTree', 'json', $context));
+                $object->setTree($this->denormalizer->denormalize($data['tree'], \Github\Model\CommitCommitTree::class, 'json', $context));
                 unset($data['tree']);
             }
             if (\array_key_exists('verification', $data)) {
-                $object->setVerification($this->denormalizer->denormalize($data['verification'], 'Github\\Model\\Verification', 'json', $context));
+                $object->setVerification($this->denormalizer->denormalize($data['verification'], \Github\Model\Verification::class, 'json', $context));
                 unset($data['verification']);
             }
             foreach ($data as $key => $value) {
@@ -210,9 +210,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\CommitCommit' => false];
+            return [\Github\Model\CommitCommit::class => false];
         }
     }
 }

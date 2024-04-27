@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'CreditSafe\\API\\Model\\PeopleSearchSuccessResultDirectorsItem';
+            return $type === \CreditSafe\API\Model\PeopleSearchSuccessResultDirectorsItem::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'CreditSafe\\API\\Model\\PeopleSearchSuccessResultDirectorsItem';
+            return is_object($data) && get_class($data) === 'CreditSafe\API\Model\PeopleSearchSuccessResultDirectorsItem';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -57,11 +57,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['country']);
             }
             if (\array_key_exists('company', $data)) {
-                $object->setCompany($this->denormalizer->denormalize($data['company'], 'CreditSafe\\API\\Model\\PeopleSearchSuccessResultDirectorsItemCompany', 'json', $context));
+                $object->setCompany($this->denormalizer->denormalize($data['company'], \CreditSafe\API\Model\PeopleSearchSuccessResultDirectorsItemCompany::class, 'json', $context));
                 unset($data['company']);
             }
             if (\array_key_exists('address', $data)) {
-                $object->setAddress($this->denormalizer->denormalize($data['address'], 'CreditSafe\\API\\Model\\PeopleSearchSuccessResultDirectorsItemAddress', 'json', $context));
+                $object->setAddress($this->denormalizer->denormalize($data['address'], \CreditSafe\API\Model\PeopleSearchSuccessResultDirectorsItemAddress::class, 'json', $context));
                 unset($data['address']);
             }
             if (\array_key_exists('status', $data)) {
@@ -87,7 +87,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('peopleId') && null !== $object->getPeopleId()) {
@@ -127,9 +127,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['CreditSafe\\API\\Model\\PeopleSearchSuccessResultDirectorsItem' => false];
+            return [\CreditSafe\API\Model\PeopleSearchSuccessResultDirectorsItem::class => false];
         }
     }
 } else {
@@ -139,13 +139,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'CreditSafe\\API\\Model\\PeopleSearchSuccessResultDirectorsItem';
+            return $type === \CreditSafe\API\Model\PeopleSearchSuccessResultDirectorsItem::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'CreditSafe\\API\\Model\\PeopleSearchSuccessResultDirectorsItem';
+            return is_object($data) && get_class($data) === 'CreditSafe\API\Model\PeopleSearchSuccessResultDirectorsItem';
         }
         /**
          * @return mixed
@@ -179,11 +179,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['country']);
             }
             if (\array_key_exists('company', $data)) {
-                $object->setCompany($this->denormalizer->denormalize($data['company'], 'CreditSafe\\API\\Model\\PeopleSearchSuccessResultDirectorsItemCompany', 'json', $context));
+                $object->setCompany($this->denormalizer->denormalize($data['company'], \CreditSafe\API\Model\PeopleSearchSuccessResultDirectorsItemCompany::class, 'json', $context));
                 unset($data['company']);
             }
             if (\array_key_exists('address', $data)) {
-                $object->setAddress($this->denormalizer->denormalize($data['address'], 'CreditSafe\\API\\Model\\PeopleSearchSuccessResultDirectorsItemAddress', 'json', $context));
+                $object->setAddress($this->denormalizer->denormalize($data['address'], \CreditSafe\API\Model\PeopleSearchSuccessResultDirectorsItemAddress::class, 'json', $context));
                 unset($data['address']);
             }
             if (\array_key_exists('status', $data)) {
@@ -252,9 +252,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['CreditSafe\\API\\Model\\PeopleSearchSuccessResultDirectorsItem' => false];
+            return [\CreditSafe\API\Model\PeopleSearchSuccessResultDirectorsItem::class => false];
         }
     }
 }

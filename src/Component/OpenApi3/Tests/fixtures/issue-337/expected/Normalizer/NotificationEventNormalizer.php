@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'CreditSafe\\API\\Model\\NotificationEvent';
+            return $type === \CreditSafe\API\Model\NotificationEvent::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'CreditSafe\\API\\Model\\NotificationEvent';
+            return is_object($data) && get_class($data) === 'CreditSafe\API\Model\NotificationEvent';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -50,7 +50,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('company', $data)) {
-                $object->setCompany($this->denormalizer->denormalize($data['company'], 'CreditSafe\\API\\Model\\Company', 'json', $context));
+                $object->setCompany($this->denormalizer->denormalize($data['company'], \CreditSafe\API\Model\Company::class, 'json', $context));
                 unset($data['company']);
             }
             if (\array_key_exists('eventId', $data)) {
@@ -58,7 +58,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['eventId']);
             }
             if (\array_key_exists('eventDate', $data)) {
-                $object->setEventDate(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['eventDate']));
+                $object->setEventDate(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['eventDate']));
                 unset($data['eventDate']);
             }
             if (\array_key_exists('newValue', $data)) {
@@ -88,7 +88,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('company') && null !== $object->getCompany()) {
@@ -98,7 +98,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['eventId'] = $object->getEventId();
             }
             if ($object->isInitialized('eventDate') && null !== $object->getEventDate()) {
-                $data['eventDate'] = $object->getEventDate()->format('Y-m-d\\TH:i:sP');
+                $data['eventDate'] = $object->getEventDate()->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('newValue') && null !== $object->getNewValue()) {
                 $data['newValue'] = $object->getNewValue();
@@ -122,9 +122,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['CreditSafe\\API\\Model\\NotificationEvent' => false];
+            return [\CreditSafe\API\Model\NotificationEvent::class => false];
         }
     }
 } else {
@@ -134,13 +134,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'CreditSafe\\API\\Model\\NotificationEvent';
+            return $type === \CreditSafe\API\Model\NotificationEvent::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'CreditSafe\\API\\Model\\NotificationEvent';
+            return is_object($data) && get_class($data) === 'CreditSafe\API\Model\NotificationEvent';
         }
         /**
          * @return mixed
@@ -167,7 +167,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('company', $data)) {
-                $object->setCompany($this->denormalizer->denormalize($data['company'], 'CreditSafe\\API\\Model\\Company', 'json', $context));
+                $object->setCompany($this->denormalizer->denormalize($data['company'], \CreditSafe\API\Model\Company::class, 'json', $context));
                 unset($data['company']);
             }
             if (\array_key_exists('eventId', $data)) {
@@ -175,7 +175,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['eventId']);
             }
             if (\array_key_exists('eventDate', $data)) {
-                $object->setEventDate(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['eventDate']));
+                $object->setEventDate(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['eventDate']));
                 unset($data['eventDate']);
             }
             if (\array_key_exists('newValue', $data)) {
@@ -218,7 +218,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['eventId'] = $object->getEventId();
             }
             if ($object->isInitialized('eventDate') && null !== $object->getEventDate()) {
-                $data['eventDate'] = $object->getEventDate()->format('Y-m-d\\TH:i:sP');
+                $data['eventDate'] = $object->getEventDate()->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('newValue') && null !== $object->getNewValue()) {
                 $data['newValue'] = $object->getNewValue();
@@ -242,9 +242,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['CreditSafe\\API\\Model\\NotificationEvent' => false];
+            return [\CreditSafe\API\Model\NotificationEvent::class => false];
         }
     }
 }

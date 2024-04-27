@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\IssueEvent';
+            return $type === \Github\Model\IssueEvent::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\IssueEvent';
+            return is_object($data) && get_class($data) === 'Github\Model\IssueEvent';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -56,7 +56,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['url']);
             }
             if (\array_key_exists('actor', $data) && $data['actor'] !== null) {
-                $object->setActor($this->denormalizer->denormalize($data['actor'], 'Github\\Model\\IssueEventActor', 'json', $context));
+                $object->setActor($this->denormalizer->denormalize($data['actor'], \Github\Model\IssueEventActor::class, 'json', $context));
                 unset($data['actor']);
             }
             elseif (\array_key_exists('actor', $data) && $data['actor'] === null) {
@@ -81,63 +81,63 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setCommitUrl(null);
             }
             if (\array_key_exists('created_at', $data)) {
-                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['created_at']));
+                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['created_at']));
                 unset($data['created_at']);
             }
             if (\array_key_exists('issue', $data)) {
-                $object->setIssue($this->denormalizer->denormalize($data['issue'], 'Github\\Model\\IssueSimple', 'json', $context));
+                $object->setIssue($this->denormalizer->denormalize($data['issue'], \Github\Model\IssueSimple::class, 'json', $context));
                 unset($data['issue']);
             }
             if (\array_key_exists('label', $data)) {
-                $object->setLabel($this->denormalizer->denormalize($data['label'], 'Github\\Model\\IssueEventLabel', 'json', $context));
+                $object->setLabel($this->denormalizer->denormalize($data['label'], \Github\Model\IssueEventLabel::class, 'json', $context));
                 unset($data['label']);
             }
             if (\array_key_exists('assignee', $data) && $data['assignee'] !== null) {
-                $object->setAssignee($this->denormalizer->denormalize($data['assignee'], 'Github\\Model\\IssueEventAssignee', 'json', $context));
+                $object->setAssignee($this->denormalizer->denormalize($data['assignee'], \Github\Model\IssueEventAssignee::class, 'json', $context));
                 unset($data['assignee']);
             }
             elseif (\array_key_exists('assignee', $data) && $data['assignee'] === null) {
                 $object->setAssignee(null);
             }
             if (\array_key_exists('assigner', $data) && $data['assigner'] !== null) {
-                $object->setAssigner($this->denormalizer->denormalize($data['assigner'], 'Github\\Model\\IssueEventAssigner', 'json', $context));
+                $object->setAssigner($this->denormalizer->denormalize($data['assigner'], \Github\Model\IssueEventAssigner::class, 'json', $context));
                 unset($data['assigner']);
             }
             elseif (\array_key_exists('assigner', $data) && $data['assigner'] === null) {
                 $object->setAssigner(null);
             }
             if (\array_key_exists('review_requester', $data) && $data['review_requester'] !== null) {
-                $object->setReviewRequester($this->denormalizer->denormalize($data['review_requester'], 'Github\\Model\\IssueEventReviewRequester', 'json', $context));
+                $object->setReviewRequester($this->denormalizer->denormalize($data['review_requester'], \Github\Model\IssueEventReviewRequester::class, 'json', $context));
                 unset($data['review_requester']);
             }
             elseif (\array_key_exists('review_requester', $data) && $data['review_requester'] === null) {
                 $object->setReviewRequester(null);
             }
             if (\array_key_exists('requested_reviewer', $data) && $data['requested_reviewer'] !== null) {
-                $object->setRequestedReviewer($this->denormalizer->denormalize($data['requested_reviewer'], 'Github\\Model\\IssueEventRequestedReviewer', 'json', $context));
+                $object->setRequestedReviewer($this->denormalizer->denormalize($data['requested_reviewer'], \Github\Model\IssueEventRequestedReviewer::class, 'json', $context));
                 unset($data['requested_reviewer']);
             }
             elseif (\array_key_exists('requested_reviewer', $data) && $data['requested_reviewer'] === null) {
                 $object->setRequestedReviewer(null);
             }
             if (\array_key_exists('requested_team', $data)) {
-                $object->setRequestedTeam($this->denormalizer->denormalize($data['requested_team'], 'Github\\Model\\Team', 'json', $context));
+                $object->setRequestedTeam($this->denormalizer->denormalize($data['requested_team'], \Github\Model\Team::class, 'json', $context));
                 unset($data['requested_team']);
             }
             if (\array_key_exists('dismissed_review', $data)) {
-                $object->setDismissedReview($this->denormalizer->denormalize($data['dismissed_review'], 'Github\\Model\\IssueEventDismissedReview', 'json', $context));
+                $object->setDismissedReview($this->denormalizer->denormalize($data['dismissed_review'], \Github\Model\IssueEventDismissedReview::class, 'json', $context));
                 unset($data['dismissed_review']);
             }
             if (\array_key_exists('milestone', $data)) {
-                $object->setMilestone($this->denormalizer->denormalize($data['milestone'], 'Github\\Model\\IssueEventMilestone', 'json', $context));
+                $object->setMilestone($this->denormalizer->denormalize($data['milestone'], \Github\Model\IssueEventMilestone::class, 'json', $context));
                 unset($data['milestone']);
             }
             if (\array_key_exists('project_card', $data)) {
-                $object->setProjectCard($this->denormalizer->denormalize($data['project_card'], 'Github\\Model\\IssueEventProjectCard', 'json', $context));
+                $object->setProjectCard($this->denormalizer->denormalize($data['project_card'], \Github\Model\IssueEventProjectCard::class, 'json', $context));
                 unset($data['project_card']);
             }
             if (\array_key_exists('rename', $data)) {
-                $object->setRename($this->denormalizer->denormalize($data['rename'], 'Github\\Model\\IssueEventRename', 'json', $context));
+                $object->setRename($this->denormalizer->denormalize($data['rename'], \Github\Model\IssueEventRename::class, 'json', $context));
                 unset($data['rename']);
             }
             if (\array_key_exists('author_association', $data)) {
@@ -158,7 +158,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             $data['id'] = $object->getId();
@@ -168,7 +168,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['event'] = $object->getEvent();
             $data['commit_id'] = $object->getCommitId();
             $data['commit_url'] = $object->getCommitUrl();
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
             if ($object->isInitialized('issue') && null !== $object->getIssue()) {
                 $data['issue'] = $this->normalizer->normalize($object->getIssue(), 'json', $context);
             }
@@ -218,9 +218,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\IssueEvent' => false];
+            return [\Github\Model\IssueEvent::class => false];
         }
     }
 } else {
@@ -230,13 +230,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'Github\\Model\\IssueEvent';
+            return $type === \Github\Model\IssueEvent::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'Github\\Model\\IssueEvent';
+            return is_object($data) && get_class($data) === 'Github\Model\IssueEvent';
         }
         /**
          * @return mixed
@@ -269,7 +269,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['url']);
             }
             if (\array_key_exists('actor', $data) && $data['actor'] !== null) {
-                $object->setActor($this->denormalizer->denormalize($data['actor'], 'Github\\Model\\IssueEventActor', 'json', $context));
+                $object->setActor($this->denormalizer->denormalize($data['actor'], \Github\Model\IssueEventActor::class, 'json', $context));
                 unset($data['actor']);
             }
             elseif (\array_key_exists('actor', $data) && $data['actor'] === null) {
@@ -294,63 +294,63 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setCommitUrl(null);
             }
             if (\array_key_exists('created_at', $data)) {
-                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['created_at']));
+                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['created_at']));
                 unset($data['created_at']);
             }
             if (\array_key_exists('issue', $data)) {
-                $object->setIssue($this->denormalizer->denormalize($data['issue'], 'Github\\Model\\IssueSimple', 'json', $context));
+                $object->setIssue($this->denormalizer->denormalize($data['issue'], \Github\Model\IssueSimple::class, 'json', $context));
                 unset($data['issue']);
             }
             if (\array_key_exists('label', $data)) {
-                $object->setLabel($this->denormalizer->denormalize($data['label'], 'Github\\Model\\IssueEventLabel', 'json', $context));
+                $object->setLabel($this->denormalizer->denormalize($data['label'], \Github\Model\IssueEventLabel::class, 'json', $context));
                 unset($data['label']);
             }
             if (\array_key_exists('assignee', $data) && $data['assignee'] !== null) {
-                $object->setAssignee($this->denormalizer->denormalize($data['assignee'], 'Github\\Model\\IssueEventAssignee', 'json', $context));
+                $object->setAssignee($this->denormalizer->denormalize($data['assignee'], \Github\Model\IssueEventAssignee::class, 'json', $context));
                 unset($data['assignee']);
             }
             elseif (\array_key_exists('assignee', $data) && $data['assignee'] === null) {
                 $object->setAssignee(null);
             }
             if (\array_key_exists('assigner', $data) && $data['assigner'] !== null) {
-                $object->setAssigner($this->denormalizer->denormalize($data['assigner'], 'Github\\Model\\IssueEventAssigner', 'json', $context));
+                $object->setAssigner($this->denormalizer->denormalize($data['assigner'], \Github\Model\IssueEventAssigner::class, 'json', $context));
                 unset($data['assigner']);
             }
             elseif (\array_key_exists('assigner', $data) && $data['assigner'] === null) {
                 $object->setAssigner(null);
             }
             if (\array_key_exists('review_requester', $data) && $data['review_requester'] !== null) {
-                $object->setReviewRequester($this->denormalizer->denormalize($data['review_requester'], 'Github\\Model\\IssueEventReviewRequester', 'json', $context));
+                $object->setReviewRequester($this->denormalizer->denormalize($data['review_requester'], \Github\Model\IssueEventReviewRequester::class, 'json', $context));
                 unset($data['review_requester']);
             }
             elseif (\array_key_exists('review_requester', $data) && $data['review_requester'] === null) {
                 $object->setReviewRequester(null);
             }
             if (\array_key_exists('requested_reviewer', $data) && $data['requested_reviewer'] !== null) {
-                $object->setRequestedReviewer($this->denormalizer->denormalize($data['requested_reviewer'], 'Github\\Model\\IssueEventRequestedReviewer', 'json', $context));
+                $object->setRequestedReviewer($this->denormalizer->denormalize($data['requested_reviewer'], \Github\Model\IssueEventRequestedReviewer::class, 'json', $context));
                 unset($data['requested_reviewer']);
             }
             elseif (\array_key_exists('requested_reviewer', $data) && $data['requested_reviewer'] === null) {
                 $object->setRequestedReviewer(null);
             }
             if (\array_key_exists('requested_team', $data)) {
-                $object->setRequestedTeam($this->denormalizer->denormalize($data['requested_team'], 'Github\\Model\\Team', 'json', $context));
+                $object->setRequestedTeam($this->denormalizer->denormalize($data['requested_team'], \Github\Model\Team::class, 'json', $context));
                 unset($data['requested_team']);
             }
             if (\array_key_exists('dismissed_review', $data)) {
-                $object->setDismissedReview($this->denormalizer->denormalize($data['dismissed_review'], 'Github\\Model\\IssueEventDismissedReview', 'json', $context));
+                $object->setDismissedReview($this->denormalizer->denormalize($data['dismissed_review'], \Github\Model\IssueEventDismissedReview::class, 'json', $context));
                 unset($data['dismissed_review']);
             }
             if (\array_key_exists('milestone', $data)) {
-                $object->setMilestone($this->denormalizer->denormalize($data['milestone'], 'Github\\Model\\IssueEventMilestone', 'json', $context));
+                $object->setMilestone($this->denormalizer->denormalize($data['milestone'], \Github\Model\IssueEventMilestone::class, 'json', $context));
                 unset($data['milestone']);
             }
             if (\array_key_exists('project_card', $data)) {
-                $object->setProjectCard($this->denormalizer->denormalize($data['project_card'], 'Github\\Model\\IssueEventProjectCard', 'json', $context));
+                $object->setProjectCard($this->denormalizer->denormalize($data['project_card'], \Github\Model\IssueEventProjectCard::class, 'json', $context));
                 unset($data['project_card']);
             }
             if (\array_key_exists('rename', $data)) {
-                $object->setRename($this->denormalizer->denormalize($data['rename'], 'Github\\Model\\IssueEventRename', 'json', $context));
+                $object->setRename($this->denormalizer->denormalize($data['rename'], \Github\Model\IssueEventRename::class, 'json', $context));
                 unset($data['rename']);
             }
             if (\array_key_exists('author_association', $data)) {
@@ -384,7 +384,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['event'] = $object->getEvent();
             $data['commit_id'] = $object->getCommitId();
             $data['commit_url'] = $object->getCommitUrl();
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
             if ($object->isInitialized('issue') && null !== $object->getIssue()) {
                 $data['issue'] = $this->normalizer->normalize($object->getIssue(), 'json', $context);
             }
@@ -434,9 +434,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['Github\\Model\\IssueEvent' => false];
+            return [\Github\Model\IssueEvent::class => false];
         }
     }
 }

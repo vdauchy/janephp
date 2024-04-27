@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'PicturePark\\API\\Model\\XmpMappingTargets';
+            return $type === \PicturePark\API\Model\XmpMappingTargets::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'PicturePark\\API\\Model\\XmpMappingTargets';
+            return is_object($data) && get_class($data) === 'PicturePark\API\Model\XmpMappingTargets';
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -43,20 +43,20 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('xmpFields', $data)) {
                 $values = [];
                 foreach ($data['xmpFields'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'PicturePark\\API\\Model\\XmpField', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \PicturePark\API\Model\XmpField::class, 'json', $context);
                 }
                 $object->setXmpFields($values);
             }
             if (\array_key_exists('metadataFields', $data)) {
                 $values_1 = [];
                 foreach ($data['metadataFields'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'PicturePark\\API\\Model\\MetadataField', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \PicturePark\API\Model\MetadataField::class, 'json', $context);
                 }
                 $object->setMetadataFields($values_1);
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             $values = [];
@@ -71,9 +71,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['metadataFields'] = $values_1;
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['PicturePark\\API\\Model\\XmpMappingTargets' => false];
+            return [\PicturePark\API\Model\XmpMappingTargets::class => false];
         }
     }
 } else {
@@ -83,13 +83,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'PicturePark\\API\\Model\\XmpMappingTargets';
+            return $type === \PicturePark\API\Model\XmpMappingTargets::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'PicturePark\\API\\Model\\XmpMappingTargets';
+            return is_object($data) && get_class($data) === 'PicturePark\API\Model\XmpMappingTargets';
         }
         /**
          * @return mixed
@@ -109,14 +109,14 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('xmpFields', $data)) {
                 $values = [];
                 foreach ($data['xmpFields'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'PicturePark\\API\\Model\\XmpField', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \PicturePark\API\Model\XmpField::class, 'json', $context);
                 }
                 $object->setXmpFields($values);
             }
             if (\array_key_exists('metadataFields', $data)) {
                 $values_1 = [];
                 foreach ($data['metadataFields'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'PicturePark\\API\\Model\\MetadataField', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \PicturePark\API\Model\MetadataField::class, 'json', $context);
                 }
                 $object->setMetadataFields($values_1);
             }
@@ -140,9 +140,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['metadataFields'] = $values_1;
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['PicturePark\\API\\Model\\XmpMappingTargets' => false];
+            return [\PicturePark\API\Model\XmpMappingTargets::class => false];
         }
     }
 }
