@@ -18,7 +18,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        protected $normalizers = array('Jane\\Component\\JsonSchema\\JsonSchema\\Model\\JsonSchema' => 'Jane\\Component\\JsonSchema\\JsonSchema\\Normalizer\\JsonSchemaNormalizer', '\\Jane\\Component\\JsonSchemaRuntime\\Reference' => '\\Jane\\Component\\JsonSchema\\JsonSchema\\Runtime\\Normalizer\\ReferenceNormalizer'), $normalizersCache = [];
+        protected $normalizers = [\Jane\Component\JsonSchema\JsonSchema\Model\JsonSchema::class => \Jane\Component\JsonSchema\JsonSchema\Normalizer\JsonSchemaNormalizer::class, \Jane\Component\JsonSchemaRuntime\Reference::class => \Jane\Component\JsonSchema\JsonSchema\Runtime\Normalizer\ReferenceNormalizer::class], $normalizersCache = [];
         public function supportsDenormalization($data, $type, $format = null, array $context = []) : bool
         {
             return array_key_exists($type, $this->normalizers);
@@ -53,7 +53,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Jane\\Component\\JsonSchema\\JsonSchema\\Model\\JsonSchema' => false, '\\Jane\\Component\\JsonSchemaRuntime\\Reference' => false];
+            return [\Jane\Component\JsonSchema\JsonSchema\Model\JsonSchema::class => false, \Jane\Component\JsonSchemaRuntime\Reference::class => false];
         }
     }
 } else {
@@ -63,7 +63,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        protected $normalizers = array('Jane\\Component\\JsonSchema\\JsonSchema\\Model\\JsonSchema' => 'Jane\\Component\\JsonSchema\\JsonSchema\\Normalizer\\JsonSchemaNormalizer', '\\Jane\\Component\\JsonSchemaRuntime\\Reference' => '\\Jane\\Component\\JsonSchema\\JsonSchema\\Runtime\\Normalizer\\ReferenceNormalizer'), $normalizersCache = [];
+        protected $normalizers = [\Jane\Component\JsonSchema\JsonSchema\Model\JsonSchema::class => \Jane\Component\JsonSchema\JsonSchema\Normalizer\JsonSchemaNormalizer::class, \Jane\Component\JsonSchemaRuntime\Reference::class => \Jane\Component\JsonSchema\JsonSchema\Runtime\Normalizer\ReferenceNormalizer::class], $normalizersCache = [];
         public function supportsDenormalization($data, $type, $format = null, array $context = []) : bool
         {
             return array_key_exists($type, $this->normalizers);
@@ -104,7 +104,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Jane\\Component\\JsonSchema\\JsonSchema\\Model\\JsonSchema' => false, '\\Jane\\Component\\JsonSchemaRuntime\\Reference' => false];
+            return [\Jane\Component\JsonSchema\JsonSchema\Model\JsonSchema::class => false, \Jane\Component\JsonSchemaRuntime\Reference::class => false];
         }
     }
 }
