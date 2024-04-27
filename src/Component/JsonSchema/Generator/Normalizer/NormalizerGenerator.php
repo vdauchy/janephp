@@ -67,7 +67,7 @@ trait NormalizerGenerator
     protected function createSupportsNormalizationMethod(string $modelFqdn, bool $symfony7)
     {
         return new Stmt\ClassMethod('supportsNormalization', [
-            'type' => Modifiers::PUBLIC,
+            'type' => Stmt\Class_::MODIFIER_PUBLIC,
             'returnType' => new Identifier('bool'),
             'params' => [
                 $symfony7 ? new Param(new Expr\Variable('data'), type: new Identifier('mixed')) : new Param(new Expr\Variable('data')),
@@ -191,7 +191,7 @@ trait NormalizerGenerator
         $statements[] = new Stmt\Return_($dataVariable);
 
         return new Stmt\ClassMethod('normalize', [
-            'type' => Modifiers::PUBLIC,
+            'type' => Stmt\Class_::MODIFIER_PUBLIC,
             'returnType' => $symfony7
                 ? new UnionType([
                     new Identifier('array'),
@@ -227,7 +227,7 @@ EOD
     protected function createHasCacheableSupportsMethod()
     {
         return new Stmt\ClassMethod('hasCacheableSupportsMethod', [
-            'type' => Modifiers::PUBLIC,
+            'type' => Stmt\Class_::MODIFIER_PUBLIC,
             'returnType' => new Identifier('bool'),
             'stmts' => [
                 new Stmt\Return_(new Expr\ConstFetch(new Name('true'))),

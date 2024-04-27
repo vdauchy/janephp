@@ -90,7 +90,7 @@ trait GetTransformResponseBodyTrait
             . ' * @return ' . implode('|', $outputTypes);
 
         return [new Stmt\ClassMethod('transformResponseBody', [
-            'type' => Modifiers::PROTECTED,
+            'type' => Stmt\Class_::MODIFIER_PROTECTED,
             'params' => [
                 new Node\Param(new Expr\Variable('response'), null, new Name('\\Psr\\Http\\Message\\ResponseInterface')),
                 new Node\Param(new Expr\Variable('serializer'), null, new Name\FullyQualified(SerializerInterface::class)),

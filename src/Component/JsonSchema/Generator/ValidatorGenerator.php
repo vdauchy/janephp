@@ -104,7 +104,7 @@ class ValidatorGenerator implements GeneratorInterface
                             new Node\Stmt\ClassMethod(
                                 'getConstraints',
                                 [
-                                    'type' => Modifiers::PROTECTED,
+                                    'type' => Node\Stmt\Class_::MODIFIER_PROTECTED,
                                     'params' => [new Node\Param($optionsVariable)],
                                     'stmts' => [
                                         new Node\Stmt\Return_(new Expr\Array_($constraintsItems)),

@@ -83,7 +83,7 @@ trait GetterSetterGenerator
             $this->getNaming()->getPrefixedMethodName('set', $property->getAccessorName()),
             [
                 // public function
-                'type' => Modifiers::PUBLIC,
+                'type' => Stmt\Class_::MODIFIER_PUBLIC,
                 // ($property)
                 'params' => [
                     new Param(

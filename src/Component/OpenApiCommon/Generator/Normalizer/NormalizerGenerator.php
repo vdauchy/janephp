@@ -72,7 +72,7 @@ trait NormalizerGenerator
         };
 
         return new Stmt\ClassMethod('supportsNormalization', [
-            'type' => Modifiers::PUBLIC,
+            'type' => Stmt\Class_::MODIFIER_PUBLIC,
             'returnType' => new Identifier('bool'),
             'params' => [
                 new Param(new Expr\Variable('data'), type: new Identifier('mixed')),

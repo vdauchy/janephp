@@ -194,7 +194,7 @@ class NormalizerGenerator implements GeneratorInterface
         $properties[] = new Stmt\PropertyProperty('normalizersCache', new Expr\Array_());
 
         $methods = [];
-        $methods[] = new Stmt\Property(Modifiers::PROTECTED, $properties);
+        $methods[] = new Stmt\Property(Stmt\Class_::MODIFIER_PROTECTED, $properties);
         $methods[] = $this->createBaseNormalizerSupportsDenormalizationMethod();
         $methods[] = $this->createBaseNormalizerSupportsNormalizationMethod();
         $methods[] = $this->createBaseNormalizerNormalizeMethod(true);
@@ -257,7 +257,7 @@ class NormalizerGenerator implements GeneratorInterface
     protected function createGetSupportedTypesMethod(string $modelFqdn, bool $useCacheableSupportsMethod = false)
     {
         return new Stmt\ClassMethod('getSupportedTypes', [
-            'type' => Modifiers::PUBLIC,
+            'type' => Stmt\Class_::MODIFIER_PUBLIC,
             'returnType' => new Identifier('array'),
             'params' => [
                 new Param(new Expr\Variable('format'), new Expr\ConstFetch(new Name('null')), new NullableType(new Identifier('string'))),
@@ -295,7 +295,7 @@ class NormalizerGenerator implements GeneratorInterface
         }
 
         return new Stmt\ClassMethod('getSupportedTypes', [
-            'type' => Modifiers::PUBLIC,
+            'type' => Stmt\Class_::MODIFIER_PUBLIC,
             'returnType' => new Identifier('array'),
             'params' => [
                 new Param(new Expr\Variable('format'), new Expr\ConstFetch(new Name('null')), new NullableType(new Identifier('string'))),

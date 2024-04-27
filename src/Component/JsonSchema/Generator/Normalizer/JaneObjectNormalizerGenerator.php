@@ -2,6 +2,7 @@
 
 namespace Jane\Component\JsonSchema\Generator\Normalizer;
 
+use PhpParser\Builder\Class_;
 use PhpParser\Comment\Doc;
 use PhpParser\Modifiers;
 use PhpParser\Node\Arg;
@@ -17,7 +18,7 @@ trait JaneObjectNormalizerGenerator
     protected function createBaseNormalizerSupportsDenormalizationMethod(): Stmt\ClassMethod
     {
         return new Stmt\ClassMethod('supportsDenormalization', [
-            'type' => Modifiers::PUBLIC,
+            'type' => Stmt\Class_::MODIFIER_PUBLIC,
             'returnType' => new Identifier('bool'),
             'params' => [
                 new Param(new Expr\Variable('data')),
@@ -35,7 +36,7 @@ trait JaneObjectNormalizerGenerator
     protected function createBaseNormalizerSupportsNormalizationMethod(): Stmt\ClassMethod
     {
         return new Stmt\ClassMethod('supportsNormalization', [
-            'type' => Modifiers::PUBLIC,
+            'type' => Stmt\Class_::MODIFIER_PUBLIC,
             'returnType' => new Identifier('bool'),
             'params' => [
                 new Param(new Expr\Variable('data')),
@@ -56,7 +57,7 @@ trait JaneObjectNormalizerGenerator
     protected function createBaseNormalizerNormalizeMethod(bool $symfony7): Stmt\ClassMethod
     {
         return new Stmt\ClassMethod('normalize', [
-            'type' => Modifiers::PUBLIC,
+            'type' => Stmt\Class_::MODIFIER_PUBLIC,
             'returnType' => $symfony7
                 ? new UnionType([
                     new Identifier('array'),
@@ -107,7 +108,7 @@ EOD
     protected function createBaseNormalizerDenormalizeMethod(bool $symfony7): Stmt\ClassMethod
     {
         return new Stmt\ClassMethod('denormalize', [
-            'type' => Modifiers::PUBLIC,
+            'type' => Stmt\Class_::MODIFIER_PUBLIC,
             'returnType' => $symfony7 ? new Identifier('mixed') : null,
             'params' => [
                 $symfony7 ? new Param(new Expr\Variable('data'), type: new Identifier('mixed')) : new Param(new Expr\Variable('data')),

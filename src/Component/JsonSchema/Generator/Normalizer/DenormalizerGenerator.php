@@ -36,7 +36,7 @@ trait DenormalizerGenerator
     protected function createSupportsDenormalizationMethod(string $modelFqdn, bool $symfony7)
     {
         return new Stmt\ClassMethod('supportsDenormalization', [
-            'type' => Modifiers::PUBLIC,
+            'type' => Stmt\Class_::MODIFIER_PUBLIC,
             'returnType' => new Identifier('bool'),
             'params' => [
                 $symfony7
@@ -211,7 +211,7 @@ trait DenormalizerGenerator
         $statements[] = new Stmt\Return_($objectVariable);
 
         return new Stmt\ClassMethod('denormalize', [
-            'type' => Modifiers::PUBLIC,
+            'type' => Stmt\Class_::MODIFIER_PUBLIC,
             'returnType' => $symfony7 ? new Identifier('mixed') : null,
             'params' => [
                 $symfony7 ? new Param($dataVariable, type: new Identifier('mixed')) : new Param($dataVariable),
