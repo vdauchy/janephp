@@ -13,31 +13,31 @@ class ProjectsColumnsColumnIdCardsPostResponse503 extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $code;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $message;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $documentationUrl;
     /**
-     * 
+     *
      *
      * @var list<ProjectsColumnsColumnIdCardsPostResponse503ErrorsItem>
      */
     protected $errors;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -46,7 +46,7 @@ class ProjectsColumnsColumnIdCardsPostResponse503 extends \ArrayObject
         return $this->code;
     }
     /**
-     * 
+     *
      *
      * @param string $code
      *
@@ -59,7 +59,7 @@ class ProjectsColumnsColumnIdCardsPostResponse503 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -68,7 +68,7 @@ class ProjectsColumnsColumnIdCardsPostResponse503 extends \ArrayObject
         return $this->message;
     }
     /**
-     * 
+     *
      *
      * @param string $message
      *
@@ -81,7 +81,7 @@ class ProjectsColumnsColumnIdCardsPostResponse503 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -90,7 +90,7 @@ class ProjectsColumnsColumnIdCardsPostResponse503 extends \ArrayObject
         return $this->documentationUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $documentationUrl
      *
@@ -103,7 +103,7 @@ class ProjectsColumnsColumnIdCardsPostResponse503 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<ProjectsColumnsColumnIdCardsPostResponse503ErrorsItem>
      */
@@ -112,7 +112,7 @@ class ProjectsColumnsColumnIdCardsPostResponse503 extends \ArrayObject
         return $this->errors;
     }
     /**
-     * 
+     *
      *
      * @param list<ProjectsColumnsColumnIdCardsPostResponse503ErrorsItem> $errors
      *

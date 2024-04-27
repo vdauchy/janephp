@@ -13,127 +13,127 @@ class ReviewComment extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $pullRequestReviewId;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $nodeId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $diffHunk;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $path;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $position;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $originalPosition;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $commitId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $originalCommitId;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $inReplyToId;
     /**
-     * 
+     *
      *
      * @var ReviewCommentUser|null
      */
     protected $user;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $body;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $updatedAt;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $htmlUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $pullRequestUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $authorAssociation;
     /**
-     * 
+     *
      *
      * @var ReviewCommentLinks
      */
     protected $links;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $bodyText;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -175,7 +175,7 @@ class ReviewComment extends \ArrayObject
      */
     protected $originalStartLine;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -184,7 +184,7 @@ class ReviewComment extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -197,7 +197,7 @@ class ReviewComment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -206,7 +206,7 @@ class ReviewComment extends \ArrayObject
         return $this->pullRequestReviewId;
     }
     /**
-     * 
+     *
      *
      * @param int|null $pullRequestReviewId
      *
@@ -219,7 +219,7 @@ class ReviewComment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -228,7 +228,7 @@ class ReviewComment extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -241,7 +241,7 @@ class ReviewComment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -250,7 +250,7 @@ class ReviewComment extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -263,7 +263,7 @@ class ReviewComment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -272,7 +272,7 @@ class ReviewComment extends \ArrayObject
         return $this->diffHunk;
     }
     /**
-     * 
+     *
      *
      * @param string $diffHunk
      *
@@ -285,7 +285,7 @@ class ReviewComment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -294,7 +294,7 @@ class ReviewComment extends \ArrayObject
         return $this->path;
     }
     /**
-     * 
+     *
      *
      * @param string $path
      *
@@ -307,7 +307,7 @@ class ReviewComment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -316,7 +316,7 @@ class ReviewComment extends \ArrayObject
         return $this->position;
     }
     /**
-     * 
+     *
      *
      * @param int|null $position
      *
@@ -329,7 +329,7 @@ class ReviewComment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -338,7 +338,7 @@ class ReviewComment extends \ArrayObject
         return $this->originalPosition;
     }
     /**
-     * 
+     *
      *
      * @param int $originalPosition
      *
@@ -351,7 +351,7 @@ class ReviewComment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -360,7 +360,7 @@ class ReviewComment extends \ArrayObject
         return $this->commitId;
     }
     /**
-     * 
+     *
      *
      * @param string $commitId
      *
@@ -373,7 +373,7 @@ class ReviewComment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -382,7 +382,7 @@ class ReviewComment extends \ArrayObject
         return $this->originalCommitId;
     }
     /**
-     * 
+     *
      *
      * @param string $originalCommitId
      *
@@ -395,7 +395,7 @@ class ReviewComment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -404,7 +404,7 @@ class ReviewComment extends \ArrayObject
         return $this->inReplyToId;
     }
     /**
-     * 
+     *
      *
      * @param int $inReplyToId
      *
@@ -417,7 +417,7 @@ class ReviewComment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ReviewCommentUser|null
      */
@@ -426,7 +426,7 @@ class ReviewComment extends \ArrayObject
         return $this->user;
     }
     /**
-     * 
+     *
      *
      * @param ReviewCommentUser|null $user
      *
@@ -439,7 +439,7 @@ class ReviewComment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -448,7 +448,7 @@ class ReviewComment extends \ArrayObject
         return $this->body;
     }
     /**
-     * 
+     *
      *
      * @param string $body
      *
@@ -461,7 +461,7 @@ class ReviewComment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -470,7 +470,7 @@ class ReviewComment extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $createdAt
      *
@@ -483,7 +483,7 @@ class ReviewComment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -492,7 +492,7 @@ class ReviewComment extends \ArrayObject
         return $this->updatedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $updatedAt
      *
@@ -505,7 +505,7 @@ class ReviewComment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -514,7 +514,7 @@ class ReviewComment extends \ArrayObject
         return $this->htmlUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $htmlUrl
      *
@@ -527,7 +527,7 @@ class ReviewComment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -536,7 +536,7 @@ class ReviewComment extends \ArrayObject
         return $this->pullRequestUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $pullRequestUrl
      *
@@ -549,7 +549,7 @@ class ReviewComment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -558,7 +558,7 @@ class ReviewComment extends \ArrayObject
         return $this->authorAssociation;
     }
     /**
-     * 
+     *
      *
      * @param string $authorAssociation
      *
@@ -571,7 +571,7 @@ class ReviewComment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ReviewCommentLinks
      */
@@ -580,7 +580,7 @@ class ReviewComment extends \ArrayObject
         return $this->links;
     }
     /**
-     * 
+     *
      *
      * @param ReviewCommentLinks $links
      *
@@ -593,7 +593,7 @@ class ReviewComment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -602,7 +602,7 @@ class ReviewComment extends \ArrayObject
         return $this->bodyText;
     }
     /**
-     * 
+     *
      *
      * @param string $bodyText
      *
@@ -615,7 +615,7 @@ class ReviewComment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -624,7 +624,7 @@ class ReviewComment extends \ArrayObject
         return $this->bodyHtml;
     }
     /**
-     * 
+     *
      *
      * @param string $bodyHtml
      *

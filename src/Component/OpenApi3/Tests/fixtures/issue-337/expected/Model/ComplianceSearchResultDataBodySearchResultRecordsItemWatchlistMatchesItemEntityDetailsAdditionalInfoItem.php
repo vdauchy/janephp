@@ -13,31 +13,31 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $comments;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $value;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -46,7 +46,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
         return $this->comments;
     }
     /**
-     * 
+     *
      *
      * @param string $comments
      *
@@ -59,7 +59,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -68,7 +68,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -81,7 +81,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -90,7 +90,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string $type
      *
@@ -103,7 +103,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -112,7 +112,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
         return $this->value;
     }
     /**
-     * 
+     *
      *
      * @param string $value
      *

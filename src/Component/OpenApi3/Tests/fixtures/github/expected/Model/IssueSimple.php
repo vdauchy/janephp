@@ -13,169 +13,169 @@ class IssueSimple extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $nodeId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $repositoryUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $labelsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $commentsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $eventsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $htmlUrl;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $number;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $state;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $title;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $body;
     /**
-     * 
+     *
      *
      * @var IssueSimpleUser|null
      */
     protected $user;
     /**
-     * 
+     *
      *
      * @var list<IssueSimpleLabelsItem>
      */
     protected $labels;
     /**
-     * 
+     *
      *
      * @var IssueSimpleAssignee|null
      */
     protected $assignee;
     /**
-     * 
+     *
      *
      * @var list<SimpleUser>|null
      */
     protected $assignees;
     /**
-     * 
+     *
      *
      * @var IssueSimpleMilestone|null
      */
     protected $milestone;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $locked;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $activeLockReason;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $comments;
     /**
-     * 
+     *
      *
      * @var IssueSimplePullRequest
      */
     protected $pullRequest;
     /**
-     * 
+     *
      *
      * @var \DateTime|null
      */
     protected $closedAt;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $updatedAt;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $authorAssociation;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $bodyHtml;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $bodyText;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -187,13 +187,13 @@ class IssueSimple extends \ArrayObject
      */
     protected $repository;
     /**
-     * 
+     *
      *
      * @var IssueSimplePerformedViaGithubApp|null
      */
     protected $performedViaGithubApp;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -202,7 +202,7 @@ class IssueSimple extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -215,7 +215,7 @@ class IssueSimple extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -224,7 +224,7 @@ class IssueSimple extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -237,7 +237,7 @@ class IssueSimple extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -246,7 +246,7 @@ class IssueSimple extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -259,7 +259,7 @@ class IssueSimple extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -268,7 +268,7 @@ class IssueSimple extends \ArrayObject
         return $this->repositoryUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $repositoryUrl
      *
@@ -281,7 +281,7 @@ class IssueSimple extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -290,7 +290,7 @@ class IssueSimple extends \ArrayObject
         return $this->labelsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $labelsUrl
      *
@@ -303,7 +303,7 @@ class IssueSimple extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -312,7 +312,7 @@ class IssueSimple extends \ArrayObject
         return $this->commentsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $commentsUrl
      *
@@ -325,7 +325,7 @@ class IssueSimple extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -334,7 +334,7 @@ class IssueSimple extends \ArrayObject
         return $this->eventsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $eventsUrl
      *
@@ -347,7 +347,7 @@ class IssueSimple extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -356,7 +356,7 @@ class IssueSimple extends \ArrayObject
         return $this->htmlUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $htmlUrl
      *
@@ -369,7 +369,7 @@ class IssueSimple extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -378,7 +378,7 @@ class IssueSimple extends \ArrayObject
         return $this->number;
     }
     /**
-     * 
+     *
      *
      * @param int $number
      *
@@ -391,7 +391,7 @@ class IssueSimple extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -400,7 +400,7 @@ class IssueSimple extends \ArrayObject
         return $this->state;
     }
     /**
-     * 
+     *
      *
      * @param string $state
      *
@@ -413,7 +413,7 @@ class IssueSimple extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -422,7 +422,7 @@ class IssueSimple extends \ArrayObject
         return $this->title;
     }
     /**
-     * 
+     *
      *
      * @param string $title
      *
@@ -435,7 +435,7 @@ class IssueSimple extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -444,7 +444,7 @@ class IssueSimple extends \ArrayObject
         return $this->body;
     }
     /**
-     * 
+     *
      *
      * @param string $body
      *
@@ -457,7 +457,7 @@ class IssueSimple extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return IssueSimpleUser|null
      */
@@ -466,7 +466,7 @@ class IssueSimple extends \ArrayObject
         return $this->user;
     }
     /**
-     * 
+     *
      *
      * @param IssueSimpleUser|null $user
      *
@@ -479,7 +479,7 @@ class IssueSimple extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<IssueSimpleLabelsItem>
      */
@@ -488,7 +488,7 @@ class IssueSimple extends \ArrayObject
         return $this->labels;
     }
     /**
-     * 
+     *
      *
      * @param list<IssueSimpleLabelsItem> $labels
      *
@@ -501,7 +501,7 @@ class IssueSimple extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return IssueSimpleAssignee|null
      */
@@ -510,7 +510,7 @@ class IssueSimple extends \ArrayObject
         return $this->assignee;
     }
     /**
-     * 
+     *
      *
      * @param IssueSimpleAssignee|null $assignee
      *
@@ -523,7 +523,7 @@ class IssueSimple extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<SimpleUser>|null
      */
@@ -532,7 +532,7 @@ class IssueSimple extends \ArrayObject
         return $this->assignees;
     }
     /**
-     * 
+     *
      *
      * @param list<SimpleUser>|null $assignees
      *
@@ -545,7 +545,7 @@ class IssueSimple extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return IssueSimpleMilestone|null
      */
@@ -554,7 +554,7 @@ class IssueSimple extends \ArrayObject
         return $this->milestone;
     }
     /**
-     * 
+     *
      *
      * @param IssueSimpleMilestone|null $milestone
      *
@@ -567,7 +567,7 @@ class IssueSimple extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -576,7 +576,7 @@ class IssueSimple extends \ArrayObject
         return $this->locked;
     }
     /**
-     * 
+     *
      *
      * @param bool $locked
      *
@@ -589,7 +589,7 @@ class IssueSimple extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -598,7 +598,7 @@ class IssueSimple extends \ArrayObject
         return $this->activeLockReason;
     }
     /**
-     * 
+     *
      *
      * @param string|null $activeLockReason
      *
@@ -611,7 +611,7 @@ class IssueSimple extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -620,7 +620,7 @@ class IssueSimple extends \ArrayObject
         return $this->comments;
     }
     /**
-     * 
+     *
      *
      * @param int $comments
      *
@@ -633,7 +633,7 @@ class IssueSimple extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return IssueSimplePullRequest
      */
@@ -642,7 +642,7 @@ class IssueSimple extends \ArrayObject
         return $this->pullRequest;
     }
     /**
-     * 
+     *
      *
      * @param IssueSimplePullRequest $pullRequest
      *
@@ -655,7 +655,7 @@ class IssueSimple extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime|null
      */
@@ -664,7 +664,7 @@ class IssueSimple extends \ArrayObject
         return $this->closedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime|null $closedAt
      *
@@ -677,7 +677,7 @@ class IssueSimple extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -686,7 +686,7 @@ class IssueSimple extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $createdAt
      *
@@ -699,7 +699,7 @@ class IssueSimple extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -708,7 +708,7 @@ class IssueSimple extends \ArrayObject
         return $this->updatedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $updatedAt
      *
@@ -721,7 +721,7 @@ class IssueSimple extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -730,7 +730,7 @@ class IssueSimple extends \ArrayObject
         return $this->authorAssociation;
     }
     /**
-     * 
+     *
      *
      * @param string $authorAssociation
      *
@@ -743,7 +743,7 @@ class IssueSimple extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -752,7 +752,7 @@ class IssueSimple extends \ArrayObject
         return $this->bodyHtml;
     }
     /**
-     * 
+     *
      *
      * @param string $bodyHtml
      *
@@ -765,7 +765,7 @@ class IssueSimple extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -774,7 +774,7 @@ class IssueSimple extends \ArrayObject
         return $this->bodyText;
     }
     /**
-     * 
+     *
      *
      * @param string $bodyText
      *
@@ -787,7 +787,7 @@ class IssueSimple extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -796,7 +796,7 @@ class IssueSimple extends \ArrayObject
         return $this->timelineUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $timelineUrl
      *
@@ -831,7 +831,7 @@ class IssueSimple extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return IssueSimplePerformedViaGithubApp|null
      */
@@ -840,7 +840,7 @@ class IssueSimple extends \ArrayObject
         return $this->performedViaGithubApp;
     }
     /**
-     * 
+     *
      *
      * @param IssueSimplePerformedViaGithubApp|null $performedViaGithubApp
      *

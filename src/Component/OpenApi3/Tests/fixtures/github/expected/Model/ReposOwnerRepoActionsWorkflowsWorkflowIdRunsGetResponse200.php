@@ -13,19 +13,19 @@ class ReposOwnerRepoActionsWorkflowsWorkflowIdRunsGetResponse200 extends \ArrayO
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $totalCount;
     /**
-     * 
+     *
      *
      * @var list<WorkflowRun>
      */
     protected $workflowRuns;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -34,7 +34,7 @@ class ReposOwnerRepoActionsWorkflowsWorkflowIdRunsGetResponse200 extends \ArrayO
         return $this->totalCount;
     }
     /**
-     * 
+     *
      *
      * @param int $totalCount
      *
@@ -47,7 +47,7 @@ class ReposOwnerRepoActionsWorkflowsWorkflowIdRunsGetResponse200 extends \ArrayO
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<WorkflowRun>
      */
@@ -56,7 +56,7 @@ class ReposOwnerRepoActionsWorkflowsWorkflowIdRunsGetResponse200 extends \ArrayO
         return $this->workflowRuns;
     }
     /**
-     * 
+     *
      *
      * @param list<WorkflowRun> $workflowRuns
      *

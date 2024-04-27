@@ -13,19 +13,19 @@ class GbCompanyReportExampleResponseReportOtherInformation extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var list<GbCompanyReportExampleResponseReportOtherInformationAdvisorsItem>
      */
     protected $advisors;
     /**
-     * 
+     *
      *
      * @var list<GbCompanyReportExampleResponseReportOtherInformationEmployeesInformationItem>
      */
     protected $employeesInformation;
     /**
-     * 
+     *
      *
      * @return list<GbCompanyReportExampleResponseReportOtherInformationAdvisorsItem>
      */
@@ -34,7 +34,7 @@ class GbCompanyReportExampleResponseReportOtherInformation extends \ArrayObject
         return $this->advisors;
     }
     /**
-     * 
+     *
      *
      * @param list<GbCompanyReportExampleResponseReportOtherInformationAdvisorsItem> $advisors
      *
@@ -47,7 +47,7 @@ class GbCompanyReportExampleResponseReportOtherInformation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<GbCompanyReportExampleResponseReportOtherInformationEmployeesInformationItem>
      */
@@ -56,7 +56,7 @@ class GbCompanyReportExampleResponseReportOtherInformation extends \ArrayObject
         return $this->employeesInformation;
     }
     /**
-     * 
+     *
      *
      * @param list<GbCompanyReportExampleResponseReportOtherInformationEmployeesInformationItem> $employeesInformation
      *

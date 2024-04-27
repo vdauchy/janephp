@@ -13,19 +13,19 @@ class GbImageTypesResponse extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $country;
     /**
-     * 
+     *
      *
      * @var list<GbImageTypesResponseAvailableTypesItem>
      */
     protected $availableTypes;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -34,7 +34,7 @@ class GbImageTypesResponse extends \ArrayObject
         return $this->country;
     }
     /**
-     * 
+     *
      *
      * @param string $country
      *
@@ -47,7 +47,7 @@ class GbImageTypesResponse extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<GbImageTypesResponseAvailableTypesItem>
      */
@@ -56,7 +56,7 @@ class GbImageTypesResponse extends \ArrayObject
         return $this->availableTypes;
     }
     /**
-     * 
+     *
      *
      * @param list<GbImageTypesResponseAvailableTypesItem> $availableTypes
      *

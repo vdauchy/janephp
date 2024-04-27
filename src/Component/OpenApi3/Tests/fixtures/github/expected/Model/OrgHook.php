@@ -13,67 +13,67 @@ class OrgHook extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $pingUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var list<string>
      */
     protected $events;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $active;
     /**
-     * 
+     *
      *
      * @var OrgHookConfig
      */
     protected $config;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $updatedAt;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -82,7 +82,7 @@ class OrgHook extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -95,7 +95,7 @@ class OrgHook extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -104,7 +104,7 @@ class OrgHook extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -117,7 +117,7 @@ class OrgHook extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -126,7 +126,7 @@ class OrgHook extends \ArrayObject
         return $this->pingUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $pingUrl
      *
@@ -139,7 +139,7 @@ class OrgHook extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -148,7 +148,7 @@ class OrgHook extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -161,7 +161,7 @@ class OrgHook extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -170,7 +170,7 @@ class OrgHook extends \ArrayObject
         return $this->events;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $events
      *
@@ -183,7 +183,7 @@ class OrgHook extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -192,7 +192,7 @@ class OrgHook extends \ArrayObject
         return $this->active;
     }
     /**
-     * 
+     *
      *
      * @param bool $active
      *
@@ -205,7 +205,7 @@ class OrgHook extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return OrgHookConfig
      */
@@ -214,7 +214,7 @@ class OrgHook extends \ArrayObject
         return $this->config;
     }
     /**
-     * 
+     *
      *
      * @param OrgHookConfig $config
      *
@@ -227,7 +227,7 @@ class OrgHook extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -236,7 +236,7 @@ class OrgHook extends \ArrayObject
         return $this->updatedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $updatedAt
      *
@@ -249,7 +249,7 @@ class OrgHook extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -258,7 +258,7 @@ class OrgHook extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $createdAt
      *
@@ -271,7 +271,7 @@ class OrgHook extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -280,7 +280,7 @@ class OrgHook extends \ArrayObject
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string $type
      *

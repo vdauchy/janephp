@@ -13,13 +13,13 @@ class OriginalFormat extends FormatBase
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $extension;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -28,7 +28,7 @@ class OriginalFormat extends FormatBase
         return $this->extension;
     }
     /**
-     * 
+     *
      *
      * @param string|null $extension
      *

@@ -13,103 +13,103 @@ class TopicSearchResultItem extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $displayName;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $shortDescription;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $createdBy;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $released;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $updatedAt;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $featured;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $curated;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $score;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $repositoryCount;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $logoUrl;
     /**
-     * 
+     *
      *
      * @var list<SearchResultTextMatchesItem>
      */
     protected $textMatches;
     /**
-     * 
+     *
      *
      * @var list<TopicSearchResultItemRelatedItem>|null
      */
     protected $related;
     /**
-     * 
+     *
      *
      * @var list<TopicSearchResultItemAliasesItem>|null
      */
     protected $aliases;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -118,7 +118,7 @@ class TopicSearchResultItem extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -131,7 +131,7 @@ class TopicSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -140,7 +140,7 @@ class TopicSearchResultItem extends \ArrayObject
         return $this->displayName;
     }
     /**
-     * 
+     *
      *
      * @param string|null $displayName
      *
@@ -153,7 +153,7 @@ class TopicSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -162,7 +162,7 @@ class TopicSearchResultItem extends \ArrayObject
         return $this->shortDescription;
     }
     /**
-     * 
+     *
      *
      * @param string|null $shortDescription
      *
@@ -175,7 +175,7 @@ class TopicSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -184,7 +184,7 @@ class TopicSearchResultItem extends \ArrayObject
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string|null $description
      *
@@ -197,7 +197,7 @@ class TopicSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -206,7 +206,7 @@ class TopicSearchResultItem extends \ArrayObject
         return $this->createdBy;
     }
     /**
-     * 
+     *
      *
      * @param string|null $createdBy
      *
@@ -219,7 +219,7 @@ class TopicSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -228,7 +228,7 @@ class TopicSearchResultItem extends \ArrayObject
         return $this->released;
     }
     /**
-     * 
+     *
      *
      * @param string|null $released
      *
@@ -241,7 +241,7 @@ class TopicSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -250,7 +250,7 @@ class TopicSearchResultItem extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $createdAt
      *
@@ -263,7 +263,7 @@ class TopicSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -272,7 +272,7 @@ class TopicSearchResultItem extends \ArrayObject
         return $this->updatedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $updatedAt
      *
@@ -285,7 +285,7 @@ class TopicSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -294,7 +294,7 @@ class TopicSearchResultItem extends \ArrayObject
         return $this->featured;
     }
     /**
-     * 
+     *
      *
      * @param bool $featured
      *
@@ -307,7 +307,7 @@ class TopicSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -316,7 +316,7 @@ class TopicSearchResultItem extends \ArrayObject
         return $this->curated;
     }
     /**
-     * 
+     *
      *
      * @param bool $curated
      *
@@ -329,7 +329,7 @@ class TopicSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -338,7 +338,7 @@ class TopicSearchResultItem extends \ArrayObject
         return $this->score;
     }
     /**
-     * 
+     *
      *
      * @param int $score
      *
@@ -351,7 +351,7 @@ class TopicSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -360,7 +360,7 @@ class TopicSearchResultItem extends \ArrayObject
         return $this->repositoryCount;
     }
     /**
-     * 
+     *
      *
      * @param int|null $repositoryCount
      *
@@ -373,7 +373,7 @@ class TopicSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -382,7 +382,7 @@ class TopicSearchResultItem extends \ArrayObject
         return $this->logoUrl;
     }
     /**
-     * 
+     *
      *
      * @param string|null $logoUrl
      *
@@ -395,7 +395,7 @@ class TopicSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<SearchResultTextMatchesItem>
      */
@@ -404,7 +404,7 @@ class TopicSearchResultItem extends \ArrayObject
         return $this->textMatches;
     }
     /**
-     * 
+     *
      *
      * @param list<SearchResultTextMatchesItem> $textMatches
      *
@@ -417,7 +417,7 @@ class TopicSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<TopicSearchResultItemRelatedItem>|null
      */
@@ -426,7 +426,7 @@ class TopicSearchResultItem extends \ArrayObject
         return $this->related;
     }
     /**
-     * 
+     *
      *
      * @param list<TopicSearchResultItemRelatedItem>|null $related
      *
@@ -439,7 +439,7 @@ class TopicSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<TopicSearchResultItemAliasesItem>|null
      */
@@ -448,7 +448,7 @@ class TopicSearchResultItem extends \ArrayObject
         return $this->aliases;
     }
     /**
-     * 
+     *
      *
      * @param list<TopicSearchResultItemAliasesItem>|null $aliases
      *

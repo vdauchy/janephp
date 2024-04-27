@@ -13,31 +13,31 @@ class QueryDebugInformation
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $general;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $auditTrail;
     /**
-     * 
+     *
      *
      * @var mixed|null
      */
     protected $request;
     /**
-     * 
+     *
      *
      * @var mixed|null
      */
     protected $response;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -46,7 +46,7 @@ class QueryDebugInformation
         return $this->general;
     }
     /**
-     * 
+     *
      *
      * @param string|null $general
      *
@@ -59,7 +59,7 @@ class QueryDebugInformation
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -68,7 +68,7 @@ class QueryDebugInformation
         return $this->auditTrail;
     }
     /**
-     * 
+     *
      *
      * @param string|null $auditTrail
      *
@@ -81,7 +81,7 @@ class QueryDebugInformation
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return mixed
      */
@@ -90,7 +90,7 @@ class QueryDebugInformation
         return $this->request;
     }
     /**
-     * 
+     *
      *
      * @param mixed $request
      *
@@ -103,7 +103,7 @@ class QueryDebugInformation
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return mixed
      */
@@ -112,7 +112,7 @@ class QueryDebugInformation
         return $this->response;
     }
     /**
-     * 
+     *
      *
      * @param mixed $response
      *

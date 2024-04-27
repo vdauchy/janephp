@@ -13,19 +13,19 @@ class GpgKeyEmailsItem extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $email;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $verified;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -34,7 +34,7 @@ class GpgKeyEmailsItem extends \ArrayObject
         return $this->email;
     }
     /**
-     * 
+     *
      *
      * @param string $email
      *
@@ -47,7 +47,7 @@ class GpgKeyEmailsItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -56,7 +56,7 @@ class GpgKeyEmailsItem extends \ArrayObject
         return $this->verified;
     }
     /**
-     * 
+     *
      *
      * @param bool $verified
      *

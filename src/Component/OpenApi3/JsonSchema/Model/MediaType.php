@@ -13,31 +13,31 @@ class MediaType extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var Schema|Reference|null
      */
     protected $schema;
     /**
-     * 
+     *
      *
      * @var mixed|null
      */
     protected $example;
     /**
-     * 
+     *
      *
      * @var array<string, Example|Reference>|null
      */
     protected $examples;
     /**
-     * 
+     *
      *
      * @var array<string, Encoding>|null
      */
     protected $encoding;
     /**
-     * 
+     *
      *
      * @return Schema|Reference|null
      */
@@ -46,7 +46,7 @@ class MediaType extends \ArrayObject
         return $this->schema;
     }
     /**
-     * 
+     *
      *
      * @param Schema|Reference|null $schema
      *
@@ -59,7 +59,7 @@ class MediaType extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return mixed
      */
@@ -68,7 +68,7 @@ class MediaType extends \ArrayObject
         return $this->example;
     }
     /**
-     * 
+     *
      *
      * @param mixed $example
      *
@@ -81,7 +81,7 @@ class MediaType extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return array<string, Example|Reference>|null
      */
@@ -90,7 +90,7 @@ class MediaType extends \ArrayObject
         return $this->examples;
     }
     /**
-     * 
+     *
      *
      * @param array<string, Example|Reference>|null $examples
      *
@@ -103,7 +103,7 @@ class MediaType extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return array<string, Encoding>|null
      */
@@ -112,7 +112,7 @@ class MediaType extends \ArrayObject
         return $this->encoding;
     }
     /**
-     * 
+     *
      *
      * @param array<string, Encoding>|null $encoding
      *

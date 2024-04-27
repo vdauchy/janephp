@@ -13,31 +13,31 @@ class GitCommitVerification extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $verified;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $reason;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $signature;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $payload;
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -46,7 +46,7 @@ class GitCommitVerification extends \ArrayObject
         return $this->verified;
     }
     /**
-     * 
+     *
      *
      * @param bool $verified
      *
@@ -59,7 +59,7 @@ class GitCommitVerification extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -68,7 +68,7 @@ class GitCommitVerification extends \ArrayObject
         return $this->reason;
     }
     /**
-     * 
+     *
      *
      * @param string $reason
      *
@@ -81,7 +81,7 @@ class GitCommitVerification extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -90,7 +90,7 @@ class GitCommitVerification extends \ArrayObject
         return $this->signature;
     }
     /**
-     * 
+     *
      *
      * @param string|null $signature
      *
@@ -103,7 +103,7 @@ class GitCommitVerification extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -112,7 +112,7 @@ class GitCommitVerification extends \ArrayObject
         return $this->payload;
     }
     /**
-     * 
+     *
      *
      * @param string|null $payload
      *

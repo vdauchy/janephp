@@ -13,37 +13,37 @@ class Encoding
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $contentType;
     /**
-     * 
+     *
      *
      * @var array<string, Header>|null
      */
     protected $headers;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $style;
     /**
-     * 
+     *
      *
      * @var bool|null
      */
     protected $explode;
     /**
-     * 
+     *
      *
      * @var bool|null
      */
     protected $allowReserved = false;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -52,7 +52,7 @@ class Encoding
         return $this->contentType;
     }
     /**
-     * 
+     *
      *
      * @param string|null $contentType
      *
@@ -65,7 +65,7 @@ class Encoding
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return array<string, Header>|null
      */
@@ -74,7 +74,7 @@ class Encoding
         return $this->headers;
     }
     /**
-     * 
+     *
      *
      * @param array<string, Header>|null $headers
      *
@@ -87,7 +87,7 @@ class Encoding
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -96,7 +96,7 @@ class Encoding
         return $this->style;
     }
     /**
-     * 
+     *
      *
      * @param string|null $style
      *
@@ -109,7 +109,7 @@ class Encoding
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool|null
      */
@@ -118,7 +118,7 @@ class Encoding
         return $this->explode;
     }
     /**
-     * 
+     *
      *
      * @param bool|null $explode
      *
@@ -131,7 +131,7 @@ class Encoding
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool|null
      */
@@ -140,7 +140,7 @@ class Encoding
         return $this->allowReserved;
     }
     /**
-     * 
+     *
      *
      * @param bool|null $allowReserved
      *

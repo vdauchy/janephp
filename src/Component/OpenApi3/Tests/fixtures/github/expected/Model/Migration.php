@@ -13,85 +13,85 @@ class Migration extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var MigrationOwner|null
      */
     protected $owner;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $guid;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $state;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $lockRepositories;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $excludeAttachments;
     /**
-     * 
+     *
      *
      * @var list<Repository>
      */
     protected $repositories;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $updatedAt;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $nodeId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $archiveUrl;
     /**
-     * 
+     *
      *
      * @var list<mixed>
      */
     protected $exclude;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -100,7 +100,7 @@ class Migration extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -113,7 +113,7 @@ class Migration extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return MigrationOwner|null
      */
@@ -122,7 +122,7 @@ class Migration extends \ArrayObject
         return $this->owner;
     }
     /**
-     * 
+     *
      *
      * @param MigrationOwner|null $owner
      *
@@ -135,7 +135,7 @@ class Migration extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -144,7 +144,7 @@ class Migration extends \ArrayObject
         return $this->guid;
     }
     /**
-     * 
+     *
      *
      * @param string $guid
      *
@@ -157,7 +157,7 @@ class Migration extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -166,7 +166,7 @@ class Migration extends \ArrayObject
         return $this->state;
     }
     /**
-     * 
+     *
      *
      * @param string $state
      *
@@ -179,7 +179,7 @@ class Migration extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -188,7 +188,7 @@ class Migration extends \ArrayObject
         return $this->lockRepositories;
     }
     /**
-     * 
+     *
      *
      * @param bool $lockRepositories
      *
@@ -201,7 +201,7 @@ class Migration extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -210,7 +210,7 @@ class Migration extends \ArrayObject
         return $this->excludeAttachments;
     }
     /**
-     * 
+     *
      *
      * @param bool $excludeAttachments
      *
@@ -223,7 +223,7 @@ class Migration extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<Repository>
      */
@@ -232,7 +232,7 @@ class Migration extends \ArrayObject
         return $this->repositories;
     }
     /**
-     * 
+     *
      *
      * @param list<Repository> $repositories
      *
@@ -245,7 +245,7 @@ class Migration extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -254,7 +254,7 @@ class Migration extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -267,7 +267,7 @@ class Migration extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -276,7 +276,7 @@ class Migration extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $createdAt
      *
@@ -289,7 +289,7 @@ class Migration extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -298,7 +298,7 @@ class Migration extends \ArrayObject
         return $this->updatedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $updatedAt
      *
@@ -311,7 +311,7 @@ class Migration extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -320,7 +320,7 @@ class Migration extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -333,7 +333,7 @@ class Migration extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -342,7 +342,7 @@ class Migration extends \ArrayObject
         return $this->archiveUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $archiveUrl
      *
@@ -355,7 +355,7 @@ class Migration extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<mixed>
      */
@@ -364,7 +364,7 @@ class Migration extends \ArrayObject
         return $this->exclude;
     }
     /**
-     * 
+     *
      *
      * @param list<mixed> $exclude
      *

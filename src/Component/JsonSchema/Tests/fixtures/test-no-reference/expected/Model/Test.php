@@ -13,19 +13,19 @@ class Test
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $string;
     /**
-     * 
+     *
      *
      * @var TestSubObject
      */
     protected $subObject;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -34,7 +34,7 @@ class Test
         return $this->string;
     }
     /**
-     * 
+     *
      *
      * @param string $string
      *
@@ -47,7 +47,7 @@ class Test
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return TestSubObject
      */
@@ -56,7 +56,7 @@ class Test
         return $this->subObject;
     }
     /**
-     * 
+     *
      *
      * @param TestSubObject $subObject
      *

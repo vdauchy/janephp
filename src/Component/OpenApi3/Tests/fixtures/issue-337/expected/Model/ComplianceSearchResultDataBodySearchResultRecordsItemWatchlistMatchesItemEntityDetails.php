@@ -13,67 +13,67 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var list<ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemEntityDetailsAdditionalInfoItem>
      */
     protected $additionalInfo;
     /**
-     * 
+     *
      *
      * @var list<ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemEntityDetailsAddressesItem>
      */
     protected $addresses;
     /**
-     * 
+     *
      *
      * @var list<ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemEntityDetailsAkAsItem>
      */
     protected $akAs;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $comments;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $dateListed;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $entityType;
     /**
-     * 
+     *
      *
      * @var list<ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemEntityDetailsIDsItem>
      */
     protected $iDs;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $listReferenceNumber;
     /**
-     * 
+     *
      *
      * @var ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemEntityDetailsName
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $reasonListed;
     /**
-     * 
+     *
      *
      * @return list<ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemEntityDetailsAdditionalInfoItem>
      */
@@ -82,7 +82,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
         return $this->additionalInfo;
     }
     /**
-     * 
+     *
      *
      * @param list<ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemEntityDetailsAdditionalInfoItem> $additionalInfo
      *
@@ -95,7 +95,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemEntityDetailsAddressesItem>
      */
@@ -104,7 +104,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
         return $this->addresses;
     }
     /**
-     * 
+     *
      *
      * @param list<ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemEntityDetailsAddressesItem> $addresses
      *
@@ -117,7 +117,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemEntityDetailsAkAsItem>
      */
@@ -126,7 +126,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
         return $this->akAs;
     }
     /**
-     * 
+     *
      *
      * @param list<ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemEntityDetailsAkAsItem> $akAs
      *
@@ -139,7 +139,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -148,7 +148,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
         return $this->comments;
     }
     /**
-     * 
+     *
      *
      * @param string $comments
      *
@@ -161,7 +161,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -170,7 +170,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
         return $this->dateListed;
     }
     /**
-     * 
+     *
      *
      * @param string $dateListed
      *
@@ -183,7 +183,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -192,7 +192,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
         return $this->entityType;
     }
     /**
-     * 
+     *
      *
      * @param string $entityType
      *
@@ -205,7 +205,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemEntityDetailsIDsItem>
      */
@@ -214,7 +214,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
         return $this->iDs;
     }
     /**
-     * 
+     *
      *
      * @param list<ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemEntityDetailsIDsItem> $iDs
      *
@@ -227,7 +227,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -236,7 +236,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
         return $this->listReferenceNumber;
     }
     /**
-     * 
+     *
      *
      * @param string $listReferenceNumber
      *
@@ -249,7 +249,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemEntityDetailsName
      */
@@ -258,7 +258,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemEntityDetailsName $name
      *
@@ -271,7 +271,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -280,7 +280,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
         return $this->reasonListed;
     }
     /**
-     * 
+     *
      *
      * @param string $reasonListed
      *

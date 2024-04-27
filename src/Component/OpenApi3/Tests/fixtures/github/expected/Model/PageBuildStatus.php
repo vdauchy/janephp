@@ -13,19 +13,19 @@ class PageBuildStatus extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $status;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -34,7 +34,7 @@ class PageBuildStatus extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -47,7 +47,7 @@ class PageBuildStatus extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -56,7 +56,7 @@ class PageBuildStatus extends \ArrayObject
         return $this->status;
     }
     /**
-     * 
+     *
      *
      * @param string $status
      *

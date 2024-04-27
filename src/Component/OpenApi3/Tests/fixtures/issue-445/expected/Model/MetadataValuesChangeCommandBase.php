@@ -19,7 +19,7 @@ class MetadataValuesChangeCommandBase
      */
     protected $schemaId;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -44,7 +44,7 @@ class MetadataValuesChangeCommandBase
         $this->schemaId = $schemaId;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -53,7 +53,7 @@ class MetadataValuesChangeCommandBase
         return $this->kind;
     }
     /**
-     * 
+     *
      *
      * @param string $kind
      */

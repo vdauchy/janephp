@@ -13,61 +13,61 @@ class ExecIdJsonGetResponse200
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $canRemove;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $detachKeys;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $iD;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $running;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $exitCode;
     /**
-     * 
+     *
      *
      * @var ProcessConfig
      */
     protected $processConfig;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $openStdin;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $openStderr;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $openStdout;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -79,7 +79,7 @@ class ExecIdJsonGetResponse200
      */
     protected $pid;
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -88,7 +88,7 @@ class ExecIdJsonGetResponse200
         return $this->canRemove;
     }
     /**
-     * 
+     *
      *
      * @param bool $canRemove
      *
@@ -101,7 +101,7 @@ class ExecIdJsonGetResponse200
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -110,7 +110,7 @@ class ExecIdJsonGetResponse200
         return $this->detachKeys;
     }
     /**
-     * 
+     *
      *
      * @param string $detachKeys
      *
@@ -123,7 +123,7 @@ class ExecIdJsonGetResponse200
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -132,7 +132,7 @@ class ExecIdJsonGetResponse200
         return $this->iD;
     }
     /**
-     * 
+     *
      *
      * @param string $iD
      *
@@ -145,7 +145,7 @@ class ExecIdJsonGetResponse200
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -154,7 +154,7 @@ class ExecIdJsonGetResponse200
         return $this->running;
     }
     /**
-     * 
+     *
      *
      * @param bool $running
      *
@@ -167,7 +167,7 @@ class ExecIdJsonGetResponse200
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -176,7 +176,7 @@ class ExecIdJsonGetResponse200
         return $this->exitCode;
     }
     /**
-     * 
+     *
      *
      * @param int $exitCode
      *
@@ -189,7 +189,7 @@ class ExecIdJsonGetResponse200
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ProcessConfig
      */
@@ -198,7 +198,7 @@ class ExecIdJsonGetResponse200
         return $this->processConfig;
     }
     /**
-     * 
+     *
      *
      * @param ProcessConfig $processConfig
      *
@@ -211,7 +211,7 @@ class ExecIdJsonGetResponse200
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -220,7 +220,7 @@ class ExecIdJsonGetResponse200
         return $this->openStdin;
     }
     /**
-     * 
+     *
      *
      * @param bool $openStdin
      *
@@ -233,7 +233,7 @@ class ExecIdJsonGetResponse200
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -242,7 +242,7 @@ class ExecIdJsonGetResponse200
         return $this->openStderr;
     }
     /**
-     * 
+     *
      *
      * @param bool $openStderr
      *
@@ -255,7 +255,7 @@ class ExecIdJsonGetResponse200
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -264,7 +264,7 @@ class ExecIdJsonGetResponse200
         return $this->openStdout;
     }
     /**
-     * 
+     *
      *
      * @param bool $openStdout
      *
@@ -277,7 +277,7 @@ class ExecIdJsonGetResponse200
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -286,7 +286,7 @@ class ExecIdJsonGetResponse200
         return $this->containerID;
     }
     /**
-     * 
+     *
      *
      * @param string $containerID
      *

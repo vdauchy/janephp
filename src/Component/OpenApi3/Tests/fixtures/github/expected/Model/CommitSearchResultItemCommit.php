@@ -13,49 +13,49 @@ class CommitSearchResultItemCommit extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var CommitSearchResultItemCommitAuthor
      */
     protected $author;
     /**
-     * 
+     *
      *
      * @var CommitSearchResultItemCommitCommitter|null
      */
     protected $committer;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $commentCount;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $message;
     /**
-     * 
+     *
      *
      * @var CommitSearchResultItemCommitTree
      */
     protected $tree;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var Verification
      */
     protected $verification;
     /**
-     * 
+     *
      *
      * @return CommitSearchResultItemCommitAuthor
      */
@@ -64,7 +64,7 @@ class CommitSearchResultItemCommit extends \ArrayObject
         return $this->author;
     }
     /**
-     * 
+     *
      *
      * @param CommitSearchResultItemCommitAuthor $author
      *
@@ -77,7 +77,7 @@ class CommitSearchResultItemCommit extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return CommitSearchResultItemCommitCommitter|null
      */
@@ -86,7 +86,7 @@ class CommitSearchResultItemCommit extends \ArrayObject
         return $this->committer;
     }
     /**
-     * 
+     *
      *
      * @param CommitSearchResultItemCommitCommitter|null $committer
      *
@@ -99,7 +99,7 @@ class CommitSearchResultItemCommit extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -108,7 +108,7 @@ class CommitSearchResultItemCommit extends \ArrayObject
         return $this->commentCount;
     }
     /**
-     * 
+     *
      *
      * @param int $commentCount
      *
@@ -121,7 +121,7 @@ class CommitSearchResultItemCommit extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -130,7 +130,7 @@ class CommitSearchResultItemCommit extends \ArrayObject
         return $this->message;
     }
     /**
-     * 
+     *
      *
      * @param string $message
      *
@@ -143,7 +143,7 @@ class CommitSearchResultItemCommit extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return CommitSearchResultItemCommitTree
      */
@@ -152,7 +152,7 @@ class CommitSearchResultItemCommit extends \ArrayObject
         return $this->tree;
     }
     /**
-     * 
+     *
      *
      * @param CommitSearchResultItemCommitTree $tree
      *
@@ -165,7 +165,7 @@ class CommitSearchResultItemCommit extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -174,7 +174,7 @@ class CommitSearchResultItemCommit extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -187,7 +187,7 @@ class CommitSearchResultItemCommit extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return Verification
      */
@@ -196,7 +196,7 @@ class CommitSearchResultItemCommit extends \ArrayObject
         return $this->verification;
     }
     /**
-     * 
+     *
      *
      * @param Verification $verification
      *

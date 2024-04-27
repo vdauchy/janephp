@@ -13,25 +13,25 @@ class Server extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @var array<string, ServerVariable>|null
      */
     protected $variables;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -40,7 +40,7 @@ class Server extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string|null $url
      *
@@ -53,7 +53,7 @@ class Server extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -62,7 +62,7 @@ class Server extends \ArrayObject
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string|null $description
      *
@@ -75,7 +75,7 @@ class Server extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return array<string, ServerVariable>|null
      */
@@ -84,7 +84,7 @@ class Server extends \ArrayObject
         return $this->variables;
     }
     /**
-     * 
+     *
      *
      * @param array<string, ServerVariable>|null $variables
      *

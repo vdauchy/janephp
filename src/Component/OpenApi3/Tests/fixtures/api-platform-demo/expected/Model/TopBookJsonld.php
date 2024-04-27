@@ -13,61 +13,61 @@ class TopBookJsonld extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var mixed
      */
     protected $context;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id2;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $title;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $author;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $part;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $place;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $borrowCount;
     /**
-     * 
+     *
      *
      * @return mixed
      */
@@ -76,7 +76,7 @@ class TopBookJsonld extends \ArrayObject
         return $this->context;
     }
     /**
-     * 
+     *
      *
      * @param mixed $context
      *
@@ -89,7 +89,7 @@ class TopBookJsonld extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -98,7 +98,7 @@ class TopBookJsonld extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param string $id
      *
@@ -111,7 +111,7 @@ class TopBookJsonld extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -120,7 +120,7 @@ class TopBookJsonld extends \ArrayObject
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string $type
      *
@@ -133,7 +133,7 @@ class TopBookJsonld extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -142,7 +142,7 @@ class TopBookJsonld extends \ArrayObject
         return $this->id2;
     }
     /**
-     * 
+     *
      *
      * @param int $id2
      *
@@ -155,7 +155,7 @@ class TopBookJsonld extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -164,7 +164,7 @@ class TopBookJsonld extends \ArrayObject
         return $this->title;
     }
     /**
-     * 
+     *
      *
      * @param string $title
      *
@@ -177,7 +177,7 @@ class TopBookJsonld extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -186,7 +186,7 @@ class TopBookJsonld extends \ArrayObject
         return $this->author;
     }
     /**
-     * 
+     *
      *
      * @param string $author
      *
@@ -199,7 +199,7 @@ class TopBookJsonld extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -208,7 +208,7 @@ class TopBookJsonld extends \ArrayObject
         return $this->part;
     }
     /**
-     * 
+     *
      *
      * @param string $part
      *
@@ -221,7 +221,7 @@ class TopBookJsonld extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -230,7 +230,7 @@ class TopBookJsonld extends \ArrayObject
         return $this->place;
     }
     /**
-     * 
+     *
      *
      * @param string $place
      *
@@ -243,7 +243,7 @@ class TopBookJsonld extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -252,7 +252,7 @@ class TopBookJsonld extends \ArrayObject
         return $this->borrowCount;
     }
     /**
-     * 
+     *
      *
      * @param int $borrowCount
      *

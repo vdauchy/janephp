@@ -13,73 +13,73 @@ class AudioStream
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $bitRate;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $bitRateMode;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $channels;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $channelPositions;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $codec;
     /**
-     * 
+     *
      *
      * @var float|null
      */
     protected $durationInSeconds;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $format;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $language;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $resolution;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $samplingRate;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $streamSize;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -88,7 +88,7 @@ class AudioStream
         return $this->bitRate;
     }
     /**
-     * 
+     *
      *
      * @param string|null $bitRate
      *
@@ -101,7 +101,7 @@ class AudioStream
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -110,7 +110,7 @@ class AudioStream
         return $this->bitRateMode;
     }
     /**
-     * 
+     *
      *
      * @param string|null $bitRateMode
      *
@@ -123,7 +123,7 @@ class AudioStream
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -132,7 +132,7 @@ class AudioStream
         return $this->channels;
     }
     /**
-     * 
+     *
      *
      * @param string|null $channels
      *
@@ -145,7 +145,7 @@ class AudioStream
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -154,7 +154,7 @@ class AudioStream
         return $this->channelPositions;
     }
     /**
-     * 
+     *
      *
      * @param string|null $channelPositions
      *
@@ -167,7 +167,7 @@ class AudioStream
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -176,7 +176,7 @@ class AudioStream
         return $this->codec;
     }
     /**
-     * 
+     *
      *
      * @param string|null $codec
      *
@@ -189,7 +189,7 @@ class AudioStream
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float|null
      */
@@ -198,7 +198,7 @@ class AudioStream
         return $this->durationInSeconds;
     }
     /**
-     * 
+     *
      *
      * @param float|null $durationInSeconds
      *
@@ -211,7 +211,7 @@ class AudioStream
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -220,7 +220,7 @@ class AudioStream
         return $this->format;
     }
     /**
-     * 
+     *
      *
      * @param string|null $format
      *
@@ -233,7 +233,7 @@ class AudioStream
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -242,7 +242,7 @@ class AudioStream
         return $this->language;
     }
     /**
-     * 
+     *
      *
      * @param string|null $language
      *
@@ -255,7 +255,7 @@ class AudioStream
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -264,7 +264,7 @@ class AudioStream
         return $this->resolution;
     }
     /**
-     * 
+     *
      *
      * @param int|null $resolution
      *
@@ -277,7 +277,7 @@ class AudioStream
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -286,7 +286,7 @@ class AudioStream
         return $this->samplingRate;
     }
     /**
-     * 
+     *
      *
      * @param int|null $samplingRate
      *
@@ -299,7 +299,7 @@ class AudioStream
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -308,7 +308,7 @@ class AudioStream
         return $this->streamSize;
     }
     /**
-     * 
+     *
      *
      * @param int|null $streamSize
      *

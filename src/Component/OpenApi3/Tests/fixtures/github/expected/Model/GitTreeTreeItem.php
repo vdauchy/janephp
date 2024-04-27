@@ -13,43 +13,43 @@ class GitTreeTreeItem extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $path;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $mode;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $sha;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $size;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -58,7 +58,7 @@ class GitTreeTreeItem extends \ArrayObject
         return $this->path;
     }
     /**
-     * 
+     *
      *
      * @param string $path
      *
@@ -71,7 +71,7 @@ class GitTreeTreeItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -80,7 +80,7 @@ class GitTreeTreeItem extends \ArrayObject
         return $this->mode;
     }
     /**
-     * 
+     *
      *
      * @param string $mode
      *
@@ -93,7 +93,7 @@ class GitTreeTreeItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -102,7 +102,7 @@ class GitTreeTreeItem extends \ArrayObject
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string $type
      *
@@ -115,7 +115,7 @@ class GitTreeTreeItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -124,7 +124,7 @@ class GitTreeTreeItem extends \ArrayObject
         return $this->sha;
     }
     /**
-     * 
+     *
      *
      * @param string $sha
      *
@@ -137,7 +137,7 @@ class GitTreeTreeItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -146,7 +146,7 @@ class GitTreeTreeItem extends \ArrayObject
         return $this->size;
     }
     /**
-     * 
+     *
      *
      * @param int $size
      *
@@ -159,7 +159,7 @@ class GitTreeTreeItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -168,7 +168,7 @@ class GitTreeTreeItem extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *

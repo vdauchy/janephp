@@ -13,31 +13,31 @@ class ResponseProblemDetailsResponse400 extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $status;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $title;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $type = 'about:blank';
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $detail;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -46,7 +46,7 @@ class ResponseProblemDetailsResponse400 extends \ArrayObject
         return $this->status;
     }
     /**
-     * 
+     *
      *
      * @param int $status
      *
@@ -59,7 +59,7 @@ class ResponseProblemDetailsResponse400 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -68,7 +68,7 @@ class ResponseProblemDetailsResponse400 extends \ArrayObject
         return $this->title;
     }
     /**
-     * 
+     *
      *
      * @param string $title
      *
@@ -81,7 +81,7 @@ class ResponseProblemDetailsResponse400 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -90,7 +90,7 @@ class ResponseProblemDetailsResponse400 extends \ArrayObject
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string $type
      *
@@ -103,7 +103,7 @@ class ResponseProblemDetailsResponse400 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -112,7 +112,7 @@ class ResponseProblemDetailsResponse400 extends \ArrayObject
         return $this->detail;
     }
     /**
-     * 
+     *
      *
      * @param string $detail
      *

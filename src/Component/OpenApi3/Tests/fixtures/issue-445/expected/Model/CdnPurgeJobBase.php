@@ -25,7 +25,7 @@ class CdnPurgeJobBase
      */
     protected $retriesLeft;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -69,7 +69,7 @@ class CdnPurgeJobBase
         $this->retriesLeft = $retriesLeft;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -78,7 +78,7 @@ class CdnPurgeJobBase
         return $this->kind;
     }
     /**
-     * 
+     *
      *
      * @param string $kind
      */

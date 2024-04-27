@@ -13,43 +13,43 @@ class GbCompanyReportExampleResponse extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $orderId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $companyId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $dateOfOrder;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $language;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $userId;
     /**
-     * 
+     *
      *
      * @var GbCompanyReportExampleResponseReport
      */
     protected $report;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -58,7 +58,7 @@ class GbCompanyReportExampleResponse extends \ArrayObject
         return $this->orderId;
     }
     /**
-     * 
+     *
      *
      * @param string $orderId
      *
@@ -71,7 +71,7 @@ class GbCompanyReportExampleResponse extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -80,7 +80,7 @@ class GbCompanyReportExampleResponse extends \ArrayObject
         return $this->companyId;
     }
     /**
-     * 
+     *
      *
      * @param string $companyId
      *
@@ -93,7 +93,7 @@ class GbCompanyReportExampleResponse extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -102,7 +102,7 @@ class GbCompanyReportExampleResponse extends \ArrayObject
         return $this->dateOfOrder;
     }
     /**
-     * 
+     *
      *
      * @param string $dateOfOrder
      *
@@ -115,7 +115,7 @@ class GbCompanyReportExampleResponse extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -124,7 +124,7 @@ class GbCompanyReportExampleResponse extends \ArrayObject
         return $this->language;
     }
     /**
-     * 
+     *
      *
      * @param string $language
      *
@@ -137,7 +137,7 @@ class GbCompanyReportExampleResponse extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -146,7 +146,7 @@ class GbCompanyReportExampleResponse extends \ArrayObject
         return $this->userId;
     }
     /**
-     * 
+     *
      *
      * @param string $userId
      *
@@ -159,7 +159,7 @@ class GbCompanyReportExampleResponse extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GbCompanyReportExampleResponseReport
      */
@@ -168,7 +168,7 @@ class GbCompanyReportExampleResponse extends \ArrayObject
         return $this->report;
     }
     /**
-     * 
+     *
      *
      * @param GbCompanyReportExampleResponseReport $report
      *

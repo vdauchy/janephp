@@ -6,7 +6,7 @@ class ContentGetDownloadLink extends \PicturePark\API\Runtime\Client\BaseEndpoin
 {
     protected $token;
     /**
-     * 
+     *
      *
      * @param string $token Token
      */

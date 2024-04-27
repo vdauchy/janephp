@@ -13,7 +13,7 @@ class FileTransferCreateItem
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -38,7 +38,7 @@ class FileTransferCreateItem
      */
     protected $contentPermissionSetIds;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -47,7 +47,7 @@ class FileTransferCreateItem
         return $this->fileId;
     }
     /**
-     * 
+     *
      *
      * @param string $fileId
      *

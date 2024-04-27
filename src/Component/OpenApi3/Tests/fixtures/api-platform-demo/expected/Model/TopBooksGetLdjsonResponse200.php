@@ -13,31 +13,31 @@ class TopBooksGetLdjsonResponse200 extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var list<TopBookJsonld>
      */
     protected $hydraMember;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $hydraTotalItems;
     /**
-     * 
+     *
      *
      * @var TopBooksGetLdjsonResponse200HydraView
      */
     protected $hydraView;
     /**
-     * 
+     *
      *
      * @var TopBooksGetLdjsonResponse200HydraSearch
      */
     protected $hydraSearch;
     /**
-     * 
+     *
      *
      * @return list<TopBookJsonld>
      */
@@ -46,7 +46,7 @@ class TopBooksGetLdjsonResponse200 extends \ArrayObject
         return $this->hydraMember;
     }
     /**
-     * 
+     *
      *
      * @param list<TopBookJsonld> $hydraMember
      *
@@ -59,7 +59,7 @@ class TopBooksGetLdjsonResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -68,7 +68,7 @@ class TopBooksGetLdjsonResponse200 extends \ArrayObject
         return $this->hydraTotalItems;
     }
     /**
-     * 
+     *
      *
      * @param int $hydraTotalItems
      *
@@ -81,7 +81,7 @@ class TopBooksGetLdjsonResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return TopBooksGetLdjsonResponse200HydraView
      */
@@ -90,7 +90,7 @@ class TopBooksGetLdjsonResponse200 extends \ArrayObject
         return $this->hydraView;
     }
     /**
-     * 
+     *
      *
      * @param TopBooksGetLdjsonResponse200HydraView $hydraView
      *
@@ -103,7 +103,7 @@ class TopBooksGetLdjsonResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return TopBooksGetLdjsonResponse200HydraSearch
      */
@@ -112,7 +112,7 @@ class TopBooksGetLdjsonResponse200 extends \ArrayObject
         return $this->hydraSearch;
     }
     /**
-     * 
+     *
      *
      * @param TopBooksGetLdjsonResponse200HydraSearch $hydraSearch
      *

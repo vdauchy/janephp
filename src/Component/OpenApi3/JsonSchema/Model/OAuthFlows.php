@@ -13,31 +13,31 @@ class OAuthFlows extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var ImplicitOAuthFlow|null
      */
     protected $implicit;
     /**
-     * 
+     *
      *
      * @var PasswordOAuthFlow|null
      */
     protected $password;
     /**
-     * 
+     *
      *
      * @var ClientCredentialsFlow|null
      */
     protected $clientCredentials;
     /**
-     * 
+     *
      *
      * @var AuthorizationCodeOAuthFlow|null
      */
     protected $authorizationCode;
     /**
-     * 
+     *
      *
      * @return ImplicitOAuthFlow|null
      */
@@ -46,7 +46,7 @@ class OAuthFlows extends \ArrayObject
         return $this->implicit;
     }
     /**
-     * 
+     *
      *
      * @param ImplicitOAuthFlow|null $implicit
      *
@@ -59,7 +59,7 @@ class OAuthFlows extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return PasswordOAuthFlow|null
      */
@@ -68,7 +68,7 @@ class OAuthFlows extends \ArrayObject
         return $this->password;
     }
     /**
-     * 
+     *
      *
      * @param PasswordOAuthFlow|null $password
      *
@@ -81,7 +81,7 @@ class OAuthFlows extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ClientCredentialsFlow|null
      */
@@ -90,7 +90,7 @@ class OAuthFlows extends \ArrayObject
         return $this->clientCredentials;
     }
     /**
-     * 
+     *
      *
      * @param ClientCredentialsFlow|null $clientCredentials
      *
@@ -103,7 +103,7 @@ class OAuthFlows extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return AuthorizationCodeOAuthFlow|null
      */
@@ -112,7 +112,7 @@ class OAuthFlows extends \ArrayObject
         return $this->authorizationCode;
     }
     /**
-     * 
+     *
      *
      * @param AuthorizationCodeOAuthFlow|null $authorizationCode
      *

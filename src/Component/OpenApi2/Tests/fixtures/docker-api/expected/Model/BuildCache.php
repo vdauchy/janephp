@@ -13,37 +13,37 @@ class BuildCache
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $iD;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $parent;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $inUse;
     /**
-     * 
+     *
      *
      * @var bool
      */
@@ -57,7 +57,7 @@ class BuildCache
     /**
     * Date and time at which the build cache was created in
     [RFC 3339](https://www.ietf.org/rfc/rfc3339.txt) format with nano-seconds.
-    
+
     *
     * @var string
     */
@@ -65,19 +65,19 @@ class BuildCache
     /**
     * Date and time at which the build cache was last used in
     [RFC 3339](https://www.ietf.org/rfc/rfc3339.txt) format with nano-seconds.
-    
+
     *
     * @var string|null
     */
     protected $lastUsedAt;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $usageCount;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -86,7 +86,7 @@ class BuildCache
         return $this->iD;
     }
     /**
-     * 
+     *
      *
      * @param string $iD
      *
@@ -99,7 +99,7 @@ class BuildCache
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -108,7 +108,7 @@ class BuildCache
         return $this->parent;
     }
     /**
-     * 
+     *
      *
      * @param string $parent
      *
@@ -121,7 +121,7 @@ class BuildCache
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -130,7 +130,7 @@ class BuildCache
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string $type
      *
@@ -143,7 +143,7 @@ class BuildCache
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -152,7 +152,7 @@ class BuildCache
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string $description
      *
@@ -165,7 +165,7 @@ class BuildCache
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -174,7 +174,7 @@ class BuildCache
         return $this->inUse;
     }
     /**
-     * 
+     *
      *
      * @param bool $inUse
      *
@@ -187,7 +187,7 @@ class BuildCache
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -196,7 +196,7 @@ class BuildCache
         return $this->shared;
     }
     /**
-     * 
+     *
      *
      * @param bool $shared
      *
@@ -233,7 +233,7 @@ class BuildCache
     /**
     * Date and time at which the build cache was created in
     [RFC 3339](https://www.ietf.org/rfc/rfc3339.txt) format with nano-seconds.
-    
+
     *
     * @return string
     */
@@ -244,7 +244,7 @@ class BuildCache
     /**
     * Date and time at which the build cache was created in
     [RFC 3339](https://www.ietf.org/rfc/rfc3339.txt) format with nano-seconds.
-    
+
     *
     * @param string $createdAt
     *
@@ -259,7 +259,7 @@ class BuildCache
     /**
     * Date and time at which the build cache was last used in
     [RFC 3339](https://www.ietf.org/rfc/rfc3339.txt) format with nano-seconds.
-    
+
     *
     * @return string|null
     */
@@ -270,7 +270,7 @@ class BuildCache
     /**
     * Date and time at which the build cache was last used in
     [RFC 3339](https://www.ietf.org/rfc/rfc3339.txt) format with nano-seconds.
-    
+
     *
     * @param string|null $lastUsedAt
     *
@@ -283,7 +283,7 @@ class BuildCache
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -292,7 +292,7 @@ class BuildCache
         return $this->usageCount;
     }
     /**
-     * 
+     *
      *
      * @param int $usageCount
      *

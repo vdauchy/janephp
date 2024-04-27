@@ -13,31 +13,31 @@ class PluginEnv
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @var list<string>
      */
     protected $settable;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $value;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -46,7 +46,7 @@ class PluginEnv
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -59,7 +59,7 @@ class PluginEnv
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -68,7 +68,7 @@ class PluginEnv
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string $description
      *
@@ -81,7 +81,7 @@ class PluginEnv
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -90,7 +90,7 @@ class PluginEnv
         return $this->settable;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $settable
      *
@@ -103,7 +103,7 @@ class PluginEnv
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -112,7 +112,7 @@ class PluginEnv
         return $this->value;
     }
     /**
-     * 
+     *
      *
      * @param string $value
      *

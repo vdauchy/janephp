@@ -13,25 +13,25 @@ class InvalidRuleProblem extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $title;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $detail;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -40,7 +40,7 @@ class InvalidRuleProblem extends \ArrayObject
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string $type
      *
@@ -53,7 +53,7 @@ class InvalidRuleProblem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -62,7 +62,7 @@ class InvalidRuleProblem extends \ArrayObject
         return $this->title;
     }
     /**
-     * 
+     *
      *
      * @param string $title
      *
@@ -75,7 +75,7 @@ class InvalidRuleProblem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -84,7 +84,7 @@ class InvalidRuleProblem extends \ArrayObject
         return $this->detail;
     }
     /**
-     * 
+     *
      *
      * @param string $detail
      *

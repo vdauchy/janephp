@@ -13,31 +13,31 @@ class CreateFreshInvestigationRequestContactInfo extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $emailAddress;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $telephoneNumber;
     /**
-     * 
+     *
      *
      * @var CreateFreshInvestigationRequestContactInfoCompany
      */
     protected $company;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -46,7 +46,7 @@ class CreateFreshInvestigationRequestContactInfo extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -59,7 +59,7 @@ class CreateFreshInvestigationRequestContactInfo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -68,7 +68,7 @@ class CreateFreshInvestigationRequestContactInfo extends \ArrayObject
         return $this->emailAddress;
     }
     /**
-     * 
+     *
      *
      * @param string $emailAddress
      *
@@ -81,7 +81,7 @@ class CreateFreshInvestigationRequestContactInfo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -90,7 +90,7 @@ class CreateFreshInvestigationRequestContactInfo extends \ArrayObject
         return $this->telephoneNumber;
     }
     /**
-     * 
+     *
      *
      * @param string $telephoneNumber
      *
@@ -103,7 +103,7 @@ class CreateFreshInvestigationRequestContactInfo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return CreateFreshInvestigationRequestContactInfoCompany
      */
@@ -112,7 +112,7 @@ class CreateFreshInvestigationRequestContactInfo extends \ArrayObject
         return $this->company;
     }
     /**
-     * 
+     *
      *
      * @param CreateFreshInvestigationRequestContactInfoCompany $company
      *

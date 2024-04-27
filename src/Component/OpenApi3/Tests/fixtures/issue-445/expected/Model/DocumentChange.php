@@ -13,37 +13,37 @@ class DocumentChange
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $documentName;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $documentId;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $version;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $action;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $timeStamp;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -52,7 +52,7 @@ class DocumentChange
         return $this->documentName;
     }
     /**
-     * 
+     *
      *
      * @param string|null $documentName
      *
@@ -65,7 +65,7 @@ class DocumentChange
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -74,7 +74,7 @@ class DocumentChange
         return $this->documentId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $documentId
      *
@@ -87,7 +87,7 @@ class DocumentChange
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -96,7 +96,7 @@ class DocumentChange
         return $this->version;
     }
     /**
-     * 
+     *
      *
      * @param int $version
      *
@@ -109,7 +109,7 @@ class DocumentChange
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -118,7 +118,7 @@ class DocumentChange
         return $this->action;
     }
     /**
-     * 
+     *
      *
      * @param string|null $action
      *
@@ -131,7 +131,7 @@ class DocumentChange
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -140,7 +140,7 @@ class DocumentChange
         return $this->timeStamp;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $timeStamp
      *

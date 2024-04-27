@@ -13,37 +13,37 @@ class ComplianceSearchResultDataBodySearchResultRecordsItem extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $record;
     /**
-     * 
+     *
      *
      * @var ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails
      */
     protected $recordDetails;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $resultID;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $runID;
     /**
-     * 
+     *
      *
      * @var ComplianceSearchResultDataBodySearchResultRecordsItemWatchlist
      */
     protected $watchlist;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -52,7 +52,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItem extends \ArrayObject
         return $this->record;
     }
     /**
-     * 
+     *
      *
      * @param int $record
      *
@@ -65,7 +65,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails
      */
@@ -74,7 +74,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItem extends \ArrayObject
         return $this->recordDetails;
     }
     /**
-     * 
+     *
      *
      * @param ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails $recordDetails
      *
@@ -87,7 +87,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -96,7 +96,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItem extends \ArrayObject
         return $this->resultID;
     }
     /**
-     * 
+     *
      *
      * @param int $resultID
      *
@@ -109,7 +109,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -118,7 +118,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItem extends \ArrayObject
         return $this->runID;
     }
     /**
-     * 
+     *
      *
      * @param int $runID
      *
@@ -131,7 +131,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ComplianceSearchResultDataBodySearchResultRecordsItemWatchlist
      */
@@ -140,7 +140,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItem extends \ArrayObject
         return $this->watchlist;
     }
     /**
-     * 
+     *
      *
      * @param ComplianceSearchResultDataBodySearchResultRecordsItemWatchlist $watchlist
      *

@@ -13,49 +13,49 @@ class GbCompanyReportExampleResponseReportGroupStructureSubsidiaryCompaniesItem 
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $country;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $safeNumber;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $status;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $registrationNumber;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -64,7 +64,7 @@ class GbCompanyReportExampleResponseReportGroupStructureSubsidiaryCompaniesItem 
         return $this->country;
     }
     /**
-     * 
+     *
      *
      * @param string $country
      *
@@ -77,7 +77,7 @@ class GbCompanyReportExampleResponseReportGroupStructureSubsidiaryCompaniesItem 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -86,7 +86,7 @@ class GbCompanyReportExampleResponseReportGroupStructureSubsidiaryCompaniesItem 
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param string $id
      *
@@ -99,7 +99,7 @@ class GbCompanyReportExampleResponseReportGroupStructureSubsidiaryCompaniesItem 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -108,7 +108,7 @@ class GbCompanyReportExampleResponseReportGroupStructureSubsidiaryCompaniesItem 
         return $this->safeNumber;
     }
     /**
-     * 
+     *
      *
      * @param string $safeNumber
      *
@@ -121,7 +121,7 @@ class GbCompanyReportExampleResponseReportGroupStructureSubsidiaryCompaniesItem 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -130,7 +130,7 @@ class GbCompanyReportExampleResponseReportGroupStructureSubsidiaryCompaniesItem 
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -143,7 +143,7 @@ class GbCompanyReportExampleResponseReportGroupStructureSubsidiaryCompaniesItem 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -152,7 +152,7 @@ class GbCompanyReportExampleResponseReportGroupStructureSubsidiaryCompaniesItem 
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string $type
      *
@@ -165,7 +165,7 @@ class GbCompanyReportExampleResponseReportGroupStructureSubsidiaryCompaniesItem 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -174,7 +174,7 @@ class GbCompanyReportExampleResponseReportGroupStructureSubsidiaryCompaniesItem 
         return $this->status;
     }
     /**
-     * 
+     *
      *
      * @param string $status
      *
@@ -187,7 +187,7 @@ class GbCompanyReportExampleResponseReportGroupStructureSubsidiaryCompaniesItem 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -196,7 +196,7 @@ class GbCompanyReportExampleResponseReportGroupStructureSubsidiaryCompaniesItem 
         return $this->registrationNumber;
     }
     /**
-     * 
+     *
      *
      * @param string $registrationNumber
      *

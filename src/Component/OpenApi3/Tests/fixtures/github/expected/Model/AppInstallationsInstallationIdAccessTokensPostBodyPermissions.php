@@ -13,37 +13,37 @@ class AppInstallationsInstallationIdAccessTokensPostBodyPermissions extends \Arr
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $contents;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $issues;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $deployments;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $singleFile;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $defNotARepo;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -52,7 +52,7 @@ class AppInstallationsInstallationIdAccessTokensPostBodyPermissions extends \Arr
         return $this->contents;
     }
     /**
-     * 
+     *
      *
      * @param string $contents
      *
@@ -65,7 +65,7 @@ class AppInstallationsInstallationIdAccessTokensPostBodyPermissions extends \Arr
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -74,7 +74,7 @@ class AppInstallationsInstallationIdAccessTokensPostBodyPermissions extends \Arr
         return $this->issues;
     }
     /**
-     * 
+     *
      *
      * @param string $issues
      *
@@ -87,7 +87,7 @@ class AppInstallationsInstallationIdAccessTokensPostBodyPermissions extends \Arr
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -96,7 +96,7 @@ class AppInstallationsInstallationIdAccessTokensPostBodyPermissions extends \Arr
         return $this->deployments;
     }
     /**
-     * 
+     *
      *
      * @param string $deployments
      *
@@ -109,7 +109,7 @@ class AppInstallationsInstallationIdAccessTokensPostBodyPermissions extends \Arr
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -118,7 +118,7 @@ class AppInstallationsInstallationIdAccessTokensPostBodyPermissions extends \Arr
         return $this->singleFile;
     }
     /**
-     * 
+     *
      *
      * @param string $singleFile
      *
@@ -131,7 +131,7 @@ class AppInstallationsInstallationIdAccessTokensPostBodyPermissions extends \Arr
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -140,7 +140,7 @@ class AppInstallationsInstallationIdAccessTokensPostBodyPermissions extends \Arr
         return $this->defNotARepo;
     }
     /**
-     * 
+     *
      *
      * @param string $defNotARepo
      *

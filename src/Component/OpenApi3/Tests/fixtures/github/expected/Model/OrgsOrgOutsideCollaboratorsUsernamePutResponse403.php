@@ -13,19 +13,19 @@ class OrgsOrgOutsideCollaboratorsUsernamePutResponse403 extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $message;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $documentationUrl;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -34,7 +34,7 @@ class OrgsOrgOutsideCollaboratorsUsernamePutResponse403 extends \ArrayObject
         return $this->message;
     }
     /**
-     * 
+     *
      *
      * @param string $message
      *
@@ -47,7 +47,7 @@ class OrgsOrgOutsideCollaboratorsUsernamePutResponse403 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -56,7 +56,7 @@ class OrgsOrgOutsideCollaboratorsUsernamePutResponse403 extends \ArrayObject
         return $this->documentationUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $documentationUrl
      *

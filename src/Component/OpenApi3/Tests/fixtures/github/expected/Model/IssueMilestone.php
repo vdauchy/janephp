@@ -13,31 +13,31 @@ class IssueMilestone extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $htmlUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $labelsUrl;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -61,55 +61,55 @@ class IssueMilestone extends \ArrayObject
      */
     protected $title;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @var MilestoneCreator|null
      */
     protected $creator;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $openIssues;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $closedIssues;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $updatedAt;
     /**
-     * 
+     *
      *
      * @var \DateTime|null
      */
     protected $closedAt;
     /**
-     * 
+     *
      *
      * @var \DateTime|null
      */
     protected $dueOn;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -118,7 +118,7 @@ class IssueMilestone extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -131,7 +131,7 @@ class IssueMilestone extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -140,7 +140,7 @@ class IssueMilestone extends \ArrayObject
         return $this->htmlUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $htmlUrl
      *
@@ -153,7 +153,7 @@ class IssueMilestone extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -162,7 +162,7 @@ class IssueMilestone extends \ArrayObject
         return $this->labelsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $labelsUrl
      *
@@ -175,7 +175,7 @@ class IssueMilestone extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -184,7 +184,7 @@ class IssueMilestone extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -197,7 +197,7 @@ class IssueMilestone extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -206,7 +206,7 @@ class IssueMilestone extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -285,7 +285,7 @@ class IssueMilestone extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -294,7 +294,7 @@ class IssueMilestone extends \ArrayObject
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string|null $description
      *
@@ -307,7 +307,7 @@ class IssueMilestone extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return MilestoneCreator|null
      */
@@ -316,7 +316,7 @@ class IssueMilestone extends \ArrayObject
         return $this->creator;
     }
     /**
-     * 
+     *
      *
      * @param MilestoneCreator|null $creator
      *
@@ -329,7 +329,7 @@ class IssueMilestone extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -338,7 +338,7 @@ class IssueMilestone extends \ArrayObject
         return $this->openIssues;
     }
     /**
-     * 
+     *
      *
      * @param int $openIssues
      *
@@ -351,7 +351,7 @@ class IssueMilestone extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -360,7 +360,7 @@ class IssueMilestone extends \ArrayObject
         return $this->closedIssues;
     }
     /**
-     * 
+     *
      *
      * @param int $closedIssues
      *
@@ -373,7 +373,7 @@ class IssueMilestone extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -382,7 +382,7 @@ class IssueMilestone extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $createdAt
      *
@@ -395,7 +395,7 @@ class IssueMilestone extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -404,7 +404,7 @@ class IssueMilestone extends \ArrayObject
         return $this->updatedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $updatedAt
      *
@@ -417,7 +417,7 @@ class IssueMilestone extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime|null
      */
@@ -426,7 +426,7 @@ class IssueMilestone extends \ArrayObject
         return $this->closedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime|null $closedAt
      *
@@ -439,7 +439,7 @@ class IssueMilestone extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime|null
      */
@@ -448,7 +448,7 @@ class IssueMilestone extends \ArrayObject
         return $this->dueOn;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime|null $dueOn
      *

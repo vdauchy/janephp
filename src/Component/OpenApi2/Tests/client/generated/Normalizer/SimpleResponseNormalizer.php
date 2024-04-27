@@ -44,7 +44,7 @@ class SimpleResponseNormalizer implements DenormalizerInterface, NormalizerInter
         }
         return $object;
     }
-    public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
+    public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
     {
         $data = array();
         if (null !== $object->getFoo()) {

@@ -13,7 +13,7 @@ class DetailedPlace extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -31,43 +31,43 @@ class DetailedPlace extends \ArrayObject
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $countryCode;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $placeType;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $fullName;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $country;
     /**
-     * 
+     *
      *
      * @var list<string>
      */
     protected $containedWithin;
     /**
-     * 
+     *
      *
      * @var Geo
      */
     protected $geo;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -76,7 +76,7 @@ class DetailedPlace extends \ArrayObject
         return $this->format;
     }
     /**
-     * 
+     *
      *
      * @param string $format
      *
@@ -133,7 +133,7 @@ class DetailedPlace extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -142,7 +142,7 @@ class DetailedPlace extends \ArrayObject
         return $this->countryCode;
     }
     /**
-     * 
+     *
      *
      * @param string $countryCode
      *
@@ -155,7 +155,7 @@ class DetailedPlace extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -164,7 +164,7 @@ class DetailedPlace extends \ArrayObject
         return $this->placeType;
     }
     /**
-     * 
+     *
      *
      * @param string $placeType
      *
@@ -177,7 +177,7 @@ class DetailedPlace extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -186,7 +186,7 @@ class DetailedPlace extends \ArrayObject
         return $this->fullName;
     }
     /**
-     * 
+     *
      *
      * @param string $fullName
      *
@@ -199,7 +199,7 @@ class DetailedPlace extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -208,7 +208,7 @@ class DetailedPlace extends \ArrayObject
         return $this->country;
     }
     /**
-     * 
+     *
      *
      * @param string $country
      *
@@ -221,7 +221,7 @@ class DetailedPlace extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -230,7 +230,7 @@ class DetailedPlace extends \ArrayObject
         return $this->containedWithin;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $containedWithin
      *
@@ -243,7 +243,7 @@ class DetailedPlace extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return Geo
      */
@@ -252,7 +252,7 @@ class DetailedPlace extends \ArrayObject
         return $this->geo;
     }
     /**
-     * 
+     *
      *
      * @param Geo $geo
      *

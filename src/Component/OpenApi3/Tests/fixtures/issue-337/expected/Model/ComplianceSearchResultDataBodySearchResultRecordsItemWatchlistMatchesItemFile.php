@@ -13,43 +13,43 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemF
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $build;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $custom;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $published;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -58,7 +58,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemF
         return $this->build;
     }
     /**
-     * 
+     *
      *
      * @param string $build
      *
@@ -71,7 +71,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemF
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -80,7 +80,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemF
         return $this->custom;
     }
     /**
-     * 
+     *
      *
      * @param bool $custom
      *
@@ -93,7 +93,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemF
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -102,7 +102,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemF
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -115,7 +115,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemF
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -124,7 +124,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemF
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -137,7 +137,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemF
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -146,7 +146,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemF
         return $this->published;
     }
     /**
-     * 
+     *
      *
      * @param string $published
      *
@@ -159,7 +159,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemF
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -168,7 +168,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemF
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string $type
      *

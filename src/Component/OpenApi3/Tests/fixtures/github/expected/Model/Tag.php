@@ -13,37 +13,37 @@ class Tag extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var TagCommit
      */
     protected $commit;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $zipballUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $tarballUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $nodeId;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -52,7 +52,7 @@ class Tag extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -65,7 +65,7 @@ class Tag extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return TagCommit
      */
@@ -74,7 +74,7 @@ class Tag extends \ArrayObject
         return $this->commit;
     }
     /**
-     * 
+     *
      *
      * @param TagCommit $commit
      *
@@ -87,7 +87,7 @@ class Tag extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -96,7 +96,7 @@ class Tag extends \ArrayObject
         return $this->zipballUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $zipballUrl
      *
@@ -109,7 +109,7 @@ class Tag extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -118,7 +118,7 @@ class Tag extends \ArrayObject
         return $this->tarballUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $tarballUrl
      *
@@ -131,7 +131,7 @@ class Tag extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -140,7 +140,7 @@ class Tag extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *

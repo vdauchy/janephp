@@ -13,37 +13,37 @@ class TaskStatus
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $timestamp;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $state;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $message;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $err;
     /**
-     * 
+     *
      *
      * @var TaskStatusContainerStatus
      */
     protected $containerStatus;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -52,7 +52,7 @@ class TaskStatus
         return $this->timestamp;
     }
     /**
-     * 
+     *
      *
      * @param string $timestamp
      *
@@ -65,7 +65,7 @@ class TaskStatus
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -74,7 +74,7 @@ class TaskStatus
         return $this->state;
     }
     /**
-     * 
+     *
      *
      * @param string $state
      *
@@ -87,7 +87,7 @@ class TaskStatus
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -96,7 +96,7 @@ class TaskStatus
         return $this->message;
     }
     /**
-     * 
+     *
      *
      * @param string $message
      *
@@ -109,7 +109,7 @@ class TaskStatus
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -118,7 +118,7 @@ class TaskStatus
         return $this->err;
     }
     /**
-     * 
+     *
      *
      * @param string $err
      *
@@ -131,7 +131,7 @@ class TaskStatus
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return TaskStatusContainerStatus
      */
@@ -140,7 +140,7 @@ class TaskStatus
         return $this->containerStatus;
     }
     /**
-     * 
+     *
      *
      * @param TaskStatusContainerStatus $containerStatus
      *

@@ -13,49 +13,49 @@ class GbCompanyReportExampleResponseReportAdditionalInformationMortgageDetailsIt
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $mortgageType;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $dateChargeCreated;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $dateChargeRegistered;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $status;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $personsEntitled;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $amountSecured;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $details;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -64,7 +64,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationMortgageDetailsIt
         return $this->mortgageType;
     }
     /**
-     * 
+     *
      *
      * @param string $mortgageType
      *
@@ -77,7 +77,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationMortgageDetailsIt
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -86,7 +86,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationMortgageDetailsIt
         return $this->dateChargeCreated;
     }
     /**
-     * 
+     *
      *
      * @param string $dateChargeCreated
      *
@@ -99,7 +99,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationMortgageDetailsIt
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -108,7 +108,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationMortgageDetailsIt
         return $this->dateChargeRegistered;
     }
     /**
-     * 
+     *
      *
      * @param string $dateChargeRegistered
      *
@@ -121,7 +121,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationMortgageDetailsIt
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -130,7 +130,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationMortgageDetailsIt
         return $this->status;
     }
     /**
-     * 
+     *
      *
      * @param string $status
      *
@@ -143,7 +143,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationMortgageDetailsIt
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -152,7 +152,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationMortgageDetailsIt
         return $this->personsEntitled;
     }
     /**
-     * 
+     *
      *
      * @param string $personsEntitled
      *
@@ -165,7 +165,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationMortgageDetailsIt
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -174,7 +174,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationMortgageDetailsIt
         return $this->amountSecured;
     }
     /**
-     * 
+     *
      *
      * @param string $amountSecured
      *
@@ -187,7 +187,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationMortgageDetailsIt
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -196,7 +196,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationMortgageDetailsIt
         return $this->details;
     }
     /**
-     * 
+     *
      *
      * @param string $details
      *

@@ -25,13 +25,13 @@ class RepositoryInvitation extends \ArrayObject
      */
     protected $repository;
     /**
-     * 
+     *
      *
      * @var RepositoryInvitationInvitee|null
      */
     protected $invitee;
     /**
-     * 
+     *
      *
      * @var RepositoryInvitationInviter|null
      */
@@ -43,7 +43,7 @@ class RepositoryInvitation extends \ArrayObject
      */
     protected $permissions;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
@@ -55,13 +55,13 @@ class RepositoryInvitation extends \ArrayObject
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $htmlUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -111,7 +111,7 @@ class RepositoryInvitation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return RepositoryInvitationInvitee|null
      */
@@ -120,7 +120,7 @@ class RepositoryInvitation extends \ArrayObject
         return $this->invitee;
     }
     /**
-     * 
+     *
      *
      * @param RepositoryInvitationInvitee|null $invitee
      *
@@ -133,7 +133,7 @@ class RepositoryInvitation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return RepositoryInvitationInviter|null
      */
@@ -142,7 +142,7 @@ class RepositoryInvitation extends \ArrayObject
         return $this->inviter;
     }
     /**
-     * 
+     *
      *
      * @param RepositoryInvitationInviter|null $inviter
      *
@@ -177,7 +177,7 @@ class RepositoryInvitation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -186,7 +186,7 @@ class RepositoryInvitation extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $createdAt
      *
@@ -221,7 +221,7 @@ class RepositoryInvitation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -230,7 +230,7 @@ class RepositoryInvitation extends \ArrayObject
         return $this->htmlUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $htmlUrl
      *
@@ -243,7 +243,7 @@ class RepositoryInvitation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -252,7 +252,7 @@ class RepositoryInvitation extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *

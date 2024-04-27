@@ -13,79 +13,79 @@ class Schema extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $attribute1;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $attribute2;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $attribute3;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $attribute4;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $stringProperty;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $dateProperty;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $integerProperty;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $floatProperty;
     /**
-     * 
+     *
      *
      * @var list<mixed>
      */
     protected $arrayProperty;
     /**
-     * 
+     *
      *
      * @var array<string, string>
      */
     protected $mapProperty;
     /**
-     * 
+     *
      *
      * @var SchemaObjectProperty
      */
     protected $objectProperty;
     /**
-     * 
+     *
      *
      * @var Schema
      */
     protected $objectRefProperty;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -94,7 +94,7 @@ class Schema extends \ArrayObject
         return $this->attribute1;
     }
     /**
-     * 
+     *
      *
      * @param string $attribute1
      *
@@ -107,7 +107,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -116,7 +116,7 @@ class Schema extends \ArrayObject
         return $this->attribute2;
     }
     /**
-     * 
+     *
      *
      * @param string|null $attribute2
      *
@@ -129,7 +129,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -138,7 +138,7 @@ class Schema extends \ArrayObject
         return $this->attribute3;
     }
     /**
-     * 
+     *
      *
      * @param string $attribute3
      *
@@ -151,7 +151,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -160,7 +160,7 @@ class Schema extends \ArrayObject
         return $this->attribute4;
     }
     /**
-     * 
+     *
      *
      * @param string|null $attribute4
      *
@@ -173,7 +173,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -182,7 +182,7 @@ class Schema extends \ArrayObject
         return $this->stringProperty;
     }
     /**
-     * 
+     *
      *
      * @param string $stringProperty
      *
@@ -195,7 +195,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -204,7 +204,7 @@ class Schema extends \ArrayObject
         return $this->dateProperty;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $dateProperty
      *
@@ -217,7 +217,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -226,7 +226,7 @@ class Schema extends \ArrayObject
         return $this->integerProperty;
     }
     /**
-     * 
+     *
      *
      * @param int $integerProperty
      *
@@ -239,7 +239,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -248,7 +248,7 @@ class Schema extends \ArrayObject
         return $this->floatProperty;
     }
     /**
-     * 
+     *
      *
      * @param float $floatProperty
      *
@@ -261,7 +261,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<mixed>
      */
@@ -270,7 +270,7 @@ class Schema extends \ArrayObject
         return $this->arrayProperty;
     }
     /**
-     * 
+     *
      *
      * @param list<mixed> $arrayProperty
      *
@@ -283,7 +283,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return array<string, string>
      */
@@ -292,7 +292,7 @@ class Schema extends \ArrayObject
         return $this->mapProperty;
     }
     /**
-     * 
+     *
      *
      * @param array<string, string> $mapProperty
      *
@@ -305,7 +305,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return SchemaObjectProperty
      */
@@ -314,7 +314,7 @@ class Schema extends \ArrayObject
         return $this->objectProperty;
     }
     /**
-     * 
+     *
      *
      * @param SchemaObjectProperty $objectProperty
      *
@@ -327,7 +327,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return Schema
      */
@@ -336,7 +336,7 @@ class Schema extends \ArrayObject
         return $this->objectRefProperty;
     }
     /**
-     * 
+     *
      *
      * @param Schema $objectRefProperty
      *

@@ -13,43 +13,43 @@ class EventPayloadPagesItem extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $pageName;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $title;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $summary;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $action;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $sha;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $htmlUrl;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -58,7 +58,7 @@ class EventPayloadPagesItem extends \ArrayObject
         return $this->pageName;
     }
     /**
-     * 
+     *
      *
      * @param string $pageName
      *
@@ -71,7 +71,7 @@ class EventPayloadPagesItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -80,7 +80,7 @@ class EventPayloadPagesItem extends \ArrayObject
         return $this->title;
     }
     /**
-     * 
+     *
      *
      * @param string $title
      *
@@ -93,7 +93,7 @@ class EventPayloadPagesItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -102,7 +102,7 @@ class EventPayloadPagesItem extends \ArrayObject
         return $this->summary;
     }
     /**
-     * 
+     *
      *
      * @param string|null $summary
      *
@@ -115,7 +115,7 @@ class EventPayloadPagesItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -124,7 +124,7 @@ class EventPayloadPagesItem extends \ArrayObject
         return $this->action;
     }
     /**
-     * 
+     *
      *
      * @param string $action
      *
@@ -137,7 +137,7 @@ class EventPayloadPagesItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -146,7 +146,7 @@ class EventPayloadPagesItem extends \ArrayObject
         return $this->sha;
     }
     /**
-     * 
+     *
      *
      * @param string $sha
      *
@@ -159,7 +159,7 @@ class EventPayloadPagesItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -168,7 +168,7 @@ class EventPayloadPagesItem extends \ArrayObject
         return $this->htmlUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $htmlUrl
      *

@@ -25,25 +25,25 @@ class ActionsPublicKey extends \ArrayObject
      */
     protected $key;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $title;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -93,7 +93,7 @@ class ActionsPublicKey extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -102,7 +102,7 @@ class ActionsPublicKey extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -115,7 +115,7 @@ class ActionsPublicKey extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -124,7 +124,7 @@ class ActionsPublicKey extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -137,7 +137,7 @@ class ActionsPublicKey extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -146,7 +146,7 @@ class ActionsPublicKey extends \ArrayObject
         return $this->title;
     }
     /**
-     * 
+     *
      *
      * @param string $title
      *
@@ -159,7 +159,7 @@ class ActionsPublicKey extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -168,7 +168,7 @@ class ActionsPublicKey extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param string $createdAt
      *

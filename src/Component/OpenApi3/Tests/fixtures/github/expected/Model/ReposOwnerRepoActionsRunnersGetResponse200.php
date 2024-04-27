@@ -13,19 +13,19 @@ class ReposOwnerRepoActionsRunnersGetResponse200 extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $totalCount;
     /**
-     * 
+     *
      *
      * @var list<Runner>
      */
     protected $runners;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -34,7 +34,7 @@ class ReposOwnerRepoActionsRunnersGetResponse200 extends \ArrayObject
         return $this->totalCount;
     }
     /**
-     * 
+     *
      *
      * @param int $totalCount
      *
@@ -47,7 +47,7 @@ class ReposOwnerRepoActionsRunnersGetResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<Runner>
      */
@@ -56,7 +56,7 @@ class ReposOwnerRepoActionsRunnersGetResponse200 extends \ArrayObject
         return $this->runners;
     }
     /**
-     * 
+     *
      *
      * @param list<Runner> $runners
      *

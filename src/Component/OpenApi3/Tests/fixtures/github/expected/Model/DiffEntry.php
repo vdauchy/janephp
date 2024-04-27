@@ -13,73 +13,73 @@ class DiffEntry extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $sha;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $filename;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $status;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $additions;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $deletions;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $changes;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $blobUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $rawUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $contentsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $patch;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $previousFilename;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -88,7 +88,7 @@ class DiffEntry extends \ArrayObject
         return $this->sha;
     }
     /**
-     * 
+     *
      *
      * @param string $sha
      *
@@ -101,7 +101,7 @@ class DiffEntry extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -110,7 +110,7 @@ class DiffEntry extends \ArrayObject
         return $this->filename;
     }
     /**
-     * 
+     *
      *
      * @param string $filename
      *
@@ -123,7 +123,7 @@ class DiffEntry extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -132,7 +132,7 @@ class DiffEntry extends \ArrayObject
         return $this->status;
     }
     /**
-     * 
+     *
      *
      * @param string $status
      *
@@ -145,7 +145,7 @@ class DiffEntry extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -154,7 +154,7 @@ class DiffEntry extends \ArrayObject
         return $this->additions;
     }
     /**
-     * 
+     *
      *
      * @param int $additions
      *
@@ -167,7 +167,7 @@ class DiffEntry extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -176,7 +176,7 @@ class DiffEntry extends \ArrayObject
         return $this->deletions;
     }
     /**
-     * 
+     *
      *
      * @param int $deletions
      *
@@ -189,7 +189,7 @@ class DiffEntry extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -198,7 +198,7 @@ class DiffEntry extends \ArrayObject
         return $this->changes;
     }
     /**
-     * 
+     *
      *
      * @param int $changes
      *
@@ -211,7 +211,7 @@ class DiffEntry extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -220,7 +220,7 @@ class DiffEntry extends \ArrayObject
         return $this->blobUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $blobUrl
      *
@@ -233,7 +233,7 @@ class DiffEntry extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -242,7 +242,7 @@ class DiffEntry extends \ArrayObject
         return $this->rawUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $rawUrl
      *
@@ -255,7 +255,7 @@ class DiffEntry extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -264,7 +264,7 @@ class DiffEntry extends \ArrayObject
         return $this->contentsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $contentsUrl
      *
@@ -277,7 +277,7 @@ class DiffEntry extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -286,7 +286,7 @@ class DiffEntry extends \ArrayObject
         return $this->patch;
     }
     /**
-     * 
+     *
      *
      * @param string $patch
      *
@@ -299,7 +299,7 @@ class DiffEntry extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -308,7 +308,7 @@ class DiffEntry extends \ArrayObject
         return $this->previousFilename;
     }
     /**
-     * 
+     *
      *
      * @param string $previousFilename
      *

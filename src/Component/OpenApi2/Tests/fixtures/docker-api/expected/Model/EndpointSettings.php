@@ -19,13 +19,13 @@ class EndpointSettings
      */
     protected $iPAMConfig;
     /**
-     * 
+     *
      *
      * @var list<string>
      */
     protected $links;
     /**
-     * 
+     *
      *
      * @var list<string>
      */
@@ -87,7 +87,7 @@ class EndpointSettings
     /**
     * DriverOpts is a mapping of driver options and values. These options
     are passed directly to the driver and are driver specific.
-    
+
     *
     * @var array<string, string>|null
     */
@@ -115,7 +115,7 @@ class EndpointSettings
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -124,7 +124,7 @@ class EndpointSettings
         return $this->links;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $links
      *
@@ -137,7 +137,7 @@ class EndpointSettings
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -146,7 +146,7 @@ class EndpointSettings
         return $this->aliases;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $aliases
      *
@@ -359,7 +359,7 @@ class EndpointSettings
     /**
     * DriverOpts is a mapping of driver options and values. These options
     are passed directly to the driver and are driver specific.
-    
+
     *
     * @return array<string, string>|null
     */
@@ -370,7 +370,7 @@ class EndpointSettings
     /**
     * DriverOpts is a mapping of driver options and values. These options
     are passed directly to the driver and are driver specific.
-    
+
     *
     * @param array<string, string>|null $driverOpts
     *

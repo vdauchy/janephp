@@ -13,37 +13,37 @@ class GbCompanyReportExampleResponseReportDirectorsPreviousDirectorsItem extends
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $gender;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $directorType;
     /**
-     * 
+     *
      *
      * @var list<string>
      */
     protected $positions;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -52,7 +52,7 @@ class GbCompanyReportExampleResponseReportDirectorsPreviousDirectorsItem extends
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param string $id
      *
@@ -65,7 +65,7 @@ class GbCompanyReportExampleResponseReportDirectorsPreviousDirectorsItem extends
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -74,7 +74,7 @@ class GbCompanyReportExampleResponseReportDirectorsPreviousDirectorsItem extends
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -87,7 +87,7 @@ class GbCompanyReportExampleResponseReportDirectorsPreviousDirectorsItem extends
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -96,7 +96,7 @@ class GbCompanyReportExampleResponseReportDirectorsPreviousDirectorsItem extends
         return $this->gender;
     }
     /**
-     * 
+     *
      *
      * @param string $gender
      *
@@ -109,7 +109,7 @@ class GbCompanyReportExampleResponseReportDirectorsPreviousDirectorsItem extends
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -118,7 +118,7 @@ class GbCompanyReportExampleResponseReportDirectorsPreviousDirectorsItem extends
         return $this->directorType;
     }
     /**
-     * 
+     *
      *
      * @param string $directorType
      *
@@ -131,7 +131,7 @@ class GbCompanyReportExampleResponseReportDirectorsPreviousDirectorsItem extends
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -140,7 +140,7 @@ class GbCompanyReportExampleResponseReportDirectorsPreviousDirectorsItem extends
         return $this->positions;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $positions
      *

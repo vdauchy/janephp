@@ -13,37 +13,37 @@ class PullRequestHead extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $label;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $ref;
     /**
-     * 
+     *
      *
      * @var PullRequestHeadRepo
      */
     protected $repo;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $sha;
     /**
-     * 
+     *
      *
      * @var PullRequestHeadUser
      */
     protected $user;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -52,7 +52,7 @@ class PullRequestHead extends \ArrayObject
         return $this->label;
     }
     /**
-     * 
+     *
      *
      * @param string $label
      *
@@ -65,7 +65,7 @@ class PullRequestHead extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -74,7 +74,7 @@ class PullRequestHead extends \ArrayObject
         return $this->ref;
     }
     /**
-     * 
+     *
      *
      * @param string $ref
      *
@@ -87,7 +87,7 @@ class PullRequestHead extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return PullRequestHeadRepo
      */
@@ -96,7 +96,7 @@ class PullRequestHead extends \ArrayObject
         return $this->repo;
     }
     /**
-     * 
+     *
      *
      * @param PullRequestHeadRepo $repo
      *
@@ -109,7 +109,7 @@ class PullRequestHead extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -118,7 +118,7 @@ class PullRequestHead extends \ArrayObject
         return $this->sha;
     }
     /**
-     * 
+     *
      *
      * @param string $sha
      *
@@ -131,7 +131,7 @@ class PullRequestHead extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return PullRequestHeadUser
      */
@@ -140,7 +140,7 @@ class PullRequestHead extends \ArrayObject
         return $this->user;
     }
     /**
-     * 
+     *
      *
      * @param PullRequestHeadUser $user
      *

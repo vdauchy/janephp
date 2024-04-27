@@ -6,9 +6,9 @@ class UsersBlock extends \Github\Runtime\Client\BaseEndpoint implements \Github\
 {
     protected $username;
     /**
-     * 
      *
-     * @param string $username 
+     *
+     * @param string $username
      */
     public function __construct(string $username)
     {

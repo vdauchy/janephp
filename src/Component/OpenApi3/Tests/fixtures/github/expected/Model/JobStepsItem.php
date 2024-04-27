@@ -31,7 +31,7 @@ class JobStepsItem extends \ArrayObject
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var int
      */
@@ -115,7 +115,7 @@ class JobStepsItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -124,7 +124,7 @@ class JobStepsItem extends \ArrayObject
         return $this->number;
     }
     /**
-     * 
+     *
      *
      * @param int $number
      *

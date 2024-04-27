@@ -17,7 +17,7 @@ class Parchment extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
@@ -35,7 +35,7 @@ class Parchment extends \ArrayObject
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -44,7 +44,7 @@ class Parchment extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param string|null $id
      *

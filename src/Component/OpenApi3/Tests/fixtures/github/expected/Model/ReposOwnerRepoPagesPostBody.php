@@ -13,13 +13,13 @@ class ReposOwnerRepoPagesPostBody extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var ReposOwnerRepoPagesPostBodySource
      */
     protected $source;
     /**
-     * 
+     *
      *
      * @return ReposOwnerRepoPagesPostBodySource
      */
@@ -28,7 +28,7 @@ class ReposOwnerRepoPagesPostBody extends \ArrayObject
         return $this->source;
     }
     /**
-     * 
+     *
      *
      * @param ReposOwnerRepoPagesPostBodySource $source
      *

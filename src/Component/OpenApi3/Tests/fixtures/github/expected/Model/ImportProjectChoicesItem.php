@@ -13,25 +13,25 @@ class ImportProjectChoicesItem extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $vcs;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $tfvcProject;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $humanName;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -40,7 +40,7 @@ class ImportProjectChoicesItem extends \ArrayObject
         return $this->vcs;
     }
     /**
-     * 
+     *
      *
      * @param string $vcs
      *
@@ -53,7 +53,7 @@ class ImportProjectChoicesItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -62,7 +62,7 @@ class ImportProjectChoicesItem extends \ArrayObject
         return $this->tfvcProject;
     }
     /**
-     * 
+     *
      *
      * @param string $tfvcProject
      *
@@ -75,7 +75,7 @@ class ImportProjectChoicesItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -84,7 +84,7 @@ class ImportProjectChoicesItem extends \ArrayObject
         return $this->humanName;
     }
     /**
-     * 
+     *
      *
      * @param string $humanName
      *

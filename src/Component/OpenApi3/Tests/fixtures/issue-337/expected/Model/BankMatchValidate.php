@@ -13,13 +13,13 @@ class BankMatchValidate extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $accountNumber;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -31,19 +31,19 @@ class BankMatchValidate extends \ArrayObject
      */
     protected $ibanResult;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $ibanText;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $logDate;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -55,13 +55,13 @@ class BankMatchValidate extends \ArrayObject
      */
     protected $scanResult;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $scanText;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -85,13 +85,13 @@ class BankMatchValidate extends \ArrayObject
      */
     protected $vatResult;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $vatText;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -100,7 +100,7 @@ class BankMatchValidate extends \ArrayObject
         return $this->accountNumber;
     }
     /**
-     * 
+     *
      *
      * @param string $accountNumber
      *
@@ -113,7 +113,7 @@ class BankMatchValidate extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -122,7 +122,7 @@ class BankMatchValidate extends \ArrayObject
         return $this->iban;
     }
     /**
-     * 
+     *
      *
      * @param string $iban
      *
@@ -157,7 +157,7 @@ class BankMatchValidate extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -166,7 +166,7 @@ class BankMatchValidate extends \ArrayObject
         return $this->ibanText;
     }
     /**
-     * 
+     *
      *
      * @param string $ibanText
      *
@@ -179,7 +179,7 @@ class BankMatchValidate extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -188,7 +188,7 @@ class BankMatchValidate extends \ArrayObject
         return $this->logDate;
     }
     /**
-     * 
+     *
      *
      * @param string $logDate
      *
@@ -201,7 +201,7 @@ class BankMatchValidate extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -210,7 +210,7 @@ class BankMatchValidate extends \ArrayObject
         return $this->safeNumber;
     }
     /**
-     * 
+     *
      *
      * @param string $safeNumber
      *
@@ -245,7 +245,7 @@ class BankMatchValidate extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -254,7 +254,7 @@ class BankMatchValidate extends \ArrayObject
         return $this->scanText;
     }
     /**
-     * 
+     *
      *
      * @param string $scanText
      *
@@ -267,7 +267,7 @@ class BankMatchValidate extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -276,7 +276,7 @@ class BankMatchValidate extends \ArrayObject
         return $this->sortCode;
     }
     /**
-     * 
+     *
      *
      * @param string $sortCode
      *
@@ -355,7 +355,7 @@ class BankMatchValidate extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -364,7 +364,7 @@ class BankMatchValidate extends \ArrayObject
         return $this->vatText;
     }
     /**
-     * 
+     *
      *
      * @param string $vatText
      *

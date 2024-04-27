@@ -13,13 +13,13 @@ class Limit
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $nanoCPUs;
     /**
-     * 
+     *
      *
      * @var int
      */
@@ -31,7 +31,7 @@ class Limit
      */
     protected $pids = 0;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -40,7 +40,7 @@ class Limit
         return $this->nanoCPUs;
     }
     /**
-     * 
+     *
      *
      * @param int $nanoCPUs
      *
@@ -53,7 +53,7 @@ class Limit
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -62,7 +62,7 @@ class Limit
         return $this->memoryBytes;
     }
     /**
-     * 
+     *
      *
      * @param int $memoryBytes
      *

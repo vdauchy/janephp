@@ -6,7 +6,7 @@ class ProjectsGetCard extends \Github\Runtime\Client\BaseEndpoint implements \Gi
 {
     protected $card_id;
     /**
-     * 
+     *
      *
      * @param int $cardId card_id parameter
      */

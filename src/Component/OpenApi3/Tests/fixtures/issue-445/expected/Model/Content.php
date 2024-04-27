@@ -43,7 +43,7 @@ class Content
      */
     protected $displayValues;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -183,7 +183,7 @@ class Content
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -192,7 +192,7 @@ class Content
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param string $id
      *

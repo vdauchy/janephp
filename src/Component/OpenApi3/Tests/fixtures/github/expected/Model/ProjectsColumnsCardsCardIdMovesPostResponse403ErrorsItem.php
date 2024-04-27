@@ -13,31 +13,31 @@ class ProjectsColumnsCardsCardIdMovesPostResponse403ErrorsItem extends \ArrayObj
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $code;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $message;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $resource;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $field;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -46,7 +46,7 @@ class ProjectsColumnsCardsCardIdMovesPostResponse403ErrorsItem extends \ArrayObj
         return $this->code;
     }
     /**
-     * 
+     *
      *
      * @param string $code
      *
@@ -59,7 +59,7 @@ class ProjectsColumnsCardsCardIdMovesPostResponse403ErrorsItem extends \ArrayObj
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -68,7 +68,7 @@ class ProjectsColumnsCardsCardIdMovesPostResponse403ErrorsItem extends \ArrayObj
         return $this->message;
     }
     /**
-     * 
+     *
      *
      * @param string $message
      *
@@ -81,7 +81,7 @@ class ProjectsColumnsCardsCardIdMovesPostResponse403ErrorsItem extends \ArrayObj
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -90,7 +90,7 @@ class ProjectsColumnsCardsCardIdMovesPostResponse403ErrorsItem extends \ArrayObj
         return $this->resource;
     }
     /**
-     * 
+     *
      *
      * @param string $resource
      *
@@ -103,7 +103,7 @@ class ProjectsColumnsCardsCardIdMovesPostResponse403ErrorsItem extends \ArrayObj
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -112,7 +112,7 @@ class ProjectsColumnsCardsCardIdMovesPostResponse403ErrorsItem extends \ArrayObj
         return $this->field;
     }
     /**
-     * 
+     *
      *
      * @param string $field
      *

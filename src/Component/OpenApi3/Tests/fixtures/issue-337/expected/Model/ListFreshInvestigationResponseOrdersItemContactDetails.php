@@ -13,25 +13,25 @@ class ListFreshInvestigationResponseOrdersItemContactDetails extends \ArrayObjec
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $emailAddress;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $telephoneNumber;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -40,7 +40,7 @@ class ListFreshInvestigationResponseOrdersItemContactDetails extends \ArrayObjec
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -53,7 +53,7 @@ class ListFreshInvestigationResponseOrdersItemContactDetails extends \ArrayObjec
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -62,7 +62,7 @@ class ListFreshInvestigationResponseOrdersItemContactDetails extends \ArrayObjec
         return $this->emailAddress;
     }
     /**
-     * 
+     *
      *
      * @param string $emailAddress
      *
@@ -75,7 +75,7 @@ class ListFreshInvestigationResponseOrdersItemContactDetails extends \ArrayObjec
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -84,7 +84,7 @@ class ListFreshInvestigationResponseOrdersItemContactDetails extends \ArrayObjec
         return $this->telephoneNumber;
     }
     /**
-     * 
+     *
      *
      * @param string $telephoneNumber
      *

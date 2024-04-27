@@ -13,31 +13,31 @@ class BooksGetLdjsonResponse200HydraSearch extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $hydraTemplate;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $hydraVariableRepresentation;
     /**
-     * 
+     *
      *
      * @var list<BooksGetLdjsonResponse200HydraSearchHydraMappingItem>
      */
     protected $hydraMapping;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -46,7 +46,7 @@ class BooksGetLdjsonResponse200HydraSearch extends \ArrayObject
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string $type
      *
@@ -59,7 +59,7 @@ class BooksGetLdjsonResponse200HydraSearch extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -68,7 +68,7 @@ class BooksGetLdjsonResponse200HydraSearch extends \ArrayObject
         return $this->hydraTemplate;
     }
     /**
-     * 
+     *
      *
      * @param string $hydraTemplate
      *
@@ -81,7 +81,7 @@ class BooksGetLdjsonResponse200HydraSearch extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -90,7 +90,7 @@ class BooksGetLdjsonResponse200HydraSearch extends \ArrayObject
         return $this->hydraVariableRepresentation;
     }
     /**
-     * 
+     *
      *
      * @param string $hydraVariableRepresentation
      *
@@ -103,7 +103,7 @@ class BooksGetLdjsonResponse200HydraSearch extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<BooksGetLdjsonResponse200HydraSearchHydraMappingItem>
      */
@@ -112,7 +112,7 @@ class BooksGetLdjsonResponse200HydraSearch extends \ArrayObject
         return $this->hydraMapping;
     }
     /**
-     * 
+     *
      *
      * @param list<BooksGetLdjsonResponse200HydraSearchHydraMappingItem> $hydraMapping
      *

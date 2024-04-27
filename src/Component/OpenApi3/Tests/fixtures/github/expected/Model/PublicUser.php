@@ -13,241 +13,241 @@ class PublicUser
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $login;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $nodeId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $avatarUrl;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $gravatarId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $htmlUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $followersUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $followingUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $gistsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $starredUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $subscriptionsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $organizationsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $reposUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $eventsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $receivedEventsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $siteAdmin;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $company;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $blog;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $location;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $email;
     /**
-     * 
+     *
      *
      * @var bool|null
      */
     protected $hireable;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $bio;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $twitterUsername;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $publicRepos;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $publicGists;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $followers;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $following;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $updatedAt;
     /**
-     * 
+     *
      *
      * @var PublicUserPlan
      */
     protected $plan;
     /**
-     * 
+     *
      *
      * @var \DateTime|null
      */
     protected $suspendedAt;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $privateGists;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $totalPrivateRepos;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $ownedPrivateRepos;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $diskUsage;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $collaborators;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -256,7 +256,7 @@ class PublicUser
         return $this->login;
     }
     /**
-     * 
+     *
      *
      * @param string $login
      *
@@ -269,7 +269,7 @@ class PublicUser
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -278,7 +278,7 @@ class PublicUser
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -291,7 +291,7 @@ class PublicUser
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -300,7 +300,7 @@ class PublicUser
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -313,7 +313,7 @@ class PublicUser
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -322,7 +322,7 @@ class PublicUser
         return $this->avatarUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $avatarUrl
      *
@@ -335,7 +335,7 @@ class PublicUser
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -344,7 +344,7 @@ class PublicUser
         return $this->gravatarId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $gravatarId
      *
@@ -357,7 +357,7 @@ class PublicUser
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -366,7 +366,7 @@ class PublicUser
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -379,7 +379,7 @@ class PublicUser
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -388,7 +388,7 @@ class PublicUser
         return $this->htmlUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $htmlUrl
      *
@@ -401,7 +401,7 @@ class PublicUser
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -410,7 +410,7 @@ class PublicUser
         return $this->followersUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $followersUrl
      *
@@ -423,7 +423,7 @@ class PublicUser
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -432,7 +432,7 @@ class PublicUser
         return $this->followingUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $followingUrl
      *
@@ -445,7 +445,7 @@ class PublicUser
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -454,7 +454,7 @@ class PublicUser
         return $this->gistsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $gistsUrl
      *
@@ -467,7 +467,7 @@ class PublicUser
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -476,7 +476,7 @@ class PublicUser
         return $this->starredUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $starredUrl
      *
@@ -489,7 +489,7 @@ class PublicUser
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -498,7 +498,7 @@ class PublicUser
         return $this->subscriptionsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $subscriptionsUrl
      *
@@ -511,7 +511,7 @@ class PublicUser
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -520,7 +520,7 @@ class PublicUser
         return $this->organizationsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $organizationsUrl
      *
@@ -533,7 +533,7 @@ class PublicUser
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -542,7 +542,7 @@ class PublicUser
         return $this->reposUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $reposUrl
      *
@@ -555,7 +555,7 @@ class PublicUser
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -564,7 +564,7 @@ class PublicUser
         return $this->eventsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $eventsUrl
      *
@@ -577,7 +577,7 @@ class PublicUser
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -586,7 +586,7 @@ class PublicUser
         return $this->receivedEventsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $receivedEventsUrl
      *
@@ -599,7 +599,7 @@ class PublicUser
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -608,7 +608,7 @@ class PublicUser
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string $type
      *
@@ -621,7 +621,7 @@ class PublicUser
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -630,7 +630,7 @@ class PublicUser
         return $this->siteAdmin;
     }
     /**
-     * 
+     *
      *
      * @param bool $siteAdmin
      *
@@ -643,7 +643,7 @@ class PublicUser
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -652,7 +652,7 @@ class PublicUser
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string|null $name
      *
@@ -665,7 +665,7 @@ class PublicUser
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -674,7 +674,7 @@ class PublicUser
         return $this->company;
     }
     /**
-     * 
+     *
      *
      * @param string|null $company
      *
@@ -687,7 +687,7 @@ class PublicUser
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -696,7 +696,7 @@ class PublicUser
         return $this->blog;
     }
     /**
-     * 
+     *
      *
      * @param string|null $blog
      *
@@ -709,7 +709,7 @@ class PublicUser
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -718,7 +718,7 @@ class PublicUser
         return $this->location;
     }
     /**
-     * 
+     *
      *
      * @param string|null $location
      *
@@ -731,7 +731,7 @@ class PublicUser
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -740,7 +740,7 @@ class PublicUser
         return $this->email;
     }
     /**
-     * 
+     *
      *
      * @param string|null $email
      *
@@ -753,7 +753,7 @@ class PublicUser
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool|null
      */
@@ -762,7 +762,7 @@ class PublicUser
         return $this->hireable;
     }
     /**
-     * 
+     *
      *
      * @param bool|null $hireable
      *
@@ -775,7 +775,7 @@ class PublicUser
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -784,7 +784,7 @@ class PublicUser
         return $this->bio;
     }
     /**
-     * 
+     *
      *
      * @param string|null $bio
      *
@@ -797,7 +797,7 @@ class PublicUser
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -806,7 +806,7 @@ class PublicUser
         return $this->twitterUsername;
     }
     /**
-     * 
+     *
      *
      * @param string|null $twitterUsername
      *
@@ -819,7 +819,7 @@ class PublicUser
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -828,7 +828,7 @@ class PublicUser
         return $this->publicRepos;
     }
     /**
-     * 
+     *
      *
      * @param int $publicRepos
      *
@@ -841,7 +841,7 @@ class PublicUser
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -850,7 +850,7 @@ class PublicUser
         return $this->publicGists;
     }
     /**
-     * 
+     *
      *
      * @param int $publicGists
      *
@@ -863,7 +863,7 @@ class PublicUser
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -872,7 +872,7 @@ class PublicUser
         return $this->followers;
     }
     /**
-     * 
+     *
      *
      * @param int $followers
      *
@@ -885,7 +885,7 @@ class PublicUser
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -894,7 +894,7 @@ class PublicUser
         return $this->following;
     }
     /**
-     * 
+     *
      *
      * @param int $following
      *
@@ -907,7 +907,7 @@ class PublicUser
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -916,7 +916,7 @@ class PublicUser
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $createdAt
      *
@@ -929,7 +929,7 @@ class PublicUser
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -938,7 +938,7 @@ class PublicUser
         return $this->updatedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $updatedAt
      *
@@ -951,7 +951,7 @@ class PublicUser
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return PublicUserPlan
      */
@@ -960,7 +960,7 @@ class PublicUser
         return $this->plan;
     }
     /**
-     * 
+     *
      *
      * @param PublicUserPlan $plan
      *
@@ -973,7 +973,7 @@ class PublicUser
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime|null
      */
@@ -982,7 +982,7 @@ class PublicUser
         return $this->suspendedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime|null $suspendedAt
      *
@@ -995,7 +995,7 @@ class PublicUser
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -1004,7 +1004,7 @@ class PublicUser
         return $this->privateGists;
     }
     /**
-     * 
+     *
      *
      * @param int $privateGists
      *
@@ -1017,7 +1017,7 @@ class PublicUser
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -1026,7 +1026,7 @@ class PublicUser
         return $this->totalPrivateRepos;
     }
     /**
-     * 
+     *
      *
      * @param int $totalPrivateRepos
      *
@@ -1039,7 +1039,7 @@ class PublicUser
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -1048,7 +1048,7 @@ class PublicUser
         return $this->ownedPrivateRepos;
     }
     /**
-     * 
+     *
      *
      * @param int $ownedPrivateRepos
      *
@@ -1061,7 +1061,7 @@ class PublicUser
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -1070,7 +1070,7 @@ class PublicUser
         return $this->diskUsage;
     }
     /**
-     * 
+     *
      *
      * @param int $diskUsage
      *
@@ -1083,7 +1083,7 @@ class PublicUser
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -1092,7 +1092,7 @@ class PublicUser
         return $this->collaborators;
     }
     /**
-     * 
+     *
      *
      * @param int $collaborators
      *

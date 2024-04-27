@@ -13,19 +13,19 @@ class ApplicationEvent
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $timestamp;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $kind;
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -34,7 +34,7 @@ class ApplicationEvent
         return $this->timestamp;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $timestamp
      */
@@ -44,7 +44,7 @@ class ApplicationEvent
         $this->timestamp = $timestamp;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -53,7 +53,7 @@ class ApplicationEvent
         return $this->kind;
     }
     /**
-     * 
+     *
      *
      * @param string $kind
      */

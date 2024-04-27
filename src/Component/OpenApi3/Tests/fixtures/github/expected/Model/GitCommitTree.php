@@ -19,7 +19,7 @@ class GitCommitTree extends \ArrayObject
      */
     protected $sha;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -47,7 +47,7 @@ class GitCommitTree extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -56,7 +56,7 @@ class GitCommitTree extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *

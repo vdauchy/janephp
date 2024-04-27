@@ -13,37 +13,37 @@ class Project extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $ownerUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $htmlUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $columnsUrl;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -61,7 +61,7 @@ class Project extends \ArrayObject
      */
     protected $body;
     /**
-     * 
+     *
      *
      * @var int
      */
@@ -73,19 +73,19 @@ class Project extends \ArrayObject
      */
     protected $state;
     /**
-     * 
+     *
      *
      * @var ProjectCreator|null
      */
     protected $creator;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
@@ -103,19 +103,19 @@ class Project extends \ArrayObject
      */
     protected $private;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $cardsUrl;
     /**
-     * 
+     *
      *
      * @var ProjectPermissions
      */
     protected $permissions;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -124,7 +124,7 @@ class Project extends \ArrayObject
         return $this->ownerUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $ownerUrl
      *
@@ -137,7 +137,7 @@ class Project extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -146,7 +146,7 @@ class Project extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -159,7 +159,7 @@ class Project extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -168,7 +168,7 @@ class Project extends \ArrayObject
         return $this->htmlUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $htmlUrl
      *
@@ -181,7 +181,7 @@ class Project extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -190,7 +190,7 @@ class Project extends \ArrayObject
         return $this->columnsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $columnsUrl
      *
@@ -203,7 +203,7 @@ class Project extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -212,7 +212,7 @@ class Project extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -225,7 +225,7 @@ class Project extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -234,7 +234,7 @@ class Project extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -291,7 +291,7 @@ class Project extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -300,7 +300,7 @@ class Project extends \ArrayObject
         return $this->number;
     }
     /**
-     * 
+     *
      *
      * @param int $number
      *
@@ -335,7 +335,7 @@ class Project extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ProjectCreator|null
      */
@@ -344,7 +344,7 @@ class Project extends \ArrayObject
         return $this->creator;
     }
     /**
-     * 
+     *
      *
      * @param ProjectCreator|null $creator
      *
@@ -357,7 +357,7 @@ class Project extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -366,7 +366,7 @@ class Project extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $createdAt
      *
@@ -379,7 +379,7 @@ class Project extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -388,7 +388,7 @@ class Project extends \ArrayObject
         return $this->updatedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $updatedAt
      *
@@ -445,7 +445,7 @@ class Project extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -454,7 +454,7 @@ class Project extends \ArrayObject
         return $this->cardsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $cardsUrl
      *
@@ -467,7 +467,7 @@ class Project extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ProjectPermissions
      */
@@ -476,7 +476,7 @@ class Project extends \ArrayObject
         return $this->permissions;
     }
     /**
-     * 
+     *
      *
      * @param ProjectPermissions $permissions
      *

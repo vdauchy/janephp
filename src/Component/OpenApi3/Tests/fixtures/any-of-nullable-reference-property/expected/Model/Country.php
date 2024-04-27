@@ -13,19 +13,19 @@ class Country extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $iso;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $printableName;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -34,7 +34,7 @@ class Country extends \ArrayObject
         return $this->iso;
     }
     /**
-     * 
+     *
      *
      * @param string $iso
      *
@@ -47,7 +47,7 @@ class Country extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -56,7 +56,7 @@ class Country extends \ArrayObject
         return $this->printableName;
     }
     /**
-     * 
+     *
      *
      * @param string $printableName
      *

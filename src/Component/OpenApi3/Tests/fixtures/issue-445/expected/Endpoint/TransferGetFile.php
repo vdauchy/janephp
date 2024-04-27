@@ -6,7 +6,7 @@ class TransferGetFile extends \PicturePark\API\Runtime\Client\BaseEndpoint imple
 {
     protected $id;
     /**
-     * 
+     *
      *
      * @param string $id ID of file transfer.
      */

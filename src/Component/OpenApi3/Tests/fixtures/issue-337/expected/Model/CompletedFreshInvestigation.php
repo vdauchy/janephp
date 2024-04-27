@@ -13,67 +13,67 @@ class CompletedFreshInvestigation extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $chargeReference;
     /**
-     * 
+     *
      *
      * @var CompletedFreshInvestigationContactDetails
      */
     protected $contactDetails;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $creationDate;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $lastStatusChangeDate;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $orderID;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $reportDate;
     /**
-     * 
+     *
      *
      * @var CompletedFreshInvestigationSearchCriteria
      */
     protected $searchCriteria;
     /**
-     * 
+     *
      *
      * @var list<mixed>
      */
     protected $sections;
     /**
-     * 
+     *
      *
      * @var CompletedFreshInvestigationStatus
      */
     protected $status;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $transactionID;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -82,7 +82,7 @@ class CompletedFreshInvestigation extends \ArrayObject
         return $this->chargeReference;
     }
     /**
-     * 
+     *
      *
      * @param string $chargeReference
      *
@@ -95,7 +95,7 @@ class CompletedFreshInvestigation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return CompletedFreshInvestigationContactDetails
      */
@@ -104,7 +104,7 @@ class CompletedFreshInvestigation extends \ArrayObject
         return $this->contactDetails;
     }
     /**
-     * 
+     *
      *
      * @param CompletedFreshInvestigationContactDetails $contactDetails
      *
@@ -117,7 +117,7 @@ class CompletedFreshInvestigation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -126,7 +126,7 @@ class CompletedFreshInvestigation extends \ArrayObject
         return $this->creationDate;
     }
     /**
-     * 
+     *
      *
      * @param string $creationDate
      *
@@ -139,7 +139,7 @@ class CompletedFreshInvestigation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -148,7 +148,7 @@ class CompletedFreshInvestigation extends \ArrayObject
         return $this->lastStatusChangeDate;
     }
     /**
-     * 
+     *
      *
      * @param string $lastStatusChangeDate
      *
@@ -161,7 +161,7 @@ class CompletedFreshInvestigation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -170,7 +170,7 @@ class CompletedFreshInvestigation extends \ArrayObject
         return $this->orderID;
     }
     /**
-     * 
+     *
      *
      * @param int $orderID
      *
@@ -183,7 +183,7 @@ class CompletedFreshInvestigation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -192,7 +192,7 @@ class CompletedFreshInvestigation extends \ArrayObject
         return $this->reportDate;
     }
     /**
-     * 
+     *
      *
      * @param string $reportDate
      *
@@ -205,7 +205,7 @@ class CompletedFreshInvestigation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return CompletedFreshInvestigationSearchCriteria
      */
@@ -214,7 +214,7 @@ class CompletedFreshInvestigation extends \ArrayObject
         return $this->searchCriteria;
     }
     /**
-     * 
+     *
      *
      * @param CompletedFreshInvestigationSearchCriteria $searchCriteria
      *
@@ -227,7 +227,7 @@ class CompletedFreshInvestigation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<mixed>
      */
@@ -236,7 +236,7 @@ class CompletedFreshInvestigation extends \ArrayObject
         return $this->sections;
     }
     /**
-     * 
+     *
      *
      * @param list<mixed> $sections
      *
@@ -249,7 +249,7 @@ class CompletedFreshInvestigation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return CompletedFreshInvestigationStatus
      */
@@ -258,7 +258,7 @@ class CompletedFreshInvestigation extends \ArrayObject
         return $this->status;
     }
     /**
-     * 
+     *
      *
      * @param CompletedFreshInvestigationStatus $status
      *
@@ -271,7 +271,7 @@ class CompletedFreshInvestigation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -280,7 +280,7 @@ class CompletedFreshInvestigation extends \ArrayObject
         return $this->transactionID;
     }
     /**
-     * 
+     *
      *
      * @param int $transactionID
      *

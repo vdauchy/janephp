@@ -25,7 +25,7 @@ class AppInstallationsInstallationIdAccessTokensPostBody extends \ArrayObject
      */
     protected $repositoryIds;
     /**
-     * 
+     *
      *
      * @var AppInstallationsInstallationIdAccessTokensPostBodyPermissions
      */
@@ -75,7 +75,7 @@ class AppInstallationsInstallationIdAccessTokensPostBody extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return AppInstallationsInstallationIdAccessTokensPostBodyPermissions
      */
@@ -84,7 +84,7 @@ class AppInstallationsInstallationIdAccessTokensPostBody extends \ArrayObject
         return $this->permissions;
     }
     /**
-     * 
+     *
      *
      * @param AppInstallationsInstallationIdAccessTokensPostBodyPermissions $permissions
      *

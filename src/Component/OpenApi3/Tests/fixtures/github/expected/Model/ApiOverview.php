@@ -13,67 +13,67 @@ class ApiOverview extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $verifiablePasswordAuthentication;
     /**
-     * 
+     *
      *
      * @var ApiOverviewSshKeyFingerprints
      */
     protected $sshKeyFingerprints;
     /**
-     * 
+     *
      *
      * @var list<string>
      */
     protected $hooks;
     /**
-     * 
+     *
      *
      * @var list<string>
      */
     protected $web;
     /**
-     * 
+     *
      *
      * @var list<string>
      */
     protected $api;
     /**
-     * 
+     *
      *
      * @var list<string>
      */
     protected $git;
     /**
-     * 
+     *
      *
      * @var list<string>
      */
     protected $pages;
     /**
-     * 
+     *
      *
      * @var list<string>
      */
     protected $importer;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $githubServicesSha;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $installedVersion;
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -82,7 +82,7 @@ class ApiOverview extends \ArrayObject
         return $this->verifiablePasswordAuthentication;
     }
     /**
-     * 
+     *
      *
      * @param bool $verifiablePasswordAuthentication
      *
@@ -95,7 +95,7 @@ class ApiOverview extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ApiOverviewSshKeyFingerprints
      */
@@ -104,7 +104,7 @@ class ApiOverview extends \ArrayObject
         return $this->sshKeyFingerprints;
     }
     /**
-     * 
+     *
      *
      * @param ApiOverviewSshKeyFingerprints $sshKeyFingerprints
      *
@@ -117,7 +117,7 @@ class ApiOverview extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -126,7 +126,7 @@ class ApiOverview extends \ArrayObject
         return $this->hooks;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $hooks
      *
@@ -139,7 +139,7 @@ class ApiOverview extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -148,7 +148,7 @@ class ApiOverview extends \ArrayObject
         return $this->web;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $web
      *
@@ -161,7 +161,7 @@ class ApiOverview extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -170,7 +170,7 @@ class ApiOverview extends \ArrayObject
         return $this->api;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $api
      *
@@ -183,7 +183,7 @@ class ApiOverview extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -192,7 +192,7 @@ class ApiOverview extends \ArrayObject
         return $this->git;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $git
      *
@@ -205,7 +205,7 @@ class ApiOverview extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -214,7 +214,7 @@ class ApiOverview extends \ArrayObject
         return $this->pages;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $pages
      *
@@ -227,7 +227,7 @@ class ApiOverview extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -236,7 +236,7 @@ class ApiOverview extends \ArrayObject
         return $this->importer;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $importer
      *
@@ -249,7 +249,7 @@ class ApiOverview extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -258,7 +258,7 @@ class ApiOverview extends \ArrayObject
         return $this->githubServicesSha;
     }
     /**
-     * 
+     *
      *
      * @param string $githubServicesSha
      *
@@ -271,7 +271,7 @@ class ApiOverview extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -280,7 +280,7 @@ class ApiOverview extends \ArrayObject
         return $this->installedVersion;
     }
     /**
-     * 
+     *
      *
      * @param string $installedVersion
      *

@@ -13,7 +13,7 @@ class SystemVersion
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var SystemVersionPlatform
      */
@@ -51,7 +51,7 @@ class SystemVersion
     /**
     * The version Go used to compile the daemon, and the version of the Go
     runtime in use.
-    
+
     *
     * @var string
     */
@@ -70,18 +70,18 @@ class SystemVersion
     protected $arch;
     /**
     * The kernel version (`uname -r`) that the daemon is running on.
-    
+
     This field is omitted when empty.
-    
+
     *
     * @var string
     */
     protected $kernelVersion;
     /**
     * Indicates if the daemon is started with experimental features enabled.
-    
+
     This field is omitted when empty / false.
-    
+
     *
     * @var bool
     */
@@ -93,7 +93,7 @@ class SystemVersion
      */
     protected $buildTime;
     /**
-     * 
+     *
      *
      * @return SystemVersionPlatform
      */
@@ -102,7 +102,7 @@ class SystemVersion
         return $this->platform;
     }
     /**
-     * 
+     *
      *
      * @param SystemVersionPlatform $platform
      *
@@ -227,7 +227,7 @@ class SystemVersion
     /**
     * The version Go used to compile the daemon, and the version of the Go
     runtime in use.
-    
+
     *
     * @return string
     */
@@ -238,7 +238,7 @@ class SystemVersion
     /**
     * The version Go used to compile the daemon, and the version of the Go
     runtime in use.
-    
+
     *
     * @param string $goVersion
     *
@@ -296,9 +296,9 @@ class SystemVersion
     }
     /**
     * The kernel version (`uname -r`) that the daemon is running on.
-    
+
     This field is omitted when empty.
-    
+
     *
     * @return string
     */
@@ -308,9 +308,9 @@ class SystemVersion
     }
     /**
     * The kernel version (`uname -r`) that the daemon is running on.
-    
+
     This field is omitted when empty.
-    
+
     *
     * @param string $kernelVersion
     *
@@ -324,9 +324,9 @@ class SystemVersion
     }
     /**
     * Indicates if the daemon is started with experimental features enabled.
-    
+
     This field is omitted when empty / false.
-    
+
     *
     * @return bool
     */
@@ -336,9 +336,9 @@ class SystemVersion
     }
     /**
     * Indicates if the daemon is started with experimental features enabled.
-    
+
     This field is omitted when empty / false.
-    
+
     *
     * @param bool $experimental
     *

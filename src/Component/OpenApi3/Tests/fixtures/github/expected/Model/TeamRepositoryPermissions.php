@@ -13,37 +13,37 @@ class TeamRepositoryPermissions extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $admin;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $pull;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $triage;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $push;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $maintain;
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -52,7 +52,7 @@ class TeamRepositoryPermissions extends \ArrayObject
         return $this->admin;
     }
     /**
-     * 
+     *
      *
      * @param bool $admin
      *
@@ -65,7 +65,7 @@ class TeamRepositoryPermissions extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -74,7 +74,7 @@ class TeamRepositoryPermissions extends \ArrayObject
         return $this->pull;
     }
     /**
-     * 
+     *
      *
      * @param bool $pull
      *
@@ -87,7 +87,7 @@ class TeamRepositoryPermissions extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -96,7 +96,7 @@ class TeamRepositoryPermissions extends \ArrayObject
         return $this->triage;
     }
     /**
-     * 
+     *
      *
      * @param bool $triage
      *
@@ -109,7 +109,7 @@ class TeamRepositoryPermissions extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -118,7 +118,7 @@ class TeamRepositoryPermissions extends \ArrayObject
         return $this->push;
     }
     /**
-     * 
+     *
      *
      * @param bool $push
      *
@@ -131,7 +131,7 @@ class TeamRepositoryPermissions extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -140,7 +140,7 @@ class TeamRepositoryPermissions extends \ArrayObject
         return $this->maintain;
     }
     /**
-     * 
+     *
      *
      * @param bool $maintain
      *

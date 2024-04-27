@@ -13,25 +13,25 @@ class Tag extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @var ExternalDocumentation|null
      */
     protected $externalDocs;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -40,7 +40,7 @@ class Tag extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string|null $name
      *
@@ -53,7 +53,7 @@ class Tag extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -62,7 +62,7 @@ class Tag extends \ArrayObject
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string|null $description
      *
@@ -75,7 +75,7 @@ class Tag extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ExternalDocumentation|null
      */
@@ -84,7 +84,7 @@ class Tag extends \ArrayObject
         return $this->externalDocs;
     }
     /**
-     * 
+     *
      *
      * @param ExternalDocumentation|null $externalDocs
      *

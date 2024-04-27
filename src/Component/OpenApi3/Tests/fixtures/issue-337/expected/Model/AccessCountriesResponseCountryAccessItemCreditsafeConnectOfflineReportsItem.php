@@ -13,13 +13,13 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectOfflineReportsIte
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -49,7 +49,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectOfflineReportsIte
      */
     protected $used;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -58,7 +58,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectOfflineReportsIte
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -71,7 +71,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectOfflineReportsIte
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -80,7 +80,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectOfflineReportsIte
         return $this->countryIso2;
     }
     /**
-     * 
+     *
      *
      * @param string $countryIso2
      *

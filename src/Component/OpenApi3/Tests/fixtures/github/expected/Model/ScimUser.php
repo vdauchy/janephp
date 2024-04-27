@@ -37,7 +37,7 @@ class ScimUser extends \ArrayObject
      */
     protected $userName;
     /**
-     * 
+     *
      *
      * @var ScimUserName
      */
@@ -55,7 +55,7 @@ class ScimUser extends \ArrayObject
      */
     protected $active;
     /**
-     * 
+     *
      *
      * @var ScimUserMeta
      */
@@ -167,7 +167,7 @@ class ScimUser extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ScimUserName
      */
@@ -176,7 +176,7 @@ class ScimUser extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param ScimUserName $name
      *
@@ -233,7 +233,7 @@ class ScimUser extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ScimUserMeta
      */
@@ -242,7 +242,7 @@ class ScimUser extends \ArrayObject
         return $this->meta;
     }
     /**
-     * 
+     *
      *
      * @param ScimUserMeta $meta
      *

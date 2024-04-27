@@ -13,19 +13,19 @@ class OrgsOrgActionsSecretsGetResponse200 extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $totalCount;
     /**
-     * 
+     *
      *
      * @var list<OrganizationActionsSecret>
      */
     protected $secrets;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -34,7 +34,7 @@ class OrgsOrgActionsSecretsGetResponse200 extends \ArrayObject
         return $this->totalCount;
     }
     /**
-     * 
+     *
      *
      * @param int $totalCount
      *
@@ -47,7 +47,7 @@ class OrgsOrgActionsSecretsGetResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<OrganizationActionsSecret>
      */
@@ -56,7 +56,7 @@ class OrgsOrgActionsSecretsGetResponse200 extends \ArrayObject
         return $this->secrets;
     }
     /**
-     * 
+     *
      *
      * @param list<OrganizationActionsSecret> $secrets
      *

@@ -13,25 +13,25 @@ class GistFullhistoryItemChangeStatus extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $deletions;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $additions;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $total;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -40,7 +40,7 @@ class GistFullhistoryItemChangeStatus extends \ArrayObject
         return $this->deletions;
     }
     /**
-     * 
+     *
      *
      * @param int $deletions
      *
@@ -53,7 +53,7 @@ class GistFullhistoryItemChangeStatus extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -62,7 +62,7 @@ class GistFullhistoryItemChangeStatus extends \ArrayObject
         return $this->additions;
     }
     /**
-     * 
+     *
      *
      * @param int $additions
      *
@@ -75,7 +75,7 @@ class GistFullhistoryItemChangeStatus extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -84,7 +84,7 @@ class GistFullhistoryItemChangeStatus extends \ArrayObject
         return $this->total;
     }
     /**
-     * 
+     *
      *
      * @param int $total
      *

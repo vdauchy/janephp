@@ -13,67 +13,67 @@ class FileCommitContent extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $path;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $sha;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $size;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $htmlUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $gitUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $downloadUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @var FileCommitContentLinks
      */
     protected $links;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -82,7 +82,7 @@ class FileCommitContent extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -95,7 +95,7 @@ class FileCommitContent extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -104,7 +104,7 @@ class FileCommitContent extends \ArrayObject
         return $this->path;
     }
     /**
-     * 
+     *
      *
      * @param string $path
      *
@@ -117,7 +117,7 @@ class FileCommitContent extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -126,7 +126,7 @@ class FileCommitContent extends \ArrayObject
         return $this->sha;
     }
     /**
-     * 
+     *
      *
      * @param string $sha
      *
@@ -139,7 +139,7 @@ class FileCommitContent extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -148,7 +148,7 @@ class FileCommitContent extends \ArrayObject
         return $this->size;
     }
     /**
-     * 
+     *
      *
      * @param int $size
      *
@@ -161,7 +161,7 @@ class FileCommitContent extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -170,7 +170,7 @@ class FileCommitContent extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -183,7 +183,7 @@ class FileCommitContent extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -192,7 +192,7 @@ class FileCommitContent extends \ArrayObject
         return $this->htmlUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $htmlUrl
      *
@@ -205,7 +205,7 @@ class FileCommitContent extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -214,7 +214,7 @@ class FileCommitContent extends \ArrayObject
         return $this->gitUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $gitUrl
      *
@@ -227,7 +227,7 @@ class FileCommitContent extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -236,7 +236,7 @@ class FileCommitContent extends \ArrayObject
         return $this->downloadUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $downloadUrl
      *
@@ -249,7 +249,7 @@ class FileCommitContent extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -258,7 +258,7 @@ class FileCommitContent extends \ArrayObject
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string $type
      *
@@ -271,7 +271,7 @@ class FileCommitContent extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return FileCommitContentLinks
      */
@@ -280,7 +280,7 @@ class FileCommitContent extends \ArrayObject
         return $this->links;
     }
     /**
-     * 
+     *
      *
      * @param FileCommitContentLinks $links
      *

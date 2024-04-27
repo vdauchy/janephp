@@ -19,7 +19,7 @@ class ReposOwnerRepoPagesPutBody extends \ArrayObject
      */
     protected $cname;
     /**
-     * 
+     *
      *
      * @var mixed
      */
@@ -47,7 +47,7 @@ class ReposOwnerRepoPagesPutBody extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return mixed
      */
@@ -56,7 +56,7 @@ class ReposOwnerRepoPagesPutBody extends \ArrayObject
         return $this->source;
     }
     /**
-     * 
+     *
      *
      * @param mixed $source
      *

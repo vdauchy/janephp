@@ -5,13 +5,13 @@ namespace Docker\Api\Endpoint;
 class SwarmUpdate extends \Docker\Api\Runtime\Client\BaseEndpoint implements \Docker\Api\Runtime\Client\Endpoint
 {
     /**
-    * 
     *
-    * @param \Docker\Api\Model\SwarmSpec $body 
+    *
+    * @param \Docker\Api\Model\SwarmSpec $body
     * @param array $queryParameters {
     *     @var int $version The version number of the swarm object being updated. This is
     required to avoid conflicting writes.
-    
+
     *     @var bool $rotateWorkerToken Rotate the worker join token.
     *     @var bool $rotateManagerToken Rotate the manager join token.
     *     @var bool $rotateManagerUnlockKey Rotate the manager unlock key.

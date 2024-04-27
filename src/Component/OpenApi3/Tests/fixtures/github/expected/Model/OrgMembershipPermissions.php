@@ -13,13 +13,13 @@ class OrgMembershipPermissions extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $canCreateRepository;
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -28,7 +28,7 @@ class OrgMembershipPermissions extends \ArrayObject
         return $this->canCreateRepository;
     }
     /**
-     * 
+     *
      *
      * @param bool $canCreateRepository
      *

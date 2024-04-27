@@ -19,7 +19,7 @@ class IssueComment extends \ArrayObject
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -37,61 +37,61 @@ class IssueComment extends \ArrayObject
      */
     protected $body;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $bodyText;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $bodyHtml;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $htmlUrl;
     /**
-     * 
+     *
      *
      * @var IssueCommentUser|null
      */
     protected $user;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $updatedAt;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $issueUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $authorAssociation;
     /**
-     * 
+     *
      *
      * @var IssueCommentPerformedViaGithubApp|null
      */
     protected $performedViaGithubApp;
     /**
-     * 
+     *
      *
      * @var ReactionRollup
      */
@@ -119,7 +119,7 @@ class IssueComment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -128,7 +128,7 @@ class IssueComment extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -185,7 +185,7 @@ class IssueComment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -194,7 +194,7 @@ class IssueComment extends \ArrayObject
         return $this->bodyText;
     }
     /**
-     * 
+     *
      *
      * @param string $bodyText
      *
@@ -207,7 +207,7 @@ class IssueComment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -216,7 +216,7 @@ class IssueComment extends \ArrayObject
         return $this->bodyHtml;
     }
     /**
-     * 
+     *
      *
      * @param string $bodyHtml
      *
@@ -229,7 +229,7 @@ class IssueComment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -238,7 +238,7 @@ class IssueComment extends \ArrayObject
         return $this->htmlUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $htmlUrl
      *
@@ -251,7 +251,7 @@ class IssueComment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return IssueCommentUser|null
      */
@@ -260,7 +260,7 @@ class IssueComment extends \ArrayObject
         return $this->user;
     }
     /**
-     * 
+     *
      *
      * @param IssueCommentUser|null $user
      *
@@ -273,7 +273,7 @@ class IssueComment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -282,7 +282,7 @@ class IssueComment extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $createdAt
      *
@@ -295,7 +295,7 @@ class IssueComment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -304,7 +304,7 @@ class IssueComment extends \ArrayObject
         return $this->updatedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $updatedAt
      *
@@ -317,7 +317,7 @@ class IssueComment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -326,7 +326,7 @@ class IssueComment extends \ArrayObject
         return $this->issueUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $issueUrl
      *
@@ -339,7 +339,7 @@ class IssueComment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -348,7 +348,7 @@ class IssueComment extends \ArrayObject
         return $this->authorAssociation;
     }
     /**
-     * 
+     *
      *
      * @param string $authorAssociation
      *
@@ -361,7 +361,7 @@ class IssueComment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return IssueCommentPerformedViaGithubApp|null
      */
@@ -370,7 +370,7 @@ class IssueComment extends \ArrayObject
         return $this->performedViaGithubApp;
     }
     /**
-     * 
+     *
      *
      * @param IssueCommentPerformedViaGithubApp|null $performedViaGithubApp
      *
@@ -383,7 +383,7 @@ class IssueComment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ReactionRollup
      */
@@ -392,7 +392,7 @@ class IssueComment extends \ArrayObject
         return $this->reactions;
     }
     /**
-     * 
+     *
      *
      * @param ReactionRollup $reactions
      *

@@ -13,43 +13,43 @@ class BuildInfo
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $stream;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $error;
     /**
-     * 
+     *
      *
      * @var ErrorDetail
      */
     protected $errorDetail;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $status;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $progress;
     /**
-     * 
+     *
      *
      * @var ProgressDetail
      */
@@ -61,7 +61,7 @@ class BuildInfo
      */
     protected $aux;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -70,7 +70,7 @@ class BuildInfo
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param string $id
      *
@@ -83,7 +83,7 @@ class BuildInfo
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -92,7 +92,7 @@ class BuildInfo
         return $this->stream;
     }
     /**
-     * 
+     *
      *
      * @param string $stream
      *
@@ -105,7 +105,7 @@ class BuildInfo
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -114,7 +114,7 @@ class BuildInfo
         return $this->error;
     }
     /**
-     * 
+     *
      *
      * @param string $error
      *
@@ -127,7 +127,7 @@ class BuildInfo
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ErrorDetail
      */
@@ -136,7 +136,7 @@ class BuildInfo
         return $this->errorDetail;
     }
     /**
-     * 
+     *
      *
      * @param ErrorDetail $errorDetail
      *
@@ -149,7 +149,7 @@ class BuildInfo
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -158,7 +158,7 @@ class BuildInfo
         return $this->status;
     }
     /**
-     * 
+     *
      *
      * @param string $status
      *
@@ -171,7 +171,7 @@ class BuildInfo
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -180,7 +180,7 @@ class BuildInfo
         return $this->progress;
     }
     /**
-     * 
+     *
      *
      * @param string $progress
      *
@@ -193,7 +193,7 @@ class BuildInfo
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ProgressDetail
      */
@@ -202,7 +202,7 @@ class BuildInfo
         return $this->progressDetail;
     }
     /**
-     * 
+     *
      *
      * @param ProgressDetail $progressDetail
      *

@@ -6,7 +6,7 @@ class TaskInspect extends \Docker\Api\Runtime\Client\BaseEndpoint implements \Do
 {
     protected $id;
     /**
-     * 
+     *
      *
      * @param string $id ID of the task
      */

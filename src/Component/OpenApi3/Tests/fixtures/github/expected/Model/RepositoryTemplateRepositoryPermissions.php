@@ -13,25 +13,25 @@ class RepositoryTemplateRepositoryPermissions extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $admin;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $push;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $pull;
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -40,7 +40,7 @@ class RepositoryTemplateRepositoryPermissions extends \ArrayObject
         return $this->admin;
     }
     /**
-     * 
+     *
      *
      * @param bool $admin
      *
@@ -53,7 +53,7 @@ class RepositoryTemplateRepositoryPermissions extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -62,7 +62,7 @@ class RepositoryTemplateRepositoryPermissions extends \ArrayObject
         return $this->push;
     }
     /**
-     * 
+     *
      *
      * @param bool $push
      *
@@ -75,7 +75,7 @@ class RepositoryTemplateRepositoryPermissions extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -84,7 +84,7 @@ class RepositoryTemplateRepositoryPermissions extends \ArrayObject
         return $this->pull;
     }
     /**
-     * 
+     *
      *
      * @param bool $pull
      *

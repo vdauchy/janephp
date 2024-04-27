@@ -13,19 +13,19 @@ class CompliancePreDefinedSearches extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $totalSize;
     /**
-     * 
+     *
      *
      * @var list<CompliancePreDefinedSearchesPredefinedSearchesItem>
      */
     protected $predefinedSearches;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -34,7 +34,7 @@ class CompliancePreDefinedSearches extends \ArrayObject
         return $this->totalSize;
     }
     /**
-     * 
+     *
      *
      * @param int $totalSize
      *
@@ -47,7 +47,7 @@ class CompliancePreDefinedSearches extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<CompliancePreDefinedSearchesPredefinedSearchesItem>
      */
@@ -56,7 +56,7 @@ class CompliancePreDefinedSearches extends \ArrayObject
         return $this->predefinedSearches;
     }
     /**
-     * 
+     *
      *
      * @param list<CompliancePreDefinedSearchesPredefinedSearchesItem> $predefinedSearches
      *

@@ -13,19 +13,19 @@ class DeploymentStatus extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -37,7 +37,7 @@ class DeploymentStatus extends \ArrayObject
      */
     protected $state;
     /**
-     * 
+     *
      *
      * @var DeploymentStatusCreator|null
      */
@@ -61,25 +61,25 @@ class DeploymentStatus extends \ArrayObject
      */
     protected $targetUrl = '';
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $updatedAt;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $deploymentUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -97,13 +97,13 @@ class DeploymentStatus extends \ArrayObject
      */
     protected $logUrl = '';
     /**
-     * 
+     *
      *
      * @var DeploymentStatusPerformedViaGithubApp|null
      */
     protected $performedViaGithubApp;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -112,7 +112,7 @@ class DeploymentStatus extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -125,7 +125,7 @@ class DeploymentStatus extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -134,7 +134,7 @@ class DeploymentStatus extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -147,7 +147,7 @@ class DeploymentStatus extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -156,7 +156,7 @@ class DeploymentStatus extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -191,7 +191,7 @@ class DeploymentStatus extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return DeploymentStatusCreator|null
      */
@@ -200,7 +200,7 @@ class DeploymentStatus extends \ArrayObject
         return $this->creator;
     }
     /**
-     * 
+     *
      *
      * @param DeploymentStatusCreator|null $creator
      *
@@ -279,7 +279,7 @@ class DeploymentStatus extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -288,7 +288,7 @@ class DeploymentStatus extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $createdAt
      *
@@ -301,7 +301,7 @@ class DeploymentStatus extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -310,7 +310,7 @@ class DeploymentStatus extends \ArrayObject
         return $this->updatedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $updatedAt
      *
@@ -323,7 +323,7 @@ class DeploymentStatus extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -332,7 +332,7 @@ class DeploymentStatus extends \ArrayObject
         return $this->deploymentUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $deploymentUrl
      *
@@ -345,7 +345,7 @@ class DeploymentStatus extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -354,7 +354,7 @@ class DeploymentStatus extends \ArrayObject
         return $this->repositoryUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $repositoryUrl
      *
@@ -411,7 +411,7 @@ class DeploymentStatus extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return DeploymentStatusPerformedViaGithubApp|null
      */
@@ -420,7 +420,7 @@ class DeploymentStatus extends \ArrayObject
         return $this->performedViaGithubApp;
     }
     /**
-     * 
+     *
      *
      * @param DeploymentStatusPerformedViaGithubApp|null $performedViaGithubApp
      *

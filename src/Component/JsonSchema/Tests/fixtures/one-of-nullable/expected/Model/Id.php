@@ -13,13 +13,13 @@ class Id
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $uuid;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -28,7 +28,7 @@ class Id
         return $this->uuid;
     }
     /**
-     * 
+     *
      *
      * @param string $uuid
      *

@@ -13,31 +13,31 @@ class ContributorActivityWeeksItem extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $w;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $a;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $d;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $c;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -46,7 +46,7 @@ class ContributorActivityWeeksItem extends \ArrayObject
         return $this->w;
     }
     /**
-     * 
+     *
      *
      * @param string $w
      *
@@ -59,7 +59,7 @@ class ContributorActivityWeeksItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -68,7 +68,7 @@ class ContributorActivityWeeksItem extends \ArrayObject
         return $this->a;
     }
     /**
-     * 
+     *
      *
      * @param int $a
      *
@@ -81,7 +81,7 @@ class ContributorActivityWeeksItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -90,7 +90,7 @@ class ContributorActivityWeeksItem extends \ArrayObject
         return $this->d;
     }
     /**
-     * 
+     *
      *
      * @param int $d
      *
@@ -103,7 +103,7 @@ class ContributorActivityWeeksItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -112,7 +112,7 @@ class ContributorActivityWeeksItem extends \ArrayObject
         return $this->c;
     }
     /**
-     * 
+     *
      *
      * @param int $c
      *

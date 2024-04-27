@@ -13,25 +13,25 @@ class CombinedCommitStatus extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $state;
     /**
-     * 
+     *
      *
      * @var list<SimpleCommitStatus>
      */
     protected $statuses;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $sha;
     /**
-     * 
+     *
      *
      * @var int
      */
@@ -43,19 +43,19 @@ class CombinedCommitStatus extends \ArrayObject
      */
     protected $repository;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $commitUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -64,7 +64,7 @@ class CombinedCommitStatus extends \ArrayObject
         return $this->state;
     }
     /**
-     * 
+     *
      *
      * @param string $state
      *
@@ -77,7 +77,7 @@ class CombinedCommitStatus extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<SimpleCommitStatus>
      */
@@ -86,7 +86,7 @@ class CombinedCommitStatus extends \ArrayObject
         return $this->statuses;
     }
     /**
-     * 
+     *
      *
      * @param list<SimpleCommitStatus> $statuses
      *
@@ -99,7 +99,7 @@ class CombinedCommitStatus extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -108,7 +108,7 @@ class CombinedCommitStatus extends \ArrayObject
         return $this->sha;
     }
     /**
-     * 
+     *
      *
      * @param string $sha
      *
@@ -121,7 +121,7 @@ class CombinedCommitStatus extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -130,7 +130,7 @@ class CombinedCommitStatus extends \ArrayObject
         return $this->totalCount;
     }
     /**
-     * 
+     *
      *
      * @param int $totalCount
      *
@@ -165,7 +165,7 @@ class CombinedCommitStatus extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -174,7 +174,7 @@ class CombinedCommitStatus extends \ArrayObject
         return $this->commitUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $commitUrl
      *
@@ -187,7 +187,7 @@ class CombinedCommitStatus extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -196,7 +196,7 @@ class CombinedCommitStatus extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *

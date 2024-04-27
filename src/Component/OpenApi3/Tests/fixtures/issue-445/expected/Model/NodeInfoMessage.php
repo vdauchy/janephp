@@ -13,55 +13,55 @@ class NodeInfoMessage extends Message
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $nodeId;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $hostName;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $lastResponseTime;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $serviceName;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $fileVersion;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $productVersion;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $release;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $logLevel;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -70,7 +70,7 @@ class NodeInfoMessage extends Message
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $nodeId
      *
@@ -83,7 +83,7 @@ class NodeInfoMessage extends Message
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -92,7 +92,7 @@ class NodeInfoMessage extends Message
         return $this->hostName;
     }
     /**
-     * 
+     *
      *
      * @param string|null $hostName
      *
@@ -105,7 +105,7 @@ class NodeInfoMessage extends Message
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -114,7 +114,7 @@ class NodeInfoMessage extends Message
         return $this->lastResponseTime;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $lastResponseTime
      *
@@ -127,7 +127,7 @@ class NodeInfoMessage extends Message
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -136,7 +136,7 @@ class NodeInfoMessage extends Message
         return $this->serviceName;
     }
     /**
-     * 
+     *
      *
      * @param string|null $serviceName
      *
@@ -149,7 +149,7 @@ class NodeInfoMessage extends Message
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -158,7 +158,7 @@ class NodeInfoMessage extends Message
         return $this->fileVersion;
     }
     /**
-     * 
+     *
      *
      * @param string|null $fileVersion
      *
@@ -171,7 +171,7 @@ class NodeInfoMessage extends Message
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -180,7 +180,7 @@ class NodeInfoMessage extends Message
         return $this->productVersion;
     }
     /**
-     * 
+     *
      *
      * @param string|null $productVersion
      *
@@ -193,7 +193,7 @@ class NodeInfoMessage extends Message
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -202,7 +202,7 @@ class NodeInfoMessage extends Message
         return $this->release;
     }
     /**
-     * 
+     *
      *
      * @param string|null $release
      *
@@ -215,7 +215,7 @@ class NodeInfoMessage extends Message
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -224,7 +224,7 @@ class NodeInfoMessage extends Message
         return $this->logLevel;
     }
     /**
-     * 
+     *
      *
      * @param string|null $logLevel
      *

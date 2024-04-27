@@ -13,37 +13,37 @@ class CompanySearchSuccessResultCompaniesItemAddress extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $simpleValue;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $street;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $city;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $postCode;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $province;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -52,7 +52,7 @@ class CompanySearchSuccessResultCompaniesItemAddress extends \ArrayObject
         return $this->simpleValue;
     }
     /**
-     * 
+     *
      *
      * @param string $simpleValue
      *
@@ -65,7 +65,7 @@ class CompanySearchSuccessResultCompaniesItemAddress extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -74,7 +74,7 @@ class CompanySearchSuccessResultCompaniesItemAddress extends \ArrayObject
         return $this->street;
     }
     /**
-     * 
+     *
      *
      * @param string $street
      *
@@ -87,7 +87,7 @@ class CompanySearchSuccessResultCompaniesItemAddress extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -96,7 +96,7 @@ class CompanySearchSuccessResultCompaniesItemAddress extends \ArrayObject
         return $this->city;
     }
     /**
-     * 
+     *
      *
      * @param string $city
      *
@@ -109,7 +109,7 @@ class CompanySearchSuccessResultCompaniesItemAddress extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -118,7 +118,7 @@ class CompanySearchSuccessResultCompaniesItemAddress extends \ArrayObject
         return $this->postCode;
     }
     /**
-     * 
+     *
      *
      * @param string $postCode
      *
@@ -131,7 +131,7 @@ class CompanySearchSuccessResultCompaniesItemAddress extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -140,7 +140,7 @@ class CompanySearchSuccessResultCompaniesItemAddress extends \ArrayObject
         return $this->province;
     }
     /**
-     * 
+     *
      *
      * @param string $province
      *

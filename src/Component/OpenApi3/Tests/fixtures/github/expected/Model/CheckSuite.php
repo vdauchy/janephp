@@ -13,19 +13,19 @@ class CheckSuite extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $nodeId;
     /**
-     * 
+     *
      *
      * @var string|null
      */
@@ -37,43 +37,43 @@ class CheckSuite extends \ArrayObject
      */
     protected $headSha;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $status;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $conclusion;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $before;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $after;
     /**
-     * 
+     *
      *
      * @var list<PullRequestMinimal>|null
      */
     protected $pullRequests;
     /**
-     * 
+     *
      *
      * @var CheckSuiteApp|null
      */
@@ -85,13 +85,13 @@ class CheckSuite extends \ArrayObject
      */
     protected $repository;
     /**
-     * 
+     *
      *
      * @var \DateTime|null
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @var \DateTime|null
      */
@@ -103,19 +103,19 @@ class CheckSuite extends \ArrayObject
      */
     protected $headCommit;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $latestCheckRunsCount;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $checkRunsUrl;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -124,7 +124,7 @@ class CheckSuite extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -137,7 +137,7 @@ class CheckSuite extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -146,7 +146,7 @@ class CheckSuite extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -159,7 +159,7 @@ class CheckSuite extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -168,7 +168,7 @@ class CheckSuite extends \ArrayObject
         return $this->headBranch;
     }
     /**
-     * 
+     *
      *
      * @param string|null $headBranch
      *
@@ -203,7 +203,7 @@ class CheckSuite extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -212,7 +212,7 @@ class CheckSuite extends \ArrayObject
         return $this->status;
     }
     /**
-     * 
+     *
      *
      * @param string|null $status
      *
@@ -225,7 +225,7 @@ class CheckSuite extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -234,7 +234,7 @@ class CheckSuite extends \ArrayObject
         return $this->conclusion;
     }
     /**
-     * 
+     *
      *
      * @param string|null $conclusion
      *
@@ -247,7 +247,7 @@ class CheckSuite extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -256,7 +256,7 @@ class CheckSuite extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string|null $url
      *
@@ -269,7 +269,7 @@ class CheckSuite extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -278,7 +278,7 @@ class CheckSuite extends \ArrayObject
         return $this->before;
     }
     /**
-     * 
+     *
      *
      * @param string|null $before
      *
@@ -291,7 +291,7 @@ class CheckSuite extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -300,7 +300,7 @@ class CheckSuite extends \ArrayObject
         return $this->after;
     }
     /**
-     * 
+     *
      *
      * @param string|null $after
      *
@@ -313,7 +313,7 @@ class CheckSuite extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<PullRequestMinimal>|null
      */
@@ -322,7 +322,7 @@ class CheckSuite extends \ArrayObject
         return $this->pullRequests;
     }
     /**
-     * 
+     *
      *
      * @param list<PullRequestMinimal>|null $pullRequests
      *
@@ -335,7 +335,7 @@ class CheckSuite extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return CheckSuiteApp|null
      */
@@ -344,7 +344,7 @@ class CheckSuite extends \ArrayObject
         return $this->app;
     }
     /**
-     * 
+     *
      *
      * @param CheckSuiteApp|null $app
      *
@@ -379,7 +379,7 @@ class CheckSuite extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime|null
      */
@@ -388,7 +388,7 @@ class CheckSuite extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime|null $createdAt
      *
@@ -401,7 +401,7 @@ class CheckSuite extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime|null
      */
@@ -410,7 +410,7 @@ class CheckSuite extends \ArrayObject
         return $this->updatedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime|null $updatedAt
      *
@@ -445,7 +445,7 @@ class CheckSuite extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -454,7 +454,7 @@ class CheckSuite extends \ArrayObject
         return $this->latestCheckRunsCount;
     }
     /**
-     * 
+     *
      *
      * @param int $latestCheckRunsCount
      *
@@ -467,7 +467,7 @@ class CheckSuite extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -476,7 +476,7 @@ class CheckSuite extends \ArrayObject
         return $this->checkRunsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $checkRunsUrl
      *

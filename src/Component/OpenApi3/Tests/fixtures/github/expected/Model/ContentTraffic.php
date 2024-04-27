@@ -13,31 +13,31 @@ class ContentTraffic extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $path;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $title;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $count;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $uniques;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -46,7 +46,7 @@ class ContentTraffic extends \ArrayObject
         return $this->path;
     }
     /**
-     * 
+     *
      *
      * @param string $path
      *
@@ -59,7 +59,7 @@ class ContentTraffic extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -68,7 +68,7 @@ class ContentTraffic extends \ArrayObject
         return $this->title;
     }
     /**
-     * 
+     *
      *
      * @param string $title
      *
@@ -81,7 +81,7 @@ class ContentTraffic extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -90,7 +90,7 @@ class ContentTraffic extends \ArrayObject
         return $this->count;
     }
     /**
-     * 
+     *
      *
      * @param int $count
      *
@@ -103,7 +103,7 @@ class ContentTraffic extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -112,7 +112,7 @@ class ContentTraffic extends \ArrayObject
         return $this->uniques;
     }
     /**
-     * 
+     *
      *
      * @param int $uniques
      *

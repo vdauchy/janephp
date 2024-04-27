@@ -13,19 +13,19 @@ class ShortBranch extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var ShortBranchCommit
      */
     protected $commit;
     /**
-     * 
+     *
      *
      * @var bool
      */
@@ -37,13 +37,13 @@ class ShortBranch extends \ArrayObject
      */
     protected $protection;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $protectionUrl;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -52,7 +52,7 @@ class ShortBranch extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -65,7 +65,7 @@ class ShortBranch extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ShortBranchCommit
      */
@@ -74,7 +74,7 @@ class ShortBranch extends \ArrayObject
         return $this->commit;
     }
     /**
-     * 
+     *
      *
      * @param ShortBranchCommit $commit
      *
@@ -87,7 +87,7 @@ class ShortBranch extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -96,7 +96,7 @@ class ShortBranch extends \ArrayObject
         return $this->protected;
     }
     /**
-     * 
+     *
      *
      * @param bool $protected
      *
@@ -131,7 +131,7 @@ class ShortBranch extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -140,7 +140,7 @@ class ShortBranch extends \ArrayObject
         return $this->protectionUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $protectionUrl
      *

@@ -13,19 +13,19 @@ class GbPeopleReportReponseReportDirectorshipsInactiveItemCreditScoreCurrentCred
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $currency;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $value;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -34,7 +34,7 @@ class GbPeopleReportReponseReportDirectorshipsInactiveItemCreditScoreCurrentCred
         return $this->currency;
     }
     /**
-     * 
+     *
      *
      * @param string $currency
      *
@@ -47,7 +47,7 @@ class GbPeopleReportReponseReportDirectorshipsInactiveItemCreditScoreCurrentCred
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -56,7 +56,7 @@ class GbPeopleReportReponseReportDirectorshipsInactiveItemCreditScoreCurrentCred
         return $this->value;
     }
     /**
-     * 
+     *
      *
      * @param string $value
      *

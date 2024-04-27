@@ -13,31 +13,31 @@ class HTTPSecurityScheme extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $scheme;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $bearerFormat;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -46,7 +46,7 @@ class HTTPSecurityScheme extends \ArrayObject
         return $this->scheme;
     }
     /**
-     * 
+     *
      *
      * @param string|null $scheme
      *
@@ -59,7 +59,7 @@ class HTTPSecurityScheme extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -68,7 +68,7 @@ class HTTPSecurityScheme extends \ArrayObject
         return $this->bearerFormat;
     }
     /**
-     * 
+     *
      *
      * @param string|null $bearerFormat
      *
@@ -81,7 +81,7 @@ class HTTPSecurityScheme extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -90,7 +90,7 @@ class HTTPSecurityScheme extends \ArrayObject
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string|null $description
      *
@@ -103,7 +103,7 @@ class HTTPSecurityScheme extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -112,7 +112,7 @@ class HTTPSecurityScheme extends \ArrayObject
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string|null $type
      *

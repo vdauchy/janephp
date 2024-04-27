@@ -13,43 +13,43 @@ class IssueEventProjectCard extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $projectUrl;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $projectId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $columnName;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $previousColumnName;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -58,7 +58,7 @@ class IssueEventProjectCard extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -71,7 +71,7 @@ class IssueEventProjectCard extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -80,7 +80,7 @@ class IssueEventProjectCard extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -93,7 +93,7 @@ class IssueEventProjectCard extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -102,7 +102,7 @@ class IssueEventProjectCard extends \ArrayObject
         return $this->projectUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $projectUrl
      *
@@ -115,7 +115,7 @@ class IssueEventProjectCard extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -124,7 +124,7 @@ class IssueEventProjectCard extends \ArrayObject
         return $this->projectId;
     }
     /**
-     * 
+     *
      *
      * @param int $projectId
      *
@@ -137,7 +137,7 @@ class IssueEventProjectCard extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -146,7 +146,7 @@ class IssueEventProjectCard extends \ArrayObject
         return $this->columnName;
     }
     /**
-     * 
+     *
      *
      * @param string $columnName
      *
@@ -159,7 +159,7 @@ class IssueEventProjectCard extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -168,7 +168,7 @@ class IssueEventProjectCard extends \ArrayObject
         return $this->previousColumnName;
     }
     /**
-     * 
+     *
      *
      * @param string $previousColumnName
      *

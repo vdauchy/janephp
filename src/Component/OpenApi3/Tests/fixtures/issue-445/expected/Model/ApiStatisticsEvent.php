@@ -13,13 +13,13 @@ class ApiStatisticsEvent extends ApplicationEvent
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var array<string, int>|null
      */
     protected $requestsPerClient;
     /**
-     * 
+     *
      *
      * @return array<string, int>|null
      */
@@ -28,7 +28,7 @@ class ApiStatisticsEvent extends ApplicationEvent
         return $this->requestsPerClient;
     }
     /**
-     * 
+     *
      *
      * @param array<string, int>|null $requestsPerClient
      *

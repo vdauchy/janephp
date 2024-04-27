@@ -13,13 +13,13 @@ class JsonReference
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $dollarRef;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -28,7 +28,7 @@ class JsonReference
         return $this->dollarRef;
     }
     /**
-     * 
+     *
      *
      * @param string|null $dollarRef
      *

@@ -13,121 +13,121 @@ class IssueSimpleUser extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $login;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $nodeId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $avatarUrl;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $gravatarId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $htmlUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $followersUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $followingUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $gistsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $starredUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $subscriptionsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $organizationsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $reposUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $eventsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $receivedEventsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $siteAdmin;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $starredAt;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -136,7 +136,7 @@ class IssueSimpleUser extends \ArrayObject
         return $this->login;
     }
     /**
-     * 
+     *
      *
      * @param string $login
      *
@@ -149,7 +149,7 @@ class IssueSimpleUser extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -158,7 +158,7 @@ class IssueSimpleUser extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -171,7 +171,7 @@ class IssueSimpleUser extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -180,7 +180,7 @@ class IssueSimpleUser extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -193,7 +193,7 @@ class IssueSimpleUser extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -202,7 +202,7 @@ class IssueSimpleUser extends \ArrayObject
         return $this->avatarUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $avatarUrl
      *
@@ -215,7 +215,7 @@ class IssueSimpleUser extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -224,7 +224,7 @@ class IssueSimpleUser extends \ArrayObject
         return $this->gravatarId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $gravatarId
      *
@@ -237,7 +237,7 @@ class IssueSimpleUser extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -246,7 +246,7 @@ class IssueSimpleUser extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -259,7 +259,7 @@ class IssueSimpleUser extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -268,7 +268,7 @@ class IssueSimpleUser extends \ArrayObject
         return $this->htmlUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $htmlUrl
      *
@@ -281,7 +281,7 @@ class IssueSimpleUser extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -290,7 +290,7 @@ class IssueSimpleUser extends \ArrayObject
         return $this->followersUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $followersUrl
      *
@@ -303,7 +303,7 @@ class IssueSimpleUser extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -312,7 +312,7 @@ class IssueSimpleUser extends \ArrayObject
         return $this->followingUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $followingUrl
      *
@@ -325,7 +325,7 @@ class IssueSimpleUser extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -334,7 +334,7 @@ class IssueSimpleUser extends \ArrayObject
         return $this->gistsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $gistsUrl
      *
@@ -347,7 +347,7 @@ class IssueSimpleUser extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -356,7 +356,7 @@ class IssueSimpleUser extends \ArrayObject
         return $this->starredUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $starredUrl
      *
@@ -369,7 +369,7 @@ class IssueSimpleUser extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -378,7 +378,7 @@ class IssueSimpleUser extends \ArrayObject
         return $this->subscriptionsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $subscriptionsUrl
      *
@@ -391,7 +391,7 @@ class IssueSimpleUser extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -400,7 +400,7 @@ class IssueSimpleUser extends \ArrayObject
         return $this->organizationsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $organizationsUrl
      *
@@ -413,7 +413,7 @@ class IssueSimpleUser extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -422,7 +422,7 @@ class IssueSimpleUser extends \ArrayObject
         return $this->reposUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $reposUrl
      *
@@ -435,7 +435,7 @@ class IssueSimpleUser extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -444,7 +444,7 @@ class IssueSimpleUser extends \ArrayObject
         return $this->eventsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $eventsUrl
      *
@@ -457,7 +457,7 @@ class IssueSimpleUser extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -466,7 +466,7 @@ class IssueSimpleUser extends \ArrayObject
         return $this->receivedEventsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $receivedEventsUrl
      *
@@ -479,7 +479,7 @@ class IssueSimpleUser extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -488,7 +488,7 @@ class IssueSimpleUser extends \ArrayObject
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string $type
      *
@@ -501,7 +501,7 @@ class IssueSimpleUser extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -510,7 +510,7 @@ class IssueSimpleUser extends \ArrayObject
         return $this->siteAdmin;
     }
     /**
-     * 
+     *
      *
      * @param bool $siteAdmin
      *
@@ -523,7 +523,7 @@ class IssueSimpleUser extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -532,7 +532,7 @@ class IssueSimpleUser extends \ArrayObject
         return $this->starredAt;
     }
     /**
-     * 
+     *
      *
      * @param string $starredAt
      *

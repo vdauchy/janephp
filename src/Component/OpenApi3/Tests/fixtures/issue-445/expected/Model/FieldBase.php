@@ -73,7 +73,7 @@ class FieldBase
      */
     protected $sortable;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -269,7 +269,7 @@ class FieldBase
         $this->sortable = $sortable;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -278,7 +278,7 @@ class FieldBase
         return $this->kind;
     }
     /**
-     * 
+     *
      *
      * @param string $kind
      */

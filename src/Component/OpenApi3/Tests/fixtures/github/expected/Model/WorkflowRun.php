@@ -19,13 +19,13 @@ class WorkflowRun extends \ArrayObject
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $nodeId;
     /**
-     * 
+     *
      *
      * @var string|null
      */
@@ -43,19 +43,19 @@ class WorkflowRun extends \ArrayObject
      */
     protected $runNumber;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $event;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $status;
     /**
-     * 
+     *
      *
      * @var string|null
      */
@@ -73,25 +73,25 @@ class WorkflowRun extends \ArrayObject
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $htmlUrl;
     /**
-     * 
+     *
      *
      * @var list<PullRequestMinimal>|null
      */
     protected $pullRequests;
     /**
-     * 
+     *
      *
      * @var \DateTime|null
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @var \DateTime|null
      */
@@ -157,7 +157,7 @@ class WorkflowRun extends \ArrayObject
      */
     protected $headRepository;
     /**
-     * 
+     *
      *
      * @var int
      */
@@ -185,7 +185,7 @@ class WorkflowRun extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -194,7 +194,7 @@ class WorkflowRun extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -207,7 +207,7 @@ class WorkflowRun extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -216,7 +216,7 @@ class WorkflowRun extends \ArrayObject
         return $this->headBranch;
     }
     /**
-     * 
+     *
      *
      * @param string|null $headBranch
      *
@@ -273,7 +273,7 @@ class WorkflowRun extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -282,7 +282,7 @@ class WorkflowRun extends \ArrayObject
         return $this->event;
     }
     /**
-     * 
+     *
      *
      * @param string $event
      *
@@ -295,7 +295,7 @@ class WorkflowRun extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -304,7 +304,7 @@ class WorkflowRun extends \ArrayObject
         return $this->status;
     }
     /**
-     * 
+     *
      *
      * @param string|null $status
      *
@@ -317,7 +317,7 @@ class WorkflowRun extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -326,7 +326,7 @@ class WorkflowRun extends \ArrayObject
         return $this->conclusion;
     }
     /**
-     * 
+     *
      *
      * @param string|null $conclusion
      *
@@ -383,7 +383,7 @@ class WorkflowRun extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -392,7 +392,7 @@ class WorkflowRun extends \ArrayObject
         return $this->htmlUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $htmlUrl
      *
@@ -405,7 +405,7 @@ class WorkflowRun extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<PullRequestMinimal>|null
      */
@@ -414,7 +414,7 @@ class WorkflowRun extends \ArrayObject
         return $this->pullRequests;
     }
     /**
-     * 
+     *
      *
      * @param list<PullRequestMinimal>|null $pullRequests
      *
@@ -427,7 +427,7 @@ class WorkflowRun extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime|null
      */
@@ -436,7 +436,7 @@ class WorkflowRun extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime|null $createdAt
      *
@@ -449,7 +449,7 @@ class WorkflowRun extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime|null
      */
@@ -458,7 +458,7 @@ class WorkflowRun extends \ArrayObject
         return $this->updatedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime|null $updatedAt
      *
@@ -691,7 +691,7 @@ class WorkflowRun extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -700,7 +700,7 @@ class WorkflowRun extends \ArrayObject
         return $this->headRepositoryId;
     }
     /**
-     * 
+     *
      *
      * @param int $headRepositoryId
      *

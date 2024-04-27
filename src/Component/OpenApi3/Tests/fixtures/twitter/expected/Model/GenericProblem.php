@@ -13,31 +13,31 @@ class GenericProblem extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $status;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $title;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $detail;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -46,7 +46,7 @@ class GenericProblem extends \ArrayObject
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string $type
      *
@@ -59,7 +59,7 @@ class GenericProblem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -68,7 +68,7 @@ class GenericProblem extends \ArrayObject
         return $this->status;
     }
     /**
-     * 
+     *
      *
      * @param int $status
      *
@@ -81,7 +81,7 @@ class GenericProblem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -90,7 +90,7 @@ class GenericProblem extends \ArrayObject
         return $this->title;
     }
     /**
-     * 
+     *
      *
      * @param string $title
      *
@@ -103,7 +103,7 @@ class GenericProblem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -112,7 +112,7 @@ class GenericProblem extends \ArrayObject
         return $this->detail;
     }
     /**
-     * 
+     *
      *
      * @param string $detail
      *

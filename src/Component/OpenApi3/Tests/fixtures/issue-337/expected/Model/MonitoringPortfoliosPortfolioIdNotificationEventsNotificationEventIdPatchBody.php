@@ -13,13 +13,13 @@ class MonitoringPortfoliosPortfolioIdNotificationEventsNotificationEventIdPatchB
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $isProcessed;
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -28,7 +28,7 @@ class MonitoringPortfoliosPortfolioIdNotificationEventsNotificationEventIdPatchB
         return $this->isProcessed;
     }
     /**
-     * 
+     *
      *
      * @param bool $isProcessed
      *

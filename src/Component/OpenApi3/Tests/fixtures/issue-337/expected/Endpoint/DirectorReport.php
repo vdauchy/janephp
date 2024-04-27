@@ -6,7 +6,7 @@ class DirectorReport extends \CreditSafe\API\Runtime\Client\BaseEndpoint impleme
 {
     protected $personId;
     /**
-     * 
+     *
      *
      * @param string $personId Identifier of the Person/Director required to order their Director Report. Obtained from `/people` search results.
      * @param array $queryParameters {

@@ -13,19 +13,19 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItemAddress e
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $simpleValue;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $postalCode;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -34,7 +34,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItemAddress e
         return $this->simpleValue;
     }
     /**
-     * 
+     *
      *
      * @param string $simpleValue
      *
@@ -47,7 +47,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItemAddress e
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -56,7 +56,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItemAddress e
         return $this->postalCode;
     }
     /**
-     * 
+     *
      *
      * @param string $postalCode
      *

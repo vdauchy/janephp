@@ -13,7 +13,7 @@ class ScimV2OrganizationsOrgUsersScimUserIdPatchBody extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var list<string>
      */
@@ -25,7 +25,7 @@ class ScimV2OrganizationsOrgUsersScimUserIdPatchBody extends \ArrayObject
      */
     protected $operations;
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -34,7 +34,7 @@ class ScimV2OrganizationsOrgUsersScimUserIdPatchBody extends \ArrayObject
         return $this->schemas;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $schemas
      *

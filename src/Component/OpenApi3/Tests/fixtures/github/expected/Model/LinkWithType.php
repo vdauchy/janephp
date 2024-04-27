@@ -13,19 +13,19 @@ class LinkWithType extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $href;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -34,7 +34,7 @@ class LinkWithType extends \ArrayObject
         return $this->href;
     }
     /**
-     * 
+     *
      *
      * @param string $href
      *
@@ -47,7 +47,7 @@ class LinkWithType extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -56,7 +56,7 @@ class LinkWithType extends \ArrayObject
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string $type
      *

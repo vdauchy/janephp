@@ -46,10 +46,10 @@ class NetworkSettings
     * PortMap describes the mapping of container ports to host ports, using the
     container's port-number and protocol as key in the format `<port>/<protocol>`,
     for example, `80/udp`.
-    
+
     If a container's port is mapped for multiple protocols, separate entries
     are added to the mapping table.
-    
+
     *
     * @var array<string, list<PortBinding>>
     */
@@ -61,133 +61,133 @@ class NetworkSettings
      */
     protected $sandboxKey;
     /**
-     * 
+     *
      *
      * @var list<Address>|null
      */
     protected $secondaryIPAddresses;
     /**
-     * 
+     *
      *
      * @var list<Address>|null
      */
     protected $secondaryIPv6Addresses;
     /**
     * EndpointID uniquely represents a service endpoint in a Sandbox.
-    
+
     <p><br /></p>
-    
+
     > **Deprecated**: This field is only propagated when attached to the
     > default "bridge" network. Use the information from the "bridge"
     > network inside the `Networks` map instead, which contains the same
     > information. This field was deprecated in Docker 1.9 and is scheduled
     > to be removed in Docker 17.12.0
-    
+
     *
     * @var string
     */
     protected $endpointID;
     /**
     * Gateway address for the default "bridge" network.
-    
+
     <p><br /></p>
-    
+
     > **Deprecated**: This field is only propagated when attached to the
     > default "bridge" network. Use the information from the "bridge"
     > network inside the `Networks` map instead, which contains the same
     > information. This field was deprecated in Docker 1.9 and is scheduled
     > to be removed in Docker 17.12.0
-    
+
     *
     * @var string
     */
     protected $gateway;
     /**
     * Global IPv6 address for the default "bridge" network.
-    
+
     <p><br /></p>
-    
+
     > **Deprecated**: This field is only propagated when attached to the
     > default "bridge" network. Use the information from the "bridge"
     > network inside the `Networks` map instead, which contains the same
     > information. This field was deprecated in Docker 1.9 and is scheduled
     > to be removed in Docker 17.12.0
-    
+
     *
     * @var string
     */
     protected $globalIPv6Address;
     /**
     * Mask length of the global IPv6 address.
-    
+
     <p><br /></p>
-    
+
     > **Deprecated**: This field is only propagated when attached to the
     > default "bridge" network. Use the information from the "bridge"
     > network inside the `Networks` map instead, which contains the same
     > information. This field was deprecated in Docker 1.9 and is scheduled
     > to be removed in Docker 17.12.0
-    
+
     *
     * @var int
     */
     protected $globalIPv6PrefixLen;
     /**
     * IPv4 address for the default "bridge" network.
-    
+
     <p><br /></p>
-    
+
     > **Deprecated**: This field is only propagated when attached to the
     > default "bridge" network. Use the information from the "bridge"
     > network inside the `Networks` map instead, which contains the same
     > information. This field was deprecated in Docker 1.9 and is scheduled
     > to be removed in Docker 17.12.0
-    
+
     *
     * @var string
     */
     protected $iPAddress;
     /**
     * Mask length of the IPv4 address.
-    
+
     <p><br /></p>
-    
+
     > **Deprecated**: This field is only propagated when attached to the
     > default "bridge" network. Use the information from the "bridge"
     > network inside the `Networks` map instead, which contains the same
     > information. This field was deprecated in Docker 1.9 and is scheduled
     > to be removed in Docker 17.12.0
-    
+
     *
     * @var int
     */
     protected $iPPrefixLen;
     /**
     * IPv6 gateway address for this network.
-    
+
     <p><br /></p>
-    
+
     > **Deprecated**: This field is only propagated when attached to the
     > default "bridge" network. Use the information from the "bridge"
     > network inside the `Networks` map instead, which contains the same
     > information. This field was deprecated in Docker 1.9 and is scheduled
     > to be removed in Docker 17.12.0
-    
+
     *
     * @var string
     */
     protected $iPv6Gateway;
     /**
     * MAC address for the container on the default "bridge" network.
-    
+
     <p><br /></p>
-    
+
     > **Deprecated**: This field is only propagated when attached to the
     > default "bridge" network. Use the information from the "bridge"
     > network inside the `Networks` map instead, which contains the same
     > information. This field was deprecated in Docker 1.9 and is scheduled
     > to be removed in Docker 17.12.0
-    
+
     *
     * @var string
     */
@@ -312,10 +312,10 @@ class NetworkSettings
     * PortMap describes the mapping of container ports to host ports, using the
     container's port-number and protocol as key in the format `<port>/<protocol>`,
     for example, `80/udp`.
-    
+
     If a container's port is mapped for multiple protocols, separate entries
     are added to the mapping table.
-    
+
     *
     * @return array<string, list<PortBinding>>
     */
@@ -327,10 +327,10 @@ class NetworkSettings
     * PortMap describes the mapping of container ports to host ports, using the
     container's port-number and protocol as key in the format `<port>/<protocol>`,
     for example, `80/udp`.
-    
+
     If a container's port is mapped for multiple protocols, separate entries
     are added to the mapping table.
-    
+
     *
     * @param array<string, list<PortBinding>> $ports
     *
@@ -365,7 +365,7 @@ class NetworkSettings
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<Address>|null
      */
@@ -374,7 +374,7 @@ class NetworkSettings
         return $this->secondaryIPAddresses;
     }
     /**
-     * 
+     *
      *
      * @param list<Address>|null $secondaryIPAddresses
      *
@@ -387,7 +387,7 @@ class NetworkSettings
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<Address>|null
      */
@@ -396,7 +396,7 @@ class NetworkSettings
         return $this->secondaryIPv6Addresses;
     }
     /**
-     * 
+     *
      *
      * @param list<Address>|null $secondaryIPv6Addresses
      *
@@ -410,15 +410,15 @@ class NetworkSettings
     }
     /**
     * EndpointID uniquely represents a service endpoint in a Sandbox.
-    
+
     <p><br /></p>
-    
+
     > **Deprecated**: This field is only propagated when attached to the
     > default "bridge" network. Use the information from the "bridge"
     > network inside the `Networks` map instead, which contains the same
     > information. This field was deprecated in Docker 1.9 and is scheduled
     > to be removed in Docker 17.12.0
-    
+
     *
     * @return string
     */
@@ -428,15 +428,15 @@ class NetworkSettings
     }
     /**
     * EndpointID uniquely represents a service endpoint in a Sandbox.
-    
+
     <p><br /></p>
-    
+
     > **Deprecated**: This field is only propagated when attached to the
     > default "bridge" network. Use the information from the "bridge"
     > network inside the `Networks` map instead, which contains the same
     > information. This field was deprecated in Docker 1.9 and is scheduled
     > to be removed in Docker 17.12.0
-    
+
     *
     * @param string $endpointID
     *
@@ -450,15 +450,15 @@ class NetworkSettings
     }
     /**
     * Gateway address for the default "bridge" network.
-    
+
     <p><br /></p>
-    
+
     > **Deprecated**: This field is only propagated when attached to the
     > default "bridge" network. Use the information from the "bridge"
     > network inside the `Networks` map instead, which contains the same
     > information. This field was deprecated in Docker 1.9 and is scheduled
     > to be removed in Docker 17.12.0
-    
+
     *
     * @return string
     */
@@ -468,15 +468,15 @@ class NetworkSettings
     }
     /**
     * Gateway address for the default "bridge" network.
-    
+
     <p><br /></p>
-    
+
     > **Deprecated**: This field is only propagated when attached to the
     > default "bridge" network. Use the information from the "bridge"
     > network inside the `Networks` map instead, which contains the same
     > information. This field was deprecated in Docker 1.9 and is scheduled
     > to be removed in Docker 17.12.0
-    
+
     *
     * @param string $gateway
     *
@@ -490,15 +490,15 @@ class NetworkSettings
     }
     /**
     * Global IPv6 address for the default "bridge" network.
-    
+
     <p><br /></p>
-    
+
     > **Deprecated**: This field is only propagated when attached to the
     > default "bridge" network. Use the information from the "bridge"
     > network inside the `Networks` map instead, which contains the same
     > information. This field was deprecated in Docker 1.9 and is scheduled
     > to be removed in Docker 17.12.0
-    
+
     *
     * @return string
     */
@@ -508,15 +508,15 @@ class NetworkSettings
     }
     /**
     * Global IPv6 address for the default "bridge" network.
-    
+
     <p><br /></p>
-    
+
     > **Deprecated**: This field is only propagated when attached to the
     > default "bridge" network. Use the information from the "bridge"
     > network inside the `Networks` map instead, which contains the same
     > information. This field was deprecated in Docker 1.9 and is scheduled
     > to be removed in Docker 17.12.0
-    
+
     *
     * @param string $globalIPv6Address
     *
@@ -530,15 +530,15 @@ class NetworkSettings
     }
     /**
     * Mask length of the global IPv6 address.
-    
+
     <p><br /></p>
-    
+
     > **Deprecated**: This field is only propagated when attached to the
     > default "bridge" network. Use the information from the "bridge"
     > network inside the `Networks` map instead, which contains the same
     > information. This field was deprecated in Docker 1.9 and is scheduled
     > to be removed in Docker 17.12.0
-    
+
     *
     * @return int
     */
@@ -548,15 +548,15 @@ class NetworkSettings
     }
     /**
     * Mask length of the global IPv6 address.
-    
+
     <p><br /></p>
-    
+
     > **Deprecated**: This field is only propagated when attached to the
     > default "bridge" network. Use the information from the "bridge"
     > network inside the `Networks` map instead, which contains the same
     > information. This field was deprecated in Docker 1.9 and is scheduled
     > to be removed in Docker 17.12.0
-    
+
     *
     * @param int $globalIPv6PrefixLen
     *
@@ -570,15 +570,15 @@ class NetworkSettings
     }
     /**
     * IPv4 address for the default "bridge" network.
-    
+
     <p><br /></p>
-    
+
     > **Deprecated**: This field is only propagated when attached to the
     > default "bridge" network. Use the information from the "bridge"
     > network inside the `Networks` map instead, which contains the same
     > information. This field was deprecated in Docker 1.9 and is scheduled
     > to be removed in Docker 17.12.0
-    
+
     *
     * @return string
     */
@@ -588,15 +588,15 @@ class NetworkSettings
     }
     /**
     * IPv4 address for the default "bridge" network.
-    
+
     <p><br /></p>
-    
+
     > **Deprecated**: This field is only propagated when attached to the
     > default "bridge" network. Use the information from the "bridge"
     > network inside the `Networks` map instead, which contains the same
     > information. This field was deprecated in Docker 1.9 and is scheduled
     > to be removed in Docker 17.12.0
-    
+
     *
     * @param string $iPAddress
     *
@@ -610,15 +610,15 @@ class NetworkSettings
     }
     /**
     * Mask length of the IPv4 address.
-    
+
     <p><br /></p>
-    
+
     > **Deprecated**: This field is only propagated when attached to the
     > default "bridge" network. Use the information from the "bridge"
     > network inside the `Networks` map instead, which contains the same
     > information. This field was deprecated in Docker 1.9 and is scheduled
     > to be removed in Docker 17.12.0
-    
+
     *
     * @return int
     */
@@ -628,15 +628,15 @@ class NetworkSettings
     }
     /**
     * Mask length of the IPv4 address.
-    
+
     <p><br /></p>
-    
+
     > **Deprecated**: This field is only propagated when attached to the
     > default "bridge" network. Use the information from the "bridge"
     > network inside the `Networks` map instead, which contains the same
     > information. This field was deprecated in Docker 1.9 and is scheduled
     > to be removed in Docker 17.12.0
-    
+
     *
     * @param int $iPPrefixLen
     *
@@ -650,15 +650,15 @@ class NetworkSettings
     }
     /**
     * IPv6 gateway address for this network.
-    
+
     <p><br /></p>
-    
+
     > **Deprecated**: This field is only propagated when attached to the
     > default "bridge" network. Use the information from the "bridge"
     > network inside the `Networks` map instead, which contains the same
     > information. This field was deprecated in Docker 1.9 and is scheduled
     > to be removed in Docker 17.12.0
-    
+
     *
     * @return string
     */
@@ -668,15 +668,15 @@ class NetworkSettings
     }
     /**
     * IPv6 gateway address for this network.
-    
+
     <p><br /></p>
-    
+
     > **Deprecated**: This field is only propagated when attached to the
     > default "bridge" network. Use the information from the "bridge"
     > network inside the `Networks` map instead, which contains the same
     > information. This field was deprecated in Docker 1.9 and is scheduled
     > to be removed in Docker 17.12.0
-    
+
     *
     * @param string $iPv6Gateway
     *
@@ -690,15 +690,15 @@ class NetworkSettings
     }
     /**
     * MAC address for the container on the default "bridge" network.
-    
+
     <p><br /></p>
-    
+
     > **Deprecated**: This field is only propagated when attached to the
     > default "bridge" network. Use the information from the "bridge"
     > network inside the `Networks` map instead, which contains the same
     > information. This field was deprecated in Docker 1.9 and is scheduled
     > to be removed in Docker 17.12.0
-    
+
     *
     * @return string
     */
@@ -708,15 +708,15 @@ class NetworkSettings
     }
     /**
     * MAC address for the container on the default "bridge" network.
-    
+
     <p><br /></p>
-    
+
     > **Deprecated**: This field is only propagated when attached to the
     > default "bridge" network. Use the information from the "bridge"
     > network inside the `Networks` map instead, which contains the same
     > information. This field was deprecated in Docker 1.9 and is scheduled
     > to be removed in Docker 17.12.0
-    
+
     *
     * @param string $macAddress
     *

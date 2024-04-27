@@ -13,31 +13,31 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordSt
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $date;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $event;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $note;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $user;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -46,7 +46,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordSt
         return $this->date;
     }
     /**
-     * 
+     *
      *
      * @param string $date
      *
@@ -59,7 +59,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordSt
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -68,7 +68,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordSt
         return $this->event;
     }
     /**
-     * 
+     *
      *
      * @param string $event
      *
@@ -81,7 +81,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordSt
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -90,7 +90,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordSt
         return $this->note;
     }
     /**
-     * 
+     *
      *
      * @param string $note
      *
@@ -103,7 +103,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordSt
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -112,7 +112,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordSt
         return $this->user;
     }
     /**
-     * 
+     *
      *
      * @param string $user
      *

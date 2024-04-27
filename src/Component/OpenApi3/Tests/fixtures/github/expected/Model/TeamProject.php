@@ -13,61 +13,61 @@ class TeamProject extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $ownerUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $htmlUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $columnsUrl;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $nodeId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $body;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $number;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -79,37 +79,37 @@ class TeamProject extends \ArrayObject
      */
     protected $creator;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $updatedAt;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $organizationPermission;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $private;
     /**
-     * 
+     *
      *
      * @var TeamProjectPermissions
      */
     protected $permissions;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -118,7 +118,7 @@ class TeamProject extends \ArrayObject
         return $this->ownerUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $ownerUrl
      *
@@ -131,7 +131,7 @@ class TeamProject extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -140,7 +140,7 @@ class TeamProject extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -153,7 +153,7 @@ class TeamProject extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -162,7 +162,7 @@ class TeamProject extends \ArrayObject
         return $this->htmlUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $htmlUrl
      *
@@ -175,7 +175,7 @@ class TeamProject extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -184,7 +184,7 @@ class TeamProject extends \ArrayObject
         return $this->columnsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $columnsUrl
      *
@@ -197,7 +197,7 @@ class TeamProject extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -206,7 +206,7 @@ class TeamProject extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -219,7 +219,7 @@ class TeamProject extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -228,7 +228,7 @@ class TeamProject extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -241,7 +241,7 @@ class TeamProject extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -250,7 +250,7 @@ class TeamProject extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -263,7 +263,7 @@ class TeamProject extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -272,7 +272,7 @@ class TeamProject extends \ArrayObject
         return $this->body;
     }
     /**
-     * 
+     *
      *
      * @param string|null $body
      *
@@ -285,7 +285,7 @@ class TeamProject extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -294,7 +294,7 @@ class TeamProject extends \ArrayObject
         return $this->number;
     }
     /**
-     * 
+     *
      *
      * @param int $number
      *
@@ -307,7 +307,7 @@ class TeamProject extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -316,7 +316,7 @@ class TeamProject extends \ArrayObject
         return $this->state;
     }
     /**
-     * 
+     *
      *
      * @param string $state
      *
@@ -351,7 +351,7 @@ class TeamProject extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -360,7 +360,7 @@ class TeamProject extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param string $createdAt
      *
@@ -373,7 +373,7 @@ class TeamProject extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -382,7 +382,7 @@ class TeamProject extends \ArrayObject
         return $this->updatedAt;
     }
     /**
-     * 
+     *
      *
      * @param string $updatedAt
      *
@@ -395,7 +395,7 @@ class TeamProject extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -404,7 +404,7 @@ class TeamProject extends \ArrayObject
         return $this->organizationPermission;
     }
     /**
-     * 
+     *
      *
      * @param string $organizationPermission
      *
@@ -417,7 +417,7 @@ class TeamProject extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -426,7 +426,7 @@ class TeamProject extends \ArrayObject
         return $this->private;
     }
     /**
-     * 
+     *
      *
      * @param bool $private
      *
@@ -439,7 +439,7 @@ class TeamProject extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return TeamProjectPermissions
      */
@@ -448,7 +448,7 @@ class TeamProject extends \ArrayObject
         return $this->permissions;
     }
     /**
-     * 
+     *
      *
      * @param TeamProjectPermissions $permissions
      *

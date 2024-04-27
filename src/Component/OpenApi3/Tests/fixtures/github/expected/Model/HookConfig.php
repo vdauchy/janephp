@@ -13,67 +13,67 @@ class HookConfig extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $email;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $password;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $room;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $subdomain;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $insecureSsl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $contentType;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $digest;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $secret;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $token;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -82,7 +82,7 @@ class HookConfig extends \ArrayObject
         return $this->email;
     }
     /**
-     * 
+     *
      *
      * @param string $email
      *
@@ -95,7 +95,7 @@ class HookConfig extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -104,7 +104,7 @@ class HookConfig extends \ArrayObject
         return $this->password;
     }
     /**
-     * 
+     *
      *
      * @param string $password
      *
@@ -117,7 +117,7 @@ class HookConfig extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -126,7 +126,7 @@ class HookConfig extends \ArrayObject
         return $this->room;
     }
     /**
-     * 
+     *
      *
      * @param string $room
      *
@@ -139,7 +139,7 @@ class HookConfig extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -148,7 +148,7 @@ class HookConfig extends \ArrayObject
         return $this->subdomain;
     }
     /**
-     * 
+     *
      *
      * @param string $subdomain
      *
@@ -161,7 +161,7 @@ class HookConfig extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -170,7 +170,7 @@ class HookConfig extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -183,7 +183,7 @@ class HookConfig extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -192,7 +192,7 @@ class HookConfig extends \ArrayObject
         return $this->insecureSsl;
     }
     /**
-     * 
+     *
      *
      * @param string $insecureSsl
      *
@@ -205,7 +205,7 @@ class HookConfig extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -214,7 +214,7 @@ class HookConfig extends \ArrayObject
         return $this->contentType;
     }
     /**
-     * 
+     *
      *
      * @param string $contentType
      *
@@ -227,7 +227,7 @@ class HookConfig extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -236,7 +236,7 @@ class HookConfig extends \ArrayObject
         return $this->digest;
     }
     /**
-     * 
+     *
      *
      * @param string $digest
      *
@@ -249,7 +249,7 @@ class HookConfig extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -258,7 +258,7 @@ class HookConfig extends \ArrayObject
         return $this->secret;
     }
     /**
-     * 
+     *
      *
      * @param string $secret
      *
@@ -271,7 +271,7 @@ class HookConfig extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -280,7 +280,7 @@ class HookConfig extends \ArrayObject
         return $this->token;
     }
     /**
-     * 
+     *
      *
      * @param string $token
      *

@@ -13,67 +13,67 @@ class DuplicateSearchIndexDocException extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $traceLevel;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $traceId;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $traceJobId;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $httpStatusCode;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $exceptionMessage;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $kind;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $customerId;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $customerAlias;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $userId;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $searchIndexDocId;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -82,7 +82,7 @@ class DuplicateSearchIndexDocException extends \ArrayObject
         return $this->traceLevel;
     }
     /**
-     * 
+     *
      *
      * @param string $traceLevel
      *
@@ -95,7 +95,7 @@ class DuplicateSearchIndexDocException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -104,7 +104,7 @@ class DuplicateSearchIndexDocException extends \ArrayObject
         return $this->traceId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $traceId
      *
@@ -117,7 +117,7 @@ class DuplicateSearchIndexDocException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -126,7 +126,7 @@ class DuplicateSearchIndexDocException extends \ArrayObject
         return $this->traceJobId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $traceJobId
      *
@@ -139,7 +139,7 @@ class DuplicateSearchIndexDocException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -148,7 +148,7 @@ class DuplicateSearchIndexDocException extends \ArrayObject
         return $this->httpStatusCode;
     }
     /**
-     * 
+     *
      *
      * @param int $httpStatusCode
      *
@@ -161,7 +161,7 @@ class DuplicateSearchIndexDocException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -170,7 +170,7 @@ class DuplicateSearchIndexDocException extends \ArrayObject
         return $this->exceptionMessage;
     }
     /**
-     * 
+     *
      *
      * @param string|null $exceptionMessage
      *
@@ -183,7 +183,7 @@ class DuplicateSearchIndexDocException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -192,7 +192,7 @@ class DuplicateSearchIndexDocException extends \ArrayObject
         return $this->kind;
     }
     /**
-     * 
+     *
      *
      * @param string $kind
      *
@@ -205,7 +205,7 @@ class DuplicateSearchIndexDocException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -214,7 +214,7 @@ class DuplicateSearchIndexDocException extends \ArrayObject
         return $this->customerId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $customerId
      *
@@ -227,7 +227,7 @@ class DuplicateSearchIndexDocException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -236,7 +236,7 @@ class DuplicateSearchIndexDocException extends \ArrayObject
         return $this->customerAlias;
     }
     /**
-     * 
+     *
      *
      * @param string|null $customerAlias
      *
@@ -249,7 +249,7 @@ class DuplicateSearchIndexDocException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -258,7 +258,7 @@ class DuplicateSearchIndexDocException extends \ArrayObject
         return $this->userId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $userId
      *
@@ -271,7 +271,7 @@ class DuplicateSearchIndexDocException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -280,7 +280,7 @@ class DuplicateSearchIndexDocException extends \ArrayObject
         return $this->searchIndexDocId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $searchIndexDocId
      *

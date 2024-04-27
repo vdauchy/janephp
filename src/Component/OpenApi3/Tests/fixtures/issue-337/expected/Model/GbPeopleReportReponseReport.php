@@ -13,37 +13,37 @@ class GbPeopleReportReponseReport extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $directorId;
     /**
-     * 
+     *
      *
      * @var GbPeopleReportReponseReportDirectorSummary
      */
     protected $directorSummary;
     /**
-     * 
+     *
      *
      * @var GbPeopleReportReponseReportDirectorDetails
      */
     protected $directorDetails;
     /**
-     * 
+     *
      *
      * @var list<GbPeopleReportReponseReportOtherAddressesItem>
      */
     protected $otherAddresses;
     /**
-     * 
+     *
      *
      * @var GbPeopleReportReponseReportDirectorships
      */
     protected $directorships;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -52,7 +52,7 @@ class GbPeopleReportReponseReport extends \ArrayObject
         return $this->directorId;
     }
     /**
-     * 
+     *
      *
      * @param string $directorId
      *
@@ -65,7 +65,7 @@ class GbPeopleReportReponseReport extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GbPeopleReportReponseReportDirectorSummary
      */
@@ -74,7 +74,7 @@ class GbPeopleReportReponseReport extends \ArrayObject
         return $this->directorSummary;
     }
     /**
-     * 
+     *
      *
      * @param GbPeopleReportReponseReportDirectorSummary $directorSummary
      *
@@ -87,7 +87,7 @@ class GbPeopleReportReponseReport extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GbPeopleReportReponseReportDirectorDetails
      */
@@ -96,7 +96,7 @@ class GbPeopleReportReponseReport extends \ArrayObject
         return $this->directorDetails;
     }
     /**
-     * 
+     *
      *
      * @param GbPeopleReportReponseReportDirectorDetails $directorDetails
      *
@@ -109,7 +109,7 @@ class GbPeopleReportReponseReport extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<GbPeopleReportReponseReportOtherAddressesItem>
      */
@@ -118,7 +118,7 @@ class GbPeopleReportReponseReport extends \ArrayObject
         return $this->otherAddresses;
     }
     /**
-     * 
+     *
      *
      * @param list<GbPeopleReportReponseReportOtherAddressesItem> $otherAddresses
      *
@@ -131,7 +131,7 @@ class GbPeopleReportReponseReport extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GbPeopleReportReponseReportDirectorships
      */
@@ -140,7 +140,7 @@ class GbPeopleReportReponseReport extends \ArrayObject
         return $this->directorships;
     }
     /**
-     * 
+     *
      *
      * @param GbPeopleReportReponseReportDirectorships $directorships
      *

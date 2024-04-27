@@ -13,79 +13,79 @@ class ListCompanyImagesDataItem extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $imageId;
     /**
-     * 
+     *
      *
      * @var ListCompanyImagesDataItemCompany
      */
     protected $company;
     /**
-     * 
+     *
      *
      * @var ListCompanyImagesDataItemDocument
      */
     protected $document;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $format;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $source;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $filingDate;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $uploadDate;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $accountingDate;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $language;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $comments;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $status;
     /**
-     * 
+     *
      *
      * @var ListCompanyImagesDataItemLocalProperties
      */
     protected $localProperties;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -94,7 +94,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
         return $this->imageId;
     }
     /**
-     * 
+     *
      *
      * @param string $imageId
      *
@@ -107,7 +107,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ListCompanyImagesDataItemCompany
      */
@@ -116,7 +116,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
         return $this->company;
     }
     /**
-     * 
+     *
      *
      * @param ListCompanyImagesDataItemCompany $company
      *
@@ -129,7 +129,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ListCompanyImagesDataItemDocument
      */
@@ -138,7 +138,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
         return $this->document;
     }
     /**
-     * 
+     *
      *
      * @param ListCompanyImagesDataItemDocument $document
      *
@@ -151,7 +151,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -160,7 +160,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
         return $this->format;
     }
     /**
-     * 
+     *
      *
      * @param string $format
      *
@@ -173,7 +173,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -182,7 +182,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
         return $this->source;
     }
     /**
-     * 
+     *
      *
      * @param string $source
      *
@@ -195,7 +195,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -204,7 +204,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
         return $this->filingDate;
     }
     /**
-     * 
+     *
      *
      * @param string $filingDate
      *
@@ -217,7 +217,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -226,7 +226,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
         return $this->uploadDate;
     }
     /**
-     * 
+     *
      *
      * @param string $uploadDate
      *
@@ -239,7 +239,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -248,7 +248,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
         return $this->accountingDate;
     }
     /**
-     * 
+     *
      *
      * @param string $accountingDate
      *
@@ -261,7 +261,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -270,7 +270,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
         return $this->language;
     }
     /**
-     * 
+     *
      *
      * @param string $language
      *
@@ -283,7 +283,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -292,7 +292,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
         return $this->comments;
     }
     /**
-     * 
+     *
      *
      * @param string $comments
      *
@@ -305,7 +305,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -314,7 +314,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
         return $this->status;
     }
     /**
-     * 
+     *
      *
      * @param string $status
      *
@@ -327,7 +327,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ListCompanyImagesDataItemLocalProperties
      */
@@ -336,7 +336,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
         return $this->localProperties;
     }
     /**
-     * 
+     *
      *
      * @param ListCompanyImagesDataItemLocalProperties $localProperties
      *

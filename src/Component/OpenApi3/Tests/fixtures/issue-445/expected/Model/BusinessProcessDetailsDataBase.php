@@ -13,13 +13,13 @@ class BusinessProcessDetailsDataBase
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $kind;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -28,7 +28,7 @@ class BusinessProcessDetailsDataBase
         return $this->kind;
     }
     /**
-     * 
+     *
      *
      * @param string $kind
      */

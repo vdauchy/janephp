@@ -13,13 +13,13 @@ class ParentsParentIdChildChildIdPatchBody extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -28,7 +28,7 @@ class ParentsParentIdChildChildIdPatchBody extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param string $id
      *

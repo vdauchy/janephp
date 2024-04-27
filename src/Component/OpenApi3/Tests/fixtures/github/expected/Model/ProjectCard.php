@@ -13,7 +13,7 @@ class ProjectCard extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -25,31 +25,31 @@ class ProjectCard extends \ArrayObject
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $nodeId;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $note;
     /**
-     * 
+     *
      *
      * @var ProjectCardCreator|null
      */
     protected $creator;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
@@ -61,25 +61,25 @@ class ProjectCard extends \ArrayObject
      */
     protected $archived;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $columnUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $contentUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $projectUrl;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -88,7 +88,7 @@ class ProjectCard extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -123,7 +123,7 @@ class ProjectCard extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -132,7 +132,7 @@ class ProjectCard extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -145,7 +145,7 @@ class ProjectCard extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -154,7 +154,7 @@ class ProjectCard extends \ArrayObject
         return $this->note;
     }
     /**
-     * 
+     *
      *
      * @param string|null $note
      *
@@ -167,7 +167,7 @@ class ProjectCard extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ProjectCardCreator|null
      */
@@ -176,7 +176,7 @@ class ProjectCard extends \ArrayObject
         return $this->creator;
     }
     /**
-     * 
+     *
      *
      * @param ProjectCardCreator|null $creator
      *
@@ -189,7 +189,7 @@ class ProjectCard extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -198,7 +198,7 @@ class ProjectCard extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $createdAt
      *
@@ -211,7 +211,7 @@ class ProjectCard extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -220,7 +220,7 @@ class ProjectCard extends \ArrayObject
         return $this->updatedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $updatedAt
      *
@@ -255,7 +255,7 @@ class ProjectCard extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -264,7 +264,7 @@ class ProjectCard extends \ArrayObject
         return $this->columnUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $columnUrl
      *
@@ -277,7 +277,7 @@ class ProjectCard extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -286,7 +286,7 @@ class ProjectCard extends \ArrayObject
         return $this->contentUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $contentUrl
      *
@@ -299,7 +299,7 @@ class ProjectCard extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -308,7 +308,7 @@ class ProjectCard extends \ArrayObject
         return $this->projectUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $projectUrl
      *

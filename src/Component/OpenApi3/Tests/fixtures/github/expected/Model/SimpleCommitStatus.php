@@ -13,73 +13,73 @@ class SimpleCommitStatus extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $nodeId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $state;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $context;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $targetUrl;
     /**
-     * 
+     *
      *
      * @var bool|null
      */
     protected $required;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $avatarUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $updatedAt;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -88,7 +88,7 @@ class SimpleCommitStatus extends \ArrayObject
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string|null $description
      *
@@ -101,7 +101,7 @@ class SimpleCommitStatus extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -110,7 +110,7 @@ class SimpleCommitStatus extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -123,7 +123,7 @@ class SimpleCommitStatus extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -132,7 +132,7 @@ class SimpleCommitStatus extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -145,7 +145,7 @@ class SimpleCommitStatus extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -154,7 +154,7 @@ class SimpleCommitStatus extends \ArrayObject
         return $this->state;
     }
     /**
-     * 
+     *
      *
      * @param string $state
      *
@@ -167,7 +167,7 @@ class SimpleCommitStatus extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -176,7 +176,7 @@ class SimpleCommitStatus extends \ArrayObject
         return $this->context;
     }
     /**
-     * 
+     *
      *
      * @param string $context
      *
@@ -189,7 +189,7 @@ class SimpleCommitStatus extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -198,7 +198,7 @@ class SimpleCommitStatus extends \ArrayObject
         return $this->targetUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $targetUrl
      *
@@ -211,7 +211,7 @@ class SimpleCommitStatus extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool|null
      */
@@ -220,7 +220,7 @@ class SimpleCommitStatus extends \ArrayObject
         return $this->required;
     }
     /**
-     * 
+     *
      *
      * @param bool|null $required
      *
@@ -233,7 +233,7 @@ class SimpleCommitStatus extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -242,7 +242,7 @@ class SimpleCommitStatus extends \ArrayObject
         return $this->avatarUrl;
     }
     /**
-     * 
+     *
      *
      * @param string|null $avatarUrl
      *
@@ -255,7 +255,7 @@ class SimpleCommitStatus extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -264,7 +264,7 @@ class SimpleCommitStatus extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -277,7 +277,7 @@ class SimpleCommitStatus extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -286,7 +286,7 @@ class SimpleCommitStatus extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $createdAt
      *
@@ -299,7 +299,7 @@ class SimpleCommitStatus extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -308,7 +308,7 @@ class SimpleCommitStatus extends \ArrayObject
         return $this->updatedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $updatedAt
      *

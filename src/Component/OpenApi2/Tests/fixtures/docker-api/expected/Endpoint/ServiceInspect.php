@@ -6,7 +6,7 @@ class ServiceInspect extends \Docker\Api\Runtime\Client\BaseEndpoint implements 
 {
     protected $id;
     /**
-     * 
+     *
      *
      * @param string $id ID or name of service.
      * @param array $queryParameters {

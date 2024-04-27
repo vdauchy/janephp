@@ -13,85 +13,85 @@ class Parameter extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $in;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @var bool|null
      */
     protected $required = false;
     /**
-     * 
+     *
      *
      * @var bool|null
      */
     protected $deprecated = false;
     /**
-     * 
+     *
      *
      * @var bool|null
      */
     protected $allowEmptyValue = false;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $style;
     /**
-     * 
+     *
      *
      * @var bool|null
      */
     protected $explode;
     /**
-     * 
+     *
      *
      * @var bool|null
      */
     protected $allowReserved = false;
     /**
-     * 
+     *
      *
      * @var Schema|Reference|null
      */
     protected $schema;
     /**
-     * 
+     *
      *
      * @var array<string, MediaType>|null
      */
     protected $content;
     /**
-     * 
+     *
      *
      * @var mixed|null
      */
     protected $example;
     /**
-     * 
+     *
      *
      * @var array<string, Example|Reference>|null
      */
     protected $examples;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -100,7 +100,7 @@ class Parameter extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string|null $name
      *
@@ -113,7 +113,7 @@ class Parameter extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -122,7 +122,7 @@ class Parameter extends \ArrayObject
         return $this->in;
     }
     /**
-     * 
+     *
      *
      * @param string|null $in
      *
@@ -135,7 +135,7 @@ class Parameter extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -144,7 +144,7 @@ class Parameter extends \ArrayObject
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string|null $description
      *
@@ -157,7 +157,7 @@ class Parameter extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool|null
      */
@@ -166,7 +166,7 @@ class Parameter extends \ArrayObject
         return $this->required;
     }
     /**
-     * 
+     *
      *
      * @param bool|null $required
      *
@@ -179,7 +179,7 @@ class Parameter extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool|null
      */
@@ -188,7 +188,7 @@ class Parameter extends \ArrayObject
         return $this->deprecated;
     }
     /**
-     * 
+     *
      *
      * @param bool|null $deprecated
      *
@@ -201,7 +201,7 @@ class Parameter extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool|null
      */
@@ -210,7 +210,7 @@ class Parameter extends \ArrayObject
         return $this->allowEmptyValue;
     }
     /**
-     * 
+     *
      *
      * @param bool|null $allowEmptyValue
      *
@@ -223,7 +223,7 @@ class Parameter extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -232,7 +232,7 @@ class Parameter extends \ArrayObject
         return $this->style;
     }
     /**
-     * 
+     *
      *
      * @param string|null $style
      *
@@ -245,7 +245,7 @@ class Parameter extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool|null
      */
@@ -254,7 +254,7 @@ class Parameter extends \ArrayObject
         return $this->explode;
     }
     /**
-     * 
+     *
      *
      * @param bool|null $explode
      *
@@ -267,7 +267,7 @@ class Parameter extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool|null
      */
@@ -276,7 +276,7 @@ class Parameter extends \ArrayObject
         return $this->allowReserved;
     }
     /**
-     * 
+     *
      *
      * @param bool|null $allowReserved
      *
@@ -289,7 +289,7 @@ class Parameter extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return Schema|Reference|null
      */
@@ -298,7 +298,7 @@ class Parameter extends \ArrayObject
         return $this->schema;
     }
     /**
-     * 
+     *
      *
      * @param Schema|Reference|null $schema
      *
@@ -311,7 +311,7 @@ class Parameter extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return array<string, MediaType>|null
      */
@@ -320,7 +320,7 @@ class Parameter extends \ArrayObject
         return $this->content;
     }
     /**
-     * 
+     *
      *
      * @param array<string, MediaType>|null $content
      *
@@ -333,7 +333,7 @@ class Parameter extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return mixed
      */
@@ -342,7 +342,7 @@ class Parameter extends \ArrayObject
         return $this->example;
     }
     /**
-     * 
+     *
      *
      * @param mixed $example
      *
@@ -355,7 +355,7 @@ class Parameter extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return array<string, Example|Reference>|null
      */
@@ -364,7 +364,7 @@ class Parameter extends \ArrayObject
         return $this->examples;
     }
     /**
-     * 
+     *
      *
      * @param array<string, Example|Reference>|null $examples
      *

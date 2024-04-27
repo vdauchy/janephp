@@ -13,43 +13,43 @@ class SimpleCommit extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $treeId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $message;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $timestamp;
     /**
-     * 
+     *
      *
      * @var SimpleCommitAuthor|null
      */
     protected $author;
     /**
-     * 
+     *
      *
      * @var SimpleCommitCommitter|null
      */
     protected $committer;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -58,7 +58,7 @@ class SimpleCommit extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param string $id
      *
@@ -71,7 +71,7 @@ class SimpleCommit extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -80,7 +80,7 @@ class SimpleCommit extends \ArrayObject
         return $this->treeId;
     }
     /**
-     * 
+     *
      *
      * @param string $treeId
      *
@@ -93,7 +93,7 @@ class SimpleCommit extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -102,7 +102,7 @@ class SimpleCommit extends \ArrayObject
         return $this->message;
     }
     /**
-     * 
+     *
      *
      * @param string $message
      *
@@ -115,7 +115,7 @@ class SimpleCommit extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -124,7 +124,7 @@ class SimpleCommit extends \ArrayObject
         return $this->timestamp;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $timestamp
      *
@@ -137,7 +137,7 @@ class SimpleCommit extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return SimpleCommitAuthor|null
      */
@@ -146,7 +146,7 @@ class SimpleCommit extends \ArrayObject
         return $this->author;
     }
     /**
-     * 
+     *
      *
      * @param SimpleCommitAuthor|null $author
      *
@@ -159,7 +159,7 @@ class SimpleCommit extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return SimpleCommitCommitter|null
      */
@@ -168,7 +168,7 @@ class SimpleCommit extends \ArrayObject
         return $this->committer;
     }
     /**
-     * 
+     *
      *
      * @param SimpleCommitCommitter|null $committer
      *

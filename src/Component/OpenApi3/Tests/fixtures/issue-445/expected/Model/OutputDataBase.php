@@ -43,7 +43,7 @@ class OutputDataBase
      */
     protected $originalFileName;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -144,7 +144,7 @@ class OutputDataBase
         $this->originalFileName = $originalFileName;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -153,7 +153,7 @@ class OutputDataBase
         return $this->kind;
     }
     /**
-     * 
+     *
      *
      * @param string $kind
      */

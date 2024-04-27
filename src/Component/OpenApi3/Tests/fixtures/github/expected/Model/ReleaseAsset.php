@@ -13,25 +13,25 @@ class ReleaseAsset extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $browserDownloadUrl;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -43,7 +43,7 @@ class ReleaseAsset extends \ArrayObject
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string|null
      */
@@ -55,43 +55,43 @@ class ReleaseAsset extends \ArrayObject
      */
     protected $state;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $contentType;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $size;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $downloadCount;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $updatedAt;
     /**
-     * 
+     *
      *
      * @var ReleaseAssetUploader|null
      */
     protected $uploader;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -100,7 +100,7 @@ class ReleaseAsset extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -113,7 +113,7 @@ class ReleaseAsset extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -122,7 +122,7 @@ class ReleaseAsset extends \ArrayObject
         return $this->browserDownloadUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $browserDownloadUrl
      *
@@ -135,7 +135,7 @@ class ReleaseAsset extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -144,7 +144,7 @@ class ReleaseAsset extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -157,7 +157,7 @@ class ReleaseAsset extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -166,7 +166,7 @@ class ReleaseAsset extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -201,7 +201,7 @@ class ReleaseAsset extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -210,7 +210,7 @@ class ReleaseAsset extends \ArrayObject
         return $this->label;
     }
     /**
-     * 
+     *
      *
      * @param string|null $label
      *
@@ -245,7 +245,7 @@ class ReleaseAsset extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -254,7 +254,7 @@ class ReleaseAsset extends \ArrayObject
         return $this->contentType;
     }
     /**
-     * 
+     *
      *
      * @param string $contentType
      *
@@ -267,7 +267,7 @@ class ReleaseAsset extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -276,7 +276,7 @@ class ReleaseAsset extends \ArrayObject
         return $this->size;
     }
     /**
-     * 
+     *
      *
      * @param int $size
      *
@@ -289,7 +289,7 @@ class ReleaseAsset extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -298,7 +298,7 @@ class ReleaseAsset extends \ArrayObject
         return $this->downloadCount;
     }
     /**
-     * 
+     *
      *
      * @param int $downloadCount
      *
@@ -311,7 +311,7 @@ class ReleaseAsset extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -320,7 +320,7 @@ class ReleaseAsset extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $createdAt
      *
@@ -333,7 +333,7 @@ class ReleaseAsset extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -342,7 +342,7 @@ class ReleaseAsset extends \ArrayObject
         return $this->updatedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $updatedAt
      *
@@ -355,7 +355,7 @@ class ReleaseAsset extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ReleaseAssetUploader|null
      */
@@ -364,7 +364,7 @@ class ReleaseAsset extends \ArrayObject
         return $this->uploader;
     }
     /**
-     * 
+     *
      *
      * @param ReleaseAssetUploader|null $uploader
      *

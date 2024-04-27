@@ -6,7 +6,7 @@ class ContainerDelete extends \Docker\Api\Runtime\Client\BaseEndpoint implements
 {
     protected $id;
     /**
-     * 
+     *
      *
      * @param string $id ID or name of the container
      * @param array $queryParameters {

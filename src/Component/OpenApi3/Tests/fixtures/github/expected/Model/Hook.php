@@ -13,7 +13,7 @@ class Hook extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -43,49 +43,49 @@ class Hook extends \ArrayObject
      */
     protected $events;
     /**
-     * 
+     *
      *
      * @var HookConfig
      */
     protected $config;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $updatedAt;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $testUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $pingUrl;
     /**
-     * 
+     *
      *
      * @var HookResponse
      */
     protected $lastResponse;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -94,7 +94,7 @@ class Hook extends \ArrayObject
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string $type
      *
@@ -195,7 +195,7 @@ class Hook extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return HookConfig
      */
@@ -204,7 +204,7 @@ class Hook extends \ArrayObject
         return $this->config;
     }
     /**
-     * 
+     *
      *
      * @param HookConfig $config
      *
@@ -217,7 +217,7 @@ class Hook extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -226,7 +226,7 @@ class Hook extends \ArrayObject
         return $this->updatedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $updatedAt
      *
@@ -239,7 +239,7 @@ class Hook extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -248,7 +248,7 @@ class Hook extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $createdAt
      *
@@ -261,7 +261,7 @@ class Hook extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -270,7 +270,7 @@ class Hook extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -283,7 +283,7 @@ class Hook extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -292,7 +292,7 @@ class Hook extends \ArrayObject
         return $this->testUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $testUrl
      *
@@ -305,7 +305,7 @@ class Hook extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -314,7 +314,7 @@ class Hook extends \ArrayObject
         return $this->pingUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $pingUrl
      *
@@ -327,7 +327,7 @@ class Hook extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return HookResponse
      */
@@ -336,7 +336,7 @@ class Hook extends \ArrayObject
         return $this->lastResponse;
     }
     /**
-     * 
+     *
      *
      * @param HookResponse $lastResponse
      *

@@ -13,43 +13,43 @@ class ParchmentsGetLdjsonResponse200HydraView extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $hydraFirst;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $hydraLast;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $hydraPrevious;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $hydraNext;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -58,7 +58,7 @@ class ParchmentsGetLdjsonResponse200HydraView extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param string $id
      *
@@ -71,7 +71,7 @@ class ParchmentsGetLdjsonResponse200HydraView extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -80,7 +80,7 @@ class ParchmentsGetLdjsonResponse200HydraView extends \ArrayObject
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string $type
      *
@@ -93,7 +93,7 @@ class ParchmentsGetLdjsonResponse200HydraView extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -102,7 +102,7 @@ class ParchmentsGetLdjsonResponse200HydraView extends \ArrayObject
         return $this->hydraFirst;
     }
     /**
-     * 
+     *
      *
      * @param string $hydraFirst
      *
@@ -115,7 +115,7 @@ class ParchmentsGetLdjsonResponse200HydraView extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -124,7 +124,7 @@ class ParchmentsGetLdjsonResponse200HydraView extends \ArrayObject
         return $this->hydraLast;
     }
     /**
-     * 
+     *
      *
      * @param string $hydraLast
      *
@@ -137,7 +137,7 @@ class ParchmentsGetLdjsonResponse200HydraView extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -146,7 +146,7 @@ class ParchmentsGetLdjsonResponse200HydraView extends \ArrayObject
         return $this->hydraPrevious;
     }
     /**
-     * 
+     *
      *
      * @param string $hydraPrevious
      *
@@ -159,7 +159,7 @@ class ParchmentsGetLdjsonResponse200HydraView extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -168,7 +168,7 @@ class ParchmentsGetLdjsonResponse200HydraView extends \ArrayObject
         return $this->hydraNext;
     }
     /**
-     * 
+     *
      *
      * @param string $hydraNext
      *

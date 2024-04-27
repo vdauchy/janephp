@@ -19,7 +19,7 @@ class TeamsTeamIdTeamSyncGroupMappingsPatchBody extends \ArrayObject
      */
     protected $groups;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -47,7 +47,7 @@ class TeamsTeamIdTeamSyncGroupMappingsPatchBody extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -56,7 +56,7 @@ class TeamsTeamIdTeamSyncGroupMappingsPatchBody extends \ArrayObject
         return $this->syncedAt;
     }
     /**
-     * 
+     *
      *
      * @param string $syncedAt
      *

@@ -13,13 +13,13 @@ class ResourceNotFoundProblem extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -31,25 +31,25 @@ class ResourceNotFoundProblem extends \ArrayObject
      */
     protected $value;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $resourceType;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $title;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $detail;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -58,7 +58,7 @@ class ResourceNotFoundProblem extends \ArrayObject
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string $type
      *
@@ -71,7 +71,7 @@ class ResourceNotFoundProblem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -80,7 +80,7 @@ class ResourceNotFoundProblem extends \ArrayObject
         return $this->parameter;
     }
     /**
-     * 
+     *
      *
      * @param string $parameter
      *
@@ -115,7 +115,7 @@ class ResourceNotFoundProblem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -124,7 +124,7 @@ class ResourceNotFoundProblem extends \ArrayObject
         return $this->resourceType;
     }
     /**
-     * 
+     *
      *
      * @param string $resourceType
      *
@@ -137,7 +137,7 @@ class ResourceNotFoundProblem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -146,7 +146,7 @@ class ResourceNotFoundProblem extends \ArrayObject
         return $this->title;
     }
     /**
-     * 
+     *
      *
      * @param string $title
      *
@@ -159,7 +159,7 @@ class ResourceNotFoundProblem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -168,7 +168,7 @@ class ResourceNotFoundProblem extends \ArrayObject
         return $this->detail;
     }
     /**
-     * 
+     *
      *
      * @param string $detail
      *

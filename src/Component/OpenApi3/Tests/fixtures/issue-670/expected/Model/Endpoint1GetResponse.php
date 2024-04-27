@@ -13,13 +13,13 @@ class Endpoint1GetResponse extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $field1;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -28,7 +28,7 @@ class Endpoint1GetResponse extends \ArrayObject
         return $this->field1;
     }
     /**
-     * 
+     *
      *
      * @param string $field1
      *

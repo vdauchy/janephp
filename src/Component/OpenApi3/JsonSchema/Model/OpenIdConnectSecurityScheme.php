@@ -13,25 +13,25 @@ class OpenIdConnectSecurityScheme extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $openIdConnectUrl;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -40,7 +40,7 @@ class OpenIdConnectSecurityScheme extends \ArrayObject
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string|null $type
      *
@@ -53,7 +53,7 @@ class OpenIdConnectSecurityScheme extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -62,7 +62,7 @@ class OpenIdConnectSecurityScheme extends \ArrayObject
         return $this->openIdConnectUrl;
     }
     /**
-     * 
+     *
      *
      * @param string|null $openIdConnectUrl
      *
@@ -75,7 +75,7 @@ class OpenIdConnectSecurityScheme extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -84,7 +84,7 @@ class OpenIdConnectSecurityScheme extends \ArrayObject
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string|null $description
      *

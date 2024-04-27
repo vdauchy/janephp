@@ -61,7 +61,7 @@ class ReposOwnerRepoPullsPullNumberCommentsPostBody extends \ArrayObject
      */
     protected $startSide;
     /**
-     * 
+     *
      *
      * @var int
      */
@@ -243,7 +243,7 @@ class ReposOwnerRepoPullsPullNumberCommentsPostBody extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -252,7 +252,7 @@ class ReposOwnerRepoPullsPullNumberCommentsPostBody extends \ArrayObject
         return $this->inReplyTo;
     }
     /**
-     * 
+     *
      *
      * @param int $inReplyTo
      *

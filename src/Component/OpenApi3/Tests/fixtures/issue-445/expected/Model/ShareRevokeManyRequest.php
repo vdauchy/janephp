@@ -13,13 +13,13 @@ class ShareRevokeManyRequest
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var list<string>|null
      */
     protected $ids;
     /**
-     * 
+     *
      *
      * @return list<string>|null
      */
@@ -28,7 +28,7 @@ class ShareRevokeManyRequest
         return $this->ids;
     }
     /**
-     * 
+     *
      *
      * @param list<string>|null $ids
      *

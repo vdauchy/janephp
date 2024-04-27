@@ -19,7 +19,7 @@ class ShareDataBase
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -44,7 +44,7 @@ class ShareDataBase
         $this->url = $url;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -53,7 +53,7 @@ class ShareDataBase
         return $this->kind;
     }
     /**
-     * 
+     *
      *
      * @param string $kind
      */

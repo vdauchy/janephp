@@ -13,43 +13,43 @@ class FileSchema extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $format;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $title;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @var mixed|null
      */
     protected $default;
     /**
-     * 
+     *
      *
      * @var string[]|null
      */
     protected $required;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @var bool|null
      */
@@ -61,13 +61,13 @@ class FileSchema extends \ArrayObject
      */
     protected $externalDocs;
     /**
-     * 
+     *
      *
      * @var mixed|null
      */
     protected $example;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -76,7 +76,7 @@ class FileSchema extends \ArrayObject
         return $this->format;
     }
     /**
-     * 
+     *
      *
      * @param string|null $format
      *
@@ -89,7 +89,7 @@ class FileSchema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -98,7 +98,7 @@ class FileSchema extends \ArrayObject
         return $this->title;
     }
     /**
-     * 
+     *
      *
      * @param string|null $title
      *
@@ -111,7 +111,7 @@ class FileSchema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -120,7 +120,7 @@ class FileSchema extends \ArrayObject
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string|null $description
      *
@@ -133,7 +133,7 @@ class FileSchema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return mixed
      */
@@ -142,7 +142,7 @@ class FileSchema extends \ArrayObject
         return $this->default;
     }
     /**
-     * 
+     *
      *
      * @param mixed $default
      *
@@ -155,7 +155,7 @@ class FileSchema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string[]|null
      */
@@ -164,7 +164,7 @@ class FileSchema extends \ArrayObject
         return $this->required;
     }
     /**
-     * 
+     *
      *
      * @param string[]|null $required
      *
@@ -177,7 +177,7 @@ class FileSchema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -186,7 +186,7 @@ class FileSchema extends \ArrayObject
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string|null $type
      *
@@ -199,7 +199,7 @@ class FileSchema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool|null
      */
@@ -208,7 +208,7 @@ class FileSchema extends \ArrayObject
         return $this->readOnly;
     }
     /**
-     * 
+     *
      *
      * @param bool|null $readOnly
      *
@@ -243,7 +243,7 @@ class FileSchema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return mixed
      */
@@ -252,7 +252,7 @@ class FileSchema extends \ArrayObject
         return $this->example;
     }
     /**
-     * 
+     *
      *
      * @param mixed $example
      *

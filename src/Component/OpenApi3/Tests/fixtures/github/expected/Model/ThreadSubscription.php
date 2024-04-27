@@ -13,49 +13,49 @@ class ThreadSubscription extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $subscribed;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $ignored;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $reason;
     /**
-     * 
+     *
      *
      * @var \DateTime|null
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $threadUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $repositoryUrl;
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -64,7 +64,7 @@ class ThreadSubscription extends \ArrayObject
         return $this->subscribed;
     }
     /**
-     * 
+     *
      *
      * @param bool $subscribed
      *
@@ -77,7 +77,7 @@ class ThreadSubscription extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -86,7 +86,7 @@ class ThreadSubscription extends \ArrayObject
         return $this->ignored;
     }
     /**
-     * 
+     *
      *
      * @param bool $ignored
      *
@@ -99,7 +99,7 @@ class ThreadSubscription extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -108,7 +108,7 @@ class ThreadSubscription extends \ArrayObject
         return $this->reason;
     }
     /**
-     * 
+     *
      *
      * @param string|null $reason
      *
@@ -121,7 +121,7 @@ class ThreadSubscription extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime|null
      */
@@ -130,7 +130,7 @@ class ThreadSubscription extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime|null $createdAt
      *
@@ -143,7 +143,7 @@ class ThreadSubscription extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -152,7 +152,7 @@ class ThreadSubscription extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -165,7 +165,7 @@ class ThreadSubscription extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -174,7 +174,7 @@ class ThreadSubscription extends \ArrayObject
         return $this->threadUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $threadUrl
      *
@@ -187,7 +187,7 @@ class ThreadSubscription extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -196,7 +196,7 @@ class ThreadSubscription extends \ArrayObject
         return $this->repositoryUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $repositoryUrl
      *

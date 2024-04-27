@@ -13,13 +13,13 @@ class PullRequestSimpleHead extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $label;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -31,19 +31,19 @@ class PullRequestSimpleHead extends \ArrayObject
      */
     protected $repo;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $sha;
     /**
-     * 
+     *
      *
      * @var PullRequestSimpleHeadUser|null
      */
     protected $user;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -52,7 +52,7 @@ class PullRequestSimpleHead extends \ArrayObject
         return $this->label;
     }
     /**
-     * 
+     *
      *
      * @param string $label
      *
@@ -65,7 +65,7 @@ class PullRequestSimpleHead extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -74,7 +74,7 @@ class PullRequestSimpleHead extends \ArrayObject
         return $this->ref;
     }
     /**
-     * 
+     *
      *
      * @param string $ref
      *
@@ -109,7 +109,7 @@ class PullRequestSimpleHead extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -118,7 +118,7 @@ class PullRequestSimpleHead extends \ArrayObject
         return $this->sha;
     }
     /**
-     * 
+     *
      *
      * @param string $sha
      *
@@ -131,7 +131,7 @@ class PullRequestSimpleHead extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return PullRequestSimpleHeadUser|null
      */
@@ -140,7 +140,7 @@ class PullRequestSimpleHead extends \ArrayObject
         return $this->user;
     }
     /**
-     * 
+     *
      *
      * @param PullRequestSimpleHeadUser|null $user
      *

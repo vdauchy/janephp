@@ -13,25 +13,25 @@ class GbCompanyReportExampleResponseReportCompanySummaryMainActivity extends \Ar
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $code;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $classification;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -40,7 +40,7 @@ class GbCompanyReportExampleResponseReportCompanySummaryMainActivity extends \Ar
         return $this->code;
     }
     /**
-     * 
+     *
      *
      * @param string $code
      *
@@ -53,7 +53,7 @@ class GbCompanyReportExampleResponseReportCompanySummaryMainActivity extends \Ar
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -62,7 +62,7 @@ class GbCompanyReportExampleResponseReportCompanySummaryMainActivity extends \Ar
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string $description
      *
@@ -75,7 +75,7 @@ class GbCompanyReportExampleResponseReportCompanySummaryMainActivity extends \Ar
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -84,7 +84,7 @@ class GbCompanyReportExampleResponseReportCompanySummaryMainActivity extends \Ar
         return $this->classification;
     }
     /**
-     * 
+     *
      *
      * @param string $classification
      *

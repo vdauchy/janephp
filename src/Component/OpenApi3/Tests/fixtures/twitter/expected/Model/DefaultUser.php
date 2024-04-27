@@ -13,7 +13,7 @@ class DefaultUser extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -103,7 +103,7 @@ class DefaultUser extends \ArrayObject
      */
     protected $pinnedTweetId;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -112,7 +112,7 @@ class DefaultUser extends \ArrayObject
         return $this->format;
     }
     /**
-     * 
+     *
      *
      * @param string $format
      *

@@ -13,19 +13,19 @@ class ExternalDocumentation extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -34,7 +34,7 @@ class ExternalDocumentation extends \ArrayObject
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string|null $description
      *
@@ -47,7 +47,7 @@ class ExternalDocumentation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -56,7 +56,7 @@ class ExternalDocumentation extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string|null $url
      *

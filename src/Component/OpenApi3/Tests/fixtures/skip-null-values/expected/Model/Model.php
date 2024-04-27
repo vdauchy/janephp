@@ -13,25 +13,25 @@ class Model extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $foo;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $bar;
     /**
-     * 
+     *
      *
      * @var \DateTime|null
      */
     protected $date;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -40,7 +40,7 @@ class Model extends \ArrayObject
         return $this->foo;
     }
     /**
-     * 
+     *
      *
      * @param string|null $foo
      *
@@ -53,7 +53,7 @@ class Model extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -62,7 +62,7 @@ class Model extends \ArrayObject
         return $this->bar;
     }
     /**
-     * 
+     *
      *
      * @param string $bar
      *
@@ -75,7 +75,7 @@ class Model extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime|null
      */
@@ -84,7 +84,7 @@ class Model extends \ArrayObject
         return $this->date;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime|null $date
      *

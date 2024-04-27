@@ -6,9 +6,9 @@ class UsersCheckPersonIsFollowedByAuthenticated extends \Github\Runtime\Client\B
 {
     protected $username;
     /**
-     * 
      *
-     * @param string $username 
+     *
+     * @param string $username
      */
     public function __construct(string $username)
     {

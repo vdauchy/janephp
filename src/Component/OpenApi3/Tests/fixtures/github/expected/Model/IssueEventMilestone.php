@@ -13,13 +13,13 @@ class IssueEventMilestone extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $title;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -28,7 +28,7 @@ class IssueEventMilestone extends \ArrayObject
         return $this->title;
     }
     /**
-     * 
+     *
      *
      * @param string $title
      *

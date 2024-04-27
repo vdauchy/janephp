@@ -13,85 +13,85 @@ class GpgKey extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $primaryKeyId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $keyId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $publicKey;
     /**
-     * 
+     *
      *
      * @var list<GpgKeyEmailsItem>
      */
     protected $emails;
     /**
-     * 
+     *
      *
      * @var list<GpgKeySubkeysItem>
      */
     protected $subkeys;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $canSign;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $canEncryptComms;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $canEncryptStorage;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $canCertify;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @var \DateTime|null
      */
     protected $expiresAt;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $rawKey;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -100,7 +100,7 @@ class GpgKey extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -113,7 +113,7 @@ class GpgKey extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -122,7 +122,7 @@ class GpgKey extends \ArrayObject
         return $this->primaryKeyId;
     }
     /**
-     * 
+     *
      *
      * @param int|null $primaryKeyId
      *
@@ -135,7 +135,7 @@ class GpgKey extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -144,7 +144,7 @@ class GpgKey extends \ArrayObject
         return $this->keyId;
     }
     /**
-     * 
+     *
      *
      * @param string $keyId
      *
@@ -157,7 +157,7 @@ class GpgKey extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -166,7 +166,7 @@ class GpgKey extends \ArrayObject
         return $this->publicKey;
     }
     /**
-     * 
+     *
      *
      * @param string $publicKey
      *
@@ -179,7 +179,7 @@ class GpgKey extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<GpgKeyEmailsItem>
      */
@@ -188,7 +188,7 @@ class GpgKey extends \ArrayObject
         return $this->emails;
     }
     /**
-     * 
+     *
      *
      * @param list<GpgKeyEmailsItem> $emails
      *
@@ -201,7 +201,7 @@ class GpgKey extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<GpgKeySubkeysItem>
      */
@@ -210,7 +210,7 @@ class GpgKey extends \ArrayObject
         return $this->subkeys;
     }
     /**
-     * 
+     *
      *
      * @param list<GpgKeySubkeysItem> $subkeys
      *
@@ -223,7 +223,7 @@ class GpgKey extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -232,7 +232,7 @@ class GpgKey extends \ArrayObject
         return $this->canSign;
     }
     /**
-     * 
+     *
      *
      * @param bool $canSign
      *
@@ -245,7 +245,7 @@ class GpgKey extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -254,7 +254,7 @@ class GpgKey extends \ArrayObject
         return $this->canEncryptComms;
     }
     /**
-     * 
+     *
      *
      * @param bool $canEncryptComms
      *
@@ -267,7 +267,7 @@ class GpgKey extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -276,7 +276,7 @@ class GpgKey extends \ArrayObject
         return $this->canEncryptStorage;
     }
     /**
-     * 
+     *
      *
      * @param bool $canEncryptStorage
      *
@@ -289,7 +289,7 @@ class GpgKey extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -298,7 +298,7 @@ class GpgKey extends \ArrayObject
         return $this->canCertify;
     }
     /**
-     * 
+     *
      *
      * @param bool $canCertify
      *
@@ -311,7 +311,7 @@ class GpgKey extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -320,7 +320,7 @@ class GpgKey extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $createdAt
      *
@@ -333,7 +333,7 @@ class GpgKey extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime|null
      */
@@ -342,7 +342,7 @@ class GpgKey extends \ArrayObject
         return $this->expiresAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime|null $expiresAt
      *
@@ -355,7 +355,7 @@ class GpgKey extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -364,7 +364,7 @@ class GpgKey extends \ArrayObject
         return $this->rawKey;
     }
     /**
-     * 
+     *
      *
      * @param string|null $rawKey
      *

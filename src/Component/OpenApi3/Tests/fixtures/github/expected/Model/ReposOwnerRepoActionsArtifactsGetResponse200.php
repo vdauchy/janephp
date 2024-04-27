@@ -13,19 +13,19 @@ class ReposOwnerRepoActionsArtifactsGetResponse200 extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $totalCount;
     /**
-     * 
+     *
      *
      * @var list<Artifact>
      */
     protected $artifacts;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -34,7 +34,7 @@ class ReposOwnerRepoActionsArtifactsGetResponse200 extends \ArrayObject
         return $this->totalCount;
     }
     /**
-     * 
+     *
      *
      * @param int $totalCount
      *
@@ -47,7 +47,7 @@ class ReposOwnerRepoActionsArtifactsGetResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<Artifact>
      */
@@ -56,7 +56,7 @@ class ReposOwnerRepoActionsArtifactsGetResponse200 extends \ArrayObject
         return $this->artifacts;
     }
     /**
-     * 
+     *
      *
      * @param list<Artifact> $artifacts
      *

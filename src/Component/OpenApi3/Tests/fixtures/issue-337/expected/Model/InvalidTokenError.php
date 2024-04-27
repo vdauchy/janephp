@@ -13,13 +13,13 @@ class InvalidTokenError extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $error;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -28,7 +28,7 @@ class InvalidTokenError extends \ArrayObject
         return $this->error;
     }
     /**
-     * 
+     *
      *
      * @param string $error
      *

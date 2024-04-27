@@ -13,19 +13,19 @@ class ReindexEvent extends ApplicationEvent
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $indexId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $state;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -34,7 +34,7 @@ class ReindexEvent extends ApplicationEvent
         return $this->indexId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $indexId
      *
@@ -47,7 +47,7 @@ class ReindexEvent extends ApplicationEvent
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -56,7 +56,7 @@ class ReindexEvent extends ApplicationEvent
         return $this->state;
     }
     /**
-     * 
+     *
      *
      * @param string $state
      *

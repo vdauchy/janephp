@@ -13,7 +13,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectBankValidationIte
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -43,7 +43,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectBankValidationIte
      */
     protected $used;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -52,7 +52,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectBankValidationIte
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *

@@ -13,31 +13,31 @@ class CreateFreshInvestigationRequest extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $consent;
     /**
-     * 
+     *
      *
      * @var CreateFreshInvestigationRequestContactInfo
      */
     protected $contactInfo;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $chargeReference;
     /**
-     * 
+     *
      *
      * @var CreateFreshInvestigationRequestSearchCriteria
      */
     protected $searchCriteria;
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -46,7 +46,7 @@ class CreateFreshInvestigationRequest extends \ArrayObject
         return $this->consent;
     }
     /**
-     * 
+     *
      *
      * @param bool $consent
      *
@@ -59,7 +59,7 @@ class CreateFreshInvestigationRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return CreateFreshInvestigationRequestContactInfo
      */
@@ -68,7 +68,7 @@ class CreateFreshInvestigationRequest extends \ArrayObject
         return $this->contactInfo;
     }
     /**
-     * 
+     *
      *
      * @param CreateFreshInvestigationRequestContactInfo $contactInfo
      *
@@ -81,7 +81,7 @@ class CreateFreshInvestigationRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -90,7 +90,7 @@ class CreateFreshInvestigationRequest extends \ArrayObject
         return $this->chargeReference;
     }
     /**
-     * 
+     *
      *
      * @param string $chargeReference
      *
@@ -103,7 +103,7 @@ class CreateFreshInvestigationRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return CreateFreshInvestigationRequestSearchCriteria
      */
@@ -112,7 +112,7 @@ class CreateFreshInvestigationRequest extends \ArrayObject
         return $this->searchCriteria;
     }
     /**
-     * 
+     *
      *
      * @param CreateFreshInvestigationRequestSearchCriteria $searchCriteria
      *

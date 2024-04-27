@@ -31,25 +31,25 @@ class ReposOwnerRepoPullsPullNumberReviewsPostBodyCommentsItem extends \ArrayObj
      */
     protected $body;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $line;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $side;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $startLine;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -121,7 +121,7 @@ class ReposOwnerRepoPullsPullNumberReviewsPostBodyCommentsItem extends \ArrayObj
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -130,7 +130,7 @@ class ReposOwnerRepoPullsPullNumberReviewsPostBodyCommentsItem extends \ArrayObj
         return $this->line;
     }
     /**
-     * 
+     *
      *
      * @param int $line
      *
@@ -143,7 +143,7 @@ class ReposOwnerRepoPullsPullNumberReviewsPostBodyCommentsItem extends \ArrayObj
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -152,7 +152,7 @@ class ReposOwnerRepoPullsPullNumberReviewsPostBodyCommentsItem extends \ArrayObj
         return $this->side;
     }
     /**
-     * 
+     *
      *
      * @param string $side
      *
@@ -165,7 +165,7 @@ class ReposOwnerRepoPullsPullNumberReviewsPostBodyCommentsItem extends \ArrayObj
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -174,7 +174,7 @@ class ReposOwnerRepoPullsPullNumberReviewsPostBodyCommentsItem extends \ArrayObj
         return $this->startLine;
     }
     /**
-     * 
+     *
      *
      * @param int $startLine
      *
@@ -187,7 +187,7 @@ class ReposOwnerRepoPullsPullNumberReviewsPostBodyCommentsItem extends \ArrayObj
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -196,7 +196,7 @@ class ReposOwnerRepoPullsPullNumberReviewsPostBodyCommentsItem extends \ArrayObj
         return $this->startSide;
     }
     /**
-     * 
+     *
      *
      * @param string $startSide
      *

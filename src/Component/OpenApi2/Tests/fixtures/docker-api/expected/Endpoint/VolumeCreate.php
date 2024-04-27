@@ -5,7 +5,7 @@ namespace Docker\Api\Endpoint;
 class VolumeCreate extends \Docker\Api\Runtime\Client\BaseEndpoint implements \Docker\Api\Runtime\Client\Endpoint
 {
     /**
-     * 
+     *
      *
      * @param \Docker\Api\Model\VolumesCreatePostBody $volumeConfig Volume configuration
      */

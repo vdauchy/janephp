@@ -13,43 +13,43 @@ class ProblemDetails
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $title;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $status;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $detail;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $instance;
     /**
-     * 
+     *
      *
      * @var array<string, mixed>|null
      */
     protected $extensions;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -58,7 +58,7 @@ class ProblemDetails
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string|null $type
      *
@@ -71,7 +71,7 @@ class ProblemDetails
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -80,7 +80,7 @@ class ProblemDetails
         return $this->title;
     }
     /**
-     * 
+     *
      *
      * @param string|null $title
      *
@@ -93,7 +93,7 @@ class ProblemDetails
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -102,7 +102,7 @@ class ProblemDetails
         return $this->status;
     }
     /**
-     * 
+     *
      *
      * @param int|null $status
      *
@@ -115,7 +115,7 @@ class ProblemDetails
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -124,7 +124,7 @@ class ProblemDetails
         return $this->detail;
     }
     /**
-     * 
+     *
      *
      * @param string|null $detail
      *
@@ -137,7 +137,7 @@ class ProblemDetails
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -146,7 +146,7 @@ class ProblemDetails
         return $this->instance;
     }
     /**
-     * 
+     *
      *
      * @param string|null $instance
      *
@@ -159,7 +159,7 @@ class ProblemDetails
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return array<string, mixed>|null
      */
@@ -168,7 +168,7 @@ class ProblemDetails
         return $this->extensions;
     }
     /**
-     * 
+     *
      *
      * @param array<string, mixed>|null $extensions
      *

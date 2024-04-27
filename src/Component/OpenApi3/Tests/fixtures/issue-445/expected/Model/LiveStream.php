@@ -13,43 +13,43 @@ class LiveStream
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $document;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $scopeType;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $timestamp;
     /**
-     * 
+     *
      *
      * @var mixed|null
      */
     protected $traceJob;
     /**
-     * 
+     *
      *
      * @var mixed|null
      */
     protected $audit;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -58,7 +58,7 @@ class LiveStream
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param string $id
      *
@@ -71,7 +71,7 @@ class LiveStream
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -80,7 +80,7 @@ class LiveStream
         return $this->document;
     }
     /**
-     * 
+     *
      *
      * @param string|null $document
      *
@@ -93,7 +93,7 @@ class LiveStream
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -102,7 +102,7 @@ class LiveStream
         return $this->scopeType;
     }
     /**
-     * 
+     *
      *
      * @param string|null $scopeType
      *
@@ -115,7 +115,7 @@ class LiveStream
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -124,7 +124,7 @@ class LiveStream
         return $this->timestamp;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $timestamp
      *
@@ -137,7 +137,7 @@ class LiveStream
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return mixed
      */
@@ -146,7 +146,7 @@ class LiveStream
         return $this->traceJob;
     }
     /**
-     * 
+     *
      *
      * @param mixed $traceJob
      *
@@ -159,7 +159,7 @@ class LiveStream
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return mixed
      */
@@ -168,7 +168,7 @@ class LiveStream
         return $this->audit;
     }
     /**
-     * 
+     *
      *
      * @param mixed $audit
      *

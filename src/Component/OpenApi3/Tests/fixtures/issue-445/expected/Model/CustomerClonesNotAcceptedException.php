@@ -13,61 +13,61 @@ class CustomerClonesNotAcceptedException extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $traceLevel;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $traceId;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $traceJobId;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $httpStatusCode;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $exceptionMessage;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $kind;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $customerId;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $customerAlias;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $userId;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -76,7 +76,7 @@ class CustomerClonesNotAcceptedException extends \ArrayObject
         return $this->traceLevel;
     }
     /**
-     * 
+     *
      *
      * @param string $traceLevel
      *
@@ -89,7 +89,7 @@ class CustomerClonesNotAcceptedException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -98,7 +98,7 @@ class CustomerClonesNotAcceptedException extends \ArrayObject
         return $this->traceId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $traceId
      *
@@ -111,7 +111,7 @@ class CustomerClonesNotAcceptedException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -120,7 +120,7 @@ class CustomerClonesNotAcceptedException extends \ArrayObject
         return $this->traceJobId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $traceJobId
      *
@@ -133,7 +133,7 @@ class CustomerClonesNotAcceptedException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -142,7 +142,7 @@ class CustomerClonesNotAcceptedException extends \ArrayObject
         return $this->httpStatusCode;
     }
     /**
-     * 
+     *
      *
      * @param int $httpStatusCode
      *
@@ -155,7 +155,7 @@ class CustomerClonesNotAcceptedException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -164,7 +164,7 @@ class CustomerClonesNotAcceptedException extends \ArrayObject
         return $this->exceptionMessage;
     }
     /**
-     * 
+     *
      *
      * @param string|null $exceptionMessage
      *
@@ -177,7 +177,7 @@ class CustomerClonesNotAcceptedException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -186,7 +186,7 @@ class CustomerClonesNotAcceptedException extends \ArrayObject
         return $this->kind;
     }
     /**
-     * 
+     *
      *
      * @param string $kind
      *
@@ -199,7 +199,7 @@ class CustomerClonesNotAcceptedException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -208,7 +208,7 @@ class CustomerClonesNotAcceptedException extends \ArrayObject
         return $this->customerId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $customerId
      *
@@ -221,7 +221,7 @@ class CustomerClonesNotAcceptedException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -230,7 +230,7 @@ class CustomerClonesNotAcceptedException extends \ArrayObject
         return $this->customerAlias;
     }
     /**
-     * 
+     *
      *
      * @param string|null $customerAlias
      *
@@ -243,7 +243,7 @@ class CustomerClonesNotAcceptedException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -252,7 +252,7 @@ class CustomerClonesNotAcceptedException extends \ArrayObject
         return $this->userId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $userId
      *

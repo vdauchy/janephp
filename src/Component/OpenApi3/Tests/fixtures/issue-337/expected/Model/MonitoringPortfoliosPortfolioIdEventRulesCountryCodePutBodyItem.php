@@ -13,37 +13,37 @@ class MonitoringPortfoliosPortfolioIdEventRulesCountryCodePutBodyItem extends \A
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $ruleCode;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $isActive;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $param0;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $param1;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $param2;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -52,7 +52,7 @@ class MonitoringPortfoliosPortfolioIdEventRulesCountryCodePutBodyItem extends \A
         return $this->ruleCode;
     }
     /**
-     * 
+     *
      *
      * @param string $ruleCode
      *
@@ -65,7 +65,7 @@ class MonitoringPortfoliosPortfolioIdEventRulesCountryCodePutBodyItem extends \A
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -74,7 +74,7 @@ class MonitoringPortfoliosPortfolioIdEventRulesCountryCodePutBodyItem extends \A
         return $this->isActive;
     }
     /**
-     * 
+     *
      *
      * @param string $isActive
      *
@@ -87,7 +87,7 @@ class MonitoringPortfoliosPortfolioIdEventRulesCountryCodePutBodyItem extends \A
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -96,7 +96,7 @@ class MonitoringPortfoliosPortfolioIdEventRulesCountryCodePutBodyItem extends \A
         return $this->param0;
     }
     /**
-     * 
+     *
      *
      * @param string $param0
      *
@@ -109,7 +109,7 @@ class MonitoringPortfoliosPortfolioIdEventRulesCountryCodePutBodyItem extends \A
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -118,7 +118,7 @@ class MonitoringPortfoliosPortfolioIdEventRulesCountryCodePutBodyItem extends \A
         return $this->param1;
     }
     /**
-     * 
+     *
      *
      * @param string $param1
      *
@@ -131,7 +131,7 @@ class MonitoringPortfoliosPortfolioIdEventRulesCountryCodePutBodyItem extends \A
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -140,7 +140,7 @@ class MonitoringPortfoliosPortfolioIdEventRulesCountryCodePutBodyItem extends \A
         return $this->param2;
     }
     /**
-     * 
+     *
      *
      * @param string $param2
      *

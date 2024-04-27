@@ -13,19 +13,19 @@ class ScimV2OrganizationsOrgUsersPostBodyName extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $givenName;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $familyName;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -34,7 +34,7 @@ class ScimV2OrganizationsOrgUsersPostBodyName extends \ArrayObject
         return $this->givenName;
     }
     /**
-     * 
+     *
      *
      * @param string $givenName
      *
@@ -47,7 +47,7 @@ class ScimV2OrganizationsOrgUsersPostBodyName extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -56,7 +56,7 @@ class ScimV2OrganizationsOrgUsersPostBodyName extends \ArrayObject
         return $this->familyName;
     }
     /**
-     * 
+     *
      *
      * @param string $familyName
      *

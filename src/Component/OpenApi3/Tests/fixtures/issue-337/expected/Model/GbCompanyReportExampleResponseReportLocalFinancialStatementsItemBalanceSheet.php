@@ -13,151 +13,151 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $tangibleAssets;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $intangibleAssets;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $totalFixedAssets;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $stock;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $tradeDebtors;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $otherDebtors;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $cash;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $miscCurrentAssets;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $totalCurrentAssets;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $totalAssets;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $tradeCreditors;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $bankBorrowingsCurrent;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $otherShortTermFinance;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $miscCurrentLiabilities;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $totalCurrentLiabilities;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $otherLongTermFinance;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $totalLongTermLiabilities;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $totalLiabilities;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $netAssets;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $issuedShareCapital;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $revaluationReserve;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $revenueReserves;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $otherReserves;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $totalShareholdersEquity;
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -166,7 +166,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this->tangibleAssets;
     }
     /**
-     * 
+     *
      *
      * @param float $tangibleAssets
      *
@@ -179,7 +179,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -188,7 +188,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this->intangibleAssets;
     }
     /**
-     * 
+     *
      *
      * @param float $intangibleAssets
      *
@@ -201,7 +201,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -210,7 +210,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this->totalFixedAssets;
     }
     /**
-     * 
+     *
      *
      * @param float $totalFixedAssets
      *
@@ -223,7 +223,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -232,7 +232,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this->stock;
     }
     /**
-     * 
+     *
      *
      * @param float $stock
      *
@@ -245,7 +245,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -254,7 +254,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this->tradeDebtors;
     }
     /**
-     * 
+     *
      *
      * @param float $tradeDebtors
      *
@@ -267,7 +267,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -276,7 +276,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this->otherDebtors;
     }
     /**
-     * 
+     *
      *
      * @param float $otherDebtors
      *
@@ -289,7 +289,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -298,7 +298,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this->cash;
     }
     /**
-     * 
+     *
      *
      * @param float $cash
      *
@@ -311,7 +311,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -320,7 +320,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this->miscCurrentAssets;
     }
     /**
-     * 
+     *
      *
      * @param float $miscCurrentAssets
      *
@@ -333,7 +333,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -342,7 +342,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this->totalCurrentAssets;
     }
     /**
-     * 
+     *
      *
      * @param float $totalCurrentAssets
      *
@@ -355,7 +355,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -364,7 +364,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this->totalAssets;
     }
     /**
-     * 
+     *
      *
      * @param float $totalAssets
      *
@@ -377,7 +377,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -386,7 +386,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this->tradeCreditors;
     }
     /**
-     * 
+     *
      *
      * @param float $tradeCreditors
      *
@@ -399,7 +399,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -408,7 +408,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this->bankBorrowingsCurrent;
     }
     /**
-     * 
+     *
      *
      * @param float $bankBorrowingsCurrent
      *
@@ -421,7 +421,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -430,7 +430,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this->otherShortTermFinance;
     }
     /**
-     * 
+     *
      *
      * @param float $otherShortTermFinance
      *
@@ -443,7 +443,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -452,7 +452,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this->miscCurrentLiabilities;
     }
     /**
-     * 
+     *
      *
      * @param float $miscCurrentLiabilities
      *
@@ -465,7 +465,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -474,7 +474,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this->totalCurrentLiabilities;
     }
     /**
-     * 
+     *
      *
      * @param float $totalCurrentLiabilities
      *
@@ -487,7 +487,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -496,7 +496,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this->otherLongTermFinance;
     }
     /**
-     * 
+     *
      *
      * @param float $otherLongTermFinance
      *
@@ -509,7 +509,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -518,7 +518,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this->totalLongTermLiabilities;
     }
     /**
-     * 
+     *
      *
      * @param float $totalLongTermLiabilities
      *
@@ -531,7 +531,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -540,7 +540,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this->totalLiabilities;
     }
     /**
-     * 
+     *
      *
      * @param float $totalLiabilities
      *
@@ -553,7 +553,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -562,7 +562,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this->netAssets;
     }
     /**
-     * 
+     *
      *
      * @param float $netAssets
      *
@@ -575,7 +575,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -584,7 +584,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this->issuedShareCapital;
     }
     /**
-     * 
+     *
      *
      * @param float $issuedShareCapital
      *
@@ -597,7 +597,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -606,7 +606,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this->revaluationReserve;
     }
     /**
-     * 
+     *
      *
      * @param float $revaluationReserve
      *
@@ -619,7 +619,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -628,7 +628,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this->revenueReserves;
     }
     /**
-     * 
+     *
      *
      * @param float $revenueReserves
      *
@@ -641,7 +641,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -650,7 +650,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this->otherReserves;
     }
     /**
-     * 
+     *
      *
      * @param float $otherReserves
      *
@@ -663,7 +663,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -672,7 +672,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
         return $this->totalShareholdersEquity;
     }
     /**
-     * 
+     *
      *
      * @param float $totalShareholdersEquity
      *

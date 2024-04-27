@@ -25,13 +25,13 @@ class ReposOwnerRepoImportPatchBody extends \ArrayObject
      */
     protected $vcsPassword;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $vcs;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -81,7 +81,7 @@ class ReposOwnerRepoImportPatchBody extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -90,7 +90,7 @@ class ReposOwnerRepoImportPatchBody extends \ArrayObject
         return $this->vcs;
     }
     /**
-     * 
+     *
      *
      * @param string $vcs
      *
@@ -103,7 +103,7 @@ class ReposOwnerRepoImportPatchBody extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -112,7 +112,7 @@ class ReposOwnerRepoImportPatchBody extends \ArrayObject
         return $this->tfvcProject;
     }
     /**
-     * 
+     *
      *
      * @param string $tfvcProject
      *

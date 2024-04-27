@@ -13,43 +13,43 @@ class DisallowedResourceProblem extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $resourceId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $resourceType;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $section;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $title;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $detail;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -58,7 +58,7 @@ class DisallowedResourceProblem extends \ArrayObject
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string $type
      *
@@ -71,7 +71,7 @@ class DisallowedResourceProblem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -80,7 +80,7 @@ class DisallowedResourceProblem extends \ArrayObject
         return $this->resourceId;
     }
     /**
-     * 
+     *
      *
      * @param string $resourceId
      *
@@ -93,7 +93,7 @@ class DisallowedResourceProblem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -102,7 +102,7 @@ class DisallowedResourceProblem extends \ArrayObject
         return $this->resourceType;
     }
     /**
-     * 
+     *
      *
      * @param string $resourceType
      *
@@ -115,7 +115,7 @@ class DisallowedResourceProblem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -124,7 +124,7 @@ class DisallowedResourceProblem extends \ArrayObject
         return $this->section;
     }
     /**
-     * 
+     *
      *
      * @param string $section
      *
@@ -137,7 +137,7 @@ class DisallowedResourceProblem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -146,7 +146,7 @@ class DisallowedResourceProblem extends \ArrayObject
         return $this->title;
     }
     /**
-     * 
+     *
      *
      * @param string $title
      *
@@ -159,7 +159,7 @@ class DisallowedResourceProblem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -168,7 +168,7 @@ class DisallowedResourceProblem extends \ArrayObject
         return $this->detail;
     }
     /**
-     * 
+     *
      *
      * @param string $detail
      *

@@ -13,37 +13,37 @@ class ReviewsGetHaljsonResponse200Links extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var ReviewsGetHaljsonResponse200LinksSelf
      */
     protected $self;
     /**
-     * 
+     *
      *
      * @var ReviewsGetHaljsonResponse200LinksFirst
      */
     protected $first;
     /**
-     * 
+     *
      *
      * @var ReviewsGetHaljsonResponse200LinksLast
      */
     protected $last;
     /**
-     * 
+     *
      *
      * @var ReviewsGetHaljsonResponse200LinksNext
      */
     protected $next;
     /**
-     * 
+     *
      *
      * @var ReviewsGetHaljsonResponse200LinksPrevious
      */
     protected $previous;
     /**
-     * 
+     *
      *
      * @return ReviewsGetHaljsonResponse200LinksSelf
      */
@@ -52,7 +52,7 @@ class ReviewsGetHaljsonResponse200Links extends \ArrayObject
         return $this->self;
     }
     /**
-     * 
+     *
      *
      * @param ReviewsGetHaljsonResponse200LinksSelf $self
      *
@@ -65,7 +65,7 @@ class ReviewsGetHaljsonResponse200Links extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ReviewsGetHaljsonResponse200LinksFirst
      */
@@ -74,7 +74,7 @@ class ReviewsGetHaljsonResponse200Links extends \ArrayObject
         return $this->first;
     }
     /**
-     * 
+     *
      *
      * @param ReviewsGetHaljsonResponse200LinksFirst $first
      *
@@ -87,7 +87,7 @@ class ReviewsGetHaljsonResponse200Links extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ReviewsGetHaljsonResponse200LinksLast
      */
@@ -96,7 +96,7 @@ class ReviewsGetHaljsonResponse200Links extends \ArrayObject
         return $this->last;
     }
     /**
-     * 
+     *
      *
      * @param ReviewsGetHaljsonResponse200LinksLast $last
      *
@@ -109,7 +109,7 @@ class ReviewsGetHaljsonResponse200Links extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ReviewsGetHaljsonResponse200LinksNext
      */
@@ -118,7 +118,7 @@ class ReviewsGetHaljsonResponse200Links extends \ArrayObject
         return $this->next;
     }
     /**
-     * 
+     *
      *
      * @param ReviewsGetHaljsonResponse200LinksNext $next
      *
@@ -131,7 +131,7 @@ class ReviewsGetHaljsonResponse200Links extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ReviewsGetHaljsonResponse200LinksPrevious
      */
@@ -140,7 +140,7 @@ class ReviewsGetHaljsonResponse200Links extends \ArrayObject
         return $this->previous;
     }
     /**
-     * 
+     *
      *
      * @param ReviewsGetHaljsonResponse200LinksPrevious $previous
      *

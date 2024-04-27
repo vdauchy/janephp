@@ -13,79 +13,79 @@ class OrganizationSimple extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $login;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $nodeId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $reposUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $eventsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $hooksUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $issuesUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $membersUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $publicMembersUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $avatarUrl;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -94,7 +94,7 @@ class OrganizationSimple extends \ArrayObject
         return $this->login;
     }
     /**
-     * 
+     *
      *
      * @param string $login
      *
@@ -107,7 +107,7 @@ class OrganizationSimple extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -116,7 +116,7 @@ class OrganizationSimple extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -129,7 +129,7 @@ class OrganizationSimple extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -138,7 +138,7 @@ class OrganizationSimple extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -151,7 +151,7 @@ class OrganizationSimple extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -160,7 +160,7 @@ class OrganizationSimple extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -173,7 +173,7 @@ class OrganizationSimple extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -182,7 +182,7 @@ class OrganizationSimple extends \ArrayObject
         return $this->reposUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $reposUrl
      *
@@ -195,7 +195,7 @@ class OrganizationSimple extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -204,7 +204,7 @@ class OrganizationSimple extends \ArrayObject
         return $this->eventsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $eventsUrl
      *
@@ -217,7 +217,7 @@ class OrganizationSimple extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -226,7 +226,7 @@ class OrganizationSimple extends \ArrayObject
         return $this->hooksUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $hooksUrl
      *
@@ -239,7 +239,7 @@ class OrganizationSimple extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -248,7 +248,7 @@ class OrganizationSimple extends \ArrayObject
         return $this->issuesUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $issuesUrl
      *
@@ -261,7 +261,7 @@ class OrganizationSimple extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -270,7 +270,7 @@ class OrganizationSimple extends \ArrayObject
         return $this->membersUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $membersUrl
      *
@@ -283,7 +283,7 @@ class OrganizationSimple extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -292,7 +292,7 @@ class OrganizationSimple extends \ArrayObject
         return $this->publicMembersUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $publicMembersUrl
      *
@@ -305,7 +305,7 @@ class OrganizationSimple extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -314,7 +314,7 @@ class OrganizationSimple extends \ArrayObject
         return $this->avatarUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $avatarUrl
      *
@@ -327,7 +327,7 @@ class OrganizationSimple extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -336,7 +336,7 @@ class OrganizationSimple extends \ArrayObject
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string|null $description
      *

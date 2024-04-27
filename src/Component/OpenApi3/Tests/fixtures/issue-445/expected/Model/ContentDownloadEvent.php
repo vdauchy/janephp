@@ -13,31 +13,31 @@ class ContentDownloadEvent extends ApplicationEvent
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var list<DownloadTrackingInfo>|null
      */
     protected $downloadInfos;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $fileSize;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $shareToken;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $range;
     /**
-     * 
+     *
      *
      * @return list<DownloadTrackingInfo>|null
      */
@@ -46,7 +46,7 @@ class ContentDownloadEvent extends ApplicationEvent
         return $this->downloadInfos;
     }
     /**
-     * 
+     *
      *
      * @param list<DownloadTrackingInfo>|null $downloadInfos
      *
@@ -59,7 +59,7 @@ class ContentDownloadEvent extends ApplicationEvent
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -68,7 +68,7 @@ class ContentDownloadEvent extends ApplicationEvent
         return $this->fileSize;
     }
     /**
-     * 
+     *
      *
      * @param int $fileSize
      *
@@ -81,7 +81,7 @@ class ContentDownloadEvent extends ApplicationEvent
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -90,7 +90,7 @@ class ContentDownloadEvent extends ApplicationEvent
         return $this->shareToken;
     }
     /**
-     * 
+     *
      *
      * @param string|null $shareToken
      *
@@ -103,7 +103,7 @@ class ContentDownloadEvent extends ApplicationEvent
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -112,7 +112,7 @@ class ContentDownloadEvent extends ApplicationEvent
         return $this->range;
     }
     /**
-     * 
+     *
      *
      * @param string|null $range
      *

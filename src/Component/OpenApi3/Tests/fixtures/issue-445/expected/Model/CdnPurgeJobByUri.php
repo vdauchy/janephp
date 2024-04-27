@@ -13,13 +13,13 @@ class CdnPurgeJobByUri extends CdnPurgeJobBase
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $uri;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -28,7 +28,7 @@ class CdnPurgeJobByUri extends CdnPurgeJobBase
         return $this->uri;
     }
     /**
-     * 
+     *
      *
      * @param string|null $uri
      *

@@ -31,19 +31,19 @@ class TeamsTeamIdTeamSyncGroupMappingsPatchBodyGroupsItem extends \ArrayObject
      */
     protected $groupDescription;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -115,7 +115,7 @@ class TeamsTeamIdTeamSyncGroupMappingsPatchBodyGroupsItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -124,7 +124,7 @@ class TeamsTeamIdTeamSyncGroupMappingsPatchBodyGroupsItem extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param string $id
      *
@@ -137,7 +137,7 @@ class TeamsTeamIdTeamSyncGroupMappingsPatchBodyGroupsItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -146,7 +146,7 @@ class TeamsTeamIdTeamSyncGroupMappingsPatchBodyGroupsItem extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -159,7 +159,7 @@ class TeamsTeamIdTeamSyncGroupMappingsPatchBodyGroupsItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -168,7 +168,7 @@ class TeamsTeamIdTeamSyncGroupMappingsPatchBodyGroupsItem extends \ArrayObject
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string $description
      *

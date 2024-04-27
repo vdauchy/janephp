@@ -13,13 +13,13 @@ class Event extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string|null
      */
@@ -31,7 +31,7 @@ class Event extends \ArrayObject
      */
     protected $actor;
     /**
-     * 
+     *
      *
      * @var EventRepo
      */
@@ -43,25 +43,25 @@ class Event extends \ArrayObject
      */
     protected $org;
     /**
-     * 
+     *
      *
      * @var EventPayload
      */
     protected $payload;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $public;
     /**
-     * 
+     *
      *
      * @var \DateTime|null
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -70,7 +70,7 @@ class Event extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param string $id
      *
@@ -83,7 +83,7 @@ class Event extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -92,7 +92,7 @@ class Event extends \ArrayObject
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string|null $type
      *
@@ -127,7 +127,7 @@ class Event extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return EventRepo
      */
@@ -136,7 +136,7 @@ class Event extends \ArrayObject
         return $this->repo;
     }
     /**
-     * 
+     *
      *
      * @param EventRepo $repo
      *
@@ -171,7 +171,7 @@ class Event extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return EventPayload
      */
@@ -180,7 +180,7 @@ class Event extends \ArrayObject
         return $this->payload;
     }
     /**
-     * 
+     *
      *
      * @param EventPayload $payload
      *
@@ -193,7 +193,7 @@ class Event extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -202,7 +202,7 @@ class Event extends \ArrayObject
         return $this->public;
     }
     /**
-     * 
+     *
      *
      * @param bool $public
      *
@@ -215,7 +215,7 @@ class Event extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime|null
      */
@@ -224,7 +224,7 @@ class Event extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime|null $createdAt
      *

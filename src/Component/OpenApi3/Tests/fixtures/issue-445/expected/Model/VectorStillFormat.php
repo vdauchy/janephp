@@ -13,7 +13,7 @@ class VectorStillFormat extends FormatBase
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
@@ -25,7 +25,7 @@ class VectorStillFormat extends FormatBase
      */
     protected $resizeAction;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -34,7 +34,7 @@ class VectorStillFormat extends FormatBase
         return $this->extension;
     }
     /**
-     * 
+     *
      *
      * @param string|null $extension
      *

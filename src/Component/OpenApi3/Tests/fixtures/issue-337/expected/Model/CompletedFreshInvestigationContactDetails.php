@@ -13,25 +13,25 @@ class CompletedFreshInvestigationContactDetails extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $emailAddress;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $telephoneNumber;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -40,7 +40,7 @@ class CompletedFreshInvestigationContactDetails extends \ArrayObject
         return $this->emailAddress;
     }
     /**
-     * 
+     *
      *
      * @param string $emailAddress
      *
@@ -53,7 +53,7 @@ class CompletedFreshInvestigationContactDetails extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -62,7 +62,7 @@ class CompletedFreshInvestigationContactDetails extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -75,7 +75,7 @@ class CompletedFreshInvestigationContactDetails extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -84,7 +84,7 @@ class CompletedFreshInvestigationContactDetails extends \ArrayObject
         return $this->telephoneNumber;
     }
     /**
-     * 
+     *
      *
      * @param string $telephoneNumber
      *

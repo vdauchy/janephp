@@ -13,25 +13,25 @@ class RateLimit extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $limit;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $remaining;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $reset;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -40,7 +40,7 @@ class RateLimit extends \ArrayObject
         return $this->limit;
     }
     /**
-     * 
+     *
      *
      * @param int $limit
      *
@@ -53,7 +53,7 @@ class RateLimit extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -62,7 +62,7 @@ class RateLimit extends \ArrayObject
         return $this->remaining;
     }
     /**
-     * 
+     *
      *
      * @param int $remaining
      *
@@ -75,7 +75,7 @@ class RateLimit extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -84,7 +84,7 @@ class RateLimit extends \ArrayObject
         return $this->reset;
     }
     /**
-     * 
+     *
      *
      * @param int $reset
      *

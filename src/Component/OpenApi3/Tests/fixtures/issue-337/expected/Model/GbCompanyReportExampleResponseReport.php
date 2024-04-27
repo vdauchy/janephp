@@ -13,103 +13,103 @@ class GbCompanyReportExampleResponseReport extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $companyId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $language;
     /**
-     * 
+     *
      *
      * @var GbCompanyReportExampleResponseReportCompanySummary
      */
     protected $companySummary;
     /**
-     * 
+     *
      *
      * @var GbCompanyReportExampleResponseReportCompanyIdentification
      */
     protected $companyIdentification;
     /**
-     * 
+     *
      *
      * @var GbCompanyReportExampleResponseReportCreditScore
      */
     protected $creditScore;
     /**
-     * 
+     *
      *
      * @var GbCompanyReportExampleResponseReportContactInformation
      */
     protected $contactInformation;
     /**
-     * 
+     *
      *
      * @var GbCompanyReportExampleResponseReportShareCapitalStructure
      */
     protected $shareCapitalStructure;
     /**
-     * 
+     *
      *
      * @var GbCompanyReportExampleResponseReportDirectors
      */
     protected $directors;
     /**
-     * 
+     *
      *
      * @var GbCompanyReportExampleResponseReportOtherInformation
      */
     protected $otherInformation;
     /**
-     * 
+     *
      *
      * @var GbCompanyReportExampleResponseReportGroupStructure
      */
     protected $groupStructure;
     /**
-     * 
+     *
      *
      * @var list<GbCompanyReportExampleResponseReportExtendedGroupStructureItem>
      */
     protected $extendedGroupStructure;
     /**
-     * 
+     *
      *
      * @var list<GbCompanyReportExampleResponseReportFinancialStatementsItem>
      */
     protected $financialStatements;
     /**
-     * 
+     *
      *
      * @var list<GbCompanyReportExampleResponseReportLocalFinancialStatementsItem>
      */
     protected $localFinancialStatements;
     /**
-     * 
+     *
      *
      * @var GbCompanyReportExampleResponseReportPaymentData
      */
     protected $paymentData;
     /**
-     * 
+     *
      *
      * @var GbCompanyReportExampleResponseReportNegativeInformation
      */
     protected $negativeInformation;
     /**
-     * 
+     *
      *
      * @var GbCompanyReportExampleResponseReportAdditionalInformation
      */
     protected $additionalInformation;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -118,7 +118,7 @@ class GbCompanyReportExampleResponseReport extends \ArrayObject
         return $this->companyId;
     }
     /**
-     * 
+     *
      *
      * @param string $companyId
      *
@@ -131,7 +131,7 @@ class GbCompanyReportExampleResponseReport extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -140,7 +140,7 @@ class GbCompanyReportExampleResponseReport extends \ArrayObject
         return $this->language;
     }
     /**
-     * 
+     *
      *
      * @param string $language
      *
@@ -153,7 +153,7 @@ class GbCompanyReportExampleResponseReport extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GbCompanyReportExampleResponseReportCompanySummary
      */
@@ -162,7 +162,7 @@ class GbCompanyReportExampleResponseReport extends \ArrayObject
         return $this->companySummary;
     }
     /**
-     * 
+     *
      *
      * @param GbCompanyReportExampleResponseReportCompanySummary $companySummary
      *
@@ -175,7 +175,7 @@ class GbCompanyReportExampleResponseReport extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GbCompanyReportExampleResponseReportCompanyIdentification
      */
@@ -184,7 +184,7 @@ class GbCompanyReportExampleResponseReport extends \ArrayObject
         return $this->companyIdentification;
     }
     /**
-     * 
+     *
      *
      * @param GbCompanyReportExampleResponseReportCompanyIdentification $companyIdentification
      *
@@ -197,7 +197,7 @@ class GbCompanyReportExampleResponseReport extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GbCompanyReportExampleResponseReportCreditScore
      */
@@ -206,7 +206,7 @@ class GbCompanyReportExampleResponseReport extends \ArrayObject
         return $this->creditScore;
     }
     /**
-     * 
+     *
      *
      * @param GbCompanyReportExampleResponseReportCreditScore $creditScore
      *
@@ -219,7 +219,7 @@ class GbCompanyReportExampleResponseReport extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GbCompanyReportExampleResponseReportContactInformation
      */
@@ -228,7 +228,7 @@ class GbCompanyReportExampleResponseReport extends \ArrayObject
         return $this->contactInformation;
     }
     /**
-     * 
+     *
      *
      * @param GbCompanyReportExampleResponseReportContactInformation $contactInformation
      *
@@ -241,7 +241,7 @@ class GbCompanyReportExampleResponseReport extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GbCompanyReportExampleResponseReportShareCapitalStructure
      */
@@ -250,7 +250,7 @@ class GbCompanyReportExampleResponseReport extends \ArrayObject
         return $this->shareCapitalStructure;
     }
     /**
-     * 
+     *
      *
      * @param GbCompanyReportExampleResponseReportShareCapitalStructure $shareCapitalStructure
      *
@@ -263,7 +263,7 @@ class GbCompanyReportExampleResponseReport extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GbCompanyReportExampleResponseReportDirectors
      */
@@ -272,7 +272,7 @@ class GbCompanyReportExampleResponseReport extends \ArrayObject
         return $this->directors;
     }
     /**
-     * 
+     *
      *
      * @param GbCompanyReportExampleResponseReportDirectors $directors
      *
@@ -285,7 +285,7 @@ class GbCompanyReportExampleResponseReport extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GbCompanyReportExampleResponseReportOtherInformation
      */
@@ -294,7 +294,7 @@ class GbCompanyReportExampleResponseReport extends \ArrayObject
         return $this->otherInformation;
     }
     /**
-     * 
+     *
      *
      * @param GbCompanyReportExampleResponseReportOtherInformation $otherInformation
      *
@@ -307,7 +307,7 @@ class GbCompanyReportExampleResponseReport extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GbCompanyReportExampleResponseReportGroupStructure
      */
@@ -316,7 +316,7 @@ class GbCompanyReportExampleResponseReport extends \ArrayObject
         return $this->groupStructure;
     }
     /**
-     * 
+     *
      *
      * @param GbCompanyReportExampleResponseReportGroupStructure $groupStructure
      *
@@ -329,7 +329,7 @@ class GbCompanyReportExampleResponseReport extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<GbCompanyReportExampleResponseReportExtendedGroupStructureItem>
      */
@@ -338,7 +338,7 @@ class GbCompanyReportExampleResponseReport extends \ArrayObject
         return $this->extendedGroupStructure;
     }
     /**
-     * 
+     *
      *
      * @param list<GbCompanyReportExampleResponseReportExtendedGroupStructureItem> $extendedGroupStructure
      *
@@ -351,7 +351,7 @@ class GbCompanyReportExampleResponseReport extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<GbCompanyReportExampleResponseReportFinancialStatementsItem>
      */
@@ -360,7 +360,7 @@ class GbCompanyReportExampleResponseReport extends \ArrayObject
         return $this->financialStatements;
     }
     /**
-     * 
+     *
      *
      * @param list<GbCompanyReportExampleResponseReportFinancialStatementsItem> $financialStatements
      *
@@ -373,7 +373,7 @@ class GbCompanyReportExampleResponseReport extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<GbCompanyReportExampleResponseReportLocalFinancialStatementsItem>
      */
@@ -382,7 +382,7 @@ class GbCompanyReportExampleResponseReport extends \ArrayObject
         return $this->localFinancialStatements;
     }
     /**
-     * 
+     *
      *
      * @param list<GbCompanyReportExampleResponseReportLocalFinancialStatementsItem> $localFinancialStatements
      *
@@ -395,7 +395,7 @@ class GbCompanyReportExampleResponseReport extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GbCompanyReportExampleResponseReportPaymentData
      */
@@ -404,7 +404,7 @@ class GbCompanyReportExampleResponseReport extends \ArrayObject
         return $this->paymentData;
     }
     /**
-     * 
+     *
      *
      * @param GbCompanyReportExampleResponseReportPaymentData $paymentData
      *
@@ -417,7 +417,7 @@ class GbCompanyReportExampleResponseReport extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GbCompanyReportExampleResponseReportNegativeInformation
      */
@@ -426,7 +426,7 @@ class GbCompanyReportExampleResponseReport extends \ArrayObject
         return $this->negativeInformation;
     }
     /**
-     * 
+     *
      *
      * @param GbCompanyReportExampleResponseReportNegativeInformation $negativeInformation
      *
@@ -439,7 +439,7 @@ class GbCompanyReportExampleResponseReport extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GbCompanyReportExampleResponseReportAdditionalInformation
      */
@@ -448,7 +448,7 @@ class GbCompanyReportExampleResponseReport extends \ArrayObject
         return $this->additionalInformation;
     }
     /**
-     * 
+     *
      *
      * @param GbCompanyReportExampleResponseReportAdditionalInformation $additionalInformation
      *

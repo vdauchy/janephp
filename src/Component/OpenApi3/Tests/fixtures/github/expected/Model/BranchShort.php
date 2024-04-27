@@ -13,25 +13,25 @@ class BranchShort extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var BranchShortCommit
      */
     protected $commit;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $protected;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -40,7 +40,7 @@ class BranchShort extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -53,7 +53,7 @@ class BranchShort extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return BranchShortCommit
      */
@@ -62,7 +62,7 @@ class BranchShort extends \ArrayObject
         return $this->commit;
     }
     /**
-     * 
+     *
      *
      * @param BranchShortCommit $commit
      *
@@ -75,7 +75,7 @@ class BranchShort extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -84,7 +84,7 @@ class BranchShort extends \ArrayObject
         return $this->protected;
     }
     /**
-     * 
+     *
      *
      * @param bool $protected
      *

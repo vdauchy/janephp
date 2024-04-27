@@ -13,13 +13,13 @@ class XmpMappingEntryConfigurationBase
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $kind;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -28,7 +28,7 @@ class XmpMappingEntryConfigurationBase
         return $this->kind;
     }
     /**
-     * 
+     *
      *
      * @param string $kind
      */

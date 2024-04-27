@@ -13,25 +13,25 @@ class TestGetBody extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $foo;
     /**
-     * 
+     *
      *
      * @var Bar
      */
     protected $bar;
     /**
-     * 
+     *
      *
      * @var TestGetBodyBaz
      */
     protected $baz;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -40,7 +40,7 @@ class TestGetBody extends \ArrayObject
         return $this->foo;
     }
     /**
-     * 
+     *
      *
      * @param string $foo
      *
@@ -53,7 +53,7 @@ class TestGetBody extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return Bar
      */
@@ -62,7 +62,7 @@ class TestGetBody extends \ArrayObject
         return $this->bar;
     }
     /**
-     * 
+     *
      *
      * @param Bar $bar
      *
@@ -75,7 +75,7 @@ class TestGetBody extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return TestGetBodyBaz
      */
@@ -84,7 +84,7 @@ class TestGetBody extends \ArrayObject
         return $this->baz;
     }
     /**
-     * 
+     *
      *
      * @param TestGetBodyBaz $baz
      *

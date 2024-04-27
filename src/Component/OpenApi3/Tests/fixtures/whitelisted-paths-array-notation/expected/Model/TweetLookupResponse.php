@@ -13,25 +13,25 @@ class TweetLookupResponse extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var list<mixed>
      */
     protected $data;
     /**
-     * 
+     *
      *
      * @var Expansions
      */
     protected $includes;
     /**
-     * 
+     *
      *
      * @var list<mixed>
      */
     protected $errors;
     /**
-     * 
+     *
      *
      * @return list<mixed>
      */
@@ -40,7 +40,7 @@ class TweetLookupResponse extends \ArrayObject
         return $this->data;
     }
     /**
-     * 
+     *
      *
      * @param list<mixed> $data
      *
@@ -53,7 +53,7 @@ class TweetLookupResponse extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return Expansions
      */
@@ -62,7 +62,7 @@ class TweetLookupResponse extends \ArrayObject
         return $this->includes;
     }
     /**
-     * 
+     *
      *
      * @param Expansions $includes
      *
@@ -75,7 +75,7 @@ class TweetLookupResponse extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<mixed>
      */
@@ -84,7 +84,7 @@ class TweetLookupResponse extends \ArrayObject
         return $this->errors;
     }
     /**
-     * 
+     *
      *
      * @param list<mixed> $errors
      *

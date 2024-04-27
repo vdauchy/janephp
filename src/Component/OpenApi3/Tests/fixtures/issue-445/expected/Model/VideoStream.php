@@ -13,91 +13,91 @@ class VideoStream
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $bitRate;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $codec;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $displayAspectRatio;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $durationInSeconds;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $format;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $frameCount;
     /**
-     * 
+     *
      *
      * @var float|null
      */
     protected $frameRate;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $height;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $language;
     /**
-     * 
+     *
      *
      * @var float|null
      */
     protected $pixelAspectRatio;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $resolution;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $streamSize;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $width;
     /**
-     * 
+     *
      *
      * @var float|null
      */
     protected $rotation;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -106,7 +106,7 @@ class VideoStream
         return $this->bitRate;
     }
     /**
-     * 
+     *
      *
      * @param string|null $bitRate
      *
@@ -119,7 +119,7 @@ class VideoStream
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -128,7 +128,7 @@ class VideoStream
         return $this->codec;
     }
     /**
-     * 
+     *
      *
      * @param string|null $codec
      *
@@ -141,7 +141,7 @@ class VideoStream
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -150,7 +150,7 @@ class VideoStream
         return $this->displayAspectRatio;
     }
     /**
-     * 
+     *
      *
      * @param string|null $displayAspectRatio
      *
@@ -163,7 +163,7 @@ class VideoStream
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -172,7 +172,7 @@ class VideoStream
         return $this->durationInSeconds;
     }
     /**
-     * 
+     *
      *
      * @param float $durationInSeconds
      *
@@ -185,7 +185,7 @@ class VideoStream
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -194,7 +194,7 @@ class VideoStream
         return $this->format;
     }
     /**
-     * 
+     *
      *
      * @param string|null $format
      *
@@ -207,7 +207,7 @@ class VideoStream
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -216,7 +216,7 @@ class VideoStream
         return $this->frameCount;
     }
     /**
-     * 
+     *
      *
      * @param int|null $frameCount
      *
@@ -229,7 +229,7 @@ class VideoStream
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float|null
      */
@@ -238,7 +238,7 @@ class VideoStream
         return $this->frameRate;
     }
     /**
-     * 
+     *
      *
      * @param float|null $frameRate
      *
@@ -251,7 +251,7 @@ class VideoStream
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -260,7 +260,7 @@ class VideoStream
         return $this->height;
     }
     /**
-     * 
+     *
      *
      * @param int|null $height
      *
@@ -273,7 +273,7 @@ class VideoStream
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -282,7 +282,7 @@ class VideoStream
         return $this->language;
     }
     /**
-     * 
+     *
      *
      * @param string|null $language
      *
@@ -295,7 +295,7 @@ class VideoStream
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float|null
      */
@@ -304,7 +304,7 @@ class VideoStream
         return $this->pixelAspectRatio;
     }
     /**
-     * 
+     *
      *
      * @param float|null $pixelAspectRatio
      *
@@ -317,7 +317,7 @@ class VideoStream
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -326,7 +326,7 @@ class VideoStream
         return $this->resolution;
     }
     /**
-     * 
+     *
      *
      * @param int|null $resolution
      *
@@ -339,7 +339,7 @@ class VideoStream
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -348,7 +348,7 @@ class VideoStream
         return $this->streamSize;
     }
     /**
-     * 
+     *
      *
      * @param int|null $streamSize
      *
@@ -361,7 +361,7 @@ class VideoStream
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -370,7 +370,7 @@ class VideoStream
         return $this->width;
     }
     /**
-     * 
+     *
      *
      * @param int|null $width
      *
@@ -383,7 +383,7 @@ class VideoStream
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float|null
      */
@@ -392,7 +392,7 @@ class VideoStream
         return $this->rotation;
     }
     /**
-     * 
+     *
      *
      * @param float|null $rotation
      *

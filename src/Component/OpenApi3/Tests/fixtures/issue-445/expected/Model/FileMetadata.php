@@ -13,67 +13,67 @@ class FileMetadata
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var mixed|null
      */
     protected $names;
     /**
-     * 
+     *
      *
      * @var mixed|null
      */
     protected $descriptions;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $fileExtension;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $fileName;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $filePath;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $fileSizeInBytes;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $sha1Hash;
     /**
-     * 
+     *
      *
      * @var mixed|null
      */
     protected $xmpMetadata;
     /**
-     * 
+     *
      *
      * @var mixed|null
      */
     protected $exifMetadata;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $language;
     /**
-     * 
+     *
      *
      * @return mixed
      */
@@ -82,7 +82,7 @@ class FileMetadata
         return $this->names;
     }
     /**
-     * 
+     *
      *
      * @param mixed $names
      *
@@ -95,7 +95,7 @@ class FileMetadata
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return mixed
      */
@@ -104,7 +104,7 @@ class FileMetadata
         return $this->descriptions;
     }
     /**
-     * 
+     *
      *
      * @param mixed $descriptions
      *
@@ -117,7 +117,7 @@ class FileMetadata
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -126,7 +126,7 @@ class FileMetadata
         return $this->fileExtension;
     }
     /**
-     * 
+     *
      *
      * @param string|null $fileExtension
      *
@@ -139,7 +139,7 @@ class FileMetadata
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -148,7 +148,7 @@ class FileMetadata
         return $this->fileName;
     }
     /**
-     * 
+     *
      *
      * @param string|null $fileName
      *
@@ -161,7 +161,7 @@ class FileMetadata
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -170,7 +170,7 @@ class FileMetadata
         return $this->filePath;
     }
     /**
-     * 
+     *
      *
      * @param string|null $filePath
      *
@@ -183,7 +183,7 @@ class FileMetadata
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -192,7 +192,7 @@ class FileMetadata
         return $this->fileSizeInBytes;
     }
     /**
-     * 
+     *
      *
      * @param int|null $fileSizeInBytes
      *
@@ -205,7 +205,7 @@ class FileMetadata
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -214,7 +214,7 @@ class FileMetadata
         return $this->sha1Hash;
     }
     /**
-     * 
+     *
      *
      * @param string|null $sha1Hash
      *
@@ -227,7 +227,7 @@ class FileMetadata
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return mixed
      */
@@ -236,7 +236,7 @@ class FileMetadata
         return $this->xmpMetadata;
     }
     /**
-     * 
+     *
      *
      * @param mixed $xmpMetadata
      *
@@ -249,7 +249,7 @@ class FileMetadata
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return mixed
      */
@@ -258,7 +258,7 @@ class FileMetadata
         return $this->exifMetadata;
     }
     /**
-     * 
+     *
      *
      * @param mixed $exifMetadata
      *
@@ -271,7 +271,7 @@ class FileMetadata
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -280,7 +280,7 @@ class FileMetadata
         return $this->language;
     }
     /**
-     * 
+     *
      *
      * @param string|null $language
      *

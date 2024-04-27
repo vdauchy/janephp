@@ -13,37 +13,37 @@ class CheckRunOutput extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $title;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $summary;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $text;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $annotationsCount;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $annotationsUrl;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -52,7 +52,7 @@ class CheckRunOutput extends \ArrayObject
         return $this->title;
     }
     /**
-     * 
+     *
      *
      * @param string|null $title
      *
@@ -65,7 +65,7 @@ class CheckRunOutput extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -74,7 +74,7 @@ class CheckRunOutput extends \ArrayObject
         return $this->summary;
     }
     /**
-     * 
+     *
      *
      * @param string|null $summary
      *
@@ -87,7 +87,7 @@ class CheckRunOutput extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -96,7 +96,7 @@ class CheckRunOutput extends \ArrayObject
         return $this->text;
     }
     /**
-     * 
+     *
      *
      * @param string|null $text
      *
@@ -109,7 +109,7 @@ class CheckRunOutput extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -118,7 +118,7 @@ class CheckRunOutput extends \ArrayObject
         return $this->annotationsCount;
     }
     /**
-     * 
+     *
      *
      * @param int $annotationsCount
      *
@@ -131,7 +131,7 @@ class CheckRunOutput extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -140,7 +140,7 @@ class CheckRunOutput extends \ArrayObject
         return $this->annotationsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $annotationsUrl
      *

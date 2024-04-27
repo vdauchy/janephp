@@ -13,13 +13,13 @@ class TestComplexListGetResponse200Item1
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $email;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -28,7 +28,7 @@ class TestComplexListGetResponse200Item1
         return $this->email;
     }
     /**
-     * 
+     *
      *
      * @param string $email
      *

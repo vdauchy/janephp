@@ -6,7 +6,7 @@ class UserCancelDeletionRequest extends \PicturePark\API\Runtime\Client\BaseEndp
 {
     protected $id;
     /**
-     * 
+     *
      *
      * @param string $id User ID to action on.
      */

@@ -13,37 +13,37 @@ class CodeSearchResultItem extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $path;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $sha;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $gitUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -55,43 +55,43 @@ class CodeSearchResultItem extends \ArrayObject
      */
     protected $repository;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $score;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $fileSize;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $language;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $lastModifiedAt;
     /**
-     * 
+     *
      *
      * @var list<string>
      */
     protected $lineNumbers;
     /**
-     * 
+     *
      *
      * @var list<SearchResultTextMatchesItem>
      */
     protected $textMatches;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -100,7 +100,7 @@ class CodeSearchResultItem extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -113,7 +113,7 @@ class CodeSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -122,7 +122,7 @@ class CodeSearchResultItem extends \ArrayObject
         return $this->path;
     }
     /**
-     * 
+     *
      *
      * @param string $path
      *
@@ -135,7 +135,7 @@ class CodeSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -144,7 +144,7 @@ class CodeSearchResultItem extends \ArrayObject
         return $this->sha;
     }
     /**
-     * 
+     *
      *
      * @param string $sha
      *
@@ -157,7 +157,7 @@ class CodeSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -166,7 +166,7 @@ class CodeSearchResultItem extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -179,7 +179,7 @@ class CodeSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -188,7 +188,7 @@ class CodeSearchResultItem extends \ArrayObject
         return $this->gitUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $gitUrl
      *
@@ -201,7 +201,7 @@ class CodeSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -210,7 +210,7 @@ class CodeSearchResultItem extends \ArrayObject
         return $this->htmlUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $htmlUrl
      *
@@ -245,7 +245,7 @@ class CodeSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -254,7 +254,7 @@ class CodeSearchResultItem extends \ArrayObject
         return $this->score;
     }
     /**
-     * 
+     *
      *
      * @param int $score
      *
@@ -267,7 +267,7 @@ class CodeSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -276,7 +276,7 @@ class CodeSearchResultItem extends \ArrayObject
         return $this->fileSize;
     }
     /**
-     * 
+     *
      *
      * @param int $fileSize
      *
@@ -289,7 +289,7 @@ class CodeSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -298,7 +298,7 @@ class CodeSearchResultItem extends \ArrayObject
         return $this->language;
     }
     /**
-     * 
+     *
      *
      * @param string|null $language
      *
@@ -311,7 +311,7 @@ class CodeSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -320,7 +320,7 @@ class CodeSearchResultItem extends \ArrayObject
         return $this->lastModifiedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $lastModifiedAt
      *
@@ -333,7 +333,7 @@ class CodeSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -342,7 +342,7 @@ class CodeSearchResultItem extends \ArrayObject
         return $this->lineNumbers;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $lineNumbers
      *
@@ -355,7 +355,7 @@ class CodeSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<SearchResultTextMatchesItem>
      */
@@ -364,7 +364,7 @@ class CodeSearchResultItem extends \ArrayObject
         return $this->textMatches;
     }
     /**
-     * 
+     *
      *
      * @param list<SearchResultTextMatchesItem> $textMatches
      *

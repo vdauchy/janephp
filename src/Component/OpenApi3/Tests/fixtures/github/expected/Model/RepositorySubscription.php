@@ -25,25 +25,25 @@ class RepositorySubscription extends \ArrayObject
      */
     protected $ignored;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $reason;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -93,7 +93,7 @@ class RepositorySubscription extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -102,7 +102,7 @@ class RepositorySubscription extends \ArrayObject
         return $this->reason;
     }
     /**
-     * 
+     *
      *
      * @param string|null $reason
      *
@@ -115,7 +115,7 @@ class RepositorySubscription extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -124,7 +124,7 @@ class RepositorySubscription extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $createdAt
      *
@@ -137,7 +137,7 @@ class RepositorySubscription extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -146,7 +146,7 @@ class RepositorySubscription extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -159,7 +159,7 @@ class RepositorySubscription extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -168,7 +168,7 @@ class RepositorySubscription extends \ArrayObject
         return $this->repositoryUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $repositoryUrl
      *

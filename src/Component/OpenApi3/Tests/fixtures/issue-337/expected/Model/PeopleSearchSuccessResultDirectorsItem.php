@@ -13,67 +13,67 @@ class PeopleSearchSuccessResultDirectorsItem extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $peopleId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $firstName;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $lastName;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $country;
     /**
-     * 
+     *
      *
      * @var PeopleSearchSuccessResultDirectorsItemCompany
      */
     protected $company;
     /**
-     * 
+     *
      *
      * @var PeopleSearchSuccessResultDirectorsItemAddress
      */
     protected $address;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $status;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $dateOfLatestChange;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $dateOfBirth;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $localDirectorNumber;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -82,7 +82,7 @@ class PeopleSearchSuccessResultDirectorsItem extends \ArrayObject
         return $this->peopleId;
     }
     /**
-     * 
+     *
      *
      * @param string $peopleId
      *
@@ -95,7 +95,7 @@ class PeopleSearchSuccessResultDirectorsItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -104,7 +104,7 @@ class PeopleSearchSuccessResultDirectorsItem extends \ArrayObject
         return $this->firstName;
     }
     /**
-     * 
+     *
      *
      * @param string $firstName
      *
@@ -117,7 +117,7 @@ class PeopleSearchSuccessResultDirectorsItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -126,7 +126,7 @@ class PeopleSearchSuccessResultDirectorsItem extends \ArrayObject
         return $this->lastName;
     }
     /**
-     * 
+     *
      *
      * @param string $lastName
      *
@@ -139,7 +139,7 @@ class PeopleSearchSuccessResultDirectorsItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -148,7 +148,7 @@ class PeopleSearchSuccessResultDirectorsItem extends \ArrayObject
         return $this->country;
     }
     /**
-     * 
+     *
      *
      * @param string $country
      *
@@ -161,7 +161,7 @@ class PeopleSearchSuccessResultDirectorsItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return PeopleSearchSuccessResultDirectorsItemCompany
      */
@@ -170,7 +170,7 @@ class PeopleSearchSuccessResultDirectorsItem extends \ArrayObject
         return $this->company;
     }
     /**
-     * 
+     *
      *
      * @param PeopleSearchSuccessResultDirectorsItemCompany $company
      *
@@ -183,7 +183,7 @@ class PeopleSearchSuccessResultDirectorsItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return PeopleSearchSuccessResultDirectorsItemAddress
      */
@@ -192,7 +192,7 @@ class PeopleSearchSuccessResultDirectorsItem extends \ArrayObject
         return $this->address;
     }
     /**
-     * 
+     *
      *
      * @param PeopleSearchSuccessResultDirectorsItemAddress $address
      *
@@ -205,7 +205,7 @@ class PeopleSearchSuccessResultDirectorsItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -214,7 +214,7 @@ class PeopleSearchSuccessResultDirectorsItem extends \ArrayObject
         return $this->status;
     }
     /**
-     * 
+     *
      *
      * @param string $status
      *
@@ -227,7 +227,7 @@ class PeopleSearchSuccessResultDirectorsItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -236,7 +236,7 @@ class PeopleSearchSuccessResultDirectorsItem extends \ArrayObject
         return $this->dateOfLatestChange;
     }
     /**
-     * 
+     *
      *
      * @param string $dateOfLatestChange
      *
@@ -249,7 +249,7 @@ class PeopleSearchSuccessResultDirectorsItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -258,7 +258,7 @@ class PeopleSearchSuccessResultDirectorsItem extends \ArrayObject
         return $this->dateOfBirth;
     }
     /**
-     * 
+     *
      *
      * @param string $dateOfBirth
      *
@@ -271,7 +271,7 @@ class PeopleSearchSuccessResultDirectorsItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -280,7 +280,7 @@ class PeopleSearchSuccessResultDirectorsItem extends \ArrayObject
         return $this->localDirectorNumber;
     }
     /**
-     * 
+     *
      *
      * @param string $localDirectorNumber
      *

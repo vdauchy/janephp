@@ -13,85 +13,85 @@ class SchemaFieldSchemaIndexInfoSimpleSearchNestingException extends \ArrayObjec
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $traceLevel;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $traceId;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $traceJobId;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $httpStatusCode;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $exceptionMessage;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $kind;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $customerId;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $customerAlias;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $userId;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $schemaId;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $fieldId;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $relatedFieldId;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $relatedOuterFieldId;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -100,7 +100,7 @@ class SchemaFieldSchemaIndexInfoSimpleSearchNestingException extends \ArrayObjec
         return $this->traceLevel;
     }
     /**
-     * 
+     *
      *
      * @param string $traceLevel
      *
@@ -113,7 +113,7 @@ class SchemaFieldSchemaIndexInfoSimpleSearchNestingException extends \ArrayObjec
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -122,7 +122,7 @@ class SchemaFieldSchemaIndexInfoSimpleSearchNestingException extends \ArrayObjec
         return $this->traceId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $traceId
      *
@@ -135,7 +135,7 @@ class SchemaFieldSchemaIndexInfoSimpleSearchNestingException extends \ArrayObjec
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -144,7 +144,7 @@ class SchemaFieldSchemaIndexInfoSimpleSearchNestingException extends \ArrayObjec
         return $this->traceJobId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $traceJobId
      *
@@ -157,7 +157,7 @@ class SchemaFieldSchemaIndexInfoSimpleSearchNestingException extends \ArrayObjec
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -166,7 +166,7 @@ class SchemaFieldSchemaIndexInfoSimpleSearchNestingException extends \ArrayObjec
         return $this->httpStatusCode;
     }
     /**
-     * 
+     *
      *
      * @param int $httpStatusCode
      *
@@ -179,7 +179,7 @@ class SchemaFieldSchemaIndexInfoSimpleSearchNestingException extends \ArrayObjec
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -188,7 +188,7 @@ class SchemaFieldSchemaIndexInfoSimpleSearchNestingException extends \ArrayObjec
         return $this->exceptionMessage;
     }
     /**
-     * 
+     *
      *
      * @param string|null $exceptionMessage
      *
@@ -201,7 +201,7 @@ class SchemaFieldSchemaIndexInfoSimpleSearchNestingException extends \ArrayObjec
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -210,7 +210,7 @@ class SchemaFieldSchemaIndexInfoSimpleSearchNestingException extends \ArrayObjec
         return $this->kind;
     }
     /**
-     * 
+     *
      *
      * @param string $kind
      *
@@ -223,7 +223,7 @@ class SchemaFieldSchemaIndexInfoSimpleSearchNestingException extends \ArrayObjec
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -232,7 +232,7 @@ class SchemaFieldSchemaIndexInfoSimpleSearchNestingException extends \ArrayObjec
         return $this->customerId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $customerId
      *
@@ -245,7 +245,7 @@ class SchemaFieldSchemaIndexInfoSimpleSearchNestingException extends \ArrayObjec
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -254,7 +254,7 @@ class SchemaFieldSchemaIndexInfoSimpleSearchNestingException extends \ArrayObjec
         return $this->customerAlias;
     }
     /**
-     * 
+     *
      *
      * @param string|null $customerAlias
      *
@@ -267,7 +267,7 @@ class SchemaFieldSchemaIndexInfoSimpleSearchNestingException extends \ArrayObjec
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -276,7 +276,7 @@ class SchemaFieldSchemaIndexInfoSimpleSearchNestingException extends \ArrayObjec
         return $this->userId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $userId
      *
@@ -289,7 +289,7 @@ class SchemaFieldSchemaIndexInfoSimpleSearchNestingException extends \ArrayObjec
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -298,7 +298,7 @@ class SchemaFieldSchemaIndexInfoSimpleSearchNestingException extends \ArrayObjec
         return $this->schemaId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $schemaId
      *
@@ -311,7 +311,7 @@ class SchemaFieldSchemaIndexInfoSimpleSearchNestingException extends \ArrayObjec
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -320,7 +320,7 @@ class SchemaFieldSchemaIndexInfoSimpleSearchNestingException extends \ArrayObjec
         return $this->fieldId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $fieldId
      *
@@ -333,7 +333,7 @@ class SchemaFieldSchemaIndexInfoSimpleSearchNestingException extends \ArrayObjec
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -342,7 +342,7 @@ class SchemaFieldSchemaIndexInfoSimpleSearchNestingException extends \ArrayObjec
         return $this->relatedFieldId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $relatedFieldId
      *
@@ -355,7 +355,7 @@ class SchemaFieldSchemaIndexInfoSimpleSearchNestingException extends \ArrayObjec
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -364,7 +364,7 @@ class SchemaFieldSchemaIndexInfoSimpleSearchNestingException extends \ArrayObjec
         return $this->relatedOuterFieldId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $relatedOuterFieldId
      *

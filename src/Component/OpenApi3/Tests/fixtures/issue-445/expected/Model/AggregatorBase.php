@@ -37,7 +37,7 @@ class AggregatorBase
      */
     protected $filter;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -119,7 +119,7 @@ class AggregatorBase
         $this->filter = $filter;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -128,7 +128,7 @@ class AggregatorBase
         return $this->kind;
     }
     /**
-     * 
+     *
      *
      * @param string $kind
      */

@@ -13,49 +13,49 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordSt
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $addedToAcceptList;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $alertState;
     /**
-     * 
+     *
      *
      * @var list<string>
      */
     protected $assignedTo;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $assignmentType;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $division;
     /**
-     * 
+     *
      *
      * @var list<ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordStateHistoryItem>
      */
     protected $history;
     /**
-     * 
+     *
      *
      * @var list<ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordStateMatchStatesItem>
      */
     protected $matchStates;
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -64,7 +64,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordSt
         return $this->addedToAcceptList;
     }
     /**
-     * 
+     *
      *
      * @param bool $addedToAcceptList
      *
@@ -77,7 +77,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordSt
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -86,7 +86,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordSt
         return $this->alertState;
     }
     /**
-     * 
+     *
      *
      * @param string $alertState
      *
@@ -99,7 +99,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordSt
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -108,7 +108,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordSt
         return $this->assignedTo;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $assignedTo
      *
@@ -121,7 +121,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordSt
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -130,7 +130,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordSt
         return $this->assignmentType;
     }
     /**
-     * 
+     *
      *
      * @param string $assignmentType
      *
@@ -143,7 +143,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordSt
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -152,7 +152,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordSt
         return $this->division;
     }
     /**
-     * 
+     *
      *
      * @param string $division
      *
@@ -165,7 +165,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordSt
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordStateHistoryItem>
      */
@@ -174,7 +174,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordSt
         return $this->history;
     }
     /**
-     * 
+     *
      *
      * @param list<ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordStateHistoryItem> $history
      *
@@ -187,7 +187,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordSt
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordStateMatchStatesItem>
      */
@@ -196,7 +196,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordSt
         return $this->matchStates;
     }
     /**
-     * 
+     *
      *
      * @param list<ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordStateMatchStatesItem> $matchStates
      *

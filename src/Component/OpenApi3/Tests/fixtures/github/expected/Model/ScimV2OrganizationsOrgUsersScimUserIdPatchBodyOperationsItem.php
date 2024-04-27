@@ -13,25 +13,25 @@ class ScimV2OrganizationsOrgUsersScimUserIdPatchBodyOperationsItem extends \Arra
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $op;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $path;
     /**
-     * 
+     *
      *
      * @var mixed
      */
     protected $value;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -40,7 +40,7 @@ class ScimV2OrganizationsOrgUsersScimUserIdPatchBodyOperationsItem extends \Arra
         return $this->op;
     }
     /**
-     * 
+     *
      *
      * @param string $op
      *
@@ -53,7 +53,7 @@ class ScimV2OrganizationsOrgUsersScimUserIdPatchBodyOperationsItem extends \Arra
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -62,7 +62,7 @@ class ScimV2OrganizationsOrgUsersScimUserIdPatchBodyOperationsItem extends \Arra
         return $this->path;
     }
     /**
-     * 
+     *
      *
      * @param string $path
      *
@@ -75,7 +75,7 @@ class ScimV2OrganizationsOrgUsersScimUserIdPatchBodyOperationsItem extends \Arra
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return mixed
      */
@@ -84,7 +84,7 @@ class ScimV2OrganizationsOrgUsersScimUserIdPatchBodyOperationsItem extends \Arra
         return $this->value;
     }
     /**
-     * 
+     *
      *
      * @param mixed $value
      *

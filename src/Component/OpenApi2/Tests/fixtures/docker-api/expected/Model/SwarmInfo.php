@@ -21,7 +21,7 @@ class SwarmInfo
     /**
     * IP address at which this node can be reached by other nodes in the
     swarm.
-    
+
     *
     * @var string
     */
@@ -33,13 +33,13 @@ class SwarmInfo
      */
     protected $localNodeState = '';
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $controlAvailable = false;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -65,7 +65,7 @@ class SwarmInfo
     /**
     * ClusterInfo represents information about the swarm as is returned by the
     "/info" endpoint. Join-tokens are not included.
-    
+
     *
     * @var ClusterInfo|null
     */
@@ -95,7 +95,7 @@ class SwarmInfo
     /**
     * IP address at which this node can be reached by other nodes in the
     swarm.
-    
+
     *
     * @return string
     */
@@ -106,7 +106,7 @@ class SwarmInfo
     /**
     * IP address at which this node can be reached by other nodes in the
     swarm.
-    
+
     *
     * @param string $nodeAddr
     *
@@ -141,7 +141,7 @@ class SwarmInfo
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -150,7 +150,7 @@ class SwarmInfo
         return $this->controlAvailable;
     }
     /**
-     * 
+     *
      *
      * @param bool $controlAvailable
      *
@@ -163,7 +163,7 @@ class SwarmInfo
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -172,7 +172,7 @@ class SwarmInfo
         return $this->error;
     }
     /**
-     * 
+     *
      *
      * @param string $error
      *
@@ -253,7 +253,7 @@ class SwarmInfo
     /**
     * ClusterInfo represents information about the swarm as is returned by the
     "/info" endpoint. Join-tokens are not included.
-    
+
     *
     * @return ClusterInfo|null
     */
@@ -264,7 +264,7 @@ class SwarmInfo
     /**
     * ClusterInfo represents information about the swarm as is returned by the
     "/info" endpoint. Join-tokens are not included.
-    
+
     *
     * @param ClusterInfo|null $cluster
     *

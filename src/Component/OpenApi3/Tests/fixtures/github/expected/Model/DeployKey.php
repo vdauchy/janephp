@@ -13,49 +13,49 @@ class DeployKey extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $key;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $title;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $verified;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $readOnly;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -64,7 +64,7 @@ class DeployKey extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -77,7 +77,7 @@ class DeployKey extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -86,7 +86,7 @@ class DeployKey extends \ArrayObject
         return $this->key;
     }
     /**
-     * 
+     *
      *
      * @param string $key
      *
@@ -99,7 +99,7 @@ class DeployKey extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -108,7 +108,7 @@ class DeployKey extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -121,7 +121,7 @@ class DeployKey extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -130,7 +130,7 @@ class DeployKey extends \ArrayObject
         return $this->title;
     }
     /**
-     * 
+     *
      *
      * @param string $title
      *
@@ -143,7 +143,7 @@ class DeployKey extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -152,7 +152,7 @@ class DeployKey extends \ArrayObject
         return $this->verified;
     }
     /**
-     * 
+     *
      *
      * @param bool $verified
      *
@@ -165,7 +165,7 @@ class DeployKey extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -174,7 +174,7 @@ class DeployKey extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param string $createdAt
      *
@@ -187,7 +187,7 @@ class DeployKey extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -196,7 +196,7 @@ class DeployKey extends \ArrayObject
         return $this->readOnly;
     }
     /**
-     * 
+     *
      *
      * @param bool $readOnly
      *

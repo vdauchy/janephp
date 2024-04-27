@@ -13,43 +13,43 @@ class Info extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $title;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $termsOfService;
     /**
-     * 
+     *
      *
      * @var Contact|null
      */
     protected $contact;
     /**
-     * 
+     *
      *
      * @var License|null
      */
     protected $license;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $version;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -58,7 +58,7 @@ class Info extends \ArrayObject
         return $this->title;
     }
     /**
-     * 
+     *
      *
      * @param string|null $title
      *
@@ -71,7 +71,7 @@ class Info extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -80,7 +80,7 @@ class Info extends \ArrayObject
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string|null $description
      *
@@ -93,7 +93,7 @@ class Info extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -102,7 +102,7 @@ class Info extends \ArrayObject
         return $this->termsOfService;
     }
     /**
-     * 
+     *
      *
      * @param string|null $termsOfService
      *
@@ -115,7 +115,7 @@ class Info extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return Contact|null
      */
@@ -124,7 +124,7 @@ class Info extends \ArrayObject
         return $this->contact;
     }
     /**
-     * 
+     *
      *
      * @param Contact|null $contact
      *
@@ -137,7 +137,7 @@ class Info extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return License|null
      */
@@ -146,7 +146,7 @@ class Info extends \ArrayObject
         return $this->license;
     }
     /**
-     * 
+     *
      *
      * @param License|null $license
      *
@@ -159,7 +159,7 @@ class Info extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -168,7 +168,7 @@ class Info extends \ArrayObject
         return $this->version;
     }
     /**
-     * 
+     *
      *
      * @param string|null $version
      *

@@ -6,7 +6,7 @@ class BusinessProcessGet extends \PicturePark\API\Runtime\Client\BaseEndpoint im
 {
     protected $id;
     /**
-     * 
+     *
      *
      * @param string $id The business process id.
      */

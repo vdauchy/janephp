@@ -13,43 +13,43 @@ class GbCompanyReportExampleResponseReportShareCapitalStructureShareHoldersItem 
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $shareholderType;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $shareType;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $currency;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $totalNumberOfSharesOwned;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $percentSharesHeld;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -58,7 +58,7 @@ class GbCompanyReportExampleResponseReportShareCapitalStructureShareHoldersItem 
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -71,7 +71,7 @@ class GbCompanyReportExampleResponseReportShareCapitalStructureShareHoldersItem 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -80,7 +80,7 @@ class GbCompanyReportExampleResponseReportShareCapitalStructureShareHoldersItem 
         return $this->shareholderType;
     }
     /**
-     * 
+     *
      *
      * @param string $shareholderType
      *
@@ -93,7 +93,7 @@ class GbCompanyReportExampleResponseReportShareCapitalStructureShareHoldersItem 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -102,7 +102,7 @@ class GbCompanyReportExampleResponseReportShareCapitalStructureShareHoldersItem 
         return $this->shareType;
     }
     /**
-     * 
+     *
      *
      * @param string $shareType
      *
@@ -115,7 +115,7 @@ class GbCompanyReportExampleResponseReportShareCapitalStructureShareHoldersItem 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -124,7 +124,7 @@ class GbCompanyReportExampleResponseReportShareCapitalStructureShareHoldersItem 
         return $this->currency;
     }
     /**
-     * 
+     *
      *
      * @param string $currency
      *
@@ -137,7 +137,7 @@ class GbCompanyReportExampleResponseReportShareCapitalStructureShareHoldersItem 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -146,7 +146,7 @@ class GbCompanyReportExampleResponseReportShareCapitalStructureShareHoldersItem 
         return $this->totalNumberOfSharesOwned;
     }
     /**
-     * 
+     *
      *
      * @param float $totalNumberOfSharesOwned
      *
@@ -159,7 +159,7 @@ class GbCompanyReportExampleResponseReportShareCapitalStructureShareHoldersItem 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -168,7 +168,7 @@ class GbCompanyReportExampleResponseReportShareCapitalStructureShareHoldersItem 
         return $this->percentSharesHeld;
     }
     /**
-     * 
+     *
      *
      * @param float $percentSharesHeld
      *

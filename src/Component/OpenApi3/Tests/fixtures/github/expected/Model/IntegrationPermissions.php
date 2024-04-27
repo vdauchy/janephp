@@ -13,37 +13,37 @@ class IntegrationPermissions extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $issues;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $checks;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $metadata;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $contents;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $deployments;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -52,7 +52,7 @@ class IntegrationPermissions extends \ArrayObject
         return $this->issues;
     }
     /**
-     * 
+     *
      *
      * @param string $issues
      *
@@ -65,7 +65,7 @@ class IntegrationPermissions extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -74,7 +74,7 @@ class IntegrationPermissions extends \ArrayObject
         return $this->checks;
     }
     /**
-     * 
+     *
      *
      * @param string $checks
      *
@@ -87,7 +87,7 @@ class IntegrationPermissions extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -96,7 +96,7 @@ class IntegrationPermissions extends \ArrayObject
         return $this->metadata;
     }
     /**
-     * 
+     *
      *
      * @param string $metadata
      *
@@ -109,7 +109,7 @@ class IntegrationPermissions extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -118,7 +118,7 @@ class IntegrationPermissions extends \ArrayObject
         return $this->contents;
     }
     /**
-     * 
+     *
      *
      * @param string $contents
      *
@@ -131,7 +131,7 @@ class IntegrationPermissions extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -140,7 +140,7 @@ class IntegrationPermissions extends \ArrayObject
         return $this->deployments;
     }
     /**
-     * 
+     *
      *
      * @param string $deployments
      *

@@ -13,61 +13,61 @@ class Components extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var Schema|Reference[]|null
      */
     protected $schemas;
     /**
-     * 
+     *
      *
      * @var Reference|Response[]|null
      */
     protected $responses;
     /**
-     * 
+     *
      *
      * @var Reference|Parameter[]|null
      */
     protected $parameters;
     /**
-     * 
+     *
      *
      * @var Reference|Example[]|null
      */
     protected $examples;
     /**
-     * 
+     *
      *
      * @var Reference|RequestBody[]|null
      */
     protected $requestBodies;
     /**
-     * 
+     *
      *
      * @var Reference|Header[]|null
      */
     protected $headers;
     /**
-     * 
+     *
      *
      * @var Reference|APIKeySecurityScheme|HTTPSecurityScheme|OAuth2SecurityScheme|OpenIdConnectSecurityScheme[]|null
      */
     protected $securitySchemes;
     /**
-     * 
+     *
      *
      * @var Reference|Link[]|null
      */
     protected $links;
     /**
-     * 
+     *
      *
      * @var Reference|mixed[][]|null
      */
     protected $callbacks;
     /**
-     * 
+     *
      *
      * @return Schema|Reference[]
      */
@@ -76,7 +76,7 @@ class Components extends \ArrayObject
         return $this->schemas;
     }
     /**
-     * 
+     *
      *
      * @param Schema|Reference[] $schemas
      *
@@ -89,7 +89,7 @@ class Components extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return Reference|Response[]
      */
@@ -98,7 +98,7 @@ class Components extends \ArrayObject
         return $this->responses;
     }
     /**
-     * 
+     *
      *
      * @param Reference|Response[] $responses
      *
@@ -111,7 +111,7 @@ class Components extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return Reference|Parameter[]
      */
@@ -120,7 +120,7 @@ class Components extends \ArrayObject
         return $this->parameters;
     }
     /**
-     * 
+     *
      *
      * @param Reference|Parameter[] $parameters
      *
@@ -133,7 +133,7 @@ class Components extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return Reference|Example[]
      */
@@ -142,7 +142,7 @@ class Components extends \ArrayObject
         return $this->examples;
     }
     /**
-     * 
+     *
      *
      * @param Reference|Example[] $examples
      *
@@ -155,7 +155,7 @@ class Components extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return Reference|RequestBody[]
      */
@@ -164,7 +164,7 @@ class Components extends \ArrayObject
         return $this->requestBodies;
     }
     /**
-     * 
+     *
      *
      * @param Reference|RequestBody[] $requestBodies
      *
@@ -177,7 +177,7 @@ class Components extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return Reference|Header[]
      */
@@ -186,7 +186,7 @@ class Components extends \ArrayObject
         return $this->headers;
     }
     /**
-     * 
+     *
      *
      * @param Reference|Header[] $headers
      *
@@ -199,7 +199,7 @@ class Components extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return Reference|APIKeySecurityScheme|HTTPSecurityScheme|OAuth2SecurityScheme|OpenIdConnectSecurityScheme[]
      */
@@ -208,7 +208,7 @@ class Components extends \ArrayObject
         return $this->securitySchemes;
     }
     /**
-     * 
+     *
      *
      * @param Reference|APIKeySecurityScheme|HTTPSecurityScheme|OAuth2SecurityScheme|OpenIdConnectSecurityScheme[] $securitySchemes
      *
@@ -221,7 +221,7 @@ class Components extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return Reference|Link[]
      */
@@ -230,7 +230,7 @@ class Components extends \ArrayObject
         return $this->links;
     }
     /**
-     * 
+     *
      *
      * @param Reference|Link[] $links
      *
@@ -243,7 +243,7 @@ class Components extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return Reference|mixed[][]
      */
@@ -252,7 +252,7 @@ class Components extends \ArrayObject
         return $this->callbacks;
     }
     /**
-     * 
+     *
      *
      * @param Reference|mixed[][] $callbacks
      *

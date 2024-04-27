@@ -13,31 +13,31 @@ class TopicSearchResultItemRelatedItemTopicRelation extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $topicId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $relationType;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -46,7 +46,7 @@ class TopicSearchResultItemRelatedItemTopicRelation extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -59,7 +59,7 @@ class TopicSearchResultItemRelatedItemTopicRelation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -68,7 +68,7 @@ class TopicSearchResultItemRelatedItemTopicRelation extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -81,7 +81,7 @@ class TopicSearchResultItemRelatedItemTopicRelation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -90,7 +90,7 @@ class TopicSearchResultItemRelatedItemTopicRelation extends \ArrayObject
         return $this->topicId;
     }
     /**
-     * 
+     *
      *
      * @param int $topicId
      *
@@ -103,7 +103,7 @@ class TopicSearchResultItemRelatedItemTopicRelation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -112,7 +112,7 @@ class TopicSearchResultItemRelatedItemTopicRelation extends \ArrayObject
         return $this->relationType;
     }
     /**
-     * 
+     *
      *
      * @param string $relationType
      *

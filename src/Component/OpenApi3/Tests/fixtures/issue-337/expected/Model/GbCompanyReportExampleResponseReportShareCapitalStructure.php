@@ -13,25 +13,25 @@ class GbCompanyReportExampleResponseReportShareCapitalStructure extends \ArrayOb
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var GbCompanyReportExampleResponseReportShareCapitalStructureIssuedShareCapital
      */
     protected $issuedShareCapital;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $numberOfSharesIssued;
     /**
-     * 
+     *
      *
      * @var list<GbCompanyReportExampleResponseReportShareCapitalStructureShareHoldersItem>
      */
     protected $shareHolders;
     /**
-     * 
+     *
      *
      * @return GbCompanyReportExampleResponseReportShareCapitalStructureIssuedShareCapital
      */
@@ -40,7 +40,7 @@ class GbCompanyReportExampleResponseReportShareCapitalStructure extends \ArrayOb
         return $this->issuedShareCapital;
     }
     /**
-     * 
+     *
      *
      * @param GbCompanyReportExampleResponseReportShareCapitalStructureIssuedShareCapital $issuedShareCapital
      *
@@ -53,7 +53,7 @@ class GbCompanyReportExampleResponseReportShareCapitalStructure extends \ArrayOb
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -62,7 +62,7 @@ class GbCompanyReportExampleResponseReportShareCapitalStructure extends \ArrayOb
         return $this->numberOfSharesIssued;
     }
     /**
-     * 
+     *
      *
      * @param float $numberOfSharesIssued
      *
@@ -75,7 +75,7 @@ class GbCompanyReportExampleResponseReportShareCapitalStructure extends \ArrayOb
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<GbCompanyReportExampleResponseReportShareCapitalStructureShareHoldersItem>
      */
@@ -84,7 +84,7 @@ class GbCompanyReportExampleResponseReportShareCapitalStructure extends \ArrayOb
         return $this->shareHolders;
     }
     /**
-     * 
+     *
      *
      * @param list<GbCompanyReportExampleResponseReportShareCapitalStructureShareHoldersItem> $shareHolders
      *

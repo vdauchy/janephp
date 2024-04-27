@@ -13,13 +13,13 @@ class Import extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $vcs;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -31,127 +31,127 @@ class Import extends \ArrayObject
      */
     protected $vcsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $svcRoot;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $tfvcProject;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $status;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $statusText;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $failedStep;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $errorMessage;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $importPercent;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $commitCount;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $pushPercent;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $hasLargeFiles;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $largeFilesSize;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $largeFilesCount;
     /**
-     * 
+     *
      *
      * @var list<ImportProjectChoicesItem>
      */
     protected $projectChoices;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $message;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $authorsCount;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $htmlUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $authorsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $repositoryUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $svnRoot;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -160,7 +160,7 @@ class Import extends \ArrayObject
         return $this->vcs;
     }
     /**
-     * 
+     *
      *
      * @param string|null $vcs
      *
@@ -173,7 +173,7 @@ class Import extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -182,7 +182,7 @@ class Import extends \ArrayObject
         return $this->useLfs;
     }
     /**
-     * 
+     *
      *
      * @param string $useLfs
      *
@@ -217,7 +217,7 @@ class Import extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -226,7 +226,7 @@ class Import extends \ArrayObject
         return $this->svcRoot;
     }
     /**
-     * 
+     *
      *
      * @param string $svcRoot
      *
@@ -239,7 +239,7 @@ class Import extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -248,7 +248,7 @@ class Import extends \ArrayObject
         return $this->tfvcProject;
     }
     /**
-     * 
+     *
      *
      * @param string $tfvcProject
      *
@@ -261,7 +261,7 @@ class Import extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -270,7 +270,7 @@ class Import extends \ArrayObject
         return $this->status;
     }
     /**
-     * 
+     *
      *
      * @param string $status
      *
@@ -283,7 +283,7 @@ class Import extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -292,7 +292,7 @@ class Import extends \ArrayObject
         return $this->statusText;
     }
     /**
-     * 
+     *
      *
      * @param string|null $statusText
      *
@@ -305,7 +305,7 @@ class Import extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -314,7 +314,7 @@ class Import extends \ArrayObject
         return $this->failedStep;
     }
     /**
-     * 
+     *
      *
      * @param string|null $failedStep
      *
@@ -327,7 +327,7 @@ class Import extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -336,7 +336,7 @@ class Import extends \ArrayObject
         return $this->errorMessage;
     }
     /**
-     * 
+     *
      *
      * @param string|null $errorMessage
      *
@@ -349,7 +349,7 @@ class Import extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -358,7 +358,7 @@ class Import extends \ArrayObject
         return $this->importPercent;
     }
     /**
-     * 
+     *
      *
      * @param int|null $importPercent
      *
@@ -371,7 +371,7 @@ class Import extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -380,7 +380,7 @@ class Import extends \ArrayObject
         return $this->commitCount;
     }
     /**
-     * 
+     *
      *
      * @param int|null $commitCount
      *
@@ -393,7 +393,7 @@ class Import extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -402,7 +402,7 @@ class Import extends \ArrayObject
         return $this->pushPercent;
     }
     /**
-     * 
+     *
      *
      * @param int|null $pushPercent
      *
@@ -415,7 +415,7 @@ class Import extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -424,7 +424,7 @@ class Import extends \ArrayObject
         return $this->hasLargeFiles;
     }
     /**
-     * 
+     *
      *
      * @param bool $hasLargeFiles
      *
@@ -437,7 +437,7 @@ class Import extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -446,7 +446,7 @@ class Import extends \ArrayObject
         return $this->largeFilesSize;
     }
     /**
-     * 
+     *
      *
      * @param int $largeFilesSize
      *
@@ -459,7 +459,7 @@ class Import extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -468,7 +468,7 @@ class Import extends \ArrayObject
         return $this->largeFilesCount;
     }
     /**
-     * 
+     *
      *
      * @param int $largeFilesCount
      *
@@ -481,7 +481,7 @@ class Import extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<ImportProjectChoicesItem>
      */
@@ -490,7 +490,7 @@ class Import extends \ArrayObject
         return $this->projectChoices;
     }
     /**
-     * 
+     *
      *
      * @param list<ImportProjectChoicesItem> $projectChoices
      *
@@ -503,7 +503,7 @@ class Import extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -512,7 +512,7 @@ class Import extends \ArrayObject
         return $this->message;
     }
     /**
-     * 
+     *
      *
      * @param string $message
      *
@@ -525,7 +525,7 @@ class Import extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -534,7 +534,7 @@ class Import extends \ArrayObject
         return $this->authorsCount;
     }
     /**
-     * 
+     *
      *
      * @param int|null $authorsCount
      *
@@ -547,7 +547,7 @@ class Import extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -556,7 +556,7 @@ class Import extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -569,7 +569,7 @@ class Import extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -578,7 +578,7 @@ class Import extends \ArrayObject
         return $this->htmlUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $htmlUrl
      *
@@ -591,7 +591,7 @@ class Import extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -600,7 +600,7 @@ class Import extends \ArrayObject
         return $this->authorsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $authorsUrl
      *
@@ -613,7 +613,7 @@ class Import extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -622,7 +622,7 @@ class Import extends \ArrayObject
         return $this->repositoryUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $repositoryUrl
      *
@@ -635,7 +635,7 @@ class Import extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -644,7 +644,7 @@ class Import extends \ArrayObject
         return $this->svnRoot;
     }
     /**
-     * 
+     *
      *
      * @param string $svnRoot
      *

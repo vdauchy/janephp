@@ -13,13 +13,13 @@ class GbCompanyReportExampleResponseReportNegativeInformationCountyCourtJudgemen
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var GbCompanyReportExampleResponseReportNegativeInformationCountyCourtJudgementsRegistered
      */
     protected $registered;
     /**
-     * 
+     *
      *
      * @return GbCompanyReportExampleResponseReportNegativeInformationCountyCourtJudgementsRegistered
      */
@@ -28,7 +28,7 @@ class GbCompanyReportExampleResponseReportNegativeInformationCountyCourtJudgemen
         return $this->registered;
     }
     /**
-     * 
+     *
      *
      * @param GbCompanyReportExampleResponseReportNegativeInformationCountyCourtJudgementsRegistered $registered
      *

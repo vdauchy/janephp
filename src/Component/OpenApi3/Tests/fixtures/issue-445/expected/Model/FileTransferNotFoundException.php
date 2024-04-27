@@ -13,73 +13,73 @@ class FileTransferNotFoundException extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $traceLevel;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $traceId;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $traceJobId;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $httpStatusCode;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $exceptionMessage;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $kind;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $customerId;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $customerAlias;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $userId;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $reference;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $fileTransferId;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -88,7 +88,7 @@ class FileTransferNotFoundException extends \ArrayObject
         return $this->traceLevel;
     }
     /**
-     * 
+     *
      *
      * @param string $traceLevel
      *
@@ -101,7 +101,7 @@ class FileTransferNotFoundException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -110,7 +110,7 @@ class FileTransferNotFoundException extends \ArrayObject
         return $this->traceId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $traceId
      *
@@ -123,7 +123,7 @@ class FileTransferNotFoundException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -132,7 +132,7 @@ class FileTransferNotFoundException extends \ArrayObject
         return $this->traceJobId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $traceJobId
      *
@@ -145,7 +145,7 @@ class FileTransferNotFoundException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -154,7 +154,7 @@ class FileTransferNotFoundException extends \ArrayObject
         return $this->httpStatusCode;
     }
     /**
-     * 
+     *
      *
      * @param int $httpStatusCode
      *
@@ -167,7 +167,7 @@ class FileTransferNotFoundException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -176,7 +176,7 @@ class FileTransferNotFoundException extends \ArrayObject
         return $this->exceptionMessage;
     }
     /**
-     * 
+     *
      *
      * @param string|null $exceptionMessage
      *
@@ -189,7 +189,7 @@ class FileTransferNotFoundException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -198,7 +198,7 @@ class FileTransferNotFoundException extends \ArrayObject
         return $this->kind;
     }
     /**
-     * 
+     *
      *
      * @param string $kind
      *
@@ -211,7 +211,7 @@ class FileTransferNotFoundException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -220,7 +220,7 @@ class FileTransferNotFoundException extends \ArrayObject
         return $this->customerId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $customerId
      *
@@ -233,7 +233,7 @@ class FileTransferNotFoundException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -242,7 +242,7 @@ class FileTransferNotFoundException extends \ArrayObject
         return $this->customerAlias;
     }
     /**
-     * 
+     *
      *
      * @param string|null $customerAlias
      *
@@ -255,7 +255,7 @@ class FileTransferNotFoundException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -264,7 +264,7 @@ class FileTransferNotFoundException extends \ArrayObject
         return $this->userId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $userId
      *
@@ -277,7 +277,7 @@ class FileTransferNotFoundException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -286,7 +286,7 @@ class FileTransferNotFoundException extends \ArrayObject
         return $this->reference;
     }
     /**
-     * 
+     *
      *
      * @param string|null $reference
      *
@@ -299,7 +299,7 @@ class FileTransferNotFoundException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -308,7 +308,7 @@ class FileTransferNotFoundException extends \ArrayObject
         return $this->fileTransferId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $fileTransferId
      *

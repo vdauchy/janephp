@@ -39,7 +39,7 @@ class ContainersIdJsonGetResponse200
     /**
     * ContainerState stores container's running state. It's part of ContainerJSONBase
     and will be returned by the "inspect" command.
-    
+
     *
     * @var ContainerState
     */
@@ -51,67 +51,67 @@ class ContainersIdJsonGetResponse200
      */
     protected $image;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $resolvConfPath;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $hostnamePath;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $hostsPath;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $logPath;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $restartCount;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $driver;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $platform;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $mountLabel;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $processLabel;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -137,7 +137,7 @@ class ContainersIdJsonGetResponse200
     /**
     * The size of files that have been created or changed by this
     container.
-    
+
     *
     * @var int
     */
@@ -149,7 +149,7 @@ class ContainersIdJsonGetResponse200
      */
     protected $sizeRootFs;
     /**
-     * 
+     *
      *
      * @var list<MountPoint>
      */
@@ -257,7 +257,7 @@ class ContainersIdJsonGetResponse200
     /**
     * ContainerState stores container's running state. It's part of ContainerJSONBase
     and will be returned by the "inspect" command.
-    
+
     *
     * @return ContainerState
     */
@@ -268,7 +268,7 @@ class ContainersIdJsonGetResponse200
     /**
     * ContainerState stores container's running state. It's part of ContainerJSONBase
     and will be returned by the "inspect" command.
-    
+
     *
     * @param ContainerState $state
     *
@@ -303,7 +303,7 @@ class ContainersIdJsonGetResponse200
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -312,7 +312,7 @@ class ContainersIdJsonGetResponse200
         return $this->resolvConfPath;
     }
     /**
-     * 
+     *
      *
      * @param string $resolvConfPath
      *
@@ -325,7 +325,7 @@ class ContainersIdJsonGetResponse200
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -334,7 +334,7 @@ class ContainersIdJsonGetResponse200
         return $this->hostnamePath;
     }
     /**
-     * 
+     *
      *
      * @param string $hostnamePath
      *
@@ -347,7 +347,7 @@ class ContainersIdJsonGetResponse200
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -356,7 +356,7 @@ class ContainersIdJsonGetResponse200
         return $this->hostsPath;
     }
     /**
-     * 
+     *
      *
      * @param string $hostsPath
      *
@@ -369,7 +369,7 @@ class ContainersIdJsonGetResponse200
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -378,7 +378,7 @@ class ContainersIdJsonGetResponse200
         return $this->logPath;
     }
     /**
-     * 
+     *
      *
      * @param string $logPath
      *
@@ -391,7 +391,7 @@ class ContainersIdJsonGetResponse200
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -400,7 +400,7 @@ class ContainersIdJsonGetResponse200
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -413,7 +413,7 @@ class ContainersIdJsonGetResponse200
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -422,7 +422,7 @@ class ContainersIdJsonGetResponse200
         return $this->restartCount;
     }
     /**
-     * 
+     *
      *
      * @param int $restartCount
      *
@@ -435,7 +435,7 @@ class ContainersIdJsonGetResponse200
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -444,7 +444,7 @@ class ContainersIdJsonGetResponse200
         return $this->driver;
     }
     /**
-     * 
+     *
      *
      * @param string $driver
      *
@@ -457,7 +457,7 @@ class ContainersIdJsonGetResponse200
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -466,7 +466,7 @@ class ContainersIdJsonGetResponse200
         return $this->platform;
     }
     /**
-     * 
+     *
      *
      * @param string $platform
      *
@@ -479,7 +479,7 @@ class ContainersIdJsonGetResponse200
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -488,7 +488,7 @@ class ContainersIdJsonGetResponse200
         return $this->mountLabel;
     }
     /**
-     * 
+     *
      *
      * @param string $mountLabel
      *
@@ -501,7 +501,7 @@ class ContainersIdJsonGetResponse200
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -510,7 +510,7 @@ class ContainersIdJsonGetResponse200
         return $this->processLabel;
     }
     /**
-     * 
+     *
      *
      * @param string $processLabel
      *
@@ -523,7 +523,7 @@ class ContainersIdJsonGetResponse200
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -532,7 +532,7 @@ class ContainersIdJsonGetResponse200
         return $this->appArmorProfile;
     }
     /**
-     * 
+     *
      *
      * @param string $appArmorProfile
      *
@@ -613,7 +613,7 @@ class ContainersIdJsonGetResponse200
     /**
     * The size of files that have been created or changed by this
     container.
-    
+
     *
     * @return int
     */
@@ -624,7 +624,7 @@ class ContainersIdJsonGetResponse200
     /**
     * The size of files that have been created or changed by this
     container.
-    
+
     *
     * @param int $sizeRw
     *
@@ -659,7 +659,7 @@ class ContainersIdJsonGetResponse200
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<MountPoint>
      */
@@ -668,7 +668,7 @@ class ContainersIdJsonGetResponse200
         return $this->mounts;
     }
     /**
-     * 
+     *
      *
      * @param list<MountPoint> $mounts
      *

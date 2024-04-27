@@ -13,25 +13,25 @@ class RequestBody extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @var array<string, MediaType>|null
      */
     protected $content;
     /**
-     * 
+     *
      *
      * @var bool|null
      */
     protected $required = false;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -40,7 +40,7 @@ class RequestBody extends \ArrayObject
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string|null $description
      *
@@ -53,7 +53,7 @@ class RequestBody extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return array<string, MediaType>|null
      */
@@ -62,7 +62,7 @@ class RequestBody extends \ArrayObject
         return $this->content;
     }
     /**
-     * 
+     *
      *
      * @param array<string, MediaType>|null $content
      *
@@ -75,7 +75,7 @@ class RequestBody extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool|null
      */
@@ -84,7 +84,7 @@ class RequestBody extends \ArrayObject
         return $this->required;
     }
     /**
-     * 
+     *
      *
      * @param bool|null $required
      *

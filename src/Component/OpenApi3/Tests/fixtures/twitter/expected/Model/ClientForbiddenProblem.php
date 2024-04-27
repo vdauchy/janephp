@@ -13,37 +13,37 @@ class ClientForbiddenProblem extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $reason;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $registrationUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $title;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $detail;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -52,7 +52,7 @@ class ClientForbiddenProblem extends \ArrayObject
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string $type
      *
@@ -65,7 +65,7 @@ class ClientForbiddenProblem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -74,7 +74,7 @@ class ClientForbiddenProblem extends \ArrayObject
         return $this->reason;
     }
     /**
-     * 
+     *
      *
      * @param string $reason
      *
@@ -87,7 +87,7 @@ class ClientForbiddenProblem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -96,7 +96,7 @@ class ClientForbiddenProblem extends \ArrayObject
         return $this->registrationUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $registrationUrl
      *
@@ -109,7 +109,7 @@ class ClientForbiddenProblem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -118,7 +118,7 @@ class ClientForbiddenProblem extends \ArrayObject
         return $this->title;
     }
     /**
-     * 
+     *
      *
      * @param string $title
      *
@@ -131,7 +131,7 @@ class ClientForbiddenProblem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -140,7 +140,7 @@ class ClientForbiddenProblem extends \ArrayObject
         return $this->detail;
     }
     /**
-     * 
+     *
      *
      * @param string $detail
      *

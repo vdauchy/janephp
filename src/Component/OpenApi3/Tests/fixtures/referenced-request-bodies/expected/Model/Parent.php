@@ -13,19 +13,19 @@ class Parent extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var list<Child>
      */
     protected $child;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -34,7 +34,7 @@ class Parent extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param string $id
      *
@@ -47,7 +47,7 @@ class Parent extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<Child>
      */
@@ -56,7 +56,7 @@ class Parent extends \ArrayObject
         return $this->child;
     }
     /**
-     * 
+     *
      *
      * @param list<Child> $child
      *

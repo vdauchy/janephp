@@ -13,13 +13,13 @@ class Endpoint2PostBody extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $postField2;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -28,7 +28,7 @@ class Endpoint2PostBody extends \ArrayObject
         return $this->postField2;
     }
     /**
-     * 
+     *
      *
      * @param string $postField2
      *

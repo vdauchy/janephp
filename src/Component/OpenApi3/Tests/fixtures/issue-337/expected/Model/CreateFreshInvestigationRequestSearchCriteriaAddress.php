@@ -13,25 +13,25 @@ class CreateFreshInvestigationRequestSearchCriteriaAddress extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $simple;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $postcode;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $city;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -40,7 +40,7 @@ class CreateFreshInvestigationRequestSearchCriteriaAddress extends \ArrayObject
         return $this->simple;
     }
     /**
-     * 
+     *
      *
      * @param string $simple
      *
@@ -53,7 +53,7 @@ class CreateFreshInvestigationRequestSearchCriteriaAddress extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -62,7 +62,7 @@ class CreateFreshInvestigationRequestSearchCriteriaAddress extends \ArrayObject
         return $this->postcode;
     }
     /**
-     * 
+     *
      *
      * @param string $postcode
      *
@@ -75,7 +75,7 @@ class CreateFreshInvestigationRequestSearchCriteriaAddress extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -84,7 +84,7 @@ class CreateFreshInvestigationRequestSearchCriteriaAddress extends \ArrayObject
         return $this->city;
     }
     /**
-     * 
+     *
      *
      * @param string $city
      *

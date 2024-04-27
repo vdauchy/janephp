@@ -13,31 +13,31 @@ class PushImageInfo
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $error;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $status;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $progress;
     /**
-     * 
+     *
      *
      * @var ProgressDetail
      */
     protected $progressDetail;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -46,7 +46,7 @@ class PushImageInfo
         return $this->error;
     }
     /**
-     * 
+     *
      *
      * @param string $error
      *
@@ -59,7 +59,7 @@ class PushImageInfo
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -68,7 +68,7 @@ class PushImageInfo
         return $this->status;
     }
     /**
-     * 
+     *
      *
      * @param string $status
      *
@@ -81,7 +81,7 @@ class PushImageInfo
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -90,7 +90,7 @@ class PushImageInfo
         return $this->progress;
     }
     /**
-     * 
+     *
      *
      * @param string $progress
      *
@@ -103,7 +103,7 @@ class PushImageInfo
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ProgressDetail
      */
@@ -112,7 +112,7 @@ class PushImageInfo
         return $this->progressDetail;
     }
     /**
-     * 
+     *
      *
      * @param ProgressDetail $progressDetail
      *

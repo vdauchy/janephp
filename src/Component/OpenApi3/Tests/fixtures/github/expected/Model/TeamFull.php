@@ -19,7 +19,7 @@ class TeamFull extends \ArrayObject
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -31,7 +31,7 @@ class TeamFull extends \ArrayObject
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -43,13 +43,13 @@ class TeamFull extends \ArrayObject
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $slug;
     /**
-     * 
+     *
      *
      * @var string|null
      */
@@ -67,43 +67,43 @@ class TeamFull extends \ArrayObject
      */
     protected $permission;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $membersUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $repositoriesUrl;
     /**
-     * 
+     *
      *
      * @var TeamFullParent|null
      */
     protected $parent;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $membersCount;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $reposCount;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
@@ -143,7 +143,7 @@ class TeamFull extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -152,7 +152,7 @@ class TeamFull extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -187,7 +187,7 @@ class TeamFull extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -196,7 +196,7 @@ class TeamFull extends \ArrayObject
         return $this->htmlUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $htmlUrl
      *
@@ -231,7 +231,7 @@ class TeamFull extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -240,7 +240,7 @@ class TeamFull extends \ArrayObject
         return $this->slug;
     }
     /**
-     * 
+     *
      *
      * @param string $slug
      *
@@ -253,7 +253,7 @@ class TeamFull extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -262,7 +262,7 @@ class TeamFull extends \ArrayObject
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string|null $description
      *
@@ -319,7 +319,7 @@ class TeamFull extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -328,7 +328,7 @@ class TeamFull extends \ArrayObject
         return $this->membersUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $membersUrl
      *
@@ -341,7 +341,7 @@ class TeamFull extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -350,7 +350,7 @@ class TeamFull extends \ArrayObject
         return $this->repositoriesUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $repositoriesUrl
      *
@@ -363,7 +363,7 @@ class TeamFull extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return TeamFullParent|null
      */
@@ -372,7 +372,7 @@ class TeamFull extends \ArrayObject
         return $this->parent;
     }
     /**
-     * 
+     *
      *
      * @param TeamFullParent|null $parent
      *
@@ -385,7 +385,7 @@ class TeamFull extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -394,7 +394,7 @@ class TeamFull extends \ArrayObject
         return $this->membersCount;
     }
     /**
-     * 
+     *
      *
      * @param int $membersCount
      *
@@ -407,7 +407,7 @@ class TeamFull extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -416,7 +416,7 @@ class TeamFull extends \ArrayObject
         return $this->reposCount;
     }
     /**
-     * 
+     *
      *
      * @param int $reposCount
      *
@@ -429,7 +429,7 @@ class TeamFull extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -438,7 +438,7 @@ class TeamFull extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $createdAt
      *
@@ -451,7 +451,7 @@ class TeamFull extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -460,7 +460,7 @@ class TeamFull extends \ArrayObject
         return $this->updatedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $updatedAt
      *

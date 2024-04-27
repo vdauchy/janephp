@@ -13,115 +13,115 @@ class PullRequestBaseUser extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $avatarUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $eventsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $followersUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $followingUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $gistsUrl;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $gravatarId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $htmlUrl;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $nodeId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $login;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $organizationsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $receivedEventsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $reposUrl;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $siteAdmin;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $starredUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $subscriptionsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -130,7 +130,7 @@ class PullRequestBaseUser extends \ArrayObject
         return $this->avatarUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $avatarUrl
      *
@@ -143,7 +143,7 @@ class PullRequestBaseUser extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -152,7 +152,7 @@ class PullRequestBaseUser extends \ArrayObject
         return $this->eventsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $eventsUrl
      *
@@ -165,7 +165,7 @@ class PullRequestBaseUser extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -174,7 +174,7 @@ class PullRequestBaseUser extends \ArrayObject
         return $this->followersUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $followersUrl
      *
@@ -187,7 +187,7 @@ class PullRequestBaseUser extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -196,7 +196,7 @@ class PullRequestBaseUser extends \ArrayObject
         return $this->followingUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $followingUrl
      *
@@ -209,7 +209,7 @@ class PullRequestBaseUser extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -218,7 +218,7 @@ class PullRequestBaseUser extends \ArrayObject
         return $this->gistsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $gistsUrl
      *
@@ -231,7 +231,7 @@ class PullRequestBaseUser extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -240,7 +240,7 @@ class PullRequestBaseUser extends \ArrayObject
         return $this->gravatarId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $gravatarId
      *
@@ -253,7 +253,7 @@ class PullRequestBaseUser extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -262,7 +262,7 @@ class PullRequestBaseUser extends \ArrayObject
         return $this->htmlUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $htmlUrl
      *
@@ -275,7 +275,7 @@ class PullRequestBaseUser extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -284,7 +284,7 @@ class PullRequestBaseUser extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -297,7 +297,7 @@ class PullRequestBaseUser extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -306,7 +306,7 @@ class PullRequestBaseUser extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -319,7 +319,7 @@ class PullRequestBaseUser extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -328,7 +328,7 @@ class PullRequestBaseUser extends \ArrayObject
         return $this->login;
     }
     /**
-     * 
+     *
      *
      * @param string $login
      *
@@ -341,7 +341,7 @@ class PullRequestBaseUser extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -350,7 +350,7 @@ class PullRequestBaseUser extends \ArrayObject
         return $this->organizationsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $organizationsUrl
      *
@@ -363,7 +363,7 @@ class PullRequestBaseUser extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -372,7 +372,7 @@ class PullRequestBaseUser extends \ArrayObject
         return $this->receivedEventsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $receivedEventsUrl
      *
@@ -385,7 +385,7 @@ class PullRequestBaseUser extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -394,7 +394,7 @@ class PullRequestBaseUser extends \ArrayObject
         return $this->reposUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $reposUrl
      *
@@ -407,7 +407,7 @@ class PullRequestBaseUser extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -416,7 +416,7 @@ class PullRequestBaseUser extends \ArrayObject
         return $this->siteAdmin;
     }
     /**
-     * 
+     *
      *
      * @param bool $siteAdmin
      *
@@ -429,7 +429,7 @@ class PullRequestBaseUser extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -438,7 +438,7 @@ class PullRequestBaseUser extends \ArrayObject
         return $this->starredUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $starredUrl
      *
@@ -451,7 +451,7 @@ class PullRequestBaseUser extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -460,7 +460,7 @@ class PullRequestBaseUser extends \ArrayObject
         return $this->subscriptionsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $subscriptionsUrl
      *
@@ -473,7 +473,7 @@ class PullRequestBaseUser extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -482,7 +482,7 @@ class PullRequestBaseUser extends \ArrayObject
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string $type
      *
@@ -495,7 +495,7 @@ class PullRequestBaseUser extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -504,7 +504,7 @@ class PullRequestBaseUser extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *

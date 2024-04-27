@@ -13,43 +13,43 @@ class TestFormPostBody extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $testString;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $testInteger;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $testFloat;
     /**
-     * 
+     *
      *
      * @var list<mixed>
      */
     protected $testArray;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $testRequired;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $testDefault = 'test';
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -58,7 +58,7 @@ class TestFormPostBody extends \ArrayObject
         return $this->testString;
     }
     /**
-     * 
+     *
      *
      * @param string $testString
      *
@@ -71,7 +71,7 @@ class TestFormPostBody extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -80,7 +80,7 @@ class TestFormPostBody extends \ArrayObject
         return $this->testInteger;
     }
     /**
-     * 
+     *
      *
      * @param int $testInteger
      *
@@ -93,7 +93,7 @@ class TestFormPostBody extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -102,7 +102,7 @@ class TestFormPostBody extends \ArrayObject
         return $this->testFloat;
     }
     /**
-     * 
+     *
      *
      * @param float $testFloat
      *
@@ -115,7 +115,7 @@ class TestFormPostBody extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<mixed>
      */
@@ -124,7 +124,7 @@ class TestFormPostBody extends \ArrayObject
         return $this->testArray;
     }
     /**
-     * 
+     *
      *
      * @param list<mixed> $testArray
      *
@@ -137,7 +137,7 @@ class TestFormPostBody extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -146,7 +146,7 @@ class TestFormPostBody extends \ArrayObject
         return $this->testRequired;
     }
     /**
-     * 
+     *
      *
      * @param string $testRequired
      *
@@ -159,7 +159,7 @@ class TestFormPostBody extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -168,7 +168,7 @@ class TestFormPostBody extends \ArrayObject
         return $this->testDefault;
     }
     /**
-     * 
+     *
      *
      * @param string $testDefault
      *

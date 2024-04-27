@@ -13,13 +13,13 @@ class Hovercard extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var list<HovercardContextsItem>
      */
     protected $contexts;
     /**
-     * 
+     *
      *
      * @return list<HovercardContextsItem>
      */
@@ -28,7 +28,7 @@ class Hovercard extends \ArrayObject
         return $this->contexts;
     }
     /**
-     * 
+     *
      *
      * @param list<HovercardContextsItem> $contexts
      *

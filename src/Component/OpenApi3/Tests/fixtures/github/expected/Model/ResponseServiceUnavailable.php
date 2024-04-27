@@ -13,25 +13,25 @@ class ResponseServiceUnavailable extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $code;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $message;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $documentationUrl;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -40,7 +40,7 @@ class ResponseServiceUnavailable extends \ArrayObject
         return $this->code;
     }
     /**
-     * 
+     *
      *
      * @param string $code
      *
@@ -53,7 +53,7 @@ class ResponseServiceUnavailable extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -62,7 +62,7 @@ class ResponseServiceUnavailable extends \ArrayObject
         return $this->message;
     }
     /**
-     * 
+     *
      *
      * @param string $message
      *
@@ -75,7 +75,7 @@ class ResponseServiceUnavailable extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -84,7 +84,7 @@ class ResponseServiceUnavailable extends \ArrayObject
         return $this->documentationUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $documentationUrl
      *

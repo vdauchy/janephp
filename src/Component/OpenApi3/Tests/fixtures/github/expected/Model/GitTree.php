@@ -13,19 +13,19 @@ class GitTree extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $sha;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var bool
      */
@@ -37,7 +37,7 @@ class GitTree extends \ArrayObject
      */
     protected $tree;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -46,7 +46,7 @@ class GitTree extends \ArrayObject
         return $this->sha;
     }
     /**
-     * 
+     *
      *
      * @param string $sha
      *
@@ -59,7 +59,7 @@ class GitTree extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -68,7 +68,7 @@ class GitTree extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -81,7 +81,7 @@ class GitTree extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -90,7 +90,7 @@ class GitTree extends \ArrayObject
         return $this->truncated;
     }
     /**
-     * 
+     *
      *
      * @param bool $truncated
      *

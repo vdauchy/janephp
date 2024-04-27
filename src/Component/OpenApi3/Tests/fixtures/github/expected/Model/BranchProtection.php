@@ -13,13 +13,13 @@ class BranchProtection extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var BranchProtectionRequiredStatusChecks
      */
@@ -43,43 +43,43 @@ class BranchProtection extends \ArrayObject
      */
     protected $restrictions;
     /**
-     * 
+     *
      *
      * @var BranchProtectionRequiredLinearHistory
      */
     protected $requiredLinearHistory;
     /**
-     * 
+     *
      *
      * @var BranchProtectionAllowForcePushes
      */
     protected $allowForcePushes;
     /**
-     * 
+     *
      *
      * @var BranchProtectionAllowDeletions
      */
     protected $allowDeletions;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $enabled;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $protectionUrl;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -88,7 +88,7 @@ class BranchProtection extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -101,7 +101,7 @@ class BranchProtection extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return BranchProtectionRequiredStatusChecks
      */
@@ -110,7 +110,7 @@ class BranchProtection extends \ArrayObject
         return $this->requiredStatusChecks;
     }
     /**
-     * 
+     *
      *
      * @param BranchProtectionRequiredStatusChecks $requiredStatusChecks
      *
@@ -189,7 +189,7 @@ class BranchProtection extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return BranchProtectionRequiredLinearHistory
      */
@@ -198,7 +198,7 @@ class BranchProtection extends \ArrayObject
         return $this->requiredLinearHistory;
     }
     /**
-     * 
+     *
      *
      * @param BranchProtectionRequiredLinearHistory $requiredLinearHistory
      *
@@ -211,7 +211,7 @@ class BranchProtection extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return BranchProtectionAllowForcePushes
      */
@@ -220,7 +220,7 @@ class BranchProtection extends \ArrayObject
         return $this->allowForcePushes;
     }
     /**
-     * 
+     *
      *
      * @param BranchProtectionAllowForcePushes $allowForcePushes
      *
@@ -233,7 +233,7 @@ class BranchProtection extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return BranchProtectionAllowDeletions
      */
@@ -242,7 +242,7 @@ class BranchProtection extends \ArrayObject
         return $this->allowDeletions;
     }
     /**
-     * 
+     *
      *
      * @param BranchProtectionAllowDeletions $allowDeletions
      *
@@ -255,7 +255,7 @@ class BranchProtection extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -264,7 +264,7 @@ class BranchProtection extends \ArrayObject
         return $this->enabled;
     }
     /**
-     * 
+     *
      *
      * @param bool $enabled
      *
@@ -277,7 +277,7 @@ class BranchProtection extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -286,7 +286,7 @@ class BranchProtection extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -299,7 +299,7 @@ class BranchProtection extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -308,7 +308,7 @@ class BranchProtection extends \ArrayObject
         return $this->protectionUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $protectionUrl
      *

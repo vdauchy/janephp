@@ -13,31 +13,31 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemCashFlow e
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $netCashFlowFromOperations;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $netCashFlowBeforeFinancing;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $netCashFlowFromFinancing;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $increaseInCash;
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -46,7 +46,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemCashFlow e
         return $this->netCashFlowFromOperations;
     }
     /**
-     * 
+     *
      *
      * @param float $netCashFlowFromOperations
      *
@@ -59,7 +59,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemCashFlow e
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -68,7 +68,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemCashFlow e
         return $this->netCashFlowBeforeFinancing;
     }
     /**
-     * 
+     *
      *
      * @param float $netCashFlowBeforeFinancing
      *
@@ -81,7 +81,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemCashFlow e
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -90,7 +90,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemCashFlow e
         return $this->netCashFlowFromFinancing;
     }
     /**
-     * 
+     *
      *
      * @param float $netCashFlowFromFinancing
      *
@@ -103,7 +103,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemCashFlow e
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -112,7 +112,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemCashFlow e
         return $this->increaseInCash;
     }
     /**
-     * 
+     *
      *
      * @param float $increaseInCash
      *

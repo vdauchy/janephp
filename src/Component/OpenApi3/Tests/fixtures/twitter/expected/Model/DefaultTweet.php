@@ -13,7 +13,7 @@ class DefaultTweet extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -73,13 +73,13 @@ class DefaultTweet extends \ArrayObject
      */
     protected $geo;
     /**
-     * 
+     *
      *
      * @var FullTextEntities
      */
     protected $entities;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -88,7 +88,7 @@ class DefaultTweet extends \ArrayObject
         return $this->format;
     }
     /**
-     * 
+     *
      *
      * @param string $format
      *
@@ -299,7 +299,7 @@ class DefaultTweet extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return FullTextEntities
      */
@@ -308,7 +308,7 @@ class DefaultTweet extends \ArrayObject
         return $this->entities;
     }
     /**
-     * 
+     *
      *
      * @param FullTextEntities $entities
      *

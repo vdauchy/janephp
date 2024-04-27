@@ -6,7 +6,7 @@ class SecretInspect extends \Docker\Api\Runtime\Client\BaseEndpoint implements \
 {
     protected $id;
     /**
-     * 
+     *
      *
      * @param string $id ID of the secret
      */

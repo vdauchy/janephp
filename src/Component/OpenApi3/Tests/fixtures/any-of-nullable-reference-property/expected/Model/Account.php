@@ -13,43 +13,43 @@ class Account extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $firstname;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $lastname;
     /**
-     * 
+     *
      *
      * @var Country|null
      */
     protected $countryOfBirth;
     /**
-     * 
+     *
      *
      * @var Country
      */
     protected $country;
     /**
-     * 
+     *
      *
      * @var Country|list<Country>|null
      */
     protected $nationality;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -58,7 +58,7 @@ class Account extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -71,7 +71,7 @@ class Account extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -80,7 +80,7 @@ class Account extends \ArrayObject
         return $this->firstname;
     }
     /**
-     * 
+     *
      *
      * @param string $firstname
      *
@@ -93,7 +93,7 @@ class Account extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -102,7 +102,7 @@ class Account extends \ArrayObject
         return $this->lastname;
     }
     /**
-     * 
+     *
      *
      * @param string $lastname
      *
@@ -115,7 +115,7 @@ class Account extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return Country|null
      */
@@ -124,7 +124,7 @@ class Account extends \ArrayObject
         return $this->countryOfBirth;
     }
     /**
-     * 
+     *
      *
      * @param Country|null $countryOfBirth
      *
@@ -137,7 +137,7 @@ class Account extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return Country
      */
@@ -146,7 +146,7 @@ class Account extends \ArrayObject
         return $this->country;
     }
     /**
-     * 
+     *
      *
      * @param Country $country
      *
@@ -159,7 +159,7 @@ class Account extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return Country|list<Country>|null
      */
@@ -168,7 +168,7 @@ class Account extends \ArrayObject
         return $this->nationality;
     }
     /**
-     * 
+     *
      *
      * @param Country|list<Country>|null $nationality
      *

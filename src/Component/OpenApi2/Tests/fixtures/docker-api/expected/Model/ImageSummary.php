@@ -13,67 +13,67 @@ class ImageSummary
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $parentId;
     /**
-     * 
+     *
      *
      * @var list<string>
      */
     protected $repoTags;
     /**
-     * 
+     *
      *
      * @var list<string>
      */
     protected $repoDigests;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $created;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $size;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $sharedSize;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $virtualSize;
     /**
-     * 
+     *
      *
      * @var array<string, string>
      */
     protected $labels;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $containers;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -82,7 +82,7 @@ class ImageSummary
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param string $id
      *
@@ -95,7 +95,7 @@ class ImageSummary
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -104,7 +104,7 @@ class ImageSummary
         return $this->parentId;
     }
     /**
-     * 
+     *
      *
      * @param string $parentId
      *
@@ -117,7 +117,7 @@ class ImageSummary
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -126,7 +126,7 @@ class ImageSummary
         return $this->repoTags;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $repoTags
      *
@@ -139,7 +139,7 @@ class ImageSummary
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -148,7 +148,7 @@ class ImageSummary
         return $this->repoDigests;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $repoDigests
      *
@@ -161,7 +161,7 @@ class ImageSummary
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -170,7 +170,7 @@ class ImageSummary
         return $this->created;
     }
     /**
-     * 
+     *
      *
      * @param int $created
      *
@@ -183,7 +183,7 @@ class ImageSummary
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -192,7 +192,7 @@ class ImageSummary
         return $this->size;
     }
     /**
-     * 
+     *
      *
      * @param int $size
      *
@@ -205,7 +205,7 @@ class ImageSummary
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -214,7 +214,7 @@ class ImageSummary
         return $this->sharedSize;
     }
     /**
-     * 
+     *
      *
      * @param int $sharedSize
      *
@@ -227,7 +227,7 @@ class ImageSummary
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -236,7 +236,7 @@ class ImageSummary
         return $this->virtualSize;
     }
     /**
-     * 
+     *
      *
      * @param int $virtualSize
      *
@@ -249,7 +249,7 @@ class ImageSummary
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return array<string, string>
      */
@@ -258,7 +258,7 @@ class ImageSummary
         return $this->labels;
     }
     /**
-     * 
+     *
      *
      * @param array<string, string> $labels
      *
@@ -271,7 +271,7 @@ class ImageSummary
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -280,7 +280,7 @@ class ImageSummary
         return $this->containers;
     }
     /**
-     * 
+     *
      *
      * @param int $containers
      *

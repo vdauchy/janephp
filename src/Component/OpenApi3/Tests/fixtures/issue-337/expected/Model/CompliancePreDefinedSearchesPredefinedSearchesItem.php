@@ -13,37 +13,37 @@ class CompliancePreDefinedSearchesPredefinedSearchesItem extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $categoryName;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $productName;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $confidence;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -52,7 +52,7 @@ class CompliancePreDefinedSearchesPredefinedSearchesItem extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -65,7 +65,7 @@ class CompliancePreDefinedSearchesPredefinedSearchesItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -74,7 +74,7 @@ class CompliancePreDefinedSearchesPredefinedSearchesItem extends \ArrayObject
         return $this->categoryName;
     }
     /**
-     * 
+     *
      *
      * @param string $categoryName
      *
@@ -87,7 +87,7 @@ class CompliancePreDefinedSearchesPredefinedSearchesItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -96,7 +96,7 @@ class CompliancePreDefinedSearchesPredefinedSearchesItem extends \ArrayObject
         return $this->productName;
     }
     /**
-     * 
+     *
      *
      * @param string $productName
      *
@@ -109,7 +109,7 @@ class CompliancePreDefinedSearchesPredefinedSearchesItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -118,7 +118,7 @@ class CompliancePreDefinedSearchesPredefinedSearchesItem extends \ArrayObject
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string $description
      *
@@ -131,7 +131,7 @@ class CompliancePreDefinedSearchesPredefinedSearchesItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -140,7 +140,7 @@ class CompliancePreDefinedSearchesPredefinedSearchesItem extends \ArrayObject
         return $this->confidence;
     }
     /**
-     * 
+     *
      *
      * @param int $confidence
      *

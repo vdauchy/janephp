@@ -13,115 +13,115 @@ class VideoMetadata extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var mixed|null
      */
     protected $names;
     /**
-     * 
+     *
      *
      * @var mixed|null
      */
     protected $descriptions;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $fileExtension;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $fileName;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $filePath;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $fileSizeInBytes;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $sha1Hash;
     /**
-     * 
+     *
      *
      * @var mixed|null
      */
     protected $xmpMetadata;
     /**
-     * 
+     *
      *
      * @var mixed|null
      */
     protected $exifMetadata;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $language;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $width;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $height;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $durationInSeconds;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $format;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $codec;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $overallBitrate;
     /**
-     * 
+     *
      *
      * @var list<VideoStream>|null
      */
     protected $videoStreams;
     /**
-     * 
+     *
      *
      * @var list<AudioStream>|null
      */
     protected $audioStreams;
     /**
-     * 
+     *
      *
      * @return mixed
      */
@@ -130,7 +130,7 @@ class VideoMetadata extends \ArrayObject
         return $this->names;
     }
     /**
-     * 
+     *
      *
      * @param mixed $names
      *
@@ -143,7 +143,7 @@ class VideoMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return mixed
      */
@@ -152,7 +152,7 @@ class VideoMetadata extends \ArrayObject
         return $this->descriptions;
     }
     /**
-     * 
+     *
      *
      * @param mixed $descriptions
      *
@@ -165,7 +165,7 @@ class VideoMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -174,7 +174,7 @@ class VideoMetadata extends \ArrayObject
         return $this->fileExtension;
     }
     /**
-     * 
+     *
      *
      * @param string|null $fileExtension
      *
@@ -187,7 +187,7 @@ class VideoMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -196,7 +196,7 @@ class VideoMetadata extends \ArrayObject
         return $this->fileName;
     }
     /**
-     * 
+     *
      *
      * @param string|null $fileName
      *
@@ -209,7 +209,7 @@ class VideoMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -218,7 +218,7 @@ class VideoMetadata extends \ArrayObject
         return $this->filePath;
     }
     /**
-     * 
+     *
      *
      * @param string|null $filePath
      *
@@ -231,7 +231,7 @@ class VideoMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -240,7 +240,7 @@ class VideoMetadata extends \ArrayObject
         return $this->fileSizeInBytes;
     }
     /**
-     * 
+     *
      *
      * @param int|null $fileSizeInBytes
      *
@@ -253,7 +253,7 @@ class VideoMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -262,7 +262,7 @@ class VideoMetadata extends \ArrayObject
         return $this->sha1Hash;
     }
     /**
-     * 
+     *
      *
      * @param string|null $sha1Hash
      *
@@ -275,7 +275,7 @@ class VideoMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return mixed
      */
@@ -284,7 +284,7 @@ class VideoMetadata extends \ArrayObject
         return $this->xmpMetadata;
     }
     /**
-     * 
+     *
      *
      * @param mixed $xmpMetadata
      *
@@ -297,7 +297,7 @@ class VideoMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return mixed
      */
@@ -306,7 +306,7 @@ class VideoMetadata extends \ArrayObject
         return $this->exifMetadata;
     }
     /**
-     * 
+     *
      *
      * @param mixed $exifMetadata
      *
@@ -319,7 +319,7 @@ class VideoMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -328,7 +328,7 @@ class VideoMetadata extends \ArrayObject
         return $this->language;
     }
     /**
-     * 
+     *
      *
      * @param string|null $language
      *
@@ -341,7 +341,7 @@ class VideoMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -350,7 +350,7 @@ class VideoMetadata extends \ArrayObject
         return $this->width;
     }
     /**
-     * 
+     *
      *
      * @param int $width
      *
@@ -363,7 +363,7 @@ class VideoMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -372,7 +372,7 @@ class VideoMetadata extends \ArrayObject
         return $this->height;
     }
     /**
-     * 
+     *
      *
      * @param int $height
      *
@@ -385,7 +385,7 @@ class VideoMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -394,7 +394,7 @@ class VideoMetadata extends \ArrayObject
         return $this->durationInSeconds;
     }
     /**
-     * 
+     *
      *
      * @param float $durationInSeconds
      *
@@ -407,7 +407,7 @@ class VideoMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -416,7 +416,7 @@ class VideoMetadata extends \ArrayObject
         return $this->format;
     }
     /**
-     * 
+     *
      *
      * @param string|null $format
      *
@@ -429,7 +429,7 @@ class VideoMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -438,7 +438,7 @@ class VideoMetadata extends \ArrayObject
         return $this->codec;
     }
     /**
-     * 
+     *
      *
      * @param string|null $codec
      *
@@ -451,7 +451,7 @@ class VideoMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -460,7 +460,7 @@ class VideoMetadata extends \ArrayObject
         return $this->overallBitrate;
     }
     /**
-     * 
+     *
      *
      * @param int|null $overallBitrate
      *
@@ -473,7 +473,7 @@ class VideoMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<VideoStream>|null
      */
@@ -482,7 +482,7 @@ class VideoMetadata extends \ArrayObject
         return $this->videoStreams;
     }
     /**
-     * 
+     *
      *
      * @param list<VideoStream>|null $videoStreams
      *
@@ -495,7 +495,7 @@ class VideoMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<AudioStream>|null
      */
@@ -504,7 +504,7 @@ class VideoMetadata extends \ArrayObject
         return $this->audioStreams;
     }
     /**
-     * 
+     *
      *
      * @param list<AudioStream>|null $audioStreams
      *

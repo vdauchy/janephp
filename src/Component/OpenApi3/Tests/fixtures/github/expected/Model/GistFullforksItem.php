@@ -13,37 +13,37 @@ class GistFullforksItem extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var GistFullforksItemUser
      */
     protected $user;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $updatedAt;
     /**
-     * 
+     *
      *
      * @return GistFullforksItemUser
      */
@@ -52,7 +52,7 @@ class GistFullforksItem extends \ArrayObject
         return $this->user;
     }
     /**
-     * 
+     *
      *
      * @param GistFullforksItemUser $user
      *
@@ -65,7 +65,7 @@ class GistFullforksItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -74,7 +74,7 @@ class GistFullforksItem extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -87,7 +87,7 @@ class GistFullforksItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -96,7 +96,7 @@ class GistFullforksItem extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param string $id
      *
@@ -109,7 +109,7 @@ class GistFullforksItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -118,7 +118,7 @@ class GistFullforksItem extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param string $createdAt
      *
@@ -131,7 +131,7 @@ class GistFullforksItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -140,7 +140,7 @@ class GistFullforksItem extends \ArrayObject
         return $this->updatedAt;
     }
     /**
-     * 
+     *
      *
      * @param string $updatedAt
      *

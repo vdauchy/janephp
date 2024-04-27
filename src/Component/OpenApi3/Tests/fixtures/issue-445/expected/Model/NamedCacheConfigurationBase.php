@@ -25,7 +25,7 @@ class NamedCacheConfigurationBase
      */
     protected $caseSensitive;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -69,7 +69,7 @@ class NamedCacheConfigurationBase
         $this->caseSensitive = $caseSensitive;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -78,7 +78,7 @@ class NamedCacheConfigurationBase
         return $this->kind;
     }
     /**
-     * 
+     *
      *
      * @param string $kind
      */

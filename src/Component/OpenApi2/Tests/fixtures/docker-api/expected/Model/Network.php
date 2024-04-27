@@ -13,85 +13,85 @@ class Network
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $created;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $scope;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $driver;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $enableIPv6;
     /**
-     * 
+     *
      *
      * @var IPAM
      */
     protected $iPAM;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $internal;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $attachable;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $ingress;
     /**
-     * 
+     *
      *
      * @var array<string, NetworkContainer>
      */
     protected $containers;
     /**
-     * 
+     *
      *
      * @var array<string, string>
      */
     protected $options;
     /**
-     * 
+     *
      *
      * @var array<string, string>
      */
     protected $labels;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -100,7 +100,7 @@ class Network
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -113,7 +113,7 @@ class Network
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -122,7 +122,7 @@ class Network
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param string $id
      *
@@ -135,7 +135,7 @@ class Network
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -144,7 +144,7 @@ class Network
         return $this->created;
     }
     /**
-     * 
+     *
      *
      * @param string $created
      *
@@ -157,7 +157,7 @@ class Network
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -166,7 +166,7 @@ class Network
         return $this->scope;
     }
     /**
-     * 
+     *
      *
      * @param string $scope
      *
@@ -179,7 +179,7 @@ class Network
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -188,7 +188,7 @@ class Network
         return $this->driver;
     }
     /**
-     * 
+     *
      *
      * @param string $driver
      *
@@ -201,7 +201,7 @@ class Network
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -210,7 +210,7 @@ class Network
         return $this->enableIPv6;
     }
     /**
-     * 
+     *
      *
      * @param bool $enableIPv6
      *
@@ -223,7 +223,7 @@ class Network
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return IPAM
      */
@@ -232,7 +232,7 @@ class Network
         return $this->iPAM;
     }
     /**
-     * 
+     *
      *
      * @param IPAM $iPAM
      *
@@ -245,7 +245,7 @@ class Network
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -254,7 +254,7 @@ class Network
         return $this->internal;
     }
     /**
-     * 
+     *
      *
      * @param bool $internal
      *
@@ -267,7 +267,7 @@ class Network
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -276,7 +276,7 @@ class Network
         return $this->attachable;
     }
     /**
-     * 
+     *
      *
      * @param bool $attachable
      *
@@ -289,7 +289,7 @@ class Network
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -298,7 +298,7 @@ class Network
         return $this->ingress;
     }
     /**
-     * 
+     *
      *
      * @param bool $ingress
      *
@@ -311,7 +311,7 @@ class Network
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return array<string, NetworkContainer>
      */
@@ -320,7 +320,7 @@ class Network
         return $this->containers;
     }
     /**
-     * 
+     *
      *
      * @param array<string, NetworkContainer> $containers
      *
@@ -333,7 +333,7 @@ class Network
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return array<string, string>
      */
@@ -342,7 +342,7 @@ class Network
         return $this->options;
     }
     /**
-     * 
+     *
      *
      * @param array<string, string> $options
      *
@@ -355,7 +355,7 @@ class Network
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return array<string, string>
      */
@@ -364,7 +364,7 @@ class Network
         return $this->labels;
     }
     /**
-     * 
+     *
      *
      * @param array<string, string> $labels
      *

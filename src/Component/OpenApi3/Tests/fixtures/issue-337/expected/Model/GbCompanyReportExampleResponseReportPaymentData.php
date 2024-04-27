@@ -13,151 +13,151 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $paymentsOnFile;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $paymentsOnTime;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $paymentsPaidLate;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $paymentsSentLegal;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $paymentsStillOwingLate;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $paymentsPaid0to30Days;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $highestInvoiceValueOutstandingLate;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $paymentsPaid90DaysplusLate;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $totalBalanceStillOwingLate;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $dbt;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $paymentsPaid61to90Days;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $totalBalanceStillOwing;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $payments31to60DaysLate;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $payments61to90DaysLate;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $highestInvoiceValueOutstanding;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $paymentsStillOwing;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $paymentsWithinTerms;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $payments0to30Dayslate;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $averageInvoiceValue;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $paymentsPaid31to60Days;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $paymentsPaid90Daysplus;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $totalInvoiceValues;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $paymentTrend;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $industryDBT;
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -166,7 +166,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this->paymentsOnFile;
     }
     /**
-     * 
+     *
      *
      * @param float $paymentsOnFile
      *
@@ -179,7 +179,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -188,7 +188,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this->paymentsOnTime;
     }
     /**
-     * 
+     *
      *
      * @param float $paymentsOnTime
      *
@@ -201,7 +201,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -210,7 +210,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this->paymentsPaidLate;
     }
     /**
-     * 
+     *
      *
      * @param float $paymentsPaidLate
      *
@@ -223,7 +223,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -232,7 +232,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this->paymentsSentLegal;
     }
     /**
-     * 
+     *
      *
      * @param float $paymentsSentLegal
      *
@@ -245,7 +245,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -254,7 +254,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this->paymentsStillOwingLate;
     }
     /**
-     * 
+     *
      *
      * @param float $paymentsStillOwingLate
      *
@@ -267,7 +267,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -276,7 +276,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this->paymentsPaid0to30Days;
     }
     /**
-     * 
+     *
      *
      * @param float $paymentsPaid0to30Days
      *
@@ -289,7 +289,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -298,7 +298,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this->highestInvoiceValueOutstandingLate;
     }
     /**
-     * 
+     *
      *
      * @param float $highestInvoiceValueOutstandingLate
      *
@@ -311,7 +311,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -320,7 +320,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this->paymentsPaid90DaysplusLate;
     }
     /**
-     * 
+     *
      *
      * @param float $paymentsPaid90DaysplusLate
      *
@@ -333,7 +333,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -342,7 +342,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this->totalBalanceStillOwingLate;
     }
     /**
-     * 
+     *
      *
      * @param float $totalBalanceStillOwingLate
      *
@@ -355,7 +355,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -364,7 +364,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this->dbt;
     }
     /**
-     * 
+     *
      *
      * @param float $dbt
      *
@@ -377,7 +377,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -386,7 +386,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this->paymentsPaid61to90Days;
     }
     /**
-     * 
+     *
      *
      * @param float $paymentsPaid61to90Days
      *
@@ -399,7 +399,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -408,7 +408,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this->totalBalanceStillOwing;
     }
     /**
-     * 
+     *
      *
      * @param float $totalBalanceStillOwing
      *
@@ -421,7 +421,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -430,7 +430,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this->payments31to60DaysLate;
     }
     /**
-     * 
+     *
      *
      * @param float $payments31to60DaysLate
      *
@@ -443,7 +443,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -452,7 +452,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this->payments61to90DaysLate;
     }
     /**
-     * 
+     *
      *
      * @param float $payments61to90DaysLate
      *
@@ -465,7 +465,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -474,7 +474,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this->highestInvoiceValueOutstanding;
     }
     /**
-     * 
+     *
      *
      * @param float $highestInvoiceValueOutstanding
      *
@@ -487,7 +487,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -496,7 +496,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this->paymentsStillOwing;
     }
     /**
-     * 
+     *
      *
      * @param float $paymentsStillOwing
      *
@@ -509,7 +509,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -518,7 +518,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this->paymentsWithinTerms;
     }
     /**
-     * 
+     *
      *
      * @param float $paymentsWithinTerms
      *
@@ -531,7 +531,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -540,7 +540,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this->payments0to30Dayslate;
     }
     /**
-     * 
+     *
      *
      * @param float $payments0to30Dayslate
      *
@@ -553,7 +553,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -562,7 +562,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this->averageInvoiceValue;
     }
     /**
-     * 
+     *
      *
      * @param float $averageInvoiceValue
      *
@@ -575,7 +575,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -584,7 +584,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this->paymentsPaid31to60Days;
     }
     /**
-     * 
+     *
      *
      * @param float $paymentsPaid31to60Days
      *
@@ -597,7 +597,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -606,7 +606,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this->paymentsPaid90Daysplus;
     }
     /**
-     * 
+     *
      *
      * @param float $paymentsPaid90Daysplus
      *
@@ -619,7 +619,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -628,7 +628,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this->totalInvoiceValues;
     }
     /**
-     * 
+     *
      *
      * @param float $totalInvoiceValues
      *
@@ -641,7 +641,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -650,7 +650,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this->paymentTrend;
     }
     /**
-     * 
+     *
      *
      * @param string $paymentTrend
      *
@@ -663,7 +663,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -672,7 +672,7 @@ class GbCompanyReportExampleResponseReportPaymentData extends \ArrayObject
         return $this->industryDBT;
     }
     /**
-     * 
+     *
      *
      * @param float $industryDBT
      *

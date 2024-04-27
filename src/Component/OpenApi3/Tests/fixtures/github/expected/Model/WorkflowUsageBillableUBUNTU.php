@@ -13,13 +13,13 @@ class WorkflowUsageBillableUBUNTU extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $totalMs;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -28,7 +28,7 @@ class WorkflowUsageBillableUBUNTU extends \ArrayObject
         return $this->totalMs;
     }
     /**
-     * 
+     *
      *
      * @param int $totalMs
      *

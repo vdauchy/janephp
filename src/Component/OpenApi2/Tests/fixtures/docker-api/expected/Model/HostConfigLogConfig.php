@@ -13,19 +13,19 @@ class HostConfigLogConfig
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @var array<string, string>
      */
     protected $config;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -34,7 +34,7 @@ class HostConfigLogConfig
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string $type
      *
@@ -47,7 +47,7 @@ class HostConfigLogConfig
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return array<string, string>
      */
@@ -56,7 +56,7 @@ class HostConfigLogConfig
         return $this->config;
     }
     /**
-     * 
+     *
      *
      * @param array<string, string> $config
      *

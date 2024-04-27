@@ -13,19 +13,19 @@ class Stargazer extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $starredAt;
     /**
-     * 
+     *
      *
      * @var StargazerUser|null
      */
     protected $user;
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -34,7 +34,7 @@ class Stargazer extends \ArrayObject
         return $this->starredAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $starredAt
      *
@@ -47,7 +47,7 @@ class Stargazer extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return StargazerUser|null
      */
@@ -56,7 +56,7 @@ class Stargazer extends \ArrayObject
         return $this->user;
     }
     /**
-     * 
+     *
      *
      * @param StargazerUser|null $user
      *

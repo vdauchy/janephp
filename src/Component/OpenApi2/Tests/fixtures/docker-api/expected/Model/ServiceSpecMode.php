@@ -13,13 +13,13 @@ class ServiceSpecMode
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var ServiceSpecModeReplicated
      */
     protected $replicated;
     /**
-     * 
+     *
      *
      * @var mixed
      */
@@ -27,7 +27,7 @@ class ServiceSpecMode
     /**
     * The mode used for services with a finite number of tasks that run
     to a completed state.
-    
+
     *
     * @var ServiceSpecModeReplicatedJob
     */
@@ -35,13 +35,13 @@ class ServiceSpecMode
     /**
     * The mode used for services which run a task to the completed state
     on each valid node.
-    
+
     *
     * @var mixed
     */
     protected $globalJob;
     /**
-     * 
+     *
      *
      * @return ServiceSpecModeReplicated
      */
@@ -50,7 +50,7 @@ class ServiceSpecMode
         return $this->replicated;
     }
     /**
-     * 
+     *
      *
      * @param ServiceSpecModeReplicated $replicated
      *
@@ -63,7 +63,7 @@ class ServiceSpecMode
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return mixed
      */
@@ -72,7 +72,7 @@ class ServiceSpecMode
         return $this->global;
     }
     /**
-     * 
+     *
      *
      * @param mixed $global
      *
@@ -87,7 +87,7 @@ class ServiceSpecMode
     /**
     * The mode used for services with a finite number of tasks that run
     to a completed state.
-    
+
     *
     * @return ServiceSpecModeReplicatedJob
     */
@@ -98,7 +98,7 @@ class ServiceSpecMode
     /**
     * The mode used for services with a finite number of tasks that run
     to a completed state.
-    
+
     *
     * @param ServiceSpecModeReplicatedJob $replicatedJob
     *
@@ -113,7 +113,7 @@ class ServiceSpecMode
     /**
     * The mode used for services which run a task to the completed state
     on each valid node.
-    
+
     *
     * @return mixed
     */
@@ -124,7 +124,7 @@ class ServiceSpecMode
     /**
     * The mode used for services which run a task to the completed state
     on each valid node.
-    
+
     *
     * @param mixed $globalJob
     *

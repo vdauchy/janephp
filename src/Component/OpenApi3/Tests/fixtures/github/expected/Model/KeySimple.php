@@ -13,19 +13,19 @@ class KeySimple extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $key;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -34,7 +34,7 @@ class KeySimple extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -47,7 +47,7 @@ class KeySimple extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -56,7 +56,7 @@ class KeySimple extends \ArrayObject
         return $this->key;
     }
     /**
-     * 
+     *
      *
      * @param string $key
      *

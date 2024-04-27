@@ -19,13 +19,13 @@ class OrganizationActionsSecret extends \ArrayObject
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
@@ -37,7 +37,7 @@ class OrganizationActionsSecret extends \ArrayObject
      */
     protected $visibility;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -65,7 +65,7 @@ class OrganizationActionsSecret extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -74,7 +74,7 @@ class OrganizationActionsSecret extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $createdAt
      *
@@ -87,7 +87,7 @@ class OrganizationActionsSecret extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -96,7 +96,7 @@ class OrganizationActionsSecret extends \ArrayObject
         return $this->updatedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $updatedAt
      *
@@ -131,7 +131,7 @@ class OrganizationActionsSecret extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -140,7 +140,7 @@ class OrganizationActionsSecret extends \ArrayObject
         return $this->selectedRepositoriesUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $selectedRepositoriesUrl
      *

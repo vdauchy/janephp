@@ -13,43 +13,43 @@ class Actor extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $login;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $displayLogin;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $gravatarId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $avatarUrl;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -58,7 +58,7 @@ class Actor extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -71,7 +71,7 @@ class Actor extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -80,7 +80,7 @@ class Actor extends \ArrayObject
         return $this->login;
     }
     /**
-     * 
+     *
      *
      * @param string $login
      *
@@ -93,7 +93,7 @@ class Actor extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -102,7 +102,7 @@ class Actor extends \ArrayObject
         return $this->displayLogin;
     }
     /**
-     * 
+     *
      *
      * @param string $displayLogin
      *
@@ -115,7 +115,7 @@ class Actor extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -124,7 +124,7 @@ class Actor extends \ArrayObject
         return $this->gravatarId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $gravatarId
      *
@@ -137,7 +137,7 @@ class Actor extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -146,7 +146,7 @@ class Actor extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -159,7 +159,7 @@ class Actor extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -168,7 +168,7 @@ class Actor extends \ArrayObject
         return $this->avatarUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $avatarUrl
      *

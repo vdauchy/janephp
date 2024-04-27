@@ -13,25 +13,25 @@ class ListCompanyImagesDataItemDocument extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $imageType;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $imageCode;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -40,7 +40,7 @@ class ListCompanyImagesDataItemDocument extends \ArrayObject
         return $this->imageType;
     }
     /**
-     * 
+     *
      *
      * @param string $imageType
      *
@@ -53,7 +53,7 @@ class ListCompanyImagesDataItemDocument extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -62,7 +62,7 @@ class ListCompanyImagesDataItemDocument extends \ArrayObject
         return $this->imageCode;
     }
     /**
-     * 
+     *
      *
      * @param string $imageCode
      *
@@ -75,7 +75,7 @@ class ListCompanyImagesDataItemDocument extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -84,7 +84,7 @@ class ListCompanyImagesDataItemDocument extends \ArrayObject
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string $description
      *

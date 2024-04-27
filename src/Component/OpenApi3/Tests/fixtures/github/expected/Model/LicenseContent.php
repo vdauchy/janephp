@@ -13,85 +13,85 @@ class LicenseContent extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $path;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $sha;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $size;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $htmlUrl;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $gitUrl;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $downloadUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $content;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $encoding;
     /**
-     * 
+     *
      *
      * @var LicenseContentLinks
      */
     protected $links;
     /**
-     * 
+     *
      *
      * @var LicenseContentLicense|null
      */
     protected $license;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -100,7 +100,7 @@ class LicenseContent extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -113,7 +113,7 @@ class LicenseContent extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -122,7 +122,7 @@ class LicenseContent extends \ArrayObject
         return $this->path;
     }
     /**
-     * 
+     *
      *
      * @param string $path
      *
@@ -135,7 +135,7 @@ class LicenseContent extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -144,7 +144,7 @@ class LicenseContent extends \ArrayObject
         return $this->sha;
     }
     /**
-     * 
+     *
      *
      * @param string $sha
      *
@@ -157,7 +157,7 @@ class LicenseContent extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -166,7 +166,7 @@ class LicenseContent extends \ArrayObject
         return $this->size;
     }
     /**
-     * 
+     *
      *
      * @param int $size
      *
@@ -179,7 +179,7 @@ class LicenseContent extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -188,7 +188,7 @@ class LicenseContent extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -201,7 +201,7 @@ class LicenseContent extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -210,7 +210,7 @@ class LicenseContent extends \ArrayObject
         return $this->htmlUrl;
     }
     /**
-     * 
+     *
      *
      * @param string|null $htmlUrl
      *
@@ -223,7 +223,7 @@ class LicenseContent extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -232,7 +232,7 @@ class LicenseContent extends \ArrayObject
         return $this->gitUrl;
     }
     /**
-     * 
+     *
      *
      * @param string|null $gitUrl
      *
@@ -245,7 +245,7 @@ class LicenseContent extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -254,7 +254,7 @@ class LicenseContent extends \ArrayObject
         return $this->downloadUrl;
     }
     /**
-     * 
+     *
      *
      * @param string|null $downloadUrl
      *
@@ -267,7 +267,7 @@ class LicenseContent extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -276,7 +276,7 @@ class LicenseContent extends \ArrayObject
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string $type
      *
@@ -289,7 +289,7 @@ class LicenseContent extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -298,7 +298,7 @@ class LicenseContent extends \ArrayObject
         return $this->content;
     }
     /**
-     * 
+     *
      *
      * @param string $content
      *
@@ -311,7 +311,7 @@ class LicenseContent extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -320,7 +320,7 @@ class LicenseContent extends \ArrayObject
         return $this->encoding;
     }
     /**
-     * 
+     *
      *
      * @param string $encoding
      *
@@ -333,7 +333,7 @@ class LicenseContent extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return LicenseContentLinks
      */
@@ -342,7 +342,7 @@ class LicenseContent extends \ArrayObject
         return $this->links;
     }
     /**
-     * 
+     *
      *
      * @param LicenseContentLinks $links
      *
@@ -355,7 +355,7 @@ class LicenseContent extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return LicenseContentLicense|null
      */
@@ -364,7 +364,7 @@ class LicenseContent extends \ArrayObject
         return $this->license;
     }
     /**
-     * 
+     *
      *
      * @param LicenseContentLicense|null $license
      *

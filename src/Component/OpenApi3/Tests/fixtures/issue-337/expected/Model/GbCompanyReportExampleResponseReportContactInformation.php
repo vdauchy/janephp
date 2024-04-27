@@ -13,25 +13,25 @@ class GbCompanyReportExampleResponseReportContactInformation extends \ArrayObjec
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var GbCompanyReportExampleResponseReportContactInformationMainAddress
      */
     protected $mainAddress;
     /**
-     * 
+     *
      *
      * @var list<GbCompanyReportExampleResponseReportContactInformationOtherAddressesItem>
      */
     protected $otherAddresses;
     /**
-     * 
+     *
      *
      * @var list<string>
      */
     protected $websites;
     /**
-     * 
+     *
      *
      * @return GbCompanyReportExampleResponseReportContactInformationMainAddress
      */
@@ -40,7 +40,7 @@ class GbCompanyReportExampleResponseReportContactInformation extends \ArrayObjec
         return $this->mainAddress;
     }
     /**
-     * 
+     *
      *
      * @param GbCompanyReportExampleResponseReportContactInformationMainAddress $mainAddress
      *
@@ -53,7 +53,7 @@ class GbCompanyReportExampleResponseReportContactInformation extends \ArrayObjec
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<GbCompanyReportExampleResponseReportContactInformationOtherAddressesItem>
      */
@@ -62,7 +62,7 @@ class GbCompanyReportExampleResponseReportContactInformation extends \ArrayObjec
         return $this->otherAddresses;
     }
     /**
-     * 
+     *
      *
      * @param list<GbCompanyReportExampleResponseReportContactInformationOtherAddressesItem> $otherAddresses
      *
@@ -75,7 +75,7 @@ class GbCompanyReportExampleResponseReportContactInformation extends \ArrayObjec
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -84,7 +84,7 @@ class GbCompanyReportExampleResponseReportContactInformation extends \ArrayObjec
         return $this->websites;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $websites
      *

@@ -13,19 +13,19 @@ class UserAuditHistory
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $modificationDate;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $modifiedByUser;
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -34,7 +34,7 @@ class UserAuditHistory
         return $this->modificationDate;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $modificationDate
      *
@@ -47,7 +47,7 @@ class UserAuditHistory
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -56,7 +56,7 @@ class UserAuditHistory
         return $this->modifiedByUser;
     }
     /**
-     * 
+     *
      *
      * @param string|null $modifiedByUser
      *

@@ -49,7 +49,7 @@ class ShareOutputBase
      */
     protected $dynamicRendering;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -169,7 +169,7 @@ class ShareOutputBase
         $this->dynamicRendering = $dynamicRendering;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -178,7 +178,7 @@ class ShareOutputBase
         return $this->kind;
     }
     /**
-     * 
+     *
      *
      * @param string $kind
      */

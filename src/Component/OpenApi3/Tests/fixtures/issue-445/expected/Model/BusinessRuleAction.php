@@ -19,7 +19,7 @@ class BusinessRuleAction
      */
     protected $traceRefId;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -44,7 +44,7 @@ class BusinessRuleAction
         $this->traceRefId = $traceRefId;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -53,7 +53,7 @@ class BusinessRuleAction
         return $this->kind;
     }
     /**
-     * 
+     *
      *
      * @param string $kind
      */

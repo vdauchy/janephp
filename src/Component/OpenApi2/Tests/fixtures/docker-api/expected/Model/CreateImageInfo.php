@@ -13,37 +13,37 @@ class CreateImageInfo
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $error;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $status;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $progress;
     /**
-     * 
+     *
      *
      * @var ProgressDetail
      */
     protected $progressDetail;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -52,7 +52,7 @@ class CreateImageInfo
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param string $id
      *
@@ -65,7 +65,7 @@ class CreateImageInfo
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -74,7 +74,7 @@ class CreateImageInfo
         return $this->error;
     }
     /**
-     * 
+     *
      *
      * @param string $error
      *
@@ -87,7 +87,7 @@ class CreateImageInfo
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -96,7 +96,7 @@ class CreateImageInfo
         return $this->status;
     }
     /**
-     * 
+     *
      *
      * @param string $status
      *
@@ -109,7 +109,7 @@ class CreateImageInfo
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -118,7 +118,7 @@ class CreateImageInfo
         return $this->progress;
     }
     /**
-     * 
+     *
      *
      * @param string $progress
      *
@@ -131,7 +131,7 @@ class CreateImageInfo
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ProgressDetail
      */
@@ -140,7 +140,7 @@ class CreateImageInfo
         return $this->progressDetail;
     }
     /**
-     * 
+     *
      *
      * @param ProgressDetail $progressDetail
      *

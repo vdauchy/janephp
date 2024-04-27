@@ -13,31 +13,31 @@ class OutputRenderedEvent extends ApplicationEvent
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $outputId;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $contentId;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $outputFormatId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $renderingState;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -46,7 +46,7 @@ class OutputRenderedEvent extends ApplicationEvent
         return $this->outputId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $outputId
      *
@@ -59,7 +59,7 @@ class OutputRenderedEvent extends ApplicationEvent
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -68,7 +68,7 @@ class OutputRenderedEvent extends ApplicationEvent
         return $this->contentId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $contentId
      *
@@ -81,7 +81,7 @@ class OutputRenderedEvent extends ApplicationEvent
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -90,7 +90,7 @@ class OutputRenderedEvent extends ApplicationEvent
         return $this->outputFormatId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $outputFormatId
      *
@@ -103,7 +103,7 @@ class OutputRenderedEvent extends ApplicationEvent
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -112,7 +112,7 @@ class OutputRenderedEvent extends ApplicationEvent
         return $this->renderingState;
     }
     /**
-     * 
+     *
      *
      * @param string $renderingState
      *

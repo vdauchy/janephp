@@ -13,13 +13,13 @@ class ResourceObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $nanoCPUs;
     /**
-     * 
+     *
      *
      * @var int
      */
@@ -27,13 +27,13 @@ class ResourceObject
     /**
     * User-defined resources can be either Integer resources (e.g, `SSD=3`) or
     String resources (e.g, `GPU=UUID1`).
-    
+
     *
     * @var list<GenericResourcesItem>
     */
     protected $genericResources;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -42,7 +42,7 @@ class ResourceObject
         return $this->nanoCPUs;
     }
     /**
-     * 
+     *
      *
      * @param int $nanoCPUs
      *
@@ -55,7 +55,7 @@ class ResourceObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -64,7 +64,7 @@ class ResourceObject
         return $this->memoryBytes;
     }
     /**
-     * 
+     *
      *
      * @param int $memoryBytes
      *
@@ -79,7 +79,7 @@ class ResourceObject
     /**
     * User-defined resources can be either Integer resources (e.g, `SSD=3`) or
     String resources (e.g, `GPU=UUID1`).
-    
+
     *
     * @return list<GenericResourcesItem>
     */
@@ -90,7 +90,7 @@ class ResourceObject
     /**
     * User-defined resources can be either Integer resources (e.g, `SSD=3`) or
     String resources (e.g, `GPU=UUID1`).
-    
+
     *
     * @param list<GenericResourcesItem> $genericResources
     *

@@ -13,49 +13,49 @@ class GbCompanyReportExampleResponseReportAdditionalInformation extends \ArrayOb
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var list<GbCompanyReportExampleResponseReportAdditionalInformationCompanyHistoryItem>
      */
     protected $companyHistory;
     /**
-     * 
+     *
      *
      * @var GbCompanyReportExampleResponseReportAdditionalInformationMortgageSummary
      */
     protected $mortgageSummary;
     /**
-     * 
+     *
      *
      * @var list<GbCompanyReportExampleResponseReportAdditionalInformationMortgageDetailsItem>
      */
     protected $mortgageDetails;
     /**
-     * 
+     *
      *
      * @var list<GbCompanyReportExampleResponseReportAdditionalInformationCommentariesItem>
      */
     protected $commentaries;
     /**
-     * 
+     *
      *
      * @var list<GbCompanyReportExampleResponseReportAdditionalInformationRatingHistoryItem>
      */
     protected $ratingHistory;
     /**
-     * 
+     *
      *
      * @var list<GbCompanyReportExampleResponseReportAdditionalInformationCreditLimitHistoryItem>
      */
     protected $creditLimitHistory;
     /**
-     * 
+     *
      *
      * @var list<GbCompanyReportExampleResponseReportAdditionalInformationBadDebtDetailsItem>
      */
     protected $badDebtDetails;
     /**
-     * 
+     *
      *
      * @return list<GbCompanyReportExampleResponseReportAdditionalInformationCompanyHistoryItem>
      */
@@ -64,7 +64,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformation extends \ArrayOb
         return $this->companyHistory;
     }
     /**
-     * 
+     *
      *
      * @param list<GbCompanyReportExampleResponseReportAdditionalInformationCompanyHistoryItem> $companyHistory
      *
@@ -77,7 +77,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformation extends \ArrayOb
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GbCompanyReportExampleResponseReportAdditionalInformationMortgageSummary
      */
@@ -86,7 +86,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformation extends \ArrayOb
         return $this->mortgageSummary;
     }
     /**
-     * 
+     *
      *
      * @param GbCompanyReportExampleResponseReportAdditionalInformationMortgageSummary $mortgageSummary
      *
@@ -99,7 +99,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformation extends \ArrayOb
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<GbCompanyReportExampleResponseReportAdditionalInformationMortgageDetailsItem>
      */
@@ -108,7 +108,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformation extends \ArrayOb
         return $this->mortgageDetails;
     }
     /**
-     * 
+     *
      *
      * @param list<GbCompanyReportExampleResponseReportAdditionalInformationMortgageDetailsItem> $mortgageDetails
      *
@@ -121,7 +121,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformation extends \ArrayOb
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<GbCompanyReportExampleResponseReportAdditionalInformationCommentariesItem>
      */
@@ -130,7 +130,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformation extends \ArrayOb
         return $this->commentaries;
     }
     /**
-     * 
+     *
      *
      * @param list<GbCompanyReportExampleResponseReportAdditionalInformationCommentariesItem> $commentaries
      *
@@ -143,7 +143,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformation extends \ArrayOb
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<GbCompanyReportExampleResponseReportAdditionalInformationRatingHistoryItem>
      */
@@ -152,7 +152,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformation extends \ArrayOb
         return $this->ratingHistory;
     }
     /**
-     * 
+     *
      *
      * @param list<GbCompanyReportExampleResponseReportAdditionalInformationRatingHistoryItem> $ratingHistory
      *
@@ -165,7 +165,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformation extends \ArrayOb
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<GbCompanyReportExampleResponseReportAdditionalInformationCreditLimitHistoryItem>
      */
@@ -174,7 +174,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformation extends \ArrayOb
         return $this->creditLimitHistory;
     }
     /**
-     * 
+     *
      *
      * @param list<GbCompanyReportExampleResponseReportAdditionalInformationCreditLimitHistoryItem> $creditLimitHistory
      *
@@ -187,7 +187,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformation extends \ArrayOb
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<GbCompanyReportExampleResponseReportAdditionalInformationBadDebtDetailsItem>
      */
@@ -196,7 +196,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformation extends \ArrayOb
         return $this->badDebtDetails;
     }
     /**
-     * 
+     *
      *
      * @param list<GbCompanyReportExampleResponseReportAdditionalInformationBadDebtDetailsItem> $badDebtDetails
      *

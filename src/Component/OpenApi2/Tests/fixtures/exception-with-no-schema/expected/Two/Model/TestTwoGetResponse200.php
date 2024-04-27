@@ -13,13 +13,13 @@ class TestTwoGetResponse200
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $message;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -28,7 +28,7 @@ class TestTwoGetResponse200
         return $this->message;
     }
     /**
-     * 
+     *
      *
      * @param string $message
      *

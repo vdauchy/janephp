@@ -13,25 +13,25 @@ class BusinessProcessEvent extends ApplicationEvent
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $businessProcessId;
     /**
-     * 
+     *
      *
      * @var mixed|null
      */
     protected $lifeCycle;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $state;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -40,7 +40,7 @@ class BusinessProcessEvent extends ApplicationEvent
         return $this->businessProcessId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $businessProcessId
      *
@@ -53,7 +53,7 @@ class BusinessProcessEvent extends ApplicationEvent
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return mixed
      */
@@ -62,7 +62,7 @@ class BusinessProcessEvent extends ApplicationEvent
         return $this->lifeCycle;
     }
     /**
-     * 
+     *
      *
      * @param mixed $lifeCycle
      *
@@ -75,7 +75,7 @@ class BusinessProcessEvent extends ApplicationEvent
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -84,7 +84,7 @@ class BusinessProcessEvent extends ApplicationEvent
         return $this->state;
     }
     /**
-     * 
+     *
      *
      * @param string|null $state
      *

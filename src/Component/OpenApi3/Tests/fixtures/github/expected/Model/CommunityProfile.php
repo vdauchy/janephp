@@ -13,37 +13,37 @@ class CommunityProfile extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $healthPercentage;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $documentation;
     /**
-     * 
+     *
      *
      * @var CommunityProfileFiles
      */
     protected $files;
     /**
-     * 
+     *
      *
      * @var \DateTime|null
      */
     protected $updatedAt;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -52,7 +52,7 @@ class CommunityProfile extends \ArrayObject
         return $this->healthPercentage;
     }
     /**
-     * 
+     *
      *
      * @param int $healthPercentage
      *
@@ -65,7 +65,7 @@ class CommunityProfile extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -74,7 +74,7 @@ class CommunityProfile extends \ArrayObject
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string|null $description
      *
@@ -87,7 +87,7 @@ class CommunityProfile extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -96,7 +96,7 @@ class CommunityProfile extends \ArrayObject
         return $this->documentation;
     }
     /**
-     * 
+     *
      *
      * @param string|null $documentation
      *
@@ -109,7 +109,7 @@ class CommunityProfile extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return CommunityProfileFiles
      */
@@ -118,7 +118,7 @@ class CommunityProfile extends \ArrayObject
         return $this->files;
     }
     /**
-     * 
+     *
      *
      * @param CommunityProfileFiles $files
      *
@@ -131,7 +131,7 @@ class CommunityProfile extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime|null
      */
@@ -140,7 +140,7 @@ class CommunityProfile extends \ArrayObject
         return $this->updatedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime|null $updatedAt
      *

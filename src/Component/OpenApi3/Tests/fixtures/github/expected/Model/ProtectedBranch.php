@@ -13,7 +13,7 @@ class ProtectedBranch extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -25,37 +25,37 @@ class ProtectedBranch extends \ArrayObject
      */
     protected $requiredStatusChecks;
     /**
-     * 
+     *
      *
      * @var ProtectedBranchRequiredPullRequestReviews
      */
     protected $requiredPullRequestReviews;
     /**
-     * 
+     *
      *
      * @var ProtectedBranchRequiredSignatures
      */
     protected $requiredSignatures;
     /**
-     * 
+     *
      *
      * @var ProtectedBranchEnforceAdmins
      */
     protected $enforceAdmins;
     /**
-     * 
+     *
      *
      * @var ProtectedBranchRequiredLinearHistory
      */
     protected $requiredLinearHistory;
     /**
-     * 
+     *
      *
      * @var ProtectedBranchAllowForcePushes
      */
     protected $allowForcePushes;
     /**
-     * 
+     *
      *
      * @var ProtectedBranchAllowDeletions
      */
@@ -67,7 +67,7 @@ class ProtectedBranch extends \ArrayObject
      */
     protected $restrictions;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -76,7 +76,7 @@ class ProtectedBranch extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -111,7 +111,7 @@ class ProtectedBranch extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ProtectedBranchRequiredPullRequestReviews
      */
@@ -120,7 +120,7 @@ class ProtectedBranch extends \ArrayObject
         return $this->requiredPullRequestReviews;
     }
     /**
-     * 
+     *
      *
      * @param ProtectedBranchRequiredPullRequestReviews $requiredPullRequestReviews
      *
@@ -133,7 +133,7 @@ class ProtectedBranch extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ProtectedBranchRequiredSignatures
      */
@@ -142,7 +142,7 @@ class ProtectedBranch extends \ArrayObject
         return $this->requiredSignatures;
     }
     /**
-     * 
+     *
      *
      * @param ProtectedBranchRequiredSignatures $requiredSignatures
      *
@@ -155,7 +155,7 @@ class ProtectedBranch extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ProtectedBranchEnforceAdmins
      */
@@ -164,7 +164,7 @@ class ProtectedBranch extends \ArrayObject
         return $this->enforceAdmins;
     }
     /**
-     * 
+     *
      *
      * @param ProtectedBranchEnforceAdmins $enforceAdmins
      *
@@ -177,7 +177,7 @@ class ProtectedBranch extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ProtectedBranchRequiredLinearHistory
      */
@@ -186,7 +186,7 @@ class ProtectedBranch extends \ArrayObject
         return $this->requiredLinearHistory;
     }
     /**
-     * 
+     *
      *
      * @param ProtectedBranchRequiredLinearHistory $requiredLinearHistory
      *
@@ -199,7 +199,7 @@ class ProtectedBranch extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ProtectedBranchAllowForcePushes
      */
@@ -208,7 +208,7 @@ class ProtectedBranch extends \ArrayObject
         return $this->allowForcePushes;
     }
     /**
-     * 
+     *
      *
      * @param ProtectedBranchAllowForcePushes $allowForcePushes
      *
@@ -221,7 +221,7 @@ class ProtectedBranch extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ProtectedBranchAllowDeletions
      */
@@ -230,7 +230,7 @@ class ProtectedBranch extends \ArrayObject
         return $this->allowDeletions;
     }
     /**
-     * 
+     *
      *
      * @param ProtectedBranchAllowDeletions $allowDeletions
      *

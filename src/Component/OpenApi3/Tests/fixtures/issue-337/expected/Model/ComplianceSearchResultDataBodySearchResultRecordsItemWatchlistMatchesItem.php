@@ -13,163 +13,163 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $acceptListID;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $addedToAcceptList;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $addressName;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $autoFalsePositive;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $bestAddressIsPartial;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $bestCountryScore;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $bestCountryType;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $bestDOBIsPartial;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $bestName;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $bestNameScore;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $checkSum;
     /**
-     * 
+     *
      *
      * @var ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemConflicts
      */
     protected $conflicts;
     /**
-     * 
+     *
      *
      * @var ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemEntityDetails
      */
     protected $entityDetails;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $entityName;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $entityScore;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $entityUniqueID;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $falsePositive;
     /**
-     * 
+     *
      *
      * @var ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemFile
      */
     protected $file;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $gatewayOFACScreeningIndicatorMatch;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $matchReAlert;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $previousResultID;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $reasonListed;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $resultDate;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $secondaryOFACScreeningIndicatorMatch;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $trueMatch;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -178,7 +178,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this->acceptListID;
     }
     /**
-     * 
+     *
      *
      * @param int $acceptListID
      *
@@ -191,7 +191,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -200,7 +200,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this->addedToAcceptList;
     }
     /**
-     * 
+     *
      *
      * @param bool $addedToAcceptList
      *
@@ -213,7 +213,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -222,7 +222,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this->addressName;
     }
     /**
-     * 
+     *
      *
      * @param bool $addressName
      *
@@ -235,7 +235,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -244,7 +244,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this->autoFalsePositive;
     }
     /**
-     * 
+     *
      *
      * @param bool $autoFalsePositive
      *
@@ -257,7 +257,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -266,7 +266,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this->bestAddressIsPartial;
     }
     /**
-     * 
+     *
      *
      * @param bool $bestAddressIsPartial
      *
@@ -279,7 +279,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -288,7 +288,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this->bestCountryScore;
     }
     /**
-     * 
+     *
      *
      * @param int $bestCountryScore
      *
@@ -301,7 +301,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -310,7 +310,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this->bestCountryType;
     }
     /**
-     * 
+     *
      *
      * @param string $bestCountryType
      *
@@ -323,7 +323,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -332,7 +332,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this->bestDOBIsPartial;
     }
     /**
-     * 
+     *
      *
      * @param bool $bestDOBIsPartial
      *
@@ -345,7 +345,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -354,7 +354,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this->bestName;
     }
     /**
-     * 
+     *
      *
      * @param string $bestName
      *
@@ -367,7 +367,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -376,7 +376,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this->bestNameScore;
     }
     /**
-     * 
+     *
      *
      * @param int $bestNameScore
      *
@@ -389,7 +389,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -398,7 +398,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this->checkSum;
     }
     /**
-     * 
+     *
      *
      * @param int $checkSum
      *
@@ -411,7 +411,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemConflicts
      */
@@ -420,7 +420,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this->conflicts;
     }
     /**
-     * 
+     *
      *
      * @param ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemConflicts $conflicts
      *
@@ -433,7 +433,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemEntityDetails
      */
@@ -442,7 +442,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this->entityDetails;
     }
     /**
-     * 
+     *
      *
      * @param ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemEntityDetails $entityDetails
      *
@@ -455,7 +455,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -464,7 +464,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this->entityName;
     }
     /**
-     * 
+     *
      *
      * @param string $entityName
      *
@@ -477,7 +477,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -486,7 +486,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this->entityScore;
     }
     /**
-     * 
+     *
      *
      * @param int $entityScore
      *
@@ -499,7 +499,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -508,7 +508,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this->entityUniqueID;
     }
     /**
-     * 
+     *
      *
      * @param string $entityUniqueID
      *
@@ -521,7 +521,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -530,7 +530,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this->falsePositive;
     }
     /**
-     * 
+     *
      *
      * @param bool $falsePositive
      *
@@ -543,7 +543,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemFile
      */
@@ -552,7 +552,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this->file;
     }
     /**
-     * 
+     *
      *
      * @param ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemFile $file
      *
@@ -565,7 +565,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -574,7 +574,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this->gatewayOFACScreeningIndicatorMatch;
     }
     /**
-     * 
+     *
      *
      * @param bool $gatewayOFACScreeningIndicatorMatch
      *
@@ -587,7 +587,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -596,7 +596,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -609,7 +609,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -618,7 +618,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this->matchReAlert;
     }
     /**
-     * 
+     *
      *
      * @param bool $matchReAlert
      *
@@ -631,7 +631,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -640,7 +640,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this->previousResultID;
     }
     /**
-     * 
+     *
      *
      * @param int $previousResultID
      *
@@ -653,7 +653,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -662,7 +662,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this->reasonListed;
     }
     /**
-     * 
+     *
      *
      * @param string $reasonListed
      *
@@ -675,7 +675,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -684,7 +684,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this->resultDate;
     }
     /**
-     * 
+     *
      *
      * @param string $resultDate
      *
@@ -697,7 +697,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -706,7 +706,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this->secondaryOFACScreeningIndicatorMatch;
     }
     /**
-     * 
+     *
      *
      * @param bool $secondaryOFACScreeningIndicatorMatch
      *
@@ -719,7 +719,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -728,7 +728,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
         return $this->trueMatch;
     }
     /**
-     * 
+     *
      *
      * @param bool $trueMatch
      *

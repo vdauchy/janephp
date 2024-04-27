@@ -13,445 +13,445 @@ class RepoSearchResultItem extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $nodeId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $fullName;
     /**
-     * 
+     *
      *
      * @var RepoSearchResultItemOwner|null
      */
     protected $owner;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $private;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $htmlUrl;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $fork;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $updatedAt;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $pushedAt;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $homepage;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $size;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $stargazersCount;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $watchersCount;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $language;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $forksCount;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $openIssuesCount;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $masterBranch;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $defaultBranch;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $score;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $forksUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $keysUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $collaboratorsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $teamsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $hooksUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $issueEventsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $eventsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $assigneesUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $branchesUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $tagsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $blobsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $gitTagsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $gitRefsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $treesUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $statusesUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $languagesUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $stargazersUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $contributorsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $subscribersUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $subscriptionUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $commitsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $gitCommitsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $commentsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $issueCommentUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $contentsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $compareUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $mergesUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $archiveUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $downloadsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $issuesUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $pullsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $milestonesUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $notificationsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $labelsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $releasesUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $deploymentsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $gitUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $sshUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $cloneUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $svnUrl;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $forks;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $openIssues;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $watchers;
     /**
-     * 
+     *
      *
      * @var list<string>
      */
     protected $topics;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $mirrorUrl;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $hasIssues;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $hasProjects;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $hasPages;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $hasWiki;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $hasDownloads;
     /**
-     * 
+     *
      *
      * @var bool
      */
@@ -463,55 +463,55 @@ class RepoSearchResultItem extends \ArrayObject
      */
     protected $disabled;
     /**
-     * 
+     *
      *
      * @var RepoSearchResultItemLicense|null
      */
     protected $license;
     /**
-     * 
+     *
      *
      * @var RepoSearchResultItemPermissions
      */
     protected $permissions;
     /**
-     * 
+     *
      *
      * @var list<SearchResultTextMatchesItem>
      */
     protected $textMatches;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $tempCloneToken;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $allowMergeCommit;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $allowSquashMerge;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $allowRebaseMerge;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $deleteBranchOnMerge;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -520,7 +520,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -533,7 +533,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -542,7 +542,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -555,7 +555,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -564,7 +564,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -577,7 +577,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -586,7 +586,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->fullName;
     }
     /**
-     * 
+     *
      *
      * @param string $fullName
      *
@@ -599,7 +599,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return RepoSearchResultItemOwner|null
      */
@@ -608,7 +608,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->owner;
     }
     /**
-     * 
+     *
      *
      * @param RepoSearchResultItemOwner|null $owner
      *
@@ -621,7 +621,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -630,7 +630,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->private;
     }
     /**
-     * 
+     *
      *
      * @param bool $private
      *
@@ -643,7 +643,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -652,7 +652,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->htmlUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $htmlUrl
      *
@@ -665,7 +665,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -674,7 +674,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string|null $description
      *
@@ -687,7 +687,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -696,7 +696,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->fork;
     }
     /**
-     * 
+     *
      *
      * @param bool $fork
      *
@@ -709,7 +709,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -718,7 +718,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -731,7 +731,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -740,7 +740,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $createdAt
      *
@@ -753,7 +753,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -762,7 +762,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->updatedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $updatedAt
      *
@@ -775,7 +775,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -784,7 +784,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->pushedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $pushedAt
      *
@@ -797,7 +797,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -806,7 +806,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->homepage;
     }
     /**
-     * 
+     *
      *
      * @param string|null $homepage
      *
@@ -819,7 +819,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -828,7 +828,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->size;
     }
     /**
-     * 
+     *
      *
      * @param int $size
      *
@@ -841,7 +841,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -850,7 +850,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->stargazersCount;
     }
     /**
-     * 
+     *
      *
      * @param int $stargazersCount
      *
@@ -863,7 +863,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -872,7 +872,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->watchersCount;
     }
     /**
-     * 
+     *
      *
      * @param int $watchersCount
      *
@@ -885,7 +885,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -894,7 +894,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->language;
     }
     /**
-     * 
+     *
      *
      * @param string|null $language
      *
@@ -907,7 +907,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -916,7 +916,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->forksCount;
     }
     /**
-     * 
+     *
      *
      * @param int $forksCount
      *
@@ -929,7 +929,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -938,7 +938,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->openIssuesCount;
     }
     /**
-     * 
+     *
      *
      * @param int $openIssuesCount
      *
@@ -951,7 +951,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -960,7 +960,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->masterBranch;
     }
     /**
-     * 
+     *
      *
      * @param string $masterBranch
      *
@@ -973,7 +973,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -982,7 +982,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->defaultBranch;
     }
     /**
-     * 
+     *
      *
      * @param string $defaultBranch
      *
@@ -995,7 +995,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -1004,7 +1004,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->score;
     }
     /**
-     * 
+     *
      *
      * @param int $score
      *
@@ -1017,7 +1017,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1026,7 +1026,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->forksUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $forksUrl
      *
@@ -1039,7 +1039,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1048,7 +1048,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->keysUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $keysUrl
      *
@@ -1061,7 +1061,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1070,7 +1070,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->collaboratorsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $collaboratorsUrl
      *
@@ -1083,7 +1083,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1092,7 +1092,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->teamsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $teamsUrl
      *
@@ -1105,7 +1105,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1114,7 +1114,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->hooksUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $hooksUrl
      *
@@ -1127,7 +1127,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1136,7 +1136,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->issueEventsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $issueEventsUrl
      *
@@ -1149,7 +1149,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1158,7 +1158,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->eventsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $eventsUrl
      *
@@ -1171,7 +1171,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1180,7 +1180,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->assigneesUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $assigneesUrl
      *
@@ -1193,7 +1193,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1202,7 +1202,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->branchesUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $branchesUrl
      *
@@ -1215,7 +1215,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1224,7 +1224,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->tagsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $tagsUrl
      *
@@ -1237,7 +1237,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1246,7 +1246,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->blobsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $blobsUrl
      *
@@ -1259,7 +1259,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1268,7 +1268,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->gitTagsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $gitTagsUrl
      *
@@ -1281,7 +1281,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1290,7 +1290,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->gitRefsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $gitRefsUrl
      *
@@ -1303,7 +1303,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1312,7 +1312,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->treesUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $treesUrl
      *
@@ -1325,7 +1325,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1334,7 +1334,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->statusesUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $statusesUrl
      *
@@ -1347,7 +1347,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1356,7 +1356,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->languagesUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $languagesUrl
      *
@@ -1369,7 +1369,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1378,7 +1378,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->stargazersUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $stargazersUrl
      *
@@ -1391,7 +1391,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1400,7 +1400,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->contributorsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $contributorsUrl
      *
@@ -1413,7 +1413,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1422,7 +1422,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->subscribersUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $subscribersUrl
      *
@@ -1435,7 +1435,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1444,7 +1444,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->subscriptionUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $subscriptionUrl
      *
@@ -1457,7 +1457,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1466,7 +1466,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->commitsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $commitsUrl
      *
@@ -1479,7 +1479,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1488,7 +1488,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->gitCommitsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $gitCommitsUrl
      *
@@ -1501,7 +1501,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1510,7 +1510,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->commentsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $commentsUrl
      *
@@ -1523,7 +1523,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1532,7 +1532,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->issueCommentUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $issueCommentUrl
      *
@@ -1545,7 +1545,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1554,7 +1554,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->contentsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $contentsUrl
      *
@@ -1567,7 +1567,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1576,7 +1576,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->compareUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $compareUrl
      *
@@ -1589,7 +1589,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1598,7 +1598,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->mergesUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $mergesUrl
      *
@@ -1611,7 +1611,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1620,7 +1620,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->archiveUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $archiveUrl
      *
@@ -1633,7 +1633,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1642,7 +1642,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->downloadsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $downloadsUrl
      *
@@ -1655,7 +1655,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1664,7 +1664,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->issuesUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $issuesUrl
      *
@@ -1677,7 +1677,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1686,7 +1686,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->pullsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $pullsUrl
      *
@@ -1699,7 +1699,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1708,7 +1708,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->milestonesUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $milestonesUrl
      *
@@ -1721,7 +1721,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1730,7 +1730,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->notificationsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $notificationsUrl
      *
@@ -1743,7 +1743,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1752,7 +1752,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->labelsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $labelsUrl
      *
@@ -1765,7 +1765,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1774,7 +1774,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->releasesUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $releasesUrl
      *
@@ -1787,7 +1787,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1796,7 +1796,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->deploymentsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $deploymentsUrl
      *
@@ -1809,7 +1809,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1818,7 +1818,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->gitUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $gitUrl
      *
@@ -1831,7 +1831,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1840,7 +1840,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->sshUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $sshUrl
      *
@@ -1853,7 +1853,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1862,7 +1862,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->cloneUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $cloneUrl
      *
@@ -1875,7 +1875,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1884,7 +1884,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->svnUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $svnUrl
      *
@@ -1897,7 +1897,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -1906,7 +1906,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->forks;
     }
     /**
-     * 
+     *
      *
      * @param int $forks
      *
@@ -1919,7 +1919,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -1928,7 +1928,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->openIssues;
     }
     /**
-     * 
+     *
      *
      * @param int $openIssues
      *
@@ -1941,7 +1941,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -1950,7 +1950,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->watchers;
     }
     /**
-     * 
+     *
      *
      * @param int $watchers
      *
@@ -1963,7 +1963,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -1972,7 +1972,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->topics;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $topics
      *
@@ -1985,7 +1985,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -1994,7 +1994,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->mirrorUrl;
     }
     /**
-     * 
+     *
      *
      * @param string|null $mirrorUrl
      *
@@ -2007,7 +2007,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -2016,7 +2016,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->hasIssues;
     }
     /**
-     * 
+     *
      *
      * @param bool $hasIssues
      *
@@ -2029,7 +2029,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -2038,7 +2038,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->hasProjects;
     }
     /**
-     * 
+     *
      *
      * @param bool $hasProjects
      *
@@ -2051,7 +2051,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -2060,7 +2060,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->hasPages;
     }
     /**
-     * 
+     *
      *
      * @param bool $hasPages
      *
@@ -2073,7 +2073,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -2082,7 +2082,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->hasWiki;
     }
     /**
-     * 
+     *
      *
      * @param bool $hasWiki
      *
@@ -2095,7 +2095,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -2104,7 +2104,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->hasDownloads;
     }
     /**
-     * 
+     *
      *
      * @param bool $hasDownloads
      *
@@ -2117,7 +2117,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -2126,7 +2126,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->archived;
     }
     /**
-     * 
+     *
      *
      * @param bool $archived
      *
@@ -2161,7 +2161,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return RepoSearchResultItemLicense|null
      */
@@ -2170,7 +2170,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->license;
     }
     /**
-     * 
+     *
      *
      * @param RepoSearchResultItemLicense|null $license
      *
@@ -2183,7 +2183,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return RepoSearchResultItemPermissions
      */
@@ -2192,7 +2192,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->permissions;
     }
     /**
-     * 
+     *
      *
      * @param RepoSearchResultItemPermissions $permissions
      *
@@ -2205,7 +2205,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<SearchResultTextMatchesItem>
      */
@@ -2214,7 +2214,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->textMatches;
     }
     /**
-     * 
+     *
      *
      * @param list<SearchResultTextMatchesItem> $textMatches
      *
@@ -2227,7 +2227,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -2236,7 +2236,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->tempCloneToken;
     }
     /**
-     * 
+     *
      *
      * @param string $tempCloneToken
      *
@@ -2249,7 +2249,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -2258,7 +2258,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->allowMergeCommit;
     }
     /**
-     * 
+     *
      *
      * @param bool $allowMergeCommit
      *
@@ -2271,7 +2271,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -2280,7 +2280,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->allowSquashMerge;
     }
     /**
-     * 
+     *
      *
      * @param bool $allowSquashMerge
      *
@@ -2293,7 +2293,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -2302,7 +2302,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->allowRebaseMerge;
     }
     /**
-     * 
+     *
      *
      * @param bool $allowRebaseMerge
      *
@@ -2315,7 +2315,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -2324,7 +2324,7 @@ class RepoSearchResultItem extends \ArrayObject
         return $this->deleteBranchOnMerge;
     }
     /**
-     * 
+     *
      *
      * @param bool $deleteBranchOnMerge
      *

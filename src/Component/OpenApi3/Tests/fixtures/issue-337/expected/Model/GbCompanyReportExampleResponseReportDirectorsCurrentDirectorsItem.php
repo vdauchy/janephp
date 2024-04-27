@@ -13,67 +13,67 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItem extends 
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $title;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $firstName;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $surname;
     /**
-     * 
+     *
      *
      * @var GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItemAddress
      */
     protected $address;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $gender;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $dateOfBirth;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $directorType;
     /**
-     * 
+     *
      *
      * @var list<GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItemPositionsItem>
      */
     protected $positions;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -82,7 +82,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItem extends 
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param string $id
      *
@@ -95,7 +95,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItem extends 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -104,7 +104,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItem extends 
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -117,7 +117,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItem extends 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -126,7 +126,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItem extends 
         return $this->title;
     }
     /**
-     * 
+     *
      *
      * @param string $title
      *
@@ -139,7 +139,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItem extends 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -148,7 +148,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItem extends 
         return $this->firstName;
     }
     /**
-     * 
+     *
      *
      * @param string $firstName
      *
@@ -161,7 +161,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItem extends 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -170,7 +170,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItem extends 
         return $this->surname;
     }
     /**
-     * 
+     *
      *
      * @param string $surname
      *
@@ -183,7 +183,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItem extends 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItemAddress
      */
@@ -192,7 +192,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItem extends 
         return $this->address;
     }
     /**
-     * 
+     *
      *
      * @param GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItemAddress $address
      *
@@ -205,7 +205,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItem extends 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -214,7 +214,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItem extends 
         return $this->gender;
     }
     /**
-     * 
+     *
      *
      * @param string $gender
      *
@@ -227,7 +227,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItem extends 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -236,7 +236,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItem extends 
         return $this->dateOfBirth;
     }
     /**
-     * 
+     *
      *
      * @param string $dateOfBirth
      *
@@ -249,7 +249,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItem extends 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -258,7 +258,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItem extends 
         return $this->directorType;
     }
     /**
-     * 
+     *
      *
      * @param string $directorType
      *
@@ -271,7 +271,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItem extends 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItemPositionsItem>
      */
@@ -280,7 +280,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItem extends 
         return $this->positions;
     }
     /**
-     * 
+     *
      *
      * @param list<GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItemPositionsItem> $positions
      *

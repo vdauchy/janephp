@@ -13,19 +13,19 @@ class WorkflowRunUsage extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var WorkflowRunUsageBillable
      */
     protected $billable;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $runDurationMs;
     /**
-     * 
+     *
      *
      * @return WorkflowRunUsageBillable
      */
@@ -34,7 +34,7 @@ class WorkflowRunUsage extends \ArrayObject
         return $this->billable;
     }
     /**
-     * 
+     *
      *
      * @param WorkflowRunUsageBillable $billable
      *
@@ -47,7 +47,7 @@ class WorkflowRunUsage extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -56,7 +56,7 @@ class WorkflowRunUsage extends \ArrayObject
         return $this->runDurationMs;
     }
     /**
-     * 
+     *
      *
      * @param int $runDurationMs
      *

@@ -13,19 +13,19 @@ class Discriminator
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $propertyName;
     /**
-     * 
+     *
      *
      * @var array<string, string>|null
      */
     protected $mapping;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -34,7 +34,7 @@ class Discriminator
         return $this->propertyName;
     }
     /**
-     * 
+     *
      *
      * @param string|null $propertyName
      *
@@ -47,7 +47,7 @@ class Discriminator
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return array<string, string>|null
      */
@@ -56,7 +56,7 @@ class Discriminator
         return $this->mapping;
     }
     /**
-     * 
+     *
      *
      * @param array<string, string>|null $mapping
      *

@@ -26,7 +26,7 @@ class NetworksCreatePostBody
     way to check for duplicates. CheckDuplicate is there to provide
     a best effort checking of any networks which has the same name
     but it is not guaranteed to catch all name collisions.
-    
+
     *
     * @var bool
     */
@@ -46,7 +46,7 @@ class NetworksCreatePostBody
     /**
     * Globally scoped network is manually attachable by regular
     containers from workers in swarm mode.
-    
+
     *
     * @var bool
     */
@@ -54,13 +54,13 @@ class NetworksCreatePostBody
     /**
     * Ingress network is the network which provides the routing-mesh
     in swarm mode.
-    
+
     *
     * @var bool
     */
     protected $ingress;
     /**
-     * 
+     *
      *
      * @var IPAM
      */
@@ -113,7 +113,7 @@ class NetworksCreatePostBody
     way to check for duplicates. CheckDuplicate is there to provide
     a best effort checking of any networks which has the same name
     but it is not guaranteed to catch all name collisions.
-    
+
     *
     * @return bool
     */
@@ -129,7 +129,7 @@ class NetworksCreatePostBody
     way to check for duplicates. CheckDuplicate is there to provide
     a best effort checking of any networks which has the same name
     but it is not guaranteed to catch all name collisions.
-    
+
     *
     * @param bool $checkDuplicate
     *
@@ -188,7 +188,7 @@ class NetworksCreatePostBody
     /**
     * Globally scoped network is manually attachable by regular
     containers from workers in swarm mode.
-    
+
     *
     * @return bool
     */
@@ -199,7 +199,7 @@ class NetworksCreatePostBody
     /**
     * Globally scoped network is manually attachable by regular
     containers from workers in swarm mode.
-    
+
     *
     * @param bool $attachable
     *
@@ -214,7 +214,7 @@ class NetworksCreatePostBody
     /**
     * Ingress network is the network which provides the routing-mesh
     in swarm mode.
-    
+
     *
     * @return bool
     */
@@ -225,7 +225,7 @@ class NetworksCreatePostBody
     /**
     * Ingress network is the network which provides the routing-mesh
     in swarm mode.
-    
+
     *
     * @param bool $ingress
     *
@@ -238,7 +238,7 @@ class NetworksCreatePostBody
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return IPAM
      */
@@ -247,7 +247,7 @@ class NetworksCreatePostBody
         return $this->iPAM;
     }
     /**
-     * 
+     *
      *
      * @param IPAM $iPAM
      *

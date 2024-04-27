@@ -13,13 +13,13 @@ class Authorization extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -31,73 +31,73 @@ class Authorization extends \ArrayObject
      */
     protected $scopes;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $token;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $tokenLastEight;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $hashedToken;
     /**
-     * 
+     *
      *
      * @var AuthorizationApp
      */
     protected $app;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $note;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $noteUrl;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $updatedAt;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $fingerprint;
     /**
-     * 
+     *
      *
      * @var AuthorizationUser|null
      */
     protected $user;
     /**
-     * 
+     *
      *
      * @var AuthorizationInstallation|null
      */
     protected $installation;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -106,7 +106,7 @@ class Authorization extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -119,7 +119,7 @@ class Authorization extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -128,7 +128,7 @@ class Authorization extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -163,7 +163,7 @@ class Authorization extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -172,7 +172,7 @@ class Authorization extends \ArrayObject
         return $this->token;
     }
     /**
-     * 
+     *
      *
      * @param string $token
      *
@@ -185,7 +185,7 @@ class Authorization extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -194,7 +194,7 @@ class Authorization extends \ArrayObject
         return $this->tokenLastEight;
     }
     /**
-     * 
+     *
      *
      * @param string|null $tokenLastEight
      *
@@ -207,7 +207,7 @@ class Authorization extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -216,7 +216,7 @@ class Authorization extends \ArrayObject
         return $this->hashedToken;
     }
     /**
-     * 
+     *
      *
      * @param string|null $hashedToken
      *
@@ -229,7 +229,7 @@ class Authorization extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return AuthorizationApp
      */
@@ -238,7 +238,7 @@ class Authorization extends \ArrayObject
         return $this->app;
     }
     /**
-     * 
+     *
      *
      * @param AuthorizationApp $app
      *
@@ -251,7 +251,7 @@ class Authorization extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -260,7 +260,7 @@ class Authorization extends \ArrayObject
         return $this->note;
     }
     /**
-     * 
+     *
      *
      * @param string|null $note
      *
@@ -273,7 +273,7 @@ class Authorization extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -282,7 +282,7 @@ class Authorization extends \ArrayObject
         return $this->noteUrl;
     }
     /**
-     * 
+     *
      *
      * @param string|null $noteUrl
      *
@@ -295,7 +295,7 @@ class Authorization extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -304,7 +304,7 @@ class Authorization extends \ArrayObject
         return $this->updatedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $updatedAt
      *
@@ -317,7 +317,7 @@ class Authorization extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -326,7 +326,7 @@ class Authorization extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $createdAt
      *
@@ -339,7 +339,7 @@ class Authorization extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -348,7 +348,7 @@ class Authorization extends \ArrayObject
         return $this->fingerprint;
     }
     /**
-     * 
+     *
      *
      * @param string|null $fingerprint
      *
@@ -361,7 +361,7 @@ class Authorization extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return AuthorizationUser|null
      */
@@ -370,7 +370,7 @@ class Authorization extends \ArrayObject
         return $this->user;
     }
     /**
-     * 
+     *
      *
      * @param AuthorizationUser|null $user
      *
@@ -383,7 +383,7 @@ class Authorization extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return AuthorizationInstallation|null
      */
@@ -392,7 +392,7 @@ class Authorization extends \ArrayObject
         return $this->installation;
     }
     /**
-     * 
+     *
      *
      * @param AuthorizationInstallation|null $installation
      *

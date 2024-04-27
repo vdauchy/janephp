@@ -13,31 +13,31 @@ class ScimUserMeta extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $resourceType;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $created;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $lastModified;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $location;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -46,7 +46,7 @@ class ScimUserMeta extends \ArrayObject
         return $this->resourceType;
     }
     /**
-     * 
+     *
      *
      * @param string $resourceType
      *
@@ -59,7 +59,7 @@ class ScimUserMeta extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -68,7 +68,7 @@ class ScimUserMeta extends \ArrayObject
         return $this->created;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $created
      *
@@ -81,7 +81,7 @@ class ScimUserMeta extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -90,7 +90,7 @@ class ScimUserMeta extends \ArrayObject
         return $this->lastModified;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $lastModified
      *
@@ -103,7 +103,7 @@ class ScimUserMeta extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -112,7 +112,7 @@ class ScimUserMeta extends \ArrayObject
         return $this->location;
     }
     /**
-     * 
+     *
      *
      * @param string $location
      *

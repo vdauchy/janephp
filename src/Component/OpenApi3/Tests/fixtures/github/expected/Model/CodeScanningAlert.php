@@ -13,7 +13,7 @@ class CodeScanningAlert extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
@@ -43,7 +43,7 @@ class CodeScanningAlert extends \ArrayObject
      */
     protected $tool;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
@@ -55,37 +55,37 @@ class CodeScanningAlert extends \ArrayObject
      */
     protected $open;
     /**
-     * 
+     *
      *
      * @var CodeScanningAlertClosedBy|null
      */
     protected $closedBy;
     /**
-     * 
+     *
      *
      * @var \DateTime|null
      */
     protected $closedAt;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $htmlUrl;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $closedReason;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -94,7 +94,7 @@ class CodeScanningAlert extends \ArrayObject
         return $this->number;
     }
     /**
-     * 
+     *
      *
      * @param int $number
      *
@@ -195,7 +195,7 @@ class CodeScanningAlert extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -204,7 +204,7 @@ class CodeScanningAlert extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $createdAt
      *
@@ -239,7 +239,7 @@ class CodeScanningAlert extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return CodeScanningAlertClosedBy|null
      */
@@ -248,7 +248,7 @@ class CodeScanningAlert extends \ArrayObject
         return $this->closedBy;
     }
     /**
-     * 
+     *
      *
      * @param CodeScanningAlertClosedBy|null $closedBy
      *
@@ -261,7 +261,7 @@ class CodeScanningAlert extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime|null
      */
@@ -270,7 +270,7 @@ class CodeScanningAlert extends \ArrayObject
         return $this->closedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime|null $closedAt
      *
@@ -283,7 +283,7 @@ class CodeScanningAlert extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -292,7 +292,7 @@ class CodeScanningAlert extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -305,7 +305,7 @@ class CodeScanningAlert extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -314,7 +314,7 @@ class CodeScanningAlert extends \ArrayObject
         return $this->htmlUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $htmlUrl
      *
@@ -327,7 +327,7 @@ class CodeScanningAlert extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -336,7 +336,7 @@ class CodeScanningAlert extends \ArrayObject
         return $this->closedReason;
     }
     /**
-     * 
+     *
      *
      * @param string|null $closedReason
      *

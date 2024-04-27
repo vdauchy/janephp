@@ -13,37 +13,37 @@ class GistFullhistoryItem extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $version;
     /**
-     * 
+     *
      *
      * @var GistFullhistoryItemUser|null
      */
     protected $user;
     /**
-     * 
+     *
      *
      * @var GistFullhistoryItemChangeStatus
      */
     protected $changeStatus;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $committedAt;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -52,7 +52,7 @@ class GistFullhistoryItem extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -65,7 +65,7 @@ class GistFullhistoryItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -74,7 +74,7 @@ class GistFullhistoryItem extends \ArrayObject
         return $this->version;
     }
     /**
-     * 
+     *
      *
      * @param string $version
      *
@@ -87,7 +87,7 @@ class GistFullhistoryItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GistFullhistoryItemUser|null
      */
@@ -96,7 +96,7 @@ class GistFullhistoryItem extends \ArrayObject
         return $this->user;
     }
     /**
-     * 
+     *
      *
      * @param GistFullhistoryItemUser|null $user
      *
@@ -109,7 +109,7 @@ class GistFullhistoryItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GistFullhistoryItemChangeStatus
      */
@@ -118,7 +118,7 @@ class GistFullhistoryItem extends \ArrayObject
         return $this->changeStatus;
     }
     /**
-     * 
+     *
      *
      * @param GistFullhistoryItemChangeStatus $changeStatus
      *
@@ -131,7 +131,7 @@ class GistFullhistoryItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -140,7 +140,7 @@ class GistFullhistoryItem extends \ArrayObject
         return $this->committedAt;
     }
     /**
-     * 
+     *
      *
      * @param string $committedAt
      *

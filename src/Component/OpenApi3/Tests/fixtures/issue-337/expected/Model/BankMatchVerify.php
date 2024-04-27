@@ -13,19 +13,19 @@ class BankMatchVerify extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $companyNumber;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $accountNumber;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -37,19 +37,19 @@ class BankMatchVerify extends \ArrayObject
      */
     protected $ibanResult;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $ibanText;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $logDate;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -61,13 +61,13 @@ class BankMatchVerify extends \ArrayObject
      */
     protected $scanResult;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $scanText;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -91,13 +91,13 @@ class BankMatchVerify extends \ArrayObject
      */
     protected $vatResult;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $vatText;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -106,7 +106,7 @@ class BankMatchVerify extends \ArrayObject
         return $this->companyNumber;
     }
     /**
-     * 
+     *
      *
      * @param string $companyNumber
      *
@@ -119,7 +119,7 @@ class BankMatchVerify extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -128,7 +128,7 @@ class BankMatchVerify extends \ArrayObject
         return $this->accountNumber;
     }
     /**
-     * 
+     *
      *
      * @param string $accountNumber
      *
@@ -141,7 +141,7 @@ class BankMatchVerify extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -150,7 +150,7 @@ class BankMatchVerify extends \ArrayObject
         return $this->iban;
     }
     /**
-     * 
+     *
      *
      * @param string $iban
      *
@@ -185,7 +185,7 @@ class BankMatchVerify extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -194,7 +194,7 @@ class BankMatchVerify extends \ArrayObject
         return $this->ibanText;
     }
     /**
-     * 
+     *
      *
      * @param string $ibanText
      *
@@ -207,7 +207,7 @@ class BankMatchVerify extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -216,7 +216,7 @@ class BankMatchVerify extends \ArrayObject
         return $this->logDate;
     }
     /**
-     * 
+     *
      *
      * @param string $logDate
      *
@@ -229,7 +229,7 @@ class BankMatchVerify extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -238,7 +238,7 @@ class BankMatchVerify extends \ArrayObject
         return $this->safeNumber;
     }
     /**
-     * 
+     *
      *
      * @param string $safeNumber
      *
@@ -273,7 +273,7 @@ class BankMatchVerify extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -282,7 +282,7 @@ class BankMatchVerify extends \ArrayObject
         return $this->scanText;
     }
     /**
-     * 
+     *
      *
      * @param string $scanText
      *
@@ -295,7 +295,7 @@ class BankMatchVerify extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -304,7 +304,7 @@ class BankMatchVerify extends \ArrayObject
         return $this->sortCode;
     }
     /**
-     * 
+     *
      *
      * @param string $sortCode
      *
@@ -383,7 +383,7 @@ class BankMatchVerify extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -392,7 +392,7 @@ class BankMatchVerify extends \ArrayObject
         return $this->vatText;
     }
     /**
-     * 
+     *
      *
      * @param string $vatText
      *

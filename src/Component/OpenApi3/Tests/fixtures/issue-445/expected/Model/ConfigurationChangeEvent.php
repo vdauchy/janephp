@@ -13,13 +13,13 @@ class ConfigurationChangeEvent extends ApplicationEvent
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $documentType;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -28,7 +28,7 @@ class ConfigurationChangeEvent extends ApplicationEvent
         return $this->documentType;
     }
     /**
-     * 
+     *
      *
      * @param string|null $documentType
      *

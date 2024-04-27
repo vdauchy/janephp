@@ -13,19 +13,19 @@ class ParticipationStats extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var list<int>
      */
     protected $all;
     /**
-     * 
+     *
      *
      * @var list<int>
      */
     protected $owner;
     /**
-     * 
+     *
      *
      * @return list<int>
      */
@@ -34,7 +34,7 @@ class ParticipationStats extends \ArrayObject
         return $this->all;
     }
     /**
-     * 
+     *
      *
      * @param list<int> $all
      *
@@ -47,7 +47,7 @@ class ParticipationStats extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<int>
      */
@@ -56,7 +56,7 @@ class ParticipationStats extends \ArrayObject
         return $this->owner;
     }
     /**
-     * 
+     *
      *
      * @param list<int> $owner
      *

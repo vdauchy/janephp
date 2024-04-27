@@ -25,7 +25,7 @@ class ReposOwnerRepoReleasesAssetsAssetIdPatchBody extends \ArrayObject
      */
     protected $label;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -75,7 +75,7 @@ class ReposOwnerRepoReleasesAssetsAssetIdPatchBody extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -84,7 +84,7 @@ class ReposOwnerRepoReleasesAssetsAssetIdPatchBody extends \ArrayObject
         return $this->state;
     }
     /**
-     * 
+     *
      *
      * @param string $state
      *

@@ -13,49 +13,49 @@ class Blob extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $content;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $encoding;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $sha;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $size;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $nodeId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $highlightedContent;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -64,7 +64,7 @@ class Blob extends \ArrayObject
         return $this->content;
     }
     /**
-     * 
+     *
      *
      * @param string $content
      *
@@ -77,7 +77,7 @@ class Blob extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -86,7 +86,7 @@ class Blob extends \ArrayObject
         return $this->encoding;
     }
     /**
-     * 
+     *
      *
      * @param string $encoding
      *
@@ -99,7 +99,7 @@ class Blob extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -108,7 +108,7 @@ class Blob extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -121,7 +121,7 @@ class Blob extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -130,7 +130,7 @@ class Blob extends \ArrayObject
         return $this->sha;
     }
     /**
-     * 
+     *
      *
      * @param string $sha
      *
@@ -143,7 +143,7 @@ class Blob extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -152,7 +152,7 @@ class Blob extends \ArrayObject
         return $this->size;
     }
     /**
-     * 
+     *
      *
      * @param int|null $size
      *
@@ -165,7 +165,7 @@ class Blob extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -174,7 +174,7 @@ class Blob extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -187,7 +187,7 @@ class Blob extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -196,7 +196,7 @@ class Blob extends \ArrayObject
         return $this->highlightedContent;
     }
     /**
-     * 
+     *
      *
      * @param string $highlightedContent
      *

@@ -13,43 +13,43 @@ class EnvironmentNotAvailableException extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $traceLevel;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $traceId;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $traceJobId;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $httpStatusCode;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $exceptionMessage;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $kind;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -58,7 +58,7 @@ class EnvironmentNotAvailableException extends \ArrayObject
         return $this->traceLevel;
     }
     /**
-     * 
+     *
      *
      * @param string $traceLevel
      *
@@ -71,7 +71,7 @@ class EnvironmentNotAvailableException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -80,7 +80,7 @@ class EnvironmentNotAvailableException extends \ArrayObject
         return $this->traceId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $traceId
      *
@@ -93,7 +93,7 @@ class EnvironmentNotAvailableException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -102,7 +102,7 @@ class EnvironmentNotAvailableException extends \ArrayObject
         return $this->traceJobId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $traceJobId
      *
@@ -115,7 +115,7 @@ class EnvironmentNotAvailableException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -124,7 +124,7 @@ class EnvironmentNotAvailableException extends \ArrayObject
         return $this->httpStatusCode;
     }
     /**
-     * 
+     *
      *
      * @param int $httpStatusCode
      *
@@ -137,7 +137,7 @@ class EnvironmentNotAvailableException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -146,7 +146,7 @@ class EnvironmentNotAvailableException extends \ArrayObject
         return $this->exceptionMessage;
     }
     /**
-     * 
+     *
      *
      * @param string|null $exceptionMessage
      *
@@ -159,7 +159,7 @@ class EnvironmentNotAvailableException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -168,7 +168,7 @@ class EnvironmentNotAvailableException extends \ArrayObject
         return $this->kind;
     }
     /**
-     * 
+     *
      *
      * @param string $kind
      *

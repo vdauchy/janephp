@@ -13,19 +13,19 @@ class Model extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $foo;
     /**
-     * 
+     *
      *
      * @var list<mixed>|null
      */
     protected $bar;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -34,7 +34,7 @@ class Model extends \ArrayObject
         return $this->foo;
     }
     /**
-     * 
+     *
      *
      * @param string|null $foo
      *
@@ -47,7 +47,7 @@ class Model extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<mixed>|null
      */
@@ -56,7 +56,7 @@ class Model extends \ArrayObject
         return $this->bar;
     }
     /**
-     * 
+     *
      *
      * @param list<mixed>|null $bar
      *

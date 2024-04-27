@@ -13,25 +13,25 @@ class BusinessRuleFiredEventDetail
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $documentId;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $documentType;
     /**
-     * 
+     *
      *
      * @var list<string>|null
      */
     protected $ruleIds;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -40,7 +40,7 @@ class BusinessRuleFiredEventDetail
         return $this->documentId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $documentId
      *
@@ -53,7 +53,7 @@ class BusinessRuleFiredEventDetail
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -62,7 +62,7 @@ class BusinessRuleFiredEventDetail
         return $this->documentType;
     }
     /**
-     * 
+     *
      *
      * @param string|null $documentType
      *
@@ -75,7 +75,7 @@ class BusinessRuleFiredEventDetail
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>|null
      */
@@ -84,7 +84,7 @@ class BusinessRuleFiredEventDetail
         return $this->ruleIds;
     }
     /**
-     * 
+     *
      *
      * @param list<string>|null $ruleIds
      *

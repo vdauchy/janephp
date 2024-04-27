@@ -7,7 +7,7 @@ class Client extends \CreditSafe\API\Runtime\Client\Client
     /**
      * Enter your username and password into the request schema to generate an Authorization Token
      *
-     * @param null|\CreditSafe\API\Model\AuthenticationRequest $requestBody 
+     * @param null|\CreditSafe\API\Model\AuthenticationRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \CreditSafe\API\Exception\GenerateAuthenticationTokenUnauthorizedException
      * @throws \CreditSafe\API\Exception\GenerateAuthenticationTokenNotFoundException
@@ -32,7 +32,7 @@ class Client extends \CreditSafe\API\Runtime\Client\Client
      *     @var string $tradeName Trade Name of the Company, typically used in Countries where Name is not uniquely registered.
      *     @var string $acronym A (non-unique) identifier to look for Companies by their more commonly known acronym rather than their lesser known full name. Acronym is predominantly available on French Companies.
      *     @var bool $exact Provide as true to find Companies matching a Name exactly.
-     *     @var string $address 
+     *     @var string $address
      *     @var string $street Address part identifier - Street of the Company
      *     @var string $houseNo Address part identifier - House/Building Number of the Company
      *     @var string $city Address part identifier - City of the Company
@@ -175,7 +175,7 @@ class Client extends \CreditSafe\API\Runtime\Client\Client
         return $this->executeEndpoint(new \CreditSafe\API\Endpoint\PeopleDirectorSearch($queryParameters, $headerParameters), $fetch);
     }
     /**
-     * 
+     *
      *
      * @param string $personId Identifier of the Person/Director required to order their Director Report. Obtained from `/people` search results.
      * @param array $queryParameters {
@@ -311,7 +311,7 @@ class Client extends \CreditSafe\API\Runtime\Client\Client
     /**
      * Places an order for a Fresh Investigation (Offline Report). Providing as much detail as possible about the Company, our team will use official sources and registries to quickly answer questions about a company’s stability and financial health. Fresh Investigations take 5.5 days on average to complete.
      *
-     * @param null|\CreditSafe\API\Model\CreateFreshInvestigationRequest $requestBody 
+     * @param null|\CreditSafe\API\Model\CreateFreshInvestigationRequest $requestBody
      * @param array $headerParameters {
      *     @var string $Authorization Bearer JWT (Authentication Token) generated from the /authenticate endpoint.
      * }
@@ -330,7 +330,7 @@ class Client extends \CreditSafe\API\Runtime\Client\Client
     /**
      * Currently depreciated as the order may already be in progress with our investigation team. To delete an ongoing Fresh Investigation, please get in touch with us at Group.Help@creditsafe.com quoting the `Transaction Id` against the order in `/freshinvestigations/{orderId}`
      *
-     * @param string $orderId 
+     * @param string $orderId
      * @param array $headerParameters {
      *     @var string $Authorization Bearer JWT (Authentication Token) generated from the /authenticate endpoint.
      * }
@@ -348,7 +348,7 @@ class Client extends \CreditSafe\API\Runtime\Client\Client
     /**
      * Returns a specific Fresh Investigation order.
      *
-     * @param string $orderId 
+     * @param string $orderId
      * @param array $queryParameters {
      *     @var string $sections Specify a value to return a single section, or multiple-comma separated sections of the completed Fresh Investigation. Leave null to return the full report. Available sections; - companyIdentification - creditScore - contactInformation - directors - otherInformation - groupStructure - extendedGroupStructure - financialStatements - negativeInformation - additionalInformation - directorships - localFinancialStatements - paymentData - companySummary - alternateSummary
      * }
@@ -369,7 +369,7 @@ class Client extends \CreditSafe\API\Runtime\Client\Client
     /**
      * Currently depreciated as the order may already be in progress with our investigation team. To edit an ongoing Fresh Investigation, please get in touch with us at Group.Help@creditsafe.com quoting the `Transaction Id` against the order in `/freshinvestigations/{orderId}`
      *
-     * @param string $orderId 
+     * @param string $orderId
      * @param array $headerParameters {
      *     @var string $Authorization Bearer JWT (Authentication Token) generated from the /authenticate endpoint.
      * }
@@ -538,7 +538,7 @@ class Client extends \CreditSafe\API\Runtime\Client\Client
     /**
      * Endpoint to create a new Portfolio based on the supplied criteria. A portfolio can contain any number of `companies` that you wish to monitor changes to.
      *
-     * @param \CreditSafe\API\Model\MonitoringPortfoliosPostBody $requestBody 
+     * @param \CreditSafe\API\Model\MonitoringPortfoliosPostBody $requestBody
      * @param array $headerParameters {
      *     @var string $Authorization Bearer JWT (Authentication Token) generated from the /authenticate endpoint.
      * }
@@ -596,7 +596,7 @@ class Client extends \CreditSafe\API\Runtime\Client\Client
      * Update Portfolio details such as Name, email reciepients, language and subject line.
      *
      * @param string $portfolioId The unique identifier of the portfolio, obtained from `/portfolios`.
-     * @param null|\CreditSafe\API\Model\MonitoringPortfoliosPortfolioIdPatchBody $requestBody 
+     * @param null|\CreditSafe\API\Model\MonitoringPortfoliosPortfolioIdPatchBody $requestBody
      * @param array $headerParameters {
      *     @var string $Authorization Bearer JWT (Authentication Token) generated from the /authenticate endpoint.
      * }
@@ -674,7 +674,7 @@ class Client extends \CreditSafe\API\Runtime\Client\Client
      *
      * @param string $portfolioId The unique identifier of the portfolio, obtained from `/portfolios`.
      * @param string $countryCode Country code to show events for
-     * @param null|\CreditSafe\API\Model\MonitoringPortfoliosPortfolioIdEventRulesCountryCodePutBodyItem[] $requestBody 
+     * @param null|\CreditSafe\API\Model\MonitoringPortfoliosPortfolioIdEventRulesCountryCodePutBodyItem[] $requestBody
      * @param array $headerParameters {
      *     @var string $Authorization Bearer JWT (Authentication Token) generated from the /authenticate endpoint.
      * }
@@ -713,7 +713,7 @@ class Client extends \CreditSafe\API\Runtime\Client\Client
      * Import companies into a portfolio using .csv, .xls or .xlsx file. Additionally provide an email address to get notified when the import process is done.
      *
      * @param string $portfolioId The unique identifier of the portfolio, obtained from `/portfolios`.
-     * @param \CreditSafe\API\Model\MonitoringPortfoliosPortfolioIdImportPostBody $requestBody 
+     * @param \CreditSafe\API\Model\MonitoringPortfoliosPortfolioIdImportPostBody $requestBody
      * @param array $headerParameters {
      *     @var string $Authorization Bearer JWT (Authentication Token) generated from the /authenticate endpoint.
      * }
@@ -733,7 +733,7 @@ class Client extends \CreditSafe\API\Runtime\Client\Client
      * Delete companies from portfolio and update new companies from CSV file
      *
      * @param string $portfolioId The unique identifier of the portfolio, obtained from `/portfolios`.
-     * @param \CreditSafe\API\Model\MonitoringPortfoliosPortfolioIdSyncPostBody $requestBody 
+     * @param \CreditSafe\API\Model\MonitoringPortfoliosPortfolioIdSyncPostBody $requestBody
      * @param array $headerParameters {
      *     @var string $Authorization Bearer JWT (Authentication Token) generated from the /authenticate endpoint.
      * }
@@ -774,7 +774,7 @@ class Client extends \CreditSafe\API\Runtime\Client\Client
      * @param string $portfolioId The unique identifier of the portfolio, obtained from `/portfolios`.
      * @param array $queryParameters {
      *     @var string $searchQuery Return notificationEvents that match the given value
-     *     @var string $sortDir 
+     *     @var string $sortDir
      *     @var int $pageSize Number of items to return per Page (max 1000)
      *     @var int $page Starting page number (indexed from 0)
      *     @var string $sortBy Sort results by this column. Null values of sort column are listed after non-nulls.
@@ -799,7 +799,7 @@ class Client extends \CreditSafe\API\Runtime\Client\Client
      *
      * @param string $portfolioId The unique identifier of the portfolio, obtained from `/portfolios`.
      * @param string $notificationEventId A unique notification event ID.
-     * @param null|\CreditSafe\API\Model\MonitoringPortfoliosPortfolioIdNotificationEventsNotificationEventIdPatchBody $requestBody 
+     * @param null|\CreditSafe\API\Model\MonitoringPortfoliosPortfolioIdNotificationEventsNotificationEventIdPatchBody $requestBody
      * @param array $headerParameters {
      *     @var string $Authorization Bearer JWT (Authentication Token) generated from the /authenticate endpoint.
      * }
@@ -845,7 +845,7 @@ class Client extends \CreditSafe\API\Runtime\Client\Client
      * Add new company to portfolio
      *
      * @param string $portfolioId The unique identifier of the portfolio, obtained from `/portfolios`.
-     * @param null|\CreditSafe\API\Model\MonitoringPortfoliosPortfolioIdCompaniesPostBody $requestBody 
+     * @param null|\CreditSafe\API\Model\MonitoringPortfoliosPortfolioIdCompaniesPostBody $requestBody
      * @param array $headerParameters {
      *     @var string $Authorization Bearer JWT (Authentication Token) generated from the /authenticate endpoint.
      * }
@@ -865,7 +865,7 @@ class Client extends \CreditSafe\API\Runtime\Client\Client
      * Copy companies from one portfolio to single (or) multiple portfolios.
      *
      * @param string $portfolioId The unique identifier of the portfolio you want to copy companies from, obtained from `/portfolios`.
-     * @param \CreditSafe\API\Model\MonitoringPortfoliosPortfolioIdCompaniesCopyPostBody $requestBody 
+     * @param \CreditSafe\API\Model\MonitoringPortfoliosPortfolioIdCompaniesCopyPostBody $requestBody
      * @param array $queryParameters {
      *     @var bool $copyAll When CopyAll queryparameter is False, portfolios and companies list needs to be passed. When CopyAll queryparameter is True, only portfolios need to be passed and companies List must be empty. All companies are copied from current portfolio are considered here.
      * }
@@ -888,7 +888,7 @@ class Client extends \CreditSafe\API\Runtime\Client\Client
      * Move companies from one portfolio to single (or) multiple portfolios.
      *
      * @param string $portfolioId The unique identifier of the portfolio you want to move companies from, obtained from `/portfolios`.
-     * @param null|\CreditSafe\API\Model\MonitoringPortfoliosPortfolioIdCompaniesRemovePostBody $requestBody 
+     * @param null|\CreditSafe\API\Model\MonitoringPortfoliosPortfolioIdCompaniesRemovePostBody $requestBody
      * @param array $queryParameters {
      *     @var bool $removeAll When RemoveAll queryparameter is False, portfolios and companies List needs to be passed. When RemoveAll queryparameter is True, only portfolios need to be passed and companies List must be empty. All companies are moved and deleted from current portfolio
      * }
@@ -911,7 +911,7 @@ class Client extends \CreditSafe\API\Runtime\Client\Client
      * Delete companies from current portfolio
      *
      * @param string $portfolioId The unique identifier of the portfolio you want to delete companies from, obtained from `/portfolios`.
-     * @param null|\CreditSafe\API\Model\MonitoringPortfoliosPortfolioIdCompaniesClearPatchBody $requestBody 
+     * @param null|\CreditSafe\API\Model\MonitoringPortfoliosPortfolioIdCompaniesClearPatchBody $requestBody
      * @param array $queryParameters {
      *     @var bool $clearAll When ClearAll queryparameter is False,Companies List needs to be passed. When ClearAll queryparameter is True, Companies List must be empty. All companies will be deleted
      * }
@@ -975,7 +975,7 @@ class Client extends \CreditSafe\API\Runtime\Client\Client
      *
      * @param string $portfolioId The unique identifier of the portfolio, obtained from `/portfolios`.
      * @param string $id A company Safe Number or Connect ID.
-     * @param null|\CreditSafe\API\Model\MonitoringPortfoliosPortfolioIdCompaniesIdPatchBody $requestBody 
+     * @param null|\CreditSafe\API\Model\MonitoringPortfoliosPortfolioIdCompaniesIdPatchBody $requestBody
      * @param array $headerParameters {
      *     @var string $Authorization Bearer JWT (Authentication Token) generated from the /authenticate endpoint.
      * }
@@ -998,7 +998,7 @@ class Client extends \CreditSafe\API\Runtime\Client\Client
      * @param string $id A company Safe Number or Connect ID.
      * @param array $queryParameters {
      *     @var string $searchQuery Return notificationEvents that match the given value
-     *     @var string $sortDir 
+     *     @var string $sortDir
      *     @var int $pageSize Number of items to return per Page (max 1000)
      *     @var int $page Starting page number (indexed from 0)
      *     @var bool $isProcessed A flag that can be set to `true` boolean value to mark it as an event that has beebn actioned.
@@ -1042,7 +1042,7 @@ class Client extends \CreditSafe\API\Runtime\Client\Client
      * Update/Create user permissions within the customer for portfolio
      *
      * @param string $portfolioId The unique identifier of the portfolio, obtained from `/portfolios`.
-     * @param null|\CreditSafe\API\Model\MonitoringPortfoliosPortfolioIdSharingPermissionsPatchBody $requestBody 
+     * @param null|\CreditSafe\API\Model\MonitoringPortfoliosPortfolioIdSharingPermissionsPatchBody $requestBody
      * @param array $headerParameters {
      *     @var string $Authorization Bearer JWT (Authentication Token) generated from the /authenticate endpoint.
      * }
@@ -1064,7 +1064,7 @@ class Client extends \CreditSafe\API\Runtime\Client\Client
      * @param array $queryParameters {
      *     @var string $type Filter the list of available decision trees by the provided tree type.
      *     @var string $sortBy Sort results by this column. Null values of sort column are listed after non-nulls.
-     *     @var string $sortDir 
+     *     @var string $sortDir
      *     @var string $callRef Call Reference
      * }
      * @param array $headerParameters {
@@ -1085,7 +1085,7 @@ class Client extends \CreditSafe\API\Runtime\Client\Client
      * Calls a Decision Tree with the provided parameters to return a Decision.
      *
      * @param string $provenirId Decision Tree GUID
-     * @param null|\stdClass $requestBody 
+     * @param null|\stdClass $requestBody
      * @param array $queryParameters {
      *     @var string $companyId the connectId of the company to be evaluated in the  deicison tree.
      *     @var string $originationId the origin id of the company we want a decision on. Only up to 100 characters are allowed, the rest will be truncated.

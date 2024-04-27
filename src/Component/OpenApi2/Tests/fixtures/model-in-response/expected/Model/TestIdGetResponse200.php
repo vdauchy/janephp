@@ -13,13 +13,13 @@ class TestIdGetResponse200
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -28,7 +28,7 @@ class TestIdGetResponse200
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *

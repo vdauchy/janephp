@@ -13,13 +13,13 @@ class ContainersIdUpdatePostResponse200
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var list<string>
      */
     protected $warnings;
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -28,7 +28,7 @@ class ContainersIdUpdatePostResponse200
         return $this->warnings;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $warnings
      *

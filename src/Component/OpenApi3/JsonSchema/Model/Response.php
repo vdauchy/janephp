@@ -13,31 +13,31 @@ class Response extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @var array<string, Header|Reference>|null
      */
     protected $headers;
     /**
-     * 
+     *
      *
      * @var array<string, MediaType>|null
      */
     protected $content;
     /**
-     * 
+     *
      *
      * @var array<string, Link|Reference>|null
      */
     protected $links;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -46,7 +46,7 @@ class Response extends \ArrayObject
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string|null $description
      *
@@ -59,7 +59,7 @@ class Response extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return array<string, Header|Reference>|null
      */
@@ -68,7 +68,7 @@ class Response extends \ArrayObject
         return $this->headers;
     }
     /**
-     * 
+     *
      *
      * @param array<string, Header|Reference>|null $headers
      *
@@ -81,7 +81,7 @@ class Response extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return array<string, MediaType>|null
      */
@@ -90,7 +90,7 @@ class Response extends \ArrayObject
         return $this->content;
     }
     /**
-     * 
+     *
      *
      * @param array<string, MediaType>|null $content
      *
@@ -103,7 +103,7 @@ class Response extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return array<string, Link|Reference>|null
      */
@@ -112,7 +112,7 @@ class Response extends \ArrayObject
         return $this->links;
     }
     /**
-     * 
+     *
      *
      * @param array<string, Link|Reference>|null $links
      *

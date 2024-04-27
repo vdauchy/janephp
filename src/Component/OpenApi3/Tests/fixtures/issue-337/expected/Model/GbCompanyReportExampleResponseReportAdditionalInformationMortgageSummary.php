@@ -13,19 +13,19 @@ class GbCompanyReportExampleResponseReportAdditionalInformationMortgageSummary e
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $outstanding;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $satisfied;
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -34,7 +34,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationMortgageSummary e
         return $this->outstanding;
     }
     /**
-     * 
+     *
      *
      * @param float $outstanding
      *
@@ -47,7 +47,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationMortgageSummary e
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -56,7 +56,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationMortgageSummary e
         return $this->satisfied;
     }
     /**
-     * 
+     *
      *
      * @param float $satisfied
      *

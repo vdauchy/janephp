@@ -13,19 +13,19 @@ class DeviceRequest
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $driver;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $count;
     /**
-     * 
+     *
      *
      * @var list<string>
      */
@@ -39,13 +39,13 @@ class DeviceRequest
     /**
     * Driver-specific options, specified as a key/value pairs. These options
     are passed directly to the driver.
-    
+
     *
     * @var array<string, string>
     */
     protected $options;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -54,7 +54,7 @@ class DeviceRequest
         return $this->driver;
     }
     /**
-     * 
+     *
      *
      * @param string $driver
      *
@@ -67,7 +67,7 @@ class DeviceRequest
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -76,7 +76,7 @@ class DeviceRequest
         return $this->count;
     }
     /**
-     * 
+     *
      *
      * @param int $count
      *
@@ -89,7 +89,7 @@ class DeviceRequest
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -98,7 +98,7 @@ class DeviceRequest
         return $this->deviceIDs;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $deviceIDs
      *
@@ -135,7 +135,7 @@ class DeviceRequest
     /**
     * Driver-specific options, specified as a key/value pairs. These options
     are passed directly to the driver.
-    
+
     *
     * @return array<string, string>
     */
@@ -146,7 +146,7 @@ class DeviceRequest
     /**
     * Driver-specific options, specified as a key/value pairs. These options
     are passed directly to the driver.
-    
+
     *
     * @param array<string, string> $options
     *

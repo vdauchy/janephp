@@ -13,7 +13,7 @@ class StarredRepository extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
@@ -25,7 +25,7 @@ class StarredRepository extends \ArrayObject
      */
     protected $repo;
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -34,7 +34,7 @@ class StarredRepository extends \ArrayObject
         return $this->starredAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $starredAt
      *

@@ -5,9 +5,9 @@ namespace Jane\Component\OpenApi3\Tests\Expected\Endpoint;
 class TestMixedRequestBody extends \Jane\Component\OpenApi3\Tests\Expected\Runtime\Client\BaseEndpoint implements \Jane\Component\OpenApi3\Tests\Expected\Runtime\Client\Endpoint
 {
     /**
-     * 
      *
-     * @param mixed $requestBody 
+     *
+     * @param mixed $requestBody
      */
     public function __construct($requestBody)
     {

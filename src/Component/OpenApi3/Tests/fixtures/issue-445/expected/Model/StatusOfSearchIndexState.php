@@ -13,19 +13,19 @@ class StatusOfSearchIndexState
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $state;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -34,7 +34,7 @@ class StatusOfSearchIndexState
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param string|null $id
      *
@@ -47,7 +47,7 @@ class StatusOfSearchIndexState
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -56,7 +56,7 @@ class StatusOfSearchIndexState
         return $this->state;
     }
     /**
-     * 
+     *
      *
      * @param string $state
      *

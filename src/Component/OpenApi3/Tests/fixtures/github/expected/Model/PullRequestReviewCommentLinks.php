@@ -13,25 +13,25 @@ class PullRequestReviewCommentLinks extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var PullRequestReviewCommentLinksSelf
      */
     protected $self;
     /**
-     * 
+     *
      *
      * @var PullRequestReviewCommentLinksHtml
      */
     protected $html;
     /**
-     * 
+     *
      *
      * @var PullRequestReviewCommentLinksPullRequest
      */
     protected $pullRequest;
     /**
-     * 
+     *
      *
      * @return PullRequestReviewCommentLinksSelf
      */
@@ -40,7 +40,7 @@ class PullRequestReviewCommentLinks extends \ArrayObject
         return $this->self;
     }
     /**
-     * 
+     *
      *
      * @param PullRequestReviewCommentLinksSelf $self
      *
@@ -53,7 +53,7 @@ class PullRequestReviewCommentLinks extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return PullRequestReviewCommentLinksHtml
      */
@@ -62,7 +62,7 @@ class PullRequestReviewCommentLinks extends \ArrayObject
         return $this->html;
     }
     /**
-     * 
+     *
      *
      * @param PullRequestReviewCommentLinksHtml $html
      *
@@ -75,7 +75,7 @@ class PullRequestReviewCommentLinks extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return PullRequestReviewCommentLinksPullRequest
      */
@@ -84,7 +84,7 @@ class PullRequestReviewCommentLinks extends \ArrayObject
         return $this->pullRequest;
     }
     /**
-     * 
+     *
      *
      * @param PullRequestReviewCommentLinksPullRequest $pullRequest
      *

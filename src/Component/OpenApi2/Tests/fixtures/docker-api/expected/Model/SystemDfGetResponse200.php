@@ -13,37 +13,37 @@ class SystemDfGetResponse200
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $layersSize;
     /**
-     * 
+     *
      *
      * @var list<ImageSummary>
      */
     protected $images;
     /**
-     * 
+     *
      *
      * @var list<ContainerSummary>
      */
     protected $containers;
     /**
-     * 
+     *
      *
      * @var list<Volume>
      */
     protected $volumes;
     /**
-     * 
+     *
      *
      * @var list<BuildCache>
      */
     protected $buildCache;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -52,7 +52,7 @@ class SystemDfGetResponse200
         return $this->layersSize;
     }
     /**
-     * 
+     *
      *
      * @param int $layersSize
      *
@@ -65,7 +65,7 @@ class SystemDfGetResponse200
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<ImageSummary>
      */
@@ -74,7 +74,7 @@ class SystemDfGetResponse200
         return $this->images;
     }
     /**
-     * 
+     *
      *
      * @param list<ImageSummary> $images
      *
@@ -87,7 +87,7 @@ class SystemDfGetResponse200
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<ContainerSummary>
      */
@@ -96,7 +96,7 @@ class SystemDfGetResponse200
         return $this->containers;
     }
     /**
-     * 
+     *
      *
      * @param list<ContainerSummary> $containers
      *
@@ -109,7 +109,7 @@ class SystemDfGetResponse200
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<Volume>
      */
@@ -118,7 +118,7 @@ class SystemDfGetResponse200
         return $this->volumes;
     }
     /**
-     * 
+     *
      *
      * @param list<Volume> $volumes
      *
@@ -131,7 +131,7 @@ class SystemDfGetResponse200
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<BuildCache>
      */
@@ -140,7 +140,7 @@ class SystemDfGetResponse200
         return $this->buildCache;
     }
     /**
-     * 
+     *
      *
      * @param list<BuildCache> $buildCache
      *

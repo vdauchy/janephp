@@ -13,13 +13,13 @@ class TopicSearchResultItemAliasesItem extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var TopicSearchResultItemAliasesItemTopicRelation
      */
     protected $topicRelation;
     /**
-     * 
+     *
      *
      * @return TopicSearchResultItemAliasesItemTopicRelation
      */
@@ -28,7 +28,7 @@ class TopicSearchResultItemAliasesItem extends \ArrayObject
         return $this->topicRelation;
     }
     /**
-     * 
+     *
      *
      * @param TopicSearchResultItemAliasesItemTopicRelation $topicRelation
      *

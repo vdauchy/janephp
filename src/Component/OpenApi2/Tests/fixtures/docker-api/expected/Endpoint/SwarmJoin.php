@@ -5,9 +5,9 @@ namespace Docker\Api\Endpoint;
 class SwarmJoin extends \Docker\Api\Runtime\Client\BaseEndpoint implements \Docker\Api\Runtime\Client\Endpoint
 {
     /**
-     * 
      *
-     * @param \Docker\Api\Model\SwarmJoinPostBody $body 
+     *
+     * @param \Docker\Api\Model\SwarmJoinPostBody $body
      */
     public function __construct(\Docker\Api\Model\SwarmJoinPostBody $body)
     {

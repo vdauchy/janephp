@@ -13,25 +13,25 @@ class ServerVariable extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string[]|null
      */
     protected $enum;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $default;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @return string[]|null
      */
@@ -40,7 +40,7 @@ class ServerVariable extends \ArrayObject
         return $this->enum;
     }
     /**
-     * 
+     *
      *
      * @param string[]|null $enum
      *
@@ -53,7 +53,7 @@ class ServerVariable extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -62,7 +62,7 @@ class ServerVariable extends \ArrayObject
         return $this->default;
     }
     /**
-     * 
+     *
      *
      * @param string|null $default
      *
@@ -75,7 +75,7 @@ class ServerVariable extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -84,7 +84,7 @@ class ServerVariable extends \ArrayObject
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string|null $description
      *

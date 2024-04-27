@@ -13,37 +13,37 @@ class TopBooksGetHaljsonResponse200Links extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var TopBooksGetHaljsonResponse200LinksSelf
      */
     protected $self;
     /**
-     * 
+     *
      *
      * @var TopBooksGetHaljsonResponse200LinksFirst
      */
     protected $first;
     /**
-     * 
+     *
      *
      * @var TopBooksGetHaljsonResponse200LinksLast
      */
     protected $last;
     /**
-     * 
+     *
      *
      * @var TopBooksGetHaljsonResponse200LinksNext
      */
     protected $next;
     /**
-     * 
+     *
      *
      * @var TopBooksGetHaljsonResponse200LinksPrevious
      */
     protected $previous;
     /**
-     * 
+     *
      *
      * @return TopBooksGetHaljsonResponse200LinksSelf
      */
@@ -52,7 +52,7 @@ class TopBooksGetHaljsonResponse200Links extends \ArrayObject
         return $this->self;
     }
     /**
-     * 
+     *
      *
      * @param TopBooksGetHaljsonResponse200LinksSelf $self
      *
@@ -65,7 +65,7 @@ class TopBooksGetHaljsonResponse200Links extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return TopBooksGetHaljsonResponse200LinksFirst
      */
@@ -74,7 +74,7 @@ class TopBooksGetHaljsonResponse200Links extends \ArrayObject
         return $this->first;
     }
     /**
-     * 
+     *
      *
      * @param TopBooksGetHaljsonResponse200LinksFirst $first
      *
@@ -87,7 +87,7 @@ class TopBooksGetHaljsonResponse200Links extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return TopBooksGetHaljsonResponse200LinksLast
      */
@@ -96,7 +96,7 @@ class TopBooksGetHaljsonResponse200Links extends \ArrayObject
         return $this->last;
     }
     /**
-     * 
+     *
      *
      * @param TopBooksGetHaljsonResponse200LinksLast $last
      *
@@ -109,7 +109,7 @@ class TopBooksGetHaljsonResponse200Links extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return TopBooksGetHaljsonResponse200LinksNext
      */
@@ -118,7 +118,7 @@ class TopBooksGetHaljsonResponse200Links extends \ArrayObject
         return $this->next;
     }
     /**
-     * 
+     *
      *
      * @param TopBooksGetHaljsonResponse200LinksNext $next
      *
@@ -131,7 +131,7 @@ class TopBooksGetHaljsonResponse200Links extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return TopBooksGetHaljsonResponse200LinksPrevious
      */
@@ -140,7 +140,7 @@ class TopBooksGetHaljsonResponse200Links extends \ArrayObject
         return $this->previous;
     }
     /**
-     * 
+     *
      *
      * @param TopBooksGetHaljsonResponse200LinksPrevious $previous
      *

@@ -13,79 +13,79 @@ class Team extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $nodeId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $slug;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $privacy;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $permission;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $htmlUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $membersUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $repositoriesUrl;
     /**
-     * 
+     *
      *
      * @var TeamParent|null
      */
     protected $parent;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -94,7 +94,7 @@ class Team extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -107,7 +107,7 @@ class Team extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -116,7 +116,7 @@ class Team extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -129,7 +129,7 @@ class Team extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -138,7 +138,7 @@ class Team extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -151,7 +151,7 @@ class Team extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -160,7 +160,7 @@ class Team extends \ArrayObject
         return $this->slug;
     }
     /**
-     * 
+     *
      *
      * @param string $slug
      *
@@ -173,7 +173,7 @@ class Team extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -182,7 +182,7 @@ class Team extends \ArrayObject
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string|null $description
      *
@@ -195,7 +195,7 @@ class Team extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -204,7 +204,7 @@ class Team extends \ArrayObject
         return $this->privacy;
     }
     /**
-     * 
+     *
      *
      * @param string $privacy
      *
@@ -217,7 +217,7 @@ class Team extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -226,7 +226,7 @@ class Team extends \ArrayObject
         return $this->permission;
     }
     /**
-     * 
+     *
      *
      * @param string $permission
      *
@@ -239,7 +239,7 @@ class Team extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -248,7 +248,7 @@ class Team extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -261,7 +261,7 @@ class Team extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -270,7 +270,7 @@ class Team extends \ArrayObject
         return $this->htmlUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $htmlUrl
      *
@@ -283,7 +283,7 @@ class Team extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -292,7 +292,7 @@ class Team extends \ArrayObject
         return $this->membersUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $membersUrl
      *
@@ -305,7 +305,7 @@ class Team extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -314,7 +314,7 @@ class Team extends \ArrayObject
         return $this->repositoriesUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $repositoriesUrl
      *
@@ -327,7 +327,7 @@ class Team extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return TeamParent|null
      */
@@ -336,7 +336,7 @@ class Team extends \ArrayObject
         return $this->parent;
     }
     /**
-     * 
+     *
      *
      * @param TeamParent|null $parent
      *

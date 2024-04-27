@@ -13,7 +13,7 @@ class Foo
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -25,7 +25,7 @@ class Foo
      */
     protected $foo;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -34,7 +34,7 @@ class Foo
         return $this->bar;
     }
     /**
-     * 
+     *
      *
      * @param string $bar
      *

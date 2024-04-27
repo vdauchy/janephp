@@ -31,7 +31,7 @@ class ActionsBillingUsage extends \ArrayObject
      */
     protected $includedMinutes;
     /**
-     * 
+     *
      *
      * @var ActionsBillingUsageMinutesUsedBreakdown
      */
@@ -103,7 +103,7 @@ class ActionsBillingUsage extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ActionsBillingUsageMinutesUsedBreakdown
      */
@@ -112,7 +112,7 @@ class ActionsBillingUsage extends \ArrayObject
         return $this->minutesUsedBreakdown;
     }
     /**
-     * 
+     *
      *
      * @param ActionsBillingUsageMinutesUsedBreakdown $minutesUsedBreakdown
      *

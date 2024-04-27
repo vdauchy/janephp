@@ -13,19 +13,19 @@ class ResourcesBlkioWeightDeviceItem
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $path;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $weight;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -34,7 +34,7 @@ class ResourcesBlkioWeightDeviceItem
         return $this->path;
     }
     /**
-     * 
+     *
      *
      * @param string $path
      *
@@ -47,7 +47,7 @@ class ResourcesBlkioWeightDeviceItem
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -56,7 +56,7 @@ class ResourcesBlkioWeightDeviceItem
         return $this->weight;
     }
     /**
-     * 
+     *
      *
      * @param int $weight
      *

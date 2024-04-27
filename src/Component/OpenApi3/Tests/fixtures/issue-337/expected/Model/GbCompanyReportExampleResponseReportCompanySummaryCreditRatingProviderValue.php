@@ -13,25 +13,25 @@ class GbCompanyReportExampleResponseReportCompanySummaryCreditRatingProviderValu
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $maxValue;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $minValue;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $value;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -40,7 +40,7 @@ class GbCompanyReportExampleResponseReportCompanySummaryCreditRatingProviderValu
         return $this->maxValue;
     }
     /**
-     * 
+     *
      *
      * @param string $maxValue
      *
@@ -53,7 +53,7 @@ class GbCompanyReportExampleResponseReportCompanySummaryCreditRatingProviderValu
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -62,7 +62,7 @@ class GbCompanyReportExampleResponseReportCompanySummaryCreditRatingProviderValu
         return $this->minValue;
     }
     /**
-     * 
+     *
      *
      * @param string $minValue
      *
@@ -75,7 +75,7 @@ class GbCompanyReportExampleResponseReportCompanySummaryCreditRatingProviderValu
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -84,7 +84,7 @@ class GbCompanyReportExampleResponseReportCompanySummaryCreditRatingProviderValu
         return $this->value;
     }
     /**
-     * 
+     *
      *
      * @param string $value
      *

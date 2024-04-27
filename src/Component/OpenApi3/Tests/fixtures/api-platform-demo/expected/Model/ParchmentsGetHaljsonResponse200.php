@@ -13,31 +13,31 @@ class ParchmentsGetHaljsonResponse200 extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var list<ParchmentJsonhal>
      */
     protected $embedded;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $totalItems;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $itemsPerPage;
     /**
-     * 
+     *
      *
      * @var ParchmentsGetHaljsonResponse200Links
      */
     protected $links;
     /**
-     * 
+     *
      *
      * @return list<ParchmentJsonhal>
      */
@@ -46,7 +46,7 @@ class ParchmentsGetHaljsonResponse200 extends \ArrayObject
         return $this->embedded;
     }
     /**
-     * 
+     *
      *
      * @param list<ParchmentJsonhal> $embedded
      *
@@ -59,7 +59,7 @@ class ParchmentsGetHaljsonResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -68,7 +68,7 @@ class ParchmentsGetHaljsonResponse200 extends \ArrayObject
         return $this->totalItems;
     }
     /**
-     * 
+     *
      *
      * @param int $totalItems
      *
@@ -81,7 +81,7 @@ class ParchmentsGetHaljsonResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -90,7 +90,7 @@ class ParchmentsGetHaljsonResponse200 extends \ArrayObject
         return $this->itemsPerPage;
     }
     /**
-     * 
+     *
      *
      * @param int $itemsPerPage
      *
@@ -103,7 +103,7 @@ class ParchmentsGetHaljsonResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ParchmentsGetHaljsonResponse200Links
      */
@@ -112,7 +112,7 @@ class ParchmentsGetHaljsonResponse200 extends \ArrayObject
         return $this->links;
     }
     /**
-     * 
+     *
      *
      * @param ParchmentsGetHaljsonResponse200Links $links
      *

@@ -13,13 +13,13 @@ class EmptySpace extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $stringProperty;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -28,7 +28,7 @@ class EmptySpace extends \ArrayObject
         return $this->stringProperty;
     }
     /**
-     * 
+     *
      *
      * @param string $stringProperty
      *

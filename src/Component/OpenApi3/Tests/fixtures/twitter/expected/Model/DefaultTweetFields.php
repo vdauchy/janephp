@@ -19,7 +19,7 @@ class DefaultTweetFields extends \ArrayObject
      */
     protected $geo;
     /**
-     * 
+     *
      *
      * @var FullTextEntities
      */
@@ -47,7 +47,7 @@ class DefaultTweetFields extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return FullTextEntities
      */
@@ -56,7 +56,7 @@ class DefaultTweetFields extends \ArrayObject
         return $this->entities;
     }
     /**
-     * 
+     *
      *
      * @param FullTextEntities $entities
      *

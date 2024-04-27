@@ -13,37 +13,37 @@ class ProtectedBranchRequiredPullRequestReviewsDismissalRestrictions extends \Ar
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $usersUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $teamsUrl;
     /**
-     * 
+     *
      *
      * @var list<SimpleUser>
      */
     protected $users;
     /**
-     * 
+     *
      *
      * @var list<Team>
      */
     protected $teams;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -52,7 +52,7 @@ class ProtectedBranchRequiredPullRequestReviewsDismissalRestrictions extends \Ar
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -65,7 +65,7 @@ class ProtectedBranchRequiredPullRequestReviewsDismissalRestrictions extends \Ar
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -74,7 +74,7 @@ class ProtectedBranchRequiredPullRequestReviewsDismissalRestrictions extends \Ar
         return $this->usersUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $usersUrl
      *
@@ -87,7 +87,7 @@ class ProtectedBranchRequiredPullRequestReviewsDismissalRestrictions extends \Ar
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -96,7 +96,7 @@ class ProtectedBranchRequiredPullRequestReviewsDismissalRestrictions extends \Ar
         return $this->teamsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $teamsUrl
      *
@@ -109,7 +109,7 @@ class ProtectedBranchRequiredPullRequestReviewsDismissalRestrictions extends \Ar
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<SimpleUser>
      */
@@ -118,7 +118,7 @@ class ProtectedBranchRequiredPullRequestReviewsDismissalRestrictions extends \Ar
         return $this->users;
     }
     /**
-     * 
+     *
      *
      * @param list<SimpleUser> $users
      *
@@ -131,7 +131,7 @@ class ProtectedBranchRequiredPullRequestReviewsDismissalRestrictions extends \Ar
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<Team>
      */
@@ -140,7 +140,7 @@ class ProtectedBranchRequiredPullRequestReviewsDismissalRestrictions extends \Ar
         return $this->teams;
     }
     /**
-     * 
+     *
      *
      * @param list<Team> $teams
      *

@@ -37,103 +37,103 @@ class HeaderParameterSubSchema extends \ArrayObject
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $format;
     /**
-     * 
+     *
      *
      * @var PrimitivesItems|null
      */
     protected $items;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $collectionFormat = 'csv';
     /**
-     * 
+     *
      *
      * @var mixed|null
      */
     protected $default;
     /**
-     * 
+     *
      *
      * @var float|null
      */
     protected $maximum;
     /**
-     * 
+     *
      *
      * @var bool|null
      */
     protected $exclusiveMaximum = false;
     /**
-     * 
+     *
      *
      * @var float|null
      */
     protected $minimum;
     /**
-     * 
+     *
      *
      * @var bool|null
      */
     protected $exclusiveMinimum = false;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $maxLength;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $minLength;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $pattern;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $maxItems;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $minItems;
     /**
-     * 
+     *
      *
      * @var bool|null
      */
     protected $uniqueItems = false;
     /**
-     * 
+     *
      *
      * @var mixed[]|null
      */
     protected $enum;
     /**
-     * 
+     *
      *
      * @var float|null
      */
@@ -227,7 +227,7 @@ class HeaderParameterSubSchema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -236,7 +236,7 @@ class HeaderParameterSubSchema extends \ArrayObject
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string|null $type
      *
@@ -249,7 +249,7 @@ class HeaderParameterSubSchema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -258,7 +258,7 @@ class HeaderParameterSubSchema extends \ArrayObject
         return $this->format;
     }
     /**
-     * 
+     *
      *
      * @param string|null $format
      *
@@ -271,7 +271,7 @@ class HeaderParameterSubSchema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return PrimitivesItems|null
      */
@@ -280,7 +280,7 @@ class HeaderParameterSubSchema extends \ArrayObject
         return $this->items;
     }
     /**
-     * 
+     *
      *
      * @param PrimitivesItems|null $items
      *
@@ -293,7 +293,7 @@ class HeaderParameterSubSchema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -302,7 +302,7 @@ class HeaderParameterSubSchema extends \ArrayObject
         return $this->collectionFormat;
     }
     /**
-     * 
+     *
      *
      * @param string|null $collectionFormat
      *
@@ -315,7 +315,7 @@ class HeaderParameterSubSchema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return mixed
      */
@@ -324,7 +324,7 @@ class HeaderParameterSubSchema extends \ArrayObject
         return $this->default;
     }
     /**
-     * 
+     *
      *
      * @param mixed $default
      *
@@ -337,7 +337,7 @@ class HeaderParameterSubSchema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float|null
      */
@@ -346,7 +346,7 @@ class HeaderParameterSubSchema extends \ArrayObject
         return $this->maximum;
     }
     /**
-     * 
+     *
      *
      * @param float|null $maximum
      *
@@ -359,7 +359,7 @@ class HeaderParameterSubSchema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool|null
      */
@@ -368,7 +368,7 @@ class HeaderParameterSubSchema extends \ArrayObject
         return $this->exclusiveMaximum;
     }
     /**
-     * 
+     *
      *
      * @param bool|null $exclusiveMaximum
      *
@@ -381,7 +381,7 @@ class HeaderParameterSubSchema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float|null
      */
@@ -390,7 +390,7 @@ class HeaderParameterSubSchema extends \ArrayObject
         return $this->minimum;
     }
     /**
-     * 
+     *
      *
      * @param float|null $minimum
      *
@@ -403,7 +403,7 @@ class HeaderParameterSubSchema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool|null
      */
@@ -412,7 +412,7 @@ class HeaderParameterSubSchema extends \ArrayObject
         return $this->exclusiveMinimum;
     }
     /**
-     * 
+     *
      *
      * @param bool|null $exclusiveMinimum
      *
@@ -425,7 +425,7 @@ class HeaderParameterSubSchema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -434,7 +434,7 @@ class HeaderParameterSubSchema extends \ArrayObject
         return $this->maxLength;
     }
     /**
-     * 
+     *
      *
      * @param int|null $maxLength
      *
@@ -447,7 +447,7 @@ class HeaderParameterSubSchema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -456,7 +456,7 @@ class HeaderParameterSubSchema extends \ArrayObject
         return $this->minLength;
     }
     /**
-     * 
+     *
      *
      * @param int|null $minLength
      *
@@ -469,7 +469,7 @@ class HeaderParameterSubSchema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -478,7 +478,7 @@ class HeaderParameterSubSchema extends \ArrayObject
         return $this->pattern;
     }
     /**
-     * 
+     *
      *
      * @param string|null $pattern
      *
@@ -491,7 +491,7 @@ class HeaderParameterSubSchema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -500,7 +500,7 @@ class HeaderParameterSubSchema extends \ArrayObject
         return $this->maxItems;
     }
     /**
-     * 
+     *
      *
      * @param int|null $maxItems
      *
@@ -513,7 +513,7 @@ class HeaderParameterSubSchema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -522,7 +522,7 @@ class HeaderParameterSubSchema extends \ArrayObject
         return $this->minItems;
     }
     /**
-     * 
+     *
      *
      * @param int|null $minItems
      *
@@ -535,7 +535,7 @@ class HeaderParameterSubSchema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool|null
      */
@@ -544,7 +544,7 @@ class HeaderParameterSubSchema extends \ArrayObject
         return $this->uniqueItems;
     }
     /**
-     * 
+     *
      *
      * @param bool|null $uniqueItems
      *
@@ -557,7 +557,7 @@ class HeaderParameterSubSchema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return mixed[]|null
      */
@@ -566,7 +566,7 @@ class HeaderParameterSubSchema extends \ArrayObject
         return $this->enum;
     }
     /**
-     * 
+     *
      *
      * @param mixed[]|null $enum
      *
@@ -579,7 +579,7 @@ class HeaderParameterSubSchema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float|null
      */
@@ -588,7 +588,7 @@ class HeaderParameterSubSchema extends \ArrayObject
         return $this->multipleOf;
     }
     /**
-     * 
+     *
      *
      * @param float|null $multipleOf
      *

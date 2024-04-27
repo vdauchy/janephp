@@ -19,13 +19,13 @@ class InteractionLimit extends \ArrayObject
      */
     protected $limit;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $origin;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
@@ -53,7 +53,7 @@ class InteractionLimit extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -62,7 +62,7 @@ class InteractionLimit extends \ArrayObject
         return $this->origin;
     }
     /**
-     * 
+     *
      *
      * @param string $origin
      *
@@ -75,7 +75,7 @@ class InteractionLimit extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -84,7 +84,7 @@ class InteractionLimit extends \ArrayObject
         return $this->expiresAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $expiresAt
      *

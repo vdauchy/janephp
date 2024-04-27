@@ -13,25 +13,25 @@ class ListFreshInvestigationResponseOrdersItemSearchCriteriaAddress extends \Arr
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $simple;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $city;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $postcode;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -40,7 +40,7 @@ class ListFreshInvestigationResponseOrdersItemSearchCriteriaAddress extends \Arr
         return $this->simple;
     }
     /**
-     * 
+     *
      *
      * @param string $simple
      *
@@ -53,7 +53,7 @@ class ListFreshInvestigationResponseOrdersItemSearchCriteriaAddress extends \Arr
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -62,7 +62,7 @@ class ListFreshInvestigationResponseOrdersItemSearchCriteriaAddress extends \Arr
         return $this->city;
     }
     /**
-     * 
+     *
      *
      * @param string $city
      *
@@ -75,7 +75,7 @@ class ListFreshInvestigationResponseOrdersItemSearchCriteriaAddress extends \Arr
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -84,7 +84,7 @@ class ListFreshInvestigationResponseOrdersItemSearchCriteriaAddress extends \Arr
         return $this->postcode;
     }
     /**
-     * 
+     *
      *
      * @param string $postcode
      *

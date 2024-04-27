@@ -13,43 +13,43 @@ class CompletedFreshInvestigationSearchCriteria extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $additionalInfo;
     /**
-     * 
+     *
      *
      * @var CompletedFreshInvestigationSearchCriteriaAddress
      */
     protected $address;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $countryCode;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $regNo;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $vatNo;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -58,7 +58,7 @@ class CompletedFreshInvestigationSearchCriteria extends \ArrayObject
         return $this->additionalInfo;
     }
     /**
-     * 
+     *
      *
      * @param string $additionalInfo
      *
@@ -71,7 +71,7 @@ class CompletedFreshInvestigationSearchCriteria extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return CompletedFreshInvestigationSearchCriteriaAddress
      */
@@ -80,7 +80,7 @@ class CompletedFreshInvestigationSearchCriteria extends \ArrayObject
         return $this->address;
     }
     /**
-     * 
+     *
      *
      * @param CompletedFreshInvestigationSearchCriteriaAddress $address
      *
@@ -93,7 +93,7 @@ class CompletedFreshInvestigationSearchCriteria extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -102,7 +102,7 @@ class CompletedFreshInvestigationSearchCriteria extends \ArrayObject
         return $this->countryCode;
     }
     /**
-     * 
+     *
      *
      * @param string $countryCode
      *
@@ -115,7 +115,7 @@ class CompletedFreshInvestigationSearchCriteria extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -124,7 +124,7 @@ class CompletedFreshInvestigationSearchCriteria extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -137,7 +137,7 @@ class CompletedFreshInvestigationSearchCriteria extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -146,7 +146,7 @@ class CompletedFreshInvestigationSearchCriteria extends \ArrayObject
         return $this->regNo;
     }
     /**
-     * 
+     *
      *
      * @param string $regNo
      *
@@ -159,7 +159,7 @@ class CompletedFreshInvestigationSearchCriteria extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -168,7 +168,7 @@ class CompletedFreshInvestigationSearchCriteria extends \ArrayObject
         return $this->vatNo;
     }
     /**
-     * 
+     *
      *
      * @param string $vatNo
      *

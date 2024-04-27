@@ -13,79 +13,79 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $slug;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $nodeId;
     /**
-     * 
+     *
      *
      * @var BranchRestrictionPolicyAppsItemOwner
      */
     protected $owner;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $externalUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $htmlUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $updatedAt;
     /**
-     * 
+     *
      *
      * @var BranchRestrictionPolicyAppsItemPermissions
      */
     protected $permissions;
     /**
-     * 
+     *
      *
      * @var list<string>
      */
     protected $events;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -94,7 +94,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -107,7 +107,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -116,7 +116,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
         return $this->slug;
     }
     /**
-     * 
+     *
      *
      * @param string $slug
      *
@@ -129,7 +129,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -138,7 +138,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -151,7 +151,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return BranchRestrictionPolicyAppsItemOwner
      */
@@ -160,7 +160,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
         return $this->owner;
     }
     /**
-     * 
+     *
      *
      * @param BranchRestrictionPolicyAppsItemOwner $owner
      *
@@ -173,7 +173,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -182,7 +182,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -195,7 +195,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -204,7 +204,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string $description
      *
@@ -217,7 +217,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -226,7 +226,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
         return $this->externalUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $externalUrl
      *
@@ -239,7 +239,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -248,7 +248,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
         return $this->htmlUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $htmlUrl
      *
@@ -261,7 +261,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -270,7 +270,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param string $createdAt
      *
@@ -283,7 +283,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -292,7 +292,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
         return $this->updatedAt;
     }
     /**
-     * 
+     *
      *
      * @param string $updatedAt
      *
@@ -305,7 +305,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return BranchRestrictionPolicyAppsItemPermissions
      */
@@ -314,7 +314,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
         return $this->permissions;
     }
     /**
-     * 
+     *
      *
      * @param BranchRestrictionPolicyAppsItemPermissions $permissions
      *
@@ -327,7 +327,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -336,7 +336,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
         return $this->events;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $events
      *

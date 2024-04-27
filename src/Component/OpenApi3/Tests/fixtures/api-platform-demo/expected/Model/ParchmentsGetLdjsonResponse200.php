@@ -13,31 +13,31 @@ class ParchmentsGetLdjsonResponse200 extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var list<ParchmentJsonld>
      */
     protected $hydraMember;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $hydraTotalItems;
     /**
-     * 
+     *
      *
      * @var ParchmentsGetLdjsonResponse200HydraView
      */
     protected $hydraView;
     /**
-     * 
+     *
      *
      * @var ParchmentsGetLdjsonResponse200HydraSearch
      */
     protected $hydraSearch;
     /**
-     * 
+     *
      *
      * @return list<ParchmentJsonld>
      */
@@ -46,7 +46,7 @@ class ParchmentsGetLdjsonResponse200 extends \ArrayObject
         return $this->hydraMember;
     }
     /**
-     * 
+     *
      *
      * @param list<ParchmentJsonld> $hydraMember
      *
@@ -59,7 +59,7 @@ class ParchmentsGetLdjsonResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -68,7 +68,7 @@ class ParchmentsGetLdjsonResponse200 extends \ArrayObject
         return $this->hydraTotalItems;
     }
     /**
-     * 
+     *
      *
      * @param int $hydraTotalItems
      *
@@ -81,7 +81,7 @@ class ParchmentsGetLdjsonResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ParchmentsGetLdjsonResponse200HydraView
      */
@@ -90,7 +90,7 @@ class ParchmentsGetLdjsonResponse200 extends \ArrayObject
         return $this->hydraView;
     }
     /**
-     * 
+     *
      *
      * @param ParchmentsGetLdjsonResponse200HydraView $hydraView
      *
@@ -103,7 +103,7 @@ class ParchmentsGetLdjsonResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ParchmentsGetLdjsonResponse200HydraSearch
      */
@@ -112,7 +112,7 @@ class ParchmentsGetLdjsonResponse200 extends \ArrayObject
         return $this->hydraSearch;
     }
     /**
-     * 
+     *
      *
      * @param ParchmentsGetLdjsonResponse200HydraSearch $hydraSearch
      *

@@ -13,13 +13,13 @@ class BadRequestError extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $correlationId;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -31,7 +31,7 @@ class BadRequestError extends \ArrayObject
      */
     protected $details;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -40,7 +40,7 @@ class BadRequestError extends \ArrayObject
         return $this->correlationId;
     }
     /**
-     * 
+     *
      *
      * @param string $correlationId
      *
@@ -53,7 +53,7 @@ class BadRequestError extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -62,7 +62,7 @@ class BadRequestError extends \ArrayObject
         return $this->message;
     }
     /**
-     * 
+     *
      *
      * @param string $message
      *

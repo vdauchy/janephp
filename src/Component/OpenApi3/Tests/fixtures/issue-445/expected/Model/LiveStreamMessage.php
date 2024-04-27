@@ -13,43 +13,43 @@ class LiveStreamMessage extends Message
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $customerId;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $customerAlias;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $timestamp;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $scope;
     /**
-     * 
+     *
      *
      * @var mixed|null
      */
     protected $documentChange;
     /**
-     * 
+     *
      *
      * @var mixed|null
      */
     protected $applicationEvent;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -58,7 +58,7 @@ class LiveStreamMessage extends Message
         return $this->customerId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $customerId
      *
@@ -71,7 +71,7 @@ class LiveStreamMessage extends Message
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -80,7 +80,7 @@ class LiveStreamMessage extends Message
         return $this->customerAlias;
     }
     /**
-     * 
+     *
      *
      * @param string|null $customerAlias
      *
@@ -93,7 +93,7 @@ class LiveStreamMessage extends Message
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -102,7 +102,7 @@ class LiveStreamMessage extends Message
         return $this->timestamp;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $timestamp
      *
@@ -115,7 +115,7 @@ class LiveStreamMessage extends Message
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -124,7 +124,7 @@ class LiveStreamMessage extends Message
         return $this->scope;
     }
     /**
-     * 
+     *
      *
      * @param string|null $scope
      *
@@ -137,7 +137,7 @@ class LiveStreamMessage extends Message
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return mixed
      */
@@ -146,7 +146,7 @@ class LiveStreamMessage extends Message
         return $this->documentChange;
     }
     /**
-     * 
+     *
      *
      * @param mixed $documentChange
      *
@@ -159,7 +159,7 @@ class LiveStreamMessage extends Message
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return mixed
      */
@@ -168,7 +168,7 @@ class LiveStreamMessage extends Message
         return $this->applicationEvent;
     }
     /**
-     * 
+     *
      *
      * @param mixed $applicationEvent
      *

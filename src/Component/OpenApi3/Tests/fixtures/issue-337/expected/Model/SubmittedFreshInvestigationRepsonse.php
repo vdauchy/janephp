@@ -13,13 +13,13 @@ class SubmittedFreshInvestigationRepsonse extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $correlationId;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -37,7 +37,7 @@ class SubmittedFreshInvestigationRepsonse extends \ArrayObject
      */
     protected $transactionID;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -46,7 +46,7 @@ class SubmittedFreshInvestigationRepsonse extends \ArrayObject
         return $this->correlationId;
     }
     /**
-     * 
+     *
      *
      * @param string $correlationId
      *
@@ -59,7 +59,7 @@ class SubmittedFreshInvestigationRepsonse extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -68,7 +68,7 @@ class SubmittedFreshInvestigationRepsonse extends \ArrayObject
         return $this->message;
     }
     /**
-     * 
+     *
      *
      * @param string $message
      *

@@ -13,19 +13,19 @@ class GbCompanyReportExampleResponseReportAdditionalInformationCommentariesItem 
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $commentaryText;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $positiveNegative;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -34,7 +34,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationCommentariesItem 
         return $this->commentaryText;
     }
     /**
-     * 
+     *
      *
      * @param string $commentaryText
      *
@@ -47,7 +47,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationCommentariesItem 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -56,7 +56,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationCommentariesItem 
         return $this->positiveNegative;
     }
     /**
-     * 
+     *
      *
      * @param string $positiveNegative
      *

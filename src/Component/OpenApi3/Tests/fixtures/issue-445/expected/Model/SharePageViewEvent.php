@@ -13,13 +13,13 @@ class SharePageViewEvent extends ApplicationEvent
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $shareToken;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -28,7 +28,7 @@ class SharePageViewEvent extends ApplicationEvent
         return $this->shareToken;
     }
     /**
-     * 
+     *
      *
      * @param string|null $shareToken
      *

@@ -13,31 +13,31 @@ class CommunityProfileFilesCodeOfConduct extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $key;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $htmlUrl;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -46,7 +46,7 @@ class CommunityProfileFilesCodeOfConduct extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -59,7 +59,7 @@ class CommunityProfileFilesCodeOfConduct extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -68,7 +68,7 @@ class CommunityProfileFilesCodeOfConduct extends \ArrayObject
         return $this->key;
     }
     /**
-     * 
+     *
      *
      * @param string $key
      *
@@ -81,7 +81,7 @@ class CommunityProfileFilesCodeOfConduct extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -90,7 +90,7 @@ class CommunityProfileFilesCodeOfConduct extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -103,7 +103,7 @@ class CommunityProfileFilesCodeOfConduct extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -112,7 +112,7 @@ class CommunityProfileFilesCodeOfConduct extends \ArrayObject
         return $this->htmlUrl;
     }
     /**
-     * 
+     *
      *
      * @param string|null $htmlUrl
      *

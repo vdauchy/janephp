@@ -13,19 +13,19 @@ class GbCompanyReportExampleResponseReportAdditionalInformationCreditLimitHistor
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $date;
     /**
-     * 
+     *
      *
      * @var GbCompanyReportExampleResponseReportAdditionalInformationCreditLimitHistoryItemCompanyValue
      */
     protected $companyValue;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -34,7 +34,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationCreditLimitHistor
         return $this->date;
     }
     /**
-     * 
+     *
      *
      * @param string $date
      *
@@ -47,7 +47,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationCreditLimitHistor
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GbCompanyReportExampleResponseReportAdditionalInformationCreditLimitHistoryItemCompanyValue
      */
@@ -56,7 +56,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationCreditLimitHistor
         return $this->companyValue;
     }
     /**
-     * 
+     *
      *
      * @param GbCompanyReportExampleResponseReportAdditionalInformationCreditLimitHistoryItemCompanyValue $companyValue
      *

@@ -25,61 +25,61 @@ class Organization extends \ArrayObject
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $nodeId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $reposUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $eventsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $hooksUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $issuesUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $membersUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $publicMembersUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $avatarUrl;
     /**
-     * 
+     *
      *
      * @var string|null
      */
@@ -91,7 +91,7 @@ class Organization extends \ArrayObject
      */
     protected $blog;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -133,55 +133,55 @@ class Organization extends \ArrayObject
      */
     protected $hasRepositoryProjects;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $isVerified;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $publicRepos;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $publicGists;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $followers;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $following;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $updatedAt;
     /**
-     * 
+     *
      *
      * @var OrganizationPlan
      */
@@ -231,7 +231,7 @@ class Organization extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -240,7 +240,7 @@ class Organization extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -253,7 +253,7 @@ class Organization extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -262,7 +262,7 @@ class Organization extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -275,7 +275,7 @@ class Organization extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -284,7 +284,7 @@ class Organization extends \ArrayObject
         return $this->reposUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $reposUrl
      *
@@ -297,7 +297,7 @@ class Organization extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -306,7 +306,7 @@ class Organization extends \ArrayObject
         return $this->eventsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $eventsUrl
      *
@@ -319,7 +319,7 @@ class Organization extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -328,7 +328,7 @@ class Organization extends \ArrayObject
         return $this->hooksUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $hooksUrl
      *
@@ -341,7 +341,7 @@ class Organization extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -350,7 +350,7 @@ class Organization extends \ArrayObject
         return $this->issuesUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $issuesUrl
      *
@@ -363,7 +363,7 @@ class Organization extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -372,7 +372,7 @@ class Organization extends \ArrayObject
         return $this->membersUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $membersUrl
      *
@@ -385,7 +385,7 @@ class Organization extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -394,7 +394,7 @@ class Organization extends \ArrayObject
         return $this->publicMembersUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $publicMembersUrl
      *
@@ -407,7 +407,7 @@ class Organization extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -416,7 +416,7 @@ class Organization extends \ArrayObject
         return $this->avatarUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $avatarUrl
      *
@@ -429,7 +429,7 @@ class Organization extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -438,7 +438,7 @@ class Organization extends \ArrayObject
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string|null $description
      *
@@ -473,7 +473,7 @@ class Organization extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -482,7 +482,7 @@ class Organization extends \ArrayObject
         return $this->htmlUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $htmlUrl
      *
@@ -627,7 +627,7 @@ class Organization extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -636,7 +636,7 @@ class Organization extends \ArrayObject
         return $this->isVerified;
     }
     /**
-     * 
+     *
      *
      * @param bool $isVerified
      *
@@ -649,7 +649,7 @@ class Organization extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -658,7 +658,7 @@ class Organization extends \ArrayObject
         return $this->publicRepos;
     }
     /**
-     * 
+     *
      *
      * @param int $publicRepos
      *
@@ -671,7 +671,7 @@ class Organization extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -680,7 +680,7 @@ class Organization extends \ArrayObject
         return $this->publicGists;
     }
     /**
-     * 
+     *
      *
      * @param int $publicGists
      *
@@ -693,7 +693,7 @@ class Organization extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -702,7 +702,7 @@ class Organization extends \ArrayObject
         return $this->followers;
     }
     /**
-     * 
+     *
      *
      * @param int $followers
      *
@@ -715,7 +715,7 @@ class Organization extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -724,7 +724,7 @@ class Organization extends \ArrayObject
         return $this->following;
     }
     /**
-     * 
+     *
      *
      * @param int $following
      *
@@ -737,7 +737,7 @@ class Organization extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -746,7 +746,7 @@ class Organization extends \ArrayObject
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string $type
      *
@@ -759,7 +759,7 @@ class Organization extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -768,7 +768,7 @@ class Organization extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $createdAt
      *
@@ -781,7 +781,7 @@ class Organization extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -790,7 +790,7 @@ class Organization extends \ArrayObject
         return $this->updatedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $updatedAt
      *
@@ -803,7 +803,7 @@ class Organization extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return OrganizationPlan
      */
@@ -812,7 +812,7 @@ class Organization extends \ArrayObject
         return $this->plan;
     }
     /**
-     * 
+     *
      *
      * @param OrganizationPlan $plan
      *

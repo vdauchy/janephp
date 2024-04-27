@@ -13,37 +13,37 @@ class Xml extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $namespace;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $prefix;
     /**
-     * 
+     *
      *
      * @var bool|null
      */
     protected $attribute = false;
     /**
-     * 
+     *
      *
      * @var bool|null
      */
     protected $wrapped = false;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -52,7 +52,7 @@ class Xml extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string|null $name
      *
@@ -65,7 +65,7 @@ class Xml extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -74,7 +74,7 @@ class Xml extends \ArrayObject
         return $this->namespace;
     }
     /**
-     * 
+     *
      *
      * @param string|null $namespace
      *
@@ -87,7 +87,7 @@ class Xml extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -96,7 +96,7 @@ class Xml extends \ArrayObject
         return $this->prefix;
     }
     /**
-     * 
+     *
      *
      * @param string|null $prefix
      *
@@ -109,7 +109,7 @@ class Xml extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool|null
      */
@@ -118,7 +118,7 @@ class Xml extends \ArrayObject
         return $this->attribute;
     }
     /**
-     * 
+     *
      *
      * @param bool|null $attribute
      *
@@ -131,7 +131,7 @@ class Xml extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool|null
      */
@@ -140,7 +140,7 @@ class Xml extends \ArrayObject
         return $this->wrapped;
     }
     /**
-     * 
+     *
      *
      * @param bool|null $wrapped
      *

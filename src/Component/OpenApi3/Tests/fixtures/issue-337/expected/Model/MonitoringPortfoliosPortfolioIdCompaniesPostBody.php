@@ -19,19 +19,19 @@ class MonitoringPortfoliosPortfolioIdCompaniesPostBody extends \ArrayObject
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $personalReference;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $freeText;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -59,7 +59,7 @@ class MonitoringPortfoliosPortfolioIdCompaniesPostBody extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -68,7 +68,7 @@ class MonitoringPortfoliosPortfolioIdCompaniesPostBody extends \ArrayObject
         return $this->personalReference;
     }
     /**
-     * 
+     *
      *
      * @param string $personalReference
      *
@@ -81,7 +81,7 @@ class MonitoringPortfoliosPortfolioIdCompaniesPostBody extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -90,7 +90,7 @@ class MonitoringPortfoliosPortfolioIdCompaniesPostBody extends \ArrayObject
         return $this->freeText;
     }
     /**
-     * 
+     *
      *
      * @param string $freeText
      *
@@ -103,7 +103,7 @@ class MonitoringPortfoliosPortfolioIdCompaniesPostBody extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -112,7 +112,7 @@ class MonitoringPortfoliosPortfolioIdCompaniesPostBody extends \ArrayObject
         return $this->personalLimit;
     }
     /**
-     * 
+     *
      *
      * @param string $personalLimit
      *

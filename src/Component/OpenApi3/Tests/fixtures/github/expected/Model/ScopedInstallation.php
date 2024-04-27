@@ -13,7 +13,7 @@ class ScopedInstallation extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var array<string, mixed>
      */
@@ -25,13 +25,13 @@ class ScopedInstallation extends \ArrayObject
      */
     protected $repositorySelection;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $singleFileName;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -43,7 +43,7 @@ class ScopedInstallation extends \ArrayObject
      */
     protected $account;
     /**
-     * 
+     *
      *
      * @return array<string, mixed>
      */
@@ -52,7 +52,7 @@ class ScopedInstallation extends \ArrayObject
         return $this->permissions;
     }
     /**
-     * 
+     *
      *
      * @param array<string, mixed> $permissions
      *
@@ -87,7 +87,7 @@ class ScopedInstallation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -96,7 +96,7 @@ class ScopedInstallation extends \ArrayObject
         return $this->singleFileName;
     }
     /**
-     * 
+     *
      *
      * @param string|null $singleFileName
      *
@@ -109,7 +109,7 @@ class ScopedInstallation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -118,7 +118,7 @@ class ScopedInstallation extends \ArrayObject
         return $this->repositoriesUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $repositoriesUrl
      *

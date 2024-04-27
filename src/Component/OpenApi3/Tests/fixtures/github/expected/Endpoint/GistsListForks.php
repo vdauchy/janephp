@@ -6,7 +6,7 @@ class GistsListForks extends \Github\Runtime\Client\BaseEndpoint implements \Git
 {
     protected $gist_id;
     /**
-     * 
+     *
      *
      * @param string $gistId gist_id parameter
      * @param array $queryParameters {

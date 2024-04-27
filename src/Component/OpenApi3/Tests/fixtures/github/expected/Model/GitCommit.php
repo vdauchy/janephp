@@ -19,13 +19,13 @@ class GitCommit extends \ArrayObject
      */
     protected $sha;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $nodeId;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -49,25 +49,25 @@ class GitCommit extends \ArrayObject
      */
     protected $message;
     /**
-     * 
+     *
      *
      * @var GitCommitTree
      */
     protected $tree;
     /**
-     * 
+     *
      *
      * @var list<GitCommitParentsItem>
      */
     protected $parents;
     /**
-     * 
+     *
      *
      * @var GitCommitVerification
      */
     protected $verification;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -95,7 +95,7 @@ class GitCommit extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -104,7 +104,7 @@ class GitCommit extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -117,7 +117,7 @@ class GitCommit extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -126,7 +126,7 @@ class GitCommit extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -205,7 +205,7 @@ class GitCommit extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GitCommitTree
      */
@@ -214,7 +214,7 @@ class GitCommit extends \ArrayObject
         return $this->tree;
     }
     /**
-     * 
+     *
      *
      * @param GitCommitTree $tree
      *
@@ -227,7 +227,7 @@ class GitCommit extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<GitCommitParentsItem>
      */
@@ -236,7 +236,7 @@ class GitCommit extends \ArrayObject
         return $this->parents;
     }
     /**
-     * 
+     *
      *
      * @param list<GitCommitParentsItem> $parents
      *
@@ -249,7 +249,7 @@ class GitCommit extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GitCommitVerification
      */
@@ -258,7 +258,7 @@ class GitCommit extends \ArrayObject
         return $this->verification;
     }
     /**
-     * 
+     *
      *
      * @param GitCommitVerification $verification
      *
@@ -271,7 +271,7 @@ class GitCommit extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -280,7 +280,7 @@ class GitCommit extends \ArrayObject
         return $this->htmlUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $htmlUrl
      *

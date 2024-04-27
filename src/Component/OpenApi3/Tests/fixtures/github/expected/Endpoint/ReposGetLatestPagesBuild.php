@@ -7,10 +7,10 @@ class ReposGetLatestPagesBuild extends \Github\Runtime\Client\BaseEndpoint imple
     protected $owner;
     protected $repo;
     /**
-     * 
      *
-     * @param string $owner 
-     * @param string $repo 
+     *
+     * @param string $owner
+     * @param string $repo
      */
     public function __construct(string $owner, string $repo)
     {

@@ -13,85 +13,85 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $acceptListID;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $addedToAcceptList;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $division;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $dppa;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $eftType;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $entityType;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $gender;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $glb;
     /**
-     * 
+     *
      *
      * @var list<ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsIDsItem>
      */
     protected $iDs;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $lastUpdatedDate;
     /**
-     * 
+     *
      *
      * @var ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsName
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordState
      */
     protected $recordState;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $searchDate;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -100,7 +100,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
         return $this->acceptListID;
     }
     /**
-     * 
+     *
      *
      * @param int $acceptListID
      *
@@ -113,7 +113,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -122,7 +122,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
         return $this->addedToAcceptList;
     }
     /**
-     * 
+     *
      *
      * @param bool $addedToAcceptList
      *
@@ -135,7 +135,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -144,7 +144,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
         return $this->division;
     }
     /**
-     * 
+     *
      *
      * @param string $division
      *
@@ -157,7 +157,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -166,7 +166,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
         return $this->dppa;
     }
     /**
-     * 
+     *
      *
      * @param string $dppa
      *
@@ -179,7 +179,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -188,7 +188,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
         return $this->eftType;
     }
     /**
-     * 
+     *
      *
      * @param string $eftType
      *
@@ -201,7 +201,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -210,7 +210,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
         return $this->entityType;
     }
     /**
-     * 
+     *
      *
      * @param string $entityType
      *
@@ -223,7 +223,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -232,7 +232,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
         return $this->gender;
     }
     /**
-     * 
+     *
      *
      * @param string $gender
      *
@@ -245,7 +245,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -254,7 +254,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
         return $this->glb;
     }
     /**
-     * 
+     *
      *
      * @param int $glb
      *
@@ -267,7 +267,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsIDsItem>
      */
@@ -276,7 +276,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
         return $this->iDs;
     }
     /**
-     * 
+     *
      *
      * @param list<ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsIDsItem> $iDs
      *
@@ -289,7 +289,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -298,7 +298,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
         return $this->lastUpdatedDate;
     }
     /**
-     * 
+     *
      *
      * @param string $lastUpdatedDate
      *
@@ -311,7 +311,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsName
      */
@@ -320,7 +320,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsName $name
      *
@@ -333,7 +333,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordState
      */
@@ -342,7 +342,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
         return $this->recordState;
     }
     /**
-     * 
+     *
      *
      * @param ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordState $recordState
      *
@@ -355,7 +355,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -364,7 +364,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
         return $this->searchDate;
     }
     /**
-     * 
+     *
      *
      * @param string $searchDate
      *

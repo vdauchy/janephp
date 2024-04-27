@@ -13,31 +13,31 @@ class PluginSettings
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var list<PluginMount>
      */
     protected $mounts;
     /**
-     * 
+     *
      *
      * @var list<string>
      */
     protected $env;
     /**
-     * 
+     *
      *
      * @var list<string>
      */
     protected $args;
     /**
-     * 
+     *
      *
      * @var list<PluginDevice>
      */
     protected $devices;
     /**
-     * 
+     *
      *
      * @return list<PluginMount>
      */
@@ -46,7 +46,7 @@ class PluginSettings
         return $this->mounts;
     }
     /**
-     * 
+     *
      *
      * @param list<PluginMount> $mounts
      *
@@ -59,7 +59,7 @@ class PluginSettings
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -68,7 +68,7 @@ class PluginSettings
         return $this->env;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $env
      *
@@ -81,7 +81,7 @@ class PluginSettings
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -90,7 +90,7 @@ class PluginSettings
         return $this->args;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $args
      *
@@ -103,7 +103,7 @@ class PluginSettings
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<PluginDevice>
      */
@@ -112,7 +112,7 @@ class PluginSettings
         return $this->devices;
     }
     /**
-     * 
+     *
      *
      * @param list<PluginDevice> $devices
      *

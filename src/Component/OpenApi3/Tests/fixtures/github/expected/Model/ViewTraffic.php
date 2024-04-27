@@ -13,25 +13,25 @@ class ViewTraffic extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $count;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $uniques;
     /**
-     * 
+     *
      *
      * @var list<Traffic>
      */
     protected $views;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -40,7 +40,7 @@ class ViewTraffic extends \ArrayObject
         return $this->count;
     }
     /**
-     * 
+     *
      *
      * @param int $count
      *
@@ -53,7 +53,7 @@ class ViewTraffic extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -62,7 +62,7 @@ class ViewTraffic extends \ArrayObject
         return $this->uniques;
     }
     /**
-     * 
+     *
      *
      * @param int $uniques
      *
@@ -75,7 +75,7 @@ class ViewTraffic extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<Traffic>
      */
@@ -84,7 +84,7 @@ class ViewTraffic extends \ArrayObject
         return $this->views;
     }
     /**
-     * 
+     *
      *
      * @param list<Traffic> $views
      *

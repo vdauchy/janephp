@@ -13,25 +13,25 @@ class GbCompanyReportExampleResponseReportContactInformationMainAddress extends 
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $simpleValue;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $postalCode;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -40,7 +40,7 @@ class GbCompanyReportExampleResponseReportContactInformationMainAddress extends 
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string $type
      *
@@ -53,7 +53,7 @@ class GbCompanyReportExampleResponseReportContactInformationMainAddress extends 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -62,7 +62,7 @@ class GbCompanyReportExampleResponseReportContactInformationMainAddress extends 
         return $this->simpleValue;
     }
     /**
-     * 
+     *
      *
      * @param string $simpleValue
      *
@@ -75,7 +75,7 @@ class GbCompanyReportExampleResponseReportContactInformationMainAddress extends 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -84,7 +84,7 @@ class GbCompanyReportExampleResponseReportContactInformationMainAddress extends 
         return $this->postalCode;
     }
     /**
-     * 
+     *
      *
      * @param string $postalCode
      *

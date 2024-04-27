@@ -13,19 +13,19 @@ class Pet
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $petType;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -34,7 +34,7 @@ class Pet
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      */
@@ -44,7 +44,7 @@ class Pet
         $this->name = $name;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -53,7 +53,7 @@ class Pet
         return $this->petType;
     }
     /**
-     * 
+     *
      *
      * @param string $petType
      */

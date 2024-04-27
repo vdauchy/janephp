@@ -19,25 +19,25 @@ class Poll extends \ArrayObject
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var list<PollOption>
      */
     protected $options;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $votingStatus;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $endDatetime;
     /**
-     * 
+     *
      *
      * @var int
      */
@@ -65,7 +65,7 @@ class Poll extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<PollOption>
      */
@@ -74,7 +74,7 @@ class Poll extends \ArrayObject
         return $this->options;
     }
     /**
-     * 
+     *
      *
      * @param list<PollOption> $options
      *
@@ -87,7 +87,7 @@ class Poll extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -96,7 +96,7 @@ class Poll extends \ArrayObject
         return $this->votingStatus;
     }
     /**
-     * 
+     *
      *
      * @param string $votingStatus
      *
@@ -109,7 +109,7 @@ class Poll extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -118,7 +118,7 @@ class Poll extends \ArrayObject
         return $this->endDatetime;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $endDatetime
      *
@@ -131,7 +131,7 @@ class Poll extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -140,7 +140,7 @@ class Poll extends \ArrayObject
         return $this->durationMinutes;
     }
     /**
-     * 
+     *
      *
      * @param int $durationMinutes
      *

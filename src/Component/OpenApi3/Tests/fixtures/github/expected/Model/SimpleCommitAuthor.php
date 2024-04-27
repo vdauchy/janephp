@@ -13,19 +13,19 @@ class SimpleCommitAuthor extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $email;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -34,7 +34,7 @@ class SimpleCommitAuthor extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -47,7 +47,7 @@ class SimpleCommitAuthor extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -56,7 +56,7 @@ class SimpleCommitAuthor extends \ArrayObject
         return $this->email;
     }
     /**
-     * 
+     *
      *
      * @param string $email
      *

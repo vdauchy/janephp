@@ -13,7 +13,7 @@ class DefaultPlace extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -31,37 +31,37 @@ class DefaultPlace extends \ArrayObject
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $countryCode;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $placeType;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $fullName;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $country;
     /**
-     * 
+     *
      *
      * @var list<string>
      */
     protected $containedWithin;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -70,7 +70,7 @@ class DefaultPlace extends \ArrayObject
         return $this->format;
     }
     /**
-     * 
+     *
      *
      * @param string $format
      *
@@ -127,7 +127,7 @@ class DefaultPlace extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -136,7 +136,7 @@ class DefaultPlace extends \ArrayObject
         return $this->countryCode;
     }
     /**
-     * 
+     *
      *
      * @param string $countryCode
      *
@@ -149,7 +149,7 @@ class DefaultPlace extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -158,7 +158,7 @@ class DefaultPlace extends \ArrayObject
         return $this->placeType;
     }
     /**
-     * 
+     *
      *
      * @param string $placeType
      *
@@ -171,7 +171,7 @@ class DefaultPlace extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -180,7 +180,7 @@ class DefaultPlace extends \ArrayObject
         return $this->fullName;
     }
     /**
-     * 
+     *
      *
      * @param string $fullName
      *
@@ -193,7 +193,7 @@ class DefaultPlace extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -202,7 +202,7 @@ class DefaultPlace extends \ArrayObject
         return $this->country;
     }
     /**
-     * 
+     *
      *
      * @param string $country
      *
@@ -215,7 +215,7 @@ class DefaultPlace extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -224,7 +224,7 @@ class DefaultPlace extends \ArrayObject
         return $this->containedWithin;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $containedWithin
      *

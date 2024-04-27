@@ -13,91 +13,91 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $traceLevel;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $traceId;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $traceJobId;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $httpStatusCode;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $exceptionMessage;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $kind;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $customerId;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $customerAlias;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $userId;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $commandType;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $fieldId;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $schemaId;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $fieldActualType;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $fieldExpectedType;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -106,7 +106,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
         return $this->traceLevel;
     }
     /**
-     * 
+     *
      *
      * @param string $traceLevel
      *
@@ -119,7 +119,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -128,7 +128,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
         return $this->traceId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $traceId
      *
@@ -141,7 +141,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -150,7 +150,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
         return $this->traceJobId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $traceJobId
      *
@@ -163,7 +163,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -172,7 +172,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
         return $this->httpStatusCode;
     }
     /**
-     * 
+     *
      *
      * @param int $httpStatusCode
      *
@@ -185,7 +185,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -194,7 +194,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
         return $this->exceptionMessage;
     }
     /**
-     * 
+     *
      *
      * @param string|null $exceptionMessage
      *
@@ -207,7 +207,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -216,7 +216,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
         return $this->kind;
     }
     /**
-     * 
+     *
      *
      * @param string $kind
      *
@@ -229,7 +229,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -238,7 +238,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
         return $this->customerId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $customerId
      *
@@ -251,7 +251,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -260,7 +260,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
         return $this->customerAlias;
     }
     /**
-     * 
+     *
      *
      * @param string|null $customerAlias
      *
@@ -273,7 +273,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -282,7 +282,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
         return $this->userId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $userId
      *
@@ -295,7 +295,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -304,7 +304,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
         return $this->commandType;
     }
     /**
-     * 
+     *
      *
      * @param string|null $commandType
      *
@@ -317,7 +317,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -326,7 +326,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
         return $this->fieldId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $fieldId
      *
@@ -339,7 +339,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -348,7 +348,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
         return $this->schemaId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $schemaId
      *
@@ -361,7 +361,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -370,7 +370,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
         return $this->fieldActualType;
     }
     /**
-     * 
+     *
      *
      * @param string|null $fieldActualType
      *
@@ -383,7 +383,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -392,7 +392,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
         return $this->fieldExpectedType;
     }
     /**
-     * 
+     *
      *
      * @param string|null $fieldExpectedType
      *

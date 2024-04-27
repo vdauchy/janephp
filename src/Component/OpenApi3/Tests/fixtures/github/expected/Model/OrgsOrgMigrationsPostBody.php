@@ -31,7 +31,7 @@ class OrgsOrgMigrationsPostBody extends \ArrayObject
      */
     protected $excludeAttachments = false;
     /**
-     * 
+     *
      *
      * @var list<string>
      */
@@ -103,7 +103,7 @@ class OrgsOrgMigrationsPostBody extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -112,7 +112,7 @@ class OrgsOrgMigrationsPostBody extends \ArrayObject
         return $this->exclude;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $exclude
      *

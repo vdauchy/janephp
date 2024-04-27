@@ -13,49 +13,49 @@ class MarketplacePurchase extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $login;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $organizationBillingEmail;
     /**
-     * 
+     *
      *
      * @var MarketplacePurchaseMarketplacePendingChange|null
      */
     protected $marketplacePendingChange;
     /**
-     * 
+     *
      *
      * @var MarketplacePurchaseMarketplacePurchase
      */
     protected $marketplacePurchase;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -64,7 +64,7 @@ class MarketplacePurchase extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -77,7 +77,7 @@ class MarketplacePurchase extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -86,7 +86,7 @@ class MarketplacePurchase extends \ArrayObject
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string $type
      *
@@ -99,7 +99,7 @@ class MarketplacePurchase extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -108,7 +108,7 @@ class MarketplacePurchase extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -121,7 +121,7 @@ class MarketplacePurchase extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -130,7 +130,7 @@ class MarketplacePurchase extends \ArrayObject
         return $this->login;
     }
     /**
-     * 
+     *
      *
      * @param string $login
      *
@@ -143,7 +143,7 @@ class MarketplacePurchase extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -152,7 +152,7 @@ class MarketplacePurchase extends \ArrayObject
         return $this->organizationBillingEmail;
     }
     /**
-     * 
+     *
      *
      * @param string $organizationBillingEmail
      *
@@ -165,7 +165,7 @@ class MarketplacePurchase extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return MarketplacePurchaseMarketplacePendingChange|null
      */
@@ -174,7 +174,7 @@ class MarketplacePurchase extends \ArrayObject
         return $this->marketplacePendingChange;
     }
     /**
-     * 
+     *
      *
      * @param MarketplacePurchaseMarketplacePendingChange|null $marketplacePendingChange
      *
@@ -187,7 +187,7 @@ class MarketplacePurchase extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return MarketplacePurchaseMarketplacePurchase
      */
@@ -196,7 +196,7 @@ class MarketplacePurchase extends \ArrayObject
         return $this->marketplacePurchase;
     }
     /**
-     * 
+     *
      *
      * @param MarketplacePurchaseMarketplacePurchase $marketplacePurchase
      *

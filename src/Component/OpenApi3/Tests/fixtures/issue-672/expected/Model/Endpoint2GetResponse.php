@@ -13,19 +13,19 @@ class Endpoint2GetResponse extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var SubLevel1
      */
     protected $field2;
     /**
-     * 
+     *
      *
      * @var SubLevel2
      */
     protected $field2Bis;
     /**
-     * 
+     *
      *
      * @return SubLevel1
      */
@@ -34,7 +34,7 @@ class Endpoint2GetResponse extends \ArrayObject
         return $this->field2;
     }
     /**
-     * 
+     *
      *
      * @param SubLevel1 $field2
      *
@@ -47,7 +47,7 @@ class Endpoint2GetResponse extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return SubLevel2
      */
@@ -56,7 +56,7 @@ class Endpoint2GetResponse extends \ArrayObject
         return $this->field2Bis;
     }
     /**
-     * 
+     *
      *
      * @param SubLevel2 $field2Bis
      *

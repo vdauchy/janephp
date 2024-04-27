@@ -43,7 +43,7 @@ class TaggingOptionsBase
      */
     protected $missingKeywordsFieldId;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -144,7 +144,7 @@ class TaggingOptionsBase
         $this->missingKeywordsFieldId = $missingKeywordsFieldId;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -153,7 +153,7 @@ class TaggingOptionsBase
         return $this->kind;
     }
     /**
-     * 
+     *
      *
      * @param string $kind
      */

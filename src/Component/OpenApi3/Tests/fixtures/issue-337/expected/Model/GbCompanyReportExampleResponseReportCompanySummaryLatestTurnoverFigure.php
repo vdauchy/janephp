@@ -13,19 +13,19 @@ class GbCompanyReportExampleResponseReportCompanySummaryLatestTurnoverFigure ext
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $currency;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $value;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -34,7 +34,7 @@ class GbCompanyReportExampleResponseReportCompanySummaryLatestTurnoverFigure ext
         return $this->currency;
     }
     /**
-     * 
+     *
      *
      * @param string $currency
      *
@@ -47,7 +47,7 @@ class GbCompanyReportExampleResponseReportCompanySummaryLatestTurnoverFigure ext
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -56,7 +56,7 @@ class GbCompanyReportExampleResponseReportCompanySummaryLatestTurnoverFigure ext
         return $this->value;
     }
     /**
-     * 
+     *
      *
      * @param float $value
      *

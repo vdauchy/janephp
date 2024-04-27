@@ -13,13 +13,13 @@ class BusinessProcessCancellationRequestedEvent extends ApplicationEvent
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $businessProcessId;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -28,7 +28,7 @@ class BusinessProcessCancellationRequestedEvent extends ApplicationEvent
         return $this->businessProcessId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $businessProcessId
      *

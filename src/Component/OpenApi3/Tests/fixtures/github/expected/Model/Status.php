@@ -13,61 +13,61 @@ class Status extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $avatarUrl;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $nodeId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $state;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $targetUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $context;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -79,7 +79,7 @@ class Status extends \ArrayObject
      */
     protected $creator;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -88,7 +88,7 @@ class Status extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -101,7 +101,7 @@ class Status extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -110,7 +110,7 @@ class Status extends \ArrayObject
         return $this->avatarUrl;
     }
     /**
-     * 
+     *
      *
      * @param string|null $avatarUrl
      *
@@ -123,7 +123,7 @@ class Status extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -132,7 +132,7 @@ class Status extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -145,7 +145,7 @@ class Status extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -154,7 +154,7 @@ class Status extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -167,7 +167,7 @@ class Status extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -176,7 +176,7 @@ class Status extends \ArrayObject
         return $this->state;
     }
     /**
-     * 
+     *
      *
      * @param string $state
      *
@@ -189,7 +189,7 @@ class Status extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -198,7 +198,7 @@ class Status extends \ArrayObject
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string $description
      *
@@ -211,7 +211,7 @@ class Status extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -220,7 +220,7 @@ class Status extends \ArrayObject
         return $this->targetUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $targetUrl
      *
@@ -233,7 +233,7 @@ class Status extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -242,7 +242,7 @@ class Status extends \ArrayObject
         return $this->context;
     }
     /**
-     * 
+     *
      *
      * @param string $context
      *
@@ -255,7 +255,7 @@ class Status extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -264,7 +264,7 @@ class Status extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param string $createdAt
      *
@@ -277,7 +277,7 @@ class Status extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -286,7 +286,7 @@ class Status extends \ArrayObject
         return $this->updatedAt;
     }
     /**
-     * 
+     *
      *
      * @param string $updatedAt
      *

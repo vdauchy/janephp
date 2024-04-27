@@ -31,7 +31,7 @@ class MetadataValuesChangeRequestBase
      */
     protected $notifyProgress;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -94,7 +94,7 @@ class MetadataValuesChangeRequestBase
         $this->notifyProgress = $notifyProgress;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -103,7 +103,7 @@ class MetadataValuesChangeRequestBase
         return $this->kind;
     }
     /**
-     * 
+     *
      *
      * @param string $kind
      */

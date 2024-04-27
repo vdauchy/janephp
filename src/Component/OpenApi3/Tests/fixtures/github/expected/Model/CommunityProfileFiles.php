@@ -13,43 +13,43 @@ class CommunityProfileFiles extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var CommunityProfileFilesCodeOfConduct|null
      */
     protected $codeOfConduct;
     /**
-     * 
+     *
      *
      * @var CommunityProfileFilesLicense|null
      */
     protected $license;
     /**
-     * 
+     *
      *
      * @var CommunityProfileFilesContributing|null
      */
     protected $contributing;
     /**
-     * 
+     *
      *
      * @var CommunityProfileFilesReadme|null
      */
     protected $readme;
     /**
-     * 
+     *
      *
      * @var CommunityProfileFilesIssueTemplate|null
      */
     protected $issueTemplate;
     /**
-     * 
+     *
      *
      * @var CommunityProfileFilesPullRequestTemplate|null
      */
     protected $pullRequestTemplate;
     /**
-     * 
+     *
      *
      * @return CommunityProfileFilesCodeOfConduct|null
      */
@@ -58,7 +58,7 @@ class CommunityProfileFiles extends \ArrayObject
         return $this->codeOfConduct;
     }
     /**
-     * 
+     *
      *
      * @param CommunityProfileFilesCodeOfConduct|null $codeOfConduct
      *
@@ -71,7 +71,7 @@ class CommunityProfileFiles extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return CommunityProfileFilesLicense|null
      */
@@ -80,7 +80,7 @@ class CommunityProfileFiles extends \ArrayObject
         return $this->license;
     }
     /**
-     * 
+     *
      *
      * @param CommunityProfileFilesLicense|null $license
      *
@@ -93,7 +93,7 @@ class CommunityProfileFiles extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return CommunityProfileFilesContributing|null
      */
@@ -102,7 +102,7 @@ class CommunityProfileFiles extends \ArrayObject
         return $this->contributing;
     }
     /**
-     * 
+     *
      *
      * @param CommunityProfileFilesContributing|null $contributing
      *
@@ -115,7 +115,7 @@ class CommunityProfileFiles extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return CommunityProfileFilesReadme|null
      */
@@ -124,7 +124,7 @@ class CommunityProfileFiles extends \ArrayObject
         return $this->readme;
     }
     /**
-     * 
+     *
      *
      * @param CommunityProfileFilesReadme|null $readme
      *
@@ -137,7 +137,7 @@ class CommunityProfileFiles extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return CommunityProfileFilesIssueTemplate|null
      */
@@ -146,7 +146,7 @@ class CommunityProfileFiles extends \ArrayObject
         return $this->issueTemplate;
     }
     /**
-     * 
+     *
      *
      * @param CommunityProfileFilesIssueTemplate|null $issueTemplate
      *
@@ -159,7 +159,7 @@ class CommunityProfileFiles extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return CommunityProfileFilesPullRequestTemplate|null
      */
@@ -168,7 +168,7 @@ class CommunityProfileFiles extends \ArrayObject
         return $this->pullRequestTemplate;
     }
     /**
-     * 
+     *
      *
      * @param CommunityProfileFilesPullRequestTemplate|null $pullRequestTemplate
      *

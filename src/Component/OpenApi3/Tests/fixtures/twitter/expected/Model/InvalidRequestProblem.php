@@ -13,31 +13,31 @@ class InvalidRequestProblem extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @var list<InvalidRequestProblemErrorsItem>
      */
     protected $errors;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $title;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $detail;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -46,7 +46,7 @@ class InvalidRequestProblem extends \ArrayObject
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string $type
      *
@@ -59,7 +59,7 @@ class InvalidRequestProblem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<InvalidRequestProblemErrorsItem>
      */
@@ -68,7 +68,7 @@ class InvalidRequestProblem extends \ArrayObject
         return $this->errors;
     }
     /**
-     * 
+     *
      *
      * @param list<InvalidRequestProblemErrorsItem> $errors
      *
@@ -81,7 +81,7 @@ class InvalidRequestProblem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -90,7 +90,7 @@ class InvalidRequestProblem extends \ArrayObject
         return $this->title;
     }
     /**
-     * 
+     *
      *
      * @param string $title
      *
@@ -103,7 +103,7 @@ class InvalidRequestProblem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -112,7 +112,7 @@ class InvalidRequestProblem extends \ArrayObject
         return $this->detail;
     }
     /**
-     * 
+     *
      *
      * @param string $detail
      *

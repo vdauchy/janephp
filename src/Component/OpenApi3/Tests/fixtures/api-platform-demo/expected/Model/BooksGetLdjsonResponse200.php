@@ -13,31 +13,31 @@ class BooksGetLdjsonResponse200 extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var list<BookJsonldBookRead>
      */
     protected $hydraMember;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $hydraTotalItems;
     /**
-     * 
+     *
      *
      * @var BooksGetLdjsonResponse200HydraView
      */
     protected $hydraView;
     /**
-     * 
+     *
      *
      * @var BooksGetLdjsonResponse200HydraSearch
      */
     protected $hydraSearch;
     /**
-     * 
+     *
      *
      * @return list<BookJsonldBookRead>
      */
@@ -46,7 +46,7 @@ class BooksGetLdjsonResponse200 extends \ArrayObject
         return $this->hydraMember;
     }
     /**
-     * 
+     *
      *
      * @param list<BookJsonldBookRead> $hydraMember
      *
@@ -59,7 +59,7 @@ class BooksGetLdjsonResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -68,7 +68,7 @@ class BooksGetLdjsonResponse200 extends \ArrayObject
         return $this->hydraTotalItems;
     }
     /**
-     * 
+     *
      *
      * @param int $hydraTotalItems
      *
@@ -81,7 +81,7 @@ class BooksGetLdjsonResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return BooksGetLdjsonResponse200HydraView
      */
@@ -90,7 +90,7 @@ class BooksGetLdjsonResponse200 extends \ArrayObject
         return $this->hydraView;
     }
     /**
-     * 
+     *
      *
      * @param BooksGetLdjsonResponse200HydraView $hydraView
      *
@@ -103,7 +103,7 @@ class BooksGetLdjsonResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return BooksGetLdjsonResponse200HydraSearch
      */
@@ -112,7 +112,7 @@ class BooksGetLdjsonResponse200 extends \ArrayObject
         return $this->hydraSearch;
     }
     /**
-     * 
+     *
      *
      * @param BooksGetLdjsonResponse200HydraSearch $hydraSearch
      *

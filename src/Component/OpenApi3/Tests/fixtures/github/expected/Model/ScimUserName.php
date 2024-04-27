@@ -13,19 +13,19 @@ class ScimUserName extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $givenName;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $familyName;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -34,7 +34,7 @@ class ScimUserName extends \ArrayObject
         return $this->givenName;
     }
     /**
-     * 
+     *
      *
      * @param string|null $givenName
      *
@@ -47,7 +47,7 @@ class ScimUserName extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -56,7 +56,7 @@ class ScimUserName extends \ArrayObject
         return $this->familyName;
     }
     /**
-     * 
+     *
      *
      * @param string|null $familyName
      *

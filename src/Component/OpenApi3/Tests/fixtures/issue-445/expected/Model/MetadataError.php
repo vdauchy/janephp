@@ -13,43 +13,43 @@ class MetadataError
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $errorType;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $lineNumber;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $linePosition;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $path;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $message;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $schemaId;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -58,7 +58,7 @@ class MetadataError
         return $this->errorType;
     }
     /**
-     * 
+     *
      *
      * @param string|null $errorType
      *
@@ -71,7 +71,7 @@ class MetadataError
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -80,7 +80,7 @@ class MetadataError
         return $this->lineNumber;
     }
     /**
-     * 
+     *
      *
      * @param int $lineNumber
      *
@@ -93,7 +93,7 @@ class MetadataError
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -102,7 +102,7 @@ class MetadataError
         return $this->linePosition;
     }
     /**
-     * 
+     *
      *
      * @param int $linePosition
      *
@@ -115,7 +115,7 @@ class MetadataError
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -124,7 +124,7 @@ class MetadataError
         return $this->path;
     }
     /**
-     * 
+     *
      *
      * @param string|null $path
      *
@@ -137,7 +137,7 @@ class MetadataError
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -146,7 +146,7 @@ class MetadataError
         return $this->message;
     }
     /**
-     * 
+     *
      *
      * @param string|null $message
      *
@@ -159,7 +159,7 @@ class MetadataError
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -168,7 +168,7 @@ class MetadataError
         return $this->schemaId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $schemaId
      *

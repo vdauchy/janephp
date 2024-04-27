@@ -13,19 +13,19 @@ class ReposOwnerRepoActionsRunsRunIdJobsGetResponse200 extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $totalCount;
     /**
-     * 
+     *
      *
      * @var list<Job>
      */
     protected $jobs;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -34,7 +34,7 @@ class ReposOwnerRepoActionsRunsRunIdJobsGetResponse200 extends \ArrayObject
         return $this->totalCount;
     }
     /**
-     * 
+     *
      *
      * @param int $totalCount
      *
@@ -47,7 +47,7 @@ class ReposOwnerRepoActionsRunsRunIdJobsGetResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<Job>
      */
@@ -56,7 +56,7 @@ class ReposOwnerRepoActionsRunsRunIdJobsGetResponse200 extends \ArrayObject
         return $this->jobs;
     }
     /**
-     * 
+     *
      *
      * @param list<Job> $jobs
      *

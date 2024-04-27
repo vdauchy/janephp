@@ -13,31 +13,31 @@ class Response extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @var Schema|FileSchema|null
      */
     protected $schema;
     /**
-     * 
+     *
      *
      * @var array<string, Header>|null
      */
     protected $headers;
     /**
-     * 
+     *
      *
      * @var array<string, mixed>|null
      */
     protected $examples;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -46,7 +46,7 @@ class Response extends \ArrayObject
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string|null $description
      *
@@ -59,7 +59,7 @@ class Response extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return Schema|FileSchema|null
      */
@@ -68,7 +68,7 @@ class Response extends \ArrayObject
         return $this->schema;
     }
     /**
-     * 
+     *
      *
      * @param Schema|FileSchema|null $schema
      *
@@ -81,7 +81,7 @@ class Response extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return array<string, Header>|null
      */
@@ -90,7 +90,7 @@ class Response extends \ArrayObject
         return $this->headers;
     }
     /**
-     * 
+     *
      *
      * @param array<string, Header>|null $headers
      *
@@ -103,7 +103,7 @@ class Response extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return array<string, mixed>|null
      */
@@ -112,7 +112,7 @@ class Response extends \ArrayObject
         return $this->examples;
     }
     /**
-     * 
+     *
      *
      * @param array<string, mixed>|null $examples
      *

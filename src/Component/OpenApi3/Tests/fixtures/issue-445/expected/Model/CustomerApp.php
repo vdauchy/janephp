@@ -13,31 +13,31 @@ class CustomerApp
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $appId;
     /**
-     * 
+     *
      *
      * @var mixed|null
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var mixed|null
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $icon;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -46,7 +46,7 @@ class CustomerApp
         return $this->appId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $appId
      *
@@ -59,7 +59,7 @@ class CustomerApp
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return mixed
      */
@@ -68,7 +68,7 @@ class CustomerApp
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param mixed $name
      *
@@ -81,7 +81,7 @@ class CustomerApp
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return mixed
      */
@@ -90,7 +90,7 @@ class CustomerApp
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param mixed $description
      *
@@ -103,7 +103,7 @@ class CustomerApp
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -112,7 +112,7 @@ class CustomerApp
         return $this->icon;
     }
     /**
-     * 
+     *
      *
      * @param string|null $icon
      *

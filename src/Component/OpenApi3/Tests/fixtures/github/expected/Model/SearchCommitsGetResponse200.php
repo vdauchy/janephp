@@ -13,25 +13,25 @@ class SearchCommitsGetResponse200 extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $totalCount;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $incompleteResults;
     /**
-     * 
+     *
      *
      * @var list<CommitSearchResultItem>
      */
     protected $items;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -40,7 +40,7 @@ class SearchCommitsGetResponse200 extends \ArrayObject
         return $this->totalCount;
     }
     /**
-     * 
+     *
      *
      * @param int $totalCount
      *
@@ -53,7 +53,7 @@ class SearchCommitsGetResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -62,7 +62,7 @@ class SearchCommitsGetResponse200 extends \ArrayObject
         return $this->incompleteResults;
     }
     /**
-     * 
+     *
      *
      * @param bool $incompleteResults
      *
@@ -75,7 +75,7 @@ class SearchCommitsGetResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<CommitSearchResultItem>
      */
@@ -84,7 +84,7 @@ class SearchCommitsGetResponse200 extends \ArrayObject
         return $this->items;
     }
     /**
-     * 
+     *
      *
      * @param list<CommitSearchResultItem> $items
      *

@@ -13,31 +13,31 @@ class LiveStreamTraceJob
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $traceJobId;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $ipAddress;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $userId;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $apiClientId;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -46,7 +46,7 @@ class LiveStreamTraceJob
         return $this->traceJobId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $traceJobId
      *
@@ -59,7 +59,7 @@ class LiveStreamTraceJob
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -68,7 +68,7 @@ class LiveStreamTraceJob
         return $this->ipAddress;
     }
     /**
-     * 
+     *
      *
      * @param string|null $ipAddress
      *
@@ -81,7 +81,7 @@ class LiveStreamTraceJob
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -90,7 +90,7 @@ class LiveStreamTraceJob
         return $this->userId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $userId
      *
@@ -103,7 +103,7 @@ class LiveStreamTraceJob
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -112,7 +112,7 @@ class LiveStreamTraceJob
         return $this->apiClientId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $apiClientId
      *

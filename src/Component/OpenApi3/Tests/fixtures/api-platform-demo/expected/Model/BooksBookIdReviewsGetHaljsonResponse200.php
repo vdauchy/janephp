@@ -13,31 +13,31 @@ class BooksBookIdReviewsGetHaljsonResponse200 extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var list<ReviewJsonhalReviewRead>
      */
     protected $embedded;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $totalItems;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $itemsPerPage;
     /**
-     * 
+     *
      *
      * @var BooksBookIdReviewsGetHaljsonResponse200Links
      */
     protected $links;
     /**
-     * 
+     *
      *
      * @return list<ReviewJsonhalReviewRead>
      */
@@ -46,7 +46,7 @@ class BooksBookIdReviewsGetHaljsonResponse200 extends \ArrayObject
         return $this->embedded;
     }
     /**
-     * 
+     *
      *
      * @param list<ReviewJsonhalReviewRead> $embedded
      *
@@ -59,7 +59,7 @@ class BooksBookIdReviewsGetHaljsonResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -68,7 +68,7 @@ class BooksBookIdReviewsGetHaljsonResponse200 extends \ArrayObject
         return $this->totalItems;
     }
     /**
-     * 
+     *
      *
      * @param int $totalItems
      *
@@ -81,7 +81,7 @@ class BooksBookIdReviewsGetHaljsonResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -90,7 +90,7 @@ class BooksBookIdReviewsGetHaljsonResponse200 extends \ArrayObject
         return $this->itemsPerPage;
     }
     /**
-     * 
+     *
      *
      * @param int $itemsPerPage
      *
@@ -103,7 +103,7 @@ class BooksBookIdReviewsGetHaljsonResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return BooksBookIdReviewsGetHaljsonResponse200Links
      */
@@ -112,7 +112,7 @@ class BooksBookIdReviewsGetHaljsonResponse200 extends \ArrayObject
         return $this->links;
     }
     /**
-     * 
+     *
      *
      * @param BooksBookIdReviewsGetHaljsonResponse200Links $links
      *

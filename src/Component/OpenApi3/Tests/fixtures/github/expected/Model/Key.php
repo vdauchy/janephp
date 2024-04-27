@@ -13,55 +13,55 @@ class Key extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $keyId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $key;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $title;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $verified;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $readOnly;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -70,7 +70,7 @@ class Key extends \ArrayObject
         return $this->keyId;
     }
     /**
-     * 
+     *
      *
      * @param string $keyId
      *
@@ -83,7 +83,7 @@ class Key extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -92,7 +92,7 @@ class Key extends \ArrayObject
         return $this->key;
     }
     /**
-     * 
+     *
      *
      * @param string $key
      *
@@ -105,7 +105,7 @@ class Key extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -114,7 +114,7 @@ class Key extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -127,7 +127,7 @@ class Key extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -136,7 +136,7 @@ class Key extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -149,7 +149,7 @@ class Key extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -158,7 +158,7 @@ class Key extends \ArrayObject
         return $this->title;
     }
     /**
-     * 
+     *
      *
      * @param string $title
      *
@@ -171,7 +171,7 @@ class Key extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -180,7 +180,7 @@ class Key extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $createdAt
      *
@@ -193,7 +193,7 @@ class Key extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -202,7 +202,7 @@ class Key extends \ArrayObject
         return $this->verified;
     }
     /**
-     * 
+     *
      *
      * @param bool $verified
      *
@@ -215,7 +215,7 @@ class Key extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -224,7 +224,7 @@ class Key extends \ArrayObject
         return $this->readOnly;
     }
     /**
-     * 
+     *
      *
      * @param bool $readOnly
      *

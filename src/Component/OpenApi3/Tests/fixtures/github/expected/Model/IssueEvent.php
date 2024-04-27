@@ -13,49 +13,49 @@ class IssueEvent extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $nodeId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var IssueEventActor|null
      */
     protected $actor;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $event;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $commitId;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $commitUrl;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
@@ -73,25 +73,25 @@ class IssueEvent extends \ArrayObject
      */
     protected $label;
     /**
-     * 
+     *
      *
      * @var IssueEventAssignee|null
      */
     protected $assignee;
     /**
-     * 
+     *
      *
      * @var IssueEventAssigner|null
      */
     protected $assigner;
     /**
-     * 
+     *
      *
      * @var IssueEventReviewRequester|null
      */
     protected $reviewRequester;
     /**
-     * 
+     *
      *
      * @var IssueEventRequestedReviewer|null
      */
@@ -103,7 +103,7 @@ class IssueEvent extends \ArrayObject
      */
     protected $requestedTeam;
     /**
-     * 
+     *
      *
      * @var IssueEventDismissedReview
      */
@@ -127,19 +127,19 @@ class IssueEvent extends \ArrayObject
      */
     protected $rename;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $authorAssociation;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $lockReason;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -148,7 +148,7 @@ class IssueEvent extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -161,7 +161,7 @@ class IssueEvent extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -170,7 +170,7 @@ class IssueEvent extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -183,7 +183,7 @@ class IssueEvent extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -192,7 +192,7 @@ class IssueEvent extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -205,7 +205,7 @@ class IssueEvent extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return IssueEventActor|null
      */
@@ -214,7 +214,7 @@ class IssueEvent extends \ArrayObject
         return $this->actor;
     }
     /**
-     * 
+     *
      *
      * @param IssueEventActor|null $actor
      *
@@ -227,7 +227,7 @@ class IssueEvent extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -236,7 +236,7 @@ class IssueEvent extends \ArrayObject
         return $this->event;
     }
     /**
-     * 
+     *
      *
      * @param string $event
      *
@@ -249,7 +249,7 @@ class IssueEvent extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -258,7 +258,7 @@ class IssueEvent extends \ArrayObject
         return $this->commitId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $commitId
      *
@@ -271,7 +271,7 @@ class IssueEvent extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -280,7 +280,7 @@ class IssueEvent extends \ArrayObject
         return $this->commitUrl;
     }
     /**
-     * 
+     *
      *
      * @param string|null $commitUrl
      *
@@ -293,7 +293,7 @@ class IssueEvent extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -302,7 +302,7 @@ class IssueEvent extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $createdAt
      *
@@ -359,7 +359,7 @@ class IssueEvent extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return IssueEventAssignee|null
      */
@@ -368,7 +368,7 @@ class IssueEvent extends \ArrayObject
         return $this->assignee;
     }
     /**
-     * 
+     *
      *
      * @param IssueEventAssignee|null $assignee
      *
@@ -381,7 +381,7 @@ class IssueEvent extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return IssueEventAssigner|null
      */
@@ -390,7 +390,7 @@ class IssueEvent extends \ArrayObject
         return $this->assigner;
     }
     /**
-     * 
+     *
      *
      * @param IssueEventAssigner|null $assigner
      *
@@ -403,7 +403,7 @@ class IssueEvent extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return IssueEventReviewRequester|null
      */
@@ -412,7 +412,7 @@ class IssueEvent extends \ArrayObject
         return $this->reviewRequester;
     }
     /**
-     * 
+     *
      *
      * @param IssueEventReviewRequester|null $reviewRequester
      *
@@ -425,7 +425,7 @@ class IssueEvent extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return IssueEventRequestedReviewer|null
      */
@@ -434,7 +434,7 @@ class IssueEvent extends \ArrayObject
         return $this->requestedReviewer;
     }
     /**
-     * 
+     *
      *
      * @param IssueEventRequestedReviewer|null $requestedReviewer
      *
@@ -469,7 +469,7 @@ class IssueEvent extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return IssueEventDismissedReview
      */
@@ -478,7 +478,7 @@ class IssueEvent extends \ArrayObject
         return $this->dismissedReview;
     }
     /**
-     * 
+     *
      *
      * @param IssueEventDismissedReview $dismissedReview
      *
@@ -557,7 +557,7 @@ class IssueEvent extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -566,7 +566,7 @@ class IssueEvent extends \ArrayObject
         return $this->authorAssociation;
     }
     /**
-     * 
+     *
      *
      * @param string $authorAssociation
      *
@@ -579,7 +579,7 @@ class IssueEvent extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -588,7 +588,7 @@ class IssueEvent extends \ArrayObject
         return $this->lockReason;
     }
     /**
-     * 
+     *
      *
      * @param string|null $lockReason
      *

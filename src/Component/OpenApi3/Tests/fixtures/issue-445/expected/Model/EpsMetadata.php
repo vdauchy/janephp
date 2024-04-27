@@ -13,25 +13,25 @@ class EpsMetadata
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $isRasterized;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $widthInPoints;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $heightInPoints;
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -40,7 +40,7 @@ class EpsMetadata
         return $this->isRasterized;
     }
     /**
-     * 
+     *
      *
      * @param bool $isRasterized
      *
@@ -53,7 +53,7 @@ class EpsMetadata
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -62,7 +62,7 @@ class EpsMetadata
         return $this->widthInPoints;
     }
     /**
-     * 
+     *
      *
      * @param float $widthInPoints
      *
@@ -75,7 +75,7 @@ class EpsMetadata
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -84,7 +84,7 @@ class EpsMetadata
         return $this->heightInPoints;
     }
     /**
-     * 
+     *
      *
      * @param float $heightInPoints
      *

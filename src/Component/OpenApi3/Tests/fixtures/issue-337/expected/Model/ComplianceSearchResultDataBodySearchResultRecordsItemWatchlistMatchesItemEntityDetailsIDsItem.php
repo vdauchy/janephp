@@ -13,25 +13,25 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $number;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -40,7 +40,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -53,7 +53,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -62,7 +62,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
         return $this->number;
     }
     /**
-     * 
+     *
      *
      * @param string $number
      *
@@ -75,7 +75,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -84,7 +84,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string $type
      *

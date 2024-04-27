@@ -13,61 +13,61 @@ class GbCompanyReportExampleResponseReportCompanySummary extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $businessName;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $country;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $companyNumber;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $companyRegistrationNumber;
     /**
-     * 
+     *
      *
      * @var GbCompanyReportExampleResponseReportCompanySummaryMainActivity
      */
     protected $mainActivity;
     /**
-     * 
+     *
      *
      * @var GbCompanyReportExampleResponseReportCompanySummaryCompanyStatus
      */
     protected $companyStatus;
     /**
-     * 
+     *
      *
      * @var GbCompanyReportExampleResponseReportCompanySummaryLatestTurnoverFigure
      */
     protected $latestTurnoverFigure;
     /**
-     * 
+     *
      *
      * @var GbCompanyReportExampleResponseReportCompanySummaryLatestShareholdersEquityFigure
      */
     protected $latestShareholdersEquityFigure;
     /**
-     * 
+     *
      *
      * @var GbCompanyReportExampleResponseReportCompanySummaryCreditRating
      */
     protected $creditRating;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -76,7 +76,7 @@ class GbCompanyReportExampleResponseReportCompanySummary extends \ArrayObject
         return $this->businessName;
     }
     /**
-     * 
+     *
      *
      * @param string $businessName
      *
@@ -89,7 +89,7 @@ class GbCompanyReportExampleResponseReportCompanySummary extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -98,7 +98,7 @@ class GbCompanyReportExampleResponseReportCompanySummary extends \ArrayObject
         return $this->country;
     }
     /**
-     * 
+     *
      *
      * @param string $country
      *
@@ -111,7 +111,7 @@ class GbCompanyReportExampleResponseReportCompanySummary extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -120,7 +120,7 @@ class GbCompanyReportExampleResponseReportCompanySummary extends \ArrayObject
         return $this->companyNumber;
     }
     /**
-     * 
+     *
      *
      * @param string $companyNumber
      *
@@ -133,7 +133,7 @@ class GbCompanyReportExampleResponseReportCompanySummary extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -142,7 +142,7 @@ class GbCompanyReportExampleResponseReportCompanySummary extends \ArrayObject
         return $this->companyRegistrationNumber;
     }
     /**
-     * 
+     *
      *
      * @param string $companyRegistrationNumber
      *
@@ -155,7 +155,7 @@ class GbCompanyReportExampleResponseReportCompanySummary extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GbCompanyReportExampleResponseReportCompanySummaryMainActivity
      */
@@ -164,7 +164,7 @@ class GbCompanyReportExampleResponseReportCompanySummary extends \ArrayObject
         return $this->mainActivity;
     }
     /**
-     * 
+     *
      *
      * @param GbCompanyReportExampleResponseReportCompanySummaryMainActivity $mainActivity
      *
@@ -177,7 +177,7 @@ class GbCompanyReportExampleResponseReportCompanySummary extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GbCompanyReportExampleResponseReportCompanySummaryCompanyStatus
      */
@@ -186,7 +186,7 @@ class GbCompanyReportExampleResponseReportCompanySummary extends \ArrayObject
         return $this->companyStatus;
     }
     /**
-     * 
+     *
      *
      * @param GbCompanyReportExampleResponseReportCompanySummaryCompanyStatus $companyStatus
      *
@@ -199,7 +199,7 @@ class GbCompanyReportExampleResponseReportCompanySummary extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GbCompanyReportExampleResponseReportCompanySummaryLatestTurnoverFigure
      */
@@ -208,7 +208,7 @@ class GbCompanyReportExampleResponseReportCompanySummary extends \ArrayObject
         return $this->latestTurnoverFigure;
     }
     /**
-     * 
+     *
      *
      * @param GbCompanyReportExampleResponseReportCompanySummaryLatestTurnoverFigure $latestTurnoverFigure
      *
@@ -221,7 +221,7 @@ class GbCompanyReportExampleResponseReportCompanySummary extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GbCompanyReportExampleResponseReportCompanySummaryLatestShareholdersEquityFigure
      */
@@ -230,7 +230,7 @@ class GbCompanyReportExampleResponseReportCompanySummary extends \ArrayObject
         return $this->latestShareholdersEquityFigure;
     }
     /**
-     * 
+     *
      *
      * @param GbCompanyReportExampleResponseReportCompanySummaryLatestShareholdersEquityFigure $latestShareholdersEquityFigure
      *
@@ -243,7 +243,7 @@ class GbCompanyReportExampleResponseReportCompanySummary extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GbCompanyReportExampleResponseReportCompanySummaryCreditRating
      */
@@ -252,7 +252,7 @@ class GbCompanyReportExampleResponseReportCompanySummary extends \ArrayObject
         return $this->creditRating;
     }
     /**
-     * 
+     *
      *
      * @param GbCompanyReportExampleResponseReportCompanySummaryCreditRating $creditRating
      *

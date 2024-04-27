@@ -13,31 +13,31 @@ class BranchProtectionRequiredStatusChecks extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $enforcementLevel;
     /**
-     * 
+     *
      *
      * @var list<string>
      */
     protected $contexts;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $contextsUrl;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -46,7 +46,7 @@ class BranchProtectionRequiredStatusChecks extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -59,7 +59,7 @@ class BranchProtectionRequiredStatusChecks extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -68,7 +68,7 @@ class BranchProtectionRequiredStatusChecks extends \ArrayObject
         return $this->enforcementLevel;
     }
     /**
-     * 
+     *
      *
      * @param string $enforcementLevel
      *
@@ -81,7 +81,7 @@ class BranchProtectionRequiredStatusChecks extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -90,7 +90,7 @@ class BranchProtectionRequiredStatusChecks extends \ArrayObject
         return $this->contexts;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $contexts
      *
@@ -103,7 +103,7 @@ class BranchProtectionRequiredStatusChecks extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -112,7 +112,7 @@ class BranchProtectionRequiredStatusChecks extends \ArrayObject
         return $this->contextsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $contextsUrl
      *

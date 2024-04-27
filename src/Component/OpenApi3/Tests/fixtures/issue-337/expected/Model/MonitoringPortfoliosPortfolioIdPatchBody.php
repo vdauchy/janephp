@@ -13,31 +13,31 @@ class MonitoringPortfoliosPortfolioIdPatchBody extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var list<MonitoringPortfoliosPortfolioIdPatchBodyEmailsItem>
      */
     protected $emails;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $emailLanguage;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $emailSubject;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -46,7 +46,7 @@ class MonitoringPortfoliosPortfolioIdPatchBody extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -59,7 +59,7 @@ class MonitoringPortfoliosPortfolioIdPatchBody extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<MonitoringPortfoliosPortfolioIdPatchBodyEmailsItem>
      */
@@ -68,7 +68,7 @@ class MonitoringPortfoliosPortfolioIdPatchBody extends \ArrayObject
         return $this->emails;
     }
     /**
-     * 
+     *
      *
      * @param list<MonitoringPortfoliosPortfolioIdPatchBodyEmailsItem> $emails
      *
@@ -81,7 +81,7 @@ class MonitoringPortfoliosPortfolioIdPatchBody extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -90,7 +90,7 @@ class MonitoringPortfoliosPortfolioIdPatchBody extends \ArrayObject
         return $this->emailLanguage;
     }
     /**
-     * 
+     *
      *
      * @param string $emailLanguage
      *
@@ -103,7 +103,7 @@ class MonitoringPortfoliosPortfolioIdPatchBody extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -112,7 +112,7 @@ class MonitoringPortfoliosPortfolioIdPatchBody extends \ArrayObject
         return $this->emailSubject;
     }
     /**
-     * 
+     *
      *
      * @param string $emailSubject
      *

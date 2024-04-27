@@ -25,7 +25,7 @@ class ReposOwnerRepoContentsPathPutBodyCommitter extends \ArrayObject
      */
     protected $email;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -75,7 +75,7 @@ class ReposOwnerRepoContentsPathPutBodyCommitter extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -84,7 +84,7 @@ class ReposOwnerRepoContentsPathPutBodyCommitter extends \ArrayObject
         return $this->date;
     }
     /**
-     * 
+     *
      *
      * @param string $date
      *

@@ -13,85 +13,85 @@ class ArgumentRangeException extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $traceLevel;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $traceId;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $traceJobId;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $httpStatusCode;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $exceptionMessage;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $kind;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $customerId;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $customerAlias;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $userId;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $argumentName;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $argumentValue;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $minAcceptableValue;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $maxAcceptableValue;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -100,7 +100,7 @@ class ArgumentRangeException extends \ArrayObject
         return $this->traceLevel;
     }
     /**
-     * 
+     *
      *
      * @param string $traceLevel
      *
@@ -113,7 +113,7 @@ class ArgumentRangeException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -122,7 +122,7 @@ class ArgumentRangeException extends \ArrayObject
         return $this->traceId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $traceId
      *
@@ -135,7 +135,7 @@ class ArgumentRangeException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -144,7 +144,7 @@ class ArgumentRangeException extends \ArrayObject
         return $this->traceJobId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $traceJobId
      *
@@ -157,7 +157,7 @@ class ArgumentRangeException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -166,7 +166,7 @@ class ArgumentRangeException extends \ArrayObject
         return $this->httpStatusCode;
     }
     /**
-     * 
+     *
      *
      * @param int $httpStatusCode
      *
@@ -179,7 +179,7 @@ class ArgumentRangeException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -188,7 +188,7 @@ class ArgumentRangeException extends \ArrayObject
         return $this->exceptionMessage;
     }
     /**
-     * 
+     *
      *
      * @param string|null $exceptionMessage
      *
@@ -201,7 +201,7 @@ class ArgumentRangeException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -210,7 +210,7 @@ class ArgumentRangeException extends \ArrayObject
         return $this->kind;
     }
     /**
-     * 
+     *
      *
      * @param string $kind
      *
@@ -223,7 +223,7 @@ class ArgumentRangeException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -232,7 +232,7 @@ class ArgumentRangeException extends \ArrayObject
         return $this->customerId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $customerId
      *
@@ -245,7 +245,7 @@ class ArgumentRangeException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -254,7 +254,7 @@ class ArgumentRangeException extends \ArrayObject
         return $this->customerAlias;
     }
     /**
-     * 
+     *
      *
      * @param string|null $customerAlias
      *
@@ -267,7 +267,7 @@ class ArgumentRangeException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -276,7 +276,7 @@ class ArgumentRangeException extends \ArrayObject
         return $this->userId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $userId
      *
@@ -289,7 +289,7 @@ class ArgumentRangeException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -298,7 +298,7 @@ class ArgumentRangeException extends \ArrayObject
         return $this->argumentName;
     }
     /**
-     * 
+     *
      *
      * @param string|null $argumentName
      *
@@ -311,7 +311,7 @@ class ArgumentRangeException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -320,7 +320,7 @@ class ArgumentRangeException extends \ArrayObject
         return $this->argumentValue;
     }
     /**
-     * 
+     *
      *
      * @param string|null $argumentValue
      *
@@ -333,7 +333,7 @@ class ArgumentRangeException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -342,7 +342,7 @@ class ArgumentRangeException extends \ArrayObject
         return $this->minAcceptableValue;
     }
     /**
-     * 
+     *
      *
      * @param string|null $minAcceptableValue
      *
@@ -355,7 +355,7 @@ class ArgumentRangeException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -364,7 +364,7 @@ class ArgumentRangeException extends \ArrayObject
         return $this->maxAcceptableValue;
     }
     /**
-     * 
+     *
      *
      * @param string|null $maxAcceptableValue
      *

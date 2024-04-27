@@ -13,43 +13,43 @@ class InstallationToken extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $token;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $expiresAt;
     /**
-     * 
+     *
      *
      * @var InstallationTokenPermissions
      */
     protected $permissions;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $repositorySelection;
     /**
-     * 
+     *
      *
      * @var list<Repository>
      */
     protected $repositories;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $singleFile;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -58,7 +58,7 @@ class InstallationToken extends \ArrayObject
         return $this->token;
     }
     /**
-     * 
+     *
      *
      * @param string $token
      *
@@ -71,7 +71,7 @@ class InstallationToken extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -80,7 +80,7 @@ class InstallationToken extends \ArrayObject
         return $this->expiresAt;
     }
     /**
-     * 
+     *
      *
      * @param string $expiresAt
      *
@@ -93,7 +93,7 @@ class InstallationToken extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return InstallationTokenPermissions
      */
@@ -102,7 +102,7 @@ class InstallationToken extends \ArrayObject
         return $this->permissions;
     }
     /**
-     * 
+     *
      *
      * @param InstallationTokenPermissions $permissions
      *
@@ -115,7 +115,7 @@ class InstallationToken extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -124,7 +124,7 @@ class InstallationToken extends \ArrayObject
         return $this->repositorySelection;
     }
     /**
-     * 
+     *
      *
      * @param string $repositorySelection
      *
@@ -137,7 +137,7 @@ class InstallationToken extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<Repository>
      */
@@ -146,7 +146,7 @@ class InstallationToken extends \ArrayObject
         return $this->repositories;
     }
     /**
-     * 
+     *
      *
      * @param list<Repository> $repositories
      *
@@ -159,7 +159,7 @@ class InstallationToken extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -168,7 +168,7 @@ class InstallationToken extends \ArrayObject
         return $this->singleFile;
     }
     /**
-     * 
+     *
      *
      * @param string $singleFile
      *

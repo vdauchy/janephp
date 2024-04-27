@@ -13,31 +13,31 @@ class BooksBookIdReviewsGetLdjsonResponse200 extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var list<ReviewJsonldReviewRead>
      */
     protected $hydraMember;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $hydraTotalItems;
     /**
-     * 
+     *
      *
      * @var BooksBookIdReviewsGetLdjsonResponse200HydraView
      */
     protected $hydraView;
     /**
-     * 
+     *
      *
      * @var BooksBookIdReviewsGetLdjsonResponse200HydraSearch
      */
     protected $hydraSearch;
     /**
-     * 
+     *
      *
      * @return list<ReviewJsonldReviewRead>
      */
@@ -46,7 +46,7 @@ class BooksBookIdReviewsGetLdjsonResponse200 extends \ArrayObject
         return $this->hydraMember;
     }
     /**
-     * 
+     *
      *
      * @param list<ReviewJsonldReviewRead> $hydraMember
      *
@@ -59,7 +59,7 @@ class BooksBookIdReviewsGetLdjsonResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -68,7 +68,7 @@ class BooksBookIdReviewsGetLdjsonResponse200 extends \ArrayObject
         return $this->hydraTotalItems;
     }
     /**
-     * 
+     *
      *
      * @param int $hydraTotalItems
      *
@@ -81,7 +81,7 @@ class BooksBookIdReviewsGetLdjsonResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return BooksBookIdReviewsGetLdjsonResponse200HydraView
      */
@@ -90,7 +90,7 @@ class BooksBookIdReviewsGetLdjsonResponse200 extends \ArrayObject
         return $this->hydraView;
     }
     /**
-     * 
+     *
      *
      * @param BooksBookIdReviewsGetLdjsonResponse200HydraView $hydraView
      *
@@ -103,7 +103,7 @@ class BooksBookIdReviewsGetLdjsonResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return BooksBookIdReviewsGetLdjsonResponse200HydraSearch
      */
@@ -112,7 +112,7 @@ class BooksBookIdReviewsGetLdjsonResponse200 extends \ArrayObject
         return $this->hydraSearch;
     }
     /**
-     * 
+     *
      *
      * @param BooksBookIdReviewsGetLdjsonResponse200HydraSearch $hydraSearch
      *

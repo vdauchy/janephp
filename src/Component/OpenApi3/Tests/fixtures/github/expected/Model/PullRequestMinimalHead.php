@@ -13,25 +13,25 @@ class PullRequestMinimalHead extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $ref;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $sha;
     /**
-     * 
+     *
      *
      * @var PullRequestMinimalHeadRepo
      */
     protected $repo;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -40,7 +40,7 @@ class PullRequestMinimalHead extends \ArrayObject
         return $this->ref;
     }
     /**
-     * 
+     *
      *
      * @param string $ref
      *
@@ -53,7 +53,7 @@ class PullRequestMinimalHead extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -62,7 +62,7 @@ class PullRequestMinimalHead extends \ArrayObject
         return $this->sha;
     }
     /**
-     * 
+     *
      *
      * @param string $sha
      *
@@ -75,7 +75,7 @@ class PullRequestMinimalHead extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return PullRequestMinimalHeadRepo
      */
@@ -84,7 +84,7 @@ class PullRequestMinimalHead extends \ArrayObject
         return $this->repo;
     }
     /**
-     * 
+     *
      *
      * @param PullRequestMinimalHeadRepo $repo
      *

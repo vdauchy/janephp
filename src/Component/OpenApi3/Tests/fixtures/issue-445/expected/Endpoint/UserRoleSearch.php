@@ -5,9 +5,9 @@ namespace PicturePark\API\Endpoint;
 class UserRoleSearch extends \PicturePark\API\Runtime\Client\BaseEndpoint implements \PicturePark\API\Runtime\Client\Endpoint
 {
     /**
-     * 
      *
-     * @param \PicturePark\API\Model\UserRoleSearchRequest $requestBody 
+     *
+     * @param \PicturePark\API\Model\UserRoleSearchRequest $requestBody
      */
     public function __construct(\PicturePark\API\Model\UserRoleSearchRequest $requestBody)
     {

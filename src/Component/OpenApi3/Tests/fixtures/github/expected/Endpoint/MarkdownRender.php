@@ -5,9 +5,9 @@ namespace Github\Endpoint;
 class MarkdownRender extends \Github\Runtime\Client\BaseEndpoint implements \Github\Runtime\Client\Endpoint
 {
     /**
-     * 
      *
-     * @param null|\Github\Model\MarkdownPostBody $requestBody 
+     *
+     * @param null|\Github\Model\MarkdownPostBody $requestBody
      */
     public function __construct(?\Github\Model\MarkdownPostBody $requestBody = null)
     {

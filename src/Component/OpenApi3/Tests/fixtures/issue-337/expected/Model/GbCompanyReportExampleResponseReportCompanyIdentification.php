@@ -13,25 +13,25 @@ class GbCompanyReportExampleResponseReportCompanyIdentification extends \ArrayOb
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation
      */
     protected $basicInformation;
     /**
-     * 
+     *
      *
      * @var list<GbCompanyReportExampleResponseReportCompanyIdentificationActivityClassificationsItem>
      */
     protected $activityClassifications;
     /**
-     * 
+     *
      *
      * @var list<GbCompanyReportExampleResponseReportCompanyIdentificationPreviousNamesItem>
      */
     protected $previousNames;
     /**
-     * 
+     *
      *
      * @return GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation
      */
@@ -40,7 +40,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentification extends \ArrayOb
         return $this->basicInformation;
     }
     /**
-     * 
+     *
      *
      * @param GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation $basicInformation
      *
@@ -53,7 +53,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentification extends \ArrayOb
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<GbCompanyReportExampleResponseReportCompanyIdentificationActivityClassificationsItem>
      */
@@ -62,7 +62,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentification extends \ArrayOb
         return $this->activityClassifications;
     }
     /**
-     * 
+     *
      *
      * @param list<GbCompanyReportExampleResponseReportCompanyIdentificationActivityClassificationsItem> $activityClassifications
      *
@@ -75,7 +75,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentification extends \ArrayOb
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<GbCompanyReportExampleResponseReportCompanyIdentificationPreviousNamesItem>
      */
@@ -84,7 +84,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentification extends \ArrayOb
         return $this->previousNames;
     }
     /**
-     * 
+     *
      *
      * @param list<GbCompanyReportExampleResponseReportCompanyIdentificationPreviousNamesItem> $previousNames
      *

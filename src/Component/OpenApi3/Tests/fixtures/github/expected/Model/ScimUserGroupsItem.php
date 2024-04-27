@@ -13,19 +13,19 @@ class ScimUserGroupsItem extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $value;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $display;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -34,7 +34,7 @@ class ScimUserGroupsItem extends \ArrayObject
         return $this->value;
     }
     /**
-     * 
+     *
      *
      * @param string $value
      *
@@ -47,7 +47,7 @@ class ScimUserGroupsItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -56,7 +56,7 @@ class ScimUserGroupsItem extends \ArrayObject
         return $this->display;
     }
     /**
-     * 
+     *
      *
      * @param string $display
      *

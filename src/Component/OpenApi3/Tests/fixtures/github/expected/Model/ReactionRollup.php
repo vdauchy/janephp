@@ -13,67 +13,67 @@ class ReactionRollup extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $totalCount;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $n1;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $n12;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $laugh;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $confused;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $heart;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $hooray;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $eyes;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $rocket;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -82,7 +82,7 @@ class ReactionRollup extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -95,7 +95,7 @@ class ReactionRollup extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -104,7 +104,7 @@ class ReactionRollup extends \ArrayObject
         return $this->totalCount;
     }
     /**
-     * 
+     *
      *
      * @param int $totalCount
      *
@@ -117,7 +117,7 @@ class ReactionRollup extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -126,7 +126,7 @@ class ReactionRollup extends \ArrayObject
         return $this->n1;
     }
     /**
-     * 
+     *
      *
      * @param int $n1
      *
@@ -139,7 +139,7 @@ class ReactionRollup extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -148,7 +148,7 @@ class ReactionRollup extends \ArrayObject
         return $this->n12;
     }
     /**
-     * 
+     *
      *
      * @param int $n12
      *
@@ -161,7 +161,7 @@ class ReactionRollup extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -170,7 +170,7 @@ class ReactionRollup extends \ArrayObject
         return $this->laugh;
     }
     /**
-     * 
+     *
      *
      * @param int $laugh
      *
@@ -183,7 +183,7 @@ class ReactionRollup extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -192,7 +192,7 @@ class ReactionRollup extends \ArrayObject
         return $this->confused;
     }
     /**
-     * 
+     *
      *
      * @param int $confused
      *
@@ -205,7 +205,7 @@ class ReactionRollup extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -214,7 +214,7 @@ class ReactionRollup extends \ArrayObject
         return $this->heart;
     }
     /**
-     * 
+     *
      *
      * @param int $heart
      *
@@ -227,7 +227,7 @@ class ReactionRollup extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -236,7 +236,7 @@ class ReactionRollup extends \ArrayObject
         return $this->hooray;
     }
     /**
-     * 
+     *
      *
      * @param int $hooray
      *
@@ -249,7 +249,7 @@ class ReactionRollup extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -258,7 +258,7 @@ class ReactionRollup extends \ArrayObject
         return $this->eyes;
     }
     /**
-     * 
+     *
      *
      * @param int $eyes
      *
@@ -271,7 +271,7 @@ class ReactionRollup extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -280,7 +280,7 @@ class ReactionRollup extends \ArrayObject
         return $this->rocket;
     }
     /**
-     * 
+     *
      *
      * @param int $rocket
      *

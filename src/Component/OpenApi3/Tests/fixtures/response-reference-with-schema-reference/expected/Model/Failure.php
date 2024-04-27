@@ -13,13 +13,13 @@ class Failure
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var list<Error>
      */
     protected $errors;
     /**
-     * 
+     *
      *
      * @return list<Error>
      */
@@ -28,7 +28,7 @@ class Failure
         return $this->errors;
     }
     /**
-     * 
+     *
      *
      * @param list<Error> $errors
      *

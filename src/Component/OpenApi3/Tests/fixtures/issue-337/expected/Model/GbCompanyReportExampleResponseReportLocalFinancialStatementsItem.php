@@ -13,73 +13,73 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $yearEndDate;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $numberOfWeeks;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $currency;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $consolidatedAccounts;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $auditQualification;
     /**
-     * 
+     *
      *
      * @var GbCompanyReportExampleResponseReportLocalFinancialStatementsItemProfitAndLoss
      */
     protected $profitAndLoss;
     /**
-     * 
+     *
      *
      * @var GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceSheet
      */
     protected $balanceSheet;
     /**
-     * 
+     *
      *
      * @var GbCompanyReportExampleResponseReportLocalFinancialStatementsItemCashFlow
      */
     protected $cashFlow;
     /**
-     * 
+     *
      *
      * @var GbCompanyReportExampleResponseReportLocalFinancialStatementsItemOtherFinancials
      */
     protected $otherFinancials;
     /**
-     * 
+     *
      *
      * @var GbCompanyReportExampleResponseReportLocalFinancialStatementsItemRatios
      */
     protected $ratios;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -88,7 +88,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string $type
      *
@@ -101,7 +101,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -110,7 +110,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
         return $this->yearEndDate;
     }
     /**
-     * 
+     *
      *
      * @param string $yearEndDate
      *
@@ -123,7 +123,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -132,7 +132,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
         return $this->numberOfWeeks;
     }
     /**
-     * 
+     *
      *
      * @param float $numberOfWeeks
      *
@@ -145,7 +145,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -154,7 +154,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
         return $this->currency;
     }
     /**
-     * 
+     *
      *
      * @param string $currency
      *
@@ -167,7 +167,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -176,7 +176,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
         return $this->consolidatedAccounts;
     }
     /**
-     * 
+     *
      *
      * @param bool $consolidatedAccounts
      *
@@ -189,7 +189,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -198,7 +198,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
         return $this->auditQualification;
     }
     /**
-     * 
+     *
      *
      * @param string $auditQualification
      *
@@ -211,7 +211,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GbCompanyReportExampleResponseReportLocalFinancialStatementsItemProfitAndLoss
      */
@@ -220,7 +220,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
         return $this->profitAndLoss;
     }
     /**
-     * 
+     *
      *
      * @param GbCompanyReportExampleResponseReportLocalFinancialStatementsItemProfitAndLoss $profitAndLoss
      *
@@ -233,7 +233,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceSheet
      */
@@ -242,7 +242,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
         return $this->balanceSheet;
     }
     /**
-     * 
+     *
      *
      * @param GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceSheet $balanceSheet
      *
@@ -255,7 +255,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GbCompanyReportExampleResponseReportLocalFinancialStatementsItemCashFlow
      */
@@ -264,7 +264,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
         return $this->cashFlow;
     }
     /**
-     * 
+     *
      *
      * @param GbCompanyReportExampleResponseReportLocalFinancialStatementsItemCashFlow $cashFlow
      *
@@ -277,7 +277,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GbCompanyReportExampleResponseReportLocalFinancialStatementsItemOtherFinancials
      */
@@ -286,7 +286,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
         return $this->otherFinancials;
     }
     /**
-     * 
+     *
      *
      * @param GbCompanyReportExampleResponseReportLocalFinancialStatementsItemOtherFinancials $otherFinancials
      *
@@ -299,7 +299,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GbCompanyReportExampleResponseReportLocalFinancialStatementsItemRatios
      */
@@ -308,7 +308,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
         return $this->ratios;
     }
     /**
-     * 
+     *
      *
      * @param GbCompanyReportExampleResponseReportLocalFinancialStatementsItemRatios $ratios
      *

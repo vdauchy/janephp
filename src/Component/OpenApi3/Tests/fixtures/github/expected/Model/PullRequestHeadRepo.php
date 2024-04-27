@@ -13,487 +13,487 @@ class PullRequestHeadRepo extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $archiveUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $assigneesUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $blobsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $branchesUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $collaboratorsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $commentsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $commitsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $compareUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $contentsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $contributorsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $deploymentsUrl;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $downloadsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $eventsUrl;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $fork;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $forksUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $fullName;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $gitCommitsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $gitRefsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $gitTagsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $hooksUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $htmlUrl;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $nodeId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $issueCommentUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $issueEventsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $issuesUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $keysUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $labelsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $languagesUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $mergesUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $milestonesUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $notificationsUrl;
     /**
-     * 
+     *
      *
      * @var PullRequestHeadRepoOwner
      */
     protected $owner;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $private;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $pullsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $releasesUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $stargazersUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $statusesUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $subscribersUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $subscriptionUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $tagsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $teamsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $treesUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $cloneUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $defaultBranch;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $forks;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $forksCount;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $gitUrl;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $hasDownloads;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $hasIssues;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $hasProjects;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $hasWiki;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $hasPages;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $homepage;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $language;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $masterBranch;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $archived;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $disabled;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $mirrorUrl;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $openIssues;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $openIssuesCount;
     /**
-     * 
+     *
      *
      * @var PullRequestHeadRepoPermissions
      */
     protected $permissions;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $tempCloneToken;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $allowMergeCommit;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $allowSquashMerge;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $allowRebaseMerge;
     /**
-     * 
+     *
      *
      * @var PullRequestHeadRepoLicense|null
      */
     protected $license;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $pushedAt;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $size;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $sshUrl;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $stargazersCount;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $svnUrl;
     /**
-     * 
+     *
      *
      * @var list<string>
      */
     protected $topics;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $watchers;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $watchersCount;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $updatedAt;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -502,7 +502,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->archiveUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $archiveUrl
      *
@@ -515,7 +515,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -524,7 +524,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->assigneesUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $assigneesUrl
      *
@@ -537,7 +537,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -546,7 +546,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->blobsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $blobsUrl
      *
@@ -559,7 +559,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -568,7 +568,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->branchesUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $branchesUrl
      *
@@ -581,7 +581,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -590,7 +590,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->collaboratorsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $collaboratorsUrl
      *
@@ -603,7 +603,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -612,7 +612,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->commentsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $commentsUrl
      *
@@ -625,7 +625,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -634,7 +634,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->commitsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $commitsUrl
      *
@@ -647,7 +647,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -656,7 +656,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->compareUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $compareUrl
      *
@@ -669,7 +669,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -678,7 +678,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->contentsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $contentsUrl
      *
@@ -691,7 +691,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -700,7 +700,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->contributorsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $contributorsUrl
      *
@@ -713,7 +713,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -722,7 +722,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->deploymentsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $deploymentsUrl
      *
@@ -735,7 +735,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -744,7 +744,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string|null $description
      *
@@ -757,7 +757,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -766,7 +766,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->downloadsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $downloadsUrl
      *
@@ -779,7 +779,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -788,7 +788,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->eventsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $eventsUrl
      *
@@ -801,7 +801,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -810,7 +810,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->fork;
     }
     /**
-     * 
+     *
      *
      * @param bool $fork
      *
@@ -823,7 +823,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -832,7 +832,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->forksUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $forksUrl
      *
@@ -845,7 +845,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -854,7 +854,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->fullName;
     }
     /**
-     * 
+     *
      *
      * @param string $fullName
      *
@@ -867,7 +867,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -876,7 +876,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->gitCommitsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $gitCommitsUrl
      *
@@ -889,7 +889,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -898,7 +898,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->gitRefsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $gitRefsUrl
      *
@@ -911,7 +911,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -920,7 +920,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->gitTagsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $gitTagsUrl
      *
@@ -933,7 +933,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -942,7 +942,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->hooksUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $hooksUrl
      *
@@ -955,7 +955,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -964,7 +964,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->htmlUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $htmlUrl
      *
@@ -977,7 +977,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -986,7 +986,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -999,7 +999,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1008,7 +1008,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -1021,7 +1021,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1030,7 +1030,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->issueCommentUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $issueCommentUrl
      *
@@ -1043,7 +1043,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1052,7 +1052,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->issueEventsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $issueEventsUrl
      *
@@ -1065,7 +1065,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1074,7 +1074,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->issuesUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $issuesUrl
      *
@@ -1087,7 +1087,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1096,7 +1096,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->keysUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $keysUrl
      *
@@ -1109,7 +1109,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1118,7 +1118,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->labelsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $labelsUrl
      *
@@ -1131,7 +1131,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1140,7 +1140,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->languagesUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $languagesUrl
      *
@@ -1153,7 +1153,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1162,7 +1162,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->mergesUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $mergesUrl
      *
@@ -1175,7 +1175,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1184,7 +1184,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->milestonesUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $milestonesUrl
      *
@@ -1197,7 +1197,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1206,7 +1206,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -1219,7 +1219,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1228,7 +1228,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->notificationsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $notificationsUrl
      *
@@ -1241,7 +1241,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return PullRequestHeadRepoOwner
      */
@@ -1250,7 +1250,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->owner;
     }
     /**
-     * 
+     *
      *
      * @param PullRequestHeadRepoOwner $owner
      *
@@ -1263,7 +1263,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -1272,7 +1272,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->private;
     }
     /**
-     * 
+     *
      *
      * @param bool $private
      *
@@ -1285,7 +1285,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1294,7 +1294,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->pullsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $pullsUrl
      *
@@ -1307,7 +1307,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1316,7 +1316,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->releasesUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $releasesUrl
      *
@@ -1329,7 +1329,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1338,7 +1338,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->stargazersUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $stargazersUrl
      *
@@ -1351,7 +1351,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1360,7 +1360,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->statusesUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $statusesUrl
      *
@@ -1373,7 +1373,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1382,7 +1382,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->subscribersUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $subscribersUrl
      *
@@ -1395,7 +1395,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1404,7 +1404,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->subscriptionUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $subscriptionUrl
      *
@@ -1417,7 +1417,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1426,7 +1426,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->tagsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $tagsUrl
      *
@@ -1439,7 +1439,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1448,7 +1448,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->teamsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $teamsUrl
      *
@@ -1461,7 +1461,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1470,7 +1470,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->treesUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $treesUrl
      *
@@ -1483,7 +1483,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1492,7 +1492,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -1505,7 +1505,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1514,7 +1514,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->cloneUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $cloneUrl
      *
@@ -1527,7 +1527,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1536,7 +1536,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->defaultBranch;
     }
     /**
-     * 
+     *
      *
      * @param string $defaultBranch
      *
@@ -1549,7 +1549,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -1558,7 +1558,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->forks;
     }
     /**
-     * 
+     *
      *
      * @param int $forks
      *
@@ -1571,7 +1571,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -1580,7 +1580,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->forksCount;
     }
     /**
-     * 
+     *
      *
      * @param int $forksCount
      *
@@ -1593,7 +1593,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1602,7 +1602,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->gitUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $gitUrl
      *
@@ -1615,7 +1615,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -1624,7 +1624,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->hasDownloads;
     }
     /**
-     * 
+     *
      *
      * @param bool $hasDownloads
      *
@@ -1637,7 +1637,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -1646,7 +1646,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->hasIssues;
     }
     /**
-     * 
+     *
      *
      * @param bool $hasIssues
      *
@@ -1659,7 +1659,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -1668,7 +1668,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->hasProjects;
     }
     /**
-     * 
+     *
      *
      * @param bool $hasProjects
      *
@@ -1681,7 +1681,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -1690,7 +1690,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->hasWiki;
     }
     /**
-     * 
+     *
      *
      * @param bool $hasWiki
      *
@@ -1703,7 +1703,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -1712,7 +1712,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->hasPages;
     }
     /**
-     * 
+     *
      *
      * @param bool $hasPages
      *
@@ -1725,7 +1725,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -1734,7 +1734,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->homepage;
     }
     /**
-     * 
+     *
      *
      * @param string|null $homepage
      *
@@ -1747,7 +1747,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -1756,7 +1756,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->language;
     }
     /**
-     * 
+     *
      *
      * @param string|null $language
      *
@@ -1769,7 +1769,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1778,7 +1778,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->masterBranch;
     }
     /**
-     * 
+     *
      *
      * @param string $masterBranch
      *
@@ -1791,7 +1791,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -1800,7 +1800,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->archived;
     }
     /**
-     * 
+     *
      *
      * @param bool $archived
      *
@@ -1813,7 +1813,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -1822,7 +1822,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->disabled;
     }
     /**
-     * 
+     *
      *
      * @param bool $disabled
      *
@@ -1835,7 +1835,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -1844,7 +1844,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->mirrorUrl;
     }
     /**
-     * 
+     *
      *
      * @param string|null $mirrorUrl
      *
@@ -1857,7 +1857,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -1866,7 +1866,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->openIssues;
     }
     /**
-     * 
+     *
      *
      * @param int $openIssues
      *
@@ -1879,7 +1879,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -1888,7 +1888,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->openIssuesCount;
     }
     /**
-     * 
+     *
      *
      * @param int $openIssuesCount
      *
@@ -1901,7 +1901,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return PullRequestHeadRepoPermissions
      */
@@ -1910,7 +1910,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->permissions;
     }
     /**
-     * 
+     *
      *
      * @param PullRequestHeadRepoPermissions $permissions
      *
@@ -1923,7 +1923,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1932,7 +1932,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->tempCloneToken;
     }
     /**
-     * 
+     *
      *
      * @param string $tempCloneToken
      *
@@ -1945,7 +1945,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -1954,7 +1954,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->allowMergeCommit;
     }
     /**
-     * 
+     *
      *
      * @param bool $allowMergeCommit
      *
@@ -1967,7 +1967,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -1976,7 +1976,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->allowSquashMerge;
     }
     /**
-     * 
+     *
      *
      * @param bool $allowSquashMerge
      *
@@ -1989,7 +1989,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -1998,7 +1998,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->allowRebaseMerge;
     }
     /**
-     * 
+     *
      *
      * @param bool $allowRebaseMerge
      *
@@ -2011,7 +2011,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return PullRequestHeadRepoLicense|null
      */
@@ -2020,7 +2020,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->license;
     }
     /**
-     * 
+     *
      *
      * @param PullRequestHeadRepoLicense|null $license
      *
@@ -2033,7 +2033,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -2042,7 +2042,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->pushedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $pushedAt
      *
@@ -2055,7 +2055,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -2064,7 +2064,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->size;
     }
     /**
-     * 
+     *
      *
      * @param int $size
      *
@@ -2077,7 +2077,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -2086,7 +2086,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->sshUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $sshUrl
      *
@@ -2099,7 +2099,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -2108,7 +2108,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->stargazersCount;
     }
     /**
-     * 
+     *
      *
      * @param int $stargazersCount
      *
@@ -2121,7 +2121,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -2130,7 +2130,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->svnUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $svnUrl
      *
@@ -2143,7 +2143,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -2152,7 +2152,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->topics;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $topics
      *
@@ -2165,7 +2165,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -2174,7 +2174,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->watchers;
     }
     /**
-     * 
+     *
      *
      * @param int $watchers
      *
@@ -2187,7 +2187,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -2196,7 +2196,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->watchersCount;
     }
     /**
-     * 
+     *
      *
      * @param int $watchersCount
      *
@@ -2209,7 +2209,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -2218,7 +2218,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $createdAt
      *
@@ -2231,7 +2231,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -2240,7 +2240,7 @@ class PullRequestHeadRepo extends \ArrayObject
         return $this->updatedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $updatedAt
      *

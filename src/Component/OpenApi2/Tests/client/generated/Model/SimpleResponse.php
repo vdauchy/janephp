@@ -5,19 +5,19 @@ namespace Jane\Component\OpenApi2\Tests\Client\Model;
 class SimpleResponse
 {
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $foo;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $baz;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -26,7 +26,7 @@ class SimpleResponse
         return $this->foo;
     }
     /**
-     * 
+     *
      *
      * @param string $foo
      *
@@ -38,7 +38,7 @@ class SimpleResponse
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -47,7 +47,7 @@ class SimpleResponse
         return $this->baz;
     }
     /**
-     * 
+     *
      *
      * @param bool $baz
      *

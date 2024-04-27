@@ -79,7 +79,7 @@ class CustomerInfo
      */
     protected $apps;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
@@ -339,7 +339,7 @@ class CustomerInfo
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -348,7 +348,7 @@ class CustomerInfo
         return $this->modificationDate;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $modificationDate
      *

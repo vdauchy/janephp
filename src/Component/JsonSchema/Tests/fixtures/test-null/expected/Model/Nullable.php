@@ -13,31 +13,31 @@ class Nullable
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var null
      */
     protected $onlyNull;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $nullOrString;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $required;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $requiredNull;
     /**
-     * 
+     *
      *
      * @return null
      */
@@ -46,7 +46,7 @@ class Nullable
         return $this->onlyNull;
     }
     /**
-     * 
+     *
      *
      * @param null $onlyNull
      *
@@ -59,7 +59,7 @@ class Nullable
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -68,7 +68,7 @@ class Nullable
         return $this->nullOrString;
     }
     /**
-     * 
+     *
      *
      * @param string|null $nullOrString
      *
@@ -81,7 +81,7 @@ class Nullable
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -90,7 +90,7 @@ class Nullable
         return $this->required;
     }
     /**
-     * 
+     *
      *
      * @param string $required
      *
@@ -103,7 +103,7 @@ class Nullable
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -112,7 +112,7 @@ class Nullable
         return $this->requiredNull;
     }
     /**
-     * 
+     *
      *
      * @param string|null $requiredNull
      *

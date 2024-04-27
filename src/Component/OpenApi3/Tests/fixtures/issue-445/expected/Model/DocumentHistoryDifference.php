@@ -13,19 +13,19 @@ class DocumentHistoryDifference
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $documentId;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $oldDocumentVersion;
     /**
-     * 
+     *
      *
      * @var int
      */
@@ -39,7 +39,7 @@ class DocumentHistoryDifference
     */
     protected $patch;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -48,7 +48,7 @@ class DocumentHistoryDifference
         return $this->documentId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $documentId
      *
@@ -61,7 +61,7 @@ class DocumentHistoryDifference
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -70,7 +70,7 @@ class DocumentHistoryDifference
         return $this->oldDocumentVersion;
     }
     /**
-     * 
+     *
      *
      * @param int $oldDocumentVersion
      *
@@ -83,7 +83,7 @@ class DocumentHistoryDifference
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -92,7 +92,7 @@ class DocumentHistoryDifference
         return $this->newDocumentVersion;
     }
     /**
-     * 
+     *
      *
      * @param int $newDocumentVersion
      *

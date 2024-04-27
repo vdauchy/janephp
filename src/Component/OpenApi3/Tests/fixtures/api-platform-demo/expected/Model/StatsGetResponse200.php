@@ -13,19 +13,19 @@ class StatsGetResponse200 extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $booksCount;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $topbooksCount;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -34,7 +34,7 @@ class StatsGetResponse200 extends \ArrayObject
         return $this->booksCount;
     }
     /**
-     * 
+     *
      *
      * @param int $booksCount
      *
@@ -47,7 +47,7 @@ class StatsGetResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -56,7 +56,7 @@ class StatsGetResponse200 extends \ArrayObject
         return $this->topbooksCount;
     }
     /**
-     * 
+     *
      *
      * @param int $topbooksCount
      *

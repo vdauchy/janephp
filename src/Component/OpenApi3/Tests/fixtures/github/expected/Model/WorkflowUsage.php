@@ -13,13 +13,13 @@ class WorkflowUsage extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var WorkflowUsageBillable
      */
     protected $billable;
     /**
-     * 
+     *
      *
      * @return WorkflowUsageBillable
      */
@@ -28,7 +28,7 @@ class WorkflowUsage extends \ArrayObject
         return $this->billable;
     }
     /**
-     * 
+     *
      *
      * @param WorkflowUsageBillable $billable
      *

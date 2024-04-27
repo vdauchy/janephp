@@ -5,7 +5,7 @@ namespace Docker\Api\Endpoint;
 class ImageCommit extends \Docker\Api\Runtime\Client\BaseEndpoint implements \Docker\Api\Runtime\Client\Endpoint
 {
     /**
-     * 
+     *
      *
      * @param \Docker\Api\Model\ContainerConfig $containerConfig The container configuration
      * @param array $queryParameters {

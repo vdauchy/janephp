@@ -13,25 +13,25 @@ class ContributorActivity extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var ContributorActivityAuthor|null
      */
     protected $author;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $total;
     /**
-     * 
+     *
      *
      * @var list<ContributorActivityWeeksItem>
      */
     protected $weeks;
     /**
-     * 
+     *
      *
      * @return ContributorActivityAuthor|null
      */
@@ -40,7 +40,7 @@ class ContributorActivity extends \ArrayObject
         return $this->author;
     }
     /**
-     * 
+     *
      *
      * @param ContributorActivityAuthor|null $author
      *
@@ -53,7 +53,7 @@ class ContributorActivity extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -62,7 +62,7 @@ class ContributorActivity extends \ArrayObject
         return $this->total;
     }
     /**
-     * 
+     *
      *
      * @param int $total
      *
@@ -75,7 +75,7 @@ class ContributorActivity extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<ContributorActivityWeeksItem>
      */
@@ -84,7 +84,7 @@ class ContributorActivity extends \ArrayObject
         return $this->weeks;
     }
     /**
-     * 
+     *
      *
      * @param list<ContributorActivityWeeksItem> $weeks
      *

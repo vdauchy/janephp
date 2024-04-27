@@ -13,25 +13,25 @@ class HookResponse extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $code;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $status;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $message;
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -40,7 +40,7 @@ class HookResponse extends \ArrayObject
         return $this->code;
     }
     /**
-     * 
+     *
      *
      * @param int|null $code
      *
@@ -53,7 +53,7 @@ class HookResponse extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -62,7 +62,7 @@ class HookResponse extends \ArrayObject
         return $this->status;
     }
     /**
-     * 
+     *
      *
      * @param string|null $status
      *
@@ -75,7 +75,7 @@ class HookResponse extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -84,7 +84,7 @@ class HookResponse extends \ArrayObject
         return $this->message;
     }
     /**
-     * 
+     *
      *
      * @param string|null $message
      *

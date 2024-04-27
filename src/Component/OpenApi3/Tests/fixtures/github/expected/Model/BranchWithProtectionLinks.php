@@ -13,19 +13,19 @@ class BranchWithProtectionLinks extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $html;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $self;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -34,7 +34,7 @@ class BranchWithProtectionLinks extends \ArrayObject
         return $this->html;
     }
     /**
-     * 
+     *
      *
      * @param string $html
      *
@@ -47,7 +47,7 @@ class BranchWithProtectionLinks extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -56,7 +56,7 @@ class BranchWithProtectionLinks extends \ArrayObject
         return $this->self;
     }
     /**
-     * 
+     *
      *
      * @param string $self
      *

@@ -13,7 +13,7 @@ class Foo extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -25,7 +25,7 @@ class Foo extends \ArrayObject
      */
     protected $foo;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -34,7 +34,7 @@ class Foo extends \ArrayObject
         return $this->bar;
     }
     /**
-     * 
+     *
      *
      * @param string $bar
      *

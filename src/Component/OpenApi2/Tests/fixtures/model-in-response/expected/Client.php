@@ -25,7 +25,7 @@ class Client extends \Jane\Component\OpenApi2\Tests\Expected\Runtime\Client\Clie
         return $this->executeEndpoint(new \Jane\Component\OpenApi2\Tests\Expected\Endpoint\GetTest(), $fetch);
     }
     /**
-     * 
+     *
      *
      * @param int $id id
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)

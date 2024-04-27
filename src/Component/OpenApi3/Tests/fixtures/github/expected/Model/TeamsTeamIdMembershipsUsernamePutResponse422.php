@@ -13,25 +13,25 @@ class TeamsTeamIdMembershipsUsernamePutResponse422 extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $message;
     /**
-     * 
+     *
      *
      * @var list<TeamsTeamIdMembershipsUsernamePutResponse422ErrorsItem>
      */
     protected $errors;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $documentationUrl;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -40,7 +40,7 @@ class TeamsTeamIdMembershipsUsernamePutResponse422 extends \ArrayObject
         return $this->message;
     }
     /**
-     * 
+     *
      *
      * @param string $message
      *
@@ -53,7 +53,7 @@ class TeamsTeamIdMembershipsUsernamePutResponse422 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<TeamsTeamIdMembershipsUsernamePutResponse422ErrorsItem>
      */
@@ -62,7 +62,7 @@ class TeamsTeamIdMembershipsUsernamePutResponse422 extends \ArrayObject
         return $this->errors;
     }
     /**
-     * 
+     *
      *
      * @param list<TeamsTeamIdMembershipsUsernamePutResponse422ErrorsItem> $errors
      *
@@ -75,7 +75,7 @@ class TeamsTeamIdMembershipsUsernamePutResponse422 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -84,7 +84,7 @@ class TeamsTeamIdMembershipsUsernamePutResponse422 extends \ArrayObject
         return $this->documentationUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $documentationUrl
      *

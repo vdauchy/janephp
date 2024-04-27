@@ -13,25 +13,25 @@ class ProjectPermissions extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $read;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $write;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $admin;
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -40,7 +40,7 @@ class ProjectPermissions extends \ArrayObject
         return $this->read;
     }
     /**
-     * 
+     *
      *
      * @param bool $read
      *
@@ -53,7 +53,7 @@ class ProjectPermissions extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -62,7 +62,7 @@ class ProjectPermissions extends \ArrayObject
         return $this->write;
     }
     /**
-     * 
+     *
      *
      * @param bool $write
      *
@@ -75,7 +75,7 @@ class ProjectPermissions extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -84,7 +84,7 @@ class ProjectPermissions extends \ArrayObject
         return $this->admin;
     }
     /**
-     * 
+     *
      *
      * @param bool $admin
      *

@@ -13,25 +13,25 @@ class ReviewJsonldReviewRead extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @var mixed
      */
     protected $context;
     /**
-     * 
+     *
      *
      * @var string|null
      */
@@ -57,7 +57,7 @@ class ReviewJsonldReviewRead extends \ArrayObject
      */
     protected $letter;
     /**
-     * 
+     *
      *
      * @var BookJsonldReviewRead
      */
@@ -75,7 +75,7 @@ class ReviewJsonldReviewRead extends \ArrayObject
      */
     protected $publicationDate;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -84,7 +84,7 @@ class ReviewJsonldReviewRead extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param string $id
      *
@@ -97,7 +97,7 @@ class ReviewJsonldReviewRead extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -106,7 +106,7 @@ class ReviewJsonldReviewRead extends \ArrayObject
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string $type
      *
@@ -119,7 +119,7 @@ class ReviewJsonldReviewRead extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return mixed
      */
@@ -128,7 +128,7 @@ class ReviewJsonldReviewRead extends \ArrayObject
         return $this->context;
     }
     /**
-     * 
+     *
      *
      * @param mixed $context
      *
@@ -141,7 +141,7 @@ class ReviewJsonldReviewRead extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -150,7 +150,7 @@ class ReviewJsonldReviewRead extends \ArrayObject
         return $this->id2;
     }
     /**
-     * 
+     *
      *
      * @param string|null $id2
      *
@@ -233,7 +233,7 @@ class ReviewJsonldReviewRead extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return BookJsonldReviewRead
      */
@@ -242,7 +242,7 @@ class ReviewJsonldReviewRead extends \ArrayObject
         return $this->book;
     }
     /**
-     * 
+     *
      *
      * @param BookJsonldReviewRead $book
      *

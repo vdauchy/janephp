@@ -85,7 +85,7 @@ class ContainerSummary
      */
     protected $status;
     /**
-     * 
+     *
      *
      * @var ContainerSummaryHostConfig
      */
@@ -97,7 +97,7 @@ class ContainerSummary
      */
     protected $networkSettings;
     /**
-     * 
+     *
      *
      * @var list<Mount>
      */
@@ -367,7 +367,7 @@ class ContainerSummary
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ContainerSummaryHostConfig
      */
@@ -376,7 +376,7 @@ class ContainerSummary
         return $this->hostConfig;
     }
     /**
-     * 
+     *
      *
      * @param ContainerSummaryHostConfig $hostConfig
      *
@@ -411,7 +411,7 @@ class ContainerSummary
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<Mount>
      */
@@ -420,7 +420,7 @@ class ContainerSummary
         return $this->mounts;
     }
     /**
-     * 
+     *
      *
      * @param list<Mount> $mounts
      *

@@ -31,7 +31,7 @@ class ReposOwnerRepoLabelsNamePatchBody extends \ArrayObject
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -103,7 +103,7 @@ class ReposOwnerRepoLabelsNamePatchBody extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -112,7 +112,7 @@ class ReposOwnerRepoLabelsNamePatchBody extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *

@@ -13,49 +13,49 @@ class CommitCommit extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var CommitCommitAuthor|null
      */
     protected $author;
     /**
-     * 
+     *
      *
      * @var CommitCommitCommitter|null
      */
     protected $committer;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $message;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $commentCount;
     /**
-     * 
+     *
      *
      * @var CommitCommitTree
      */
     protected $tree;
     /**
-     * 
+     *
      *
      * @var Verification
      */
     protected $verification;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -64,7 +64,7 @@ class CommitCommit extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -77,7 +77,7 @@ class CommitCommit extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return CommitCommitAuthor|null
      */
@@ -86,7 +86,7 @@ class CommitCommit extends \ArrayObject
         return $this->author;
     }
     /**
-     * 
+     *
      *
      * @param CommitCommitAuthor|null $author
      *
@@ -99,7 +99,7 @@ class CommitCommit extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return CommitCommitCommitter|null
      */
@@ -108,7 +108,7 @@ class CommitCommit extends \ArrayObject
         return $this->committer;
     }
     /**
-     * 
+     *
      *
      * @param CommitCommitCommitter|null $committer
      *
@@ -121,7 +121,7 @@ class CommitCommit extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -130,7 +130,7 @@ class CommitCommit extends \ArrayObject
         return $this->message;
     }
     /**
-     * 
+     *
      *
      * @param string $message
      *
@@ -143,7 +143,7 @@ class CommitCommit extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -152,7 +152,7 @@ class CommitCommit extends \ArrayObject
         return $this->commentCount;
     }
     /**
-     * 
+     *
      *
      * @param int $commentCount
      *
@@ -165,7 +165,7 @@ class CommitCommit extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return CommitCommitTree
      */
@@ -174,7 +174,7 @@ class CommitCommit extends \ArrayObject
         return $this->tree;
     }
     /**
-     * 
+     *
      *
      * @param CommitCommitTree $tree
      *
@@ -187,7 +187,7 @@ class CommitCommit extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return Verification
      */
@@ -196,7 +196,7 @@ class CommitCommit extends \ArrayObject
         return $this->verification;
     }
     /**
-     * 
+     *
      *
      * @param Verification $verification
      *

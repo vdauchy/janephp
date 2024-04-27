@@ -13,211 +13,211 @@ class ImageMetadata extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var mixed|null
      */
     protected $names;
     /**
-     * 
+     *
      *
      * @var mixed|null
      */
     protected $descriptions;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $fileExtension;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $fileName;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $filePath;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $fileSizeInBytes;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $sha1Hash;
     /**
-     * 
+     *
      *
      * @var mixed|null
      */
     protected $xmpMetadata;
     /**
-     * 
+     *
      *
      * @var mixed|null
      */
     protected $exifMetadata;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $language;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $width;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $height;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $widthInInch;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $heightInInch;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $widthInCm;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $heightInCm;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $colorSpace;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $colorProfile;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $bitsPerPixel;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $bitsPerChannel;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $channels;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $pixelFormat;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $hasAlpha;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $isIndexed;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $isExtended;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $horizontalResolution;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $verticalResolution;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $totalFrames;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $totalUnspecifiedTiffExtraChannels;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $hasExifData;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $hasIptcData;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $hasAdobeResourceData;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $hasXmpData;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $uncompressedSizeInBytes;
     /**
-     * 
+     *
      *
      * @return mixed
      */
@@ -226,7 +226,7 @@ class ImageMetadata extends \ArrayObject
         return $this->names;
     }
     /**
-     * 
+     *
      *
      * @param mixed $names
      *
@@ -239,7 +239,7 @@ class ImageMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return mixed
      */
@@ -248,7 +248,7 @@ class ImageMetadata extends \ArrayObject
         return $this->descriptions;
     }
     /**
-     * 
+     *
      *
      * @param mixed $descriptions
      *
@@ -261,7 +261,7 @@ class ImageMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -270,7 +270,7 @@ class ImageMetadata extends \ArrayObject
         return $this->fileExtension;
     }
     /**
-     * 
+     *
      *
      * @param string|null $fileExtension
      *
@@ -283,7 +283,7 @@ class ImageMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -292,7 +292,7 @@ class ImageMetadata extends \ArrayObject
         return $this->fileName;
     }
     /**
-     * 
+     *
      *
      * @param string|null $fileName
      *
@@ -305,7 +305,7 @@ class ImageMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -314,7 +314,7 @@ class ImageMetadata extends \ArrayObject
         return $this->filePath;
     }
     /**
-     * 
+     *
      *
      * @param string|null $filePath
      *
@@ -327,7 +327,7 @@ class ImageMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -336,7 +336,7 @@ class ImageMetadata extends \ArrayObject
         return $this->fileSizeInBytes;
     }
     /**
-     * 
+     *
      *
      * @param int|null $fileSizeInBytes
      *
@@ -349,7 +349,7 @@ class ImageMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -358,7 +358,7 @@ class ImageMetadata extends \ArrayObject
         return $this->sha1Hash;
     }
     /**
-     * 
+     *
      *
      * @param string|null $sha1Hash
      *
@@ -371,7 +371,7 @@ class ImageMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return mixed
      */
@@ -380,7 +380,7 @@ class ImageMetadata extends \ArrayObject
         return $this->xmpMetadata;
     }
     /**
-     * 
+     *
      *
      * @param mixed $xmpMetadata
      *
@@ -393,7 +393,7 @@ class ImageMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return mixed
      */
@@ -402,7 +402,7 @@ class ImageMetadata extends \ArrayObject
         return $this->exifMetadata;
     }
     /**
-     * 
+     *
      *
      * @param mixed $exifMetadata
      *
@@ -415,7 +415,7 @@ class ImageMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -424,7 +424,7 @@ class ImageMetadata extends \ArrayObject
         return $this->language;
     }
     /**
-     * 
+     *
      *
      * @param string|null $language
      *
@@ -437,7 +437,7 @@ class ImageMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -446,7 +446,7 @@ class ImageMetadata extends \ArrayObject
         return $this->width;
     }
     /**
-     * 
+     *
      *
      * @param int $width
      *
@@ -459,7 +459,7 @@ class ImageMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -468,7 +468,7 @@ class ImageMetadata extends \ArrayObject
         return $this->height;
     }
     /**
-     * 
+     *
      *
      * @param int $height
      *
@@ -481,7 +481,7 @@ class ImageMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -490,7 +490,7 @@ class ImageMetadata extends \ArrayObject
         return $this->widthInInch;
     }
     /**
-     * 
+     *
      *
      * @param float $widthInInch
      *
@@ -503,7 +503,7 @@ class ImageMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -512,7 +512,7 @@ class ImageMetadata extends \ArrayObject
         return $this->heightInInch;
     }
     /**
-     * 
+     *
      *
      * @param float $heightInInch
      *
@@ -525,7 +525,7 @@ class ImageMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -534,7 +534,7 @@ class ImageMetadata extends \ArrayObject
         return $this->widthInCm;
     }
     /**
-     * 
+     *
      *
      * @param float $widthInCm
      *
@@ -547,7 +547,7 @@ class ImageMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -556,7 +556,7 @@ class ImageMetadata extends \ArrayObject
         return $this->heightInCm;
     }
     /**
-     * 
+     *
      *
      * @param float $heightInCm
      *
@@ -569,7 +569,7 @@ class ImageMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -578,7 +578,7 @@ class ImageMetadata extends \ArrayObject
         return $this->colorSpace;
     }
     /**
-     * 
+     *
      *
      * @param string|null $colorSpace
      *
@@ -591,7 +591,7 @@ class ImageMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -600,7 +600,7 @@ class ImageMetadata extends \ArrayObject
         return $this->colorProfile;
     }
     /**
-     * 
+     *
      *
      * @param string|null $colorProfile
      *
@@ -613,7 +613,7 @@ class ImageMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -622,7 +622,7 @@ class ImageMetadata extends \ArrayObject
         return $this->bitsPerPixel;
     }
     /**
-     * 
+     *
      *
      * @param int $bitsPerPixel
      *
@@ -635,7 +635,7 @@ class ImageMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -644,7 +644,7 @@ class ImageMetadata extends \ArrayObject
         return $this->bitsPerChannel;
     }
     /**
-     * 
+     *
      *
      * @param int $bitsPerChannel
      *
@@ -657,7 +657,7 @@ class ImageMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -666,7 +666,7 @@ class ImageMetadata extends \ArrayObject
         return $this->channels;
     }
     /**
-     * 
+     *
      *
      * @param string|null $channels
      *
@@ -679,7 +679,7 @@ class ImageMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -688,7 +688,7 @@ class ImageMetadata extends \ArrayObject
         return $this->pixelFormat;
     }
     /**
-     * 
+     *
      *
      * @param string|null $pixelFormat
      *
@@ -701,7 +701,7 @@ class ImageMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -710,7 +710,7 @@ class ImageMetadata extends \ArrayObject
         return $this->hasAlpha;
     }
     /**
-     * 
+     *
      *
      * @param bool $hasAlpha
      *
@@ -723,7 +723,7 @@ class ImageMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -732,7 +732,7 @@ class ImageMetadata extends \ArrayObject
         return $this->isIndexed;
     }
     /**
-     * 
+     *
      *
      * @param bool $isIndexed
      *
@@ -745,7 +745,7 @@ class ImageMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -754,7 +754,7 @@ class ImageMetadata extends \ArrayObject
         return $this->isExtended;
     }
     /**
-     * 
+     *
      *
      * @param bool $isExtended
      *
@@ -767,7 +767,7 @@ class ImageMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -776,7 +776,7 @@ class ImageMetadata extends \ArrayObject
         return $this->horizontalResolution;
     }
     /**
-     * 
+     *
      *
      * @param float $horizontalResolution
      *
@@ -789,7 +789,7 @@ class ImageMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -798,7 +798,7 @@ class ImageMetadata extends \ArrayObject
         return $this->verticalResolution;
     }
     /**
-     * 
+     *
      *
      * @param float $verticalResolution
      *
@@ -811,7 +811,7 @@ class ImageMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -820,7 +820,7 @@ class ImageMetadata extends \ArrayObject
         return $this->totalFrames;
     }
     /**
-     * 
+     *
      *
      * @param int $totalFrames
      *
@@ -833,7 +833,7 @@ class ImageMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -842,7 +842,7 @@ class ImageMetadata extends \ArrayObject
         return $this->totalUnspecifiedTiffExtraChannels;
     }
     /**
-     * 
+     *
      *
      * @param int $totalUnspecifiedTiffExtraChannels
      *
@@ -855,7 +855,7 @@ class ImageMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -864,7 +864,7 @@ class ImageMetadata extends \ArrayObject
         return $this->hasExifData;
     }
     /**
-     * 
+     *
      *
      * @param bool $hasExifData
      *
@@ -877,7 +877,7 @@ class ImageMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -886,7 +886,7 @@ class ImageMetadata extends \ArrayObject
         return $this->hasIptcData;
     }
     /**
-     * 
+     *
      *
      * @param bool $hasIptcData
      *
@@ -899,7 +899,7 @@ class ImageMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -908,7 +908,7 @@ class ImageMetadata extends \ArrayObject
         return $this->hasAdobeResourceData;
     }
     /**
-     * 
+     *
      *
      * @param bool $hasAdobeResourceData
      *
@@ -921,7 +921,7 @@ class ImageMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -930,7 +930,7 @@ class ImageMetadata extends \ArrayObject
         return $this->hasXmpData;
     }
     /**
-     * 
+     *
      *
      * @param bool $hasXmpData
      *
@@ -943,7 +943,7 @@ class ImageMetadata extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -952,7 +952,7 @@ class ImageMetadata extends \ArrayObject
         return $this->uncompressedSizeInBytes;
     }
     /**
-     * 
+     *
      *
      * @param int $uncompressedSizeInBytes
      *

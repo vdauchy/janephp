@@ -19,7 +19,7 @@ class DefaultUserFieldsEntities extends \ArrayObject
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var FullTextEntities
      */
@@ -47,7 +47,7 @@ class DefaultUserFieldsEntities extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return FullTextEntities
      */
@@ -56,7 +56,7 @@ class DefaultUserFieldsEntities extends \ArrayObject
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param FullTextEntities $description
      *

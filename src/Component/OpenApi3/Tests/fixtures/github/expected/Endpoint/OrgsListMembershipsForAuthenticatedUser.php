@@ -5,7 +5,7 @@ namespace Github\Endpoint;
 class OrgsListMembershipsForAuthenticatedUser extends \Github\Runtime\Client\BaseEndpoint implements \Github\Runtime\Client\Endpoint
 {
     /**
-     * 
+     *
      *
      * @param array $queryParameters {
      *     @var string $state Indicates the state of the memberships to return. Can be either `active` or `pending`. If not specified, the API returns both active and pending memberships.

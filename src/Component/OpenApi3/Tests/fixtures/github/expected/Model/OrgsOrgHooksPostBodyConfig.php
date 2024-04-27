@@ -37,13 +37,13 @@ class OrgsOrgHooksPostBodyConfig extends \ArrayObject
      */
     protected $insecureSsl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $username;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -137,7 +137,7 @@ class OrgsOrgHooksPostBodyConfig extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -146,7 +146,7 @@ class OrgsOrgHooksPostBodyConfig extends \ArrayObject
         return $this->username;
     }
     /**
-     * 
+     *
      *
      * @param string $username
      *
@@ -159,7 +159,7 @@ class OrgsOrgHooksPostBodyConfig extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -168,7 +168,7 @@ class OrgsOrgHooksPostBodyConfig extends \ArrayObject
         return $this->password;
     }
     /**
-     * 
+     *
      *
      * @param string $password
      *

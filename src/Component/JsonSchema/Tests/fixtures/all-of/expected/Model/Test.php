@@ -13,19 +13,19 @@ class Test
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var Childtype
      */
     protected $child;
     /**
-     * 
+     *
      *
      * @var Parenttype
      */
     protected $parent;
     /**
-     * 
+     *
      *
      * @return Childtype
      */
@@ -34,7 +34,7 @@ class Test
         return $this->child;
     }
     /**
-     * 
+     *
      *
      * @param Childtype $child
      *
@@ -47,7 +47,7 @@ class Test
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return Parenttype
      */
@@ -56,7 +56,7 @@ class Test
         return $this->parent;
     }
     /**
-     * 
+     *
      *
      * @param Parenttype $parent
      *

@@ -13,55 +13,55 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemC
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $addressConflict;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $citizenshipConflict;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $countryConflict;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $dobConflict;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $entityTypeConflict;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $genderConflict;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $idConflict;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $phoneConflict;
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -70,7 +70,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemC
         return $this->addressConflict;
     }
     /**
-     * 
+     *
      *
      * @param bool $addressConflict
      *
@@ -83,7 +83,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemC
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -92,7 +92,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemC
         return $this->citizenshipConflict;
     }
     /**
-     * 
+     *
      *
      * @param bool $citizenshipConflict
      *
@@ -105,7 +105,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemC
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -114,7 +114,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemC
         return $this->countryConflict;
     }
     /**
-     * 
+     *
      *
      * @param bool $countryConflict
      *
@@ -127,7 +127,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemC
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -136,7 +136,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemC
         return $this->dobConflict;
     }
     /**
-     * 
+     *
      *
      * @param bool $dobConflict
      *
@@ -149,7 +149,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemC
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -158,7 +158,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemC
         return $this->entityTypeConflict;
     }
     /**
-     * 
+     *
      *
      * @param bool $entityTypeConflict
      *
@@ -171,7 +171,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemC
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -180,7 +180,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemC
         return $this->genderConflict;
     }
     /**
-     * 
+     *
      *
      * @param bool $genderConflict
      *
@@ -193,7 +193,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemC
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -202,7 +202,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemC
         return $this->idConflict;
     }
     /**
-     * 
+     *
      *
      * @param bool $idConflict
      *
@@ -215,7 +215,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemC
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -224,7 +224,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemC
         return $this->phoneConflict;
     }
     /**
-     * 
+     *
      *
      * @param bool $phoneConflict
      *

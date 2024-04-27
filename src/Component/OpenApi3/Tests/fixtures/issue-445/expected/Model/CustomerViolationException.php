@@ -13,55 +13,55 @@ class CustomerViolationException extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $traceLevel;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $traceId;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $traceJobId;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $httpStatusCode;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $exceptionMessage;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $kind;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $expectedCustomerId;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $currentCustomerId;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -70,7 +70,7 @@ class CustomerViolationException extends \ArrayObject
         return $this->traceLevel;
     }
     /**
-     * 
+     *
      *
      * @param string $traceLevel
      *
@@ -83,7 +83,7 @@ class CustomerViolationException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -92,7 +92,7 @@ class CustomerViolationException extends \ArrayObject
         return $this->traceId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $traceId
      *
@@ -105,7 +105,7 @@ class CustomerViolationException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -114,7 +114,7 @@ class CustomerViolationException extends \ArrayObject
         return $this->traceJobId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $traceJobId
      *
@@ -127,7 +127,7 @@ class CustomerViolationException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -136,7 +136,7 @@ class CustomerViolationException extends \ArrayObject
         return $this->httpStatusCode;
     }
     /**
-     * 
+     *
      *
      * @param int $httpStatusCode
      *
@@ -149,7 +149,7 @@ class CustomerViolationException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -158,7 +158,7 @@ class CustomerViolationException extends \ArrayObject
         return $this->exceptionMessage;
     }
     /**
-     * 
+     *
      *
      * @param string|null $exceptionMessage
      *
@@ -171,7 +171,7 @@ class CustomerViolationException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -180,7 +180,7 @@ class CustomerViolationException extends \ArrayObject
         return $this->kind;
     }
     /**
-     * 
+     *
      *
      * @param string $kind
      *
@@ -193,7 +193,7 @@ class CustomerViolationException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -202,7 +202,7 @@ class CustomerViolationException extends \ArrayObject
         return $this->expectedCustomerId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $expectedCustomerId
      *
@@ -215,7 +215,7 @@ class CustomerViolationException extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -224,7 +224,7 @@ class CustomerViolationException extends \ArrayObject
         return $this->currentCustomerId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $currentCustomerId
      *

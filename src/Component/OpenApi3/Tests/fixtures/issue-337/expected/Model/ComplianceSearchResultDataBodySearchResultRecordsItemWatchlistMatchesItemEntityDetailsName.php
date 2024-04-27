@@ -13,13 +13,13 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $full;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -28,7 +28,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
         return $this->full;
     }
     /**
-     * 
+     *
      *
      * @param string $full
      *

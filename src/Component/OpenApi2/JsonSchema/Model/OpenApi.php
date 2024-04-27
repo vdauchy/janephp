@@ -79,19 +79,19 @@ class OpenApi extends \ArrayObject
      */
     protected $responses;
     /**
-     * 
+     *
      *
      * @var array<string, string[]>[]|null
      */
     protected $security;
     /**
-     * 
+     *
      *
      * @var array<string, BasicAuthenticationSecurity|ApiKeySecurity|Oauth2ImplicitSecurity|Oauth2PasswordSecurity|Oauth2ApplicationSecurity|Oauth2AccessCodeSecurity>|null
      */
     protected $securityDefinitions;
     /**
-     * 
+     *
      *
      * @var Tag[]|null
      */
@@ -345,7 +345,7 @@ class OpenApi extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return array<string, string[]>[]|null
      */
@@ -354,7 +354,7 @@ class OpenApi extends \ArrayObject
         return $this->security;
     }
     /**
-     * 
+     *
      *
      * @param array<string, string[]>[]|null $security
      *
@@ -367,7 +367,7 @@ class OpenApi extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return array<string, BasicAuthenticationSecurity|ApiKeySecurity|Oauth2ImplicitSecurity|Oauth2PasswordSecurity|Oauth2ApplicationSecurity|Oauth2AccessCodeSecurity>|null
      */
@@ -376,7 +376,7 @@ class OpenApi extends \ArrayObject
         return $this->securityDefinitions;
     }
     /**
-     * 
+     *
      *
      * @param array<string, BasicAuthenticationSecurity|ApiKeySecurity|Oauth2ImplicitSecurity|Oauth2PasswordSecurity|Oauth2ApplicationSecurity|Oauth2AccessCodeSecurity>|null $securityDefinitions
      *
@@ -389,7 +389,7 @@ class OpenApi extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return Tag[]|null
      */
@@ -398,7 +398,7 @@ class OpenApi extends \ArrayObject
         return $this->tags;
     }
     /**
-     * 
+     *
      *
      * @param Tag[]|null $tags
      *

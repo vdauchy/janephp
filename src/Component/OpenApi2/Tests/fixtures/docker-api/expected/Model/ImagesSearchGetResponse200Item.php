@@ -13,37 +13,37 @@ class ImagesSearchGetResponse200Item
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $isOfficial;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $isAutomated;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $starCount;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -52,7 +52,7 @@ class ImagesSearchGetResponse200Item
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string $description
      *
@@ -65,7 +65,7 @@ class ImagesSearchGetResponse200Item
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -74,7 +74,7 @@ class ImagesSearchGetResponse200Item
         return $this->isOfficial;
     }
     /**
-     * 
+     *
      *
      * @param bool $isOfficial
      *
@@ -87,7 +87,7 @@ class ImagesSearchGetResponse200Item
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -96,7 +96,7 @@ class ImagesSearchGetResponse200Item
         return $this->isAutomated;
     }
     /**
-     * 
+     *
      *
      * @param bool $isAutomated
      *
@@ -109,7 +109,7 @@ class ImagesSearchGetResponse200Item
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -118,7 +118,7 @@ class ImagesSearchGetResponse200Item
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -131,7 +131,7 @@ class ImagesSearchGetResponse200Item
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -140,7 +140,7 @@ class ImagesSearchGetResponse200Item
         return $this->starCount;
     }
     /**
-     * 
+     *
      *
      * @param int $starCount
      *

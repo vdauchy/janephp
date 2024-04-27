@@ -13,37 +13,37 @@ class ParchmentsGetHaljsonResponse200Links extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var ParchmentsGetHaljsonResponse200LinksSelf
      */
     protected $self;
     /**
-     * 
+     *
      *
      * @var ParchmentsGetHaljsonResponse200LinksFirst
      */
     protected $first;
     /**
-     * 
+     *
      *
      * @var ParchmentsGetHaljsonResponse200LinksLast
      */
     protected $last;
     /**
-     * 
+     *
      *
      * @var ParchmentsGetHaljsonResponse200LinksNext
      */
     protected $next;
     /**
-     * 
+     *
      *
      * @var ParchmentsGetHaljsonResponse200LinksPrevious
      */
     protected $previous;
     /**
-     * 
+     *
      *
      * @return ParchmentsGetHaljsonResponse200LinksSelf
      */
@@ -52,7 +52,7 @@ class ParchmentsGetHaljsonResponse200Links extends \ArrayObject
         return $this->self;
     }
     /**
-     * 
+     *
      *
      * @param ParchmentsGetHaljsonResponse200LinksSelf $self
      *
@@ -65,7 +65,7 @@ class ParchmentsGetHaljsonResponse200Links extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ParchmentsGetHaljsonResponse200LinksFirst
      */
@@ -74,7 +74,7 @@ class ParchmentsGetHaljsonResponse200Links extends \ArrayObject
         return $this->first;
     }
     /**
-     * 
+     *
      *
      * @param ParchmentsGetHaljsonResponse200LinksFirst $first
      *
@@ -87,7 +87,7 @@ class ParchmentsGetHaljsonResponse200Links extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ParchmentsGetHaljsonResponse200LinksLast
      */
@@ -96,7 +96,7 @@ class ParchmentsGetHaljsonResponse200Links extends \ArrayObject
         return $this->last;
     }
     /**
-     * 
+     *
      *
      * @param ParchmentsGetHaljsonResponse200LinksLast $last
      *
@@ -109,7 +109,7 @@ class ParchmentsGetHaljsonResponse200Links extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ParchmentsGetHaljsonResponse200LinksNext
      */
@@ -118,7 +118,7 @@ class ParchmentsGetHaljsonResponse200Links extends \ArrayObject
         return $this->next;
     }
     /**
-     * 
+     *
      *
      * @param ParchmentsGetHaljsonResponse200LinksNext $next
      *
@@ -131,7 +131,7 @@ class ParchmentsGetHaljsonResponse200Links extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ParchmentsGetHaljsonResponse200LinksPrevious
      */
@@ -140,7 +140,7 @@ class ParchmentsGetHaljsonResponse200Links extends \ArrayObject
         return $this->previous;
     }
     /**
-     * 
+     *
      *
      * @param ParchmentsGetHaljsonResponse200LinksPrevious $previous
      *

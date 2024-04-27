@@ -13,151 +13,151 @@ class ModelFooooooo
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $enumString;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $enumArrayString;
     /**
-     * 
+     *
      *
      * @var mixed
      */
     protected $enumNoType;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $constString;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $minLengthString;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $maxLengthString;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $minMaxLengthString;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $patternString;
     /**
-     * 
+     *
      *
      * @var list<string>
      */
     protected $arrayMinItems;
     /**
-     * 
+     *
      *
      * @var list<string>
      */
     protected $arrayMaxItems;
     /**
-     * 
+     *
      *
      * @var list<string>
      */
     protected $arrayMinMaxItems;
     /**
-     * 
+     *
      *
      * @var list<string>
      */
     protected $arrayUnique;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $numericMultipleOf;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $numericMaximum;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $numericExclusiveMaximum;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $numericMinimum;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $numericExclusiveMinimum;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $emailFormat;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $ipv4Format;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $ipv6Format;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $uriFormat;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $iriFormat;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $uuidFormat;
     /**
-     * 
+     *
      *
      * @var FooFooFoo
      */
     protected $foo;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -166,7 +166,7 @@ class ModelFooooooo
         return $this->enumString;
     }
     /**
-     * 
+     *
      *
      * @param string $enumString
      *
@@ -179,7 +179,7 @@ class ModelFooooooo
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -188,7 +188,7 @@ class ModelFooooooo
         return $this->enumArrayString;
     }
     /**
-     * 
+     *
      *
      * @param string $enumArrayString
      *
@@ -201,7 +201,7 @@ class ModelFooooooo
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return mixed
      */
@@ -210,7 +210,7 @@ class ModelFooooooo
         return $this->enumNoType;
     }
     /**
-     * 
+     *
      *
      * @param mixed $enumNoType
      *
@@ -223,7 +223,7 @@ class ModelFooooooo
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -232,7 +232,7 @@ class ModelFooooooo
         return $this->constString;
     }
     /**
-     * 
+     *
      *
      * @param string $constString
      *
@@ -245,7 +245,7 @@ class ModelFooooooo
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -254,7 +254,7 @@ class ModelFooooooo
         return $this->minLengthString;
     }
     /**
-     * 
+     *
      *
      * @param string $minLengthString
      *
@@ -267,7 +267,7 @@ class ModelFooooooo
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -276,7 +276,7 @@ class ModelFooooooo
         return $this->maxLengthString;
     }
     /**
-     * 
+     *
      *
      * @param string $maxLengthString
      *
@@ -289,7 +289,7 @@ class ModelFooooooo
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -298,7 +298,7 @@ class ModelFooooooo
         return $this->minMaxLengthString;
     }
     /**
-     * 
+     *
      *
      * @param string $minMaxLengthString
      *
@@ -311,7 +311,7 @@ class ModelFooooooo
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -320,7 +320,7 @@ class ModelFooooooo
         return $this->patternString;
     }
     /**
-     * 
+     *
      *
      * @param string $patternString
      *
@@ -333,7 +333,7 @@ class ModelFooooooo
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -342,7 +342,7 @@ class ModelFooooooo
         return $this->arrayMinItems;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $arrayMinItems
      *
@@ -355,7 +355,7 @@ class ModelFooooooo
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -364,7 +364,7 @@ class ModelFooooooo
         return $this->arrayMaxItems;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $arrayMaxItems
      *
@@ -377,7 +377,7 @@ class ModelFooooooo
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -386,7 +386,7 @@ class ModelFooooooo
         return $this->arrayMinMaxItems;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $arrayMinMaxItems
      *
@@ -399,7 +399,7 @@ class ModelFooooooo
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -408,7 +408,7 @@ class ModelFooooooo
         return $this->arrayUnique;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $arrayUnique
      *
@@ -421,7 +421,7 @@ class ModelFooooooo
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -430,7 +430,7 @@ class ModelFooooooo
         return $this->numericMultipleOf;
     }
     /**
-     * 
+     *
      *
      * @param int $numericMultipleOf
      *
@@ -443,7 +443,7 @@ class ModelFooooooo
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -452,7 +452,7 @@ class ModelFooooooo
         return $this->numericMaximum;
     }
     /**
-     * 
+     *
      *
      * @param int $numericMaximum
      *
@@ -465,7 +465,7 @@ class ModelFooooooo
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -474,7 +474,7 @@ class ModelFooooooo
         return $this->numericExclusiveMaximum;
     }
     /**
-     * 
+     *
      *
      * @param int $numericExclusiveMaximum
      *
@@ -487,7 +487,7 @@ class ModelFooooooo
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -496,7 +496,7 @@ class ModelFooooooo
         return $this->numericMinimum;
     }
     /**
-     * 
+     *
      *
      * @param int $numericMinimum
      *
@@ -509,7 +509,7 @@ class ModelFooooooo
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -518,7 +518,7 @@ class ModelFooooooo
         return $this->numericExclusiveMinimum;
     }
     /**
-     * 
+     *
      *
      * @param int $numericExclusiveMinimum
      *
@@ -531,7 +531,7 @@ class ModelFooooooo
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -540,7 +540,7 @@ class ModelFooooooo
         return $this->emailFormat;
     }
     /**
-     * 
+     *
      *
      * @param string $emailFormat
      *
@@ -553,7 +553,7 @@ class ModelFooooooo
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -562,7 +562,7 @@ class ModelFooooooo
         return $this->ipv4Format;
     }
     /**
-     * 
+     *
      *
      * @param string $ipv4Format
      *
@@ -575,7 +575,7 @@ class ModelFooooooo
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -584,7 +584,7 @@ class ModelFooooooo
         return $this->ipv6Format;
     }
     /**
-     * 
+     *
      *
      * @param string $ipv6Format
      *
@@ -597,7 +597,7 @@ class ModelFooooooo
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -606,7 +606,7 @@ class ModelFooooooo
         return $this->uriFormat;
     }
     /**
-     * 
+     *
      *
      * @param string $uriFormat
      *
@@ -619,7 +619,7 @@ class ModelFooooooo
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -628,7 +628,7 @@ class ModelFooooooo
         return $this->iriFormat;
     }
     /**
-     * 
+     *
      *
      * @param string $iriFormat
      *
@@ -641,7 +641,7 @@ class ModelFooooooo
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -650,7 +650,7 @@ class ModelFooooooo
         return $this->uuidFormat;
     }
     /**
-     * 
+     *
      *
      * @param string $uuidFormat
      *
@@ -663,7 +663,7 @@ class ModelFooooooo
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return FooFooFoo
      */
@@ -672,7 +672,7 @@ class ModelFooooooo
         return $this->foo;
     }
     /**
-     * 
+     *
      *
      * @param FooFooFoo $foo
      *

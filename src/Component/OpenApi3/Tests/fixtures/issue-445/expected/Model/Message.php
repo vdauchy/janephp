@@ -13,37 +13,37 @@ class Message
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $retries;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $priority;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $deduplicate;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $kind;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -52,7 +52,7 @@ class Message
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param string|null $id
      */
@@ -62,7 +62,7 @@ class Message
         $this->id = $id;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -71,7 +71,7 @@ class Message
         return $this->retries;
     }
     /**
-     * 
+     *
      *
      * @param int $retries
      */
@@ -81,7 +81,7 @@ class Message
         $this->retries = $retries;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -90,7 +90,7 @@ class Message
         return $this->priority;
     }
     /**
-     * 
+     *
      *
      * @param int $priority
      */
@@ -100,7 +100,7 @@ class Message
         $this->priority = $priority;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -109,7 +109,7 @@ class Message
         return $this->deduplicate;
     }
     /**
-     * 
+     *
      *
      * @param bool $deduplicate
      */
@@ -119,7 +119,7 @@ class Message
         $this->deduplicate = $deduplicate;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -128,7 +128,7 @@ class Message
         return $this->kind;
     }
     /**
-     * 
+     *
      *
      * @param string $kind
      */

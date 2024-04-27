@@ -13,19 +13,19 @@ class IssueEventRename extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $from;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $to;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -34,7 +34,7 @@ class IssueEventRename extends \ArrayObject
         return $this->from;
     }
     /**
-     * 
+     *
      *
      * @param string $from
      *
@@ -47,7 +47,7 @@ class IssueEventRename extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -56,7 +56,7 @@ class IssueEventRename extends \ArrayObject
         return $this->to;
     }
     /**
-     * 
+     *
      *
      * @param string $to
      *

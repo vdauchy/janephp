@@ -19,25 +19,25 @@ class ScimUserList extends \ArrayObject
      */
     protected $schemas;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $totalResults;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $itemsPerPage;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $startIndex;
     /**
-     * 
+     *
      *
      * @var list<ScimUser>
      */
@@ -65,7 +65,7 @@ class ScimUserList extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -74,7 +74,7 @@ class ScimUserList extends \ArrayObject
         return $this->totalResults;
     }
     /**
-     * 
+     *
      *
      * @param int $totalResults
      *
@@ -87,7 +87,7 @@ class ScimUserList extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -96,7 +96,7 @@ class ScimUserList extends \ArrayObject
         return $this->itemsPerPage;
     }
     /**
-     * 
+     *
      *
      * @param int $itemsPerPage
      *
@@ -109,7 +109,7 @@ class ScimUserList extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -118,7 +118,7 @@ class ScimUserList extends \ArrayObject
         return $this->startIndex;
     }
     /**
-     * 
+     *
      *
      * @param int $startIndex
      *
@@ -131,7 +131,7 @@ class ScimUserList extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<ScimUser>
      */
@@ -140,7 +140,7 @@ class ScimUserList extends \ArrayObject
         return $this->resources;
     }
     /**
-     * 
+     *
      *
      * @param list<ScimUser> $resources
      *

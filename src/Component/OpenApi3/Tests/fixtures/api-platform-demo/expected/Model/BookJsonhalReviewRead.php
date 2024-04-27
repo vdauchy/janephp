@@ -13,7 +13,7 @@ class BookJsonhalReviewRead extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var BookJsonhalReviewReadLinks
      */
@@ -25,7 +25,7 @@ class BookJsonhalReviewRead extends \ArrayObject
      */
     protected $title;
     /**
-     * 
+     *
      *
      * @return BookJsonhalReviewReadLinks
      */
@@ -34,7 +34,7 @@ class BookJsonhalReviewRead extends \ArrayObject
         return $this->links;
     }
     /**
-     * 
+     *
      *
      * @param BookJsonhalReviewReadLinks $links
      *

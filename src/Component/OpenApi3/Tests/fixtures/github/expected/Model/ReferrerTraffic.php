@@ -13,25 +13,25 @@ class ReferrerTraffic extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $referrer;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $count;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $uniques;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -40,7 +40,7 @@ class ReferrerTraffic extends \ArrayObject
         return $this->referrer;
     }
     /**
-     * 
+     *
      *
      * @param string $referrer
      *
@@ -53,7 +53,7 @@ class ReferrerTraffic extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -62,7 +62,7 @@ class ReferrerTraffic extends \ArrayObject
         return $this->count;
     }
     /**
-     * 
+     *
      *
      * @param int $count
      *
@@ -75,7 +75,7 @@ class ReferrerTraffic extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -84,7 +84,7 @@ class ReferrerTraffic extends \ArrayObject
         return $this->uniques;
     }
     /**
-     * 
+     *
      *
      * @param int $uniques
      *

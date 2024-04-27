@@ -67,7 +67,7 @@ class Output
      */
     protected $dynamicRendering;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -244,7 +244,7 @@ class Output
         $this->dynamicRendering = $dynamicRendering;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -253,7 +253,7 @@ class Output
         return $this->kind;
     }
     /**
-     * 
+     *
      *
      * @param string $kind
      */

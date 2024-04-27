@@ -6,7 +6,7 @@ class ShowPetById extends \Jane\Component\OpenApi3\Tests\Expected\Runtime\Client
 {
     protected $petId;
     /**
-     * 
+     *
      *
      * @param string $petId The id of the pet to retrieve
      */

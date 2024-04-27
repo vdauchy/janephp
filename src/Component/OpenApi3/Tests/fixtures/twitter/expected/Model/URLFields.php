@@ -49,7 +49,7 @@ class URLFields extends \ArrayObject
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @var list<URLImage>
      */
@@ -187,7 +187,7 @@ class URLFields extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<URLImage>
      */
@@ -196,7 +196,7 @@ class URLFields extends \ArrayObject
         return $this->images;
     }
     /**
-     * 
+     *
      *
      * @param list<URLImage> $images
      *

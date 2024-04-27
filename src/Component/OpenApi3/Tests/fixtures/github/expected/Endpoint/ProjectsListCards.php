@@ -6,7 +6,7 @@ class ProjectsListCards extends \Github\Runtime\Client\BaseEndpoint implements \
 {
     protected $column_id;
     /**
-     * 
+     *
      *
      * @param int $columnId column_id parameter
      * @param array $queryParameters {

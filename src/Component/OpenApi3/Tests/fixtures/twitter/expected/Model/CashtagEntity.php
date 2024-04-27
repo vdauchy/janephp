@@ -25,7 +25,7 @@ class CashtagEntity extends \ArrayObject
      */
     protected $end;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -75,7 +75,7 @@ class CashtagEntity extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -84,7 +84,7 @@ class CashtagEntity extends \ArrayObject
         return $this->tag;
     }
     /**
-     * 
+     *
      *
      * @param string $tag
      *

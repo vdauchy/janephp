@@ -13,13 +13,13 @@ class Issue extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -31,31 +31,31 @@ class Issue extends \ArrayObject
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $repositoryUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $labelsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $commentsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $eventsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -85,7 +85,7 @@ class Issue extends \ArrayObject
      */
     protected $body;
     /**
-     * 
+     *
      *
      * @var IssueUser|null
      */
@@ -97,85 +97,85 @@ class Issue extends \ArrayObject
      */
     protected $labels;
     /**
-     * 
+     *
      *
      * @var IssueAssignee|null
      */
     protected $assignee;
     /**
-     * 
+     *
      *
      * @var list<SimpleUser>|null
      */
     protected $assignees;
     /**
-     * 
+     *
      *
      * @var IssueMilestone|null
      */
     protected $milestone;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $locked;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $activeLockReason;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $comments;
     /**
-     * 
+     *
      *
      * @var IssuePullRequest
      */
     protected $pullRequest;
     /**
-     * 
+     *
      *
      * @var \DateTime|null
      */
     protected $closedAt;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $updatedAt;
     /**
-     * 
+     *
      *
      * @var IssueClosedBy|null
      */
     protected $closedBy;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $bodyHtml;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $bodyText;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -187,25 +187,25 @@ class Issue extends \ArrayObject
      */
     protected $repository;
     /**
-     * 
+     *
      *
      * @var IssuePerformedViaGithubApp|null
      */
     protected $performedViaGithubApp;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $authorAssociation;
     /**
-     * 
+     *
      *
      * @var ReactionRollup
      */
     protected $reactions;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -214,7 +214,7 @@ class Issue extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -227,7 +227,7 @@ class Issue extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -236,7 +236,7 @@ class Issue extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -271,7 +271,7 @@ class Issue extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -280,7 +280,7 @@ class Issue extends \ArrayObject
         return $this->repositoryUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $repositoryUrl
      *
@@ -293,7 +293,7 @@ class Issue extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -302,7 +302,7 @@ class Issue extends \ArrayObject
         return $this->labelsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $labelsUrl
      *
@@ -315,7 +315,7 @@ class Issue extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -324,7 +324,7 @@ class Issue extends \ArrayObject
         return $this->commentsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $commentsUrl
      *
@@ -337,7 +337,7 @@ class Issue extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -346,7 +346,7 @@ class Issue extends \ArrayObject
         return $this->eventsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $eventsUrl
      *
@@ -359,7 +359,7 @@ class Issue extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -368,7 +368,7 @@ class Issue extends \ArrayObject
         return $this->htmlUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $htmlUrl
      *
@@ -469,7 +469,7 @@ class Issue extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return IssueUser|null
      */
@@ -478,7 +478,7 @@ class Issue extends \ArrayObject
         return $this->user;
     }
     /**
-     * 
+     *
      *
      * @param IssueUser|null $user
      *
@@ -513,7 +513,7 @@ class Issue extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return IssueAssignee|null
      */
@@ -522,7 +522,7 @@ class Issue extends \ArrayObject
         return $this->assignee;
     }
     /**
-     * 
+     *
      *
      * @param IssueAssignee|null $assignee
      *
@@ -535,7 +535,7 @@ class Issue extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<SimpleUser>|null
      */
@@ -544,7 +544,7 @@ class Issue extends \ArrayObject
         return $this->assignees;
     }
     /**
-     * 
+     *
      *
      * @param list<SimpleUser>|null $assignees
      *
@@ -557,7 +557,7 @@ class Issue extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return IssueMilestone|null
      */
@@ -566,7 +566,7 @@ class Issue extends \ArrayObject
         return $this->milestone;
     }
     /**
-     * 
+     *
      *
      * @param IssueMilestone|null $milestone
      *
@@ -579,7 +579,7 @@ class Issue extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -588,7 +588,7 @@ class Issue extends \ArrayObject
         return $this->locked;
     }
     /**
-     * 
+     *
      *
      * @param bool $locked
      *
@@ -601,7 +601,7 @@ class Issue extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -610,7 +610,7 @@ class Issue extends \ArrayObject
         return $this->activeLockReason;
     }
     /**
-     * 
+     *
      *
      * @param string|null $activeLockReason
      *
@@ -623,7 +623,7 @@ class Issue extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -632,7 +632,7 @@ class Issue extends \ArrayObject
         return $this->comments;
     }
     /**
-     * 
+     *
      *
      * @param int $comments
      *
@@ -645,7 +645,7 @@ class Issue extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return IssuePullRequest
      */
@@ -654,7 +654,7 @@ class Issue extends \ArrayObject
         return $this->pullRequest;
     }
     /**
-     * 
+     *
      *
      * @param IssuePullRequest $pullRequest
      *
@@ -667,7 +667,7 @@ class Issue extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime|null
      */
@@ -676,7 +676,7 @@ class Issue extends \ArrayObject
         return $this->closedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime|null $closedAt
      *
@@ -689,7 +689,7 @@ class Issue extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -698,7 +698,7 @@ class Issue extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $createdAt
      *
@@ -711,7 +711,7 @@ class Issue extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -720,7 +720,7 @@ class Issue extends \ArrayObject
         return $this->updatedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $updatedAt
      *
@@ -733,7 +733,7 @@ class Issue extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return IssueClosedBy|null
      */
@@ -742,7 +742,7 @@ class Issue extends \ArrayObject
         return $this->closedBy;
     }
     /**
-     * 
+     *
      *
      * @param IssueClosedBy|null $closedBy
      *
@@ -755,7 +755,7 @@ class Issue extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -764,7 +764,7 @@ class Issue extends \ArrayObject
         return $this->bodyHtml;
     }
     /**
-     * 
+     *
      *
      * @param string $bodyHtml
      *
@@ -777,7 +777,7 @@ class Issue extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -786,7 +786,7 @@ class Issue extends \ArrayObject
         return $this->bodyText;
     }
     /**
-     * 
+     *
      *
      * @param string $bodyText
      *
@@ -799,7 +799,7 @@ class Issue extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -808,7 +808,7 @@ class Issue extends \ArrayObject
         return $this->timelineUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $timelineUrl
      *
@@ -843,7 +843,7 @@ class Issue extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return IssuePerformedViaGithubApp|null
      */
@@ -852,7 +852,7 @@ class Issue extends \ArrayObject
         return $this->performedViaGithubApp;
     }
     /**
-     * 
+     *
      *
      * @param IssuePerformedViaGithubApp|null $performedViaGithubApp
      *
@@ -865,7 +865,7 @@ class Issue extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -874,7 +874,7 @@ class Issue extends \ArrayObject
         return $this->authorAssociation;
     }
     /**
-     * 
+     *
      *
      * @param string $authorAssociation
      *
@@ -887,7 +887,7 @@ class Issue extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ReactionRollup
      */
@@ -896,7 +896,7 @@ class Issue extends \ArrayObject
         return $this->reactions;
     }
     /**
-     * 
+     *
      *
      * @param ReactionRollup $reactions
      *

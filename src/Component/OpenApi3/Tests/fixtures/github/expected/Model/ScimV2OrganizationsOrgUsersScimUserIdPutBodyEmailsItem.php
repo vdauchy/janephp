@@ -13,25 +13,25 @@ class ScimV2OrganizationsOrgUsersScimUserIdPutBodyEmailsItem extends \ArrayObjec
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $value;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $primary;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -40,7 +40,7 @@ class ScimV2OrganizationsOrgUsersScimUserIdPutBodyEmailsItem extends \ArrayObjec
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string $type
      *
@@ -53,7 +53,7 @@ class ScimV2OrganizationsOrgUsersScimUserIdPutBodyEmailsItem extends \ArrayObjec
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -62,7 +62,7 @@ class ScimV2OrganizationsOrgUsersScimUserIdPutBodyEmailsItem extends \ArrayObjec
         return $this->value;
     }
     /**
-     * 
+     *
      *
      * @param string $value
      *
@@ -75,7 +75,7 @@ class ScimV2OrganizationsOrgUsersScimUserIdPutBodyEmailsItem extends \ArrayObjec
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -84,7 +84,7 @@ class ScimV2OrganizationsOrgUsersScimUserIdPutBodyEmailsItem extends \ArrayObjec
         return $this->primary;
     }
     /**
-     * 
+     *
      *
      * @param bool $primary
      *

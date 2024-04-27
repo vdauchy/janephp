@@ -13,13 +13,13 @@ class Label extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -37,7 +37,7 @@ class Label extends \ArrayObject
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string|null
      */
@@ -49,13 +49,13 @@ class Label extends \ArrayObject
      */
     protected $color;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $default;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -64,7 +64,7 @@ class Label extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -77,7 +77,7 @@ class Label extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -86,7 +86,7 @@ class Label extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -143,7 +143,7 @@ class Label extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -152,7 +152,7 @@ class Label extends \ArrayObject
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string|null $description
      *
@@ -187,7 +187,7 @@ class Label extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -196,7 +196,7 @@ class Label extends \ArrayObject
         return $this->default;
     }
     /**
-     * 
+     *
      *
      * @param bool $default
      *

@@ -13,25 +13,25 @@ class WorkflowRunUsageBillable extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var WorkflowRunUsageBillableUBUNTU
      */
     protected $uBUNTU;
     /**
-     * 
+     *
      *
      * @var WorkflowRunUsageBillableMACOS
      */
     protected $mACOS;
     /**
-     * 
+     *
      *
      * @var WorkflowRunUsageBillableWINDOWS
      */
     protected $wINDOWS;
     /**
-     * 
+     *
      *
      * @return WorkflowRunUsageBillableUBUNTU
      */
@@ -40,7 +40,7 @@ class WorkflowRunUsageBillable extends \ArrayObject
         return $this->uBUNTU;
     }
     /**
-     * 
+     *
      *
      * @param WorkflowRunUsageBillableUBUNTU $uBUNTU
      *
@@ -53,7 +53,7 @@ class WorkflowRunUsageBillable extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return WorkflowRunUsageBillableMACOS
      */
@@ -62,7 +62,7 @@ class WorkflowRunUsageBillable extends \ArrayObject
         return $this->mACOS;
     }
     /**
-     * 
+     *
      *
      * @param WorkflowRunUsageBillableMACOS $mACOS
      *
@@ -75,7 +75,7 @@ class WorkflowRunUsageBillable extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return WorkflowRunUsageBillableWINDOWS
      */
@@ -84,7 +84,7 @@ class WorkflowRunUsageBillable extends \ArrayObject
         return $this->wINDOWS;
     }
     /**
-     * 
+     *
      *
      * @param WorkflowRunUsageBillableWINDOWS $wINDOWS
      *

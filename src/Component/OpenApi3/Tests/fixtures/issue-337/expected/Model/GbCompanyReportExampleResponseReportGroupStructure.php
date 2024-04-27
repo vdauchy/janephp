@@ -13,13 +13,13 @@ class GbCompanyReportExampleResponseReportGroupStructure extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var list<GbCompanyReportExampleResponseReportGroupStructureSubsidiaryCompaniesItem>
      */
     protected $subsidiaryCompanies;
     /**
-     * 
+     *
      *
      * @return list<GbCompanyReportExampleResponseReportGroupStructureSubsidiaryCompaniesItem>
      */
@@ -28,7 +28,7 @@ class GbCompanyReportExampleResponseReportGroupStructure extends \ArrayObject
         return $this->subsidiaryCompanies;
     }
     /**
-     * 
+     *
      *
      * @param list<GbCompanyReportExampleResponseReportGroupStructureSubsidiaryCompaniesItem> $subsidiaryCompanies
      *

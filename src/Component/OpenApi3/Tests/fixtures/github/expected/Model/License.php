@@ -13,85 +13,85 @@ class License extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $key;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $spdxId;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $nodeId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $htmlUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $implementation;
     /**
-     * 
+     *
      *
      * @var list<string>
      */
     protected $permissions;
     /**
-     * 
+     *
      *
      * @var list<string>
      */
     protected $conditions;
     /**
-     * 
+     *
      *
      * @var list<string>
      */
     protected $limitations;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $body;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $featured;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -100,7 +100,7 @@ class License extends \ArrayObject
         return $this->key;
     }
     /**
-     * 
+     *
      *
      * @param string $key
      *
@@ -113,7 +113,7 @@ class License extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -122,7 +122,7 @@ class License extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -135,7 +135,7 @@ class License extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -144,7 +144,7 @@ class License extends \ArrayObject
         return $this->spdxId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $spdxId
      *
@@ -157,7 +157,7 @@ class License extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -166,7 +166,7 @@ class License extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string|null $url
      *
@@ -179,7 +179,7 @@ class License extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -188,7 +188,7 @@ class License extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -201,7 +201,7 @@ class License extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -210,7 +210,7 @@ class License extends \ArrayObject
         return $this->htmlUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $htmlUrl
      *
@@ -223,7 +223,7 @@ class License extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -232,7 +232,7 @@ class License extends \ArrayObject
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string $description
      *
@@ -245,7 +245,7 @@ class License extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -254,7 +254,7 @@ class License extends \ArrayObject
         return $this->implementation;
     }
     /**
-     * 
+     *
      *
      * @param string $implementation
      *
@@ -267,7 +267,7 @@ class License extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -276,7 +276,7 @@ class License extends \ArrayObject
         return $this->permissions;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $permissions
      *
@@ -289,7 +289,7 @@ class License extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -298,7 +298,7 @@ class License extends \ArrayObject
         return $this->conditions;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $conditions
      *
@@ -311,7 +311,7 @@ class License extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -320,7 +320,7 @@ class License extends \ArrayObject
         return $this->limitations;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $limitations
      *
@@ -333,7 +333,7 @@ class License extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -342,7 +342,7 @@ class License extends \ArrayObject
         return $this->body;
     }
     /**
-     * 
+     *
      *
      * @param string $body
      *
@@ -355,7 +355,7 @@ class License extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -364,7 +364,7 @@ class License extends \ArrayObject
         return $this->featured;
     }
     /**
-     * 
+     *
      *
      * @param bool $featured
      *

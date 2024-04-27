@@ -13,31 +13,31 @@ class ScimV2OrganizationsOrgUsersScimUserIdPutBody extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var list<string>
      */
     protected $schemas;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $displayName;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $externalId;
     /**
-     * 
+     *
      *
      * @var list<string>
      */
     protected $groups;
     /**
-     * 
+     *
      *
      * @var bool
      */
@@ -49,7 +49,7 @@ class ScimV2OrganizationsOrgUsersScimUserIdPutBody extends \ArrayObject
      */
     protected $userName;
     /**
-     * 
+     *
      *
      * @var ScimV2OrganizationsOrgUsersScimUserIdPutBodyName
      */
@@ -61,7 +61,7 @@ class ScimV2OrganizationsOrgUsersScimUserIdPutBody extends \ArrayObject
      */
     protected $emails;
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -70,7 +70,7 @@ class ScimV2OrganizationsOrgUsersScimUserIdPutBody extends \ArrayObject
         return $this->schemas;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $schemas
      *
@@ -83,7 +83,7 @@ class ScimV2OrganizationsOrgUsersScimUserIdPutBody extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -92,7 +92,7 @@ class ScimV2OrganizationsOrgUsersScimUserIdPutBody extends \ArrayObject
         return $this->displayName;
     }
     /**
-     * 
+     *
      *
      * @param string $displayName
      *
@@ -105,7 +105,7 @@ class ScimV2OrganizationsOrgUsersScimUserIdPutBody extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -114,7 +114,7 @@ class ScimV2OrganizationsOrgUsersScimUserIdPutBody extends \ArrayObject
         return $this->externalId;
     }
     /**
-     * 
+     *
      *
      * @param string $externalId
      *
@@ -127,7 +127,7 @@ class ScimV2OrganizationsOrgUsersScimUserIdPutBody extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -136,7 +136,7 @@ class ScimV2OrganizationsOrgUsersScimUserIdPutBody extends \ArrayObject
         return $this->groups;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $groups
      *
@@ -149,7 +149,7 @@ class ScimV2OrganizationsOrgUsersScimUserIdPutBody extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -158,7 +158,7 @@ class ScimV2OrganizationsOrgUsersScimUserIdPutBody extends \ArrayObject
         return $this->active;
     }
     /**
-     * 
+     *
      *
      * @param bool $active
      *
@@ -193,7 +193,7 @@ class ScimV2OrganizationsOrgUsersScimUserIdPutBody extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ScimV2OrganizationsOrgUsersScimUserIdPutBodyName
      */
@@ -202,7 +202,7 @@ class ScimV2OrganizationsOrgUsersScimUserIdPutBody extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param ScimV2OrganizationsOrgUsersScimUserIdPutBodyName $name
      *

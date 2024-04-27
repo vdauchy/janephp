@@ -13,25 +13,25 @@ class MarketplacePurchaseMarketplacePendingChange extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $isInstalled;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $effectiveDate;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $unitCount;
     /**
-     * 
+     *
      *
      * @var int
      */
@@ -43,7 +43,7 @@ class MarketplacePurchaseMarketplacePendingChange extends \ArrayObject
      */
     protected $plan;
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -52,7 +52,7 @@ class MarketplacePurchaseMarketplacePendingChange extends \ArrayObject
         return $this->isInstalled;
     }
     /**
-     * 
+     *
      *
      * @param bool $isInstalled
      *
@@ -65,7 +65,7 @@ class MarketplacePurchaseMarketplacePendingChange extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -74,7 +74,7 @@ class MarketplacePurchaseMarketplacePendingChange extends \ArrayObject
         return $this->effectiveDate;
     }
     /**
-     * 
+     *
      *
      * @param string $effectiveDate
      *
@@ -87,7 +87,7 @@ class MarketplacePurchaseMarketplacePendingChange extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -96,7 +96,7 @@ class MarketplacePurchaseMarketplacePendingChange extends \ArrayObject
         return $this->unitCount;
     }
     /**
-     * 
+     *
      *
      * @param int|null $unitCount
      *
@@ -109,7 +109,7 @@ class MarketplacePurchaseMarketplacePendingChange extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -118,7 +118,7 @@ class MarketplacePurchaseMarketplacePendingChange extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *

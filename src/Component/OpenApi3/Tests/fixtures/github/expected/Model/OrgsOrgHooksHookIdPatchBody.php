@@ -31,7 +31,7 @@ class OrgsOrgHooksHookIdPatchBody extends \ArrayObject
      */
     protected $active = true;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -103,7 +103,7 @@ class OrgsOrgHooksHookIdPatchBody extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -112,7 +112,7 @@ class OrgsOrgHooksHookIdPatchBody extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *

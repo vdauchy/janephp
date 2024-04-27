@@ -13,25 +13,25 @@ class InstallationRepositoriesGetResponse200 extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $totalCount;
     /**
-     * 
+     *
      *
      * @var list<Repository>
      */
     protected $repositories;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $repositorySelection;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -40,7 +40,7 @@ class InstallationRepositoriesGetResponse200 extends \ArrayObject
         return $this->totalCount;
     }
     /**
-     * 
+     *
      *
      * @param int $totalCount
      *
@@ -53,7 +53,7 @@ class InstallationRepositoriesGetResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<Repository>
      */
@@ -62,7 +62,7 @@ class InstallationRepositoriesGetResponse200 extends \ArrayObject
         return $this->repositories;
     }
     /**
-     * 
+     *
      *
      * @param list<Repository> $repositories
      *
@@ -75,7 +75,7 @@ class InstallationRepositoriesGetResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -84,7 +84,7 @@ class InstallationRepositoriesGetResponse200 extends \ArrayObject
         return $this->repositorySelection;
     }
     /**
-     * 
+     *
      *
      * @param string $repositorySelection
      *

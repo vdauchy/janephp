@@ -13,25 +13,25 @@ class ImageRootFS
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @var list<string>
      */
     protected $layers;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $baseLayer;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -40,7 +40,7 @@ class ImageRootFS
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string $type
      *
@@ -53,7 +53,7 @@ class ImageRootFS
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -62,7 +62,7 @@ class ImageRootFS
         return $this->layers;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $layers
      *
@@ -75,7 +75,7 @@ class ImageRootFS
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -84,7 +84,7 @@ class ImageRootFS
         return $this->baseLayer;
     }
     /**
-     * 
+     *
      *
      * @param string $baseLayer
      *

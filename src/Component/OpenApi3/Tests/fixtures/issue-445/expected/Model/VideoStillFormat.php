@@ -13,7 +13,7 @@ class VideoStillFormat extends FormatBase
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
@@ -25,7 +25,7 @@ class VideoStillFormat extends FormatBase
      */
     protected $positionInSeconds;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -34,7 +34,7 @@ class VideoStillFormat extends FormatBase
         return $this->extension;
     }
     /**
-     * 
+     *
      *
      * @param string|null $extension
      *

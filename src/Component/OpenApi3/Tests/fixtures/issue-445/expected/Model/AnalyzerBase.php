@@ -13,13 +13,13 @@ class AnalyzerBase
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $kind;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -28,7 +28,7 @@ class AnalyzerBase
         return $this->kind;
     }
     /**
-     * 
+     *
      *
      * @param string $kind
      */

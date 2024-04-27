@@ -13,49 +13,49 @@ class CreateFreshInvestigationRequestSearchCriteria extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $additionalInfo;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $telephoneNumber;
     /**
-     * 
+     *
      *
      * @var CreateFreshInvestigationRequestSearchCriteriaAddress
      */
     protected $address;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $regNo;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $vatNo;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $countryCode;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -64,7 +64,7 @@ class CreateFreshInvestigationRequestSearchCriteria extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -77,7 +77,7 @@ class CreateFreshInvestigationRequestSearchCriteria extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -86,7 +86,7 @@ class CreateFreshInvestigationRequestSearchCriteria extends \ArrayObject
         return $this->additionalInfo;
     }
     /**
-     * 
+     *
      *
      * @param string $additionalInfo
      *
@@ -99,7 +99,7 @@ class CreateFreshInvestigationRequestSearchCriteria extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -108,7 +108,7 @@ class CreateFreshInvestigationRequestSearchCriteria extends \ArrayObject
         return $this->telephoneNumber;
     }
     /**
-     * 
+     *
      *
      * @param string $telephoneNumber
      *
@@ -121,7 +121,7 @@ class CreateFreshInvestigationRequestSearchCriteria extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return CreateFreshInvestigationRequestSearchCriteriaAddress
      */
@@ -130,7 +130,7 @@ class CreateFreshInvestigationRequestSearchCriteria extends \ArrayObject
         return $this->address;
     }
     /**
-     * 
+     *
      *
      * @param CreateFreshInvestigationRequestSearchCriteriaAddress $address
      *
@@ -143,7 +143,7 @@ class CreateFreshInvestigationRequestSearchCriteria extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -152,7 +152,7 @@ class CreateFreshInvestigationRequestSearchCriteria extends \ArrayObject
         return $this->regNo;
     }
     /**
-     * 
+     *
      *
      * @param string $regNo
      *
@@ -165,7 +165,7 @@ class CreateFreshInvestigationRequestSearchCriteria extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -174,7 +174,7 @@ class CreateFreshInvestigationRequestSearchCriteria extends \ArrayObject
         return $this->vatNo;
     }
     /**
-     * 
+     *
      *
      * @param string $vatNo
      *
@@ -187,7 +187,7 @@ class CreateFreshInvestigationRequestSearchCriteria extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -196,7 +196,7 @@ class CreateFreshInvestigationRequestSearchCriteria extends \ArrayObject
         return $this->countryCode;
     }
     /**
-     * 
+     *
      *
      * @param string $countryCode
      *

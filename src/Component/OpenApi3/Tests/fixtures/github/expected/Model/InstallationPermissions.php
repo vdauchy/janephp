@@ -13,55 +13,55 @@ class InstallationPermissions extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $deployments;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $checks;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $metadata;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $contents;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $pullRequests;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $statuses;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $issues;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $organizationAdministration;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -70,7 +70,7 @@ class InstallationPermissions extends \ArrayObject
         return $this->deployments;
     }
     /**
-     * 
+     *
      *
      * @param string $deployments
      *
@@ -83,7 +83,7 @@ class InstallationPermissions extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -92,7 +92,7 @@ class InstallationPermissions extends \ArrayObject
         return $this->checks;
     }
     /**
-     * 
+     *
      *
      * @param string $checks
      *
@@ -105,7 +105,7 @@ class InstallationPermissions extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -114,7 +114,7 @@ class InstallationPermissions extends \ArrayObject
         return $this->metadata;
     }
     /**
-     * 
+     *
      *
      * @param string $metadata
      *
@@ -127,7 +127,7 @@ class InstallationPermissions extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -136,7 +136,7 @@ class InstallationPermissions extends \ArrayObject
         return $this->contents;
     }
     /**
-     * 
+     *
      *
      * @param string $contents
      *
@@ -149,7 +149,7 @@ class InstallationPermissions extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -158,7 +158,7 @@ class InstallationPermissions extends \ArrayObject
         return $this->pullRequests;
     }
     /**
-     * 
+     *
      *
      * @param string $pullRequests
      *
@@ -171,7 +171,7 @@ class InstallationPermissions extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -180,7 +180,7 @@ class InstallationPermissions extends \ArrayObject
         return $this->statuses;
     }
     /**
-     * 
+     *
      *
      * @param string $statuses
      *
@@ -193,7 +193,7 @@ class InstallationPermissions extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -202,7 +202,7 @@ class InstallationPermissions extends \ArrayObject
         return $this->issues;
     }
     /**
-     * 
+     *
      *
      * @param string $issues
      *
@@ -215,7 +215,7 @@ class InstallationPermissions extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -224,7 +224,7 @@ class InstallationPermissions extends \ArrayObject
         return $this->organizationAdministration;
     }
     /**
-     * 
+     *
      *
      * @param string $organizationAdministration
      *

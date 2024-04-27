@@ -13,85 +13,85 @@ class MarketplaceListingPlan extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $accountsUrl;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $number;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $monthlyPriceInCents;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $yearlyPriceInCents;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $priceModel;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $hasFreeTrial;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $unitName;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $state;
     /**
-     * 
+     *
      *
      * @var list<string>
      */
     protected $bullets;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -100,7 +100,7 @@ class MarketplaceListingPlan extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -113,7 +113,7 @@ class MarketplaceListingPlan extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -122,7 +122,7 @@ class MarketplaceListingPlan extends \ArrayObject
         return $this->accountsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $accountsUrl
      *
@@ -135,7 +135,7 @@ class MarketplaceListingPlan extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -144,7 +144,7 @@ class MarketplaceListingPlan extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -157,7 +157,7 @@ class MarketplaceListingPlan extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -166,7 +166,7 @@ class MarketplaceListingPlan extends \ArrayObject
         return $this->number;
     }
     /**
-     * 
+     *
      *
      * @param int $number
      *
@@ -179,7 +179,7 @@ class MarketplaceListingPlan extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -188,7 +188,7 @@ class MarketplaceListingPlan extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -201,7 +201,7 @@ class MarketplaceListingPlan extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -210,7 +210,7 @@ class MarketplaceListingPlan extends \ArrayObject
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string $description
      *
@@ -223,7 +223,7 @@ class MarketplaceListingPlan extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -232,7 +232,7 @@ class MarketplaceListingPlan extends \ArrayObject
         return $this->monthlyPriceInCents;
     }
     /**
-     * 
+     *
      *
      * @param int $monthlyPriceInCents
      *
@@ -245,7 +245,7 @@ class MarketplaceListingPlan extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -254,7 +254,7 @@ class MarketplaceListingPlan extends \ArrayObject
         return $this->yearlyPriceInCents;
     }
     /**
-     * 
+     *
      *
      * @param int $yearlyPriceInCents
      *
@@ -267,7 +267,7 @@ class MarketplaceListingPlan extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -276,7 +276,7 @@ class MarketplaceListingPlan extends \ArrayObject
         return $this->priceModel;
     }
     /**
-     * 
+     *
      *
      * @param string $priceModel
      *
@@ -289,7 +289,7 @@ class MarketplaceListingPlan extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -298,7 +298,7 @@ class MarketplaceListingPlan extends \ArrayObject
         return $this->hasFreeTrial;
     }
     /**
-     * 
+     *
      *
      * @param bool $hasFreeTrial
      *
@@ -311,7 +311,7 @@ class MarketplaceListingPlan extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -320,7 +320,7 @@ class MarketplaceListingPlan extends \ArrayObject
         return $this->unitName;
     }
     /**
-     * 
+     *
      *
      * @param string|null $unitName
      *
@@ -333,7 +333,7 @@ class MarketplaceListingPlan extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -342,7 +342,7 @@ class MarketplaceListingPlan extends \ArrayObject
         return $this->state;
     }
     /**
-     * 
+     *
      *
      * @param string $state
      *
@@ -355,7 +355,7 @@ class MarketplaceListingPlan extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -364,7 +364,7 @@ class MarketplaceListingPlan extends \ArrayObject
         return $this->bullets;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $bullets
      *

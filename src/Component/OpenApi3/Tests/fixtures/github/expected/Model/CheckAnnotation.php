@@ -13,67 +13,67 @@ class CheckAnnotation extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $path;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $startLine;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $endLine;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $startColumn;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $endColumn;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $annotationLevel;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $title;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $message;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $rawDetails;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $blobHref;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -82,7 +82,7 @@ class CheckAnnotation extends \ArrayObject
         return $this->path;
     }
     /**
-     * 
+     *
      *
      * @param string $path
      *
@@ -95,7 +95,7 @@ class CheckAnnotation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -104,7 +104,7 @@ class CheckAnnotation extends \ArrayObject
         return $this->startLine;
     }
     /**
-     * 
+     *
      *
      * @param int $startLine
      *
@@ -117,7 +117,7 @@ class CheckAnnotation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -126,7 +126,7 @@ class CheckAnnotation extends \ArrayObject
         return $this->endLine;
     }
     /**
-     * 
+     *
      *
      * @param int $endLine
      *
@@ -139,7 +139,7 @@ class CheckAnnotation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -148,7 +148,7 @@ class CheckAnnotation extends \ArrayObject
         return $this->startColumn;
     }
     /**
-     * 
+     *
      *
      * @param int|null $startColumn
      *
@@ -161,7 +161,7 @@ class CheckAnnotation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -170,7 +170,7 @@ class CheckAnnotation extends \ArrayObject
         return $this->endColumn;
     }
     /**
-     * 
+     *
      *
      * @param int|null $endColumn
      *
@@ -183,7 +183,7 @@ class CheckAnnotation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -192,7 +192,7 @@ class CheckAnnotation extends \ArrayObject
         return $this->annotationLevel;
     }
     /**
-     * 
+     *
      *
      * @param string|null $annotationLevel
      *
@@ -205,7 +205,7 @@ class CheckAnnotation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -214,7 +214,7 @@ class CheckAnnotation extends \ArrayObject
         return $this->title;
     }
     /**
-     * 
+     *
      *
      * @param string|null $title
      *
@@ -227,7 +227,7 @@ class CheckAnnotation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -236,7 +236,7 @@ class CheckAnnotation extends \ArrayObject
         return $this->message;
     }
     /**
-     * 
+     *
      *
      * @param string|null $message
      *
@@ -249,7 +249,7 @@ class CheckAnnotation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -258,7 +258,7 @@ class CheckAnnotation extends \ArrayObject
         return $this->rawDetails;
     }
     /**
-     * 
+     *
      *
      * @param string|null $rawDetails
      *
@@ -271,7 +271,7 @@ class CheckAnnotation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -280,7 +280,7 @@ class CheckAnnotation extends \ArrayObject
         return $this->blobHref;
     }
     /**
-     * 
+     *
      *
      * @param string $blobHref
      *

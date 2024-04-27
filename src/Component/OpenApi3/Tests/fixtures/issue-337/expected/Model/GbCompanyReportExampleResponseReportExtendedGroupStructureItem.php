@@ -13,55 +13,55 @@ class GbCompanyReportExampleResponseReportExtendedGroupStructureItem extends \Ar
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $country;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $safeNumber;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $companyName;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $registeredNumber;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $latestAnnualAccounts;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $level;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $status;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -70,7 +70,7 @@ class GbCompanyReportExampleResponseReportExtendedGroupStructureItem extends \Ar
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param string $id
      *
@@ -83,7 +83,7 @@ class GbCompanyReportExampleResponseReportExtendedGroupStructureItem extends \Ar
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -92,7 +92,7 @@ class GbCompanyReportExampleResponseReportExtendedGroupStructureItem extends \Ar
         return $this->country;
     }
     /**
-     * 
+     *
      *
      * @param string $country
      *
@@ -105,7 +105,7 @@ class GbCompanyReportExampleResponseReportExtendedGroupStructureItem extends \Ar
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -114,7 +114,7 @@ class GbCompanyReportExampleResponseReportExtendedGroupStructureItem extends \Ar
         return $this->safeNumber;
     }
     /**
-     * 
+     *
      *
      * @param string $safeNumber
      *
@@ -127,7 +127,7 @@ class GbCompanyReportExampleResponseReportExtendedGroupStructureItem extends \Ar
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -136,7 +136,7 @@ class GbCompanyReportExampleResponseReportExtendedGroupStructureItem extends \Ar
         return $this->companyName;
     }
     /**
-     * 
+     *
      *
      * @param string $companyName
      *
@@ -149,7 +149,7 @@ class GbCompanyReportExampleResponseReportExtendedGroupStructureItem extends \Ar
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -158,7 +158,7 @@ class GbCompanyReportExampleResponseReportExtendedGroupStructureItem extends \Ar
         return $this->registeredNumber;
     }
     /**
-     * 
+     *
      *
      * @param string $registeredNumber
      *
@@ -171,7 +171,7 @@ class GbCompanyReportExampleResponseReportExtendedGroupStructureItem extends \Ar
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -180,7 +180,7 @@ class GbCompanyReportExampleResponseReportExtendedGroupStructureItem extends \Ar
         return $this->latestAnnualAccounts;
     }
     /**
-     * 
+     *
      *
      * @param string $latestAnnualAccounts
      *
@@ -193,7 +193,7 @@ class GbCompanyReportExampleResponseReportExtendedGroupStructureItem extends \Ar
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -202,7 +202,7 @@ class GbCompanyReportExampleResponseReportExtendedGroupStructureItem extends \Ar
         return $this->level;
     }
     /**
-     * 
+     *
      *
      * @param float $level
      *
@@ -215,7 +215,7 @@ class GbCompanyReportExampleResponseReportExtendedGroupStructureItem extends \Ar
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -224,7 +224,7 @@ class GbCompanyReportExampleResponseReportExtendedGroupStructureItem extends \Ar
         return $this->status;
     }
     /**
-     * 
+     *
      *
      * @param string $status
      *

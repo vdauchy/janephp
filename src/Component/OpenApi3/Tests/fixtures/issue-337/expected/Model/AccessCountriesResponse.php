@@ -13,19 +13,19 @@ class AccessCountriesResponse extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $correlationId;
     /**
-     * 
+     *
      *
      * @var list<AccessCountriesResponseCountryAccessItem>
      */
     protected $countryAccess;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -34,7 +34,7 @@ class AccessCountriesResponse extends \ArrayObject
         return $this->correlationId;
     }
     /**
-     * 
+     *
      *
      * @param string $correlationId
      *
@@ -47,7 +47,7 @@ class AccessCountriesResponse extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<AccessCountriesResponseCountryAccessItem>
      */
@@ -56,7 +56,7 @@ class AccessCountriesResponse extends \ArrayObject
         return $this->countryAccess;
     }
     /**
-     * 
+     *
      *
      * @param list<AccessCountriesResponseCountryAccessItem> $countryAccess
      *

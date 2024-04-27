@@ -49,7 +49,7 @@ class BusinessRule
      */
     protected $enableTracing;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -169,7 +169,7 @@ class BusinessRule
         $this->enableTracing = $enableTracing;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -178,7 +178,7 @@ class BusinessRule
         return $this->kind;
     }
     /**
-     * 
+     *
      *
      * @param string $kind
      */

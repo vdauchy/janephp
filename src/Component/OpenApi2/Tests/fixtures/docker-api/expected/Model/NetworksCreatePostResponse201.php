@@ -19,7 +19,7 @@ class NetworksCreatePostResponse201
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -47,7 +47,7 @@ class NetworksCreatePostResponse201
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -56,7 +56,7 @@ class NetworksCreatePostResponse201
         return $this->warning;
     }
     /**
-     * 
+     *
      *
      * @param string $warning
      *

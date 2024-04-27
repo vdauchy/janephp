@@ -13,19 +13,19 @@ class AuthenticationRequest extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $username;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $password;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -34,7 +34,7 @@ class AuthenticationRequest extends \ArrayObject
         return $this->username;
     }
     /**
-     * 
+     *
      *
      * @param string $username
      *
@@ -47,7 +47,7 @@ class AuthenticationRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -56,7 +56,7 @@ class AuthenticationRequest extends \ArrayObject
         return $this->password;
     }
     /**
-     * 
+     *
      *
      * @param string $password
      *

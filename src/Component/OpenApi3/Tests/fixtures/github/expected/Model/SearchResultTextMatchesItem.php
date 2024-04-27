@@ -13,37 +13,37 @@ class SearchResultTextMatchesItem extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $objectUrl;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $objectType;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $property;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $fragment;
     /**
-     * 
+     *
      *
      * @var list<SearchResultTextMatchesItemMatchesItem>
      */
     protected $matches;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -52,7 +52,7 @@ class SearchResultTextMatchesItem extends \ArrayObject
         return $this->objectUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $objectUrl
      *
@@ -65,7 +65,7 @@ class SearchResultTextMatchesItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -74,7 +74,7 @@ class SearchResultTextMatchesItem extends \ArrayObject
         return $this->objectType;
     }
     /**
-     * 
+     *
      *
      * @param string|null $objectType
      *
@@ -87,7 +87,7 @@ class SearchResultTextMatchesItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -96,7 +96,7 @@ class SearchResultTextMatchesItem extends \ArrayObject
         return $this->property;
     }
     /**
-     * 
+     *
      *
      * @param string $property
      *
@@ -109,7 +109,7 @@ class SearchResultTextMatchesItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -118,7 +118,7 @@ class SearchResultTextMatchesItem extends \ArrayObject
         return $this->fragment;
     }
     /**
-     * 
+     *
      *
      * @param string $fragment
      *
@@ -131,7 +131,7 @@ class SearchResultTextMatchesItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<SearchResultTextMatchesItemMatchesItem>
      */
@@ -140,7 +140,7 @@ class SearchResultTextMatchesItem extends \ArrayObject
         return $this->matches;
     }
     /**
-     * 
+     *
      *
      * @param list<SearchResultTextMatchesItemMatchesItem> $matches
      *

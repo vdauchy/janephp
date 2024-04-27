@@ -6,7 +6,7 @@ class GetTestById extends \Jane\Component\OpenApi2\Tests\Expected\Runtime\Client
 {
     protected $id;
     /**
-     * 
+     *
      *
      * @param int $id id
      */

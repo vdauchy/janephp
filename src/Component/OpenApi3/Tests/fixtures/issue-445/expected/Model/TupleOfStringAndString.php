@@ -13,19 +13,19 @@ class TupleOfStringAndString
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $item1;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $item2;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -34,7 +34,7 @@ class TupleOfStringAndString
         return $this->item1;
     }
     /**
-     * 
+     *
      *
      * @param string $item1
      *
@@ -47,7 +47,7 @@ class TupleOfStringAndString
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -56,7 +56,7 @@ class TupleOfStringAndString
         return $this->item2;
     }
     /**
-     * 
+     *
      *
      * @param string $item2
      *

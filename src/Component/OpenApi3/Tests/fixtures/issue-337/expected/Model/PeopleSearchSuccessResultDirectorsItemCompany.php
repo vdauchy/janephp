@@ -13,37 +13,37 @@ class PeopleSearchSuccessResultDirectorsItemCompany extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $companyName;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $companyNumber;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $regNo;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -52,7 +52,7 @@ class PeopleSearchSuccessResultDirectorsItemCompany extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param string $id
      *
@@ -65,7 +65,7 @@ class PeopleSearchSuccessResultDirectorsItemCompany extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -74,7 +74,7 @@ class PeopleSearchSuccessResultDirectorsItemCompany extends \ArrayObject
         return $this->companyName;
     }
     /**
-     * 
+     *
      *
      * @param string $companyName
      *
@@ -87,7 +87,7 @@ class PeopleSearchSuccessResultDirectorsItemCompany extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -96,7 +96,7 @@ class PeopleSearchSuccessResultDirectorsItemCompany extends \ArrayObject
         return $this->companyNumber;
     }
     /**
-     * 
+     *
      *
      * @param string $companyNumber
      *
@@ -109,7 +109,7 @@ class PeopleSearchSuccessResultDirectorsItemCompany extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -118,7 +118,7 @@ class PeopleSearchSuccessResultDirectorsItemCompany extends \ArrayObject
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string $type
      *
@@ -131,7 +131,7 @@ class PeopleSearchSuccessResultDirectorsItemCompany extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -140,7 +140,7 @@ class PeopleSearchSuccessResultDirectorsItemCompany extends \ArrayObject
         return $this->regNo;
     }
     /**
-     * 
+     *
      *
      * @param string $regNo
      *

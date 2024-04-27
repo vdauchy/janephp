@@ -13,7 +13,7 @@ class IndexField
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
@@ -68,7 +68,7 @@ class IndexField
      */
     protected $sortField;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -77,7 +77,7 @@ class IndexField
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param string|null $id
      *

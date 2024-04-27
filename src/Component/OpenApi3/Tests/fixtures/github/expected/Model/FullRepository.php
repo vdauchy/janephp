@@ -13,403 +13,403 @@ class FullRepository extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $nodeId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $fullName;
     /**
-     * 
+     *
      *
      * @var FullRepositoryOwner|null
      */
     protected $owner;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $private;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $htmlUrl;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $fork;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $archiveUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $assigneesUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $blobsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $branchesUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $collaboratorsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $commentsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $commitsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $compareUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $contentsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $contributorsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $deploymentsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $downloadsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $eventsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $forksUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $gitCommitsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $gitRefsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $gitTagsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $gitUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $issueCommentUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $issueEventsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $issuesUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $keysUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $labelsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $languagesUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $mergesUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $milestonesUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $notificationsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $pullsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $releasesUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $sshUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $stargazersUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $statusesUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $subscribersUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $subscriptionUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $tagsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $teamsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $treesUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $cloneUrl;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $mirrorUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $hooksUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $svnUrl;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $homepage;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $language;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $forksCount;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $stargazersCount;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $watchersCount;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $size;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $defaultBranch;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $openIssuesCount;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $isTemplate;
     /**
-     * 
+     *
      *
      * @var list<string>
      */
     protected $topics;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $hasIssues;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $hasProjects;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $hasWiki;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $hasPages;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $hasDownloads;
     /**
-     * 
+     *
      *
      * @var bool
      */
@@ -427,85 +427,85 @@ class FullRepository extends \ArrayObject
      */
     protected $visibility;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $pushedAt;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $updatedAt;
     /**
-     * 
+     *
      *
      * @var FullRepositoryPermissions
      */
     protected $permissions;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $allowRebaseMerge;
     /**
-     * 
+     *
      *
      * @var FullRepositoryTemplateRepository|null
      */
     protected $templateRepository;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $tempCloneToken;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $allowSquashMerge;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $deleteBranchOnMerge;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $allowMergeCommit;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $subscribersCount;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $networkCount;
     /**
-     * 
+     *
      *
      * @var FullRepositoryLicense|null
      */
     protected $license;
     /**
-     * 
+     *
      *
      * @var FullRepositoryOrganization|null
      */
@@ -523,25 +523,25 @@ class FullRepository extends \ArrayObject
      */
     protected $source;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $forks;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $masterBranch;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $openIssues;
     /**
-     * 
+     *
      *
      * @var int
      */
@@ -553,7 +553,7 @@ class FullRepository extends \ArrayObject
      */
     protected $anonymousAccessEnabled = true;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -562,7 +562,7 @@ class FullRepository extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -575,7 +575,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -584,7 +584,7 @@ class FullRepository extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -597,7 +597,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -606,7 +606,7 @@ class FullRepository extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -619,7 +619,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -628,7 +628,7 @@ class FullRepository extends \ArrayObject
         return $this->fullName;
     }
     /**
-     * 
+     *
      *
      * @param string $fullName
      *
@@ -641,7 +641,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return FullRepositoryOwner|null
      */
@@ -650,7 +650,7 @@ class FullRepository extends \ArrayObject
         return $this->owner;
     }
     /**
-     * 
+     *
      *
      * @param FullRepositoryOwner|null $owner
      *
@@ -663,7 +663,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -672,7 +672,7 @@ class FullRepository extends \ArrayObject
         return $this->private;
     }
     /**
-     * 
+     *
      *
      * @param bool $private
      *
@@ -685,7 +685,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -694,7 +694,7 @@ class FullRepository extends \ArrayObject
         return $this->htmlUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $htmlUrl
      *
@@ -707,7 +707,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -716,7 +716,7 @@ class FullRepository extends \ArrayObject
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string|null $description
      *
@@ -729,7 +729,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -738,7 +738,7 @@ class FullRepository extends \ArrayObject
         return $this->fork;
     }
     /**
-     * 
+     *
      *
      * @param bool $fork
      *
@@ -751,7 +751,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -760,7 +760,7 @@ class FullRepository extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -773,7 +773,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -782,7 +782,7 @@ class FullRepository extends \ArrayObject
         return $this->archiveUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $archiveUrl
      *
@@ -795,7 +795,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -804,7 +804,7 @@ class FullRepository extends \ArrayObject
         return $this->assigneesUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $assigneesUrl
      *
@@ -817,7 +817,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -826,7 +826,7 @@ class FullRepository extends \ArrayObject
         return $this->blobsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $blobsUrl
      *
@@ -839,7 +839,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -848,7 +848,7 @@ class FullRepository extends \ArrayObject
         return $this->branchesUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $branchesUrl
      *
@@ -861,7 +861,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -870,7 +870,7 @@ class FullRepository extends \ArrayObject
         return $this->collaboratorsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $collaboratorsUrl
      *
@@ -883,7 +883,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -892,7 +892,7 @@ class FullRepository extends \ArrayObject
         return $this->commentsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $commentsUrl
      *
@@ -905,7 +905,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -914,7 +914,7 @@ class FullRepository extends \ArrayObject
         return $this->commitsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $commitsUrl
      *
@@ -927,7 +927,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -936,7 +936,7 @@ class FullRepository extends \ArrayObject
         return $this->compareUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $compareUrl
      *
@@ -949,7 +949,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -958,7 +958,7 @@ class FullRepository extends \ArrayObject
         return $this->contentsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $contentsUrl
      *
@@ -971,7 +971,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -980,7 +980,7 @@ class FullRepository extends \ArrayObject
         return $this->contributorsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $contributorsUrl
      *
@@ -993,7 +993,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1002,7 +1002,7 @@ class FullRepository extends \ArrayObject
         return $this->deploymentsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $deploymentsUrl
      *
@@ -1015,7 +1015,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1024,7 +1024,7 @@ class FullRepository extends \ArrayObject
         return $this->downloadsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $downloadsUrl
      *
@@ -1037,7 +1037,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1046,7 +1046,7 @@ class FullRepository extends \ArrayObject
         return $this->eventsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $eventsUrl
      *
@@ -1059,7 +1059,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1068,7 +1068,7 @@ class FullRepository extends \ArrayObject
         return $this->forksUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $forksUrl
      *
@@ -1081,7 +1081,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1090,7 +1090,7 @@ class FullRepository extends \ArrayObject
         return $this->gitCommitsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $gitCommitsUrl
      *
@@ -1103,7 +1103,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1112,7 +1112,7 @@ class FullRepository extends \ArrayObject
         return $this->gitRefsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $gitRefsUrl
      *
@@ -1125,7 +1125,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1134,7 +1134,7 @@ class FullRepository extends \ArrayObject
         return $this->gitTagsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $gitTagsUrl
      *
@@ -1147,7 +1147,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1156,7 +1156,7 @@ class FullRepository extends \ArrayObject
         return $this->gitUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $gitUrl
      *
@@ -1169,7 +1169,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1178,7 +1178,7 @@ class FullRepository extends \ArrayObject
         return $this->issueCommentUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $issueCommentUrl
      *
@@ -1191,7 +1191,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1200,7 +1200,7 @@ class FullRepository extends \ArrayObject
         return $this->issueEventsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $issueEventsUrl
      *
@@ -1213,7 +1213,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1222,7 +1222,7 @@ class FullRepository extends \ArrayObject
         return $this->issuesUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $issuesUrl
      *
@@ -1235,7 +1235,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1244,7 +1244,7 @@ class FullRepository extends \ArrayObject
         return $this->keysUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $keysUrl
      *
@@ -1257,7 +1257,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1266,7 +1266,7 @@ class FullRepository extends \ArrayObject
         return $this->labelsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $labelsUrl
      *
@@ -1279,7 +1279,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1288,7 +1288,7 @@ class FullRepository extends \ArrayObject
         return $this->languagesUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $languagesUrl
      *
@@ -1301,7 +1301,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1310,7 +1310,7 @@ class FullRepository extends \ArrayObject
         return $this->mergesUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $mergesUrl
      *
@@ -1323,7 +1323,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1332,7 +1332,7 @@ class FullRepository extends \ArrayObject
         return $this->milestonesUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $milestonesUrl
      *
@@ -1345,7 +1345,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1354,7 +1354,7 @@ class FullRepository extends \ArrayObject
         return $this->notificationsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $notificationsUrl
      *
@@ -1367,7 +1367,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1376,7 +1376,7 @@ class FullRepository extends \ArrayObject
         return $this->pullsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $pullsUrl
      *
@@ -1389,7 +1389,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1398,7 +1398,7 @@ class FullRepository extends \ArrayObject
         return $this->releasesUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $releasesUrl
      *
@@ -1411,7 +1411,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1420,7 +1420,7 @@ class FullRepository extends \ArrayObject
         return $this->sshUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $sshUrl
      *
@@ -1433,7 +1433,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1442,7 +1442,7 @@ class FullRepository extends \ArrayObject
         return $this->stargazersUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $stargazersUrl
      *
@@ -1455,7 +1455,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1464,7 +1464,7 @@ class FullRepository extends \ArrayObject
         return $this->statusesUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $statusesUrl
      *
@@ -1477,7 +1477,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1486,7 +1486,7 @@ class FullRepository extends \ArrayObject
         return $this->subscribersUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $subscribersUrl
      *
@@ -1499,7 +1499,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1508,7 +1508,7 @@ class FullRepository extends \ArrayObject
         return $this->subscriptionUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $subscriptionUrl
      *
@@ -1521,7 +1521,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1530,7 +1530,7 @@ class FullRepository extends \ArrayObject
         return $this->tagsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $tagsUrl
      *
@@ -1543,7 +1543,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1552,7 +1552,7 @@ class FullRepository extends \ArrayObject
         return $this->teamsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $teamsUrl
      *
@@ -1565,7 +1565,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1574,7 +1574,7 @@ class FullRepository extends \ArrayObject
         return $this->treesUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $treesUrl
      *
@@ -1587,7 +1587,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1596,7 +1596,7 @@ class FullRepository extends \ArrayObject
         return $this->cloneUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $cloneUrl
      *
@@ -1609,7 +1609,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -1618,7 +1618,7 @@ class FullRepository extends \ArrayObject
         return $this->mirrorUrl;
     }
     /**
-     * 
+     *
      *
      * @param string|null $mirrorUrl
      *
@@ -1631,7 +1631,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1640,7 +1640,7 @@ class FullRepository extends \ArrayObject
         return $this->hooksUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $hooksUrl
      *
@@ -1653,7 +1653,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1662,7 +1662,7 @@ class FullRepository extends \ArrayObject
         return $this->svnUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $svnUrl
      *
@@ -1675,7 +1675,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -1684,7 +1684,7 @@ class FullRepository extends \ArrayObject
         return $this->homepage;
     }
     /**
-     * 
+     *
      *
      * @param string|null $homepage
      *
@@ -1697,7 +1697,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -1706,7 +1706,7 @@ class FullRepository extends \ArrayObject
         return $this->language;
     }
     /**
-     * 
+     *
      *
      * @param string|null $language
      *
@@ -1719,7 +1719,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -1728,7 +1728,7 @@ class FullRepository extends \ArrayObject
         return $this->forksCount;
     }
     /**
-     * 
+     *
      *
      * @param int $forksCount
      *
@@ -1741,7 +1741,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -1750,7 +1750,7 @@ class FullRepository extends \ArrayObject
         return $this->stargazersCount;
     }
     /**
-     * 
+     *
      *
      * @param int $stargazersCount
      *
@@ -1763,7 +1763,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -1772,7 +1772,7 @@ class FullRepository extends \ArrayObject
         return $this->watchersCount;
     }
     /**
-     * 
+     *
      *
      * @param int $watchersCount
      *
@@ -1785,7 +1785,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -1794,7 +1794,7 @@ class FullRepository extends \ArrayObject
         return $this->size;
     }
     /**
-     * 
+     *
      *
      * @param int $size
      *
@@ -1807,7 +1807,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1816,7 +1816,7 @@ class FullRepository extends \ArrayObject
         return $this->defaultBranch;
     }
     /**
-     * 
+     *
      *
      * @param string $defaultBranch
      *
@@ -1829,7 +1829,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -1838,7 +1838,7 @@ class FullRepository extends \ArrayObject
         return $this->openIssuesCount;
     }
     /**
-     * 
+     *
      *
      * @param int $openIssuesCount
      *
@@ -1851,7 +1851,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -1860,7 +1860,7 @@ class FullRepository extends \ArrayObject
         return $this->isTemplate;
     }
     /**
-     * 
+     *
      *
      * @param bool $isTemplate
      *
@@ -1873,7 +1873,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -1882,7 +1882,7 @@ class FullRepository extends \ArrayObject
         return $this->topics;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $topics
      *
@@ -1895,7 +1895,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -1904,7 +1904,7 @@ class FullRepository extends \ArrayObject
         return $this->hasIssues;
     }
     /**
-     * 
+     *
      *
      * @param bool $hasIssues
      *
@@ -1917,7 +1917,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -1926,7 +1926,7 @@ class FullRepository extends \ArrayObject
         return $this->hasProjects;
     }
     /**
-     * 
+     *
      *
      * @param bool $hasProjects
      *
@@ -1939,7 +1939,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -1948,7 +1948,7 @@ class FullRepository extends \ArrayObject
         return $this->hasWiki;
     }
     /**
-     * 
+     *
      *
      * @param bool $hasWiki
      *
@@ -1961,7 +1961,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -1970,7 +1970,7 @@ class FullRepository extends \ArrayObject
         return $this->hasPages;
     }
     /**
-     * 
+     *
      *
      * @param bool $hasPages
      *
@@ -1983,7 +1983,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -1992,7 +1992,7 @@ class FullRepository extends \ArrayObject
         return $this->hasDownloads;
     }
     /**
-     * 
+     *
      *
      * @param bool $hasDownloads
      *
@@ -2005,7 +2005,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -2014,7 +2014,7 @@ class FullRepository extends \ArrayObject
         return $this->archived;
     }
     /**
-     * 
+     *
      *
      * @param bool $archived
      *
@@ -2071,7 +2071,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -2080,7 +2080,7 @@ class FullRepository extends \ArrayObject
         return $this->pushedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $pushedAt
      *
@@ -2093,7 +2093,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -2102,7 +2102,7 @@ class FullRepository extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $createdAt
      *
@@ -2115,7 +2115,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -2124,7 +2124,7 @@ class FullRepository extends \ArrayObject
         return $this->updatedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $updatedAt
      *
@@ -2137,7 +2137,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return FullRepositoryPermissions
      */
@@ -2146,7 +2146,7 @@ class FullRepository extends \ArrayObject
         return $this->permissions;
     }
     /**
-     * 
+     *
      *
      * @param FullRepositoryPermissions $permissions
      *
@@ -2159,7 +2159,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -2168,7 +2168,7 @@ class FullRepository extends \ArrayObject
         return $this->allowRebaseMerge;
     }
     /**
-     * 
+     *
      *
      * @param bool $allowRebaseMerge
      *
@@ -2181,7 +2181,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return FullRepositoryTemplateRepository|null
      */
@@ -2190,7 +2190,7 @@ class FullRepository extends \ArrayObject
         return $this->templateRepository;
     }
     /**
-     * 
+     *
      *
      * @param FullRepositoryTemplateRepository|null $templateRepository
      *
@@ -2203,7 +2203,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -2212,7 +2212,7 @@ class FullRepository extends \ArrayObject
         return $this->tempCloneToken;
     }
     /**
-     * 
+     *
      *
      * @param string|null $tempCloneToken
      *
@@ -2225,7 +2225,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -2234,7 +2234,7 @@ class FullRepository extends \ArrayObject
         return $this->allowSquashMerge;
     }
     /**
-     * 
+     *
      *
      * @param bool $allowSquashMerge
      *
@@ -2247,7 +2247,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -2256,7 +2256,7 @@ class FullRepository extends \ArrayObject
         return $this->deleteBranchOnMerge;
     }
     /**
-     * 
+     *
      *
      * @param bool $deleteBranchOnMerge
      *
@@ -2269,7 +2269,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -2278,7 +2278,7 @@ class FullRepository extends \ArrayObject
         return $this->allowMergeCommit;
     }
     /**
-     * 
+     *
      *
      * @param bool $allowMergeCommit
      *
@@ -2291,7 +2291,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -2300,7 +2300,7 @@ class FullRepository extends \ArrayObject
         return $this->subscribersCount;
     }
     /**
-     * 
+     *
      *
      * @param int $subscribersCount
      *
@@ -2313,7 +2313,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -2322,7 +2322,7 @@ class FullRepository extends \ArrayObject
         return $this->networkCount;
     }
     /**
-     * 
+     *
      *
      * @param int $networkCount
      *
@@ -2335,7 +2335,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return FullRepositoryLicense|null
      */
@@ -2344,7 +2344,7 @@ class FullRepository extends \ArrayObject
         return $this->license;
     }
     /**
-     * 
+     *
      *
      * @param FullRepositoryLicense|null $license
      *
@@ -2357,7 +2357,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return FullRepositoryOrganization|null
      */
@@ -2366,7 +2366,7 @@ class FullRepository extends \ArrayObject
         return $this->organization;
     }
     /**
-     * 
+     *
      *
      * @param FullRepositoryOrganization|null $organization
      *
@@ -2423,7 +2423,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -2432,7 +2432,7 @@ class FullRepository extends \ArrayObject
         return $this->forks;
     }
     /**
-     * 
+     *
      *
      * @param int $forks
      *
@@ -2445,7 +2445,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -2454,7 +2454,7 @@ class FullRepository extends \ArrayObject
         return $this->masterBranch;
     }
     /**
-     * 
+     *
      *
      * @param string $masterBranch
      *
@@ -2467,7 +2467,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -2476,7 +2476,7 @@ class FullRepository extends \ArrayObject
         return $this->openIssues;
     }
     /**
-     * 
+     *
      *
      * @param int $openIssues
      *
@@ -2489,7 +2489,7 @@ class FullRepository extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -2498,7 +2498,7 @@ class FullRepository extends \ArrayObject
         return $this->watchers;
     }
     /**
-     * 
+     *
      *
      * @param int $watchers
      *

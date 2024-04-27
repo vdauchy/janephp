@@ -13,31 +13,31 @@ class TweetSearchResponse extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var list<mixed>
      */
     protected $data;
     /**
-     * 
+     *
      *
      * @var Expansions
      */
     protected $includes;
     /**
-     * 
+     *
      *
      * @var list<mixed>
      */
     protected $errors;
     /**
-     * 
+     *
      *
      * @var TweetSearchResponseMeta
      */
     protected $meta;
     /**
-     * 
+     *
      *
      * @return list<mixed>
      */
@@ -46,7 +46,7 @@ class TweetSearchResponse extends \ArrayObject
         return $this->data;
     }
     /**
-     * 
+     *
      *
      * @param list<mixed> $data
      *
@@ -59,7 +59,7 @@ class TweetSearchResponse extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return Expansions
      */
@@ -68,7 +68,7 @@ class TweetSearchResponse extends \ArrayObject
         return $this->includes;
     }
     /**
-     * 
+     *
      *
      * @param Expansions $includes
      *
@@ -81,7 +81,7 @@ class TweetSearchResponse extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<mixed>
      */
@@ -90,7 +90,7 @@ class TweetSearchResponse extends \ArrayObject
         return $this->errors;
     }
     /**
-     * 
+     *
      *
      * @param list<mixed> $errors
      *
@@ -103,7 +103,7 @@ class TweetSearchResponse extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return TweetSearchResponseMeta
      */
@@ -112,7 +112,7 @@ class TweetSearchResponse extends \ArrayObject
         return $this->meta;
     }
     /**
-     * 
+     *
      *
      * @param TweetSearchResponseMeta $meta
      *

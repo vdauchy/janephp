@@ -13,61 +13,61 @@ class DocumentHistory
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $documentId;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $documentVersion;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $documentType;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $documentDate;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $document;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $timestamp;
     /**
-     * 
+     *
      *
      * @var mixed|null
      */
     protected $audit;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $deleted;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $action;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -76,7 +76,7 @@ class DocumentHistory
         return $this->documentId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $documentId
      *
@@ -89,7 +89,7 @@ class DocumentHistory
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -98,7 +98,7 @@ class DocumentHistory
         return $this->documentVersion;
     }
     /**
-     * 
+     *
      *
      * @param int $documentVersion
      *
@@ -111,7 +111,7 @@ class DocumentHistory
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -120,7 +120,7 @@ class DocumentHistory
         return $this->documentType;
     }
     /**
-     * 
+     *
      *
      * @param string|null $documentType
      *
@@ -133,7 +133,7 @@ class DocumentHistory
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -142,7 +142,7 @@ class DocumentHistory
         return $this->documentDate;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $documentDate
      *
@@ -155,7 +155,7 @@ class DocumentHistory
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -164,7 +164,7 @@ class DocumentHistory
         return $this->document;
     }
     /**
-     * 
+     *
      *
      * @param string|null $document
      *
@@ -177,7 +177,7 @@ class DocumentHistory
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -186,7 +186,7 @@ class DocumentHistory
         return $this->timestamp;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $timestamp
      *
@@ -199,7 +199,7 @@ class DocumentHistory
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return mixed
      */
@@ -208,7 +208,7 @@ class DocumentHistory
         return $this->audit;
     }
     /**
-     * 
+     *
      *
      * @param mixed $audit
      *
@@ -221,7 +221,7 @@ class DocumentHistory
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -230,7 +230,7 @@ class DocumentHistory
         return $this->deleted;
     }
     /**
-     * 
+     *
      *
      * @param bool $deleted
      *
@@ -243,7 +243,7 @@ class DocumentHistory
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -252,7 +252,7 @@ class DocumentHistory
         return $this->action;
     }
     /**
-     * 
+     *
      *
      * @param string $action
      *

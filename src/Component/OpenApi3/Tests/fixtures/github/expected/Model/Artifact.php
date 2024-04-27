@@ -13,13 +13,13 @@ class Artifact extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -37,13 +37,13 @@ class Artifact extends \ArrayObject
      */
     protected $sizeInBytes;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -55,25 +55,25 @@ class Artifact extends \ArrayObject
      */
     protected $expired;
     /**
-     * 
+     *
      *
      * @var \DateTime|null
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $expiresAt;
     /**
-     * 
+     *
      *
      * @var \DateTime|null
      */
     protected $updatedAt;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -82,7 +82,7 @@ class Artifact extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -95,7 +95,7 @@ class Artifact extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -104,7 +104,7 @@ class Artifact extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -161,7 +161,7 @@ class Artifact extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -170,7 +170,7 @@ class Artifact extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -183,7 +183,7 @@ class Artifact extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -192,7 +192,7 @@ class Artifact extends \ArrayObject
         return $this->archiveDownloadUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $archiveDownloadUrl
      *
@@ -227,7 +227,7 @@ class Artifact extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime|null
      */
@@ -236,7 +236,7 @@ class Artifact extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime|null $createdAt
      *
@@ -249,7 +249,7 @@ class Artifact extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -258,7 +258,7 @@ class Artifact extends \ArrayObject
         return $this->expiresAt;
     }
     /**
-     * 
+     *
      *
      * @param string $expiresAt
      *
@@ -271,7 +271,7 @@ class Artifact extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime|null
      */
@@ -280,7 +280,7 @@ class Artifact extends \ArrayObject
         return $this->updatedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime|null $updatedAt
      *

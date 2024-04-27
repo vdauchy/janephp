@@ -13,19 +13,19 @@ class GistComment extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $nodeId;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -37,31 +37,31 @@ class GistComment extends \ArrayObject
      */
     protected $body;
     /**
-     * 
+     *
      *
      * @var GistCommentUser|null
      */
     protected $user;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $updatedAt;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $authorAssociation;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -70,7 +70,7 @@ class GistComment extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -83,7 +83,7 @@ class GistComment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -92,7 +92,7 @@ class GistComment extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -105,7 +105,7 @@ class GistComment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -114,7 +114,7 @@ class GistComment extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -149,7 +149,7 @@ class GistComment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GistCommentUser|null
      */
@@ -158,7 +158,7 @@ class GistComment extends \ArrayObject
         return $this->user;
     }
     /**
-     * 
+     *
      *
      * @param GistCommentUser|null $user
      *
@@ -171,7 +171,7 @@ class GistComment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -180,7 +180,7 @@ class GistComment extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $createdAt
      *
@@ -193,7 +193,7 @@ class GistComment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -202,7 +202,7 @@ class GistComment extends \ArrayObject
         return $this->updatedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $updatedAt
      *
@@ -215,7 +215,7 @@ class GistComment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -224,7 +224,7 @@ class GistComment extends \ArrayObject
         return $this->authorAssociation;
     }
     /**
-     * 
+     *
      *
      * @param string $authorAssociation
      *

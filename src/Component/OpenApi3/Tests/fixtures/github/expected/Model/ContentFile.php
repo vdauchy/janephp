@@ -13,91 +13,91 @@ class ContentFile extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $encoding;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $size;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $path;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $content;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $sha;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $gitUrl;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $htmlUrl;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $downloadUrl;
     /**
-     * 
+     *
      *
      * @var ContentFileLinks
      */
     protected $links;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $target;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $submoduleGitUrl;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -106,7 +106,7 @@ class ContentFile extends \ArrayObject
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string $type
      *
@@ -119,7 +119,7 @@ class ContentFile extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -128,7 +128,7 @@ class ContentFile extends \ArrayObject
         return $this->encoding;
     }
     /**
-     * 
+     *
      *
      * @param string $encoding
      *
@@ -141,7 +141,7 @@ class ContentFile extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -150,7 +150,7 @@ class ContentFile extends \ArrayObject
         return $this->size;
     }
     /**
-     * 
+     *
      *
      * @param int $size
      *
@@ -163,7 +163,7 @@ class ContentFile extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -172,7 +172,7 @@ class ContentFile extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -185,7 +185,7 @@ class ContentFile extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -194,7 +194,7 @@ class ContentFile extends \ArrayObject
         return $this->path;
     }
     /**
-     * 
+     *
      *
      * @param string $path
      *
@@ -207,7 +207,7 @@ class ContentFile extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -216,7 +216,7 @@ class ContentFile extends \ArrayObject
         return $this->content;
     }
     /**
-     * 
+     *
      *
      * @param string $content
      *
@@ -229,7 +229,7 @@ class ContentFile extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -238,7 +238,7 @@ class ContentFile extends \ArrayObject
         return $this->sha;
     }
     /**
-     * 
+     *
      *
      * @param string $sha
      *
@@ -251,7 +251,7 @@ class ContentFile extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -260,7 +260,7 @@ class ContentFile extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -273,7 +273,7 @@ class ContentFile extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -282,7 +282,7 @@ class ContentFile extends \ArrayObject
         return $this->gitUrl;
     }
     /**
-     * 
+     *
      *
      * @param string|null $gitUrl
      *
@@ -295,7 +295,7 @@ class ContentFile extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -304,7 +304,7 @@ class ContentFile extends \ArrayObject
         return $this->htmlUrl;
     }
     /**
-     * 
+     *
      *
      * @param string|null $htmlUrl
      *
@@ -317,7 +317,7 @@ class ContentFile extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -326,7 +326,7 @@ class ContentFile extends \ArrayObject
         return $this->downloadUrl;
     }
     /**
-     * 
+     *
      *
      * @param string|null $downloadUrl
      *
@@ -339,7 +339,7 @@ class ContentFile extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ContentFileLinks
      */
@@ -348,7 +348,7 @@ class ContentFile extends \ArrayObject
         return $this->links;
     }
     /**
-     * 
+     *
      *
      * @param ContentFileLinks $links
      *
@@ -361,7 +361,7 @@ class ContentFile extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -370,7 +370,7 @@ class ContentFile extends \ArrayObject
         return $this->target;
     }
     /**
-     * 
+     *
      *
      * @param string $target
      *
@@ -383,7 +383,7 @@ class ContentFile extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -392,7 +392,7 @@ class ContentFile extends \ArrayObject
         return $this->submoduleGitUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $submoduleGitUrl
      *

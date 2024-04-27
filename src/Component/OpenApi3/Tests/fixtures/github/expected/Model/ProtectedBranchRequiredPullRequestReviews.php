@@ -13,37 +13,37 @@ class ProtectedBranchRequiredPullRequestReviews extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $dismissStaleReviews;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $requireCodeOwnerReviews;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $requiredApprovingReviewCount;
     /**
-     * 
+     *
      *
      * @var ProtectedBranchRequiredPullRequestReviewsDismissalRestrictions
      */
     protected $dismissalRestrictions;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -52,7 +52,7 @@ class ProtectedBranchRequiredPullRequestReviews extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -65,7 +65,7 @@ class ProtectedBranchRequiredPullRequestReviews extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -74,7 +74,7 @@ class ProtectedBranchRequiredPullRequestReviews extends \ArrayObject
         return $this->dismissStaleReviews;
     }
     /**
-     * 
+     *
      *
      * @param bool $dismissStaleReviews
      *
@@ -87,7 +87,7 @@ class ProtectedBranchRequiredPullRequestReviews extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -96,7 +96,7 @@ class ProtectedBranchRequiredPullRequestReviews extends \ArrayObject
         return $this->requireCodeOwnerReviews;
     }
     /**
-     * 
+     *
      *
      * @param bool $requireCodeOwnerReviews
      *
@@ -109,7 +109,7 @@ class ProtectedBranchRequiredPullRequestReviews extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -118,7 +118,7 @@ class ProtectedBranchRequiredPullRequestReviews extends \ArrayObject
         return $this->requiredApprovingReviewCount;
     }
     /**
-     * 
+     *
      *
      * @param int $requiredApprovingReviewCount
      *
@@ -131,7 +131,7 @@ class ProtectedBranchRequiredPullRequestReviews extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ProtectedBranchRequiredPullRequestReviewsDismissalRestrictions
      */
@@ -140,7 +140,7 @@ class ProtectedBranchRequiredPullRequestReviews extends \ArrayObject
         return $this->dismissalRestrictions;
     }
     /**
-     * 
+     *
      *
      * @param ProtectedBranchRequiredPullRequestReviewsDismissalRestrictions $dismissalRestrictions
      *

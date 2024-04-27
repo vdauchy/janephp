@@ -19,7 +19,7 @@ class Installation extends \ArrayObject
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var SimpleUser|Enterprise|null
      */
@@ -31,25 +31,25 @@ class Installation extends \ArrayObject
      */
     protected $repositorySelection;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $accessTokensUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $repositoriesUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $htmlUrl;
     /**
-     * 
+     *
      *
      * @var int
      */
@@ -61,61 +61,61 @@ class Installation extends \ArrayObject
      */
     protected $targetId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $targetType;
     /**
-     * 
+     *
      *
      * @var InstallationPermissions
      */
     protected $permissions;
     /**
-     * 
+     *
      *
      * @var list<string>
      */
     protected $events;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $updatedAt;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $singleFileName;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $appSlug;
     /**
-     * 
+     *
      *
      * @var InstallationSuspendedBy|null
      */
     protected $suspendedBy;
     /**
-     * 
+     *
      *
      * @var \DateTime|null
      */
     protected $suspendedAt;
     /**
-     * 
+     *
      *
      * @var string|null
      */
@@ -143,7 +143,7 @@ class Installation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return SimpleUser|Enterprise|null
      */
@@ -152,7 +152,7 @@ class Installation extends \ArrayObject
         return $this->account;
     }
     /**
-     * 
+     *
      *
      * @param SimpleUser|Enterprise|null $account
      *
@@ -187,7 +187,7 @@ class Installation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -196,7 +196,7 @@ class Installation extends \ArrayObject
         return $this->accessTokensUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $accessTokensUrl
      *
@@ -209,7 +209,7 @@ class Installation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -218,7 +218,7 @@ class Installation extends \ArrayObject
         return $this->repositoriesUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $repositoriesUrl
      *
@@ -231,7 +231,7 @@ class Installation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -240,7 +240,7 @@ class Installation extends \ArrayObject
         return $this->htmlUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $htmlUrl
      *
@@ -253,7 +253,7 @@ class Installation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -262,7 +262,7 @@ class Installation extends \ArrayObject
         return $this->appId;
     }
     /**
-     * 
+     *
      *
      * @param int $appId
      *
@@ -297,7 +297,7 @@ class Installation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -306,7 +306,7 @@ class Installation extends \ArrayObject
         return $this->targetType;
     }
     /**
-     * 
+     *
      *
      * @param string $targetType
      *
@@ -319,7 +319,7 @@ class Installation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return InstallationPermissions
      */
@@ -328,7 +328,7 @@ class Installation extends \ArrayObject
         return $this->permissions;
     }
     /**
-     * 
+     *
      *
      * @param InstallationPermissions $permissions
      *
@@ -341,7 +341,7 @@ class Installation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -350,7 +350,7 @@ class Installation extends \ArrayObject
         return $this->events;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $events
      *
@@ -363,7 +363,7 @@ class Installation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -372,7 +372,7 @@ class Installation extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $createdAt
      *
@@ -385,7 +385,7 @@ class Installation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -394,7 +394,7 @@ class Installation extends \ArrayObject
         return $this->updatedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $updatedAt
      *
@@ -407,7 +407,7 @@ class Installation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -416,7 +416,7 @@ class Installation extends \ArrayObject
         return $this->singleFileName;
     }
     /**
-     * 
+     *
      *
      * @param string|null $singleFileName
      *
@@ -429,7 +429,7 @@ class Installation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -438,7 +438,7 @@ class Installation extends \ArrayObject
         return $this->appSlug;
     }
     /**
-     * 
+     *
      *
      * @param string $appSlug
      *
@@ -451,7 +451,7 @@ class Installation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return InstallationSuspendedBy|null
      */
@@ -460,7 +460,7 @@ class Installation extends \ArrayObject
         return $this->suspendedBy;
     }
     /**
-     * 
+     *
      *
      * @param InstallationSuspendedBy|null $suspendedBy
      *
@@ -473,7 +473,7 @@ class Installation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime|null
      */
@@ -482,7 +482,7 @@ class Installation extends \ArrayObject
         return $this->suspendedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime|null $suspendedAt
      *
@@ -495,7 +495,7 @@ class Installation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -504,7 +504,7 @@ class Installation extends \ArrayObject
         return $this->contactEmail;
     }
     /**
-     * 
+     *
      *
      * @param string|null $contactEmail
      *

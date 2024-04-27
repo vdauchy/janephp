@@ -13,25 +13,25 @@ class SearchNoResultsError extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $totalSize;
     /**
-     * 
+     *
      *
      * @var array<string, mixed>
      */
     protected $companies;
     /**
-     * 
+     *
      *
      * @var SearchNoResultsErrorMessages
      */
     protected $messages;
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -40,7 +40,7 @@ class SearchNoResultsError extends \ArrayObject
         return $this->totalSize;
     }
     /**
-     * 
+     *
      *
      * @param float $totalSize
      *
@@ -53,7 +53,7 @@ class SearchNoResultsError extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return array<string, mixed>
      */
@@ -62,7 +62,7 @@ class SearchNoResultsError extends \ArrayObject
         return $this->companies;
     }
     /**
-     * 
+     *
      *
      * @param array<string, mixed> $companies
      *
@@ -75,7 +75,7 @@ class SearchNoResultsError extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return SearchNoResultsErrorMessages
      */
@@ -84,7 +84,7 @@ class SearchNoResultsError extends \ArrayObject
         return $this->messages;
     }
     /**
-     * 
+     *
      *
      * @param SearchNoResultsErrorMessages $messages
      *

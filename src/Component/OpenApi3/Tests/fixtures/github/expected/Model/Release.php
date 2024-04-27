@@ -13,49 +13,49 @@ class Release extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $htmlUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $assetsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $uploadUrl;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $tarballUrl;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $zipballUrl;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -73,13 +73,13 @@ class Release extends \ArrayObject
      */
     protected $targetCommitish;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string|null
      */
@@ -97,13 +97,13 @@ class Release extends \ArrayObject
      */
     protected $prerelease;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @var \DateTime|null
      */
@@ -115,25 +115,25 @@ class Release extends \ArrayObject
      */
     protected $author;
     /**
-     * 
+     *
      *
      * @var list<ReleaseAsset>
      */
     protected $assets;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $bodyHtml;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $bodyText;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -142,7 +142,7 @@ class Release extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -155,7 +155,7 @@ class Release extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -164,7 +164,7 @@ class Release extends \ArrayObject
         return $this->htmlUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $htmlUrl
      *
@@ -177,7 +177,7 @@ class Release extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -186,7 +186,7 @@ class Release extends \ArrayObject
         return $this->assetsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $assetsUrl
      *
@@ -199,7 +199,7 @@ class Release extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -208,7 +208,7 @@ class Release extends \ArrayObject
         return $this->uploadUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $uploadUrl
      *
@@ -221,7 +221,7 @@ class Release extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -230,7 +230,7 @@ class Release extends \ArrayObject
         return $this->tarballUrl;
     }
     /**
-     * 
+     *
      *
      * @param string|null $tarballUrl
      *
@@ -243,7 +243,7 @@ class Release extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -252,7 +252,7 @@ class Release extends \ArrayObject
         return $this->zipballUrl;
     }
     /**
-     * 
+     *
      *
      * @param string|null $zipballUrl
      *
@@ -265,7 +265,7 @@ class Release extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -274,7 +274,7 @@ class Release extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -287,7 +287,7 @@ class Release extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -296,7 +296,7 @@ class Release extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -353,7 +353,7 @@ class Release extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -362,7 +362,7 @@ class Release extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string|null $name
      *
@@ -375,7 +375,7 @@ class Release extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -384,7 +384,7 @@ class Release extends \ArrayObject
         return $this->body;
     }
     /**
-     * 
+     *
      *
      * @param string|null $body
      *
@@ -441,7 +441,7 @@ class Release extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -450,7 +450,7 @@ class Release extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $createdAt
      *
@@ -463,7 +463,7 @@ class Release extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime|null
      */
@@ -472,7 +472,7 @@ class Release extends \ArrayObject
         return $this->publishedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime|null $publishedAt
      *
@@ -507,7 +507,7 @@ class Release extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<ReleaseAsset>
      */
@@ -516,7 +516,7 @@ class Release extends \ArrayObject
         return $this->assets;
     }
     /**
-     * 
+     *
      *
      * @param list<ReleaseAsset> $assets
      *
@@ -529,7 +529,7 @@ class Release extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -538,7 +538,7 @@ class Release extends \ArrayObject
         return $this->bodyHtml;
     }
     /**
-     * 
+     *
      *
      * @param string $bodyHtml
      *
@@ -551,7 +551,7 @@ class Release extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -560,7 +560,7 @@ class Release extends \ArrayObject
         return $this->bodyText;
     }
     /**
-     * 
+     *
      *
      * @param string $bodyText
      *

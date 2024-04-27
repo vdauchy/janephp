@@ -13,13 +13,13 @@ class ImportTransferPartialRequest
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var list<FileTransferCreateItem>|null
      */
     protected $items;
     /**
-     * 
+     *
      *
      * @return list<FileTransferCreateItem>|null
      */
@@ -28,7 +28,7 @@ class ImportTransferPartialRequest
         return $this->items;
     }
     /**
-     * 
+     *
      *
      * @param list<FileTransferCreateItem>|null $items
      *

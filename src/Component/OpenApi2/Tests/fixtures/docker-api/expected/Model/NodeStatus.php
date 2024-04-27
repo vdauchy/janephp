@@ -19,7 +19,7 @@ class NodeStatus
      */
     protected $state;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -53,7 +53,7 @@ class NodeStatus
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -62,7 +62,7 @@ class NodeStatus
         return $this->message;
     }
     /**
-     * 
+     *
      *
      * @param string $message
      *

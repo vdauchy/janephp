@@ -13,7 +13,7 @@ class Mp3AudioFormat extends FormatBase
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
@@ -32,7 +32,7 @@ class Mp3AudioFormat extends FormatBase
     */
     protected $quality;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -41,7 +41,7 @@ class Mp3AudioFormat extends FormatBase
         return $this->extension;
     }
     /**
-     * 
+     *
      *
      * @param string|null $extension
      *

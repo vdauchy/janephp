@@ -13,19 +13,19 @@ class Foo extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $label;
     /**
-     * 
+     *
      *
      * @var Foo
      */
     protected $parent;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -34,7 +34,7 @@ class Foo extends \ArrayObject
         return $this->label;
     }
     /**
-     * 
+     *
      *
      * @param string $label
      *
@@ -47,7 +47,7 @@ class Foo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return Foo
      */
@@ -56,7 +56,7 @@ class Foo extends \ArrayObject
         return $this->parent;
     }
     /**
-     * 
+     *
      *
      * @param Foo $parent
      *

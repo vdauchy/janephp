@@ -13,31 +13,31 @@ class ReviewsGetLdjsonResponse200HydraSearchHydraMappingItem extends \ArrayObjec
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $variable;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $property;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $required;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -46,7 +46,7 @@ class ReviewsGetLdjsonResponse200HydraSearchHydraMappingItem extends \ArrayObjec
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string $type
      *
@@ -59,7 +59,7 @@ class ReviewsGetLdjsonResponse200HydraSearchHydraMappingItem extends \ArrayObjec
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -68,7 +68,7 @@ class ReviewsGetLdjsonResponse200HydraSearchHydraMappingItem extends \ArrayObjec
         return $this->variable;
     }
     /**
-     * 
+     *
      *
      * @param string $variable
      *
@@ -81,7 +81,7 @@ class ReviewsGetLdjsonResponse200HydraSearchHydraMappingItem extends \ArrayObjec
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -90,7 +90,7 @@ class ReviewsGetLdjsonResponse200HydraSearchHydraMappingItem extends \ArrayObjec
         return $this->property;
     }
     /**
-     * 
+     *
      *
      * @param string|null $property
      *
@@ -103,7 +103,7 @@ class ReviewsGetLdjsonResponse200HydraSearchHydraMappingItem extends \ArrayObjec
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -112,7 +112,7 @@ class ReviewsGetLdjsonResponse200HydraSearchHydraMappingItem extends \ArrayObjec
         return $this->required;
     }
     /**
-     * 
+     *
      *
      * @param bool $required
      *

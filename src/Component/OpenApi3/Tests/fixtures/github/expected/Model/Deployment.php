@@ -13,7 +13,7 @@ class Deployment extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -25,13 +25,13 @@ class Deployment extends \ArrayObject
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $nodeId;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -49,13 +49,13 @@ class Deployment extends \ArrayObject
      */
     protected $task;
     /**
-     * 
+     *
      *
      * @var DeploymentPayload
      */
     protected $payload;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -67,37 +67,37 @@ class Deployment extends \ArrayObject
      */
     protected $environment;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @var DeploymentCreator|null
      */
     protected $creator;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $updatedAt;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $statusesUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -115,13 +115,13 @@ class Deployment extends \ArrayObject
      */
     protected $productionEnvironment;
     /**
-     * 
+     *
      *
      * @var DeploymentPerformedViaGithubApp|null
      */
     protected $performedViaGithubApp;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -130,7 +130,7 @@ class Deployment extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -165,7 +165,7 @@ class Deployment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -174,7 +174,7 @@ class Deployment extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -187,7 +187,7 @@ class Deployment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -196,7 +196,7 @@ class Deployment extends \ArrayObject
         return $this->sha;
     }
     /**
-     * 
+     *
      *
      * @param string $sha
      *
@@ -253,7 +253,7 @@ class Deployment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return DeploymentPayload
      */
@@ -262,7 +262,7 @@ class Deployment extends \ArrayObject
         return $this->payload;
     }
     /**
-     * 
+     *
      *
      * @param DeploymentPayload $payload
      *
@@ -275,7 +275,7 @@ class Deployment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -284,7 +284,7 @@ class Deployment extends \ArrayObject
         return $this->originalEnvironment;
     }
     /**
-     * 
+     *
      *
      * @param string $originalEnvironment
      *
@@ -319,7 +319,7 @@ class Deployment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -328,7 +328,7 @@ class Deployment extends \ArrayObject
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string|null $description
      *
@@ -341,7 +341,7 @@ class Deployment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return DeploymentCreator|null
      */
@@ -350,7 +350,7 @@ class Deployment extends \ArrayObject
         return $this->creator;
     }
     /**
-     * 
+     *
      *
      * @param DeploymentCreator|null $creator
      *
@@ -363,7 +363,7 @@ class Deployment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -372,7 +372,7 @@ class Deployment extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $createdAt
      *
@@ -385,7 +385,7 @@ class Deployment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -394,7 +394,7 @@ class Deployment extends \ArrayObject
         return $this->updatedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $updatedAt
      *
@@ -407,7 +407,7 @@ class Deployment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -416,7 +416,7 @@ class Deployment extends \ArrayObject
         return $this->statusesUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $statusesUrl
      *
@@ -429,7 +429,7 @@ class Deployment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -438,7 +438,7 @@ class Deployment extends \ArrayObject
         return $this->repositoryUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $repositoryUrl
      *
@@ -495,7 +495,7 @@ class Deployment extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return DeploymentPerformedViaGithubApp|null
      */
@@ -504,7 +504,7 @@ class Deployment extends \ArrayObject
         return $this->performedViaGithubApp;
     }
     /**
-     * 
+     *
      *
      * @param DeploymentPerformedViaGithubApp|null $performedViaGithubApp
      *

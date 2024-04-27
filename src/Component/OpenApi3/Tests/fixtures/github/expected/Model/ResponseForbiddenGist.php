@@ -13,25 +13,25 @@ class ResponseForbiddenGist extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var ResponseForbiddenGistBlock
      */
     protected $block;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $message;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $documentationUrl;
     /**
-     * 
+     *
      *
      * @return ResponseForbiddenGistBlock
      */
@@ -40,7 +40,7 @@ class ResponseForbiddenGist extends \ArrayObject
         return $this->block;
     }
     /**
-     * 
+     *
      *
      * @param ResponseForbiddenGistBlock $block
      *
@@ -53,7 +53,7 @@ class ResponseForbiddenGist extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -62,7 +62,7 @@ class ResponseForbiddenGist extends \ArrayObject
         return $this->message;
     }
     /**
-     * 
+     *
      *
      * @param string $message
      *
@@ -75,7 +75,7 @@ class ResponseForbiddenGist extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -84,7 +84,7 @@ class ResponseForbiddenGist extends \ArrayObject
         return $this->documentationUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $documentationUrl
      *

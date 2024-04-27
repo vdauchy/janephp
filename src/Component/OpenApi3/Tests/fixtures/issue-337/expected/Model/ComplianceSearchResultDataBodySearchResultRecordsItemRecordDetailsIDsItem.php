@@ -13,19 +13,19 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsIDsItem 
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $number;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -34,7 +34,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsIDsItem 
         return $this->number;
     }
     /**
-     * 
+     *
      *
      * @param string $number
      *
@@ -47,7 +47,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsIDsItem 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -56,7 +56,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsIDsItem 
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string $type
      *

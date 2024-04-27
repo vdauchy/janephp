@@ -13,7 +13,7 @@ class NodeDescription
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -27,7 +27,7 @@ class NodeDescription
     /**
     * An object describing the resources which can be advertised by a node and
     requested by a task.
-    
+
     *
     * @var ResourceObject
     */
@@ -41,13 +41,13 @@ class NodeDescription
     /**
     * Information about the issuer of leaf TLS certificates and the trusted root
     CA certificate.
-    
+
     *
     * @var TLSInfo
     */
     protected $tLSInfo;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -56,7 +56,7 @@ class NodeDescription
         return $this->hostname;
     }
     /**
-     * 
+     *
      *
      * @param string $hostname
      *
@@ -93,7 +93,7 @@ class NodeDescription
     /**
     * An object describing the resources which can be advertised by a node and
     requested by a task.
-    
+
     *
     * @return ResourceObject
     */
@@ -104,7 +104,7 @@ class NodeDescription
     /**
     * An object describing the resources which can be advertised by a node and
     requested by a task.
-    
+
     *
     * @param ResourceObject $resources
     *
@@ -141,7 +141,7 @@ class NodeDescription
     /**
     * Information about the issuer of leaf TLS certificates and the trusted root
     CA certificate.
-    
+
     *
     * @return TLSInfo
     */
@@ -152,7 +152,7 @@ class NodeDescription
     /**
     * Information about the issuer of leaf TLS certificates and the trusted root
     CA certificate.
-    
+
     *
     * @param TLSInfo $tLSInfo
     *

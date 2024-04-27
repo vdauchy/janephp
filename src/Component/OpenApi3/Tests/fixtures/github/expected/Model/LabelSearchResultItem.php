@@ -13,61 +13,61 @@ class LabelSearchResultItem extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $nodeId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $color;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $default;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $score;
     /**
-     * 
+     *
      *
      * @var list<SearchResultTextMatchesItem>
      */
     protected $textMatches;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -76,7 +76,7 @@ class LabelSearchResultItem extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -89,7 +89,7 @@ class LabelSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -98,7 +98,7 @@ class LabelSearchResultItem extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -111,7 +111,7 @@ class LabelSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -120,7 +120,7 @@ class LabelSearchResultItem extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -133,7 +133,7 @@ class LabelSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -142,7 +142,7 @@ class LabelSearchResultItem extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -155,7 +155,7 @@ class LabelSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -164,7 +164,7 @@ class LabelSearchResultItem extends \ArrayObject
         return $this->color;
     }
     /**
-     * 
+     *
      *
      * @param string $color
      *
@@ -177,7 +177,7 @@ class LabelSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -186,7 +186,7 @@ class LabelSearchResultItem extends \ArrayObject
         return $this->default;
     }
     /**
-     * 
+     *
      *
      * @param bool $default
      *
@@ -199,7 +199,7 @@ class LabelSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -208,7 +208,7 @@ class LabelSearchResultItem extends \ArrayObject
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string|null $description
      *
@@ -221,7 +221,7 @@ class LabelSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -230,7 +230,7 @@ class LabelSearchResultItem extends \ArrayObject
         return $this->score;
     }
     /**
-     * 
+     *
      *
      * @param int $score
      *
@@ -243,7 +243,7 @@ class LabelSearchResultItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<SearchResultTextMatchesItem>
      */
@@ -252,7 +252,7 @@ class LabelSearchResultItem extends \ArrayObject
         return $this->textMatches;
     }
     /**
-     * 
+     *
      *
      * @param list<SearchResultTextMatchesItem> $textMatches
      *

@@ -25,7 +25,7 @@ class GistsPostBody extends \ArrayObject
      */
     protected $files;
     /**
-     * 
+     *
      *
      * @var mixed
      */
@@ -75,7 +75,7 @@ class GistsPostBody extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return mixed
      */
@@ -84,7 +84,7 @@ class GistsPostBody extends \ArrayObject
         return $this->public;
     }
     /**
-     * 
+     *
      *
      * @param mixed $public
      *

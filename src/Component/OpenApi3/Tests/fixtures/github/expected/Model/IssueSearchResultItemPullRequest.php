@@ -13,37 +13,37 @@ class IssueSearchResultItemPullRequest extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var \DateTime|null
      */
     protected $mergedAt;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $diffUrl;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $htmlUrl;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $patchUrl;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @return \DateTime|null
      */
@@ -52,7 +52,7 @@ class IssueSearchResultItemPullRequest extends \ArrayObject
         return $this->mergedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime|null $mergedAt
      *
@@ -65,7 +65,7 @@ class IssueSearchResultItemPullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -74,7 +74,7 @@ class IssueSearchResultItemPullRequest extends \ArrayObject
         return $this->diffUrl;
     }
     /**
-     * 
+     *
      *
      * @param string|null $diffUrl
      *
@@ -87,7 +87,7 @@ class IssueSearchResultItemPullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -96,7 +96,7 @@ class IssueSearchResultItemPullRequest extends \ArrayObject
         return $this->htmlUrl;
     }
     /**
-     * 
+     *
      *
      * @param string|null $htmlUrl
      *
@@ -109,7 +109,7 @@ class IssueSearchResultItemPullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -118,7 +118,7 @@ class IssueSearchResultItemPullRequest extends \ArrayObject
         return $this->patchUrl;
     }
     /**
-     * 
+     *
      *
      * @param string|null $patchUrl
      *
@@ -131,7 +131,7 @@ class IssueSearchResultItemPullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -140,7 +140,7 @@ class IssueSearchResultItemPullRequest extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string|null $url
      *

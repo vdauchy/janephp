@@ -13,25 +13,25 @@ class PullRequestMergeResult extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $sha;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $merged;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $message;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -40,7 +40,7 @@ class PullRequestMergeResult extends \ArrayObject
         return $this->sha;
     }
     /**
-     * 
+     *
      *
      * @param string $sha
      *
@@ -53,7 +53,7 @@ class PullRequestMergeResult extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -62,7 +62,7 @@ class PullRequestMergeResult extends \ArrayObject
         return $this->merged;
     }
     /**
-     * 
+     *
      *
      * @param bool $merged
      *
@@ -75,7 +75,7 @@ class PullRequestMergeResult extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -84,7 +84,7 @@ class PullRequestMergeResult extends \ArrayObject
         return $this->message;
     }
     /**
-     * 
+     *
      *
      * @param string $message
      *

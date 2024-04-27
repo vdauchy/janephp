@@ -13,37 +13,37 @@ class GistCommit extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $version;
     /**
-     * 
+     *
      *
      * @var GistCommitUser|null
      */
     protected $user;
     /**
-     * 
+     *
      *
      * @var GistCommitChangeStatus
      */
     protected $changeStatus;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $committedAt;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -52,7 +52,7 @@ class GistCommit extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -65,7 +65,7 @@ class GistCommit extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -74,7 +74,7 @@ class GistCommit extends \ArrayObject
         return $this->version;
     }
     /**
-     * 
+     *
      *
      * @param string $version
      *
@@ -87,7 +87,7 @@ class GistCommit extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GistCommitUser|null
      */
@@ -96,7 +96,7 @@ class GistCommit extends \ArrayObject
         return $this->user;
     }
     /**
-     * 
+     *
      *
      * @param GistCommitUser|null $user
      *
@@ -109,7 +109,7 @@ class GistCommit extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GistCommitChangeStatus
      */
@@ -118,7 +118,7 @@ class GistCommit extends \ArrayObject
         return $this->changeStatus;
     }
     /**
-     * 
+     *
      *
      * @param GistCommitChangeStatus $changeStatus
      *
@@ -131,7 +131,7 @@ class GistCommit extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -140,7 +140,7 @@ class GistCommit extends \ArrayObject
         return $this->committedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $committedAt
      *

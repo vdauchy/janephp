@@ -19,13 +19,13 @@ class ServiceEndpoint
      */
     protected $spec;
     /**
-     * 
+     *
      *
      * @var list<EndpointPortConfig>
      */
     protected $ports;
     /**
-     * 
+     *
      *
      * @var list<ServiceEndpointVirtualIPsItem>
      */
@@ -53,7 +53,7 @@ class ServiceEndpoint
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<EndpointPortConfig>
      */
@@ -62,7 +62,7 @@ class ServiceEndpoint
         return $this->ports;
     }
     /**
-     * 
+     *
      *
      * @param list<EndpointPortConfig> $ports
      *
@@ -75,7 +75,7 @@ class ServiceEndpoint
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<ServiceEndpointVirtualIPsItem>
      */
@@ -84,7 +84,7 @@ class ServiceEndpoint
         return $this->virtualIPs;
     }
     /**
-     * 
+     *
      *
      * @param list<ServiceEndpointVirtualIPsItem> $virtualIPs
      *

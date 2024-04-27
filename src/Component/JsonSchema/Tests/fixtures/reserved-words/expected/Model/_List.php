@@ -13,13 +13,13 @@ class _List
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $foo;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -28,7 +28,7 @@ class _List
         return $this->foo;
     }
     /**
-     * 
+     *
      *
      * @param string $foo
      *

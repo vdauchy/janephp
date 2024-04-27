@@ -97,7 +97,7 @@ class BusinessProcess
      */
     protected $continuationBusinessProcessId;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -369,7 +369,7 @@ class BusinessProcess
         $this->continuationBusinessProcessId = $continuationBusinessProcessId;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -378,7 +378,7 @@ class BusinessProcess
         return $this->kind;
     }
     /**
-     * 
+     *
      *
      * @param string $kind
      */

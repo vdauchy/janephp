@@ -25,31 +25,31 @@ class CheckRun extends \ArrayObject
      */
     protected $headSha;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $nodeId;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $externalId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $htmlUrl;
     /**
-     * 
+     *
      *
      * @var string|null
      */
@@ -61,25 +61,25 @@ class CheckRun extends \ArrayObject
      */
     protected $status;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $conclusion;
     /**
-     * 
+     *
      *
      * @var \DateTime|null
      */
     protected $startedAt;
     /**
-     * 
+     *
      *
      * @var \DateTime|null
      */
     protected $completedAt;
     /**
-     * 
+     *
      *
      * @var CheckRunOutput
      */
@@ -91,19 +91,19 @@ class CheckRun extends \ArrayObject
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var CheckRunCheckSuite|null
      */
     protected $checkSuite;
     /**
-     * 
+     *
      *
      * @var CheckRunApp|null
      */
     protected $app;
     /**
-     * 
+     *
      *
      * @var mixed
      */
@@ -153,7 +153,7 @@ class CheckRun extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -162,7 +162,7 @@ class CheckRun extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -175,7 +175,7 @@ class CheckRun extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -184,7 +184,7 @@ class CheckRun extends \ArrayObject
         return $this->externalId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $externalId
      *
@@ -197,7 +197,7 @@ class CheckRun extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -206,7 +206,7 @@ class CheckRun extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -219,7 +219,7 @@ class CheckRun extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -228,7 +228,7 @@ class CheckRun extends \ArrayObject
         return $this->htmlUrl;
     }
     /**
-     * 
+     *
      *
      * @param string|null $htmlUrl
      *
@@ -241,7 +241,7 @@ class CheckRun extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -250,7 +250,7 @@ class CheckRun extends \ArrayObject
         return $this->detailsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string|null $detailsUrl
      *
@@ -285,7 +285,7 @@ class CheckRun extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -294,7 +294,7 @@ class CheckRun extends \ArrayObject
         return $this->conclusion;
     }
     /**
-     * 
+     *
      *
      * @param string|null $conclusion
      *
@@ -307,7 +307,7 @@ class CheckRun extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime|null
      */
@@ -316,7 +316,7 @@ class CheckRun extends \ArrayObject
         return $this->startedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime|null $startedAt
      *
@@ -329,7 +329,7 @@ class CheckRun extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime|null
      */
@@ -338,7 +338,7 @@ class CheckRun extends \ArrayObject
         return $this->completedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime|null $completedAt
      *
@@ -351,7 +351,7 @@ class CheckRun extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return CheckRunOutput
      */
@@ -360,7 +360,7 @@ class CheckRun extends \ArrayObject
         return $this->output;
     }
     /**
-     * 
+     *
      *
      * @param CheckRunOutput $output
      *
@@ -395,7 +395,7 @@ class CheckRun extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return CheckRunCheckSuite|null
      */
@@ -404,7 +404,7 @@ class CheckRun extends \ArrayObject
         return $this->checkSuite;
     }
     /**
-     * 
+     *
      *
      * @param CheckRunCheckSuite|null $checkSuite
      *
@@ -417,7 +417,7 @@ class CheckRun extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return CheckRunApp|null
      */
@@ -426,7 +426,7 @@ class CheckRun extends \ArrayObject
         return $this->app;
     }
     /**
-     * 
+     *
      *
      * @param CheckRunApp|null $app
      *
@@ -439,7 +439,7 @@ class CheckRun extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return mixed
      */
@@ -448,7 +448,7 @@ class CheckRun extends \ArrayObject
         return $this->pullRequests;
     }
     /**
-     * 
+     *
      *
      * @param mixed $pullRequests
      *

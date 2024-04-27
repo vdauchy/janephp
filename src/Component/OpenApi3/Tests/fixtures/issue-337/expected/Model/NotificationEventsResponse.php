@@ -19,7 +19,7 @@ class NotificationEventsResponse extends \ArrayObject
      */
     protected $totalCount;
     /**
-     * 
+     *
      *
      * @var list<NotificationEvent>
      */
@@ -53,7 +53,7 @@ class NotificationEventsResponse extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<NotificationEvent>
      */
@@ -62,7 +62,7 @@ class NotificationEventsResponse extends \ArrayObject
         return $this->data;
     }
     /**
-     * 
+     *
      *
      * @param list<NotificationEvent> $data
      *

@@ -7,11 +7,11 @@ class ReposReplaceAllTopics extends \Github\Runtime\Client\BaseEndpoint implemen
     protected $owner;
     protected $repo;
     /**
-     * 
      *
-     * @param string $owner 
-     * @param string $repo 
-     * @param null|\Github\Model\ReposOwnerRepoTopicsPutBody $requestBody 
+     *
+     * @param string $owner
+     * @param string $repo
+     * @param null|\Github\Model\ReposOwnerRepoTopicsPutBody $requestBody
      */
     public function __construct(string $owner, string $repo, ?\Github\Model\ReposOwnerRepoTopicsPutBody $requestBody = null)
     {

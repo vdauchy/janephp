@@ -13,31 +13,31 @@ class GbPeopleReportReponseReportDirectorshipsPreviousItemCreditScoreCurrentCred
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $commonValue;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $commonDescription;
     /**
-     * 
+     *
      *
      * @var GbPeopleReportReponseReportDirectorshipsPreviousItemCreditScoreCurrentCreditRatingCreditLimit
      */
     protected $creditLimit;
     /**
-     * 
+     *
      *
      * @var GbPeopleReportReponseReportDirectorshipsPreviousItemCreditScoreCurrentCreditRatingProviderValue
      */
     protected $providerValue;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -46,7 +46,7 @@ class GbPeopleReportReponseReportDirectorshipsPreviousItemCreditScoreCurrentCred
         return $this->commonValue;
     }
     /**
-     * 
+     *
      *
      * @param string $commonValue
      *
@@ -59,7 +59,7 @@ class GbPeopleReportReponseReportDirectorshipsPreviousItemCreditScoreCurrentCred
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -68,7 +68,7 @@ class GbPeopleReportReponseReportDirectorshipsPreviousItemCreditScoreCurrentCred
         return $this->commonDescription;
     }
     /**
-     * 
+     *
      *
      * @param string $commonDescription
      *
@@ -81,7 +81,7 @@ class GbPeopleReportReponseReportDirectorshipsPreviousItemCreditScoreCurrentCred
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GbPeopleReportReponseReportDirectorshipsPreviousItemCreditScoreCurrentCreditRatingCreditLimit
      */
@@ -90,7 +90,7 @@ class GbPeopleReportReponseReportDirectorshipsPreviousItemCreditScoreCurrentCred
         return $this->creditLimit;
     }
     /**
-     * 
+     *
      *
      * @param GbPeopleReportReponseReportDirectorshipsPreviousItemCreditScoreCurrentCreditRatingCreditLimit $creditLimit
      *
@@ -103,7 +103,7 @@ class GbPeopleReportReponseReportDirectorshipsPreviousItemCreditScoreCurrentCred
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GbPeopleReportReponseReportDirectorshipsPreviousItemCreditScoreCurrentCreditRatingProviderValue
      */
@@ -112,7 +112,7 @@ class GbPeopleReportReponseReportDirectorshipsPreviousItemCreditScoreCurrentCred
         return $this->providerValue;
     }
     /**
-     * 
+     *
      *
      * @param GbPeopleReportReponseReportDirectorshipsPreviousItemCreditScoreCurrentCreditRatingProviderValue $providerValue
      *

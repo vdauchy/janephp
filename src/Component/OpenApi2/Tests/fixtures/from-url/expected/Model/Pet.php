@@ -13,25 +13,25 @@ class Pet
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $tag;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -40,7 +40,7 @@ class Pet
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -53,7 +53,7 @@ class Pet
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -62,7 +62,7 @@ class Pet
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -75,7 +75,7 @@ class Pet
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -84,7 +84,7 @@ class Pet
         return $this->tag;
     }
     /**
-     * 
+     *
      *
      * @param string $tag
      *

@@ -13,25 +13,25 @@ class PluginConfigLinux
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var list<string>
      */
     protected $capabilities;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $allowAllDevices;
     /**
-     * 
+     *
      *
      * @var list<PluginDevice>
      */
     protected $devices;
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -40,7 +40,7 @@ class PluginConfigLinux
         return $this->capabilities;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $capabilities
      *
@@ -53,7 +53,7 @@ class PluginConfigLinux
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -62,7 +62,7 @@ class PluginConfigLinux
         return $this->allowAllDevices;
     }
     /**
-     * 
+     *
      *
      * @param bool $allowAllDevices
      *
@@ -75,7 +75,7 @@ class PluginConfigLinux
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<PluginDevice>
      */
@@ -84,7 +84,7 @@ class PluginConfigLinux
         return $this->devices;
     }
     /**
-     * 
+     *
      *
      * @param list<PluginDevice> $devices
      *

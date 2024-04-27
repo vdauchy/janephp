@@ -19,7 +19,7 @@ class TeamFullParent extends \ArrayObject
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -31,7 +31,7 @@ class TeamFullParent extends \ArrayObject
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -61,19 +61,19 @@ class TeamFullParent extends \ArrayObject
      */
     protected $privacy;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $htmlUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $repositoriesUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -107,7 +107,7 @@ class TeamFullParent extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -116,7 +116,7 @@ class TeamFullParent extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -151,7 +151,7 @@ class TeamFullParent extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -160,7 +160,7 @@ class TeamFullParent extends \ArrayObject
         return $this->membersUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $membersUrl
      *
@@ -261,7 +261,7 @@ class TeamFullParent extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -270,7 +270,7 @@ class TeamFullParent extends \ArrayObject
         return $this->htmlUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $htmlUrl
      *
@@ -283,7 +283,7 @@ class TeamFullParent extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -292,7 +292,7 @@ class TeamFullParent extends \ArrayObject
         return $this->repositoriesUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $repositoriesUrl
      *
@@ -305,7 +305,7 @@ class TeamFullParent extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -314,7 +314,7 @@ class TeamFullParent extends \ArrayObject
         return $this->slug;
     }
     /**
-     * 
+     *
      *
      * @param string $slug
      *

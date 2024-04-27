@@ -13,109 +13,109 @@ class PrimitivesItems extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $format;
     /**
-     * 
+     *
      *
      * @var PrimitivesItems|null
      */
     protected $items;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $collectionFormat = 'csv';
     /**
-     * 
+     *
      *
      * @var mixed|null
      */
     protected $default;
     /**
-     * 
+     *
      *
      * @var float|null
      */
     protected $maximum;
     /**
-     * 
+     *
      *
      * @var bool|null
      */
     protected $exclusiveMaximum = false;
     /**
-     * 
+     *
      *
      * @var float|null
      */
     protected $minimum;
     /**
-     * 
+     *
      *
      * @var bool|null
      */
     protected $exclusiveMinimum = false;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $maxLength;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $minLength;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $pattern;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $maxItems;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $minItems;
     /**
-     * 
+     *
      *
      * @var bool|null
      */
     protected $uniqueItems = false;
     /**
-     * 
+     *
      *
      * @var mixed[]|null
      */
     protected $enum;
     /**
-     * 
+     *
      *
      * @var float|null
      */
     protected $multipleOf;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -124,7 +124,7 @@ class PrimitivesItems extends \ArrayObject
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string|null $type
      *
@@ -137,7 +137,7 @@ class PrimitivesItems extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -146,7 +146,7 @@ class PrimitivesItems extends \ArrayObject
         return $this->format;
     }
     /**
-     * 
+     *
      *
      * @param string|null $format
      *
@@ -159,7 +159,7 @@ class PrimitivesItems extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return PrimitivesItems|null
      */
@@ -168,7 +168,7 @@ class PrimitivesItems extends \ArrayObject
         return $this->items;
     }
     /**
-     * 
+     *
      *
      * @param PrimitivesItems|null $items
      *
@@ -181,7 +181,7 @@ class PrimitivesItems extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -190,7 +190,7 @@ class PrimitivesItems extends \ArrayObject
         return $this->collectionFormat;
     }
     /**
-     * 
+     *
      *
      * @param string|null $collectionFormat
      *
@@ -203,7 +203,7 @@ class PrimitivesItems extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return mixed
      */
@@ -212,7 +212,7 @@ class PrimitivesItems extends \ArrayObject
         return $this->default;
     }
     /**
-     * 
+     *
      *
      * @param mixed $default
      *
@@ -225,7 +225,7 @@ class PrimitivesItems extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float|null
      */
@@ -234,7 +234,7 @@ class PrimitivesItems extends \ArrayObject
         return $this->maximum;
     }
     /**
-     * 
+     *
      *
      * @param float|null $maximum
      *
@@ -247,7 +247,7 @@ class PrimitivesItems extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool|null
      */
@@ -256,7 +256,7 @@ class PrimitivesItems extends \ArrayObject
         return $this->exclusiveMaximum;
     }
     /**
-     * 
+     *
      *
      * @param bool|null $exclusiveMaximum
      *
@@ -269,7 +269,7 @@ class PrimitivesItems extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float|null
      */
@@ -278,7 +278,7 @@ class PrimitivesItems extends \ArrayObject
         return $this->minimum;
     }
     /**
-     * 
+     *
      *
      * @param float|null $minimum
      *
@@ -291,7 +291,7 @@ class PrimitivesItems extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool|null
      */
@@ -300,7 +300,7 @@ class PrimitivesItems extends \ArrayObject
         return $this->exclusiveMinimum;
     }
     /**
-     * 
+     *
      *
      * @param bool|null $exclusiveMinimum
      *
@@ -313,7 +313,7 @@ class PrimitivesItems extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -322,7 +322,7 @@ class PrimitivesItems extends \ArrayObject
         return $this->maxLength;
     }
     /**
-     * 
+     *
      *
      * @param int|null $maxLength
      *
@@ -335,7 +335,7 @@ class PrimitivesItems extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -344,7 +344,7 @@ class PrimitivesItems extends \ArrayObject
         return $this->minLength;
     }
     /**
-     * 
+     *
      *
      * @param int|null $minLength
      *
@@ -357,7 +357,7 @@ class PrimitivesItems extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -366,7 +366,7 @@ class PrimitivesItems extends \ArrayObject
         return $this->pattern;
     }
     /**
-     * 
+     *
      *
      * @param string|null $pattern
      *
@@ -379,7 +379,7 @@ class PrimitivesItems extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -388,7 +388,7 @@ class PrimitivesItems extends \ArrayObject
         return $this->maxItems;
     }
     /**
-     * 
+     *
      *
      * @param int|null $maxItems
      *
@@ -401,7 +401,7 @@ class PrimitivesItems extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -410,7 +410,7 @@ class PrimitivesItems extends \ArrayObject
         return $this->minItems;
     }
     /**
-     * 
+     *
      *
      * @param int|null $minItems
      *
@@ -423,7 +423,7 @@ class PrimitivesItems extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool|null
      */
@@ -432,7 +432,7 @@ class PrimitivesItems extends \ArrayObject
         return $this->uniqueItems;
     }
     /**
-     * 
+     *
      *
      * @param bool|null $uniqueItems
      *
@@ -445,7 +445,7 @@ class PrimitivesItems extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return mixed[]|null
      */
@@ -454,7 +454,7 @@ class PrimitivesItems extends \ArrayObject
         return $this->enum;
     }
     /**
-     * 
+     *
      *
      * @param mixed[]|null $enum
      *
@@ -467,7 +467,7 @@ class PrimitivesItems extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float|null
      */
@@ -476,7 +476,7 @@ class PrimitivesItems extends \ArrayObject
         return $this->multipleOf;
     }
     /**
-     * 
+     *
      *
      * @param float|null $multipleOf
      *

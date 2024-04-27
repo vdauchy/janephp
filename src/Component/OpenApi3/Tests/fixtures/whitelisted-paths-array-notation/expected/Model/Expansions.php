@@ -13,37 +13,37 @@ class Expansions extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var list<mixed>
      */
     protected $users;
     /**
-     * 
+     *
      *
      * @var list<mixed>
      */
     protected $tweets;
     /**
-     * 
+     *
      *
      * @var list<mixed>
      */
     protected $places;
     /**
-     * 
+     *
      *
      * @var list<mixed>
      */
     protected $media;
     /**
-     * 
+     *
      *
      * @var list<Poll>
      */
     protected $polls;
     /**
-     * 
+     *
      *
      * @return list<mixed>
      */
@@ -52,7 +52,7 @@ class Expansions extends \ArrayObject
         return $this->users;
     }
     /**
-     * 
+     *
      *
      * @param list<mixed> $users
      *
@@ -65,7 +65,7 @@ class Expansions extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<mixed>
      */
@@ -74,7 +74,7 @@ class Expansions extends \ArrayObject
         return $this->tweets;
     }
     /**
-     * 
+     *
      *
      * @param list<mixed> $tweets
      *
@@ -87,7 +87,7 @@ class Expansions extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<mixed>
      */
@@ -96,7 +96,7 @@ class Expansions extends \ArrayObject
         return $this->places;
     }
     /**
-     * 
+     *
      *
      * @param list<mixed> $places
      *
@@ -109,7 +109,7 @@ class Expansions extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<mixed>
      */
@@ -118,7 +118,7 @@ class Expansions extends \ArrayObject
         return $this->media;
     }
     /**
-     * 
+     *
      *
      * @param list<mixed> $media
      *
@@ -131,7 +131,7 @@ class Expansions extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<Poll>
      */
@@ -140,7 +140,7 @@ class Expansions extends \ArrayObject
         return $this->polls;
     }
     /**
-     * 
+     *
      *
      * @param list<Poll> $polls
      *

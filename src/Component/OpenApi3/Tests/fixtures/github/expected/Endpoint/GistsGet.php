@@ -6,7 +6,7 @@ class GistsGet extends \Github\Runtime\Client\BaseEndpoint implements \Github\Ru
 {
     protected $gist_id;
     /**
-     * 
+     *
      *
      * @param string $gistId gist_id parameter
      */

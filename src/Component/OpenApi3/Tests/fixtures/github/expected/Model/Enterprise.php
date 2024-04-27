@@ -19,7 +19,7 @@ class Enterprise extends \ArrayObject
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -37,7 +37,7 @@ class Enterprise extends \ArrayObject
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -55,19 +55,19 @@ class Enterprise extends \ArrayObject
      */
     protected $slug;
     /**
-     * 
+     *
      *
      * @var \DateTime|null
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @var \DateTime|null
      */
     protected $updatedAt;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -95,7 +95,7 @@ class Enterprise extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -104,7 +104,7 @@ class Enterprise extends \ArrayObject
         return $this->htmlUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $htmlUrl
      *
@@ -161,7 +161,7 @@ class Enterprise extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -170,7 +170,7 @@ class Enterprise extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -227,7 +227,7 @@ class Enterprise extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime|null
      */
@@ -236,7 +236,7 @@ class Enterprise extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime|null $createdAt
      *
@@ -249,7 +249,7 @@ class Enterprise extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime|null
      */
@@ -258,7 +258,7 @@ class Enterprise extends \ArrayObject
         return $this->updatedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime|null $updatedAt
      *
@@ -271,7 +271,7 @@ class Enterprise extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -280,7 +280,7 @@ class Enterprise extends \ArrayObject
         return $this->avatarUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $avatarUrl
      *

@@ -25,13 +25,13 @@ class AppManifestsCodeConversionsPostResponse201 extends \ArrayObject
      */
     protected $slug;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $nodeId;
     /**
-     * 
+     *
      *
      * @var IntegrationOwner|null
      */
@@ -43,31 +43,31 @@ class AppManifestsCodeConversionsPostResponse201 extends \ArrayObject
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $externalUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $htmlUrl;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
@@ -91,25 +91,25 @@ class AppManifestsCodeConversionsPostResponse201 extends \ArrayObject
      */
     protected $installationsCount;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $clientId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $clientSecret;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $webhookSecret;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -159,7 +159,7 @@ class AppManifestsCodeConversionsPostResponse201 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -168,7 +168,7 @@ class AppManifestsCodeConversionsPostResponse201 extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -181,7 +181,7 @@ class AppManifestsCodeConversionsPostResponse201 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return IntegrationOwner|null
      */
@@ -190,7 +190,7 @@ class AppManifestsCodeConversionsPostResponse201 extends \ArrayObject
         return $this->owner;
     }
     /**
-     * 
+     *
      *
      * @param IntegrationOwner|null $owner
      *
@@ -225,7 +225,7 @@ class AppManifestsCodeConversionsPostResponse201 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -234,7 +234,7 @@ class AppManifestsCodeConversionsPostResponse201 extends \ArrayObject
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string|null $description
      *
@@ -247,7 +247,7 @@ class AppManifestsCodeConversionsPostResponse201 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -256,7 +256,7 @@ class AppManifestsCodeConversionsPostResponse201 extends \ArrayObject
         return $this->externalUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $externalUrl
      *
@@ -269,7 +269,7 @@ class AppManifestsCodeConversionsPostResponse201 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -278,7 +278,7 @@ class AppManifestsCodeConversionsPostResponse201 extends \ArrayObject
         return $this->htmlUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $htmlUrl
      *
@@ -291,7 +291,7 @@ class AppManifestsCodeConversionsPostResponse201 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -300,7 +300,7 @@ class AppManifestsCodeConversionsPostResponse201 extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $createdAt
      *
@@ -313,7 +313,7 @@ class AppManifestsCodeConversionsPostResponse201 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -322,7 +322,7 @@ class AppManifestsCodeConversionsPostResponse201 extends \ArrayObject
         return $this->updatedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $updatedAt
      *
@@ -401,7 +401,7 @@ class AppManifestsCodeConversionsPostResponse201 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -410,7 +410,7 @@ class AppManifestsCodeConversionsPostResponse201 extends \ArrayObject
         return $this->clientId;
     }
     /**
-     * 
+     *
      *
      * @param string $clientId
      *
@@ -423,7 +423,7 @@ class AppManifestsCodeConversionsPostResponse201 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -432,7 +432,7 @@ class AppManifestsCodeConversionsPostResponse201 extends \ArrayObject
         return $this->clientSecret;
     }
     /**
-     * 
+     *
      *
      * @param string $clientSecret
      *
@@ -445,7 +445,7 @@ class AppManifestsCodeConversionsPostResponse201 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -454,7 +454,7 @@ class AppManifestsCodeConversionsPostResponse201 extends \ArrayObject
         return $this->webhookSecret;
     }
     /**
-     * 
+     *
      *
      * @param string $webhookSecret
      *
@@ -467,7 +467,7 @@ class AppManifestsCodeConversionsPostResponse201 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -476,7 +476,7 @@ class AppManifestsCodeConversionsPostResponse201 extends \ArrayObject
         return $this->pem;
     }
     /**
-     * 
+     *
      *
      * @param string $pem
      *

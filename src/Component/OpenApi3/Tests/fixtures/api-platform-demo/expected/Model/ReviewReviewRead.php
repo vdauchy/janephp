@@ -13,7 +13,7 @@ class ReviewReviewRead extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
@@ -39,7 +39,7 @@ class ReviewReviewRead extends \ArrayObject
      */
     protected $letter;
     /**
-     * 
+     *
      *
      * @var BookReviewRead
      */
@@ -57,7 +57,7 @@ class ReviewReviewRead extends \ArrayObject
      */
     protected $publicationDate;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -66,7 +66,7 @@ class ReviewReviewRead extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param string|null $id
      *
@@ -149,7 +149,7 @@ class ReviewReviewRead extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return BookReviewRead
      */
@@ -158,7 +158,7 @@ class ReviewReviewRead extends \ArrayObject
         return $this->book;
     }
     /**
-     * 
+     *
      *
      * @param BookReviewRead $book
      *

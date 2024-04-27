@@ -13,361 +13,361 @@ class JsonSchema
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var array<string, JsonSchema|bool>|null
      */
     protected $definitions;
     /**
-     * 
+     *
      *
      * @var array<string, JsonSchema|bool|list<string>>|null
      */
     protected $dependencies;
     /**
-     * 
+     *
      *
      * @var JsonSchema|bool|null
      */
     protected $additionalItems;
     /**
-     * 
+     *
      *
      * @var JsonSchema|bool|null
      */
     protected $unevaluatedItems;
     /**
-     * 
+     *
      *
      * @var JsonSchema|bool|list<JsonSchema>|list<bool>|null
      */
     protected $items;
     /**
-     * 
+     *
      *
      * @var JsonSchema|bool|null
      */
     protected $contains;
     /**
-     * 
+     *
      *
      * @var JsonSchema|bool|null
      */
     protected $additionalProperties;
     /**
-     * 
+     *
      *
      * @var array<string, JsonSchema|bool>|null
      */
     protected $unevaluatedProperties;
     /**
-     * 
+     *
      *
      * @var array<string, JsonSchema|bool>|null
      */
     protected $properties;
     /**
-     * 
+     *
      *
      * @var array<string, JsonSchema|bool>|null
      */
     protected $patternProperties;
     /**
-     * 
+     *
      *
      * @var array<string, JsonSchema|bool>|null
      */
     protected $dependentSchemas;
     /**
-     * 
+     *
      *
      * @var JsonSchema|bool|null
      */
     protected $propertyNames;
     /**
-     * 
+     *
      *
      * @var JsonSchema|bool|null
      */
     protected $if;
     /**
-     * 
+     *
      *
      * @var JsonSchema|bool|null
      */
     protected $then;
     /**
-     * 
+     *
      *
      * @var JsonSchema|bool|null
      */
     protected $else;
     /**
-     * 
+     *
      *
      * @var list<JsonSchema>|list<bool>|null
      */
     protected $allOf;
     /**
-     * 
+     *
      *
      * @var list<JsonSchema>|list<bool>|null
      */
     protected $anyOf;
     /**
-     * 
+     *
      *
      * @var list<JsonSchema>|list<bool>|null
      */
     protected $oneOf;
     /**
-     * 
+     *
      *
      * @var JsonSchema|bool|null
      */
     protected $not;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $contentMediaType;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $contentEncoding;
     /**
-     * 
+     *
      *
      * @var JsonSchema|bool|null
      */
     protected $contentSchema;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $dollarId;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $dollarSchema;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $dollarAnchor;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $dollarRef;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $dollarRecursiveRef;
     /**
-     * 
+     *
      *
      * @var bool|null
      */
     protected $dollarRecursiveAnchor = false;
     /**
-     * 
+     *
      *
      * @var array<string, bool>|null
      */
     protected $dollarVocabulary;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $dollarComment;
     /**
-     * 
+     *
      *
      * @var array<string, JsonSchema|bool>|null
      */
     protected $dollarDefs;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $format;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $title;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @var mixed|null
      */
     protected $default;
     /**
-     * 
+     *
      *
      * @var bool|null
      */
     protected $deprecated = false;
     /**
-     * 
+     *
      *
      * @var bool|null
      */
     protected $readOnly = false;
     /**
-     * 
+     *
      *
      * @var bool|null
      */
     protected $writeOnly = false;
     /**
-     * 
+     *
      *
      * @var list<mixed>|null
      */
     protected $examples;
     /**
-     * 
+     *
      *
      * @var float|null
      */
     protected $multipleOf;
     /**
-     * 
+     *
      *
      * @var float|null
      */
     protected $maximum;
     /**
-     * 
+     *
      *
      * @var float|null
      */
     protected $exclusiveMaximum;
     /**
-     * 
+     *
      *
      * @var float|null
      */
     protected $minimum;
     /**
-     * 
+     *
      *
      * @var float|null
      */
     protected $exclusiveMinimum;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $maxLength;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $minLength;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $pattern;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $maxItems;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $minItems;
     /**
-     * 
+     *
      *
      * @var bool|null
      */
     protected $uniqueItems = false;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $maxContains;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $minContains;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $maxProperties;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $minProperties;
     /**
-     * 
+     *
      *
      * @var list<string>|null
      */
     protected $required;
     /**
-     * 
+     *
      *
      * @var array<string, list<string>>|null
      */
     protected $dependentRequired;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $const;
     /**
-     * 
+     *
      *
      * @var list<string>|null
      */
     protected $enum;
     /**
-     * 
+     *
      *
      * @var mixed|list<mixed>|null
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @return array<string, JsonSchema|bool>|null
      */
@@ -376,7 +376,7 @@ class JsonSchema
         return $this->definitions;
     }
     /**
-     * 
+     *
      *
      * @param array<string, JsonSchema|bool>|null $definitions
      *
@@ -389,7 +389,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return array<string, JsonSchema|bool|list<string>>|null
      */
@@ -398,7 +398,7 @@ class JsonSchema
         return $this->dependencies;
     }
     /**
-     * 
+     *
      *
      * @param array<string, JsonSchema|bool|list<string>>|null $dependencies
      *
@@ -411,7 +411,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return JsonSchema|bool|null
      */
@@ -420,7 +420,7 @@ class JsonSchema
         return $this->additionalItems;
     }
     /**
-     * 
+     *
      *
      * @param JsonSchema|bool|null $additionalItems
      *
@@ -433,7 +433,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return JsonSchema|bool|null
      */
@@ -442,7 +442,7 @@ class JsonSchema
         return $this->unevaluatedItems;
     }
     /**
-     * 
+     *
      *
      * @param JsonSchema|bool|null $unevaluatedItems
      *
@@ -455,7 +455,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return JsonSchema|bool|list<JsonSchema>|list<bool>|null
      */
@@ -464,7 +464,7 @@ class JsonSchema
         return $this->items;
     }
     /**
-     * 
+     *
      *
      * @param JsonSchema|bool|list<JsonSchema>|list<bool>|null $items
      *
@@ -477,7 +477,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return JsonSchema|bool|null
      */
@@ -486,7 +486,7 @@ class JsonSchema
         return $this->contains;
     }
     /**
-     * 
+     *
      *
      * @param JsonSchema|bool|null $contains
      *
@@ -499,7 +499,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return JsonSchema|bool|null
      */
@@ -508,7 +508,7 @@ class JsonSchema
         return $this->additionalProperties;
     }
     /**
-     * 
+     *
      *
      * @param JsonSchema|bool|null $additionalProperties
      *
@@ -521,7 +521,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return array<string, JsonSchema|bool>|null
      */
@@ -530,7 +530,7 @@ class JsonSchema
         return $this->unevaluatedProperties;
     }
     /**
-     * 
+     *
      *
      * @param array<string, JsonSchema|bool>|null $unevaluatedProperties
      *
@@ -543,7 +543,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return array<string, JsonSchema|bool>|null
      */
@@ -552,7 +552,7 @@ class JsonSchema
         return $this->properties;
     }
     /**
-     * 
+     *
      *
      * @param array<string, JsonSchema|bool>|null $properties
      *
@@ -565,7 +565,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return array<string, JsonSchema|bool>|null
      */
@@ -574,7 +574,7 @@ class JsonSchema
         return $this->patternProperties;
     }
     /**
-     * 
+     *
      *
      * @param array<string, JsonSchema|bool>|null $patternProperties
      *
@@ -587,7 +587,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return array<string, JsonSchema|bool>|null
      */
@@ -596,7 +596,7 @@ class JsonSchema
         return $this->dependentSchemas;
     }
     /**
-     * 
+     *
      *
      * @param array<string, JsonSchema|bool>|null $dependentSchemas
      *
@@ -609,7 +609,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return JsonSchema|bool|null
      */
@@ -618,7 +618,7 @@ class JsonSchema
         return $this->propertyNames;
     }
     /**
-     * 
+     *
      *
      * @param JsonSchema|bool|null $propertyNames
      *
@@ -631,7 +631,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return JsonSchema|bool|null
      */
@@ -640,7 +640,7 @@ class JsonSchema
         return $this->if;
     }
     /**
-     * 
+     *
      *
      * @param JsonSchema|bool|null $if
      *
@@ -653,7 +653,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return JsonSchema|bool|null
      */
@@ -662,7 +662,7 @@ class JsonSchema
         return $this->then;
     }
     /**
-     * 
+     *
      *
      * @param JsonSchema|bool|null $then
      *
@@ -675,7 +675,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return JsonSchema|bool|null
      */
@@ -684,7 +684,7 @@ class JsonSchema
         return $this->else;
     }
     /**
-     * 
+     *
      *
      * @param JsonSchema|bool|null $else
      *
@@ -697,7 +697,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<JsonSchema>|list<bool>|null
      */
@@ -706,7 +706,7 @@ class JsonSchema
         return $this->allOf;
     }
     /**
-     * 
+     *
      *
      * @param list<JsonSchema>|list<bool>|null $allOf
      *
@@ -719,7 +719,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<JsonSchema>|list<bool>|null
      */
@@ -728,7 +728,7 @@ class JsonSchema
         return $this->anyOf;
     }
     /**
-     * 
+     *
      *
      * @param list<JsonSchema>|list<bool>|null $anyOf
      *
@@ -741,7 +741,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<JsonSchema>|list<bool>|null
      */
@@ -750,7 +750,7 @@ class JsonSchema
         return $this->oneOf;
     }
     /**
-     * 
+     *
      *
      * @param list<JsonSchema>|list<bool>|null $oneOf
      *
@@ -763,7 +763,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return JsonSchema|bool|null
      */
@@ -772,7 +772,7 @@ class JsonSchema
         return $this->not;
     }
     /**
-     * 
+     *
      *
      * @param JsonSchema|bool|null $not
      *
@@ -785,7 +785,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -794,7 +794,7 @@ class JsonSchema
         return $this->contentMediaType;
     }
     /**
-     * 
+     *
      *
      * @param string|null $contentMediaType
      *
@@ -807,7 +807,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -816,7 +816,7 @@ class JsonSchema
         return $this->contentEncoding;
     }
     /**
-     * 
+     *
      *
      * @param string|null $contentEncoding
      *
@@ -829,7 +829,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return JsonSchema|bool|null
      */
@@ -838,7 +838,7 @@ class JsonSchema
         return $this->contentSchema;
     }
     /**
-     * 
+     *
      *
      * @param JsonSchema|bool|null $contentSchema
      *
@@ -851,7 +851,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -860,7 +860,7 @@ class JsonSchema
         return $this->dollarId;
     }
     /**
-     * 
+     *
      *
      * @param string|null $dollarId
      *
@@ -873,7 +873,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -882,7 +882,7 @@ class JsonSchema
         return $this->dollarSchema;
     }
     /**
-     * 
+     *
      *
      * @param string|null $dollarSchema
      *
@@ -895,7 +895,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -904,7 +904,7 @@ class JsonSchema
         return $this->dollarAnchor;
     }
     /**
-     * 
+     *
      *
      * @param string|null $dollarAnchor
      *
@@ -917,7 +917,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -926,7 +926,7 @@ class JsonSchema
         return $this->dollarRef;
     }
     /**
-     * 
+     *
      *
      * @param string|null $dollarRef
      *
@@ -939,7 +939,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -948,7 +948,7 @@ class JsonSchema
         return $this->dollarRecursiveRef;
     }
     /**
-     * 
+     *
      *
      * @param string|null $dollarRecursiveRef
      *
@@ -961,7 +961,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool|null
      */
@@ -970,7 +970,7 @@ class JsonSchema
         return $this->dollarRecursiveAnchor;
     }
     /**
-     * 
+     *
      *
      * @param bool|null $dollarRecursiveAnchor
      *
@@ -983,7 +983,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return array<string, bool>|null
      */
@@ -992,7 +992,7 @@ class JsonSchema
         return $this->dollarVocabulary;
     }
     /**
-     * 
+     *
      *
      * @param array<string, bool>|null $dollarVocabulary
      *
@@ -1005,7 +1005,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -1014,7 +1014,7 @@ class JsonSchema
         return $this->dollarComment;
     }
     /**
-     * 
+     *
      *
      * @param string|null $dollarComment
      *
@@ -1027,7 +1027,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return array<string, JsonSchema|bool>|null
      */
@@ -1036,7 +1036,7 @@ class JsonSchema
         return $this->dollarDefs;
     }
     /**
-     * 
+     *
      *
      * @param array<string, JsonSchema|bool>|null $dollarDefs
      *
@@ -1049,7 +1049,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -1058,7 +1058,7 @@ class JsonSchema
         return $this->format;
     }
     /**
-     * 
+     *
      *
      * @param string|null $format
      *
@@ -1071,7 +1071,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -1080,7 +1080,7 @@ class JsonSchema
         return $this->title;
     }
     /**
-     * 
+     *
      *
      * @param string|null $title
      *
@@ -1093,7 +1093,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -1102,7 +1102,7 @@ class JsonSchema
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string|null $description
      *
@@ -1115,7 +1115,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return mixed
      */
@@ -1124,7 +1124,7 @@ class JsonSchema
         return $this->default;
     }
     /**
-     * 
+     *
      *
      * @param mixed $default
      *
@@ -1137,7 +1137,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool|null
      */
@@ -1146,7 +1146,7 @@ class JsonSchema
         return $this->deprecated;
     }
     /**
-     * 
+     *
      *
      * @param bool|null $deprecated
      *
@@ -1159,7 +1159,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool|null
      */
@@ -1168,7 +1168,7 @@ class JsonSchema
         return $this->readOnly;
     }
     /**
-     * 
+     *
      *
      * @param bool|null $readOnly
      *
@@ -1181,7 +1181,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool|null
      */
@@ -1190,7 +1190,7 @@ class JsonSchema
         return $this->writeOnly;
     }
     /**
-     * 
+     *
      *
      * @param bool|null $writeOnly
      *
@@ -1203,7 +1203,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<mixed>|null
      */
@@ -1212,7 +1212,7 @@ class JsonSchema
         return $this->examples;
     }
     /**
-     * 
+     *
      *
      * @param list<mixed>|null $examples
      *
@@ -1225,7 +1225,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float|null
      */
@@ -1234,7 +1234,7 @@ class JsonSchema
         return $this->multipleOf;
     }
     /**
-     * 
+     *
      *
      * @param float|null $multipleOf
      *
@@ -1247,7 +1247,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float|null
      */
@@ -1256,7 +1256,7 @@ class JsonSchema
         return $this->maximum;
     }
     /**
-     * 
+     *
      *
      * @param float|null $maximum
      *
@@ -1269,7 +1269,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float|null
      */
@@ -1278,7 +1278,7 @@ class JsonSchema
         return $this->exclusiveMaximum;
     }
     /**
-     * 
+     *
      *
      * @param float|null $exclusiveMaximum
      *
@@ -1291,7 +1291,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float|null
      */
@@ -1300,7 +1300,7 @@ class JsonSchema
         return $this->minimum;
     }
     /**
-     * 
+     *
      *
      * @param float|null $minimum
      *
@@ -1313,7 +1313,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float|null
      */
@@ -1322,7 +1322,7 @@ class JsonSchema
         return $this->exclusiveMinimum;
     }
     /**
-     * 
+     *
      *
      * @param float|null $exclusiveMinimum
      *
@@ -1335,7 +1335,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -1344,7 +1344,7 @@ class JsonSchema
         return $this->maxLength;
     }
     /**
-     * 
+     *
      *
      * @param int|null $maxLength
      *
@@ -1357,7 +1357,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -1366,7 +1366,7 @@ class JsonSchema
         return $this->minLength;
     }
     /**
-     * 
+     *
      *
      * @param int|null $minLength
      *
@@ -1379,7 +1379,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -1388,7 +1388,7 @@ class JsonSchema
         return $this->pattern;
     }
     /**
-     * 
+     *
      *
      * @param string|null $pattern
      *
@@ -1401,7 +1401,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -1410,7 +1410,7 @@ class JsonSchema
         return $this->maxItems;
     }
     /**
-     * 
+     *
      *
      * @param int|null $maxItems
      *
@@ -1423,7 +1423,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -1432,7 +1432,7 @@ class JsonSchema
         return $this->minItems;
     }
     /**
-     * 
+     *
      *
      * @param int|null $minItems
      *
@@ -1445,7 +1445,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool|null
      */
@@ -1454,7 +1454,7 @@ class JsonSchema
         return $this->uniqueItems;
     }
     /**
-     * 
+     *
      *
      * @param bool|null $uniqueItems
      *
@@ -1467,7 +1467,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -1476,7 +1476,7 @@ class JsonSchema
         return $this->maxContains;
     }
     /**
-     * 
+     *
      *
      * @param int|null $maxContains
      *
@@ -1489,7 +1489,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -1498,7 +1498,7 @@ class JsonSchema
         return $this->minContains;
     }
     /**
-     * 
+     *
      *
      * @param int|null $minContains
      *
@@ -1511,7 +1511,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -1520,7 +1520,7 @@ class JsonSchema
         return $this->maxProperties;
     }
     /**
-     * 
+     *
      *
      * @param int|null $maxProperties
      *
@@ -1533,7 +1533,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -1542,7 +1542,7 @@ class JsonSchema
         return $this->minProperties;
     }
     /**
-     * 
+     *
      *
      * @param int|null $minProperties
      *
@@ -1555,7 +1555,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>|null
      */
@@ -1564,7 +1564,7 @@ class JsonSchema
         return $this->required;
     }
     /**
-     * 
+     *
      *
      * @param list<string>|null $required
      *
@@ -1577,7 +1577,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return array<string, list<string>>|null
      */
@@ -1586,7 +1586,7 @@ class JsonSchema
         return $this->dependentRequired;
     }
     /**
-     * 
+     *
      *
      * @param array<string, list<string>>|null $dependentRequired
      *
@@ -1599,7 +1599,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -1608,7 +1608,7 @@ class JsonSchema
         return $this->const;
     }
     /**
-     * 
+     *
      *
      * @param string|null $const
      *
@@ -1621,7 +1621,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>|null
      */
@@ -1630,7 +1630,7 @@ class JsonSchema
         return $this->enum;
     }
     /**
-     * 
+     *
      *
      * @param list<string>|null $enum
      *
@@ -1643,7 +1643,7 @@ class JsonSchema
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return mixed|list<mixed>
      */
@@ -1652,7 +1652,7 @@ class JsonSchema
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param mixed|list<mixed> $type
      *

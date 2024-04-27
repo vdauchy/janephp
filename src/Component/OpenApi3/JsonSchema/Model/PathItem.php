@@ -13,85 +13,85 @@ class PathItem extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $dollarRef;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $summary;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @var Operation|null
      */
     protected $get;
     /**
-     * 
+     *
      *
      * @var Operation|null
      */
     protected $put;
     /**
-     * 
+     *
      *
      * @var Operation|null
      */
     protected $post;
     /**
-     * 
+     *
      *
      * @var Operation|null
      */
     protected $delete;
     /**
-     * 
+     *
      *
      * @var Operation|null
      */
     protected $options;
     /**
-     * 
+     *
      *
      * @var Operation|null
      */
     protected $head;
     /**
-     * 
+     *
      *
      * @var Operation|null
      */
     protected $patch;
     /**
-     * 
+     *
      *
      * @var Operation|null
      */
     protected $trace;
     /**
-     * 
+     *
      *
      * @var Server[]|null
      */
     protected $servers;
     /**
-     * 
+     *
      *
      * @var Parameter[]|Reference[]|null
      */
     protected $parameters;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -100,7 +100,7 @@ class PathItem extends \ArrayObject
         return $this->dollarRef;
     }
     /**
-     * 
+     *
      *
      * @param string|null $dollarRef
      *
@@ -113,7 +113,7 @@ class PathItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -122,7 +122,7 @@ class PathItem extends \ArrayObject
         return $this->summary;
     }
     /**
-     * 
+     *
      *
      * @param string|null $summary
      *
@@ -135,7 +135,7 @@ class PathItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -144,7 +144,7 @@ class PathItem extends \ArrayObject
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string|null $description
      *
@@ -157,7 +157,7 @@ class PathItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return Operation|null
      */
@@ -166,7 +166,7 @@ class PathItem extends \ArrayObject
         return $this->get;
     }
     /**
-     * 
+     *
      *
      * @param Operation|null $get
      *
@@ -179,7 +179,7 @@ class PathItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return Operation|null
      */
@@ -188,7 +188,7 @@ class PathItem extends \ArrayObject
         return $this->put;
     }
     /**
-     * 
+     *
      *
      * @param Operation|null $put
      *
@@ -201,7 +201,7 @@ class PathItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return Operation|null
      */
@@ -210,7 +210,7 @@ class PathItem extends \ArrayObject
         return $this->post;
     }
     /**
-     * 
+     *
      *
      * @param Operation|null $post
      *
@@ -223,7 +223,7 @@ class PathItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return Operation|null
      */
@@ -232,7 +232,7 @@ class PathItem extends \ArrayObject
         return $this->delete;
     }
     /**
-     * 
+     *
      *
      * @param Operation|null $delete
      *
@@ -245,7 +245,7 @@ class PathItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return Operation|null
      */
@@ -254,7 +254,7 @@ class PathItem extends \ArrayObject
         return $this->options;
     }
     /**
-     * 
+     *
      *
      * @param Operation|null $options
      *
@@ -267,7 +267,7 @@ class PathItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return Operation|null
      */
@@ -276,7 +276,7 @@ class PathItem extends \ArrayObject
         return $this->head;
     }
     /**
-     * 
+     *
      *
      * @param Operation|null $head
      *
@@ -289,7 +289,7 @@ class PathItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return Operation|null
      */
@@ -298,7 +298,7 @@ class PathItem extends \ArrayObject
         return $this->patch;
     }
     /**
-     * 
+     *
      *
      * @param Operation|null $patch
      *
@@ -311,7 +311,7 @@ class PathItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return Operation|null
      */
@@ -320,7 +320,7 @@ class PathItem extends \ArrayObject
         return $this->trace;
     }
     /**
-     * 
+     *
      *
      * @param Operation|null $trace
      *
@@ -333,7 +333,7 @@ class PathItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return Server[]|null
      */
@@ -342,7 +342,7 @@ class PathItem extends \ArrayObject
         return $this->servers;
     }
     /**
-     * 
+     *
      *
      * @param Server[]|null $servers
      *
@@ -355,7 +355,7 @@ class PathItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return Parameter[]|Reference[]|null
      */
@@ -364,7 +364,7 @@ class PathItem extends \ArrayObject
         return $this->parameters;
     }
     /**
-     * 
+     *
      *
      * @param Parameter[]|Reference[]|null $parameters
      *

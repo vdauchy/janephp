@@ -13,19 +13,19 @@ class GitignoreTemplate extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $source;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -34,7 +34,7 @@ class GitignoreTemplate extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -47,7 +47,7 @@ class GitignoreTemplate extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -56,7 +56,7 @@ class GitignoreTemplate extends \ArrayObject
         return $this->source;
     }
     /**
-     * 
+     *
      *
      * @param string $source
      *

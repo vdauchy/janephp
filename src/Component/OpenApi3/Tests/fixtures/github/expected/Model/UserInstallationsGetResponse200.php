@@ -13,19 +13,19 @@ class UserInstallationsGetResponse200 extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $totalCount;
     /**
-     * 
+     *
      *
      * @var list<Installation>
      */
     protected $installations;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -34,7 +34,7 @@ class UserInstallationsGetResponse200 extends \ArrayObject
         return $this->totalCount;
     }
     /**
-     * 
+     *
      *
      * @param int $totalCount
      *
@@ -47,7 +47,7 @@ class UserInstallationsGetResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<Installation>
      */
@@ -56,7 +56,7 @@ class UserInstallationsGetResponse200 extends \ArrayObject
         return $this->installations;
     }
     /**
-     * 
+     *
      *
      * @param list<Installation> $installations
      *

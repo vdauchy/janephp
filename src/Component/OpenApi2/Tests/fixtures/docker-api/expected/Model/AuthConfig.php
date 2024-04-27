@@ -13,31 +13,31 @@ class AuthConfig
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $username;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $password;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $email;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $serveraddress;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -46,7 +46,7 @@ class AuthConfig
         return $this->username;
     }
     /**
-     * 
+     *
      *
      * @param string $username
      *
@@ -59,7 +59,7 @@ class AuthConfig
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -68,7 +68,7 @@ class AuthConfig
         return $this->password;
     }
     /**
-     * 
+     *
      *
      * @param string $password
      *
@@ -81,7 +81,7 @@ class AuthConfig
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -90,7 +90,7 @@ class AuthConfig
         return $this->email;
     }
     /**
-     * 
+     *
      *
      * @param string $email
      *
@@ -103,7 +103,7 @@ class AuthConfig
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -112,7 +112,7 @@ class AuthConfig
         return $this->serveraddress;
     }
     /**
-     * 
+     *
      *
      * @param string $serveraddress
      *

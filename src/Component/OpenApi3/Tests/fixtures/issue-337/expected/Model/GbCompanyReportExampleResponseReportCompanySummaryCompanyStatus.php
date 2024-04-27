@@ -13,19 +13,19 @@ class GbCompanyReportExampleResponseReportCompanySummaryCompanyStatus extends \A
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $status;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -34,7 +34,7 @@ class GbCompanyReportExampleResponseReportCompanySummaryCompanyStatus extends \A
         return $this->status;
     }
     /**
-     * 
+     *
      *
      * @param string $status
      *
@@ -47,7 +47,7 @@ class GbCompanyReportExampleResponseReportCompanySummaryCompanyStatus extends \A
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -56,7 +56,7 @@ class GbCompanyReportExampleResponseReportCompanySummaryCompanyStatus extends \A
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string $description
      *

@@ -17,13 +17,13 @@ class ParchmentJsonhal extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var ParchmentJsonhalLinks
      */
     protected $links;
     /**
-     * 
+     *
      *
      * @var string|null
      */
@@ -41,7 +41,7 @@ class ParchmentJsonhal extends \ArrayObject
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @return ParchmentJsonhalLinks
      */
@@ -50,7 +50,7 @@ class ParchmentJsonhal extends \ArrayObject
         return $this->links;
     }
     /**
-     * 
+     *
      *
      * @param ParchmentJsonhalLinks $links
      *
@@ -63,7 +63,7 @@ class ParchmentJsonhal extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -72,7 +72,7 @@ class ParchmentJsonhal extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param string|null $id
      *

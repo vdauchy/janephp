@@ -6,7 +6,7 @@ class ConfigDelete extends \Docker\Api\Runtime\Client\BaseEndpoint implements \D
 {
     protected $id;
     /**
-     * 
+     *
      *
      * @param string $id ID of the config
      */

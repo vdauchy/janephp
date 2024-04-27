@@ -13,67 +13,67 @@ class GbPeopleReportReponseReportDirectorshipsPreviousItem extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $companyName;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $companyRegistrationNumber;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $status;
     /**
-     * 
+     *
      *
      * @var GbPeopleReportReponseReportDirectorshipsPreviousItemPosition
      */
     protected $position;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $companyRegistrationDate;
     /**
-     * 
+     *
      *
      * @var GbPeopleReportReponseReportDirectorshipsPreviousItemLatestTurnoverFigure
      */
     protected $latestTurnoverFigure;
     /**
-     * 
+     *
      *
      * @var GbPeopleReportReponseReportDirectorshipsPreviousItemNetWorth
      */
     protected $netWorth;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $legalCount;
     /**
-     * 
+     *
      *
      * @var GbPeopleReportReponseReportDirectorshipsPreviousItemCreditScore
      */
     protected $creditScore;
     /**
-     * 
+     *
      *
      * @var GbPeopleReportReponseReportDirectorshipsPreviousItemAdditionalData
      */
     protected $additionalData;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -82,7 +82,7 @@ class GbPeopleReportReponseReportDirectorshipsPreviousItem extends \ArrayObject
         return $this->companyName;
     }
     /**
-     * 
+     *
      *
      * @param string $companyName
      *
@@ -95,7 +95,7 @@ class GbPeopleReportReponseReportDirectorshipsPreviousItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -104,7 +104,7 @@ class GbPeopleReportReponseReportDirectorshipsPreviousItem extends \ArrayObject
         return $this->companyRegistrationNumber;
     }
     /**
-     * 
+     *
      *
      * @param string $companyRegistrationNumber
      *
@@ -117,7 +117,7 @@ class GbPeopleReportReponseReportDirectorshipsPreviousItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -126,7 +126,7 @@ class GbPeopleReportReponseReportDirectorshipsPreviousItem extends \ArrayObject
         return $this->status;
     }
     /**
-     * 
+     *
      *
      * @param string $status
      *
@@ -139,7 +139,7 @@ class GbPeopleReportReponseReportDirectorshipsPreviousItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GbPeopleReportReponseReportDirectorshipsPreviousItemPosition
      */
@@ -148,7 +148,7 @@ class GbPeopleReportReponseReportDirectorshipsPreviousItem extends \ArrayObject
         return $this->position;
     }
     /**
-     * 
+     *
      *
      * @param GbPeopleReportReponseReportDirectorshipsPreviousItemPosition $position
      *
@@ -161,7 +161,7 @@ class GbPeopleReportReponseReportDirectorshipsPreviousItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -170,7 +170,7 @@ class GbPeopleReportReponseReportDirectorshipsPreviousItem extends \ArrayObject
         return $this->companyRegistrationDate;
     }
     /**
-     * 
+     *
      *
      * @param string $companyRegistrationDate
      *
@@ -183,7 +183,7 @@ class GbPeopleReportReponseReportDirectorshipsPreviousItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GbPeopleReportReponseReportDirectorshipsPreviousItemLatestTurnoverFigure
      */
@@ -192,7 +192,7 @@ class GbPeopleReportReponseReportDirectorshipsPreviousItem extends \ArrayObject
         return $this->latestTurnoverFigure;
     }
     /**
-     * 
+     *
      *
      * @param GbPeopleReportReponseReportDirectorshipsPreviousItemLatestTurnoverFigure $latestTurnoverFigure
      *
@@ -205,7 +205,7 @@ class GbPeopleReportReponseReportDirectorshipsPreviousItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GbPeopleReportReponseReportDirectorshipsPreviousItemNetWorth
      */
@@ -214,7 +214,7 @@ class GbPeopleReportReponseReportDirectorshipsPreviousItem extends \ArrayObject
         return $this->netWorth;
     }
     /**
-     * 
+     *
      *
      * @param GbPeopleReportReponseReportDirectorshipsPreviousItemNetWorth $netWorth
      *
@@ -227,7 +227,7 @@ class GbPeopleReportReponseReportDirectorshipsPreviousItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -236,7 +236,7 @@ class GbPeopleReportReponseReportDirectorshipsPreviousItem extends \ArrayObject
         return $this->legalCount;
     }
     /**
-     * 
+     *
      *
      * @param int $legalCount
      *
@@ -249,7 +249,7 @@ class GbPeopleReportReponseReportDirectorshipsPreviousItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GbPeopleReportReponseReportDirectorshipsPreviousItemCreditScore
      */
@@ -258,7 +258,7 @@ class GbPeopleReportReponseReportDirectorshipsPreviousItem extends \ArrayObject
         return $this->creditScore;
     }
     /**
-     * 
+     *
      *
      * @param GbPeopleReportReponseReportDirectorshipsPreviousItemCreditScore $creditScore
      *
@@ -271,7 +271,7 @@ class GbPeopleReportReponseReportDirectorshipsPreviousItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GbPeopleReportReponseReportDirectorshipsPreviousItemAdditionalData
      */
@@ -280,7 +280,7 @@ class GbPeopleReportReponseReportDirectorshipsPreviousItem extends \ArrayObject
         return $this->additionalData;
     }
     /**
-     * 
+     *
      *
      * @param GbPeopleReportReponseReportDirectorshipsPreviousItemAdditionalData $additionalData
      *

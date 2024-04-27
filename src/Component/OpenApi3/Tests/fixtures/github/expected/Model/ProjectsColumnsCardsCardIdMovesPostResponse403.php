@@ -13,25 +13,25 @@ class ProjectsColumnsCardsCardIdMovesPostResponse403 extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $message;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $documentationUrl;
     /**
-     * 
+     *
      *
      * @var list<ProjectsColumnsCardsCardIdMovesPostResponse403ErrorsItem>
      */
     protected $errors;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -40,7 +40,7 @@ class ProjectsColumnsCardsCardIdMovesPostResponse403 extends \ArrayObject
         return $this->message;
     }
     /**
-     * 
+     *
      *
      * @param string $message
      *
@@ -53,7 +53,7 @@ class ProjectsColumnsCardsCardIdMovesPostResponse403 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -62,7 +62,7 @@ class ProjectsColumnsCardsCardIdMovesPostResponse403 extends \ArrayObject
         return $this->documentationUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $documentationUrl
      *
@@ -75,7 +75,7 @@ class ProjectsColumnsCardsCardIdMovesPostResponse403 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<ProjectsColumnsCardsCardIdMovesPostResponse403ErrorsItem>
      */
@@ -84,7 +84,7 @@ class ProjectsColumnsCardsCardIdMovesPostResponse403 extends \ArrayObject
         return $this->errors;
     }
     /**
-     * 
+     *
      *
      * @param list<ProjectsColumnsCardsCardIdMovesPostResponse403ErrorsItem> $errors
      *

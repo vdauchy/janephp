@@ -31,7 +31,7 @@ class VideoSpriteFormat extends FormatBase
      */
     protected $quality;
     /**
-     * 
+     *
      *
      * @var string|null
      */
@@ -103,7 +103,7 @@ class VideoSpriteFormat extends FormatBase
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -112,7 +112,7 @@ class VideoSpriteFormat extends FormatBase
         return $this->extension;
     }
     /**
-     * 
+     *
      *
      * @param string|null $extension
      *

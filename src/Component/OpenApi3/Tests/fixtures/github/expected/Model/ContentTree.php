@@ -13,73 +13,73 @@ class ContentTree extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $size;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $path;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $sha;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $gitUrl;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $htmlUrl;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $downloadUrl;
     /**
-     * 
+     *
      *
      * @var list<ContentTreeEntriesItem>
      */
     protected $entries;
     /**
-     * 
+     *
      *
      * @var ContentTreeLinks
      */
     protected $links;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -88,7 +88,7 @@ class ContentTree extends \ArrayObject
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string $type
      *
@@ -101,7 +101,7 @@ class ContentTree extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -110,7 +110,7 @@ class ContentTree extends \ArrayObject
         return $this->size;
     }
     /**
-     * 
+     *
      *
      * @param int $size
      *
@@ -123,7 +123,7 @@ class ContentTree extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -132,7 +132,7 @@ class ContentTree extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -145,7 +145,7 @@ class ContentTree extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -154,7 +154,7 @@ class ContentTree extends \ArrayObject
         return $this->path;
     }
     /**
-     * 
+     *
      *
      * @param string $path
      *
@@ -167,7 +167,7 @@ class ContentTree extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -176,7 +176,7 @@ class ContentTree extends \ArrayObject
         return $this->sha;
     }
     /**
-     * 
+     *
      *
      * @param string $sha
      *
@@ -189,7 +189,7 @@ class ContentTree extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -198,7 +198,7 @@ class ContentTree extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -211,7 +211,7 @@ class ContentTree extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -220,7 +220,7 @@ class ContentTree extends \ArrayObject
         return $this->gitUrl;
     }
     /**
-     * 
+     *
      *
      * @param string|null $gitUrl
      *
@@ -233,7 +233,7 @@ class ContentTree extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -242,7 +242,7 @@ class ContentTree extends \ArrayObject
         return $this->htmlUrl;
     }
     /**
-     * 
+     *
      *
      * @param string|null $htmlUrl
      *
@@ -255,7 +255,7 @@ class ContentTree extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -264,7 +264,7 @@ class ContentTree extends \ArrayObject
         return $this->downloadUrl;
     }
     /**
-     * 
+     *
      *
      * @param string|null $downloadUrl
      *
@@ -277,7 +277,7 @@ class ContentTree extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<ContentTreeEntriesItem>
      */
@@ -286,7 +286,7 @@ class ContentTree extends \ArrayObject
         return $this->entries;
     }
     /**
-     * 
+     *
      *
      * @param list<ContentTreeEntriesItem> $entries
      *
@@ -299,7 +299,7 @@ class ContentTree extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ContentTreeLinks
      */
@@ -308,7 +308,7 @@ class ContentTree extends \ArrayObject
         return $this->links;
     }
     /**
-     * 
+     *
      *
      * @param ContentTreeLinks $links
      *

@@ -19,13 +19,13 @@ class PluginConfig
      */
     protected $dockerVersion;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -37,73 +37,73 @@ class PluginConfig
      */
     protected $interface;
     /**
-     * 
+     *
      *
      * @var list<string>
      */
     protected $entrypoint;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $workDir;
     /**
-     * 
+     *
      *
      * @var PluginConfigUser
      */
     protected $user;
     /**
-     * 
+     *
      *
      * @var PluginConfigNetwork
      */
     protected $network;
     /**
-     * 
+     *
      *
      * @var PluginConfigLinux
      */
     protected $linux;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $propagatedMount;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $ipcHost;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $pidHost;
     /**
-     * 
+     *
      *
      * @var list<PluginMount>
      */
     protected $mounts;
     /**
-     * 
+     *
      *
      * @var list<PluginEnv>
      */
     protected $env;
     /**
-     * 
+     *
      *
      * @var PluginConfigArgs
      */
     protected $args;
     /**
-     * 
+     *
      *
      * @var PluginConfigRootfs
      */
@@ -131,7 +131,7 @@ class PluginConfig
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -140,7 +140,7 @@ class PluginConfig
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string $description
      *
@@ -153,7 +153,7 @@ class PluginConfig
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -162,7 +162,7 @@ class PluginConfig
         return $this->documentation;
     }
     /**
-     * 
+     *
      *
      * @param string $documentation
      *
@@ -197,7 +197,7 @@ class PluginConfig
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -206,7 +206,7 @@ class PluginConfig
         return $this->entrypoint;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $entrypoint
      *
@@ -219,7 +219,7 @@ class PluginConfig
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -228,7 +228,7 @@ class PluginConfig
         return $this->workDir;
     }
     /**
-     * 
+     *
      *
      * @param string $workDir
      *
@@ -241,7 +241,7 @@ class PluginConfig
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return PluginConfigUser
      */
@@ -250,7 +250,7 @@ class PluginConfig
         return $this->user;
     }
     /**
-     * 
+     *
      *
      * @param PluginConfigUser $user
      *
@@ -263,7 +263,7 @@ class PluginConfig
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return PluginConfigNetwork
      */
@@ -272,7 +272,7 @@ class PluginConfig
         return $this->network;
     }
     /**
-     * 
+     *
      *
      * @param PluginConfigNetwork $network
      *
@@ -285,7 +285,7 @@ class PluginConfig
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return PluginConfigLinux
      */
@@ -294,7 +294,7 @@ class PluginConfig
         return $this->linux;
     }
     /**
-     * 
+     *
      *
      * @param PluginConfigLinux $linux
      *
@@ -307,7 +307,7 @@ class PluginConfig
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -316,7 +316,7 @@ class PluginConfig
         return $this->propagatedMount;
     }
     /**
-     * 
+     *
      *
      * @param string $propagatedMount
      *
@@ -329,7 +329,7 @@ class PluginConfig
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -338,7 +338,7 @@ class PluginConfig
         return $this->ipcHost;
     }
     /**
-     * 
+     *
      *
      * @param bool $ipcHost
      *
@@ -351,7 +351,7 @@ class PluginConfig
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -360,7 +360,7 @@ class PluginConfig
         return $this->pidHost;
     }
     /**
-     * 
+     *
      *
      * @param bool $pidHost
      *
@@ -373,7 +373,7 @@ class PluginConfig
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<PluginMount>
      */
@@ -382,7 +382,7 @@ class PluginConfig
         return $this->mounts;
     }
     /**
-     * 
+     *
      *
      * @param list<PluginMount> $mounts
      *
@@ -395,7 +395,7 @@ class PluginConfig
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<PluginEnv>
      */
@@ -404,7 +404,7 @@ class PluginConfig
         return $this->env;
     }
     /**
-     * 
+     *
      *
      * @param list<PluginEnv> $env
      *
@@ -417,7 +417,7 @@ class PluginConfig
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return PluginConfigArgs
      */
@@ -426,7 +426,7 @@ class PluginConfig
         return $this->args;
     }
     /**
-     * 
+     *
      *
      * @param PluginConfigArgs $args
      *
@@ -439,7 +439,7 @@ class PluginConfig
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return PluginConfigRootfs
      */
@@ -448,7 +448,7 @@ class PluginConfig
         return $this->rootfs;
     }
     /**
-     * 
+     *
      *
      * @param PluginConfigRootfs $rootfs
      *

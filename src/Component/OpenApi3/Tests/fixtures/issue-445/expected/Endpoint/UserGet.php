@@ -6,7 +6,7 @@ class UserGet extends \PicturePark\API\Runtime\Client\BaseEndpoint implements \P
 {
     protected $id;
     /**
-     * 
+     *
      *
      * @param string $id User ID to search for.
      */

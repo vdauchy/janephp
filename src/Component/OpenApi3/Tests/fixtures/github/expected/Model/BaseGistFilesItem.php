@@ -13,37 +13,37 @@ class BaseGistFilesItem extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $filename;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $language;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $rawUrl;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $size;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -52,7 +52,7 @@ class BaseGistFilesItem extends \ArrayObject
         return $this->filename;
     }
     /**
-     * 
+     *
      *
      * @param string $filename
      *
@@ -65,7 +65,7 @@ class BaseGistFilesItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -74,7 +74,7 @@ class BaseGistFilesItem extends \ArrayObject
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string $type
      *
@@ -87,7 +87,7 @@ class BaseGistFilesItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -96,7 +96,7 @@ class BaseGistFilesItem extends \ArrayObject
         return $this->language;
     }
     /**
-     * 
+     *
      *
      * @param string $language
      *
@@ -109,7 +109,7 @@ class BaseGistFilesItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -118,7 +118,7 @@ class BaseGistFilesItem extends \ArrayObject
         return $this->rawUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $rawUrl
      *
@@ -131,7 +131,7 @@ class BaseGistFilesItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -140,7 +140,7 @@ class BaseGistFilesItem extends \ArrayObject
         return $this->size;
     }
     /**
-     * 
+     *
      *
      * @param int $size
      *

@@ -19,37 +19,37 @@ class AccessCountriesResponseCountryAccessItem extends \ArrayObject
      */
     protected $creditsafeConnectOnlineReports;
     /**
-     * 
+     *
      *
      * @var list<AccessCountriesResponseCountryAccessItemCreditsafeConnectOfflineReportsItem>
      */
     protected $creditsafeConnectOfflineReports;
     /**
-     * 
+     *
      *
      * @var list<AccessCountriesResponseCountryAccessItemCreditsafeConnectMonitoringItem>
      */
     protected $creditsafeConnectMonitoring;
     /**
-     * 
+     *
      *
      * @var list<AccessCountriesResponseCountryAccessItemCreditsafeConnectDirectorReportsItem>
      */
     protected $creditsafeConnectDirectorReports;
     /**
-     * 
+     *
      *
      * @var list<AccessCountriesResponseCountryAccessItemCreditsafeConnectImageDocumentsItem>
      */
     protected $creditsafeConnectImageDocuments;
     /**
-     * 
+     *
      *
      * @var list<AccessCountriesResponseCountryAccessItemCreditsafeConnectBankValidationItem>
      */
     protected $creditsafeConnectBankValidation;
     /**
-     * 
+     *
      *
      * @var list<AccessCountriesResponseCountryAccessItemCreditsafeConnectBankVerificationItem>
      */
@@ -77,7 +77,7 @@ class AccessCountriesResponseCountryAccessItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<AccessCountriesResponseCountryAccessItemCreditsafeConnectOfflineReportsItem>
      */
@@ -86,7 +86,7 @@ class AccessCountriesResponseCountryAccessItem extends \ArrayObject
         return $this->creditsafeConnectOfflineReports;
     }
     /**
-     * 
+     *
      *
      * @param list<AccessCountriesResponseCountryAccessItemCreditsafeConnectOfflineReportsItem> $creditsafeConnectOfflineReports
      *
@@ -99,7 +99,7 @@ class AccessCountriesResponseCountryAccessItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<AccessCountriesResponseCountryAccessItemCreditsafeConnectMonitoringItem>
      */
@@ -108,7 +108,7 @@ class AccessCountriesResponseCountryAccessItem extends \ArrayObject
         return $this->creditsafeConnectMonitoring;
     }
     /**
-     * 
+     *
      *
      * @param list<AccessCountriesResponseCountryAccessItemCreditsafeConnectMonitoringItem> $creditsafeConnectMonitoring
      *
@@ -121,7 +121,7 @@ class AccessCountriesResponseCountryAccessItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<AccessCountriesResponseCountryAccessItemCreditsafeConnectDirectorReportsItem>
      */
@@ -130,7 +130,7 @@ class AccessCountriesResponseCountryAccessItem extends \ArrayObject
         return $this->creditsafeConnectDirectorReports;
     }
     /**
-     * 
+     *
      *
      * @param list<AccessCountriesResponseCountryAccessItemCreditsafeConnectDirectorReportsItem> $creditsafeConnectDirectorReports
      *
@@ -143,7 +143,7 @@ class AccessCountriesResponseCountryAccessItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<AccessCountriesResponseCountryAccessItemCreditsafeConnectImageDocumentsItem>
      */
@@ -152,7 +152,7 @@ class AccessCountriesResponseCountryAccessItem extends \ArrayObject
         return $this->creditsafeConnectImageDocuments;
     }
     /**
-     * 
+     *
      *
      * @param list<AccessCountriesResponseCountryAccessItemCreditsafeConnectImageDocumentsItem> $creditsafeConnectImageDocuments
      *
@@ -165,7 +165,7 @@ class AccessCountriesResponseCountryAccessItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<AccessCountriesResponseCountryAccessItemCreditsafeConnectBankValidationItem>
      */
@@ -174,7 +174,7 @@ class AccessCountriesResponseCountryAccessItem extends \ArrayObject
         return $this->creditsafeConnectBankValidation;
     }
     /**
-     * 
+     *
      *
      * @param list<AccessCountriesResponseCountryAccessItemCreditsafeConnectBankValidationItem> $creditsafeConnectBankValidation
      *
@@ -187,7 +187,7 @@ class AccessCountriesResponseCountryAccessItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<AccessCountriesResponseCountryAccessItemCreditsafeConnectBankVerificationItem>
      */
@@ -196,7 +196,7 @@ class AccessCountriesResponseCountryAccessItem extends \ArrayObject
         return $this->creditsafeConnectBankVerification;
     }
     /**
-     * 
+     *
      *
      * @param list<AccessCountriesResponseCountryAccessItemCreditsafeConnectBankVerificationItem> $creditsafeConnectBankVerification
      *

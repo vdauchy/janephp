@@ -25,7 +25,7 @@ class PermissionSetSearchRequest
      */
     protected $searchBehaviors;
     /**
-     * 
+     *
      *
      * @var list<SortInfo>|null
      */
@@ -43,7 +43,7 @@ class PermissionSetSearchRequest
      */
     protected $pageToken;
     /**
-     * 
+     *
      *
      * @var mixed|null
      */
@@ -113,7 +113,7 @@ class PermissionSetSearchRequest
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<SortInfo>|null
      */
@@ -122,7 +122,7 @@ class PermissionSetSearchRequest
         return $this->sort;
     }
     /**
-     * 
+     *
      *
      * @param list<SortInfo>|null $sort
      *
@@ -179,7 +179,7 @@ class PermissionSetSearchRequest
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return mixed
      */
@@ -188,7 +188,7 @@ class PermissionSetSearchRequest
         return $this->filter;
     }
     /**
-     * 
+     *
      *
      * @param mixed $filter
      *

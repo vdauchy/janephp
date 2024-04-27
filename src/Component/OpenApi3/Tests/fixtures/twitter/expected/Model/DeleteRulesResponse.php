@@ -13,13 +13,13 @@ class DeleteRulesResponse extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var RulesResponseMetadata
      */
     protected $meta;
     /**
-     * 
+     *
      *
      * @return RulesResponseMetadata
      */
@@ -28,7 +28,7 @@ class DeleteRulesResponse extends \ArrayObject
         return $this->meta;
     }
     /**
-     * 
+     *
      *
      * @param RulesResponseMetadata $meta
      *

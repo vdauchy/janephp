@@ -25,13 +25,13 @@ class Job extends \ArrayObject
      */
     protected $runId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $runUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -43,13 +43,13 @@ class Job extends \ArrayObject
      */
     protected $headSha;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string|null
      */
@@ -91,7 +91,7 @@ class Job extends \ArrayObject
      */
     protected $steps;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -141,7 +141,7 @@ class Job extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -150,7 +150,7 @@ class Job extends \ArrayObject
         return $this->runUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $runUrl
      *
@@ -163,7 +163,7 @@ class Job extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -172,7 +172,7 @@ class Job extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -207,7 +207,7 @@ class Job extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -216,7 +216,7 @@ class Job extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -229,7 +229,7 @@ class Job extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -238,7 +238,7 @@ class Job extends \ArrayObject
         return $this->htmlUrl;
     }
     /**
-     * 
+     *
      *
      * @param string|null $htmlUrl
      *
@@ -383,7 +383,7 @@ class Job extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -392,7 +392,7 @@ class Job extends \ArrayObject
         return $this->checkRunUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $checkRunUrl
      *

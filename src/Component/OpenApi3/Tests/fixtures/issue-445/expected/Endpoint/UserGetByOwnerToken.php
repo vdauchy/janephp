@@ -6,7 +6,7 @@ class UserGetByOwnerToken extends \PicturePark\API\Runtime\Client\BaseEndpoint i
 {
     protected $tokenId;
     /**
-     * 
+     *
      *
      * @param string $tokenId ID of the owner token.
      */

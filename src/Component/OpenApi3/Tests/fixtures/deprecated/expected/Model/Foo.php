@@ -17,13 +17,13 @@ class Foo extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $email;
     /**
-     * 
+     *
      *
      * @deprecated
      *
@@ -31,7 +31,7 @@ class Foo extends \ArrayObject
      */
     protected $bar;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -40,7 +40,7 @@ class Foo extends \ArrayObject
         return $this->email;
     }
     /**
-     * 
+     *
      *
      * @param string $email
      *
@@ -53,7 +53,7 @@ class Foo extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @deprecated
      *
@@ -64,7 +64,7 @@ class Foo extends \ArrayObject
         return $this->bar;
     }
     /**
-     * 
+     *
      *
      * @param string $bar
      *

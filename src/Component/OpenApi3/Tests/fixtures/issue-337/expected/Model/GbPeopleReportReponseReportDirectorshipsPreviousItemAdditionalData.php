@@ -13,25 +13,25 @@ class GbPeopleReportReponseReportDirectorshipsPreviousItemAdditionalData extends
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $occupation;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $statusDescription;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $gearing;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -40,7 +40,7 @@ class GbPeopleReportReponseReportDirectorshipsPreviousItemAdditionalData extends
         return $this->occupation;
     }
     /**
-     * 
+     *
      *
      * @param string $occupation
      *
@@ -53,7 +53,7 @@ class GbPeopleReportReponseReportDirectorshipsPreviousItemAdditionalData extends
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -62,7 +62,7 @@ class GbPeopleReportReponseReportDirectorshipsPreviousItemAdditionalData extends
         return $this->statusDescription;
     }
     /**
-     * 
+     *
      *
      * @param string $statusDescription
      *
@@ -75,7 +75,7 @@ class GbPeopleReportReponseReportDirectorshipsPreviousItemAdditionalData extends
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -84,7 +84,7 @@ class GbPeopleReportReponseReportDirectorshipsPreviousItemAdditionalData extends
         return $this->gearing;
     }
     /**
-     * 
+     *
      *
      * @param float $gearing
      *

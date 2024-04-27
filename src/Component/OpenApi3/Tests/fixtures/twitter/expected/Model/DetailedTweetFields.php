@@ -19,7 +19,7 @@ class DetailedTweetFields extends \ArrayObject
      */
     protected $stats;
     /**
-     * 
+     *
      *
      * @var list<ContextAnnotation>
      */
@@ -65,7 +65,7 @@ class DetailedTweetFields extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<ContextAnnotation>
      */
@@ -74,7 +74,7 @@ class DetailedTweetFields extends \ArrayObject
         return $this->contextAnnotation;
     }
     /**
-     * 
+     *
      *
      * @param list<ContextAnnotation> $contextAnnotation
      *

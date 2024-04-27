@@ -13,25 +13,25 @@ class ConsoleMessage extends Message
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $command;
     /**
-     * 
+     *
      *
      * @var list<TupleOfStringAndString>|null
      */
     protected $arguments;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $targetQueue;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -40,7 +40,7 @@ class ConsoleMessage extends Message
         return $this->command;
     }
     /**
-     * 
+     *
      *
      * @param string|null $command
      *
@@ -53,7 +53,7 @@ class ConsoleMessage extends Message
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<TupleOfStringAndString>|null
      */
@@ -62,7 +62,7 @@ class ConsoleMessage extends Message
         return $this->arguments;
     }
     /**
-     * 
+     *
      *
      * @param list<TupleOfStringAndString>|null $arguments
      *
@@ -75,7 +75,7 @@ class ConsoleMessage extends Message
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -84,7 +84,7 @@ class ConsoleMessage extends Message
         return $this->targetQueue;
     }
     /**
-     * 
+     *
      *
      * @param string|null $targetQueue
      *

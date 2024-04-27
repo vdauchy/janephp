@@ -13,217 +13,217 @@ class Schema extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $title;
     /**
-     * 
+     *
      *
      * @var float|null
      */
     protected $multipleOf;
     /**
-     * 
+     *
      *
      * @var float|null
      */
     protected $maximum;
     /**
-     * 
+     *
      *
      * @var bool|null
      */
     protected $exclusiveMaximum = false;
     /**
-     * 
+     *
      *
      * @var float|null
      */
     protected $minimum;
     /**
-     * 
+     *
      *
      * @var bool|null
      */
     protected $exclusiveMinimum = false;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $maxLength;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $minLength = 0;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $pattern;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $maxItems;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $minItems = 0;
     /**
-     * 
+     *
      *
      * @var bool|null
      */
     protected $uniqueItems = false;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $maxProperties;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $minProperties = 0;
     /**
-     * 
+     *
      *
      * @var string[]|null
      */
     protected $required;
     /**
-     * 
+     *
      *
      * @var mixed[]|null
      */
     protected $enum;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @var Schema|Reference|null
      */
     protected $not;
     /**
-     * 
+     *
      *
      * @var Schema[]|Reference[]|null
      */
     protected $allOf;
     /**
-     * 
+     *
      *
      * @var Schema[]|Reference[]|null
      */
     protected $oneOf;
     /**
-     * 
+     *
      *
      * @var Schema[]|Reference[]|null
      */
     protected $anyOf;
     /**
-     * 
+     *
      *
      * @var Schema|Reference|null
      */
     protected $items;
     /**
-     * 
+     *
      *
      * @var array<string, Schema|Reference>|null
      */
     protected $properties;
     /**
-     * 
+     *
      *
      * @var Schema|Reference|bool|null
      */
     protected $additionalProperties = true;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $format;
     /**
-     * 
+     *
      *
      * @var mixed|null
      */
     protected $default;
     /**
-     * 
+     *
      *
      * @var bool|null
      */
     protected $nullable = false;
     /**
-     * 
+     *
      *
      * @var Discriminator|null
      */
     protected $discriminator;
     /**
-     * 
+     *
      *
      * @var bool|null
      */
     protected $readOnly = false;
     /**
-     * 
+     *
      *
      * @var bool|null
      */
     protected $writeOnly = false;
     /**
-     * 
+     *
      *
      * @var mixed|null
      */
     protected $example;
     /**
-     * 
+     *
      *
      * @var ExternalDocumentation|null
      */
     protected $externalDocs;
     /**
-     * 
+     *
      *
      * @var bool|null
      */
     protected $deprecated = false;
     /**
-     * 
+     *
      *
      * @var XML|null
      */
     protected $xml;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -232,7 +232,7 @@ class Schema extends \ArrayObject
         return $this->title;
     }
     /**
-     * 
+     *
      *
      * @param string|null $title
      *
@@ -245,7 +245,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float|null
      */
@@ -254,7 +254,7 @@ class Schema extends \ArrayObject
         return $this->multipleOf;
     }
     /**
-     * 
+     *
      *
      * @param float|null $multipleOf
      *
@@ -267,7 +267,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float|null
      */
@@ -276,7 +276,7 @@ class Schema extends \ArrayObject
         return $this->maximum;
     }
     /**
-     * 
+     *
      *
      * @param float|null $maximum
      *
@@ -289,7 +289,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool|null
      */
@@ -298,7 +298,7 @@ class Schema extends \ArrayObject
         return $this->exclusiveMaximum;
     }
     /**
-     * 
+     *
      *
      * @param bool|null $exclusiveMaximum
      *
@@ -311,7 +311,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float|null
      */
@@ -320,7 +320,7 @@ class Schema extends \ArrayObject
         return $this->minimum;
     }
     /**
-     * 
+     *
      *
      * @param float|null $minimum
      *
@@ -333,7 +333,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool|null
      */
@@ -342,7 +342,7 @@ class Schema extends \ArrayObject
         return $this->exclusiveMinimum;
     }
     /**
-     * 
+     *
      *
      * @param bool|null $exclusiveMinimum
      *
@@ -355,7 +355,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -364,7 +364,7 @@ class Schema extends \ArrayObject
         return $this->maxLength;
     }
     /**
-     * 
+     *
      *
      * @param int|null $maxLength
      *
@@ -377,7 +377,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -386,7 +386,7 @@ class Schema extends \ArrayObject
         return $this->minLength;
     }
     /**
-     * 
+     *
      *
      * @param int|null $minLength
      *
@@ -399,7 +399,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -408,7 +408,7 @@ class Schema extends \ArrayObject
         return $this->pattern;
     }
     /**
-     * 
+     *
      *
      * @param string|null $pattern
      *
@@ -421,7 +421,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -430,7 +430,7 @@ class Schema extends \ArrayObject
         return $this->maxItems;
     }
     /**
-     * 
+     *
      *
      * @param int|null $maxItems
      *
@@ -443,7 +443,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -452,7 +452,7 @@ class Schema extends \ArrayObject
         return $this->minItems;
     }
     /**
-     * 
+     *
      *
      * @param int|null $minItems
      *
@@ -465,7 +465,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool|null
      */
@@ -474,7 +474,7 @@ class Schema extends \ArrayObject
         return $this->uniqueItems;
     }
     /**
-     * 
+     *
      *
      * @param bool|null $uniqueItems
      *
@@ -487,7 +487,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -496,7 +496,7 @@ class Schema extends \ArrayObject
         return $this->maxProperties;
     }
     /**
-     * 
+     *
      *
      * @param int|null $maxProperties
      *
@@ -509,7 +509,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -518,7 +518,7 @@ class Schema extends \ArrayObject
         return $this->minProperties;
     }
     /**
-     * 
+     *
      *
      * @param int|null $minProperties
      *
@@ -531,7 +531,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string[]|null
      */
@@ -540,7 +540,7 @@ class Schema extends \ArrayObject
         return $this->required;
     }
     /**
-     * 
+     *
      *
      * @param string[]|null $required
      *
@@ -553,7 +553,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return mixed[]|null
      */
@@ -562,7 +562,7 @@ class Schema extends \ArrayObject
         return $this->enum;
     }
     /**
-     * 
+     *
      *
      * @param mixed[]|null $enum
      *
@@ -575,7 +575,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -584,7 +584,7 @@ class Schema extends \ArrayObject
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string|null $type
      *
@@ -597,7 +597,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return Schema|Reference|null
      */
@@ -606,7 +606,7 @@ class Schema extends \ArrayObject
         return $this->not;
     }
     /**
-     * 
+     *
      *
      * @param Schema|Reference|null $not
      *
@@ -619,7 +619,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return Schema[]|Reference[]|null
      */
@@ -628,7 +628,7 @@ class Schema extends \ArrayObject
         return $this->allOf;
     }
     /**
-     * 
+     *
      *
      * @param Schema[]|Reference[]|null $allOf
      *
@@ -641,7 +641,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return Schema[]|Reference[]|null
      */
@@ -650,7 +650,7 @@ class Schema extends \ArrayObject
         return $this->oneOf;
     }
     /**
-     * 
+     *
      *
      * @param Schema[]|Reference[]|null $oneOf
      *
@@ -663,7 +663,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return Schema[]|Reference[]|null
      */
@@ -672,7 +672,7 @@ class Schema extends \ArrayObject
         return $this->anyOf;
     }
     /**
-     * 
+     *
      *
      * @param Schema[]|Reference[]|null $anyOf
      *
@@ -685,7 +685,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return Schema|Reference|null
      */
@@ -694,7 +694,7 @@ class Schema extends \ArrayObject
         return $this->items;
     }
     /**
-     * 
+     *
      *
      * @param Schema|Reference|null $items
      *
@@ -707,7 +707,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return array<string, Schema|Reference>|null
      */
@@ -716,7 +716,7 @@ class Schema extends \ArrayObject
         return $this->properties;
     }
     /**
-     * 
+     *
      *
      * @param array<string, Schema|Reference>|null $properties
      *
@@ -729,7 +729,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return Schema|Reference|bool|null
      */
@@ -738,7 +738,7 @@ class Schema extends \ArrayObject
         return $this->additionalProperties;
     }
     /**
-     * 
+     *
      *
      * @param Schema|Reference|bool|null $additionalProperties
      *
@@ -751,7 +751,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -760,7 +760,7 @@ class Schema extends \ArrayObject
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string|null $description
      *
@@ -773,7 +773,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -782,7 +782,7 @@ class Schema extends \ArrayObject
         return $this->format;
     }
     /**
-     * 
+     *
      *
      * @param string|null $format
      *
@@ -795,7 +795,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return mixed
      */
@@ -804,7 +804,7 @@ class Schema extends \ArrayObject
         return $this->default;
     }
     /**
-     * 
+     *
      *
      * @param mixed $default
      *
@@ -817,7 +817,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool|null
      */
@@ -826,7 +826,7 @@ class Schema extends \ArrayObject
         return $this->nullable;
     }
     /**
-     * 
+     *
      *
      * @param bool|null $nullable
      *
@@ -839,7 +839,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return Discriminator|null
      */
@@ -848,7 +848,7 @@ class Schema extends \ArrayObject
         return $this->discriminator;
     }
     /**
-     * 
+     *
      *
      * @param Discriminator|null $discriminator
      *
@@ -861,7 +861,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool|null
      */
@@ -870,7 +870,7 @@ class Schema extends \ArrayObject
         return $this->readOnly;
     }
     /**
-     * 
+     *
      *
      * @param bool|null $readOnly
      *
@@ -883,7 +883,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool|null
      */
@@ -892,7 +892,7 @@ class Schema extends \ArrayObject
         return $this->writeOnly;
     }
     /**
-     * 
+     *
      *
      * @param bool|null $writeOnly
      *
@@ -905,7 +905,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return mixed
      */
@@ -914,7 +914,7 @@ class Schema extends \ArrayObject
         return $this->example;
     }
     /**
-     * 
+     *
      *
      * @param mixed $example
      *
@@ -927,7 +927,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ExternalDocumentation|null
      */
@@ -936,7 +936,7 @@ class Schema extends \ArrayObject
         return $this->externalDocs;
     }
     /**
-     * 
+     *
      *
      * @param ExternalDocumentation|null $externalDocs
      *
@@ -949,7 +949,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool|null
      */
@@ -958,7 +958,7 @@ class Schema extends \ArrayObject
         return $this->deprecated;
     }
     /**
-     * 
+     *
      *
      * @param bool|null $deprecated
      *
@@ -971,7 +971,7 @@ class Schema extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return XML|null
      */
@@ -980,7 +980,7 @@ class Schema extends \ArrayObject
         return $this->xml;
     }
     /**
-     * 
+     *
      *
      * @param XML|null $xml
      *

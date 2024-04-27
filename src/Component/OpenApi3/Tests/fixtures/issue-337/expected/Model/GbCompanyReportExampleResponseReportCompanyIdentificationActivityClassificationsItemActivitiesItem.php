@@ -13,19 +13,19 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationActivityClassific
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $code;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -34,7 +34,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationActivityClassific
         return $this->code;
     }
     /**
-     * 
+     *
      *
      * @param string $code
      *
@@ -47,7 +47,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationActivityClassific
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -56,7 +56,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationActivityClassific
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string $description
      *

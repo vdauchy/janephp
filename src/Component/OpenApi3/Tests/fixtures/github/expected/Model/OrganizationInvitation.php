@@ -13,31 +13,31 @@ class OrganizationInvitation extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $login;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $email;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $role;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -49,31 +49,31 @@ class OrganizationInvitation extends \ArrayObject
      */
     protected $inviter;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $teamCount;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $invitationTeamUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $nodeId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $invitationTeamsUrl;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -82,7 +82,7 @@ class OrganizationInvitation extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -95,7 +95,7 @@ class OrganizationInvitation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -104,7 +104,7 @@ class OrganizationInvitation extends \ArrayObject
         return $this->login;
     }
     /**
-     * 
+     *
      *
      * @param string|null $login
      *
@@ -117,7 +117,7 @@ class OrganizationInvitation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -126,7 +126,7 @@ class OrganizationInvitation extends \ArrayObject
         return $this->email;
     }
     /**
-     * 
+     *
      *
      * @param string|null $email
      *
@@ -139,7 +139,7 @@ class OrganizationInvitation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -148,7 +148,7 @@ class OrganizationInvitation extends \ArrayObject
         return $this->role;
     }
     /**
-     * 
+     *
      *
      * @param string $role
      *
@@ -161,7 +161,7 @@ class OrganizationInvitation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -170,7 +170,7 @@ class OrganizationInvitation extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param string $createdAt
      *
@@ -205,7 +205,7 @@ class OrganizationInvitation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -214,7 +214,7 @@ class OrganizationInvitation extends \ArrayObject
         return $this->teamCount;
     }
     /**
-     * 
+     *
      *
      * @param int $teamCount
      *
@@ -227,7 +227,7 @@ class OrganizationInvitation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -236,7 +236,7 @@ class OrganizationInvitation extends \ArrayObject
         return $this->invitationTeamUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $invitationTeamUrl
      *
@@ -249,7 +249,7 @@ class OrganizationInvitation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -258,7 +258,7 @@ class OrganizationInvitation extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -271,7 +271,7 @@ class OrganizationInvitation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -280,7 +280,7 @@ class OrganizationInvitation extends \ArrayObject
         return $this->invitationTeamsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $invitationTeamsUrl
      *

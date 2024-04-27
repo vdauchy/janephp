@@ -13,55 +13,55 @@ class PageBuild extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $status;
     /**
-     * 
+     *
      *
      * @var PageBuildError
      */
     protected $error;
     /**
-     * 
+     *
      *
      * @var PageBuildPusher|null
      */
     protected $pusher;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $commit;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $duration;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $updatedAt;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -70,7 +70,7 @@ class PageBuild extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -83,7 +83,7 @@ class PageBuild extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -92,7 +92,7 @@ class PageBuild extends \ArrayObject
         return $this->status;
     }
     /**
-     * 
+     *
      *
      * @param string $status
      *
@@ -105,7 +105,7 @@ class PageBuild extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return PageBuildError
      */
@@ -114,7 +114,7 @@ class PageBuild extends \ArrayObject
         return $this->error;
     }
     /**
-     * 
+     *
      *
      * @param PageBuildError $error
      *
@@ -127,7 +127,7 @@ class PageBuild extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return PageBuildPusher|null
      */
@@ -136,7 +136,7 @@ class PageBuild extends \ArrayObject
         return $this->pusher;
     }
     /**
-     * 
+     *
      *
      * @param PageBuildPusher|null $pusher
      *
@@ -149,7 +149,7 @@ class PageBuild extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -158,7 +158,7 @@ class PageBuild extends \ArrayObject
         return $this->commit;
     }
     /**
-     * 
+     *
      *
      * @param string $commit
      *
@@ -171,7 +171,7 @@ class PageBuild extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -180,7 +180,7 @@ class PageBuild extends \ArrayObject
         return $this->duration;
     }
     /**
-     * 
+     *
      *
      * @param int $duration
      *
@@ -193,7 +193,7 @@ class PageBuild extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -202,7 +202,7 @@ class PageBuild extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $createdAt
      *
@@ -215,7 +215,7 @@ class PageBuild extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -224,7 +224,7 @@ class PageBuild extends \ArrayObject
         return $this->updatedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $updatedAt
      *

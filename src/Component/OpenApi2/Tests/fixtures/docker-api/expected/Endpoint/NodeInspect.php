@@ -6,7 +6,7 @@ class NodeInspect extends \Docker\Api\Runtime\Client\BaseEndpoint implements \Do
 {
     protected $id;
     /**
-     * 
+     *
      *
      * @param string $id The ID or name of the node
      */

@@ -13,13 +13,13 @@ class ComplianceSearchResult extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var ComplianceSearchResultData
      */
     protected $data;
     /**
-     * 
+     *
      *
      * @return ComplianceSearchResultData
      */
@@ -28,7 +28,7 @@ class ComplianceSearchResult extends \ArrayObject
         return $this->data;
     }
     /**
-     * 
+     *
      *
      * @param ComplianceSearchResultData $data
      *

@@ -13,43 +13,43 @@ class ImagesNameHistoryGetResponse200Item
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $created;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $createdBy;
     /**
-     * 
+     *
      *
      * @var list<string>
      */
     protected $tags;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $size;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $comment;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -58,7 +58,7 @@ class ImagesNameHistoryGetResponse200Item
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param string $id
      *
@@ -71,7 +71,7 @@ class ImagesNameHistoryGetResponse200Item
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -80,7 +80,7 @@ class ImagesNameHistoryGetResponse200Item
         return $this->created;
     }
     /**
-     * 
+     *
      *
      * @param int $created
      *
@@ -93,7 +93,7 @@ class ImagesNameHistoryGetResponse200Item
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -102,7 +102,7 @@ class ImagesNameHistoryGetResponse200Item
         return $this->createdBy;
     }
     /**
-     * 
+     *
      *
      * @param string $createdBy
      *
@@ -115,7 +115,7 @@ class ImagesNameHistoryGetResponse200Item
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -124,7 +124,7 @@ class ImagesNameHistoryGetResponse200Item
         return $this->tags;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $tags
      *
@@ -137,7 +137,7 @@ class ImagesNameHistoryGetResponse200Item
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -146,7 +146,7 @@ class ImagesNameHistoryGetResponse200Item
         return $this->size;
     }
     /**
-     * 
+     *
      *
      * @param int $size
      *
@@ -159,7 +159,7 @@ class ImagesNameHistoryGetResponse200Item
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -168,7 +168,7 @@ class ImagesNameHistoryGetResponse200Item
         return $this->comment;
     }
     /**
-     * 
+     *
      *
      * @param string $comment
      *

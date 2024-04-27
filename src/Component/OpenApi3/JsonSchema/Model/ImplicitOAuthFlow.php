@@ -13,25 +13,25 @@ class ImplicitOAuthFlow extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $authorizationUrl;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $refreshUrl;
     /**
-     * 
+     *
      *
      * @var array<string, string>|null
      */
     protected $scopes;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -40,7 +40,7 @@ class ImplicitOAuthFlow extends \ArrayObject
         return $this->authorizationUrl;
     }
     /**
-     * 
+     *
      *
      * @param string|null $authorizationUrl
      *
@@ -53,7 +53,7 @@ class ImplicitOAuthFlow extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -62,7 +62,7 @@ class ImplicitOAuthFlow extends \ArrayObject
         return $this->refreshUrl;
     }
     /**
-     * 
+     *
      *
      * @param string|null $refreshUrl
      *
@@ -75,7 +75,7 @@ class ImplicitOAuthFlow extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return array<string, string>|null
      */
@@ -84,7 +84,7 @@ class ImplicitOAuthFlow extends \ArrayObject
         return $this->scopes;
     }
     /**
-     * 
+     *
      *
      * @param array<string, string>|null $scopes
      *

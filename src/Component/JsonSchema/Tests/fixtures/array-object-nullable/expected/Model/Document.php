@@ -13,13 +13,13 @@ class Document
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var list<Attributes>|null
      */
     protected $attributes;
     /**
-     * 
+     *
      *
      * @return list<Attributes>|null
      */
@@ -28,7 +28,7 @@ class Document
         return $this->attributes;
     }
     /**
-     * 
+     *
      *
      * @param list<Attributes>|null $attributes
      *

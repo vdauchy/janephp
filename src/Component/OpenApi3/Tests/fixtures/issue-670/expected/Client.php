@@ -14,9 +14,9 @@ class Client extends \Jane\Component\OpenApi3\Tests\Expected\Runtime\Client\Clie
         return $this->executeEndpoint(new \Jane\Component\OpenApi3\Tests\Expected\Endpoint\GetEndpoint1(), $fetch);
     }
     /**
-     * 
      *
-     * @param null|\Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint1PostBody $requestBody 
+     *
+     * @param null|\Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint1PostBody $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      *
      * @return null|\Psr\Http\Message\ResponseInterface
@@ -35,9 +35,9 @@ class Client extends \Jane\Component\OpenApi3\Tests\Expected\Runtime\Client\Clie
         return $this->executeEndpoint(new \Jane\Component\OpenApi3\Tests\Expected\Endpoint\GetEndpoint2(), $fetch);
     }
     /**
-     * 
      *
-     * @param null|\Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint2PostBody $requestBody 
+     *
+     * @param null|\Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint2PostBody $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      *
      * @return null|\Psr\Http\Message\ResponseInterface
@@ -56,9 +56,9 @@ class Client extends \Jane\Component\OpenApi3\Tests\Expected\Runtime\Client\Clie
         return $this->executeEndpoint(new \Jane\Component\OpenApi3\Tests\Expected\Endpoint\GetEndpoint3(), $fetch);
     }
     /**
-     * 
      *
-     * @param null|\Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint3PostBody $requestBody 
+     *
+     * @param null|\Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint3PostBody $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      *
      * @return null|\Psr\Http\Message\ResponseInterface

@@ -13,37 +13,37 @@ class NetworkContainer
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $endpointID;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $macAddress;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $iPv4Address;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $iPv6Address;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -52,7 +52,7 @@ class NetworkContainer
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -65,7 +65,7 @@ class NetworkContainer
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -74,7 +74,7 @@ class NetworkContainer
         return $this->endpointID;
     }
     /**
-     * 
+     *
      *
      * @param string $endpointID
      *
@@ -87,7 +87,7 @@ class NetworkContainer
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -96,7 +96,7 @@ class NetworkContainer
         return $this->macAddress;
     }
     /**
-     * 
+     *
      *
      * @param string $macAddress
      *
@@ -109,7 +109,7 @@ class NetworkContainer
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -118,7 +118,7 @@ class NetworkContainer
         return $this->iPv4Address;
     }
     /**
-     * 
+     *
      *
      * @param string $iPv4Address
      *
@@ -131,7 +131,7 @@ class NetworkContainer
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -140,7 +140,7 @@ class NetworkContainer
         return $this->iPv6Address;
     }
     /**
-     * 
+     *
      *
      * @param string $iPv6Address
      *

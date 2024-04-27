@@ -13,25 +13,25 @@ class Test
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $date;
     /**
-     * 
+     *
      *
      * @var \DateTime|null
      */
     protected $dateOrNull;
     /**
-     * 
+     *
      *
      * @var \DateTime|null|int
      */
     protected $dateOrNullOrInt;
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -40,7 +40,7 @@ class Test
         return $this->date;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $date
      *
@@ -53,7 +53,7 @@ class Test
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime|null
      */
@@ -62,7 +62,7 @@ class Test
         return $this->dateOrNull;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime|null $dateOrNull
      *
@@ -75,7 +75,7 @@ class Test
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime|null|int
      */
@@ -84,13 +84,13 @@ class Test
         return $this->dateOrNullOrInt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime|null|int $dateOrNullOrInt
      *
      * @return self
      */
-    public function setDateOrNullOrInt($dateOrNullOrInt): self
+    public function setDateOrNullOrInt($dateOrNullOrInt) : self
     {
         $this->initialized['dateOrNullOrInt'] = true;
         $this->dateOrNullOrInt = $dateOrNullOrInt;

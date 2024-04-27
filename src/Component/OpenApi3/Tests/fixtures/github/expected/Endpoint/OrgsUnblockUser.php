@@ -7,10 +7,10 @@ class OrgsUnblockUser extends \Github\Runtime\Client\BaseEndpoint implements \Gi
     protected $org;
     protected $username;
     /**
-     * 
      *
-     * @param string $org 
-     * @param string $username 
+     *
+     * @param string $org
+     * @param string $username
      */
     public function __construct(string $org, string $username)
     {

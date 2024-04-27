@@ -13,25 +13,25 @@ class OrgMembership extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $state;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $role;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -43,19 +43,19 @@ class OrgMembership extends \ArrayObject
      */
     protected $organization;
     /**
-     * 
+     *
      *
      * @var OrgMembershipUser|null
      */
     protected $user;
     /**
-     * 
+     *
      *
      * @var OrgMembershipPermissions
      */
     protected $permissions;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -64,7 +64,7 @@ class OrgMembership extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -77,7 +77,7 @@ class OrgMembership extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -86,7 +86,7 @@ class OrgMembership extends \ArrayObject
         return $this->state;
     }
     /**
-     * 
+     *
      *
      * @param string $state
      *
@@ -99,7 +99,7 @@ class OrgMembership extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -108,7 +108,7 @@ class OrgMembership extends \ArrayObject
         return $this->role;
     }
     /**
-     * 
+     *
      *
      * @param string $role
      *
@@ -121,7 +121,7 @@ class OrgMembership extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -130,7 +130,7 @@ class OrgMembership extends \ArrayObject
         return $this->organizationUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $organizationUrl
      *
@@ -165,7 +165,7 @@ class OrgMembership extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return OrgMembershipUser|null
      */
@@ -174,7 +174,7 @@ class OrgMembership extends \ArrayObject
         return $this->user;
     }
     /**
-     * 
+     *
      *
      * @param OrgMembershipUser|null $user
      *
@@ -187,7 +187,7 @@ class OrgMembership extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return OrgMembershipPermissions
      */
@@ -196,7 +196,7 @@ class OrgMembership extends \ArrayObject
         return $this->permissions;
     }
     /**
-     * 
+     *
      *
      * @param OrgMembershipPermissions $permissions
      *

@@ -13,13 +13,13 @@ class TestGetBodyBaz
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $baz;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -28,7 +28,7 @@ class TestGetBodyBaz
         return $this->baz;
     }
     /**
-     * 
+     *
      *
      * @param string $baz
      *

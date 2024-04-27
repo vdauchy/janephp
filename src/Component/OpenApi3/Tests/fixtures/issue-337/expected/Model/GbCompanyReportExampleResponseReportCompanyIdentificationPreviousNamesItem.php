@@ -13,19 +13,19 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationPreviousNamesItem
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $dateChanged;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -34,7 +34,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationPreviousNamesItem
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -47,7 +47,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationPreviousNamesItem
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -56,7 +56,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationPreviousNamesItem
         return $this->dateChanged;
     }
     /**
-     * 
+     *
      *
      * @param string $dateChanged
      *

@@ -13,19 +13,19 @@ class Baz extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $label;
     /**
-     * 
+     *
      *
      * @var SubBaz
      */
     protected $sub;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -34,7 +34,7 @@ class Baz extends \ArrayObject
         return $this->label;
     }
     /**
-     * 
+     *
      *
      * @param string $label
      *
@@ -47,7 +47,7 @@ class Baz extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return SubBaz
      */
@@ -56,7 +56,7 @@ class Baz extends \ArrayObject
         return $this->sub;
     }
     /**
-     * 
+     *
      *
      * @param SubBaz $sub
      *

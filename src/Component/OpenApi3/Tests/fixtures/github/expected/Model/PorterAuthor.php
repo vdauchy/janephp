@@ -13,49 +13,49 @@ class PorterAuthor extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $remoteId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $remoteName;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $email;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $importUrl;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -64,7 +64,7 @@ class PorterAuthor extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -77,7 +77,7 @@ class PorterAuthor extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -86,7 +86,7 @@ class PorterAuthor extends \ArrayObject
         return $this->remoteId;
     }
     /**
-     * 
+     *
      *
      * @param string $remoteId
      *
@@ -99,7 +99,7 @@ class PorterAuthor extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -108,7 +108,7 @@ class PorterAuthor extends \ArrayObject
         return $this->remoteName;
     }
     /**
-     * 
+     *
      *
      * @param string $remoteName
      *
@@ -121,7 +121,7 @@ class PorterAuthor extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -130,7 +130,7 @@ class PorterAuthor extends \ArrayObject
         return $this->email;
     }
     /**
-     * 
+     *
      *
      * @param string $email
      *
@@ -143,7 +143,7 @@ class PorterAuthor extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -152,7 +152,7 @@ class PorterAuthor extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -165,7 +165,7 @@ class PorterAuthor extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -174,7 +174,7 @@ class PorterAuthor extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -187,7 +187,7 @@ class PorterAuthor extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -196,7 +196,7 @@ class PorterAuthor extends \ArrayObject
         return $this->importUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $importUrl
      *

@@ -13,43 +13,43 @@ class Image
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var list<string>
      */
     protected $repoTags;
     /**
-     * 
+     *
      *
      * @var list<string>
      */
     protected $repoDigests;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $parent;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $comment;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $created;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -61,13 +61,13 @@ class Image
      */
     protected $containerConfig;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $dockerVersion;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -79,31 +79,31 @@ class Image
      */
     protected $config;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $architecture;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $os;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $osVersion;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $size;
     /**
-     * 
+     *
      *
      * @var int
      */
@@ -115,19 +115,19 @@ class Image
      */
     protected $graphDriver;
     /**
-     * 
+     *
      *
      * @var ImageRootFS
      */
     protected $rootFS;
     /**
-     * 
+     *
      *
      * @var ImageMetadata
      */
     protected $metadata;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -136,7 +136,7 @@ class Image
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param string $id
      *
@@ -149,7 +149,7 @@ class Image
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -158,7 +158,7 @@ class Image
         return $this->repoTags;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $repoTags
      *
@@ -171,7 +171,7 @@ class Image
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -180,7 +180,7 @@ class Image
         return $this->repoDigests;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $repoDigests
      *
@@ -193,7 +193,7 @@ class Image
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -202,7 +202,7 @@ class Image
         return $this->parent;
     }
     /**
-     * 
+     *
      *
      * @param string $parent
      *
@@ -215,7 +215,7 @@ class Image
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -224,7 +224,7 @@ class Image
         return $this->comment;
     }
     /**
-     * 
+     *
      *
      * @param string $comment
      *
@@ -237,7 +237,7 @@ class Image
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -246,7 +246,7 @@ class Image
         return $this->created;
     }
     /**
-     * 
+     *
      *
      * @param string $created
      *
@@ -259,7 +259,7 @@ class Image
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -268,7 +268,7 @@ class Image
         return $this->container;
     }
     /**
-     * 
+     *
      *
      * @param string $container
      *
@@ -303,7 +303,7 @@ class Image
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -312,7 +312,7 @@ class Image
         return $this->dockerVersion;
     }
     /**
-     * 
+     *
      *
      * @param string $dockerVersion
      *
@@ -325,7 +325,7 @@ class Image
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -334,7 +334,7 @@ class Image
         return $this->author;
     }
     /**
-     * 
+     *
      *
      * @param string $author
      *
@@ -369,7 +369,7 @@ class Image
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -378,7 +378,7 @@ class Image
         return $this->architecture;
     }
     /**
-     * 
+     *
      *
      * @param string $architecture
      *
@@ -391,7 +391,7 @@ class Image
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -400,7 +400,7 @@ class Image
         return $this->os;
     }
     /**
-     * 
+     *
      *
      * @param string $os
      *
@@ -413,7 +413,7 @@ class Image
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -422,7 +422,7 @@ class Image
         return $this->osVersion;
     }
     /**
-     * 
+     *
      *
      * @param string $osVersion
      *
@@ -435,7 +435,7 @@ class Image
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -444,7 +444,7 @@ class Image
         return $this->size;
     }
     /**
-     * 
+     *
      *
      * @param int $size
      *
@@ -457,7 +457,7 @@ class Image
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -466,7 +466,7 @@ class Image
         return $this->virtualSize;
     }
     /**
-     * 
+     *
      *
      * @param int $virtualSize
      *
@@ -501,7 +501,7 @@ class Image
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ImageRootFS
      */
@@ -510,7 +510,7 @@ class Image
         return $this->rootFS;
     }
     /**
-     * 
+     *
      *
      * @param ImageRootFS $rootFS
      *
@@ -523,7 +523,7 @@ class Image
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ImageMetadata
      */
@@ -532,7 +532,7 @@ class Image
         return $this->metadata;
     }
     /**
-     * 
+     *
      *
      * @param ImageMetadata $metadata
      *

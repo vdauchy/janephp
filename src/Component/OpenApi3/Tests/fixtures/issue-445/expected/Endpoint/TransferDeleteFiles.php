@@ -5,9 +5,9 @@ namespace PicturePark\API\Endpoint;
 class TransferDeleteFiles extends \PicturePark\API\Runtime\Client\BaseEndpoint implements \PicturePark\API\Runtime\Client\Endpoint
 {
     /**
-     * 
      *
-     * @param \PicturePark\API\Model\FileTransferDeleteRequest $requestBody 
+     *
+     * @param \PicturePark\API\Model\FileTransferDeleteRequest $requestBody
      */
     public function __construct(\PicturePark\API\Model\FileTransferDeleteRequest $requestBody)
     {

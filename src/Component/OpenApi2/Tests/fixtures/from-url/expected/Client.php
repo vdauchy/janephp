@@ -5,7 +5,7 @@ namespace Jane\Component\OpenApi2\Tests\Expected;
 class Client extends \Jane\Component\OpenApi2\Tests\Expected\Runtime\Client\Client
 {
     /**
-     * 
+     *
      *
      * @param array $queryParameters {
      *     @var int $limit How many items to return at one time (max 100)
@@ -28,7 +28,7 @@ class Client extends \Jane\Component\OpenApi2\Tests\Expected\Runtime\Client\Clie
         return $this->executeEndpoint(new \Jane\Component\OpenApi2\Tests\Expected\Endpoint\CreatePets(), $fetch);
     }
     /**
-     * 
+     *
      *
      * @param string $petId The id of the pet to retrieve
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)

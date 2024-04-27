@@ -13,37 +13,37 @@ class GbCompanyReportExampleResponseReportCreditScorePreviousCreditRating extend
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $commonValue;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $commonDescription;
     /**
-     * 
+     *
      *
      * @var GbCompanyReportExampleResponseReportCreditScorePreviousCreditRatingCreditLimit
      */
     protected $creditLimit;
     /**
-     * 
+     *
      *
      * @var GbCompanyReportExampleResponseReportCreditScorePreviousCreditRatingProviderValue
      */
     protected $providerValue;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $providerDescription;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -52,7 +52,7 @@ class GbCompanyReportExampleResponseReportCreditScorePreviousCreditRating extend
         return $this->commonValue;
     }
     /**
-     * 
+     *
      *
      * @param string $commonValue
      *
@@ -65,7 +65,7 @@ class GbCompanyReportExampleResponseReportCreditScorePreviousCreditRating extend
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -74,7 +74,7 @@ class GbCompanyReportExampleResponseReportCreditScorePreviousCreditRating extend
         return $this->commonDescription;
     }
     /**
-     * 
+     *
      *
      * @param string $commonDescription
      *
@@ -87,7 +87,7 @@ class GbCompanyReportExampleResponseReportCreditScorePreviousCreditRating extend
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GbCompanyReportExampleResponseReportCreditScorePreviousCreditRatingCreditLimit
      */
@@ -96,7 +96,7 @@ class GbCompanyReportExampleResponseReportCreditScorePreviousCreditRating extend
         return $this->creditLimit;
     }
     /**
-     * 
+     *
      *
      * @param GbCompanyReportExampleResponseReportCreditScorePreviousCreditRatingCreditLimit $creditLimit
      *
@@ -109,7 +109,7 @@ class GbCompanyReportExampleResponseReportCreditScorePreviousCreditRating extend
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GbCompanyReportExampleResponseReportCreditScorePreviousCreditRatingProviderValue
      */
@@ -118,7 +118,7 @@ class GbCompanyReportExampleResponseReportCreditScorePreviousCreditRating extend
         return $this->providerValue;
     }
     /**
-     * 
+     *
      *
      * @param GbCompanyReportExampleResponseReportCreditScorePreviousCreditRatingProviderValue $providerValue
      *
@@ -131,7 +131,7 @@ class GbCompanyReportExampleResponseReportCreditScorePreviousCreditRating extend
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -140,7 +140,7 @@ class GbCompanyReportExampleResponseReportCreditScorePreviousCreditRating extend
         return $this->providerDescription;
     }
     /**
-     * 
+     *
      *
      * @param string $providerDescription
      *

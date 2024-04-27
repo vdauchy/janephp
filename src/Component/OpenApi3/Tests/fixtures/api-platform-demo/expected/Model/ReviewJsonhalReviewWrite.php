@@ -13,7 +13,7 @@ class ReviewJsonhalReviewWrite extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var ReviewJsonhalReviewWriteLinks
      */
@@ -57,7 +57,7 @@ class ReviewJsonhalReviewWrite extends \ArrayObject
      */
     protected $publicationDate;
     /**
-     * 
+     *
      *
      * @return ReviewJsonhalReviewWriteLinks
      */
@@ -66,7 +66,7 @@ class ReviewJsonhalReviewWrite extends \ArrayObject
         return $this->links;
     }
     /**
-     * 
+     *
      *
      * @param ReviewJsonhalReviewWriteLinks $links
      *

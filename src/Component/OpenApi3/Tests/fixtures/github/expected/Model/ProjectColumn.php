@@ -13,19 +13,19 @@ class ProjectColumn extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $projectUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -37,7 +37,7 @@ class ProjectColumn extends \ArrayObject
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -49,19 +49,19 @@ class ProjectColumn extends \ArrayObject
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $updatedAt;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -70,7 +70,7 @@ class ProjectColumn extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -83,7 +83,7 @@ class ProjectColumn extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -92,7 +92,7 @@ class ProjectColumn extends \ArrayObject
         return $this->projectUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $projectUrl
      *
@@ -105,7 +105,7 @@ class ProjectColumn extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -114,7 +114,7 @@ class ProjectColumn extends \ArrayObject
         return $this->cardsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $cardsUrl
      *
@@ -149,7 +149,7 @@ class ProjectColumn extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -158,7 +158,7 @@ class ProjectColumn extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -193,7 +193,7 @@ class ProjectColumn extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -202,7 +202,7 @@ class ProjectColumn extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $createdAt
      *
@@ -215,7 +215,7 @@ class ProjectColumn extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -224,7 +224,7 @@ class ProjectColumn extends \ArrayObject
         return $this->updatedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $updatedAt
      *

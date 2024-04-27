@@ -13,19 +13,19 @@ class SearchResultTextMatchesItemMatchesItem extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $text;
     /**
-     * 
+     *
      *
      * @var list<int>
      */
     protected $indices;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -34,7 +34,7 @@ class SearchResultTextMatchesItemMatchesItem extends \ArrayObject
         return $this->text;
     }
     /**
-     * 
+     *
      *
      * @param string $text
      *
@@ -47,7 +47,7 @@ class SearchResultTextMatchesItemMatchesItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<int>
      */
@@ -56,7 +56,7 @@ class SearchResultTextMatchesItemMatchesItem extends \ArrayObject
         return $this->indices;
     }
     /**
-     * 
+     *
      *
      * @param list<int> $indices
      *

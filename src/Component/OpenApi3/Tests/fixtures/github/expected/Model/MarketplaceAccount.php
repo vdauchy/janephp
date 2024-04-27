@@ -13,49 +13,49 @@ class MarketplaceAccount extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $nodeId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $login;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $email;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $organizationBillingEmail;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -64,7 +64,7 @@ class MarketplaceAccount extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -77,7 +77,7 @@ class MarketplaceAccount extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -86,7 +86,7 @@ class MarketplaceAccount extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -99,7 +99,7 @@ class MarketplaceAccount extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -108,7 +108,7 @@ class MarketplaceAccount extends \ArrayObject
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string $type
      *
@@ -121,7 +121,7 @@ class MarketplaceAccount extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -130,7 +130,7 @@ class MarketplaceAccount extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -143,7 +143,7 @@ class MarketplaceAccount extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -152,7 +152,7 @@ class MarketplaceAccount extends \ArrayObject
         return $this->login;
     }
     /**
-     * 
+     *
      *
      * @param string $login
      *
@@ -165,7 +165,7 @@ class MarketplaceAccount extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -174,7 +174,7 @@ class MarketplaceAccount extends \ArrayObject
         return $this->email;
     }
     /**
-     * 
+     *
      *
      * @param string|null $email
      *
@@ -187,7 +187,7 @@ class MarketplaceAccount extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -196,7 +196,7 @@ class MarketplaceAccount extends \ArrayObject
         return $this->organizationBillingEmail;
     }
     /**
-     * 
+     *
      *
      * @param string|null $organizationBillingEmail
      *

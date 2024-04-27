@@ -13,37 +13,37 @@ class UsageCapExceededProblem extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $period;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $scope;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $title;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $detail;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -52,7 +52,7 @@ class UsageCapExceededProblem extends \ArrayObject
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string $type
      *
@@ -65,7 +65,7 @@ class UsageCapExceededProblem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -74,7 +74,7 @@ class UsageCapExceededProblem extends \ArrayObject
         return $this->period;
     }
     /**
-     * 
+     *
      *
      * @param string $period
      *
@@ -87,7 +87,7 @@ class UsageCapExceededProblem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -96,7 +96,7 @@ class UsageCapExceededProblem extends \ArrayObject
         return $this->scope;
     }
     /**
-     * 
+     *
      *
      * @param string $scope
      *
@@ -109,7 +109,7 @@ class UsageCapExceededProblem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -118,7 +118,7 @@ class UsageCapExceededProblem extends \ArrayObject
         return $this->title;
     }
     /**
-     * 
+     *
      *
      * @param string $title
      *
@@ -131,7 +131,7 @@ class UsageCapExceededProblem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -140,7 +140,7 @@ class UsageCapExceededProblem extends \ArrayObject
         return $this->detail;
     }
     /**
-     * 
+     *
      *
      * @param string $detail
      *

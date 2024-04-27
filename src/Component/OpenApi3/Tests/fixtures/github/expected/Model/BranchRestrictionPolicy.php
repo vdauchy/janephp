@@ -13,49 +13,49 @@ class BranchRestrictionPolicy extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $usersUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $teamsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $appsUrl;
     /**
-     * 
+     *
      *
      * @var list<BranchRestrictionPolicyUsersItem>
      */
     protected $users;
     /**
-     * 
+     *
      *
      * @var list<BranchRestrictionPolicyTeamsItem>
      */
     protected $teams;
     /**
-     * 
+     *
      *
      * @var list<BranchRestrictionPolicyAppsItem>
      */
     protected $apps;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -64,7 +64,7 @@ class BranchRestrictionPolicy extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -77,7 +77,7 @@ class BranchRestrictionPolicy extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -86,7 +86,7 @@ class BranchRestrictionPolicy extends \ArrayObject
         return $this->usersUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $usersUrl
      *
@@ -99,7 +99,7 @@ class BranchRestrictionPolicy extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -108,7 +108,7 @@ class BranchRestrictionPolicy extends \ArrayObject
         return $this->teamsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $teamsUrl
      *
@@ -121,7 +121,7 @@ class BranchRestrictionPolicy extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -130,7 +130,7 @@ class BranchRestrictionPolicy extends \ArrayObject
         return $this->appsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $appsUrl
      *
@@ -143,7 +143,7 @@ class BranchRestrictionPolicy extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<BranchRestrictionPolicyUsersItem>
      */
@@ -152,7 +152,7 @@ class BranchRestrictionPolicy extends \ArrayObject
         return $this->users;
     }
     /**
-     * 
+     *
      *
      * @param list<BranchRestrictionPolicyUsersItem> $users
      *
@@ -165,7 +165,7 @@ class BranchRestrictionPolicy extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<BranchRestrictionPolicyTeamsItem>
      */
@@ -174,7 +174,7 @@ class BranchRestrictionPolicy extends \ArrayObject
         return $this->teams;
     }
     /**
-     * 
+     *
      *
      * @param list<BranchRestrictionPolicyTeamsItem> $teams
      *
@@ -187,7 +187,7 @@ class BranchRestrictionPolicy extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<BranchRestrictionPolicyAppsItem>
      */
@@ -196,7 +196,7 @@ class BranchRestrictionPolicy extends \ArrayObject
         return $this->apps;
     }
     /**
-     * 
+     *
      *
      * @param list<BranchRestrictionPolicyAppsItem> $apps
      *

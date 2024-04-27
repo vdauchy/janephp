@@ -13,19 +13,19 @@ class InvalidRequestProblemErrorsItem extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var array<string, list<string>>
      */
     protected $parameters;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $message;
     /**
-     * 
+     *
      *
      * @return array<string, list<string>>
      */
@@ -34,7 +34,7 @@ class InvalidRequestProblemErrorsItem extends \ArrayObject
         return $this->parameters;
     }
     /**
-     * 
+     *
      *
      * @param array<string, list<string>> $parameters
      *
@@ -47,7 +47,7 @@ class InvalidRequestProblemErrorsItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -56,7 +56,7 @@ class InvalidRequestProblemErrorsItem extends \ArrayObject
         return $this->message;
     }
     /**
-     * 
+     *
      *
      * @param string $message
      *

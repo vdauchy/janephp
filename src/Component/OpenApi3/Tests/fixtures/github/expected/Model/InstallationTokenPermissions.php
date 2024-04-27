@@ -13,31 +13,31 @@ class InstallationTokenPermissions extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $issues;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $contents;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $metadata;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $singleFile;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -46,7 +46,7 @@ class InstallationTokenPermissions extends \ArrayObject
         return $this->issues;
     }
     /**
-     * 
+     *
      *
      * @param string $issues
      *
@@ -59,7 +59,7 @@ class InstallationTokenPermissions extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -68,7 +68,7 @@ class InstallationTokenPermissions extends \ArrayObject
         return $this->contents;
     }
     /**
-     * 
+     *
      *
      * @param string $contents
      *
@@ -81,7 +81,7 @@ class InstallationTokenPermissions extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -90,7 +90,7 @@ class InstallationTokenPermissions extends \ArrayObject
         return $this->metadata;
     }
     /**
-     * 
+     *
      *
      * @param string $metadata
      *
@@ -103,7 +103,7 @@ class InstallationTokenPermissions extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -112,7 +112,7 @@ class InstallationTokenPermissions extends \ArrayObject
         return $this->singleFile;
     }
     /**
-     * 
+     *
      *
      * @param string $singleFile
      *

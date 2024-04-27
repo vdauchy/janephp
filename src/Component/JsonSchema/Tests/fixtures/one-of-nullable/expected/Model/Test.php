@@ -13,13 +13,13 @@ class Test
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var null|Id
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @return null|Id
      */
@@ -28,7 +28,7 @@ class Test
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param null|Id $id
      *

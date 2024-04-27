@@ -13,73 +13,73 @@ class PullRequest extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $nodeId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $htmlUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $diffUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $patchUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $issueUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $commitsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $reviewCommentsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $reviewCommentUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $commentsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -97,7 +97,7 @@ class PullRequest extends \ArrayObject
      */
     protected $state;
     /**
-     * 
+     *
      *
      * @var bool
      */
@@ -109,109 +109,109 @@ class PullRequest extends \ArrayObject
      */
     protected $title;
     /**
-     * 
+     *
      *
      * @var PullRequestUser|null
      */
     protected $user;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $body;
     /**
-     * 
+     *
      *
      * @var list<PullRequestLabelsItem>
      */
     protected $labels;
     /**
-     * 
+     *
      *
      * @var PullRequestMilestone|null
      */
     protected $milestone;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $activeLockReason;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $updatedAt;
     /**
-     * 
+     *
      *
      * @var \DateTime|null
      */
     protected $closedAt;
     /**
-     * 
+     *
      *
      * @var \DateTime|null
      */
     protected $mergedAt;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $mergeCommitSha;
     /**
-     * 
+     *
      *
      * @var PullRequestAssignee|null
      */
     protected $assignee;
     /**
-     * 
+     *
      *
      * @var list<SimpleUser>|null
      */
     protected $assignees;
     /**
-     * 
+     *
      *
      * @var list<SimpleUser>|null
      */
     protected $requestedReviewers;
     /**
-     * 
+     *
      *
      * @var list<TeamSimple>|null
      */
     protected $requestedTeams;
     /**
-     * 
+     *
      *
      * @var PullRequestHead
      */
     protected $head;
     /**
-     * 
+     *
      *
      * @var PullRequestBase
      */
     protected $base;
     /**
-     * 
+     *
      *
      * @var PullRequestLinks
      */
     protected $links;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -223,43 +223,43 @@ class PullRequest extends \ArrayObject
      */
     protected $draft;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $merged;
     /**
-     * 
+     *
      *
      * @var bool|null
      */
     protected $mergeable;
     /**
-     * 
+     *
      *
      * @var bool|null
      */
     protected $rebaseable;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $mergeableState;
     /**
-     * 
+     *
      *
      * @var PullRequestMergedBy|null
      */
     protected $mergedBy;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $comments;
     /**
-     * 
+     *
      *
      * @var int
      */
@@ -271,31 +271,31 @@ class PullRequest extends \ArrayObject
      */
     protected $maintainerCanModify;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $commits;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $additions;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $deletions;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $changedFiles;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -304,7 +304,7 @@ class PullRequest extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -317,7 +317,7 @@ class PullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -326,7 +326,7 @@ class PullRequest extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -339,7 +339,7 @@ class PullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -348,7 +348,7 @@ class PullRequest extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -361,7 +361,7 @@ class PullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -370,7 +370,7 @@ class PullRequest extends \ArrayObject
         return $this->htmlUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $htmlUrl
      *
@@ -383,7 +383,7 @@ class PullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -392,7 +392,7 @@ class PullRequest extends \ArrayObject
         return $this->diffUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $diffUrl
      *
@@ -405,7 +405,7 @@ class PullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -414,7 +414,7 @@ class PullRequest extends \ArrayObject
         return $this->patchUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $patchUrl
      *
@@ -427,7 +427,7 @@ class PullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -436,7 +436,7 @@ class PullRequest extends \ArrayObject
         return $this->issueUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $issueUrl
      *
@@ -449,7 +449,7 @@ class PullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -458,7 +458,7 @@ class PullRequest extends \ArrayObject
         return $this->commitsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $commitsUrl
      *
@@ -471,7 +471,7 @@ class PullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -480,7 +480,7 @@ class PullRequest extends \ArrayObject
         return $this->reviewCommentsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $reviewCommentsUrl
      *
@@ -493,7 +493,7 @@ class PullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -502,7 +502,7 @@ class PullRequest extends \ArrayObject
         return $this->reviewCommentUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $reviewCommentUrl
      *
@@ -515,7 +515,7 @@ class PullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -524,7 +524,7 @@ class PullRequest extends \ArrayObject
         return $this->commentsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $commentsUrl
      *
@@ -537,7 +537,7 @@ class PullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -546,7 +546,7 @@ class PullRequest extends \ArrayObject
         return $this->statusesUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $statusesUrl
      *
@@ -603,7 +603,7 @@ class PullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -612,7 +612,7 @@ class PullRequest extends \ArrayObject
         return $this->locked;
     }
     /**
-     * 
+     *
      *
      * @param bool $locked
      *
@@ -647,7 +647,7 @@ class PullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return PullRequestUser|null
      */
@@ -656,7 +656,7 @@ class PullRequest extends \ArrayObject
         return $this->user;
     }
     /**
-     * 
+     *
      *
      * @param PullRequestUser|null $user
      *
@@ -669,7 +669,7 @@ class PullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -678,7 +678,7 @@ class PullRequest extends \ArrayObject
         return $this->body;
     }
     /**
-     * 
+     *
      *
      * @param string|null $body
      *
@@ -691,7 +691,7 @@ class PullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<PullRequestLabelsItem>
      */
@@ -700,7 +700,7 @@ class PullRequest extends \ArrayObject
         return $this->labels;
     }
     /**
-     * 
+     *
      *
      * @param list<PullRequestLabelsItem> $labels
      *
@@ -713,7 +713,7 @@ class PullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return PullRequestMilestone|null
      */
@@ -722,7 +722,7 @@ class PullRequest extends \ArrayObject
         return $this->milestone;
     }
     /**
-     * 
+     *
      *
      * @param PullRequestMilestone|null $milestone
      *
@@ -735,7 +735,7 @@ class PullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -744,7 +744,7 @@ class PullRequest extends \ArrayObject
         return $this->activeLockReason;
     }
     /**
-     * 
+     *
      *
      * @param string|null $activeLockReason
      *
@@ -757,7 +757,7 @@ class PullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -766,7 +766,7 @@ class PullRequest extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $createdAt
      *
@@ -779,7 +779,7 @@ class PullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -788,7 +788,7 @@ class PullRequest extends \ArrayObject
         return $this->updatedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $updatedAt
      *
@@ -801,7 +801,7 @@ class PullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime|null
      */
@@ -810,7 +810,7 @@ class PullRequest extends \ArrayObject
         return $this->closedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime|null $closedAt
      *
@@ -823,7 +823,7 @@ class PullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime|null
      */
@@ -832,7 +832,7 @@ class PullRequest extends \ArrayObject
         return $this->mergedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime|null $mergedAt
      *
@@ -845,7 +845,7 @@ class PullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -854,7 +854,7 @@ class PullRequest extends \ArrayObject
         return $this->mergeCommitSha;
     }
     /**
-     * 
+     *
      *
      * @param string|null $mergeCommitSha
      *
@@ -867,7 +867,7 @@ class PullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return PullRequestAssignee|null
      */
@@ -876,7 +876,7 @@ class PullRequest extends \ArrayObject
         return $this->assignee;
     }
     /**
-     * 
+     *
      *
      * @param PullRequestAssignee|null $assignee
      *
@@ -889,7 +889,7 @@ class PullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<SimpleUser>|null
      */
@@ -898,7 +898,7 @@ class PullRequest extends \ArrayObject
         return $this->assignees;
     }
     /**
-     * 
+     *
      *
      * @param list<SimpleUser>|null $assignees
      *
@@ -911,7 +911,7 @@ class PullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<SimpleUser>|null
      */
@@ -920,7 +920,7 @@ class PullRequest extends \ArrayObject
         return $this->requestedReviewers;
     }
     /**
-     * 
+     *
      *
      * @param list<SimpleUser>|null $requestedReviewers
      *
@@ -933,7 +933,7 @@ class PullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<TeamSimple>|null
      */
@@ -942,7 +942,7 @@ class PullRequest extends \ArrayObject
         return $this->requestedTeams;
     }
     /**
-     * 
+     *
      *
      * @param list<TeamSimple>|null $requestedTeams
      *
@@ -955,7 +955,7 @@ class PullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return PullRequestHead
      */
@@ -964,7 +964,7 @@ class PullRequest extends \ArrayObject
         return $this->head;
     }
     /**
-     * 
+     *
      *
      * @param PullRequestHead $head
      *
@@ -977,7 +977,7 @@ class PullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return PullRequestBase
      */
@@ -986,7 +986,7 @@ class PullRequest extends \ArrayObject
         return $this->base;
     }
     /**
-     * 
+     *
      *
      * @param PullRequestBase $base
      *
@@ -999,7 +999,7 @@ class PullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return PullRequestLinks
      */
@@ -1008,7 +1008,7 @@ class PullRequest extends \ArrayObject
         return $this->links;
     }
     /**
-     * 
+     *
      *
      * @param PullRequestLinks $links
      *
@@ -1021,7 +1021,7 @@ class PullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1030,7 +1030,7 @@ class PullRequest extends \ArrayObject
         return $this->authorAssociation;
     }
     /**
-     * 
+     *
      *
      * @param string $authorAssociation
      *
@@ -1065,7 +1065,7 @@ class PullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -1074,7 +1074,7 @@ class PullRequest extends \ArrayObject
         return $this->merged;
     }
     /**
-     * 
+     *
      *
      * @param bool $merged
      *
@@ -1087,7 +1087,7 @@ class PullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool|null
      */
@@ -1096,7 +1096,7 @@ class PullRequest extends \ArrayObject
         return $this->mergeable;
     }
     /**
-     * 
+     *
      *
      * @param bool|null $mergeable
      *
@@ -1109,7 +1109,7 @@ class PullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool|null
      */
@@ -1118,7 +1118,7 @@ class PullRequest extends \ArrayObject
         return $this->rebaseable;
     }
     /**
-     * 
+     *
      *
      * @param bool|null $rebaseable
      *
@@ -1131,7 +1131,7 @@ class PullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -1140,7 +1140,7 @@ class PullRequest extends \ArrayObject
         return $this->mergeableState;
     }
     /**
-     * 
+     *
      *
      * @param string $mergeableState
      *
@@ -1153,7 +1153,7 @@ class PullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return PullRequestMergedBy|null
      */
@@ -1162,7 +1162,7 @@ class PullRequest extends \ArrayObject
         return $this->mergedBy;
     }
     /**
-     * 
+     *
      *
      * @param PullRequestMergedBy|null $mergedBy
      *
@@ -1175,7 +1175,7 @@ class PullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -1184,7 +1184,7 @@ class PullRequest extends \ArrayObject
         return $this->comments;
     }
     /**
-     * 
+     *
      *
      * @param int $comments
      *
@@ -1197,7 +1197,7 @@ class PullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -1206,7 +1206,7 @@ class PullRequest extends \ArrayObject
         return $this->reviewComments;
     }
     /**
-     * 
+     *
      *
      * @param int $reviewComments
      *
@@ -1241,7 +1241,7 @@ class PullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -1250,7 +1250,7 @@ class PullRequest extends \ArrayObject
         return $this->commits;
     }
     /**
-     * 
+     *
      *
      * @param int $commits
      *
@@ -1263,7 +1263,7 @@ class PullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -1272,7 +1272,7 @@ class PullRequest extends \ArrayObject
         return $this->additions;
     }
     /**
-     * 
+     *
      *
      * @param int $additions
      *
@@ -1285,7 +1285,7 @@ class PullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -1294,7 +1294,7 @@ class PullRequest extends \ArrayObject
         return $this->deletions;
     }
     /**
-     * 
+     *
      *
      * @param int $deletions
      *
@@ -1307,7 +1307,7 @@ class PullRequest extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -1316,7 +1316,7 @@ class PullRequest extends \ArrayObject
         return $this->changedFiles;
     }
     /**
-     * 
+     *
      *
      * @param int $changedFiles
      *

@@ -13,19 +13,19 @@ class MonitoringPortfoliosPortfolioIdImportPostBody extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $importCsv;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $email;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -34,7 +34,7 @@ class MonitoringPortfoliosPortfolioIdImportPostBody extends \ArrayObject
         return $this->importCsv;
     }
     /**
-     * 
+     *
      *
      * @param string $importCsv
      *
@@ -47,7 +47,7 @@ class MonitoringPortfoliosPortfolioIdImportPostBody extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -56,7 +56,7 @@ class MonitoringPortfoliosPortfolioIdImportPostBody extends \ArrayObject
         return $this->email;
     }
     /**
-     * 
+     *
      *
      * @param string $email
      *

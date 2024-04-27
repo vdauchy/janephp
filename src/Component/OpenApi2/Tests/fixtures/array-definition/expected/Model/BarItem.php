@@ -13,13 +13,13 @@ class BarItem
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $bar;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -28,7 +28,7 @@ class BarItem
         return $this->bar;
     }
     /**
-     * 
+     *
      *
      * @param string $bar
      *

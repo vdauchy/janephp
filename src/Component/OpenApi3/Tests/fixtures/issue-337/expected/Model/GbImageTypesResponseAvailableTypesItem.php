@@ -13,31 +13,31 @@ class GbImageTypesResponseAvailableTypesItem extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $imageType;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @var list<string>
      */
     protected $availableFormats;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -46,7 +46,7 @@ class GbImageTypesResponseAvailableTypesItem extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -59,7 +59,7 @@ class GbImageTypesResponseAvailableTypesItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -68,7 +68,7 @@ class GbImageTypesResponseAvailableTypesItem extends \ArrayObject
         return $this->imageType;
     }
     /**
-     * 
+     *
      *
      * @param string $imageType
      *
@@ -81,7 +81,7 @@ class GbImageTypesResponseAvailableTypesItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -90,7 +90,7 @@ class GbImageTypesResponseAvailableTypesItem extends \ArrayObject
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string $description
      *
@@ -103,7 +103,7 @@ class GbImageTypesResponseAvailableTypesItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -112,7 +112,7 @@ class GbImageTypesResponseAvailableTypesItem extends \ArrayObject
         return $this->availableFormats;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $availableFormats
      *

@@ -13,19 +13,19 @@ class GraphDriverData
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var array<string, string>
      */
     protected $data;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -34,7 +34,7 @@ class GraphDriverData
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -47,7 +47,7 @@ class GraphDriverData
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return array<string, string>
      */
@@ -56,7 +56,7 @@ class GraphDriverData
         return $this->data;
     }
     /**
-     * 
+     *
      *
      * @param array<string, string> $data
      *

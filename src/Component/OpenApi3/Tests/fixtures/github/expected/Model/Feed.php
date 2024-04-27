@@ -13,61 +13,61 @@ class Feed extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $timelineUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $userUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $currentUserPublicUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $currentUserUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $currentUserActorUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $currentUserOrganizationUrl;
     /**
-     * 
+     *
      *
      * @var list<string>
      */
     protected $currentUserOrganizationUrls;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $securityAdvisoriesUrl;
     /**
-     * 
+     *
      *
      * @var FeedLinks
      */
     protected $links;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -76,7 +76,7 @@ class Feed extends \ArrayObject
         return $this->timelineUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $timelineUrl
      *
@@ -89,7 +89,7 @@ class Feed extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -98,7 +98,7 @@ class Feed extends \ArrayObject
         return $this->userUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $userUrl
      *
@@ -111,7 +111,7 @@ class Feed extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -120,7 +120,7 @@ class Feed extends \ArrayObject
         return $this->currentUserPublicUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $currentUserPublicUrl
      *
@@ -133,7 +133,7 @@ class Feed extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -142,7 +142,7 @@ class Feed extends \ArrayObject
         return $this->currentUserUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $currentUserUrl
      *
@@ -155,7 +155,7 @@ class Feed extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -164,7 +164,7 @@ class Feed extends \ArrayObject
         return $this->currentUserActorUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $currentUserActorUrl
      *
@@ -177,7 +177,7 @@ class Feed extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -186,7 +186,7 @@ class Feed extends \ArrayObject
         return $this->currentUserOrganizationUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $currentUserOrganizationUrl
      *
@@ -199,7 +199,7 @@ class Feed extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<string>
      */
@@ -208,7 +208,7 @@ class Feed extends \ArrayObject
         return $this->currentUserOrganizationUrls;
     }
     /**
-     * 
+     *
      *
      * @param list<string> $currentUserOrganizationUrls
      *
@@ -221,7 +221,7 @@ class Feed extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -230,7 +230,7 @@ class Feed extends \ArrayObject
         return $this->securityAdvisoriesUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $securityAdvisoriesUrl
      *
@@ -243,7 +243,7 @@ class Feed extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return FeedLinks
      */
@@ -252,7 +252,7 @@ class Feed extends \ArrayObject
         return $this->links;
     }
     /**
-     * 
+     *
      *
      * @param FeedLinks $links
      *

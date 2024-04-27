@@ -13,19 +13,19 @@ class TestComplexListGetResponsedefault
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $error;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $ok;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -34,7 +34,7 @@ class TestComplexListGetResponsedefault
         return $this->error;
     }
     /**
-     * 
+     *
      *
      * @param string $error
      *
@@ -47,7 +47,7 @@ class TestComplexListGetResponsedefault
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -56,7 +56,7 @@ class TestComplexListGetResponsedefault
         return $this->ok;
     }
     /**
-     * 
+     *
      *
      * @param bool $ok
      *

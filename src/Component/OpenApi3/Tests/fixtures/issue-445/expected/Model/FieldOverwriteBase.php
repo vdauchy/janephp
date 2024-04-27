@@ -32,7 +32,7 @@ class FieldOverwriteBase
      */
     protected $overwriteRequired;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -97,7 +97,7 @@ class FieldOverwriteBase
         $this->overwriteRequired = $overwriteRequired;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -106,7 +106,7 @@ class FieldOverwriteBase
         return $this->kind;
     }
     /**
-     * 
+     *
      *
      * @param string $kind
      */

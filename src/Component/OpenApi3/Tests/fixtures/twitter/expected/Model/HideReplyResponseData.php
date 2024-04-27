@@ -13,13 +13,13 @@ class HideReplyResponseData extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $hidden;
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -28,7 +28,7 @@ class HideReplyResponseData extends \ArrayObject
         return $this->hidden;
     }
     /**
-     * 
+     *
      *
      * @param bool $hidden
      *

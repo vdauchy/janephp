@@ -13,31 +13,31 @@ class CommitComparison extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $htmlUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $permalinkUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $diffUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -55,43 +55,43 @@ class CommitComparison extends \ArrayObject
      */
     protected $mergeBaseCommit;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $status;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $aheadBy;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $behindBy;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $totalCommits;
     /**
-     * 
+     *
      *
      * @var list<Commit>
      */
     protected $commits;
     /**
-     * 
+     *
      *
      * @var list<DiffEntry>
      */
     protected $files;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -100,7 +100,7 @@ class CommitComparison extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -113,7 +113,7 @@ class CommitComparison extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -122,7 +122,7 @@ class CommitComparison extends \ArrayObject
         return $this->htmlUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $htmlUrl
      *
@@ -135,7 +135,7 @@ class CommitComparison extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -144,7 +144,7 @@ class CommitComparison extends \ArrayObject
         return $this->permalinkUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $permalinkUrl
      *
@@ -157,7 +157,7 @@ class CommitComparison extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -166,7 +166,7 @@ class CommitComparison extends \ArrayObject
         return $this->diffUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $diffUrl
      *
@@ -179,7 +179,7 @@ class CommitComparison extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -188,7 +188,7 @@ class CommitComparison extends \ArrayObject
         return $this->patchUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $patchUrl
      *
@@ -245,7 +245,7 @@ class CommitComparison extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -254,7 +254,7 @@ class CommitComparison extends \ArrayObject
         return $this->status;
     }
     /**
-     * 
+     *
      *
      * @param string $status
      *
@@ -267,7 +267,7 @@ class CommitComparison extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -276,7 +276,7 @@ class CommitComparison extends \ArrayObject
         return $this->aheadBy;
     }
     /**
-     * 
+     *
      *
      * @param int $aheadBy
      *
@@ -289,7 +289,7 @@ class CommitComparison extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -298,7 +298,7 @@ class CommitComparison extends \ArrayObject
         return $this->behindBy;
     }
     /**
-     * 
+     *
      *
      * @param int $behindBy
      *
@@ -311,7 +311,7 @@ class CommitComparison extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -320,7 +320,7 @@ class CommitComparison extends \ArrayObject
         return $this->totalCommits;
     }
     /**
-     * 
+     *
      *
      * @param int $totalCommits
      *
@@ -333,7 +333,7 @@ class CommitComparison extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<Commit>
      */
@@ -342,7 +342,7 @@ class CommitComparison extends \ArrayObject
         return $this->commits;
     }
     /**
-     * 
+     *
      *
      * @param list<Commit> $commits
      *
@@ -355,7 +355,7 @@ class CommitComparison extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<DiffEntry>
      */
@@ -364,7 +364,7 @@ class CommitComparison extends \ArrayObject
         return $this->files;
     }
     /**
-     * 
+     *
      *
      * @param list<DiffEntry> $files
      *

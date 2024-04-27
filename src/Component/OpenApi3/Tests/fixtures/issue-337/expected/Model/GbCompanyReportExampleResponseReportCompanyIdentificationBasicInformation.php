@@ -13,61 +13,61 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation 
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $businessName;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $registeredCompanyName;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $companyRegistrationNumber;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $country;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $companyRegistrationDate;
     /**
-     * 
+     *
      *
      * @var GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformationLegalForm
      */
     protected $legalForm;
     /**
-     * 
+     *
      *
      * @var GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformationCompanyStatus
      */
     protected $companyStatus;
     /**
-     * 
+     *
      *
      * @var GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformationPrincipalActivity
      */
     protected $principalActivity;
     /**
-     * 
+     *
      *
      * @var GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformationContactAddress
      */
     protected $contactAddress;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -76,7 +76,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation 
         return $this->businessName;
     }
     /**
-     * 
+     *
      *
      * @param string $businessName
      *
@@ -89,7 +89,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -98,7 +98,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation 
         return $this->registeredCompanyName;
     }
     /**
-     * 
+     *
      *
      * @param string $registeredCompanyName
      *
@@ -111,7 +111,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -120,7 +120,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation 
         return $this->companyRegistrationNumber;
     }
     /**
-     * 
+     *
      *
      * @param string $companyRegistrationNumber
      *
@@ -133,7 +133,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -142,7 +142,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation 
         return $this->country;
     }
     /**
-     * 
+     *
      *
      * @param string $country
      *
@@ -155,7 +155,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -164,7 +164,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation 
         return $this->companyRegistrationDate;
     }
     /**
-     * 
+     *
      *
      * @param string $companyRegistrationDate
      *
@@ -177,7 +177,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformationLegalForm
      */
@@ -186,7 +186,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation 
         return $this->legalForm;
     }
     /**
-     * 
+     *
      *
      * @param GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformationLegalForm $legalForm
      *
@@ -199,7 +199,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformationCompanyStatus
      */
@@ -208,7 +208,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation 
         return $this->companyStatus;
     }
     /**
-     * 
+     *
      *
      * @param GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformationCompanyStatus $companyStatus
      *
@@ -221,7 +221,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformationPrincipalActivity
      */
@@ -230,7 +230,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation 
         return $this->principalActivity;
     }
     /**
-     * 
+     *
      *
      * @param GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformationPrincipalActivity $principalActivity
      *
@@ -243,7 +243,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformationContactAddress
      */
@@ -252,7 +252,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation 
         return $this->contactAddress;
     }
     /**
-     * 
+     *
      *
      * @param GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformationContactAddress $contactAddress
      *

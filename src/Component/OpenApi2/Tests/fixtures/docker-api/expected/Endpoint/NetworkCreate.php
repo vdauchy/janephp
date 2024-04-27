@@ -5,7 +5,7 @@ namespace Docker\Api\Endpoint;
 class NetworkCreate extends \Docker\Api\Runtime\Client\BaseEndpoint implements \Docker\Api\Runtime\Client\Endpoint
 {
     /**
-     * 
+     *
      *
      * @param \Docker\Api\Model\NetworksCreatePostBody $networkConfig Network configuration
      */

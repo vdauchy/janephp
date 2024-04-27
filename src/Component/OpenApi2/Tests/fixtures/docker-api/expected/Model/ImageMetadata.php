@@ -13,13 +13,13 @@ class ImageMetadata
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $lastTagTime;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -28,7 +28,7 @@ class ImageMetadata
         return $this->lastTagTime;
     }
     /**
-     * 
+     *
      *
      * @param string $lastTagTime
      *

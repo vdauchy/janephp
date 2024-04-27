@@ -13,31 +13,31 @@ class ServiceUpdateStatus
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $state;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $startedAt;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $completedAt;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $message;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -46,7 +46,7 @@ class ServiceUpdateStatus
         return $this->state;
     }
     /**
-     * 
+     *
      *
      * @param string $state
      *
@@ -59,7 +59,7 @@ class ServiceUpdateStatus
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -68,7 +68,7 @@ class ServiceUpdateStatus
         return $this->startedAt;
     }
     /**
-     * 
+     *
      *
      * @param string $startedAt
      *
@@ -81,7 +81,7 @@ class ServiceUpdateStatus
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -90,7 +90,7 @@ class ServiceUpdateStatus
         return $this->completedAt;
     }
     /**
-     * 
+     *
      *
      * @param string $completedAt
      *
@@ -103,7 +103,7 @@ class ServiceUpdateStatus
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -112,7 +112,7 @@ class ServiceUpdateStatus
         return $this->message;
     }
     /**
-     * 
+     *
      *
      * @param string $message
      *

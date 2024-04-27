@@ -13,43 +13,43 @@ class TopBook extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $title;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $author;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $part;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $place;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $borrowCount;
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -58,7 +58,7 @@ class TopBook extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param int $id
      *
@@ -71,7 +71,7 @@ class TopBook extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -80,7 +80,7 @@ class TopBook extends \ArrayObject
         return $this->title;
     }
     /**
-     * 
+     *
      *
      * @param string $title
      *
@@ -93,7 +93,7 @@ class TopBook extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -102,7 +102,7 @@ class TopBook extends \ArrayObject
         return $this->author;
     }
     /**
-     * 
+     *
      *
      * @param string $author
      *
@@ -115,7 +115,7 @@ class TopBook extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -124,7 +124,7 @@ class TopBook extends \ArrayObject
         return $this->part;
     }
     /**
-     * 
+     *
      *
      * @param string $part
      *
@@ -137,7 +137,7 @@ class TopBook extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -146,7 +146,7 @@ class TopBook extends \ArrayObject
         return $this->place;
     }
     /**
-     * 
+     *
      *
      * @param string $place
      *
@@ -159,7 +159,7 @@ class TopBook extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -168,7 +168,7 @@ class TopBook extends \ArrayObject
         return $this->borrowCount;
     }
     /**
-     * 
+     *
      *
      * @param int $borrowCount
      *

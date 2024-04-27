@@ -13,55 +13,55 @@ class Projects
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var list<Project>
      */
     protected $projects;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $perPage;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $totalPages;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $totalEntries;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $nextPage;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $previousPage;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $page;
     /**
-     * 
+     *
      *
      * @var PaginationLinks
      */
     protected $links;
     /**
-     * 
+     *
      *
      * @return list<Project>
      */
@@ -70,7 +70,7 @@ class Projects
         return $this->projects;
     }
     /**
-     * 
+     *
      *
      * @param list<Project> $projects
      *
@@ -83,7 +83,7 @@ class Projects
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -92,7 +92,7 @@ class Projects
         return $this->perPage;
     }
     /**
-     * 
+     *
      *
      * @param int $perPage
      *
@@ -105,7 +105,7 @@ class Projects
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -114,7 +114,7 @@ class Projects
         return $this->totalPages;
     }
     /**
-     * 
+     *
      *
      * @param int $totalPages
      *
@@ -127,7 +127,7 @@ class Projects
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -136,7 +136,7 @@ class Projects
         return $this->totalEntries;
     }
     /**
-     * 
+     *
      *
      * @param int $totalEntries
      *
@@ -149,7 +149,7 @@ class Projects
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -158,7 +158,7 @@ class Projects
         return $this->nextPage;
     }
     /**
-     * 
+     *
      *
      * @param int $nextPage
      *
@@ -171,7 +171,7 @@ class Projects
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -180,7 +180,7 @@ class Projects
         return $this->previousPage;
     }
     /**
-     * 
+     *
      *
      * @param int $previousPage
      *
@@ -193,7 +193,7 @@ class Projects
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -202,7 +202,7 @@ class Projects
         return $this->page;
     }
     /**
-     * 
+     *
      *
      * @param int $page
      *
@@ -215,7 +215,7 @@ class Projects
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return PaginationLinks
      */
@@ -224,7 +224,7 @@ class Projects
         return $this->links;
     }
     /**
-     * 
+     *
      *
      * @param PaginationLinks $links
      *

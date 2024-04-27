@@ -13,25 +13,25 @@ class Traffic extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $timestamp;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $uniques;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $count;
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -40,7 +40,7 @@ class Traffic extends \ArrayObject
         return $this->timestamp;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $timestamp
      *
@@ -53,7 +53,7 @@ class Traffic extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -62,7 +62,7 @@ class Traffic extends \ArrayObject
         return $this->uniques;
     }
     /**
-     * 
+     *
      *
      * @param int $uniques
      *
@@ -75,7 +75,7 @@ class Traffic extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -84,7 +84,7 @@ class Traffic extends \ArrayObject
         return $this->count;
     }
     /**
-     * 
+     *
      *
      * @param int $count
      *

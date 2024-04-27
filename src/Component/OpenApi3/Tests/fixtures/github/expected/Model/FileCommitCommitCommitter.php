@@ -13,25 +13,25 @@ class FileCommitCommitCommitter extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $date;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $email;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -40,7 +40,7 @@ class FileCommitCommitCommitter extends \ArrayObject
         return $this->date;
     }
     /**
-     * 
+     *
      *
      * @param string $date
      *
@@ -53,7 +53,7 @@ class FileCommitCommitCommitter extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -62,7 +62,7 @@ class FileCommitCommitCommitter extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -75,7 +75,7 @@ class FileCommitCommitCommitter extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -84,7 +84,7 @@ class FileCommitCommitCommitter extends \ArrayObject
         return $this->email;
     }
     /**
-     * 
+     *
      *
      * @param string $email
      *

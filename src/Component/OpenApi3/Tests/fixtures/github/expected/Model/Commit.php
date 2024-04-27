@@ -13,73 +13,73 @@ class Commit extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $sha;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $nodeId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $htmlUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $commentsUrl;
     /**
-     * 
+     *
      *
      * @var CommitCommit
      */
     protected $commit;
     /**
-     * 
+     *
      *
      * @var CommitAuthor|null
      */
     protected $author;
     /**
-     * 
+     *
      *
      * @var CommitCommitter|null
      */
     protected $committer;
     /**
-     * 
+     *
      *
      * @var list<CommitParentsItem>
      */
     protected $parents;
     /**
-     * 
+     *
      *
      * @var CommitStats
      */
     protected $stats;
     /**
-     * 
+     *
      *
      * @var list<CommitFilesItem>
      */
     protected $files;
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -88,7 +88,7 @@ class Commit extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string|null $url
      *
@@ -101,7 +101,7 @@ class Commit extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -110,7 +110,7 @@ class Commit extends \ArrayObject
         return $this->sha;
     }
     /**
-     * 
+     *
      *
      * @param string|null $sha
      *
@@ -123,7 +123,7 @@ class Commit extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -132,7 +132,7 @@ class Commit extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -145,7 +145,7 @@ class Commit extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -154,7 +154,7 @@ class Commit extends \ArrayObject
         return $this->htmlUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $htmlUrl
      *
@@ -167,7 +167,7 @@ class Commit extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -176,7 +176,7 @@ class Commit extends \ArrayObject
         return $this->commentsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $commentsUrl
      *
@@ -189,7 +189,7 @@ class Commit extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return CommitCommit
      */
@@ -198,7 +198,7 @@ class Commit extends \ArrayObject
         return $this->commit;
     }
     /**
-     * 
+     *
      *
      * @param CommitCommit $commit
      *
@@ -211,7 +211,7 @@ class Commit extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return CommitAuthor|null
      */
@@ -220,7 +220,7 @@ class Commit extends \ArrayObject
         return $this->author;
     }
     /**
-     * 
+     *
      *
      * @param CommitAuthor|null $author
      *
@@ -233,7 +233,7 @@ class Commit extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return CommitCommitter|null
      */
@@ -242,7 +242,7 @@ class Commit extends \ArrayObject
         return $this->committer;
     }
     /**
-     * 
+     *
      *
      * @param CommitCommitter|null $committer
      *
@@ -255,7 +255,7 @@ class Commit extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<CommitParentsItem>
      */
@@ -264,7 +264,7 @@ class Commit extends \ArrayObject
         return $this->parents;
     }
     /**
-     * 
+     *
      *
      * @param list<CommitParentsItem> $parents
      *
@@ -277,7 +277,7 @@ class Commit extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return CommitStats
      */
@@ -286,7 +286,7 @@ class Commit extends \ArrayObject
         return $this->stats;
     }
     /**
-     * 
+     *
      *
      * @param CommitStats $stats
      *
@@ -299,7 +299,7 @@ class Commit extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<CommitFilesItem>
      */
@@ -308,7 +308,7 @@ class Commit extends \ArrayObject
         return $this->files;
     }
     /**
-     * 
+     *
      *
      * @param list<CommitFilesItem> $files
      *

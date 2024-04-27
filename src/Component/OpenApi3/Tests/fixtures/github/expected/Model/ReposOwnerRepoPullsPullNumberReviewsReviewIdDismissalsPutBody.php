@@ -19,7 +19,7 @@ class ReposOwnerRepoPullsPullNumberReviewsReviewIdDismissalsPutBody extends \Arr
      */
     protected $message;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -47,7 +47,7 @@ class ReposOwnerRepoPullsPullNumberReviewsReviewIdDismissalsPutBody extends \Arr
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -56,7 +56,7 @@ class ReposOwnerRepoPullsPullNumberReviewsReviewIdDismissalsPutBody extends \Arr
         return $this->event;
     }
     /**
-     * 
+     *
      *
      * @param string $event
      *

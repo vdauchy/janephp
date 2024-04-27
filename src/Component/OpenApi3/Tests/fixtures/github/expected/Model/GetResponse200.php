@@ -13,205 +13,205 @@ class GetResponse200 extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $currentUserUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $currentUserAuthorizationsHtmlUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $authorizationsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $codeSearchUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $commitSearchUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $emailsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $emojisUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $eventsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $feedsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $followersUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $followingUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $gistsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $hubUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $issueSearchUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $issuesUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $keysUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $labelSearchUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $notificationsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $organizationUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $organizationRepositoriesUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $organizationTeamsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $publicGistsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $rateLimitUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $repositoryUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $repositorySearchUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $currentUserRepositoriesUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $starredUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $starredGistsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $topicSearchUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $userUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $userOrganizationsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $userRepositoriesUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $userSearchUrl;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -220,7 +220,7 @@ class GetResponse200 extends \ArrayObject
         return $this->currentUserUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $currentUserUrl
      *
@@ -233,7 +233,7 @@ class GetResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -242,7 +242,7 @@ class GetResponse200 extends \ArrayObject
         return $this->currentUserAuthorizationsHtmlUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $currentUserAuthorizationsHtmlUrl
      *
@@ -255,7 +255,7 @@ class GetResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -264,7 +264,7 @@ class GetResponse200 extends \ArrayObject
         return $this->authorizationsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $authorizationsUrl
      *
@@ -277,7 +277,7 @@ class GetResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -286,7 +286,7 @@ class GetResponse200 extends \ArrayObject
         return $this->codeSearchUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $codeSearchUrl
      *
@@ -299,7 +299,7 @@ class GetResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -308,7 +308,7 @@ class GetResponse200 extends \ArrayObject
         return $this->commitSearchUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $commitSearchUrl
      *
@@ -321,7 +321,7 @@ class GetResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -330,7 +330,7 @@ class GetResponse200 extends \ArrayObject
         return $this->emailsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $emailsUrl
      *
@@ -343,7 +343,7 @@ class GetResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -352,7 +352,7 @@ class GetResponse200 extends \ArrayObject
         return $this->emojisUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $emojisUrl
      *
@@ -365,7 +365,7 @@ class GetResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -374,7 +374,7 @@ class GetResponse200 extends \ArrayObject
         return $this->eventsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $eventsUrl
      *
@@ -387,7 +387,7 @@ class GetResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -396,7 +396,7 @@ class GetResponse200 extends \ArrayObject
         return $this->feedsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $feedsUrl
      *
@@ -409,7 +409,7 @@ class GetResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -418,7 +418,7 @@ class GetResponse200 extends \ArrayObject
         return $this->followersUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $followersUrl
      *
@@ -431,7 +431,7 @@ class GetResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -440,7 +440,7 @@ class GetResponse200 extends \ArrayObject
         return $this->followingUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $followingUrl
      *
@@ -453,7 +453,7 @@ class GetResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -462,7 +462,7 @@ class GetResponse200 extends \ArrayObject
         return $this->gistsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $gistsUrl
      *
@@ -475,7 +475,7 @@ class GetResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -484,7 +484,7 @@ class GetResponse200 extends \ArrayObject
         return $this->hubUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $hubUrl
      *
@@ -497,7 +497,7 @@ class GetResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -506,7 +506,7 @@ class GetResponse200 extends \ArrayObject
         return $this->issueSearchUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $issueSearchUrl
      *
@@ -519,7 +519,7 @@ class GetResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -528,7 +528,7 @@ class GetResponse200 extends \ArrayObject
         return $this->issuesUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $issuesUrl
      *
@@ -541,7 +541,7 @@ class GetResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -550,7 +550,7 @@ class GetResponse200 extends \ArrayObject
         return $this->keysUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $keysUrl
      *
@@ -563,7 +563,7 @@ class GetResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -572,7 +572,7 @@ class GetResponse200 extends \ArrayObject
         return $this->labelSearchUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $labelSearchUrl
      *
@@ -585,7 +585,7 @@ class GetResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -594,7 +594,7 @@ class GetResponse200 extends \ArrayObject
         return $this->notificationsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $notificationsUrl
      *
@@ -607,7 +607,7 @@ class GetResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -616,7 +616,7 @@ class GetResponse200 extends \ArrayObject
         return $this->organizationUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $organizationUrl
      *
@@ -629,7 +629,7 @@ class GetResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -638,7 +638,7 @@ class GetResponse200 extends \ArrayObject
         return $this->organizationRepositoriesUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $organizationRepositoriesUrl
      *
@@ -651,7 +651,7 @@ class GetResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -660,7 +660,7 @@ class GetResponse200 extends \ArrayObject
         return $this->organizationTeamsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $organizationTeamsUrl
      *
@@ -673,7 +673,7 @@ class GetResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -682,7 +682,7 @@ class GetResponse200 extends \ArrayObject
         return $this->publicGistsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $publicGistsUrl
      *
@@ -695,7 +695,7 @@ class GetResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -704,7 +704,7 @@ class GetResponse200 extends \ArrayObject
         return $this->rateLimitUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $rateLimitUrl
      *
@@ -717,7 +717,7 @@ class GetResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -726,7 +726,7 @@ class GetResponse200 extends \ArrayObject
         return $this->repositoryUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $repositoryUrl
      *
@@ -739,7 +739,7 @@ class GetResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -748,7 +748,7 @@ class GetResponse200 extends \ArrayObject
         return $this->repositorySearchUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $repositorySearchUrl
      *
@@ -761,7 +761,7 @@ class GetResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -770,7 +770,7 @@ class GetResponse200 extends \ArrayObject
         return $this->currentUserRepositoriesUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $currentUserRepositoriesUrl
      *
@@ -783,7 +783,7 @@ class GetResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -792,7 +792,7 @@ class GetResponse200 extends \ArrayObject
         return $this->starredUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $starredUrl
      *
@@ -805,7 +805,7 @@ class GetResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -814,7 +814,7 @@ class GetResponse200 extends \ArrayObject
         return $this->starredGistsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $starredGistsUrl
      *
@@ -827,7 +827,7 @@ class GetResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -836,7 +836,7 @@ class GetResponse200 extends \ArrayObject
         return $this->topicSearchUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $topicSearchUrl
      *
@@ -849,7 +849,7 @@ class GetResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -858,7 +858,7 @@ class GetResponse200 extends \ArrayObject
         return $this->userUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $userUrl
      *
@@ -871,7 +871,7 @@ class GetResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -880,7 +880,7 @@ class GetResponse200 extends \ArrayObject
         return $this->userOrganizationsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $userOrganizationsUrl
      *
@@ -893,7 +893,7 @@ class GetResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -902,7 +902,7 @@ class GetResponse200 extends \ArrayObject
         return $this->userRepositoriesUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $userRepositoriesUrl
      *
@@ -915,7 +915,7 @@ class GetResponse200 extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -924,7 +924,7 @@ class GetResponse200 extends \ArrayObject
         return $this->userSearchUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $userSearchUrl
      *

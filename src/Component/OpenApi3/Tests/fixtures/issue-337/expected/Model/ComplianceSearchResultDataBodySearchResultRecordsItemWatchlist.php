@@ -13,19 +13,19 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlist extends \Ar
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var list<ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem>
      */
     protected $matches;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $status;
     /**
-     * 
+     *
      *
      * @return list<ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem>
      */
@@ -34,7 +34,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlist extends \Ar
         return $this->matches;
     }
     /**
-     * 
+     *
      *
      * @param list<ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem> $matches
      *
@@ -47,7 +47,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlist extends \Ar
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -56,7 +56,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlist extends \Ar
         return $this->status;
     }
     /**
-     * 
+     *
      *
      * @param string $status
      *

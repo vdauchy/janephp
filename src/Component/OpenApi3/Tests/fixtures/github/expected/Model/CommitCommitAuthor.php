@@ -13,25 +13,25 @@ class CommitCommitAuthor extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $email;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $date;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -40,7 +40,7 @@ class CommitCommitAuthor extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -53,7 +53,7 @@ class CommitCommitAuthor extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -62,7 +62,7 @@ class CommitCommitAuthor extends \ArrayObject
         return $this->email;
     }
     /**
-     * 
+     *
      *
      * @param string $email
      *
@@ -75,7 +75,7 @@ class CommitCommitAuthor extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -84,7 +84,7 @@ class CommitCommitAuthor extends \ArrayObject
         return $this->date;
     }
     /**
-     * 
+     *
      *
      * @param string $date
      *

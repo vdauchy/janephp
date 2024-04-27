@@ -5,7 +5,7 @@ namespace PicturePark\API;
 class Client extends \PicturePark\API\Runtime\Client\Client
 {
     /**
-     * 
+     *
      *
      * @param string $id The business process id.
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
@@ -24,9 +24,9 @@ class Client extends \PicturePark\API\Runtime\Client\Client
         return $this->executeEndpoint(new \PicturePark\API\Endpoint\BusinessProcessGet($id), $fetch);
     }
     /**
-     * 
      *
-     * @param \PicturePark\API\Model\BusinessProcessCreateRequest $requestBody 
+     *
+     * @param \PicturePark\API\Model\BusinessProcessCreateRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\BusinessProcessCreateBadRequestException
      * @throws \PicturePark\API\Exception\BusinessProcessCreateUnauthorizedException
@@ -46,7 +46,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
      * Only available for business processes created through BusinessProcessCreateRequest). The operation is executed asynchronously and is not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
      *
      * @param string $id The business process id.
-     * @param \PicturePark\API\Model\BusinessProcessStateChangeRequest $requestBody 
+     * @param \PicturePark\API\Model\BusinessProcessStateChangeRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\BusinessProcessChangeStateBadRequestException
      * @throws \PicturePark\API\Exception\BusinessProcessChangeStateUnauthorizedException
@@ -66,7 +66,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
      * Only available for business processes created through BusinessProcessCreateRequest).
      *
      * @param string $id The business process id.
-     * @param \PicturePark\API\Model\BusinessProcessNotificationUpdateRequest $requestBody 
+     * @param \PicturePark\API\Model\BusinessProcessNotificationUpdateRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\BusinessProcessUpdateNotificationBadRequestException
      * @throws \PicturePark\API\Exception\BusinessProcessUpdateNotificationUnauthorizedException
@@ -197,7 +197,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Search for business processes.
      *
-     * @param \PicturePark\API\Model\BusinessProcessSearchRequest $requestBody 
+     * @param \PicturePark\API\Model\BusinessProcessSearchRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\BusinessProcessSearchBadRequestException
      * @throws \PicturePark\API\Exception\BusinessProcessSearchUnauthorizedException
@@ -230,9 +230,9 @@ class Client extends \PicturePark\API\Runtime\Client\Client
         return $this->executeEndpoint(new \PicturePark\API\Endpoint\BusinessRuleGetConfiguration(), $fetch);
     }
     /**
-     * 
      *
-     * @param \PicturePark\API\Model\BusinessRuleConfigurationUpdateRequest $requestBody 
+     *
+     * @param \PicturePark\API\Model\BusinessRuleConfigurationUpdateRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\BusinessRuleUpdateConfigurationBadRequestException
      * @throws \PicturePark\API\Exception\BusinessRuleUpdateConfigurationUnauthorizedException
@@ -249,9 +249,9 @@ class Client extends \PicturePark\API\Runtime\Client\Client
         return $this->executeEndpoint(new \PicturePark\API\Endpoint\BusinessRuleUpdateConfiguration($requestBody), $fetch);
     }
     /**
-     * 
      *
-     * @param \PicturePark\API\Model\BusinessRuleTraceLogSearchRequest $requestBody 
+     *
+     * @param \PicturePark\API\Model\BusinessRuleTraceLogSearchRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\BusinessRuleSearchTracesBadRequestException
      * @throws \PicturePark\API\Exception\BusinessRuleSearchTracesUnauthorizedException
@@ -286,7 +286,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Creates new channel based on supplied request.
      *
-     * @param \PicturePark\API\Model\ChannelCreateRequest $requestBody 
+     * @param \PicturePark\API\Model\ChannelCreateRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\ChannelCreateBadRequestException
      * @throws \PicturePark\API\Exception\ChannelCreateUnauthorizedException
@@ -344,7 +344,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
      * Updates the channel specified by the ID and based on supplied request.
      *
      * @param string $id ID of channel to update
-     * @param \PicturePark\API\Model\ChannelUpdateRequest $requestBody 
+     * @param \PicturePark\API\Model\ChannelUpdateRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\ChannelUpdateBadRequestException
      * @throws \PicturePark\API\Exception\ChannelUpdateUnauthorizedException
@@ -402,7 +402,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
      * Updates the content permission set specified by the ID and based on supplied request.
      *
      * @param string $id Content permission set ID.
-     * @param \PicturePark\API\Model\ContentPermissionSetUpdateRequest $requestBody 
+     * @param \PicturePark\API\Model\ContentPermissionSetUpdateRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\ContentPermissionSetUpdateBadRequestException
      * @throws \PicturePark\API\Exception\ContentPermissionSetUpdateUnauthorizedException
@@ -442,7 +442,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Creates new content permission set based on supplied request.
      *
-     * @param \PicturePark\API\Model\ContentPermissionSetCreateRequest $requestBody 
+     * @param \PicturePark\API\Model\ContentPermissionSetCreateRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\ContentPermissionSetCreateBadRequestException
      * @throws \PicturePark\API\Exception\ContentPermissionSetCreateUnauthorizedException
@@ -462,7 +462,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
      * Transfers ownership of content permission set to supplied user.
      *
      * @param string $id Content permission set ID.
-     * @param \PicturePark\API\Model\PermissionSetOwnershipTransferRequest $requestBody 
+     * @param \PicturePark\API\Model\PermissionSetOwnershipTransferRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\ContentPermissionSetTransferOwnershipBadRequestException
      * @throws \PicturePark\API\Exception\ContentPermissionSetTransferOwnershipUnauthorizedException
@@ -500,7 +500,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Creates new content permission sets based on supplied requests.
      *
-     * @param \PicturePark\API\Model\ContentPermissionSetCreateManyRequest $requestBody 
+     * @param \PicturePark\API\Model\ContentPermissionSetCreateManyRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\ContentPermissionSetCreateManyBadRequestException
      * @throws \PicturePark\API\Exception\ContentPermissionSetCreateManyUnauthorizedException
@@ -519,7 +519,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Updates the content permission sets specified by the IDs and based on supplied request.
      *
-     * @param \PicturePark\API\Model\ContentPermissionSetUpdateManyRequest $requestBody 
+     * @param \PicturePark\API\Model\ContentPermissionSetUpdateManyRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\ContentPermissionSetUpdateManyBadRequestException
      * @throws \PicturePark\API\Exception\ContentPermissionSetUpdateManyUnauthorizedException
@@ -538,7 +538,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Deletes the content permission sets specified by the IDs.
      *
-     * @param \PicturePark\API\Model\PermissionSetDeleteManyRequest $requestBody 
+     * @param \PicturePark\API\Model\PermissionSetDeleteManyRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\ContentPermissionSetDeleteManyBadRequestException
      * @throws \PicturePark\API\Exception\ContentPermissionSetDeleteManyUnauthorizedException
@@ -557,7 +557,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Transfers ownership of multiple content permission sets to respective supplied users.
      *
-     * @param \PicturePark\API\Model\PermissionSetOwnershipTransferManyRequest $requestBody 
+     * @param \PicturePark\API\Model\PermissionSetOwnershipTransferManyRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\ContentPermissionSetTransferOwnershipManyBadRequestException
      * @throws \PicturePark\API\Exception\ContentPermissionSetTransferOwnershipManyUnauthorizedException
@@ -597,7 +597,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Searches content permission sets as specified in the search request.
      *
-     * @param \PicturePark\API\Model\PermissionSetSearchRequest $requestBody 
+     * @param \PicturePark\API\Model\PermissionSetSearchRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\ContentPermissionSetSearchBadRequestException
      * @throws \PicturePark\API\Exception\ContentPermissionSetSearchUnauthorizedException
@@ -742,7 +742,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
     * Create a single file-less content item. To import files, see [Transfer](#tag/Transfer).
     *
-    * @param \PicturePark\API\Model\ContentCreateRequest $requestBody 
+    * @param \PicturePark\API\Model\ContentCreateRequest $requestBody
     * @param array $queryParameters {
     *     @var array $resolveBehaviors List of enums that control which parts of the content are resolved and returned.
     *     @var bool $allowMissingDependencies Allows creating contents that refer to list items or contents that don't exist in the system.
@@ -773,7 +773,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     See [ShouldUpdateMetadata](https://github.com/Picturepark/Picturepark.SDK.DotNet/blob/master/src/Picturepark.SDK.V1.Tests/Clients/ContentTests.cs) tests.
     *
     * @param string $id The content ID.
-    * @param \PicturePark\API\Model\ContentMetadataUpdateRequest $requestBody 
+    * @param \PicturePark\API\Model\ContentMetadataUpdateRequest $requestBody
     * @param array $queryParameters {
     *     @var array $resolveBehaviors List of enums that control which parts of the content are resolved and returned.
     *     @var bool $allowMissingDependencies Allows storing references to list items or contents that don't exist in the system.
@@ -801,7 +801,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     * Updates the content permission sets of a single content. To get a list of available content permission sets, see [Permissions](operation/Permission_SearchContentPermissions)
     *
     * @param string $id The content ID.
-    * @param \PicturePark\API\Model\ContentPermissionsUpdateRequest $requestBody 
+    * @param \PicturePark\API\Model\ContentPermissionsUpdateRequest $requestBody
     * @param array $queryParameters {
     *     @var array $resolveBehaviors List of enums that control which parts of the content are resolved and returned.
     *     @var string $timeout Maximum time to wait for the operation to complete. If timeout is exceeded, the operation is not aborted but continues anyhow.
@@ -854,7 +854,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     * Transfers ownership of a content to another user. The target user must have the ManageContent UserRight.
     *
     * @param string $id The content ID.
-    * @param \PicturePark\API\Model\ContentOwnershipTransferRequest $requestBody 
+    * @param \PicturePark\API\Model\ContentOwnershipTransferRequest $requestBody
     * @param array $queryParameters {
     *     @var string $timeout Maximum time to wait for the operation to complete. If timeout is exceeded, the operation is not aborted but continues anyhow.
                Only the waiting is aborted, and the calls returned.
@@ -881,7 +881,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     The operation is executed asynchronous and is not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
     *
     * @param string $id The ID of the content to replace.
-    * @param \PicturePark\API\Model\ContentFileUpdateRequest $requestBody 
+    * @param \PicturePark\API\Model\ContentFileUpdateRequest $requestBody
     * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
     * @throws \PicturePark\API\Exception\ContentUpdateFileBadRequestException
     * @throws \PicturePark\API\Exception\ContentUpdateFileUnauthorizedException
@@ -901,7 +901,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
      * Gets the references (list items, contents, shares) to a single content.
      *
      * @param string $id The content ID whose references to retrieve.
-     * @param \PicturePark\API\Model\ContentReferencesRequest $requestBody 
+     * @param \PicturePark\API\Model\ContentReferencesRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\ContentGetReferencesBadRequestException
      * @throws \PicturePark\API\Exception\ContentGetReferencesUnauthorizedException
@@ -939,7 +939,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Creates a download link for one or more contents. The operation is executed asynchronously and is not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
      *
-     * @param \PicturePark\API\Model\ContentDownloadLinkCreateRequest $requestBody 
+     * @param \PicturePark\API\Model\ContentDownloadLinkCreateRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\ContentCreateDownloadLinkBadRequestException
      * @throws \PicturePark\API\Exception\ContentCreateDownloadLinkUnauthorizedException
@@ -956,7 +956,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
         return $this->executeEndpoint(new \PicturePark\API\Endpoint\ContentCreateDownloadLink($requestBody), $fetch);
     }
     /**
-     * 
+     *
      *
      * @param string $token Token
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
@@ -978,7 +978,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     * Create multiple file-less content items. To import files, see [Transfer](#tag/Transfer).
     The operation is executed asynchronous and it's not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
     *
-    * @param \PicturePark\API\Model\ContentCreateManyRequest $requestBody 
+    * @param \PicturePark\API\Model\ContentCreateManyRequest $requestBody
     * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
     * @throws \PicturePark\API\Exception\ContentCreateManyBadRequestException
     * @throws \PicturePark\API\Exception\ContentCreateManyUnauthorizedException
@@ -999,7 +999,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     See [ShouldUpdateMetadata](https://github.com/Picturepark/Picturepark.SDK.DotNet/blob/master/src/Picturepark.SDK.V1.Tests/Clients/ContentTests.cs) tests.
     The operation is executed asynchronous and is not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
     *
-    * @param \PicturePark\API\Model\ContentMetadataUpdateManyRequest $requestBody 
+    * @param \PicturePark\API\Model\ContentMetadataUpdateManyRequest $requestBody
     * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
     * @throws \PicturePark\API\Exception\ContentUpdateMetadataManyBadRequestException
     * @throws \PicturePark\API\Exception\ContentUpdateMetadataManyUnauthorizedException
@@ -1019,7 +1019,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     * Updates the content permission sets of multiple contents. To get a list of available content permission sets, see [Permissions](#operation/Permission_SearchContentPermissions)
     The operation is executed asynchronous and is not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
     *
-    * @param \PicturePark\API\Model\ContentPermissionsUpdateManyRequest $requestBody 
+    * @param \PicturePark\API\Model\ContentPermissionsUpdateManyRequest $requestBody
     * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
     * @throws \PicturePark\API\Exception\ContentUpdatePermissionsManyBadRequestException
     * @throws \PicturePark\API\Exception\ContentUpdatePermissionsManyUnauthorizedException
@@ -1039,7 +1039,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     * Transfers ownerships of multiple contents to specified users. The target users must have the ManageContent UserRight.
     The operation is executed asynchronous and is not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
     *
-    * @param \PicturePark\API\Model\ContentOwnershipTransferManyRequest $requestBody 
+    * @param \PicturePark\API\Model\ContentOwnershipTransferManyRequest $requestBody
     * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
     * @throws \PicturePark\API\Exception\ContentTransferOwnershipManyBadRequestException
     * @throws \PicturePark\API\Exception\ContentTransferOwnershipManyUnauthorizedException
@@ -1059,7 +1059,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     * Deletes multiple contents. The lifecycle is changed to Inactive. After a customer instance specified time (default 30 days), the content and all files will be hard deleted.
     The operation is executed asynchronous and is not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
     *
-    * @param \PicturePark\API\Model\ContentDeleteManyRequest $requestBody 
+    * @param \PicturePark\API\Model\ContentDeleteManyRequest $requestBody
     * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
     * @throws \PicturePark\API\Exception\ContentDeleteManyBadRequestException
     * @throws \PicturePark\API\Exception\ContentDeleteManyUnauthorizedException
@@ -1080,7 +1080,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     The lifecycle is changed to Inactive. After a customer instance specified time (default 30 days), the content and all files will be hard deleted.
     The operation is executed asynchronously and is not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
     *
-    * @param \PicturePark\API\Model\ContentDeleteManyFilterRequest $requestBody 
+    * @param \PicturePark\API\Model\ContentDeleteManyFilterRequest $requestBody
     * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
     * @throws \PicturePark\API\Exception\ContentDeleteManyByFilterBadRequestException
     * @throws \PicturePark\API\Exception\ContentDeleteManyByFilterUnauthorizedException
@@ -1100,7 +1100,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     * Restores previously deleted contents.
     The operation is executed asynchronous and is not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
     *
-    * @param \PicturePark\API\Model\ContentRestoreManyRequest $requestBody 
+    * @param \PicturePark\API\Model\ContentRestoreManyRequest $requestBody
     * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
     * @throws \PicturePark\API\Exception\ContentRestoreManyBadRequestException
     * @throws \PicturePark\API\Exception\ContentRestoreManyUnauthorizedException
@@ -1119,7 +1119,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Gets references (list items, contents, shares) to content documents defined by IDs.
      *
-     * @param \PicturePark\API\Model\ContentManyReferencesRequest $requestBody 
+     * @param \PicturePark\API\Model\ContentManyReferencesRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\ContentGetReferencesManyBadRequestException
      * @throws \PicturePark\API\Exception\ContentGetReferencesManyUnauthorizedException
@@ -1139,7 +1139,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     * Retrieves all outputs available for contents, also dynamic rendered outputs are returned, if requested.
     A maximum of 1000 content ids can be specified.
     *
-    * @param \PicturePark\API\Model\OutputResolveManyRequest $requestBody 
+    * @param \PicturePark\API\Model\OutputResolveManyRequest $requestBody
     * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
     * @throws \PicturePark\API\Exception\ContentGetOutputsManyBadRequestException
     * @throws \PicturePark\API\Exception\ContentGetOutputsManyUnauthorizedException
@@ -1161,7 +1161,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     See [ShouldUpdateMetadataMany](https://github.com/Picturepark/Picturepark.SDK.DotNet/blob/master/src/Picturepark.SDK.V1.Tests/Clients/ContentTests.cs) tests.
     The operation is executed asynchronous and is not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
     *
-    * @param \PicturePark\API\Model\ContentFieldsBatchUpdateRequest $requestBody 
+    * @param \PicturePark\API\Model\ContentFieldsBatchUpdateRequest $requestBody
     * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
     * @throws \PicturePark\API\Exception\ContentBatchUpdateFieldsByIdsBadRequestException
     * @throws \PicturePark\API\Exception\ContentBatchUpdateFieldsByIdsUnauthorizedException
@@ -1182,7 +1182,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     A filter must be provided to limit the update to specific contents. The same set of changes is applied to all the contents.
     The operation is executed asynchronous and is not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
     *
-    * @param \PicturePark\API\Model\ContentFieldsBatchUpdateFilterRequest $requestBody 
+    * @param \PicturePark\API\Model\ContentFieldsBatchUpdateFilterRequest $requestBody
     * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
     * @throws \PicturePark\API\Exception\ContentBatchUpdateFieldsByFilterBadRequestException
     * @throws \PicturePark\API\Exception\ContentBatchUpdateFieldsByFilterUnauthorizedException
@@ -1201,7 +1201,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Searches contents as specified in the search request.
      *
-     * @param \PicturePark\API\Model\ContentSearchRequest $requestBody 
+     * @param \PicturePark\API\Model\ContentSearchRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\ContentSearchBadRequestException
      * @throws \PicturePark\API\Exception\ContentSearchUnauthorizedException
@@ -1220,7 +1220,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Aggregates content by content fields values as specified in the aggregators saved on a channel.
      *
-     * @param \PicturePark\API\Model\ContentAggregationOnChannelRequest $requestBody 
+     * @param \PicturePark\API\Model\ContentAggregationOnChannelRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\ContentAggregateOnChannelBadRequestException
      * @throws \PicturePark\API\Exception\ContentAggregateOnChannelUnauthorizedException
@@ -1239,7 +1239,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Aggregates content by content fields values as specified in the aggregation request.
      *
-     * @param \PicturePark\API\Model\ContentAggregationRequest $requestBody 
+     * @param \PicturePark\API\Model\ContentAggregationRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\ContentAggregateBadRequestException
      * @throws \PicturePark\API\Exception\ContentAggregateUnauthorizedException
@@ -1378,7 +1378,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Search the document history as specified in the search request.
      *
-     * @param \PicturePark\API\Model\DocumentHistorySearchRequest $requestBody 
+     * @param \PicturePark\API\Model\DocumentHistorySearchRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\DocumentHistorySearchBadRequestException
      * @throws \PicturePark\API\Exception\DocumentHistorySearchUnauthorizedException
@@ -1427,7 +1427,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
         return $this->executeEndpoint(new \PicturePark\API\Endpoint\IdentityProviderGetAllBasicInfos(), $fetch);
     }
     /**
-     * 
+     *
      *
      * @param string $id Identity provider ID.
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
@@ -1449,7 +1449,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
      * Identity provider has to be already created via UI
      *
      * @param string $id Identity provider ID.
-     * @param \PicturePark\API\Model\IdentityProviderEditable $requestBody 
+     * @param \PicturePark\API\Model\IdentityProviderEditable $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\IdentityProviderUpdateBadRequestException
      * @throws \PicturePark\API\Exception\IdentityProviderUpdateUnauthorizedException
@@ -1579,7 +1579,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     * Updates a single list item.
     *
     * @param string $id The list item ID.
-    * @param \PicturePark\API\Model\ListItemUpdateRequest $requestBody 
+    * @param \PicturePark\API\Model\ListItemUpdateRequest $requestBody
     * @param array $queryParameters {
     *     @var array $resolveBehaviors List of enums that control which parts of the list item are resolved and returned.
     *     @var bool $allowMissingDependencies Allows creating list items that refer to list items or contents that don't exist in the system.
@@ -1633,7 +1633,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
      * Gets the references (list items, contents) to a single list item.
      *
      * @param string $id The ID of the list item.
-     * @param \PicturePark\API\Model\ListItemReferencesRequest $requestBody 
+     * @param \PicturePark\API\Model\ListItemReferencesRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\ListItemGetReferencesBadRequestException
      * @throws \PicturePark\API\Exception\ListItemGetReferencesUnauthorizedException
@@ -1675,7 +1675,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
     * Create a new list item.
     *
-    * @param \PicturePark\API\Model\ListItemCreateRequest $requestBody 
+    * @param \PicturePark\API\Model\ListItemCreateRequest $requestBody
     * @param array $queryParameters {
     *     @var array $resolveBehaviors List of enums that control which parts of the list item are resolved and returned.
     *     @var bool $allowMissingDependencies Allows creating list items that refer to list items or contents that don't exist in the system.
@@ -1702,7 +1702,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * The operation is executed asynchronous and is not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
      *
-     * @param \PicturePark\API\Model\ListItemCreateManyRequest $requestBody 
+     * @param \PicturePark\API\Model\ListItemCreateManyRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\ListItemCreateManyBadRequestException
      * @throws \PicturePark\API\Exception\ListItemCreateManyUnauthorizedException
@@ -1721,7 +1721,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * The operation is executed asynchronous and is not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
      *
-     * @param \PicturePark\API\Model\ListItemUpdateManyRequest $requestBody 
+     * @param \PicturePark\API\Model\ListItemUpdateManyRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\ListItemUpdateManyBadRequestException
      * @throws \PicturePark\API\Exception\ListItemUpdateManyUnauthorizedException
@@ -1741,7 +1741,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     * The lifecycle is changed to Inactive. After a customer instance specified time (default 30 days), the list item and all files will be deleted.
     The operation is executed asynchronous and is not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
     *
-    * @param \PicturePark\API\Model\ListItemDeleteManyRequest $requestBody 
+    * @param \PicturePark\API\Model\ListItemDeleteManyRequest $requestBody
     * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
     * @throws \PicturePark\API\Exception\ListItemDeleteManyBadRequestException
     * @throws \PicturePark\API\Exception\ListItemDeleteManyUnauthorizedException
@@ -1762,7 +1762,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     The lifecycle is changed to Inactive. After a customer instance specified time (default 30 days), the list item and all files will be hard deleted.
     The operation is executed asynchronously and is not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
     *
-    * @param \PicturePark\API\Model\ListItemDeleteManyFilterRequest $requestBody 
+    * @param \PicturePark\API\Model\ListItemDeleteManyFilterRequest $requestBody
     * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
     * @throws \PicturePark\API\Exception\ListItemDeleteManyByFilterBadRequestException
     * @throws \PicturePark\API\Exception\ListItemDeleteManyByFilterUnauthorizedException
@@ -1782,7 +1782,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     * Restores previously deleted list items.
     The operation is executed asynchronous and is not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
     *
-    * @param \PicturePark\API\Model\ListItemRestoreManyRequest $requestBody 
+    * @param \PicturePark\API\Model\ListItemRestoreManyRequest $requestBody
     * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
     * @throws \PicturePark\API\Exception\ListItemRestoreManyBadRequestException
     * @throws \PicturePark\API\Exception\ListItemRestoreManyUnauthorizedException
@@ -1801,7 +1801,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Gets the references (list items, contents) to multiple list items.
      *
-     * @param \PicturePark\API\Model\ListItemManyReferencesRequest $requestBody 
+     * @param \PicturePark\API\Model\ListItemManyReferencesRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\ListItemGetReferencesManyBadRequestException
      * @throws \PicturePark\API\Exception\ListItemGetReferencesManyUnauthorizedException
@@ -1822,7 +1822,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     The same set of changes is applied to all the list items.
     The operation is executed asynchronous and is not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
     *
-    * @param \PicturePark\API\Model\ListItemFieldsBatchUpdateRequest $requestBody 
+    * @param \PicturePark\API\Model\ListItemFieldsBatchUpdateRequest $requestBody
     * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
     * @throws \PicturePark\API\Exception\ListItemBatchUpdateFieldsByIdsBadRequestException
     * @throws \PicturePark\API\Exception\ListItemBatchUpdateFieldsByIdsUnauthorizedException
@@ -1843,7 +1843,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     The same set of changes is applied to all the list items.
     The operation is executed asynchronous and is not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
     *
-    * @param \PicturePark\API\Model\ListItemFieldsBatchUpdateFilterRequest $requestBody 
+    * @param \PicturePark\API\Model\ListItemFieldsBatchUpdateFilterRequest $requestBody
     * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
     * @throws \PicturePark\API\Exception\ListItemBatchUpdateFieldsByFilterBadRequestException
     * @throws \PicturePark\API\Exception\ListItemBatchUpdateFieldsByFilterUnauthorizedException
@@ -1862,7 +1862,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Searches list items as specified in the search request.
      *
-     * @param \PicturePark\API\Model\ListItemSearchRequest $requestBody 
+     * @param \PicturePark\API\Model\ListItemSearchRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\ListItemSearchBadRequestException
      * @throws \PicturePark\API\Exception\ListItemSearchUnauthorizedException
@@ -1881,7 +1881,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Aggregates list items as specified in the aggregation request.
      *
-     * @param \PicturePark\API\Model\ListItemAggregationRequest $requestBody 
+     * @param \PicturePark\API\Model\ListItemAggregationRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\ListItemAggregateBadRequestException
      * @throws \PicturePark\API\Exception\ListItemAggregateUnauthorizedException
@@ -1900,7 +1900,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Search for live stream events with optional parameters to limit time, document type or use more complex filtering.
      *
-     * @param \PicturePark\API\Model\LiveStreamSearchRequest $requestBody 
+     * @param \PicturePark\API\Model\LiveStreamSearchRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\LiveStreamSearchBadRequestException
      * @throws \PicturePark\API\Exception\LiveStreamSearchUnauthorizedException
@@ -1952,7 +1952,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
      * This is allowed for both static and dynamic formats. The operation is executed asynchronously and is not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
      *
      * @param string $id ID of the output format.
-     * @param \stdClass $requestBody 
+     * @param \stdClass $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\OutputFormatSetDownloadFileNamePatternsBadRequestException
      * @throws \PicturePark\API\Exception\OutputFormatSetDownloadFileNamePatternsUnauthorizedException
@@ -1971,7 +1971,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * This is allowed for both static and dynamic formats. The operation is executed asynchronously and is not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
      *
-     * @param \PicturePark\API\Model\OutputFormatDownloadFileNamePatternUpdateManyRequest $requestBody 
+     * @param \PicturePark\API\Model\OutputFormatDownloadFileNamePatternUpdateManyRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\OutputFormatSetDownloadFileNamePatternsManyBadRequestException
      * @throws \PicturePark\API\Exception\OutputFormatSetDownloadFileNamePatternsManyUnauthorizedException
@@ -1992,7 +1992,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     However, enabling XMP writeback for Thumbnail formats or temporary formats is not allowed. The operation is executed asynchronously and is not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
     *
     * @param string $id ID of the output format.
-    * @param \PicturePark\API\Model\OutputFormatSetXmpWritebackStateRequest $requestBody 
+    * @param \PicturePark\API\Model\OutputFormatSetXmpWritebackStateRequest $requestBody
     * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
     * @throws \PicturePark\API\Exception\OutputFormatSetXmpWritebackStateBadRequestException
     * @throws \PicturePark\API\Exception\OutputFormatSetXmpWritebackStateUnauthorizedException
@@ -2012,7 +2012,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     * This is allowed for both static and dynamic formats.
     However, enabling XMP writeback for Thumbnail formats or temporary formats is not allowed. The operation is executed asynchronously and is not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
     *
-    * @param \PicturePark\API\Model\OutputFormatSetXmpWritebackStateManyRequest $requestBody 
+    * @param \PicturePark\API\Model\OutputFormatSetXmpWritebackStateManyRequest $requestBody
     * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
     * @throws \PicturePark\API\Exception\OutputFormatSetXmpWritebackState2BadRequestException
     * @throws \PicturePark\API\Exception\OutputFormatSetXmpWritebackState2UnauthorizedException
@@ -2031,7 +2031,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Request rendering of the given OutputFormat for a given content.
      *
-     * @param \PicturePark\API\Model\OutputFormatRenderPreviewRequest $requestBody 
+     * @param \PicturePark\API\Model\OutputFormatRenderPreviewRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @param array $accept Accept content header application/octet-stream|application/json
      * @throws \PicturePark\API\Exception\OutputFormatRenderFormatPreviewBadRequestException
@@ -2073,7 +2073,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Creates new output format based on the supplied request. The operation is executed asynchronously and is not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
      *
-     * @param \PicturePark\API\Model\OutputFormat $requestBody 
+     * @param \PicturePark\API\Model\OutputFormat $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\OutputFormatCreateBadRequestException
      * @throws \PicturePark\API\Exception\OutputFormatCreateUnauthorizedException
@@ -2131,7 +2131,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
      * Updates the output format specified by the ID and based on supplied request. The operation is executed asynchronously and is not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
      *
      * @param string $id Output format ID.
-     * @param \PicturePark\API\Model\OutputFormatEditable $requestBody 
+     * @param \PicturePark\API\Model\OutputFormatEditable $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\OutputFormatUpdateBadRequestException
      * @throws \PicturePark\API\Exception\OutputFormatUpdateUnauthorizedException
@@ -2150,7 +2150,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Creates new output formats based on supplied requests. The operation is executed asynchronously and is not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
      *
-     * @param \PicturePark\API\Model\OutputFormatCreateManyRequest $requestBody 
+     * @param \PicturePark\API\Model\OutputFormatCreateManyRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\OutputFormatCreateManyBadRequestException
      * @throws \PicturePark\API\Exception\OutputFormatCreateManyUnauthorizedException
@@ -2169,7 +2169,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Updates the output formats specified by the IDs and based on supplied requests. The operation is executed asynchronously and is not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
      *
-     * @param \PicturePark\API\Model\OutputFormatUpdateManyRequest $requestBody 
+     * @param \PicturePark\API\Model\OutputFormatUpdateManyRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\OutputFormatUpdateManyBadRequestException
      * @throws \PicturePark\API\Exception\OutputFormatUpdateManyUnauthorizedException
@@ -2188,7 +2188,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Deletes the output formats specified by the IDs. The operation is executed asynchronously and is not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
      *
-     * @param \PicturePark\API\Model\OutputFormatDeleteManyRequest $requestBody 
+     * @param \PicturePark\API\Model\OutputFormatDeleteManyRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\OutputFormatDeleteManyBadRequestException
      * @throws \PicturePark\API\Exception\OutputFormatDeleteManyUnauthorizedException
@@ -2226,7 +2226,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * ContentIds must be mandatory filled.
      *
-     * @param \PicturePark\API\Model\OutputSearchRequest $requestBody 
+     * @param \PicturePark\API\Model\OutputSearchRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\OutputSearchBadRequestException
      * @throws \PicturePark\API\Exception\OutputSearchUnauthorizedException
@@ -2247,7 +2247,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     The number the counters are reset to is determined by a global configuration value. If OutputIds are specified, the rest of the fields are ignored.
     Can reset 100 outputs at most. The operation is executed asynchronously and is not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
     *
-    * @param \PicturePark\API\Model\OutputResetRetryAttemptsRequest $requestBody 
+    * @param \PicturePark\API\Model\OutputResetRetryAttemptsRequest $requestBody
     * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
     * @throws \PicturePark\API\Exception\OutputResetRetryAttemptsBadRequestException
     * @throws \PicturePark\API\Exception\OutputResetRetryAttemptsUnauthorizedException
@@ -2282,7 +2282,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Updates profile of currently logged in user.
      *
-     * @param \PicturePark\API\Model\UserProfileUpdateRequest $requestBody 
+     * @param \PicturePark\API\Model\UserProfileUpdateRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\ProfileUpdateBadRequestException
      * @throws \PicturePark\API\Exception\ProfileUpdateUnauthorizedException
@@ -2356,7 +2356,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
      * Updates the schema permission set specified by the ID and based on supplied request.
      *
      * @param string $id Schema permission set ID.
-     * @param \PicturePark\API\Model\SchemaPermissionSetUpdateRequest $requestBody 
+     * @param \PicturePark\API\Model\SchemaPermissionSetUpdateRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\SchemaPermissionSetUpdateBadRequestException
      * @throws \PicturePark\API\Exception\SchemaPermissionSetUpdateUnauthorizedException
@@ -2396,7 +2396,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Creates new schema permission set based on supplied request.
      *
-     * @param \PicturePark\API\Model\SchemaPermissionSetCreateRequest $requestBody 
+     * @param \PicturePark\API\Model\SchemaPermissionSetCreateRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\SchemaPermissionSetCreateBadRequestException
      * @throws \PicturePark\API\Exception\SchemaPermissionSetCreateUnauthorizedException
@@ -2416,7 +2416,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
      * Transfers ownership of schema permission set to supplied user.
      *
      * @param string $id Schema permission set ID.
-     * @param \PicturePark\API\Model\PermissionSetOwnershipTransferRequest $requestBody 
+     * @param \PicturePark\API\Model\PermissionSetOwnershipTransferRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\SchemaPermissionSetTransferOwnershipBadRequestException
      * @throws \PicturePark\API\Exception\SchemaPermissionSetTransferOwnershipUnauthorizedException
@@ -2454,7 +2454,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Creates new schema permission sets based on supplied requests.
      *
-     * @param \PicturePark\API\Model\SchemaPermissionSetCreateManyRequest $requestBody 
+     * @param \PicturePark\API\Model\SchemaPermissionSetCreateManyRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\SchemaPermissionSetCreateManyBadRequestException
      * @throws \PicturePark\API\Exception\SchemaPermissionSetCreateManyUnauthorizedException
@@ -2473,7 +2473,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Updates the schema permission sets specified by the IDs and based on supplied request.
      *
-     * @param \PicturePark\API\Model\SchemaPermissionSetUpdateManyRequest $requestBody 
+     * @param \PicturePark\API\Model\SchemaPermissionSetUpdateManyRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\SchemaPermissionSetUpdateManyBadRequestException
      * @throws \PicturePark\API\Exception\SchemaPermissionSetUpdateManyUnauthorizedException
@@ -2492,7 +2492,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Deletes the schema permission sets specified by the IDs.
      *
-     * @param \PicturePark\API\Model\PermissionSetDeleteManyRequest $requestBody 
+     * @param \PicturePark\API\Model\PermissionSetDeleteManyRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\SchemaPermissionSetDeleteManyBadRequestException
      * @throws \PicturePark\API\Exception\SchemaPermissionSetDeleteManyUnauthorizedException
@@ -2511,7 +2511,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Transfers ownership of multiple schema permission sets to respective supplied users.
      *
-     * @param \PicturePark\API\Model\PermissionSetOwnershipTransferManyRequest $requestBody 
+     * @param \PicturePark\API\Model\PermissionSetOwnershipTransferManyRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\SchemaPermissionSetTransferOwnershipManyBadRequestException
      * @throws \PicturePark\API\Exception\SchemaPermissionSetTransferOwnershipManyUnauthorizedException
@@ -2551,7 +2551,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Searches schema permission sets as specified in the search request.
      *
-     * @param \PicturePark\API\Model\PermissionSetSearchRequest $requestBody 
+     * @param \PicturePark\API\Model\PermissionSetSearchRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\SchemaPermissionSetSearchBadRequestException
      * @throws \PicturePark\API\Exception\SchemaPermissionSetSearchUnauthorizedException
@@ -2615,7 +2615,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     Depending on how much the schema is referenced by existing data, the operation can take a lot of time.
     *
     * @param string $id The schema ID.
-    * @param \PicturePark\API\Model\SchemaUpdateRequest $requestBody 
+    * @param \PicturePark\API\Model\SchemaUpdateRequest $requestBody
     * @param array $queryParameters {
     *     @var string $timeout Maximum time to wait for the operation to complete. If timeout is exceeded, the operation is not aborted but continues anyhow.
                Only the waiting is aborted, and the calls returned.
@@ -2695,10 +2695,10 @@ class Client extends \PicturePark\API\Runtime\Client\Client
         return $this->executeEndpoint(new \PicturePark\API\Endpoint\SchemaGetReferenced($id), $fetch);
     }
     /**
-    * Transfer ownership of the schema specified in 
+    * Transfer ownership of the schema specified in
     *
     * @param string $id The schema ID.
-    * @param \PicturePark\API\Model\SchemaOwnershipTransferRequest $requestBody 
+    * @param \PicturePark\API\Model\SchemaOwnershipTransferRequest $requestBody
     * @param array $queryParameters {
     *     @var string $timeout Maximum time to wait for the operation to complete. If timeout is exceeded, the operation is not aborted but continues anyhow.
                Only the waiting is aborted, and the calls returned.
@@ -2743,7 +2743,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
     * Create a new schema.
     *
-    * @param \PicturePark\API\Model\SchemaCreateRequest $requestBody 
+    * @param \PicturePark\API\Model\SchemaCreateRequest $requestBody
     * @param array $queryParameters {
     *     @var string $timeout Maximum time to wait for the operation to complete. If timeout is exceeded, the operation is not aborted but continues anyhow.
                Only the waiting is aborted, and the calls returned.
@@ -2766,7 +2766,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Creates new schemas. The operation is executed asynchronously and is not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
      *
-     * @param \PicturePark\API\Model\SchemaCreateManyRequest $requestBody 
+     * @param \PicturePark\API\Model\SchemaCreateManyRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\SchemaCreateManyBadRequestException
      * @throws \PicturePark\API\Exception\SchemaCreateManyUnauthorizedException
@@ -2786,7 +2786,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     * Updates multiple existing schemas.
     Prefer this whenever you have updates for multiple schemas. The operation is executed asynchronously and is not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
     *
-    * @param \PicturePark\API\Model\SchemaUpdateManyRequest $requestBody 
+    * @param \PicturePark\API\Model\SchemaUpdateManyRequest $requestBody
     * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
     * @throws \PicturePark\API\Exception\SchemaUpdateManyBadRequestException
     * @throws \PicturePark\API\Exception\SchemaUpdateManyUnauthorizedException
@@ -2803,7 +2803,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
         return $this->executeEndpoint(new \PicturePark\API\Endpoint\SchemaUpdateMany($requestBody), $fetch);
     }
     /**
-     * 
+     *
      *
      * @param array $queryParameters {
      *     @var array $ids The schema IDs.
@@ -2827,7 +2827,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     * Transfers ownership of multiple schemas to specified user. The target user must have the ManageSchemas user right.
     The operation is executed asynchronous and is not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
     *
-    * @param \PicturePark\API\Model\SchemaOwnershipTransferManyRequest $requestBody 
+    * @param \PicturePark\API\Model\SchemaOwnershipTransferManyRequest $requestBody
     * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
     * @throws \PicturePark\API\Exception\SchemaTransferOwnershipManyBadRequestException
     * @throws \PicturePark\API\Exception\SchemaTransferOwnershipManyUnauthorizedException
@@ -2846,7 +2846,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Searches schemas as specified in the search request.
      *
-     * @param \PicturePark\API\Model\SchemaSearchRequest $requestBody 
+     * @param \PicturePark\API\Model\SchemaSearchRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\SchemaSearchBadRequestException
      * @throws \PicturePark\API\Exception\SchemaSearchUnauthorizedException
@@ -2868,7 +2868,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     SimpleSearch or Sortable.
     All indexed fields are aggregated and returned as a a single list.
     *
-    * @param \PicturePark\API\Model\IndexFieldsSearchBySchemaIdsRequest $requestBody 
+    * @param \PicturePark\API\Model\IndexFieldsSearchBySchemaIdsRequest $requestBody
     * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
     * @throws \PicturePark\API\Exception\SchemaGetIndexFieldsBadRequestException
     * @throws \PicturePark\API\Exception\SchemaGetIndexFieldsUnauthorizedException
@@ -2888,7 +2888,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     * Imports schemas and list items. The file must already be uploaded before calling this endpoint. See [Transfer](#tag/Transfer).
     The operation is executed asynchronous and it is not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
     *
-    * @param \PicturePark\API\Model\SchemaImportRequest $requestBody 
+    * @param \PicturePark\API\Model\SchemaImportRequest $requestBody
     * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
     * @throws \PicturePark\API\Exception\SchemaTransferImportBadRequestException
     * @throws \PicturePark\API\Exception\SchemaTransferImportUnauthorizedException
@@ -2905,7 +2905,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
         return $this->executeEndpoint(new \PicturePark\API\Endpoint\SchemaTransferImport($requestBody), $fetch);
     }
     /**
-     * 
+     *
      *
      * @param string $token Share token
      * @param array $queryParameters {
@@ -2928,7 +2928,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
         return $this->executeEndpoint(new \PicturePark\API\Endpoint\ShareGetShareJson($token, $queryParameters), $fetch);
     }
     /**
-     * 
+     *
      *
      * @param string $token Share token
      * @param array $queryParameters {
@@ -3011,7 +3011,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
      * Updates a single share. The operation is executed asynchronously and is not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
      *
      * @param string $id The share id.
-     * @param \PicturePark\API\Model\ShareBaseUpdateRequest $requestBody 
+     * @param \PicturePark\API\Model\ShareBaseUpdateRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\ShareUpdateBadRequestException
      * @throws \PicturePark\API\Exception\ShareUpdateUnauthorizedException
@@ -3030,7 +3030,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Create a new share (basic or embed). The operation is executed asynchronously and is not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
      *
-     * @param \PicturePark\API\Model\ShareBaseCreateRequest $requestBody 
+     * @param \PicturePark\API\Model\ShareBaseCreateRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\ShareCreateBadRequestException
      * @throws \PicturePark\API\Exception\ShareCreateUnauthorizedException
@@ -3049,7 +3049,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Deletes multiple shares. Returns a business process which will hold a batch response detail containing information about successful and failed rows. The operation is executed asynchronously and is not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
      *
-     * @param \PicturePark\API\Model\ShareDeleteManyRequest $requestBody 
+     * @param \PicturePark\API\Model\ShareDeleteManyRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\ShareDeleteManyBadRequestException
      * @throws \PicturePark\API\Exception\ShareDeleteManyUnauthorizedException
@@ -3066,9 +3066,9 @@ class Client extends \PicturePark\API\Runtime\Client\Client
         return $this->executeEndpoint(new \PicturePark\API\Endpoint\ShareDeleteMany($requestBody), $fetch);
     }
     /**
-     * 
      *
-     * @param \PicturePark\API\Model\ShareRevokeManyRequest $requestBody 
+     *
+     * @param \PicturePark\API\Model\ShareRevokeManyRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\ShareRevokeBadRequestException
      * @throws \PicturePark\API\Exception\ShareRevokeUnauthorizedException
@@ -3087,7 +3087,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Aggregates shares either created by or sent to current user.
      *
-     * @param \PicturePark\API\Model\ShareAggregationRequest $requestBody 
+     * @param \PicturePark\API\Model\ShareAggregationRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\ShareAggregateBadRequestException
      * @throws \PicturePark\API\Exception\ShareAggregateUnauthorizedException
@@ -3106,7 +3106,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Search shares either created by or sent to current user.
      *
-     * @param \PicturePark\API\Model\ShareSearchRequest $requestBody 
+     * @param \PicturePark\API\Model\ShareSearchRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\ShareSearchBadRequestException
      * @throws \PicturePark\API\Exception\ShareSearchUnauthorizedException
@@ -3125,7 +3125,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * For transfers of type FileUpload or FileUploadAutoImport, after creating the transfer, wait for the returned BusinessProcess to hit the "Created" state before attempting to upload files.
      *
-     * @param \PicturePark\API\Model\CreateTransferRequest $requestBody 
+     * @param \PicturePark\API\Model\CreateTransferRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\TransferCreateBadRequestException
      * @throws \PicturePark\API\Exception\TransferCreateUnauthorizedException
@@ -3161,7 +3161,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
         return $this->executeEndpoint(new \PicturePark\API\Endpoint\TransferDelete($id), $fetch);
     }
     /**
-     * 
+     *
      *
      * @param string $id ID of transfer.
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
@@ -3181,12 +3181,12 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     }
     /**
     * This triggers the import of a Transfer, creating Contents. All items in the Transfer will be enqueued for rendering.
-               
+
     Wait for completion on the Business process ID that is returned to wait for import completion.
     Note: Before attempting to import a Transfer, the transfer has to be in the TransferReady state.
     *
     * @param string $id ID of transfer.
-    * @param \PicturePark\API\Model\ImportTransferRequest $requestBody 
+    * @param \PicturePark\API\Model\ImportTransferRequest $requestBody
     * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
     * @throws \PicturePark\API\Exception\TransferImportBadRequestException
     * @throws \PicturePark\API\Exception\TransferImportUnauthorizedException
@@ -3204,14 +3204,14 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     }
     /**
     * This triggers the import of selected items in a Transfer, creating contents. All imported items will be enqueued for rendering.
-               
+
     Wait for completion on the Business process ID that is returned to wait for import completion.
-               
+
     Transfer will transition to state ImportDone if no files of the transfer remain for import.
     Transfer will transition to state TransferReady if any files of the transfer remain for import.
     *
     * @param string $id ID of transfer.
-    * @param \PicturePark\API\Model\ImportTransferPartialRequest $requestBody 
+    * @param \PicturePark\API\Model\ImportTransferPartialRequest $requestBody
     * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
     * @throws \PicturePark\API\Exception\TransferPartialImportBadRequestException
     * @throws \PicturePark\API\Exception\TransferPartialImportUnauthorizedException
@@ -3248,9 +3248,9 @@ class Client extends \PicturePark\API\Runtime\Client\Client
         return $this->executeEndpoint(new \PicturePark\API\Endpoint\TransferCancel($id), $fetch);
     }
     /**
-     * 
      *
-     * @param \PicturePark\API\Model\TransferSearchRequest $requestBody 
+     *
+     * @param \PicturePark\API\Model\TransferSearchRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\TransferSearchBadRequestException
      * @throws \PicturePark\API\Exception\TransferSearchUnauthorizedException
@@ -3267,7 +3267,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
         return $this->executeEndpoint(new \PicturePark\API\Endpoint\TransferSearch($requestBody), $fetch);
     }
     /**
-     * 
+     *
      *
      * @param string $id ID of file transfer.
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
@@ -3286,9 +3286,9 @@ class Client extends \PicturePark\API\Runtime\Client\Client
         return $this->executeEndpoint(new \PicturePark\API\Endpoint\TransferGetFile($id), $fetch);
     }
     /**
-     * 
      *
-     * @param \PicturePark\API\Model\FileTransferSearchRequest $requestBody 
+     *
+     * @param \PicturePark\API\Model\FileTransferSearchRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\TransferSearchFilesBadRequestException
      * @throws \PicturePark\API\Exception\TransferSearchFilesUnauthorizedException
@@ -3305,9 +3305,9 @@ class Client extends \PicturePark\API\Runtime\Client\Client
         return $this->executeEndpoint(new \PicturePark\API\Endpoint\TransferSearchFiles($requestBody), $fetch);
     }
     /**
-     * 
      *
-     * @param \PicturePark\API\Model\FileTransferDeleteRequest $requestBody 
+     *
+     * @param \PicturePark\API\Model\FileTransferDeleteRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\TransferDeleteFilesBadRequestException
      * @throws \PicturePark\API\Exception\TransferDeleteFilesUnauthorizedException
@@ -3341,15 +3341,15 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     }
     /**
     * Uploads the specified chunk data.
-               
+
     Use `Content-Type: application/octet-stream` for uploading chunked data.
     The chunk data should be contained in the body of your request.
-               
+
     To upload a file, split it into chunks of reasonable size (accepted range is 1MB-100MB). The last chunk may be smaller than 1MB.
     *
     * @param string $transferId ID of transfer.
     * @param string $requestId Identifier of file.
-    * @param null|string|resource|\Psr\Http\Message\StreamInterface $requestBody 
+    * @param null|string|resource|\Psr\Http\Message\StreamInterface $requestBody
     * @param array $queryParameters {
     *     @var int $ChunkNumber Information about chunk.
     *     @var int $CurrentChunkSize Information about chunk.
@@ -3372,9 +3372,9 @@ class Client extends \PicturePark\API\Runtime\Client\Client
         return $this->executeEndpoint(new \PicturePark\API\Endpoint\TransferUploadFile($transferId, $requestId, $requestBody, $queryParameters), $fetch);
     }
     /**
-     * 
      *
-     * @param \PicturePark\API\Model\UserRoleSearchRequest $requestBody 
+     *
+     * @param \PicturePark\API\Model\UserRoleSearchRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\UserRoleSearchBadRequestException
      * @throws \PicturePark\API\Exception\UserRoleSearchUnauthorizedException
@@ -3414,7 +3414,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Creates new user role based on the supplied request.
      *
-     * @param \PicturePark\API\Model\UserRoleCreateRequest $requestBody 
+     * @param \PicturePark\API\Model\UserRoleCreateRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\UserRoleCreateBadRequestException
      * @throws \PicturePark\API\Exception\UserRoleCreateUnauthorizedException
@@ -3433,7 +3433,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Creates new user roles based on supplied requests.
      *
-     * @param \PicturePark\API\Model\UserRoleCreateManyRequest $requestBody 
+     * @param \PicturePark\API\Model\UserRoleCreateManyRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\UserRoleCreateManyBadRequestException
      * @throws \PicturePark\API\Exception\UserRoleCreateManyUnauthorizedException
@@ -3452,7 +3452,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Updates the user roles specified by the IDs and based on supplied requests.
      *
-     * @param \PicturePark\API\Model\UserRoleUpdateManyRequest $requestBody 
+     * @param \PicturePark\API\Model\UserRoleUpdateManyRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\UserRoleUpdateManyBadRequestException
      * @throws \PicturePark\API\Exception\UserRoleUpdateManyUnauthorizedException
@@ -3471,7 +3471,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Deletes the user roles specified by the IDs.
      *
-     * @param \PicturePark\API\Model\UserRoleDeleteManyRequest $requestBody 
+     * @param \PicturePark\API\Model\UserRoleDeleteManyRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\UserRoleDeleteManyBadRequestException
      * @throws \PicturePark\API\Exception\UserRoleDeleteManyUnauthorizedException
@@ -3529,7 +3529,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
      * Updates the user role specified by the ID and based on supplied request.
      *
      * @param string $id User role ID.
-     * @param \PicturePark\API\Model\UserRoleEditable $requestBody 
+     * @param \PicturePark\API\Model\UserRoleEditable $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\UserRoleUpdateBadRequestException
      * @throws \PicturePark\API\Exception\UserRoleUpdateUnauthorizedException
@@ -3546,7 +3546,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
         return $this->executeEndpoint(new \PicturePark\API\Endpoint\UserRoleUpdate($id, $requestBody), $fetch);
     }
     /**
-     * 
+     *
      *
      * @param string $id User ID to search for.
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
@@ -3565,10 +3565,10 @@ class Client extends \PicturePark\API\Runtime\Client\Client
         return $this->executeEndpoint(new \PicturePark\API\Endpoint\UserGet($id), $fetch);
     }
     /**
-     * 
+     *
      *
      * @param string $id User ID to action on.
-     * @param \PicturePark\API\Model\UserUpdateRequest $requestBody 
+     * @param \PicturePark\API\Model\UserUpdateRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\UserUpdateBadRequestException
      * @throws \PicturePark\API\Exception\UserUpdateUnauthorizedException
@@ -3589,7 +3589,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     If User is already in desired state, this will be returned as error.
     *
     * @param string $id User ID to action on.
-    * @param \PicturePark\API\Model\UserLockRequest $requestBody 
+    * @param \PicturePark\API\Model\UserLockRequest $requestBody
     * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
     * @throws \PicturePark\API\Exception\UserLockBadRequestException
     * @throws \PicturePark\API\Exception\UserLockUnauthorizedException
@@ -3609,7 +3609,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     * Does not affect AuthorizationState of users
     Users which are already in desired state will be returned as errors. The operation is executed asynchronously and is not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
     *
-    * @param \PicturePark\API\Model\UserLockManyRequest $requestBody 
+    * @param \PicturePark\API\Model\UserLockManyRequest $requestBody
     * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
     * @throws \PicturePark\API\Exception\UserLockManyBadRequestException
     * @throws \PicturePark\API\Exception\UserLockManyUnauthorizedException
@@ -3629,7 +3629,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
      * Users with AuthorizationState != ToBeReviewed are considered reviewed.
      *
      * @param string $id User ID to action on.
-     * @param \PicturePark\API\Model\UserReviewRequest $requestBody 
+     * @param \PicturePark\API\Model\UserReviewRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\UserReviewBadRequestException
      * @throws \PicturePark\API\Exception\UserReviewUnauthorizedException
@@ -3648,7 +3648,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Users with AuthorizationState != ToBeReviewed are considered reviewed. The operation is executed asynchronously and is not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
      *
-     * @param \PicturePark\API\Model\UserReviewManyRequest $requestBody 
+     * @param \PicturePark\API\Model\UserReviewManyRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\UserReviewManyBadRequestException
      * @throws \PicturePark\API\Exception\UserReviewManyUnauthorizedException
@@ -3686,7 +3686,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Formally invites users, e.g. sends an invitation email. Transitions to Invited, implicitly reviews user. The operation is executed asynchronously and is not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
      *
-     * @param \PicturePark\API\Model\UserInviteManyRequest $requestBody 
+     * @param \PicturePark\API\Model\UserInviteManyRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\UserInviteManyBadRequestException
      * @throws \PicturePark\API\Exception\UserInviteManyUnauthorizedException
@@ -3724,7 +3724,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Formally re-invites users, e.g. sends an invitation email. The operation is executed asynchronously and is not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
      *
-     * @param \PicturePark\API\Model\UserReinviteManyRequest $requestBody 
+     * @param \PicturePark\API\Model\UserReinviteManyRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\UserReInviteManyBadRequestException
      * @throws \PicturePark\API\Exception\UserReInviteManyUnauthorizedException
@@ -3741,9 +3741,9 @@ class Client extends \PicturePark\API\Runtime\Client\Client
         return $this->executeEndpoint(new \PicturePark\API\Endpoint\UserReInviteMany($requestBody), $fetch);
     }
     /**
-     * 
      *
-     * @param \PicturePark\API\Model\UserRoleAssignManyRequest $requestBody 
+     *
+     * @param \PicturePark\API\Model\UserRoleAssignManyRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\UserAssignUserRolesBadRequestException
      * @throws \PicturePark\API\Exception\UserAssignUserRolesUnauthorizedException
@@ -3760,10 +3760,10 @@ class Client extends \PicturePark\API\Runtime\Client\Client
         return $this->executeEndpoint(new \PicturePark\API\Endpoint\UserAssignUserRoles($requestBody), $fetch);
     }
     /**
-     * 
+     *
      *
      * @param string $id User ID
-     * @param \PicturePark\API\Model\UserDeleteRequest $requestBody 
+     * @param \PicturePark\API\Model\UserDeleteRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\UserDeleteBadRequestException
      * @throws \PicturePark\API\Exception\UserDeleteUnauthorizedException
@@ -3799,7 +3799,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
         return $this->executeEndpoint(new \PicturePark\API\Endpoint\UserRestore($id), $fetch);
     }
     /**
-     * 
+     *
      *
      * @param string $id User ID to action on.
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
@@ -3818,7 +3818,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
         return $this->executeEndpoint(new \PicturePark\API\Endpoint\UserCancelDeletionRequest($id), $fetch);
     }
     /**
-     * 
+     *
      *
      * @param string $tokenId ID of the owner token.
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
@@ -3839,7 +3839,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * User will not be invited.
      *
-     * @param \PicturePark\API\Model\UserCreateRequest $requestBody 
+     * @param \PicturePark\API\Model\UserCreateRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\UserCreateBadRequestException
      * @throws \PicturePark\API\Exception\UserCreateUnauthorizedException
@@ -3877,9 +3877,9 @@ class Client extends \PicturePark\API\Runtime\Client\Client
         return $this->executeEndpoint(new \PicturePark\API\Endpoint\UserGetMany($queryParameters), $fetch);
     }
     /**
-     * 
      *
-     * @param \PicturePark\API\Model\UserSearchRequest $requestBody 
+     *
+     * @param \PicturePark\API\Model\UserSearchRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\UserSearchBadRequestException
      * @throws \PicturePark\API\Exception\UserSearchUnauthorizedException
@@ -3896,9 +3896,9 @@ class Client extends \PicturePark\API\Runtime\Client\Client
         return $this->executeEndpoint(new \PicturePark\API\Endpoint\UserSearch($requestBody), $fetch);
     }
     /**
-     * 
      *
-     * @param \PicturePark\API\Model\UserAggregationRequest $requestBody 
+     *
+     * @param \PicturePark\API\Model\UserAggregationRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\UserAggregateBadRequestException
      * @throws \PicturePark\API\Exception\UserAggregateUnauthorizedException
@@ -3915,9 +3915,9 @@ class Client extends \PicturePark\API\Runtime\Client\Client
         return $this->executeEndpoint(new \PicturePark\API\Endpoint\UserAggregate($requestBody), $fetch);
     }
     /**
-     * 
      *
-     * @param \PicturePark\API\Model\UserUpdateIdentityProviderManyRequest $requestBody 
+     *
+     * @param \PicturePark\API\Model\UserUpdateIdentityProviderManyRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\UserUpdateIdentityProviderManyBadRequestException
      * @throws \PicturePark\API\Exception\UserUpdateIdentityProviderManyUnauthorizedException
@@ -3950,9 +3950,9 @@ class Client extends \PicturePark\API\Runtime\Client\Client
         return $this->executeEndpoint(new \PicturePark\API\Endpoint\XmpMappingGetAvailableTargets(), $fetch);
     }
     /**
-     * 
      *
-     * @param \PicturePark\API\Model\XmpMappingEntrySearchRequest $requestBody 
+     *
+     * @param \PicturePark\API\Model\XmpMappingEntrySearchRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\XmpMappingSearchBadRequestException
      * @throws \PicturePark\API\Exception\XmpMappingSearchUnauthorizedException
@@ -4010,7 +4010,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
      * Updates the xmp mapping specified by the ID and based on supplied request. The operation is executed asynchronously and is not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
      *
      * @param string $id Xmp mapping ID.
-     * @param \PicturePark\API\Model\XmpMappingEntry $requestBody 
+     * @param \PicturePark\API\Model\XmpMappingEntry $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\XmpMappingUpdateBadRequestException
      * @throws \PicturePark\API\Exception\XmpMappingUpdateUnauthorizedException
@@ -4050,7 +4050,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Creates new xmp mapping based on the supplied request. The operation is executed asynchronously and is not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
      *
-     * @param \PicturePark\API\Model\XmpMappingEntryCreateRequest $requestBody 
+     * @param \PicturePark\API\Model\XmpMappingEntryCreateRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\XmpMappingCreateBadRequestException
      * @throws \PicturePark\API\Exception\XmpMappingCreateUnauthorizedException
@@ -4069,7 +4069,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Creates new xmp mappings based on supplied requests. The operation is executed asynchronously and is not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
      *
-     * @param \PicturePark\API\Model\XmpMappingEntryCreateManyRequest $requestBody 
+     * @param \PicturePark\API\Model\XmpMappingEntryCreateManyRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\XmpMappingCreateManyBadRequestException
      * @throws \PicturePark\API\Exception\XmpMappingCreateManyUnauthorizedException
@@ -4088,7 +4088,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Updates the xmp mappings specified by the IDs and based on supplied requests. The operation is executed asynchronously and is not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
      *
-     * @param \PicturePark\API\Model\XmpMappingEntryUpdateManyRequest $requestBody 
+     * @param \PicturePark\API\Model\XmpMappingEntryUpdateManyRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\XmpMappingUpdateManyBadRequestException
      * @throws \PicturePark\API\Exception\XmpMappingUpdateManyUnauthorizedException
@@ -4107,7 +4107,7 @@ class Client extends \PicturePark\API\Runtime\Client\Client
     /**
      * Deletes the xmp mappings specified by the IDs. The operation is executed asynchronously and is not awaited. Call [WaitForCompletion](#operation/BusinessProcess_WaitForCompletion) to wait for the process to finish.
      *
-     * @param \PicturePark\API\Model\XmpMappingEntryDeleteManyRequest $requestBody 
+     * @param \PicturePark\API\Model\XmpMappingEntryDeleteManyRequest $requestBody
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
      * @throws \PicturePark\API\Exception\XmpMappingDeleteManyBadRequestException
      * @throws \PicturePark\API\Exception\XmpMappingDeleteManyUnauthorizedException

@@ -13,7 +13,7 @@ class BranchWithProtection extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -25,13 +25,13 @@ class BranchWithProtection extends \ArrayObject
      */
     protected $commit;
     /**
-     * 
+     *
      *
      * @var BranchWithProtectionLinks
      */
     protected $links;
     /**
-     * 
+     *
      *
      * @var bool
      */
@@ -43,25 +43,25 @@ class BranchWithProtection extends \ArrayObject
      */
     protected $protection;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $protectionUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $pattern;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $requiredApprovingReviewCount;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -70,7 +70,7 @@ class BranchWithProtection extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -105,7 +105,7 @@ class BranchWithProtection extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return BranchWithProtectionLinks
      */
@@ -114,7 +114,7 @@ class BranchWithProtection extends \ArrayObject
         return $this->links;
     }
     /**
-     * 
+     *
      *
      * @param BranchWithProtectionLinks $links
      *
@@ -127,7 +127,7 @@ class BranchWithProtection extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -136,7 +136,7 @@ class BranchWithProtection extends \ArrayObject
         return $this->protected;
     }
     /**
-     * 
+     *
      *
      * @param bool $protected
      *
@@ -171,7 +171,7 @@ class BranchWithProtection extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -180,7 +180,7 @@ class BranchWithProtection extends \ArrayObject
         return $this->protectionUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $protectionUrl
      *
@@ -193,7 +193,7 @@ class BranchWithProtection extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -202,7 +202,7 @@ class BranchWithProtection extends \ArrayObject
         return $this->pattern;
     }
     /**
-     * 
+     *
      *
      * @param string $pattern
      *
@@ -215,7 +215,7 @@ class BranchWithProtection extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -224,7 +224,7 @@ class BranchWithProtection extends \ArrayObject
         return $this->requiredApprovingReviewCount;
     }
     /**
-     * 
+     *
      *
      * @param int $requiredApprovingReviewCount
      *

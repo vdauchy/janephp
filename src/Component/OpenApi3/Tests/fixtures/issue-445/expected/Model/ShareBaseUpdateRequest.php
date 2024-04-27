@@ -49,7 +49,7 @@ class ShareBaseUpdateRequest
      */
     protected $outputAccess;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -169,7 +169,7 @@ class ShareBaseUpdateRequest
         $this->outputAccess = $outputAccess;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -178,7 +178,7 @@ class ShareBaseUpdateRequest
         return $this->kind;
     }
     /**
-     * 
+     *
      *
      * @param string $kind
      */

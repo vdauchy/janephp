@@ -13,31 +13,31 @@ class PorterLargeFile extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $refName;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $path;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $oid;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $size;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -46,7 +46,7 @@ class PorterLargeFile extends \ArrayObject
         return $this->refName;
     }
     /**
-     * 
+     *
      *
      * @param string $refName
      *
@@ -59,7 +59,7 @@ class PorterLargeFile extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -68,7 +68,7 @@ class PorterLargeFile extends \ArrayObject
         return $this->path;
     }
     /**
-     * 
+     *
      *
      * @param string $path
      *
@@ -81,7 +81,7 @@ class PorterLargeFile extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -90,7 +90,7 @@ class PorterLargeFile extends \ArrayObject
         return $this->oid;
     }
     /**
-     * 
+     *
      *
      * @param string $oid
      *
@@ -103,7 +103,7 @@ class PorterLargeFile extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -112,7 +112,7 @@ class PorterLargeFile extends \ArrayObject
         return $this->size;
     }
     /**
-     * 
+     *
      *
      * @param int $size
      *

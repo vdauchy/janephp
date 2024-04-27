@@ -13,37 +13,37 @@ class OrganizationFullPlan extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $space;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $privateRepos;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $filledSeats;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $seats;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -52,7 +52,7 @@ class OrganizationFullPlan extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -65,7 +65,7 @@ class OrganizationFullPlan extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -74,7 +74,7 @@ class OrganizationFullPlan extends \ArrayObject
         return $this->space;
     }
     /**
-     * 
+     *
      *
      * @param int $space
      *
@@ -87,7 +87,7 @@ class OrganizationFullPlan extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -96,7 +96,7 @@ class OrganizationFullPlan extends \ArrayObject
         return $this->privateRepos;
     }
     /**
-     * 
+     *
      *
      * @param int $privateRepos
      *
@@ -109,7 +109,7 @@ class OrganizationFullPlan extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -118,7 +118,7 @@ class OrganizationFullPlan extends \ArrayObject
         return $this->filledSeats;
     }
     /**
-     * 
+     *
      *
      * @param int $filledSeats
      *
@@ -131,7 +131,7 @@ class OrganizationFullPlan extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -140,7 +140,7 @@ class OrganizationFullPlan extends \ArrayObject
         return $this->seats;
     }
     /**
-     * 
+     *
      *
      * @param int $seats
      *

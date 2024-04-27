@@ -13,25 +13,25 @@ class EngineDescription
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $engineVersion;
     /**
-     * 
+     *
      *
      * @var array<string, string>
      */
     protected $labels;
     /**
-     * 
+     *
      *
      * @var list<EngineDescriptionPluginsItem>
      */
     protected $plugins;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -40,7 +40,7 @@ class EngineDescription
         return $this->engineVersion;
     }
     /**
-     * 
+     *
      *
      * @param string $engineVersion
      *
@@ -53,7 +53,7 @@ class EngineDescription
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return array<string, string>
      */
@@ -62,7 +62,7 @@ class EngineDescription
         return $this->labels;
     }
     /**
-     * 
+     *
      *
      * @param array<string, string> $labels
      *
@@ -75,7 +75,7 @@ class EngineDescription
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<EngineDescriptionPluginsItem>
      */
@@ -84,7 +84,7 @@ class EngineDescription
         return $this->plugins;
     }
     /**
-     * 
+     *
      *
      * @param list<EngineDescriptionPluginsItem> $plugins
      *

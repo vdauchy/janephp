@@ -13,13 +13,13 @@ class PullRequestReviewCommentLinksPullRequest extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $href;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -28,7 +28,7 @@ class PullRequestReviewCommentLinksPullRequest extends \ArrayObject
         return $this->href;
     }
     /**
-     * 
+     *
      *
      * @param string $href
      *

@@ -25,19 +25,19 @@ class ProtectedBranchPullRequestReviewDismissalRestrictions extends \ArrayObject
      */
     protected $teams;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $usersUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -87,7 +87,7 @@ class ProtectedBranchPullRequestReviewDismissalRestrictions extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -96,7 +96,7 @@ class ProtectedBranchPullRequestReviewDismissalRestrictions extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -109,7 +109,7 @@ class ProtectedBranchPullRequestReviewDismissalRestrictions extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -118,7 +118,7 @@ class ProtectedBranchPullRequestReviewDismissalRestrictions extends \ArrayObject
         return $this->usersUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $usersUrl
      *
@@ -131,7 +131,7 @@ class ProtectedBranchPullRequestReviewDismissalRestrictions extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -140,7 +140,7 @@ class ProtectedBranchPullRequestReviewDismissalRestrictions extends \ArrayObject
         return $this->teamsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $teamsUrl
      *

@@ -13,19 +13,19 @@ class ProtectedBranchRequiredSignatures extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $enabled;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -34,7 +34,7 @@ class ProtectedBranchRequiredSignatures extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -47,7 +47,7 @@ class ProtectedBranchRequiredSignatures extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -56,7 +56,7 @@ class ProtectedBranchRequiredSignatures extends \ArrayObject
         return $this->enabled;
     }
     /**
-     * 
+     *
      *
      * @param bool $enabled
      *

@@ -13,7 +13,7 @@ class EventPayload extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -31,13 +31,13 @@ class EventPayload extends \ArrayObject
      */
     protected $comment;
     /**
-     * 
+     *
      *
      * @var list<EventPayloadPagesItem>
      */
     protected $pages;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -46,7 +46,7 @@ class EventPayload extends \ArrayObject
         return $this->action;
     }
     /**
-     * 
+     *
      *
      * @param string $action
      *
@@ -103,7 +103,7 @@ class EventPayload extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<EventPayloadPagesItem>
      */
@@ -112,7 +112,7 @@ class EventPayload extends \ArrayObject
         return $this->pages;
     }
     /**
-     * 
+     *
      *
      * @param list<EventPayloadPagesItem> $pages
      *

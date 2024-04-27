@@ -13,25 +13,25 @@ class PortfolioRequestEmails extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $firstName;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $lastName;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $emailAddress;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -40,7 +40,7 @@ class PortfolioRequestEmails extends \ArrayObject
         return $this->firstName;
     }
     /**
-     * 
+     *
      *
      * @param string $firstName
      *
@@ -53,7 +53,7 @@ class PortfolioRequestEmails extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -62,7 +62,7 @@ class PortfolioRequestEmails extends \ArrayObject
         return $this->lastName;
     }
     /**
-     * 
+     *
      *
      * @param string $lastName
      *
@@ -75,7 +75,7 @@ class PortfolioRequestEmails extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -84,7 +84,7 @@ class PortfolioRequestEmails extends \ArrayObject
         return $this->emailAddress;
     }
     /**
-     * 
+     *
      *
      * @param string $emailAddress
      *

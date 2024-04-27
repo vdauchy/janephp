@@ -13,97 +13,97 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $country;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $regNo;
     /**
-     * 
+     *
      *
      * @var CompanySearchSuccessResultCompaniesItemVatNo
      */
     protected $vatNo;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $safeNo;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $name;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $status;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $officeType;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $type;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $statusDescription;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $activityCode;
     /**
-     * 
+     *
      *
      * @var CompanySearchSuccessResultCompaniesItemTradingNames
      */
     protected $tradingNames;
     /**
-     * 
+     *
      *
      * @var CompanySearchSuccessResultCompaniesItemAddress
      */
     protected $address;
     /**
-     * 
+     *
      *
      * @var CompanySearchSuccessResultCompaniesItemDateOfLatestChange
      */
     protected $dateOfLatestChange;
     /**
-     * 
+     *
      *
      * @var CompanySearchSuccessResultCompaniesItemDateOfLatestCAccounts
      */
     protected $dateOfLatestCAccounts;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -112,7 +112,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param string $id
      *
@@ -125,7 +125,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -134,7 +134,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
         return $this->country;
     }
     /**
-     * 
+     *
      *
      * @param string $country
      *
@@ -147,7 +147,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -156,7 +156,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
         return $this->regNo;
     }
     /**
-     * 
+     *
      *
      * @param string $regNo
      *
@@ -169,7 +169,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return CompanySearchSuccessResultCompaniesItemVatNo
      */
@@ -178,7 +178,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
         return $this->vatNo;
     }
     /**
-     * 
+     *
      *
      * @param CompanySearchSuccessResultCompaniesItemVatNo $vatNo
      *
@@ -191,7 +191,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -200,7 +200,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
         return $this->safeNo;
     }
     /**
-     * 
+     *
      *
      * @param string $safeNo
      *
@@ -213,7 +213,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -222,7 +222,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
         return $this->name;
     }
     /**
-     * 
+     *
      *
      * @param string $name
      *
@@ -235,7 +235,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -244,7 +244,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
         return $this->status;
     }
     /**
-     * 
+     *
      *
      * @param string $status
      *
@@ -257,7 +257,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -266,7 +266,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
         return $this->officeType;
     }
     /**
-     * 
+     *
      *
      * @param string $officeType
      *
@@ -279,7 +279,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -288,7 +288,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
         return $this->type;
     }
     /**
-     * 
+     *
      *
      * @param string $type
      *
@@ -301,7 +301,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -310,7 +310,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
         return $this->statusDescription;
     }
     /**
-     * 
+     *
      *
      * @param string $statusDescription
      *
@@ -323,7 +323,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -332,7 +332,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
         return $this->activityCode;
     }
     /**
-     * 
+     *
      *
      * @param string $activityCode
      *
@@ -345,7 +345,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return CompanySearchSuccessResultCompaniesItemTradingNames
      */
@@ -354,7 +354,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
         return $this->tradingNames;
     }
     /**
-     * 
+     *
      *
      * @param CompanySearchSuccessResultCompaniesItemTradingNames $tradingNames
      *
@@ -367,7 +367,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return CompanySearchSuccessResultCompaniesItemAddress
      */
@@ -376,7 +376,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
         return $this->address;
     }
     /**
-     * 
+     *
      *
      * @param CompanySearchSuccessResultCompaniesItemAddress $address
      *
@@ -389,7 +389,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return CompanySearchSuccessResultCompaniesItemDateOfLatestChange
      */
@@ -398,7 +398,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
         return $this->dateOfLatestChange;
     }
     /**
-     * 
+     *
      *
      * @param CompanySearchSuccessResultCompaniesItemDateOfLatestChange $dateOfLatestChange
      *
@@ -411,7 +411,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return CompanySearchSuccessResultCompaniesItemDateOfLatestCAccounts
      */
@@ -420,7 +420,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
         return $this->dateOfLatestCAccounts;
     }
     /**
-     * 
+     *
      *
      * @param CompanySearchSuccessResultCompaniesItemDateOfLatestCAccounts $dateOfLatestCAccounts
      *

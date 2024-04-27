@@ -13,7 +13,7 @@ class Operation extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string[]|null
      */
@@ -73,19 +73,19 @@ class Operation extends \ArrayObject
      */
     protected $schemes;
     /**
-     * 
+     *
      *
      * @var bool|null
      */
     protected $deprecated = false;
     /**
-     * 
+     *
      *
      * @var array<string, string[]>[]|null
      */
     protected $security;
     /**
-     * 
+     *
      *
      * @return string[]|null
      */
@@ -94,7 +94,7 @@ class Operation extends \ArrayObject
         return $this->tags;
     }
     /**
-     * 
+     *
      *
      * @param string[]|null $tags
      *
@@ -305,7 +305,7 @@ class Operation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool|null
      */
@@ -314,7 +314,7 @@ class Operation extends \ArrayObject
         return $this->deprecated;
     }
     /**
-     * 
+     *
      *
      * @param bool|null $deprecated
      *
@@ -327,7 +327,7 @@ class Operation extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return array<string, string[]>[]|null
      */
@@ -336,7 +336,7 @@ class Operation extends \ArrayObject
         return $this->security;
     }
     /**
-     * 
+     *
      *
      * @param array<string, string[]>[]|null $security
      *

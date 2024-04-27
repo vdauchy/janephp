@@ -13,19 +13,19 @@ class GbCompanyReportExampleResponseReportNegativeInformationCcjSummary extends 
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $exactRegistered;
     /**
-     * 
+     *
      *
      * @var float
      */
     protected $possibleRegistered;
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -34,7 +34,7 @@ class GbCompanyReportExampleResponseReportNegativeInformationCcjSummary extends 
         return $this->exactRegistered;
     }
     /**
-     * 
+     *
      *
      * @param float $exactRegistered
      *
@@ -47,7 +47,7 @@ class GbCompanyReportExampleResponseReportNegativeInformationCcjSummary extends 
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return float
      */
@@ -56,7 +56,7 @@ class GbCompanyReportExampleResponseReportNegativeInformationCcjSummary extends 
         return $this->possibleRegistered;
     }
     /**
-     * 
+     *
      *
      * @param float $possibleRegistered
      *

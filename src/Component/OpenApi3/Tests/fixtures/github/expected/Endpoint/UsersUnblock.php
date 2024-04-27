@@ -6,9 +6,9 @@ class UsersUnblock extends \Github\Runtime\Client\BaseEndpoint implements \Githu
 {
     protected $username;
     /**
-     * 
      *
-     * @param string $username 
+     *
+     * @param string $username
      */
     public function __construct(string $username)
     {

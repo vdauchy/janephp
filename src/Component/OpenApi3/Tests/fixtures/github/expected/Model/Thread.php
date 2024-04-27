@@ -13,7 +13,7 @@ class Thread extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -25,49 +25,49 @@ class Thread extends \ArrayObject
      */
     protected $repository;
     /**
-     * 
+     *
      *
      * @var ThreadSubject
      */
     protected $subject;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $reason;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $unread;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $updatedAt;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $lastReadAt;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $subscriptionUrl;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -76,7 +76,7 @@ class Thread extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param string $id
      *
@@ -111,7 +111,7 @@ class Thread extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return ThreadSubject
      */
@@ -120,7 +120,7 @@ class Thread extends \ArrayObject
         return $this->subject;
     }
     /**
-     * 
+     *
      *
      * @param ThreadSubject $subject
      *
@@ -133,7 +133,7 @@ class Thread extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -142,7 +142,7 @@ class Thread extends \ArrayObject
         return $this->reason;
     }
     /**
-     * 
+     *
      *
      * @param string $reason
      *
@@ -155,7 +155,7 @@ class Thread extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -164,7 +164,7 @@ class Thread extends \ArrayObject
         return $this->unread;
     }
     /**
-     * 
+     *
      *
      * @param bool $unread
      *
@@ -177,7 +177,7 @@ class Thread extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -186,7 +186,7 @@ class Thread extends \ArrayObject
         return $this->updatedAt;
     }
     /**
-     * 
+     *
      *
      * @param string $updatedAt
      *
@@ -199,7 +199,7 @@ class Thread extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -208,7 +208,7 @@ class Thread extends \ArrayObject
         return $this->lastReadAt;
     }
     /**
-     * 
+     *
      *
      * @param string|null $lastReadAt
      *
@@ -221,7 +221,7 @@ class Thread extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -230,7 +230,7 @@ class Thread extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -243,7 +243,7 @@ class Thread extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -252,7 +252,7 @@ class Thread extends \ArrayObject
         return $this->subscriptionUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $subscriptionUrl
      *

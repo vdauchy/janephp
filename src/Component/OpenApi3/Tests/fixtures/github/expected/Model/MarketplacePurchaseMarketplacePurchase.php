@@ -13,43 +13,43 @@ class MarketplacePurchaseMarketplacePurchase extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $billingCycle;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $nextBillingDate;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $isInstalled;
     /**
-     * 
+     *
      *
      * @var int|null
      */
     protected $unitCount;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $onFreeTrial;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $freeTrialEndsOn;
     /**
-     * 
+     *
      *
      * @var string
      */
@@ -61,7 +61,7 @@ class MarketplacePurchaseMarketplacePurchase extends \ArrayObject
      */
     protected $plan;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -70,7 +70,7 @@ class MarketplacePurchaseMarketplacePurchase extends \ArrayObject
         return $this->billingCycle;
     }
     /**
-     * 
+     *
      *
      * @param string $billingCycle
      *
@@ -83,7 +83,7 @@ class MarketplacePurchaseMarketplacePurchase extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -92,7 +92,7 @@ class MarketplacePurchaseMarketplacePurchase extends \ArrayObject
         return $this->nextBillingDate;
     }
     /**
-     * 
+     *
      *
      * @param string|null $nextBillingDate
      *
@@ -105,7 +105,7 @@ class MarketplacePurchaseMarketplacePurchase extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -114,7 +114,7 @@ class MarketplacePurchaseMarketplacePurchase extends \ArrayObject
         return $this->isInstalled;
     }
     /**
-     * 
+     *
      *
      * @param bool $isInstalled
      *
@@ -127,7 +127,7 @@ class MarketplacePurchaseMarketplacePurchase extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int|null
      */
@@ -136,7 +136,7 @@ class MarketplacePurchaseMarketplacePurchase extends \ArrayObject
         return $this->unitCount;
     }
     /**
-     * 
+     *
      *
      * @param int|null $unitCount
      *
@@ -149,7 +149,7 @@ class MarketplacePurchaseMarketplacePurchase extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -158,7 +158,7 @@ class MarketplacePurchaseMarketplacePurchase extends \ArrayObject
         return $this->onFreeTrial;
     }
     /**
-     * 
+     *
      *
      * @param bool $onFreeTrial
      *
@@ -171,7 +171,7 @@ class MarketplacePurchaseMarketplacePurchase extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -180,7 +180,7 @@ class MarketplacePurchaseMarketplacePurchase extends \ArrayObject
         return $this->freeTrialEndsOn;
     }
     /**
-     * 
+     *
      *
      * @param string|null $freeTrialEndsOn
      *
@@ -193,7 +193,7 @@ class MarketplacePurchaseMarketplacePurchase extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -202,7 +202,7 @@ class MarketplacePurchaseMarketplacePurchase extends \ArrayObject
         return $this->updatedAt;
     }
     /**
-     * 
+     *
      *
      * @param string $updatedAt
      *

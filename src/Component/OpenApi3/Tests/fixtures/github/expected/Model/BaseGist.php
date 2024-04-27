@@ -13,127 +13,127 @@ class BaseGist extends \ArrayObject
         return array_key_exists($property, $this->initialized);
     }
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $url;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $forksUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $commitsUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $id;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $nodeId;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $gitPullUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $gitPushUrl;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $htmlUrl;
     /**
-     * 
+     *
      *
      * @var array<string, BaseGistFilesItem>
      */
     protected $files;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $public;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $createdAt;
     /**
-     * 
+     *
      *
      * @var \DateTime
      */
     protected $updatedAt;
     /**
-     * 
+     *
      *
      * @var string|null
      */
     protected $description;
     /**
-     * 
+     *
      *
      * @var int
      */
     protected $comments;
     /**
-     * 
+     *
      *
      * @var BaseGistUser|null
      */
     protected $user;
     /**
-     * 
+     *
      *
      * @var string
      */
     protected $commentsUrl;
     /**
-     * 
+     *
      *
      * @var BaseGistOwner|null
      */
     protected $owner;
     /**
-     * 
+     *
      *
      * @var bool
      */
     protected $truncated;
     /**
-     * 
+     *
      *
      * @var list<mixed>
      */
     protected $forks;
     /**
-     * 
+     *
      *
      * @var list<mixed>
      */
     protected $history;
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -142,7 +142,7 @@ class BaseGist extends \ArrayObject
         return $this->url;
     }
     /**
-     * 
+     *
      *
      * @param string $url
      *
@@ -155,7 +155,7 @@ class BaseGist extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -164,7 +164,7 @@ class BaseGist extends \ArrayObject
         return $this->forksUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $forksUrl
      *
@@ -177,7 +177,7 @@ class BaseGist extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -186,7 +186,7 @@ class BaseGist extends \ArrayObject
         return $this->commitsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $commitsUrl
      *
@@ -199,7 +199,7 @@ class BaseGist extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -208,7 +208,7 @@ class BaseGist extends \ArrayObject
         return $this->id;
     }
     /**
-     * 
+     *
      *
      * @param string $id
      *
@@ -221,7 +221,7 @@ class BaseGist extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -230,7 +230,7 @@ class BaseGist extends \ArrayObject
         return $this->nodeId;
     }
     /**
-     * 
+     *
      *
      * @param string $nodeId
      *
@@ -243,7 +243,7 @@ class BaseGist extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -252,7 +252,7 @@ class BaseGist extends \ArrayObject
         return $this->gitPullUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $gitPullUrl
      *
@@ -265,7 +265,7 @@ class BaseGist extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -274,7 +274,7 @@ class BaseGist extends \ArrayObject
         return $this->gitPushUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $gitPushUrl
      *
@@ -287,7 +287,7 @@ class BaseGist extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -296,7 +296,7 @@ class BaseGist extends \ArrayObject
         return $this->htmlUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $htmlUrl
      *
@@ -309,7 +309,7 @@ class BaseGist extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return array<string, BaseGistFilesItem>
      */
@@ -318,7 +318,7 @@ class BaseGist extends \ArrayObject
         return $this->files;
     }
     /**
-     * 
+     *
      *
      * @param array<string, BaseGistFilesItem> $files
      *
@@ -331,7 +331,7 @@ class BaseGist extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -340,7 +340,7 @@ class BaseGist extends \ArrayObject
         return $this->public;
     }
     /**
-     * 
+     *
      *
      * @param bool $public
      *
@@ -353,7 +353,7 @@ class BaseGist extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -362,7 +362,7 @@ class BaseGist extends \ArrayObject
         return $this->createdAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $createdAt
      *
@@ -375,7 +375,7 @@ class BaseGist extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return \DateTime
      */
@@ -384,7 +384,7 @@ class BaseGist extends \ArrayObject
         return $this->updatedAt;
     }
     /**
-     * 
+     *
      *
      * @param \DateTime $updatedAt
      *
@@ -397,7 +397,7 @@ class BaseGist extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string|null
      */
@@ -406,7 +406,7 @@ class BaseGist extends \ArrayObject
         return $this->description;
     }
     /**
-     * 
+     *
      *
      * @param string|null $description
      *
@@ -419,7 +419,7 @@ class BaseGist extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return int
      */
@@ -428,7 +428,7 @@ class BaseGist extends \ArrayObject
         return $this->comments;
     }
     /**
-     * 
+     *
      *
      * @param int $comments
      *
@@ -441,7 +441,7 @@ class BaseGist extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return BaseGistUser|null
      */
@@ -450,7 +450,7 @@ class BaseGist extends \ArrayObject
         return $this->user;
     }
     /**
-     * 
+     *
      *
      * @param BaseGistUser|null $user
      *
@@ -463,7 +463,7 @@ class BaseGist extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return string
      */
@@ -472,7 +472,7 @@ class BaseGist extends \ArrayObject
         return $this->commentsUrl;
     }
     /**
-     * 
+     *
      *
      * @param string $commentsUrl
      *
@@ -485,7 +485,7 @@ class BaseGist extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return BaseGistOwner|null
      */
@@ -494,7 +494,7 @@ class BaseGist extends \ArrayObject
         return $this->owner;
     }
     /**
-     * 
+     *
      *
      * @param BaseGistOwner|null $owner
      *
@@ -507,7 +507,7 @@ class BaseGist extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return bool
      */
@@ -516,7 +516,7 @@ class BaseGist extends \ArrayObject
         return $this->truncated;
     }
     /**
-     * 
+     *
      *
      * @param bool $truncated
      *
@@ -529,7 +529,7 @@ class BaseGist extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<mixed>
      */
@@ -538,7 +538,7 @@ class BaseGist extends \ArrayObject
         return $this->forks;
     }
     /**
-     * 
+     *
      *
      * @param list<mixed> $forks
      *
@@ -551,7 +551,7 @@ class BaseGist extends \ArrayObject
         return $this;
     }
     /**
-     * 
+     *
      *
      * @return list<mixed>
      */
@@ -560,7 +560,7 @@ class BaseGist extends \ArrayObject
         return $this->history;
     }
     /**
-     * 
+     *
      *
      * @param list<mixed> $history
      *
