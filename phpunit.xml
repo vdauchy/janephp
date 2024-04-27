@@ -7,6 +7,10 @@
         colors                      = "true"
         bootstrap                   = "bootstrap.php">
 
+    <php>
+        <ini name="memory_limit" value="1024M"/>
+    </php>
+
     <testsuites>
         <testsuite name="Jane Unit Test Suite">
             <directory>./src/Component/*/Tests</directory>
