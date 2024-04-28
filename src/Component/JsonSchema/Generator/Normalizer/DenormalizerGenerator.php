@@ -88,7 +88,7 @@ trait DenormalizerGenerator
             );
         }
 
-        $statements[] = new Stmt\Expression(new Expr\Assign(
+        $statements[]  = new Stmt\Expression(new Expr\Assign(
             $objectVariable,
             new Expr\New_(new Name\FullyQualified($modelFqdn)),
         ));
